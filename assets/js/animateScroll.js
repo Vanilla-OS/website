@@ -22,3 +22,14 @@ function isInViewport(element) {
 
 window.addEventListener('load', animate);
 window.addEventListener('scroll', animate);
+
+// smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

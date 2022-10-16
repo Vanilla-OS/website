@@ -18,7 +18,7 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
         </div>
         <a href="#discover" class="hero-scroll">
             What is Vanilla OS?
-            <span class="material-icons-outlined"> arrow_downward </span>
+            <span class="material-icons-outlined" id="discover"> arrow_downward </span>
         </a>
     </div>
 </div>
