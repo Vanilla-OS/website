@@ -9,7 +9,9 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
             <img class="animate__animated animate__fadeIn" src="/assets/images/home-laptop.svg" alt="Vanilla OS - Showcase" />
         </div>
         <div class="hero-text">
-            <a href="{{ site.url }}/download" class="button button-large">Get Vanilla OS 22.10</a>
+            <a href="{{ site.url }}/download" class="button button-large">
+                Get Vanilla OS 22.10 <span class="material-icons-outlined"> file_download </span>
+            </a>
             <a href="#">Release Notes</a>
         </div>
         <a href="#discover" class="hero-scroll">
