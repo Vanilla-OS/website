@@ -6,7 +6,7 @@ function animate() {
         if (isInViewport(image)) {
             image.classList.add('animating');
             image.classList.add('animate__animated');
-            image.classList.add('animate__faster');
+            // image.classList.add('animate__faster');
             image.classList.add(`animate__${anim}`);
         }
     });
