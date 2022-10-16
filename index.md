@@ -90,6 +90,9 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
             <p>..but also not.</p>
             <p>Suspendisse non elit vel ligula placerat luctus. Mauris sit amet convallis magna. Nam nec lorem eu risus tincidunt varius sed in sem. Etiam convallis eu ante ac accumsan. Proin quam nisi, auctor quis ultrices eu, elementum eu est.</p>
             <p>Aliquam rhoncus facilisis leo et sagittis. Integer iaculis dignissim imperdiet. Curabitur eu lacus dui. Pellentesque at congue augue. Cras felis sapien, vestibulum varius aliquet nec, malesuada vitae risus. </p>
+            <a href="https://documentation.vanillaos.org/docs/" class="button button-secondary">
+                Learn More <span class="material-icons-outlined">chevron_right</span>
+            </a>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInLeft" src="/assets/images/home-desk-apx.svg" alt="Vanilla OS - Immutable!" />
