@@ -14,7 +14,6 @@ function animate() {
 
 function isInViewport(element) {
     var rect = element.getBoundingClientRect();
-    console.log(`rect.top: ${rect.top}, rect.bottom: ${rect.bottom}`);
     return (
         rect.top >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 1100
