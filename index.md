@@ -118,7 +118,7 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
     </div>
 </div>
 
-<div class="hero hero-grayed">
+<div class="hero hero-secondary">
     <div class="container hero-wrapper">
         <div class="hero-text">
             <h2>Frequently Asked Questions</h2>

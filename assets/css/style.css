@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(transparent 30%,white 100%);
 }
 
-.hero.hero-grayed {
+.hero.hero-secondary {
     background-color: #F2F1ED;
 }
 
@@ -382,4 +382,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-carousel-item a {
     border-bottom: 0;
+}
+
+/* Footer */
+.footer-secondary {
+    background-color: #f2f1ed;
+}
+
+.footer-primary {
+    background-color: #e4e3df;
+}
+
+.footer {
+    margin: 30px 0 0 0;
+}
+
+.footer-areas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+
+.footer-area {
+    padding: 10px;
+}
+
+.footer-area ul {
+    margin: 20px 0 0 0;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-area ul li {
+    display: block;
+}
+
+.footer-section:last-of-type {
+    padding-bottom: 120px;
+}
+
+.footer-section:not(:first-of-type) {
+    padding-top: 60px;
 }
