@@ -182,7 +182,7 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
                     </a>
                 </div>
                 <div class="logo-carousel-item">
-                    <a href="https://github.com/Vanilla-OS/apx/" target="_blank" rel="noopener">
+                    <a href="https://github.com/Vanilla-OS/almost/" target="_blank" rel="noopener">
                         <img src="/assets/images/logos/almost.png" alt="Almost" />
                     </a>
                 </div>
