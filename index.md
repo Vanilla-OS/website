@@ -151,11 +151,38 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
 </div>
 
 <div class="hero hero-center">
-    <div class="container hero-wrapper">
+    <div class="hero-wrapper">
         <div class="hero-text">
-            <h2>Technologies Used</h2>
-            <p>Vanilla OS is built on top of the following technologies.</p>
-            ..
+            <h2>Technologies</h2>
+            <p>Vanilla OS is made possible by the following technologies.</p>
+            <div class="logo-carousel">
+                <div class="logo-carousel-item">
+                    <a href="https://www.ubuntu.com/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/ubuntu.svg" alt="Ubuntu" />
+                    </a>
+                </div>
+                <div class="logo-carousel-item">
+                    <a href="https://www.gnome.org/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/gnome.svg" alt="GNOME" />
+                    </a>
+                </div>
+                <div class="logo-carousel-item">
+                    <a href="https://distrobox.privatedns.org/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/distrobox.png" alt="Distrobox" />
+                    </a>
+                </div>
+                <div class="logo-carousel-item">
+                    <a href="https://github.com/Vanilla-OS/apx/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/apx.png" alt="Apx" />
+                    </a>
+                </div>
+                <div class="logo-carousel-item">
+                    <a href="https://github.com/Vanilla-OS/apx/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/almost.png" alt="Almost" />
+                    </a>
+                </div>
+            </div>
+            <small>All trademarks are property of their respective owners.</small>
         </div>
     </div>
 </div>

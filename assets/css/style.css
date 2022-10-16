@@ -17,7 +17,6 @@ a,
 }
 
 /* Common */
-
 body {
     margin: 0;
     padding: 95px 0 0 0;
@@ -358,4 +357,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .accordion-open .accordion-button {
     display: none;
+}
+
+/* Logo Carousel */
+.logo-carousel {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-carousel .logo-carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.logo-carousel .logo-carousel-item img {
+    width: 120px;
+}
+
+.logo-carousel-item a {
+    border-bottom: 0;
 }
