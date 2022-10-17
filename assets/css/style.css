@@ -28,9 +28,11 @@ html::-webkit-scrollbar-thumb{
     width:6px;
     background-color:#161616;
 }
+
 html::-webkit-scrollbar-thumb:window-inactive{
     background-color:rgb(83, 83, 83)
 }
+
 html::-webkit-scrollbar-thumb:hover{
     background-color:#000
 }
@@ -77,6 +79,10 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin: 0;
+}
+
+main {
+    padding: 0 0 40px 0;
 }
 
 /* Logo */
@@ -253,6 +259,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image.hero-image-card img {max-width: 100%;}
+
+.hero-image-video-frame {
+    position: absolute;
+    left: 86px;
+    width: 751px;
+    top: 10px;
+    border-radius: 8px;
+}
+
+.hero-image {
+    position: relative;
+}
 
 .hero-feature-inverted .hero-wrapper {flex-direction: row-reverse;}
 
@@ -472,4 +490,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-section:not(:first-of-type) {
     padding-top: 60px;
+}
+
+/* Body Tint */
+.body-tint main {
+    background-color: #fff;
+}
+
+.body-tint,.body-tint .hero-heading {
+    background-color: #F2F1ED;
+}
+
+.body-tint .hero-heading  {
+    margin-bottom: 40px;
 }

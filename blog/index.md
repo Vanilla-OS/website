@@ -1,9 +1,10 @@
 ---
+tint: true
 title: Blog
 description: Check out what's happening in Vanilla OS world.
 ---
 
-<div class="hero hero-center">
+<div class="hero hero-heading hero-center">
     <div class="container hero-wrapper">
         <div class="hero-text">
             <h2>Blog.</h2>
