@@ -2,10 +2,22 @@
     <div class="container topbar-wrapper">
         <a href="{{ site.url }}" class="logo"></a>
         <ul class="topbar-navigation">
-            <li><a href="{{ site.url }}/blog/">Blog</a></li>
-            <li><a href="https://documentation.vanillaos.org/">Community</a></li>
-            <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
-            <li><a href="{{ site.url }}/get-involved/">Get Involved</a></li>
+            <li>
+                <a href="{{ site.url }}/blog/" 
+                    {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a>
+            </li>
+            <li>
+                <a href="{{ site.url }}/community/"
+                    {% if page.url contains '/community/' %}class="active"{% endif %}>Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/"
+                    {% if page.url contains '/documentation/' %}class="active"{% endif %}>Documentation</a>
+            </li>
+            <li>
+                <a href="{{ site.url }}/get-involved/"
+                    {% if page.url contains '/get-involved/' %}class="active"{% endif %}>Get Involved</a>
+            </li>
         </ul>
     </div>
 </div>

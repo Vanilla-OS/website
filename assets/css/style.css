@@ -153,7 +153,7 @@ main {
     border-color: transparent;
 }
 
-.topbar-navigation a:hover {
+.topbar-navigation a:hover,.topbar-navigation a.active {
     font-weight: 500;
     border-color: black;
 }
