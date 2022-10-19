@@ -4,6 +4,8 @@ layout: default
 tint: true
 ---
 <div class="hero hero-heading hero-center">
+    {% if page.pattern %} <div class="pattern" style="background-image: url({{ page.pattern }});"></div> {% endif %}
+    {% if layout.pattern %} <div class="pattern" style="background-image: url({{ layout.pattern }});"></div> {% endif %}
     <div class="container hero-wrapper">
         <div class="hero-text">
             <h2>{{ page.title }}</h2>

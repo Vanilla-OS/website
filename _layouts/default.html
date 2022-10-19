@@ -2,8 +2,13 @@
 <html lang="en-us">
   {% include head.html %}
   <body 
-    {% if page.tint or layout.tint %} class="body-tint" {% endif %}
-    {{ page.class }} {{ layout.class }}>
+    class="
+      {% if page.tint or layout.tint %} body-tint {% endif %}
+      {{ page.class }} {{ layout.class }}
+      {% if page.tint or layout.tint %} body-tint{% endif %}
+    ">
+    {% if page.pattern %} <div class="pattern" style="background-image: url({{ page.pattern }});"></div> {% endif %}
+    {% if layout.pattern %} <div class="pattern" style="background-image: url({{ layout.pattern }});"></div> {% endif %}
     <div id="top"></div>
     {% include header.html %}
     <main>{{ content }}</main>
