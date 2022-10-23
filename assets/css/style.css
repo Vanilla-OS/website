@@ -41,7 +41,8 @@ html::-webkit-scrollbar-thumb:hover{
 .topbar,
 a,
 .accordion-item,
-.accordion-text {
+.accordion-text,
+.button, .button * {
     transition:all .2s ease-in-out
 }
 
@@ -173,7 +174,7 @@ main {
 
 .hero-center .hero-wrapper {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
@@ -310,7 +311,6 @@ main {
 }
 
 /* Button */
-
 .button {
     left: 0px;
     top: 0px;
@@ -323,6 +323,7 @@ main {
     padding: 10px 20px;
     font-weight: 500;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .button:hover {
@@ -372,6 +373,47 @@ main {
     position: relative;
     z-index: 1;
 }
+
+.button-dropdown ul {
+    display: none;
+    background: #404040;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 40px;
+    margin: 10px 0 10px;
+}
+
+.button-dropdown {
+    display: flex;
+    cursor: pointer;
+    flex-basis: 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-container {
+    padding: 0 10px;
+}
+
+.button-dropdown.button-dropdown-open ul {
+    display: block;
+    flex: 1;
+}
+
+.button-dropdown.button-dropdown-open {
+    flex-basis: 100%;
+    margin: -20px 0 0 0;
+}
+
+.button-dropdown ul li {
+    display: block;
+}
+
+.button-dropdown.button-dropdown-open ul a {
+    color: #fff;
+}
+
 
 /* Marker */
 .marker {
@@ -544,6 +586,7 @@ main {
     display: flex;
     gap: 30px;
     margin: 0 0 30px 0;
+    flex: 1;
 }
 
 .card {
