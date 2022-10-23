@@ -38,8 +38,8 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
         <div class="hero-text">
             <h2>Work.</h2>
             <p>Your faithful colleague by day.</p>
-            <p>Suspendisse non elit vel ligula placerat luctus. Mauris sit amet convallis magna. Nam nec lorem eu risus tincidunt varius sed in sem. Etiam convallis eu ante ac accumsan. Proin quam nisi, auctor quis ultrices eu, elementum eu est.</p>
-            <p>Aliquam rhoncus facilisis leo et sagittis. Integer iaculis dignissim imperdiet. Curabitur eu lacus dui. Pellentesque at congue augue. Cras felis sapien, vestibulum varius aliquet nec, malesuada vitae risus. </p>
+            <p>Vanilla OS is designed to be a reliable and productive operating system for your daily work. The GNOME Desktop is the perfect environment for your daily tasks, with a clean and intuitive interface, everything is at your fingertips.</p>
+            <p>Thanks to a wide range of applications, Vanilla OS is ready to meet your needs, whether you are a developer, a designer, a student or a simple user.</p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-rnote.png" alt="Vanilla OS - Rnote!" />
@@ -52,8 +52,8 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
         <div class="hero-text">
             <h2>Gaming.</h2>
             <p>Your teammate by night.</p>
-            <p>Suspendisse non elit vel ligula placerat luctus. Mauris sit amet convallis magna. Nam nec lorem eu risus tincidunt varius sed in sem. Etiam convallis eu ante ac accumsan. Proin quam nisi, auctor quis ultrices eu, elementum eu est.</p>
-            <p>Aliquam rhoncus facilisis leo et sagittis. Integer iaculis dignissim imperdiet. Curabitur eu lacus dui. Pellentesque at congue augue. Cras felis sapien, vestibulum varius aliquet nec, malesuada vitae risus. </p>
+            <p>Play your favorite video games without worrying about setting up your devices. Vanilla OS offers the latest Linux kernel, ensuring support with the latest devices and the latest performance improvements.</p>
+            <p>Thanks to an integrated driver manager, your GPU will no longer be a problem, be it AMD®, Intel® or NVIDIA®, if something is missing, just open the driver manager and follow the suggestions, it's that simple.</p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInUp" src="/assets/images/home-gaming.png" alt="Vanilla OS - Gaming!" />
@@ -78,8 +78,8 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
         <div class="hero-text">
             <h2>Choice.</h2>
             <p>Your system, your choices.</p>
-            <p>Suspendisse non elit vel ligula placerat luctus. Mauris sit amet convallis magna. Nam nec lorem eu risus tincidunt varius sed in sem. Etiam convallis eu ante ac accumsan. Proin quam nisi, auctor quis ultrices eu, elementum eu est.</p>
-            <p>Aliquam rhoncus facilisis leo et sagittis. Integer iaculis dignissim imperdiet. Curabitur eu lacus dui. Pellentesque at congue augue. Cras felis sapien, vestibulum varius aliquet nec, malesuada vitae risus. </p>
+            <p>Vanilla OS is an operating system that respects your choices, you are in control, always.</p>
+            <p>At the first start you can choose which package format to use in Vanilla OS (Flatpak, Snap, Appimage ..), you choose and Vanilla OS will take care of the rest, putting you in the situation to start without problems.</p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-pkgs.png" alt="Vanilla OS - Package Managers!" />
@@ -92,9 +92,9 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
         <div class="hero-text">
             <h2>Immutable..</h2>
             <p>..but also not.</p>
-            <p>Suspendisse non elit vel ligula placerat luctus. Mauris sit amet convallis magna. Nam nec lorem eu risus tincidunt varius sed in sem. Etiam convallis eu ante ac accumsan. Proin quam nisi, auctor quis ultrices eu, elementum eu est.</p>
-            <p>Aliquam rhoncus facilisis leo et sagittis. Integer iaculis dignissim imperdiet. Curabitur eu lacus dui. Pellentesque at congue augue. Cras felis sapien, vestibulum varius aliquet nec, malesuada vitae risus. </p>
-            <a href="https://documentation.vanillaos.org/docs/" class="button button-secondary">
+            <p>Vanilla OS is an on-demand immutable distribution, the system is read only to prevent unwanted changes and corruption from third party applications or a faulty update. Some paths are still writable, such as the home directory, this allows the user to keep their files and ensure the normal functioning of applications.</p>
+            <p>Do you have to make changes to the system? No problem, this is where on-demand immutability comes in! You can temporarily make the system writable, make the changes you need and then return it to its original state.</p>
+            <a href="https://documentation.vanillaos.org/" class="button button-secondary">
                 Learn More <span class="material-icons-outlined">chevron_right</span>
             </a>
         </div>
