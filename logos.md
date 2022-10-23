@@ -62,10 +62,10 @@ The font is licensed under the [Open Font License](https://scripts.sil.org/cms/s
 ## Colors
 The colors used for the logo are Black and Yellow Orange. Occasionally we may combine these colors with others to highlight some contents. See the full table below:
 
-| Name | Hex | Purpose | Example |
+| Name | Purpose | Hex |
 | --- | --- | --- |
-| Black | `#000000` | Main color | <span class="color-demo" style="background-color: #000000; color: #FFFFFF">#000000</span> |
-| Yellow Orange | `#FFBF48` | Accent color | <span class="color-demo" style="background-color: #FFBF48">#FFBF48</span> |
-| White | `#FFFFFF` | Inv. main color | <span class="color-demo" style="background-color: #FFFFFF; color: #000000">#FFFFFF</span> |
-| Cararra | `#F2F1ED` | Misc. color | <span class="color-demo" style="background-color: #F2F1ED">#F2F1ED</span> |
-| Westar | `#E4E3DF` | Misc. color | <span class="color-demo" style="background-color: #E4E3DF">#E4E3DF</span> |
+| Black | Main color | <span class="color-demo" style="background-color: #000000; color: #FFFFFF">#000000</span> |
+| Yellow Orange | Accent color | <span class="color-demo" style="background-color: #FFBF48">#FFBF48</span> |
+| White | Inv. main color | <span class="color-demo" style="background-color: #FFFFFF; color: #000000">#FFFFFF</span> |
+| Cararra | Misc. color | <span class="color-demo" style="background-color: #F2F1ED">#F2F1ED</span> |
+| Westar | Misc. color | <span class="color-demo" style="background-color: #E4E3DF">#E4E3DF</span> |
