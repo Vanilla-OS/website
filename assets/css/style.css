@@ -116,6 +116,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 
 .scroll .topbar {
@@ -331,6 +332,10 @@ main {
 .button:focus {
     background: #191919;
     color: #fff;
+}
+
+.button-inline {
+    display: inline-flex;
 }
 
 .button-large {
@@ -569,4 +574,164 @@ main {
 
 .card-bg-icon span {
     font-size: 10em;
+}
+
+/* Blog */
+.blog-posts {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.blog-posts article {
+    padding: 20px;
+    background-color: #f2f1ed;
+    border-radius: 10px;
+}
+
+.blog-posts article:hover {
+    background-color: #e4e3df;
+}
+
+.blog-posts article h2 {
+    font-size: 32px;
+}
+
+.blog-posts article p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Article */
+.article-button-read {
+    float: right;
+}
+.article-wrapper {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.article-wrapper h1::after,
+.article-wrapper h2::after,
+.article-wrapper h3::after,
+.article-wrapper h4::after,
+.article-wrapper h5::after,
+.article-wrapper h6::after {
+    content: "";
+    background: #ffbf48;
+    display: block;
+    height: 4px;
+    width: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.article-wrapper h1 {
+    font-size: 48px;
+}
+
+.article-wrapper h2 {
+    font-size: 38px;
+}
+
+.article-wrapper h3 {
+    font-size: 32px;
+}
+
+.article-wrapper h4 {
+    font-size: 28px;
+}
+
+.article-wrapper h5 {
+    font-size: 23px;
+}
+
+.article-wrapper h6 {
+    font-size: 20px;
+}
+
+.article-wrapper blockquote {
+    padding: 0 20px;
+    margin: 20px 0 20px 10px;
+    background-color: #fefdfb;
+    font-style: italic;
+    position: relative;
+}
+
+.article-wrapper blockquote p::before {
+    content: "“";
+    font-size: 60px;
+    color: #ffbf48;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.article-wrapper blockquote p::after {
+    content: "”";
+    font-size: 60px;
+    color: #ffbf48;
+    margin-left: 10px;
+    line-height: 0;
+    position: relative;
+    top: 40px;
+}
+
+.article-wrapper blockquote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    width: 4px;
+    background-color: #ffbf48;
+    border-radius: 10px;
+}
+
+.article-wrapper hr {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px dashed #c3c3c3;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px 0;
+}
+
+table th {
+    background-color: #f2f1ed;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #f2f1ed;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f1ed;
+}
+
+table tr:hover {
+    background-color: #e4e3df;
+}
+
+/* Code */
+code {
+    background-color: #c1bce366;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: #292736;
+}
+
+pre.highlight {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 3px 0 #00000021, 0 0 20px 0 #00000033, 0 0 40px 0 #0000001c;
 }

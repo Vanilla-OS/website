@@ -2,25 +2,12 @@
 title: "Hello world!"
 description: "This is test post for Vanilla OS blog."
 published: 2022-10-16
-layout: blog
+layout: article
 published: true
 comments: true
 ---
 
-# <a name="top"></a>Markdown Test Page
-
-* [Headings](#Headings)
-* [Paragraphs](#Paragraphs)
-* [Blockquotes](#Blockquotes)
-* [Lists](#Lists)
-* [Horizontal rule](#Horizontal)
-* [Table](#Table)
-* [Code](#Code)
-* [Inline elements](#Inline)
-
-***
-
-# <a name="Headings"></a>Headings
+This is test post for Vanilla OS blog.
 
 # Heading one
 

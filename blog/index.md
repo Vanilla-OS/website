@@ -15,8 +15,8 @@ description: Check out what's happening in Vanilla OS world.
 
 {% assign posts = site.posts | sort: "date" | sort: "updated" | reverse %}
 
-<section class="page blog">
-    <div class="container medium">
+<section class="blog">
+    <div class="container blog-posts">
         {% for post in posts %}
             {% include posts-listing.html post=post %}
         {% endfor %}
