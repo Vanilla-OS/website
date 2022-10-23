@@ -1,3 +1,8 @@
 @media (prefers-color-scheme: dark) {
-    
+    .on-light {
+        display: none;
+    }
+    .on-dark {
+        display: initial;
+    }
 }

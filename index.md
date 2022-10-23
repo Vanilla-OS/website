@@ -5,7 +5,8 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
 <div class="hero hero-center hero-main">
     <div class="container hero-wrapper">
         <div class="hero-image animate__animated animate__fadeIn" data-scroll>
-            <img src="/assets/images/home-laptop.svg" alt="Vanilla OS - Showcase" />
+            <img src="/assets/images/home-laptop.svg" alt="Vanilla OS - Showcase" class="on-light" />
+            <img src="/assets/images/home-laptop-dark.svg" alt="Vanilla OS - Showcase" class="on-dark" />
             <!-- <video class="hero-image-video-frame" autoplay loop muted playsinline>
                 <source src="/assets/videos/home-gnome-showcase.webm" type="video/webm">
             </video> -->

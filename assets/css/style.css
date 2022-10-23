@@ -86,6 +86,13 @@ main {
     z-index: 1;
 }
 
+/* Light only */
+@media (prefers-color-scheme: light) {
+    .on-dark {
+        display: none;
+    }
+}
+
 /* Logo */
 .logo {
     background-image: url('/assets/images/vanilla-logo.png');
