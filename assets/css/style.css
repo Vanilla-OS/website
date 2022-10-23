@@ -219,6 +219,7 @@ main {
     line-height: 36px;
     color: #3F3B47;
     margin: 0 0 40px 0;
+    z-index: 2;
 }
 
 .hero-text {

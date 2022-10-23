@@ -11,7 +11,7 @@ The Vanilla OS logo wants to remain visually very **simple** yet **distinctive**
 The entire project aims at maximum simplicity, keeping the user experience as clean as possible without imposing any unnecessary customization that could alter the user experience designed by the software that comes with Vanilla OS, e.g. GNOME.
 
 ## The Logo
-The distributed in 2 variants: **logo** and **icon**, both in `PNG` and `SVG` format with an optional inverted version.
+Our logo is distributed in 2 variants: **logo** and **icon**, both in `PNG` and `SVG` format with an optional inverted version.
 
 <div class="hero hero-center">
     <div class="container hero-wrapper">
