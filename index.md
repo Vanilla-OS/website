@@ -12,10 +12,14 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
             </video> -->
         </div>
         <div class="hero-text">
-            <a href="{{ site.url }}/download" class="button button-large">
+            <!-- <a href="{{ site.url }}/download/" class="button button-large">
                 Get Vanilla OS 22.10 <span class="material-icons-outlined"> file_download </span>
             </a>
-            <a href="#">Release Notes</a>
+            <a href="#">Release Notes</a> -->
+            <a href="https://discord.gg/XwuJ3Y9B" class="button button-large">
+                Get Beta Access <span class="material-icons-outlined"> file_download </span>
+            </a>
+            <a href="{{ site.url }}/roadmap/">Roadmap</a>
         </div>
         <a href="#discover" class="hero-scroll">
             What is Vanilla OS?
@@ -140,7 +144,8 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
                         <span class="accordion-button">Click to Expand</span>
                     </div>
                     <div class="accordion-text">
-                        <p>Vanilla OS is a distribution that aims to be stable and reliable, and for this reason it is not a rolling release. The rolling release model is not suitable for a distribution that aims to be used by the general public, as it is not stable enough and does not guarantee the same level of compatibility with the software available on the market.</p>
+                        <p>Vanilla OS is a distribution that aims to be stable and reliable, the rolling release model is not always the best choice for this since applications and packages are updated too often, reducing the testing time and increasing the risk of errors.</p>
+                        <p>Thanks to Flatpak, Snap and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -150,7 +155,7 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
                     </div>
                     <div class="accordion-text">
                         <p>Vanilla OS comes with an On-Demand Immutability concept. This kind of immutability has been designed to be simple and compatible with any setup, without the need for a specific file system or adaptations.</p>
-                        <p>Immutability can be turned <span class="marker marker-green">On</span> or <span class="marker marker-red">Off</span> at any time and when this is turned on it is still possible to install system components/libraries/applications or whatever, via apx, without compromising the system as these are actually installed in the subsystem.</p>
+                        <p>Immutability can be turned <span class="marker marker-green">On</span> or <span class="marker marker-red">Off</span> at any time and when this is turned on it is still possible to install system components/libraries/applications or whatever, via <a href="//documentation.vanillaos.org/docs/apx">apx</a>, without compromising the system as these are actually installed in the subsystem.</p>
                     </div>
                 </div>
             </div>

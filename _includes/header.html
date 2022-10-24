@@ -1,13 +1,14 @@
 <div class="topbar">
     <div class="container topbar-wrapper">
         <a href="{{ site.url }}" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
         <ul class="topbar-navigation">
             <li>
                 <a href="{{ site.url }}/blog/" 
                     {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a>
             </li>
             <li>
-                <a href="{{ site.url }}/community/"
+                <a href="https://discord.gg/XwuJ3Y9B"
                     {% if page.url contains '/community/' %}class="active"{% endif %}>Community</a>
             </li>
             <li>

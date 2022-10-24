@@ -14,7 +14,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Translations</h3>
                 <p>Translate Vanilla OS into your language or improve existing translations to make it more accessible to everyone.</p>
-                <a href="https://translate.vanillaos.org/" class="button button-primary">Translate</a>
+                <a href="{{ site.url }}/translate/" class="button button-primary">Translate</a>
             </div>
             <div class="card">
                 <div class="card-bg-icon">
@@ -50,14 +50,14 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Funding</h3>
                 <p>Like other projects, Vanilla OS has some costs to cover. You can help us with a donation or by becoming a sponsor.</p>
-                <a href="https://vanillaos.org/funding/" class="button button-primary">Donate</a>
+                <a href="https://github.com/mirkobrombin/" class="button button-primary">Donate</a>
             </div>
             <div class="card">
                 <div class="card-bg-icon">
                     <span class="material-icons-outlined">share</span>
                 </div>
                 <h3>Spread the word</h3>
-                <p>Help us spread the word about Vanilla OS. Tell your friends, family and colleagues about it and share it on social media.</p>
+                <p>Help us spread the word about Vanilla OS. Tell your friends, family and colleagues about it and share on social media.</p>
                 <a href="https://vanillaos.org/" class="button button-primary">Spread the word</a>
             </div>
         </div>
