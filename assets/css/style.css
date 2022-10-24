@@ -194,7 +194,7 @@ main {
 .hero-center img,
 .hero-center video
 {
-    max-width: 920px;
+    max-height: 50vh;
 }
 
 .hero-center {
