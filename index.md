@@ -19,7 +19,7 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
             <a href="https://discord.gg/XwuJ3Y9B" class="button button-large">
                 Get Beta Access <span class="material-icons-outlined"> file_download </span>
             </a>
-            <a href="{{ site.url }}/roadmap/">Roadmap</a>
+            <a href="{{ site.url }}/roadmap">Roadmap</a>
         </div>
         <a href="#discover" class="hero-scroll">
             What is Vanilla OS?
