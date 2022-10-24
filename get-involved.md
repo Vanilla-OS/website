@@ -14,7 +14,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Translations</h3>
                 <p>Translate Vanilla OS into your language or improve existing translations to make it more accessible to everyone.</p>
-                <a href="{{ site.url }}/translate/" class="button button-primary">Translate</a>
+                <a href="{{ site.url }}/translate" class="button button-primary">Translate</a>
             </div>
             <div class="card">
                 <div class="card-bg-icon">
