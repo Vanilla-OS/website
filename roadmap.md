@@ -49,7 +49,7 @@ The following dates are subject to change. Time is in `GMT+2`.
         </div>
     </div>
     <div class="timeline-item timeline-dimmed-green">
-        <span class="timeline-label">24 October 2022</span>
+        <span class="timeline-label">24 September 2022</span>
         <div class="timeline-item-content">
             <h4>Alpha</h4>
             <p>First Alpha release of Vanilla OS.</p>
