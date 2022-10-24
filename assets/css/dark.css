@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: dark) {
+    .on-light {
+        display: none;
+    }
+    .on-dark {
+        display: initial;
+    }
+
+    /* body {
+        background-color: #242424;
+    }
+
+    .logo {
+        background-image: url('/assets/images/vanilla-logo-dark.png');
+    }
+    
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: #eee;
+    } */
+}
