@@ -129,5 +129,9 @@
     .timeline-dimmed-green .timeline-item-content, .timeline-dimmed-green .timeline-label {
         background-color: #485453;
     }
+
+    .timeline-item-content::after {
+        background-color: #242424;
+    }
     
 }
