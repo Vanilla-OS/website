@@ -191,8 +191,7 @@ main {
     text-align: center;
 }
 
-.hero-center img,
-.hero-center video
+.hero:not(.hero-bg-text) .hero-center img, .hero:not(.hero-bg-text) .hero-center video
 {
     max-height: 50vh;
 }
