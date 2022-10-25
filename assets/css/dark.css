@@ -117,5 +117,17 @@
     table tr:hover {
         background-color: #181818;
     }
+
+    .timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label {
+        background-color: #282828;
+    }
+    
+    .timeline-green .timeline-item-content, .timeline-green .timeline-label {
+        background-color: #386662;
+    }
+    
+    .timeline-dimmed-green .timeline-item-content, .timeline-dimmed-green .timeline-label {
+        background-color: #485453;
+    }
     
 }
