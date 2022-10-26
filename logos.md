@@ -5,13 +5,13 @@ title: Vanilla OS Logo
 description: Vanilla OS resources and logos.
 ---
 
-## The Idea Behind
-The Vanilla OS logo wants to remain visually very **simple** yet **distinctive**.
+## The Idea
+The Vanilla OS logo wants to remain visually **simple** yet **distinctive**.
 
-The entire project aims at maximum simplicity, keeping the user experience as clean as possible without imposing any unnecessary customization that could alter the user experience designed by the software that comes with Vanilla OS, e.g. GNOME.
+The entire project aims for maximum simplicity, keeping the user experience as clean as possible without imposing any unnecessary customization that could alter the user experience designed for the software that comes with Vanilla OS, e.g. GNOME.
 
 ## The Logo
-Our logo is distributed in 2 variants: **logo** and **icon**, both in `PNG` and `SVG` format with an optional inverted version.
+Our logo is distributed in 2 variants: the **logotype** and the **icon**, both in `PNG` and `SVG` formats with an optional inverted version.
 
 <div class="hero hero-center">
     <div class="container hero-wrapper">
@@ -60,7 +60,7 @@ The font used for the logo is [**Pacifico**](https://fonts.google.com/specimen/P
 The font is licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
 ## Colors
-The colors used for the logo are Black and Yellow Orange. Occasionally we may combine these colors with others to highlight some contents. See the full table below:
+The colors used for the logo are Black and Yellow Orange. We may combine these colors with others to highlight content. See the full table below:
 
 | Name | Purpose | Hex |
 | --- | --- | --- |
