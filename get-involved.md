@@ -31,7 +31,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                     <span class="material-icons-outlined">auto_stories</span>
                 </div>
                 <h3>Documentation</h3>
-                <p>A good documentation is essential for users and developers to understand how to use Vanilla OS. Help us improve it.</p>
+                <p>Good documentation is essential for users and developers to understand how to use Vanilla OS. Help us improve it.</p>
                 <a href="https://documentation.vanillaos.org/" class="button button-primary">Documentation</a>
             </div>
             <div class="card">
