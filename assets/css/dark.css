@@ -93,7 +93,8 @@
         background-color: #242424;
     }
 
-    .card {
+    .card,
+    .topbar-navigation {
         background-color: #2d2d2d;
         border-bottom-color: #363636;
     }
