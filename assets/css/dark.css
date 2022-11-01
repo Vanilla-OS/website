@@ -54,7 +54,7 @@
     }
 
     .hero-bg-text .hero-image::after {
-        background: radial-gradient(transparent 30%,black 100%);
+        background: none;
     }
 
     .button-pattern::after {
@@ -93,8 +93,7 @@
         background-color: #242424;
     }
 
-    .card,
-    .topbar-navigation {
+    .card {
         background-color: #2d2d2d;
         border-bottom-color: #363636;
     }
@@ -135,4 +134,10 @@
         background-color: #242424;
     }
     
+    @media screen and (max-width: 745px) {
+        .topbar-navigation {
+            background-color: #2d2d2d;
+            border-bottom-color: #363636;
+        }
+    }
 }
