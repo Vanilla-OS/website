@@ -117,6 +117,7 @@ possible to test it in the current images by following these steps:
 ```bash
 apx --sys update
 apx --sys install distinst vanilla-installer
+sudo almost enter rw
 vanilla-installer
 ```
 
