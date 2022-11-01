@@ -116,7 +116,7 @@ possible to test it in the current images by following these steps:
 
 ```bash
 apx --sys update
-apx --sys install vanilla-installer
+apx --sys install distinst vanilla-installer
 vanilla-installer
 ```
 
