@@ -121,6 +121,12 @@ sudo almost enter rw
 vanilla-installer
 ```
 
+Once the system is installed, remove the `calamares` package manually with:
+
+```bash
+apx --sys remove calamares
+```
+
 ## ❤️ Thanks
 We would like to thank all the people that joined the development of the new
 installer (design, development and testing), especially:
