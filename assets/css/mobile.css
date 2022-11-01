@@ -105,4 +105,8 @@
         border-bottom: 1px solid #d1d1d1;
     }
 
+    .grid-images {
+        flex-direction: column;
+    }
+
 }

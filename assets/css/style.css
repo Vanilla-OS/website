@@ -679,6 +679,17 @@ main {
     line-height: 36px;
 }
 
+.article-wrapper img {
+    margin: 0 auto;
+    display: block;
+}
+
+.grid-images {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .article-wrapper h1::after,
 .article-wrapper h2::after,
 .article-wrapper h3::after,
