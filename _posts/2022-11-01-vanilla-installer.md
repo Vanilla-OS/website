@@ -115,8 +115,8 @@ possible to test it in the current images by following these steps:
 - Run the following commands:
 
 ```bash
-sudo apt update
-sudo apt install vanilla-installer
+apx --sys update
+apx --sys install vanilla-installer
 vanilla-installer
 ```
 
