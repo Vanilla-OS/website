@@ -6,7 +6,7 @@ description: The roadmap for the stable release of Vanilla OS.
 ## Terms
 * **Stable**: A release that is ready for production use.
 * **Closed/Open Beta**: A release that is ready for testing and feedback.
-* **Release Candidate**: A release that is proposed for stable release.
+* **Release Candidate**: A release that is proposed for the stable release.
 
 All releases are always available for download on our GitHub page, the main
 difference is the level of support and stability.
