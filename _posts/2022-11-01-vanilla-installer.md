@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-In the past few days we have been working on a new installer that would make 
+In the past few days, we have been working on a new installer that would make 
 the first experience with Vanilla OS as pleasant as possible. The new installer 
 aims to be visually faithful to GNOME guidelines and compatible with distinst, 
 the backend used to install the system.
@@ -15,7 +15,7 @@ the backend used to install the system.
 ## The new installer
 The new installer is written in <mark>GTK4 and libadwaita</mark>, and it is a 
 complete replacement of the old installer ([Calamares](https://github.com/calamares/calamares)). 
-In the past few weeks we have announced that Vanilla OS will be using the 
+In the past few weeks, we have announced that Vanilla OS will be using the 
 [Jade](https://git.getcryst.al/crystal/software/jade-gui) installer from the 
 [Crystal Linux](https://getcryst.al/site) team, but after some testing and 
 discussions we decided to write our own to best fit it with the Vanilla OS 
@@ -32,7 +32,7 @@ We are currently testing the new installer and **will release it with the next
 open beta**. It is however possible to test it in the current images by following 
 the instructions at the end of the article.
 
-The installation process is divided in seven steps:
+The installation process is divided into seven steps:
 - Welcome
 - Language
 - Keyboard
@@ -48,13 +48,13 @@ it, while the installation mode is used to install the system on the device.
 ![Welcome - Vanilla Installer](/assets/uploads/installer-welcome.png)
 
 Once the user has chosen the installation mode, the **Language** screen is shown. 
-In this screen it is possible to choose the language in which Vanilla OS will be
+In this screen, it is possible to choose the language in which Vanilla OS will be
 installed. Here a search bar is available to quickly find the language.
 
 ![Language - Vanilla Installer](/assets/uploads/installer-language.png)
 
 The **Keyboard** screen allows the user to choose the keyboard layout that will 
-be used in the system. Like for the language, a search bar is available to 
+be used in the system. As for the language, a search bar is available to 
 quickly find the keyboard layout, plus a test area to test the keyboard layout.
 
 ![Keyboard - Vanilla Installer](/assets/uploads/installer-keyboard.png)
@@ -79,7 +79,7 @@ with the following layout:
 - 1024 MB boot partition
 - The rest of the disk is used for the root partition (btrfs)
 
-It is also possible launching the GParted utility to manually partition the
+It is also possible to launch the GParted utility to manually partition the
 disk.
 
 <div class="grid-images">
@@ -88,7 +88,7 @@ disk.
   <img src="/assets/uploads/installer-partitioning-3.png" alt=" Confirm Partitioning - Vanilla Installer">
 </div>
 
-The **User** screen allows the user to setup the user account that will be created
+The **User** screen allows the user to set up the user account that will be created
 in the system. It is possible to choose the Name, Username and Password. Plus
 a preview of the Adwaita avatar is shown.
 
