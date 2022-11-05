@@ -705,6 +705,10 @@ main {
     margin: 10px 0;
 }
 
+.article-wrapper td img {
+    display: initial;
+}
+
 .article-wrapper h1 {
     font-size: 48px;
 }
