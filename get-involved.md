@@ -39,8 +39,8 @@ description: Everything we do is Open Source. You can contribute in many ways.
                     <span class="material-icons-outlined">help_outline</span>
                 </div>
                 <h3>Support</h3>
-                <p>Help other users get the most out of Vanilla OS. Answer questions on our forums, help with bug reports and more.</p>
-                <a href="https://vanillaos.org/support/" class="button button-primary">Support</a>
+                <p>Help other users to get the most out of Vanilla OS. Ask or answer questions on forums in our Discord server, help us with bug reports and more.</p>
+                <a href="https://discord.gg/34J8PFsk" class="button button-primary">Support</a>
             </div>
         </div>
         <div class="cards">
@@ -54,11 +54,11 @@ description: Everything we do is Open Source. You can contribute in many ways.
             </div>
             <div class="card">
                 <div class="card-bg-icon">
-                    <span class="material-icons-outlined">share</span>
+                    <span class="material-icons-outlined">auto_stories</span>
                 </div>
-                <h3>Spread the word</h3>
-                <p>Help us spread the word about Vanilla OS. Tell your friends, family and colleagues about it and share on social media.</p>
-                <a href="https://vanillaos.org/" class="button button-primary">Spread the word</a>
+                <h3>Handbook</h3>
+                <p>The handbook contains tutorials, guides and other information to help you get the most out of your Vanilla OS installation.</p>
+                <a href="https://handbook.vanillaos.org/" class="button button-primary">Handbook</a>
             </div>
         </div>
     </div>
