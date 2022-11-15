@@ -16,7 +16,7 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
                 Get Vanilla OS 22.10 <span class="material-icons-outlined"> file_download </span>
             </a>
             <a href="#">Release Notes</a> -->
-            <a href="https://discord.gg/34J8PFsk" class="button button-large">
+            <a href="https://discord.gg/3cD2Q7Ht3S" class="button button-large">
                 Get Beta Access <span class="material-icons-outlined"> file_download </span>
             </a>
             <a href="{{ site.url }}/roadmap">Roadmap</a>
