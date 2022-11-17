@@ -17,3 +17,10 @@ document.addEventListener("click", (event) => {
     closeMenu();
   }
 });
+
+document.addEventListener("keyup", (event) => {
+  const isEscKeyPressed = event.key === "Esc" || event.key === "Escape";
+  if (isEscKeyPressed) {
+    closeMenu();
+  }
+});
