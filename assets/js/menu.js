@@ -10,3 +10,10 @@ function closeMenu() {
 }
 
 menuTogglerElement.addEventListener("click", toggleMenu);
+
+document.addEventListener("click", (event) => {
+  const isMenuTogglerClicked = menuTogglerElement.contains(event.target);
+  if (!isMenuTogglerClicked) {
+    closeMenu();
+  }
+});
