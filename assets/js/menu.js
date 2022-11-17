@@ -1,5 +1,8 @@
+const menuElement = document.querySelector(".topbar-navigation");
+const menuTogglerElement = document.querySelector(".topbar-navigation-toggler");
+
 function toggleMenu() {
-    document.querySelector(".topbar-navigation").classList.toggle("show");
+  menuElement.classList.toggle("show");
 }
 
-document.querySelector(".topbar-navigation-toggler").addEventListener("click", toggleMenu);
+menuTogglerElement.addEventListener("click", toggleMenu);
