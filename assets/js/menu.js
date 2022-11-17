@@ -5,4 +5,8 @@ function toggleMenu() {
   menuElement.classList.toggle("show");
 }
 
+function closeMenu() {
+  menuElement.classList.remove("show");
+}
+
 menuTogglerElement.addEventListener("click", toggleMenu);
