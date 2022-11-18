@@ -1,5 +1,26 @@
+const menuElement = document.querySelector(".topbar-navigation");
+const menuTogglerElement = document.querySelector(".topbar-navigation-toggler");
+
 function toggleMenu() {
-    document.querySelector(".topbar-navigation").classList.toggle("show");
+  menuElement.classList.toggle("show");
 }
 
-document.querySelector(".topbar-navigation-toggler").addEventListener("click", toggleMenu);
+function closeMenu() {
+  menuElement.classList.remove("show");
+}
+
+menuTogglerElement.addEventListener("click", toggleMenu);
+
+document.addEventListener("click", (event) => {
+  const isMenuTogglerClicked = menuTogglerElement.contains(event.target);
+  if (!isMenuTogglerClicked) {
+    closeMenu();
+  }
+});
+
+document.addEventListener("keyup", (event) => {
+  const isEscKeyPressed = event.key === "Esc" || event.key === "Escape";
+  if (isEscKeyPressed) {
+    closeMenu();
+  }
+});
