@@ -16,7 +16,7 @@ The following dates are subject to change. Time is in `GMT+2`.
 
 <div class="timeline">
     <div class="timeline-item timeline-grayed">
-        <span class="timeline-label">November 2022</span>
+        <span class="timeline-label">Late December 2022</span>
         <div class="timeline-item-content">
             <h4>Stable</h4>
             <p>The first stable release of Vanilla OS.</p>
