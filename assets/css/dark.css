@@ -127,6 +127,10 @@
         background-color: #386662;
     }
     
+    .timeline-red .timeline-item-content, .timeline-red .timeline-label {
+        background-color: #6c2d2d;
+    }
+    
     .timeline-dimmed-green .timeline-item-content, .timeline-dimmed-green .timeline-label {
         background-color: #485453;
     }

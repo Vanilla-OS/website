@@ -900,6 +900,19 @@ pre.highlight {
     border-color: #009e88;
 }
 
+.timeline-red h4::after {
+    background-color: #f44336;
+}
+
+.timeline-red .timeline-item-content,
+.timeline-red .timeline-label {
+    background-color: #f8b9b7;
+}
+
+.timeline-red .timeline-item-content::after {
+    border-color: #f44336;
+}
+
 .timeline-dimmed-green h4::after {
     background-color: #98cfca;
 }

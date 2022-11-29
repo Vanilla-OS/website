@@ -28,7 +28,21 @@ The following dates are subject to change. Time is in `GMT+2`.
         </div>
     </div>
     <div class="timeline-item timeline-green">
-        <span class="timeline-label">24 October 2022 (current)</span>
+        <span class="timeline-label">28 November 2022</span>
+        <div class="timeline-item-content"> 
+            <h4>ABRoot Ready</h4>
+            <p>ABRoot is ready to be included in the next release.</p>
+        </div>
+    </div>
+    <div class="timeline-item timeline-red">
+        <span class="timeline-label">11 November 2022</span>
+        <div class="timeline-item-content"> 
+            <h4>Slowdown #1</h4>
+            <p>We have decided to deprecate Almost for ABRoot, a new utility designed to provide a more robust and full atomic immutability model, as a result the next release will be delayed by a few weeks.</p>
+        </div>
+    </div>
+    <div class="timeline-item timeline-green">
+        <span class="timeline-label">24 October 2022</span>
         <div class="timeline-item-content"> 
             <h4>Open Beta</h4>
             <p>The first open beta of Vanilla OS.</p>
