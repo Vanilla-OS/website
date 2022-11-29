@@ -41,7 +41,7 @@ The following dates are subject to change. Time is in `GMT+2`.
             <p>We have decided to deprecate Almost for ABRoot, a new utility designed to provide a more robust and full atomic immutability model, as a result the next release will be delayed by a few weeks.</p>
         </div>
     </div>
-    <div class="timeline-item timeline-green">
+    <div class="timeline-item timeline-dimmed-green">
         <span class="timeline-label">24 October 2022</span>
         <div class="timeline-item-content"> 
             <h4>Open Beta</h4>
