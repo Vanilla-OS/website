@@ -60,7 +60,7 @@ The following dates are subject to change. Time is in `GMT+2`.
 <br />
 
 ## Planning
-The following planning are subject to change.
+The following planning is subject to change.
 
 ### ABRoot
 
@@ -83,7 +83,7 @@ The following planning are subject to change.
 | Updates Scheduler | Done |
 | Updates Manager | Done |
 | Configuration Manager | Done |
-| Deveoper Program | WIP |
+| Developer Program | WIP |
 | CLI | Done |
 
 ### ~~Almost~~ (Replaced by ABRoot)
