@@ -62,39 +62,90 @@ The following dates are subject to change. Time is in `GMT+2`.
 ## Planning
 The following planning are subject to change.
 
-### Almost
+### ABRoot
 
 | Feature | Status |
 | --- | --- | --- |
-| [Almost](https://github.com/vanilla-os/Almost) | WIP |
+| [ABRoot](https://github.com/vanilla-os/ABRoot) | Final tests |
+| A/B Compatibility Check | Done |
+| A/B Root Manager | Done |
+| OverlayFS support for transactions | Done |
+| Transaction features | Done |
+| Boot Updater | Done |
+| Debug flag | Done |
+| CLI | Done |
+
+### VSO (Vanilla System Operator)
+
+| Feature | Status |
+| --- | --- | --- |
+| [VSO](https://github.com/vanilla-os/vanilla-system-operator) | WIP |
+| Updates Scheduler | Done |
+| Updates Manager | Done |
+| Configuration Manager | Done |
+| Deveoper Program | WIP |
+| CLI | Done |
+
+### ~~Almost~~ (Replaced by ABRoot)
+
+| Feature | Status |
+| --- | --- | --- |
+| [Almost](https://github.com/vanilla-os/Almost) | Done |
 | Configurator | Done |
 | Systemd Persistent Mode | Done |
 | Offline Updates Support | Done |
-| Atomic Updates Support | WIP |
+| Persistent Overlays Support | Done |
+| Atomic Updates Support | Done |
 
 ### Apx
 
 | Feature | Status |
 | --- | --- | --- |
 | [Apx](https://github.com/vanilla-os/apx) | Final tests |
-| `--sys` flag | Done |
+| ~~`--sys` flag~~ (replaced by `abroot exec` and `abroot shell`) | ~~Done~~ |
 | `--aur` flag | Done |
+| `--dnf` flag | Done |
 
 ### First Setup
 
 | Feature | Status |
 | --- | --- | --- |
 | [First Setup](https://github.com/vanilla-os/vanilla-first-setup) | Final tests |
+| Support for custom recipes | Done |
+| Default templates | Done |
+| Tour | Done |
+| ABRoot support | Done |
 
 ### Control Center
 
 | Feature | Status |
 | --- | --- | --- |
-| [Vanilla Control Center](https://github.com/vanilla-os/vanilla-control-center) | WIP |
+| [Vanilla Control Center](https://github.com/vanilla-os/vanilla-control-center) | Final tests |
 | Drivers management | Done |
-| Immutability management | Done |
+| Updates management | Done |
 | Sub System management | Done |
-| Overlays support | WIP |
+| ~~Overlays support~~ | ~~WIP~~ |
+
+### Vanilla Extra Packages and Meta Packages
+
+| Feature | Status |
+| --- | --- | --- |
+| base-files | Done |
+| vanilla-base-meta | Done |
+| vanilla-base-desktop | Done |
+| vanilla-beta-notice | Done |
+| vanilla-backgrounds | Done |
+| vanilla-systemd-units | Final tests |
+| plymouth-theme-vanilla | Final tests |
+| Adwaita icons | Done |
+
+### GNOME Packages Updates (43)
+
+| Feature | Status |
+| --- | --- | --- |
+| Control Center | WIP |
+| Software | Done |
+| Adwaita icons | Done |
 
 ### Misc
 
@@ -103,6 +154,7 @@ The following planning are subject to change.
 | Upgrade Utility | WIP |
 | ISO Builder | Final tests |
 | Branding | Done |
-| Website | WIP |
+| Website | Done |
 | Official Wallpaper | Done |
 | Documentation | WIP |
+| Handbook | WIP |
