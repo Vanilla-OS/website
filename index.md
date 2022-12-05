@@ -1,6 +1,6 @@
 ---
 title: 
-description: Vanilla OS is an On-Demand immutable Linux based distribution which aims to provide a vanilla GNOME experience.
+description: Vanilla OS is an Immutable Linux based distribution which aims to provide a vanilla GNOME experience.
 ---
 <div class="hero hero-center hero-main">
     <div class="container hero-wrapper">
@@ -99,8 +99,9 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
         <div class="hero-text">
             <h2>Immutable..</h2>
             <p>..but also not.</p>
-            <p>Vanilla OS is an on-demand immutable distribution, the system is read only to prevent unwanted changes and corruption from third party applications or a faulty update. Some paths are still writable, such as the home directory, this allows the user to keep their files and ensure the normal functioning of applications.</p>
-            <p>Do you have to make changes to the system? No problem, this is where on-demand immutability comes in! You can temporarily make the system writable, make the changes you need and then return it to its original state.</p>
+            <p>Vanilla OS is an immutable operating system, core parts of the system are locked down to prevent unwanted changes and corruption from third party applications or a faulty update. Some paths are still writable, such as the home and configurations directories, this allows the user to keep their files and ensure the normal functioning of applications.</p>
+            <p>Core components are only updated via controlled and atomic transactions, which are applied only on success and made available on reboot.</p>
+            <p>Need to install a component in the core system? No problem, you can open a transactional shell at any time, make your changes and let the system apply them atomically!</p>
             <a href="https://documentation.vanillaos.org/" class="button button-secondary">
                 Learn More <span class="material-icons-outlined">chevron_right</span>
             </a>
@@ -156,8 +157,8 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
                         <span class="accordion-button">Click to Expand</span>
                     </div>
                     <div class="accordion-text">
-                        <p>Vanilla OS comes with an On-Demand Immutability concept. This kind of immutability has been designed to be simple and compatible with any setup, without the need for a specific file system or adaptations.</p>
-                        <p>Immutability can be turned <span class="marker marker-green">On</span> or <span class="marker marker-red">Off</span> at any time and when this is turned on it is still possible to install system components/libraries/applications or whatever, via <a href="//documentation.vanillaos.org/docs/apx">apx</a>, without compromising the system as these are actually installed in the subsystem.</p>
+                        <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/abroot/">ABRoot</a>), which transits updates atomically between two root micropartitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.</p>
+                        <p>This structure, unlike others, is compatible with already existing distributions and does not require a complex setup and allows easy re-initialization of the system without data loss.</p>
                     </div>
                 </div>
             </div>
@@ -187,13 +188,13 @@ description: Vanilla OS is an On-Demand immutable Linux based distribution which
                     </a>
                 </div>
                 <div class="logo-carousel-item">
-                    <a href="https://github.com/Vanilla-OS/apx/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/apx.png" alt="Apx" />
+                    <a href="https://github.com/Vanilla-OS/ABRoot/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/abroot.svg" alt="ABRoot" />
                     </a>
                 </div>
                 <div class="logo-carousel-item">
-                    <a href="https://github.com/Vanilla-OS/almost/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/almost.png" alt="Almost" />
+                    <a href="https://github.com/Vanilla-OS/apx/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/apx.png" alt="Apx" />
                     </a>
                 </div>
             </div>
