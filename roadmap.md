@@ -117,7 +117,7 @@ The following planning is subject to change.
 | Feature | Status |
 | --- | --- | --- |
 | [Apx](https://github.com/vanilla-os/apx) | Final tests |
-| ~~`--sys` flag~~ (replaced by `abroot exec` and `abroot shell`) | ~~Done~~ |
+| ~~`--sys` flag~~ (replaced by `abroot exec` and `abroot shell`) | Done |
 | `--aur` flag | Done |
 | `--dnf` flag | Done |
 | Core Container features | Done |
@@ -156,7 +156,7 @@ The following planning is subject to change.
 | Drivers management | Done |
 | Updates management | Done |
 | Sub System management | Done |
-| ~~Overlays support~~ | ~~WIP~~ |
+| ~~Overlays support~~ | Replaced by ABRoot |
 
 ### GNOME Packages Updates (43)
 
@@ -170,20 +170,20 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [~~almost-extras~~](https://github.com/Vanilla-OS/almost-extras) | ~~Replaced by ABRoot~~ |
+| [~~almost-extras~~](https://github.com/Vanilla-OS/almost-extras) | Replaced by ABRoot |
 | [base-files](https://github.com/Vanilla-OS/base-files) | Done |
 | [vanilla-base-meta](https://github.com/Vanilla-OS/vanilla-base-meta) | Done |
 | [vanilla-base-desktop](https://github.com/Vanilla-OS/vanilla-base-desktop) | Done |
-| [~~vanilla-beta-notice~~](https://github.com/Vanilla-OS/vanilla-beta-notice) | ~~Replaced by vanilla-dev-notice~~ |
+| [~~vanilla-beta-notice~~](https://github.com/Vanilla-OS/vanilla-beta-notice) | Replaced by vanilla-dev-notice |
 | [vanilla-dev-notice](https://github.com/Vanilla-OS/vanilla-dev-notice) | Done |
 | [vanilla-backgrounds](https://github.com/Vanilla-OS/vanilla-backgrounds) | Done |
 | [vanilla-systemd-units](https://github.com/Vanilla-OS/vanilla-systemd-units) | Final tests |
 | [plymouth-theme-vanilla](https://github.com/Vanilla-OS/plymouth-theme-vanilla) | Done |
-| [~~calamares-settings-vanilla~~](https://github.com/Vanilla-OS/calamares-settings-vanilla) | ~~Replaced by Vanilla Intaller~~ |
+| [~~calamares-settings-vanilla~~](https://github.com/Vanilla-OS/calamares-settings-vanilla) | Replaced by Vanilla Intaller |
 | [micro-distrobox](https://github.com/Vanilla-OS/micro-distrobox) | Done |
 | [dev-help-tools](https://github.com/Vanilla-OS/dev-help-tools) | Done |
 | [Upgrade Utility](https://github.com/Vanilla-OS/vanilla-updater) | WIP |
-| [~~vanilla-os-build~~](https://github.com/Vanilla-OS/vanilla-os-build) | ~~Replaced by ISO Builder~~ |
+| [~~vanilla-os-build~~](https://github.com/Vanilla-OS/vanilla-os-build) | Replaced by ISO Builder |
 | [ISO Builder](https://github.com/Vanilla-OS/os) | Final tests |
 | [Branding](https://github.com/Vanilla-OS/assets) | Done |
 | [Website](https://github.com/Vanilla-OS/website) | Done |
