@@ -126,7 +126,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [First Setup](https://github.com/vanilla-os/vanilla-first-setup) | Final tests |
+| [First Setup](https://github.com/vanilla-os/first-setup) | Final tests |
 | Support for custom recipes | Done |
 | Default templates | Done |
 | Tour | Done |
