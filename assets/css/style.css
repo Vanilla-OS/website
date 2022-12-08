@@ -882,7 +882,9 @@ pre.highlight {
     font-weight: 600;
 }
 
-.timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label {
+.timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label,
+.table-status .table-status-discontinued,
+.table-status .table-status-replaced-by {
     background-color: #f9f9f9;
     color: #959595;
 }
@@ -892,7 +894,8 @@ pre.highlight {
 }
 
 .timeline-green .timeline-item-content,
-.timeline-green .timeline-label {
+.timeline-green .timeline-label,
+.table-status .table-status-done {
     background-color: #b0e7e2;
 }
 
@@ -918,12 +921,27 @@ pre.highlight {
 }
 
 .timeline-dimmed-green .timeline-item-content,
-.timeline-dimmed-green .timeline-label {
+.timeline-dimmed-green .timeline-label,
+.table-status .table-status-final-tests {
     background-color: #dff5f3;
 }
 
 .timeline-dimmed-green .timeline-item-content::after {
     border-color: #75b1a8;
+}
+
+.timeline-yellow h4::after {
+    background-color: #ffbf48;
+}
+
+.timeline-yellow .timeline-item-content,
+.timeline-yellow .timeline-label,
+.table-status .table-status-wip {
+    background-color: #f9e1b9;
+}
+
+.timeline-yellow .timeline-item-content::after {
+    border-color: #ffbf48;
 }
 
 /* Toast */
@@ -966,4 +984,17 @@ pre.highlight {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.table-status {
+    padding: 3px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.table-status span {
+    background: #f2f1ed;
+    padding: 0 17px;
+    border-radius: 20px;
+    font-size: 16px;
 }

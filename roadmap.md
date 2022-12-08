@@ -191,3 +191,6 @@ The following planning is subject to change.
 | [Handbook](https://github.com/Vanilla-OS/handbook) | WIP |
 | [AdwDialog](https://github.com/Vanilla-OS/AdwDialog) | Done |
 | [`distinst`](https://github.com/Vanilla-OS/distinst) minor changes | Done |
+
+
+<script type="text/javascript" src="/assets/js/tableStatus.js"></script>

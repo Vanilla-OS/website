@@ -61,7 +61,8 @@
         background: #242424fa;
     }
 
-    .hero.hero-secondary {
+    .hero.hero-secondary,
+    .table-status span {
         background-color: #2e2e2e;
     }
 
@@ -119,11 +120,14 @@
         background-color: #181818;
     }
 
-    .timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label {
+    .timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label, 
+    .table-status .table-status-discontinued,
+    .table-status .table-status-replaced-by {
         background-color: #282828;
     }
     
-    .timeline-green .timeline-item-content, .timeline-green .timeline-label {
+    .timeline-green .timeline-item-content, .timeline-green .timeline-label,
+    .table-status .table-status-done {
         background-color: #386662;
     }
     
@@ -131,8 +135,14 @@
         background-color: #6c2d2d;
     }
     
-    .timeline-dimmed-green .timeline-item-content, .timeline-dimmed-green .timeline-label {
+    .timeline-dimmed-green .timeline-item-content, .timeline-dimmed-green .timeline-label,
+    .table-status .table-status-final-tests {
         background-color: #485453;
+    }
+
+    .timeline-yellow .timeline-item-content, .timeline-yellow .timeline-label,
+    .table-status .table-status-wip {
+        background-color: #6c5d2d;
     }
 
     .timeline-item-content::after {
