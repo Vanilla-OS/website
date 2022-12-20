@@ -1,6 +1,6 @@
 ---
 title: 
-description: Vanilla OS is an Immutable Linux based distribution which aims to provide a vanilla GNOME experience.
+description: Vanilla OS is an Immutable Linux-based distribution which aims to provide a vanilla GNOME experience.
 ---
 <div class="hero hero-center hero-main">
     <div class="container hero-wrapper">
@@ -35,7 +35,7 @@ description: Vanilla OS is an Immutable Linux based distribution which aims to p
         <div class="hero-text">
             <h2>Nicely Updated.</h2>
             <p>Designed to last over time and always be faithful to you.</p>
-            <p>Vanilla OS is an Ubuntu Linux based Point Release distribution that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
+            <p>Vanilla OS is an Ubuntu Linux-based Point Release distribution that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
         </div>
     </div>
 </div>
@@ -59,7 +59,7 @@ description: Vanilla OS is an Immutable Linux based distribution which aims to p
         <div class="hero-text">
             <h2>Gaming.</h2>
             <p>Your teammate by night.</p>
-            <p>Play your favorite video games without worrying about setting up your devices. Vanilla OS offers the latest Linux kernel, ensuring support with the latest devices and the latest performance improvements.</p>
+            <p>Play your favourite video games without worrying about setting up your devices. Vanilla OS offers the latest stable Linux kernel, ensuring support for the latest devices and the latest performance improvements.</p>
             <p>Thanks to an integrated driver manager, your GPU will no longer be a problem, be it AMD®, Intel® or NVIDIA®, if something is missing, just open the driver manager and follow the suggestions, it's that simple.</p>
         </div>
         <div class="hero-image" data-scroll>
@@ -74,7 +74,7 @@ description: Vanilla OS is an Immutable Linux based distribution which aims to p
             <img class="animate-on-scroll" data-animation="fadeIn" src="/assets/images/home-apps.png" alt="Vanilla OS - Apps!" />
             <div class="hero-text">
                 <h2>Complete.</h2>
-                <p>Access a large catalog of applications.</p>
+                <p>Access a large catalogue of applications.</p>
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@ description: Vanilla OS is an Immutable Linux based distribution which aims to p
         <div class="hero-text">
             <h2>Immutable..</h2>
             <p>..but also not.</p>
-            <p>Vanilla OS is an immutable operating system, core parts of the system are locked down to prevent unwanted changes and corruption from third party applications or a faulty update. Some paths are still writable, such as the home and configurations directories, this allows the user to keep their files and ensure the normal functioning of applications.</p>
+            <p>Vanilla OS is an immutable operating system, core parts of the system are locked down to prevent unwanted changes and corruption from third-party applications or a faulty update. Some paths are still writable, such as the home and configurations directories, this allows the user to keep their files and ensure the normal functioning of applications.</p>
             <p>Core components are only updated via controlled and atomic transactions, which are applied only on success and made available on reboot.</p>
             <p>Need to install a component in the core system? No problem, you can open a transactional shell at any time, make your changes and let the system apply them atomically!</p>
             <a href="https://documentation.vanillaos.org/" class="button button-secondary">
@@ -157,7 +157,7 @@ description: Vanilla OS is an Immutable Linux based distribution which aims to p
                         <span class="accordion-button">Click to Expand</span>
                     </div>
                     <div class="accordion-text">
-                        <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/abroot/">ABRoot</a>), which transits updates atomically between two root micropartitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.</p>
+                        <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/abroot/">ABRoot</a>), which transacts updates atomically between two root micro partitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore, the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.</p>
                         <p>This structure, unlike others, is compatible with already existing distributions and does not require a complex setup and allows easy re-initialization of the system without data loss.</p>
                     </div>
                 </div>
@@ -198,7 +198,7 @@ description: Vanilla OS is an Immutable Linux based distribution which aims to p
                     </a>
                 </div>
             </div>
-            <small>All trademarks are property of their respective owners.</small>
+            <small>All trademarks are the property of their respective owners.</small>
         </div>
     </div>
 </div>
