@@ -32,7 +32,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Documentation</h3>
                 <p>Good documentation is essential for users and developers to understand how to use Vanilla OS. Help us improve it.</p>
-                <a href="https://documentation.vanillaos.org/" class="button button-primary">Documentation</a>
+                <a href="https://github.com/Vanilla-OS/documentation" class="button button-primary">Documentation</a>
             </div>
             <div class="card">
                 <div class="card-bg-icon">
@@ -57,8 +57,8 @@ description: Everything we do is Open Source. You can contribute in many ways.
                     <span class="material-icons-outlined">auto_stories</span>
                 </div>
                 <h3>Handbook</h3>
-                <p>The handbook contains tutorials, guides and other information to help you get the most out of your Vanilla OS installation.</p>
-                <a href="https://handbook.vanillaos.org/" class="button button-primary">Handbook</a>
+                <p>Contribute guides and tutorials to help others get the most out of their Vanilla OS installation.</p>
+                <a href="https://github.com/Vanilla-OS/handbook" class="button button-primary">Handbook</a>
             </div>
         </div>
     </div>
