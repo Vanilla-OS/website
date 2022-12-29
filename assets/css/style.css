@@ -805,6 +805,19 @@ table tr:hover {
     background-color: #e4e3df;
 }
 
+.table-status {
+    padding: 3px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.table-status span {
+    background: #f2f1ed;
+    padding: 0 17px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
 /* Code */
 code {
     background-color: #c1bce366;
@@ -986,15 +999,21 @@ pre.highlight {
     cursor: pointer;
 }
 
-.table-status {
-    padding: 3px 0;
-    display: flex;
-    gap: 10px;
-}
+/* Video */
 
-.table-status span {
-    background: #f2f1ed;
-    padding: 0 17px;
-    border-radius: 20px;
-    font-size: 16px;
+.video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.video iframe,
+.video object,
+.video embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }

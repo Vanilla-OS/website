@@ -1,12 +1,12 @@
 ---
 pattern: /assets/images/pattern-download.png
 layout: page
-title: Download Vanilla OS
-description: Download the latest version of Vanilla OS.
+title: Download Vanilla OS Dev Builds
+description: Download Vanilla OS development builds
 ---
 
 ## Production Use
-**Please note that Vanilla OS is still in development**. This means that **it is not yet ready for production use**. If using Vanilla OS in production is your goal, please wait for the stable release.
+Please note that those builds may not represent the final product. They are not guaranteed to be stable and may contain bugs. If you want to use Vanilla OS on your daily driver, please consider downloading the [stable release](/download) instead.
 
 ## Development Builds
 Development builds are not necessarily tested and may contain bugs. If you want to help us test Vanilla OS, please consider joining our [<ion-icon name="logo-discord"></ion-icon> Discord server](https://discord.gg/3cD2Q7Ht3S) before downloading the ISO, and report any bugs you find.

@@ -16,13 +16,20 @@ The following dates are subject to change. Time is in `GMT+2`.
 
 <div class="timeline">
     <div class="timeline-item timeline-grayed">
-        <span class="timeline-label">Late December 2022</span>
+        <span class="timeline-label">January</span>
+        <div class="timeline-item-content">
+            <h4>Bug fixes</h4>
+            <p>Bugs reported by the community will be fixed.</p>
+        </div>
+    </div>
+    <div class="timeline-item timeline-green">
+        <span class="timeline-label">29 December 2022</span>
         <div class="timeline-item-content">
             <h4>Stable</h4>
             <p>The first stable release of Vanilla OS.</p>
         </div>
     </div>
-    <div class="timeline-item timeline-green">
+    <div class="timeline-item timeline-dimmed-green">
         <div class="timeline-item-content"> 
             <p>Release Candidate builds are <a href="/download">available for testing</a>.</p>
         </div>
@@ -80,7 +87,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [ABRoot](https://github.com/vanilla-os/ABRoot) | Final tests |
+| [ABRoot](https://github.com/vanilla-os/ABRoot) | Done |
 | A/B Compatibility Check | Done |
 | A/B Root Manager | Done |
 | OverlayFS support for transactions | Done |
@@ -93,7 +100,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [VSO](https://github.com/vanilla-os/vanilla-system-operator) | Final tests |
+| [VSO](https://github.com/vanilla-os/vanilla-system-operator) | Done |
 | Updates Scheduler | Done |
 | Updates Manager | Done |
 | Configuration Manager | Done |
@@ -116,7 +123,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [Apx](https://github.com/vanilla-os/apx) | Final tests |
+| [Apx](https://github.com/vanilla-os/apx) | Done |
 | ~~`--sys` flag~~ (replaced by `abroot exec` and `abroot shell`) | Done |
 | `--aur` flag | Done |
 | `--dnf` flag | Done |
@@ -126,7 +133,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [First Setup](https://github.com/vanilla-os/first-setup) | Final tests |
+| [First Setup](https://github.com/vanilla-os/first-setup) | Done |
 | Support for custom recipes | Done |
 | Default templates | Done |
 | Tour | Done |
@@ -137,14 +144,14 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [Installer](https://github.com/vanilla-os/vanilla-installer) | Final tests |
+| [Installer](https://github.com/vanilla-os/vanilla-installer) | Done |
 | Automatic partitioning | Done |
 | Manual partitioning | Planned for the future |
-| Keyboard layout selection | Final tests |
-| Timezone selection | Final tests |
-| Language selection | Final tests |
+| Keyboard layout selection | Done |
+| Timezone selection | Done |
+| Language selection | Done |
 | User creation | Done |
-| Processor | WIP |
+| Processor | Done |
 | `distinst` support | Done |
 | Vanilla OS Recipe | Done |
 
@@ -152,7 +159,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [Vanilla Control Center](https://github.com/vanilla-os/vanilla-control-center) | Final tests |
+| [Vanilla Control Center](https://github.com/vanilla-os/vanilla-control-center) | Done |
 | Drivers management | Done |
 | Updates management | Done |
 | Sub System management | Done |
@@ -162,7 +169,7 @@ The following planning is subject to change.
 
 | Feature | Status |
 | --- | --- | --- |
-| [gnome-control-center](https://github.com/Vanilla-OS/gnome-control-center) | Final tests |
+| [gnome-control-center](https://github.com/Vanilla-OS/gnome-control-center) | Done |
 | [gnome-software](https://github.com/Vanilla-OS/gnome-software) | Done |
 | [adwaita-icon-theme](https://github.com/Vanilla-OS/adwaita-icon-theme) | Done |
 
@@ -177,18 +184,18 @@ The following planning is subject to change.
 | [~~vanilla-beta-notice~~](https://github.com/Vanilla-OS/vanilla-beta-notice) | Replaced by vanilla-dev-notice |
 | [vanilla-dev-notice](https://github.com/Vanilla-OS/vanilla-dev-notice) | Done |
 | [vanilla-backgrounds](https://github.com/Vanilla-OS/vanilla-backgrounds) | Done |
-| [vanilla-systemd-units](https://github.com/Vanilla-OS/vanilla-systemd-units) | Final tests |
+| [vanilla-systemd-units](https://github.com/Vanilla-OS/vanilla-systemd-units) | Done |
 | [plymouth-theme-vanilla](https://github.com/Vanilla-OS/plymouth-theme-vanilla) | Done |
 | [~~calamares-settings-vanilla~~](https://github.com/Vanilla-OS/calamares-settings-vanilla) | Replaced by Vanilla Intaller |
 | [micro-distrobox](https://github.com/Vanilla-OS/micro-distrobox) | Done |
 | [dev-help-tools](https://github.com/Vanilla-OS/dev-help-tools) | Done |
-| [Upgrade Utility](https://github.com/Vanilla-OS/vanilla-updater) | WIP |
+| [Upgrade Utility](https://github.com/Vanilla-OS/vanilla-updater) | Done |
 | [~~vanilla-os-build~~](https://github.com/Vanilla-OS/vanilla-os-build) | Replaced by ISO Builder |
-| [ISO Builder](https://github.com/Vanilla-OS/os) | Final tests |
+| [ISO Builder](https://github.com/Vanilla-OS/os) | Done |
 | [Branding](https://github.com/Vanilla-OS/assets) | Done |
 | [Website](https://github.com/Vanilla-OS/website) | Done |
-| [Documentation](https://github.com/Vanilla-OS/documentation) | WIP |
-| [Handbook](https://github.com/Vanilla-OS/handbook) | WIP |
+| [Documentation](https://github.com/Vanilla-OS/documentation) | Done |
+| [Handbook](https://github.com/Vanilla-OS/handbook) | Done |
 | [AdwDialog](https://github.com/Vanilla-OS/AdwDialog) | Done |
 | [`distinst`](https://github.com/Vanilla-OS/distinst) minor changes | Done |
 
