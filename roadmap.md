@@ -186,7 +186,7 @@ The following planning is subject to change.
 | [vanilla-backgrounds](https://github.com/Vanilla-OS/vanilla-backgrounds) | Done |
 | [vanilla-systemd-units](https://github.com/Vanilla-OS/vanilla-systemd-units) | Done |
 | [plymouth-theme-vanilla](https://github.com/Vanilla-OS/plymouth-theme-vanilla) | Done |
-| [~~calamares-settings-vanilla~~](https://github.com/Vanilla-OS/calamares-settings-vanilla) | Replaced by Vanilla Intaller |
+| [~~calamares-settings-vanilla~~](https://github.com/Vanilla-OS/calamares-settings-vanilla) | Replaced by Vanilla Installer |
 | [micro-distrobox](https://github.com/Vanilla-OS/micro-distrobox) | Done |
 | [dev-help-tools](https://github.com/Vanilla-OS/dev-help-tools) | Done |
 | [Upgrade Utility](https://github.com/Vanilla-OS/vanilla-updater) | Done |
