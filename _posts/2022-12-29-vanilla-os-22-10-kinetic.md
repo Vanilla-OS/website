@@ -44,7 +44,7 @@ conflicting packages.
 
 It achieves this by installing software inside one or more containers fully
 managed by Apx having restricted access to your system’s resources while still
-being able to use the same drivers, displays, etc.
+being able to use the same drivers, hardware, etc.
 
 By default, Apx provides a container based on your Linux distribution (Ubuntu 
 22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
