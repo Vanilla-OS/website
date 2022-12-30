@@ -44,7 +44,7 @@ conflicting packages.
 
 It achieves this by installing software inside one or more containers fully
 managed by Apx having restricted access to your system’s resources while still
-being able to use the same drivers, display server, etc.
+being able to use the same drivers, hardware, etc.
 
 By default, Apx provides a container based on your Linux distribution (Ubuntu 
 22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
@@ -62,11 +62,9 @@ system.
 
 ![Apx Control Center](/assets/uploads/vanilla-os-apx-control-center.png)
 
-For GUI packages created inside apx containers, .desktop files are created 
-automatically and added to the Applications menu. These applications are also 
-displayed beside other applications in the “Open with” menu in nautilus. 
-GUI Packages installed inside containers get shown in the Sub System section 
-of Vanilla control center.
+Graphical applications installed inside apx containers are automatically added 
+to the Applications menu as well as the “Open with” menu in the file manager. 
+They are also listed in the Sub System section of Vanilla control center.
 
 ## ABRoot
 
