@@ -3,7 +3,7 @@ title: "Introducing the Vanilla Installer"
 description: "Vanilla OS has a whole new installer in GTK4 and libadwaita."
 published: 2022-10-16
 layout: article
-published: true
+published: false
 comments: true
 ---
 

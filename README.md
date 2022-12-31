@@ -1,2 +1,3 @@
-# Coming Soon..
-Get Latest News on [Twitter](https://twitter.com/brombinmirko).
+# Vanilla OS Webite
+
+This page contains source code of the official Vanilla OS website.
