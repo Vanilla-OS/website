@@ -162,6 +162,9 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                     </div>
                 </div>
             </div>
+            <a href="/faq/" class="button button-secondary">
+                Learn More <span class="material-icons-outlined">chevron_right</span>
+            </a>
         </div>
     </div>
 </div>
