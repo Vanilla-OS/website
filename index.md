@@ -157,7 +157,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                         <span class="accordion-button">Click to Expand</span>
                     </div>
                     <div class="accordion-text">
-                        <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/abroot/">ABRoot</a>), which transacts updates atomically between two root micro partitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore, the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.</p>
+                        <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot</a>), which transacts updates atomically between two root micro partitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore, the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.</p>
                         <p>This structure, unlike others, is compatible with already existing distributions and does not require a complex setup and allows easy re-initialization of the system without data loss.</p>
                     </div>
                 </div>
