@@ -152,7 +152,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                 {% endcapture %}
                 {% include accordion-item.html title=title text=answer %}
             </div>
-            <a href="/faq/" class="button button-secondary">
+            <a href="/faq" class="button button-secondary">
                 Learn More <span class="material-icons-outlined">chevron_right</span>
             </a>
         </div>
