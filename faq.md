@@ -62,11 +62,5 @@ description: Freqently <s>Answered</s> Asked Questions about Vanilla OS.
             <p>No, we don't care about your data. Ours is better.</p>
         {% endcapture %}
         {% include accordion-item.html title=title text=answer %}
-
-        {% capture title %} Is there any telemetry? {% endcapture %}
-        {% capture answer %}
-            <p>We don't care about your data. Ours is better.</p>
-        {% endcapture %}
-        {% include accordion-item.html title=title text=answer %}
     </div>
 </div>
