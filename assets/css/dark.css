@@ -70,7 +70,8 @@
         background-color: #0000002e;
     }
 
-    .logo-carousel .logo-carousel-item img {
+    .logo-carousel .logo-carousel-item img,
+    .media-carousel .media-carousel-item img {
         filter: saturate(0) invert(1);
     }
 
