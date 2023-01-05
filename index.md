@@ -195,3 +195,43 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         </div>
     </div>
 </div>
+
+<div class="hero hero-center">
+    <div class="hero-wrapper">
+        <div class="hero-text">
+            <div class="media-carousel">
+                <div class="media-carousel-item">
+                    <a href="https://www.zdnet.com/article/vanilla-os-offers-a-new-take-on-security-for-the-linux-desktop/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/media/zdnet.svg" alt="ZDNet" />
+                        <p>If you're looking for a new operating system that takes security seriously… Vanilla OS might be just the ticket.</p>
+                    </a>
+                </div>
+                <div class="media-carousel-item">
+                    <a href="https://www.theregister.com/2023/01/03/vanilla_os_2210/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/media/the_register.svg" alt="The Register" />
+                        <p>Vanilla OS is going for bigger, bolder improvement to the Linux desktop… it could prove transformative to the Linux industry… </p>
+                    </a>
+                </div>
+                <div class="media-carousel-item">
+                    <a href="https://www.techrepublic.com/article/vanilla-os-linux-desktop/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/media/techrepublic-logo.svg" alt="ABRoot" />
+                        <p>This will be a project you’ll want to keep a close watch on… I think Vanilla OS could be a real game-changer.</p>
+                    </a>
+                </div>
+                <div class="media-carousel-new-line"></div>
+                <div class="media-carousel-item">
+                    <a href="https://www.omglinux.com/vanilla-os-first-release-download/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/media/omg-linux.png" alt="OMG! Linux" />
+                        <p>Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.</p>
+                    </a>
+                </div>
+                <div class="media-carousel-item">
+                    <a href="https://news.itsfoss.com/vanilla-os-release/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/media/itsfoss-logo.webp" alt="It's FOSS" />
+                        <p>Being a new distro, Vanilla OS has a well-equipped feature set that you might like.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

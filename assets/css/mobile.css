@@ -109,4 +109,13 @@
         flex-direction: column;
     }
 
+    .media-carousel {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .media-carousel-item {
+        padding: 20px;
+    }
+
 }
