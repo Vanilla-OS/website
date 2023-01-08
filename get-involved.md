@@ -40,7 +40,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Support</h3>
                 <p>Help other users to get the most out of Vanilla OS. Answer questions on our Discord server, help with bug reports and more.</p>
-                <a href="https://discord.gg/34J8PFsk" class="button button-primary">Support</a>
+                <a href="https://discord.gg/3cD2Q7Ht3S" class="button button-primary">Support</a>
             </div>
         </div>
         <div class="cards">

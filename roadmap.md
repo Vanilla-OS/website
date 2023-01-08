@@ -95,6 +95,7 @@ The following planning is subject to change.
 | Boot Updater | Done |
 | Debug flag | Done |
 | CLI | Done |
+| Man pages (`man abroot`) | Done |
 
 ### VSO (Vanilla System Operator)
 
@@ -107,6 +108,7 @@ The following planning is subject to change.
 | Automation Tasks Manager | Done |
 | Developer Program | Planned for the future |
 | CLI | Done |
+| Man pages (`man vso`) | Done |
 
 ### ~~Almost~~ (Replaced by ABRoot)
 
@@ -125,9 +127,12 @@ The following planning is subject to change.
 | --- | --- | --- |
 | [Apx](https://github.com/vanilla-os/apx) | Done |
 | ~~`--sys` flag~~ (replaced by `abroot exec` and `abroot shell`) | Done |
+| Core Container features | Done |
 | `--aur` flag | Done |
 | `--dnf` flag | Done |
-| Core Container features | Done |
+| `--apk` flag | Done |
+| `--name` flag for Custom containers| Done |
+| Man pages (`man apx`) | Done |
 
 ### First Setup
 
@@ -137,8 +142,11 @@ The following planning is subject to change.
 | Support for custom recipes | Done |
 | Default templates | Done |
 | Tour | Done |
-| ABRoot support | Done |
+| ABRoot Support | Done |
 | Vanilla OS Recipe | Done |
+| OpenVM Support | Done |
+| Ubuntu Restricted Extras | Done |
+| Nvidia Drivers Support | Done |
 
 ### Installer
 
@@ -147,12 +155,12 @@ The following planning is subject to change.
 | [Installer](https://github.com/vanilla-os/vanilla-installer) | Done |
 | Automatic partitioning | Done |
 | Manual partitioning | Planned for the future |
-| Keyboard layout selection | Done |
-| Timezone selection | Done |
-| Language selection | Done |
+| Keyboard layout Selection | Done |
+| Timezone Selection | Done |
+| Language Selection | Done |
 | User creation | Done |
 | Processor | Done |
-| `distinst` support | Done |
+| `distinst` Support | Done |
 | Vanilla OS Recipe | Done |
 
 ### Control Center

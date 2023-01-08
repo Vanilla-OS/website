@@ -34,13 +34,13 @@ description: Freqently <s>Answered</s> Asked Questions about Vanilla OS.
 
         {% capture title %} Can I install it alongside another OS (dual boot)? {% endcapture %}
         {% capture answer %}
-            <p>Currently, Vanilla OS can only install to a whole disk. Manual partitioning will be available shortly.</p>
+            <p>Currently, Vanilla OS can only be installed to a whole disk. Manual partitioning will be available shortly.</p>
         {% endcapture %}
         {% include accordion-item.html title=title text=answer %}
 
         {% capture title %} Is Nvidia supported? {% endcapture %}
         {% capture answer %}
-            <p>Yes, if you have an Nvidia card, you'll be prompted to install proprietary Nvidia drivers. This includes support for Optimus laptops.</p>
+            <p>Yes, if you have an Nvidia card, you'll be prompted to install proprietary Nvidia drivers during the first setup. This includes support for Optimus laptops.</p>
         {% endcapture %}
         {% include accordion-item.html title=title text=answer %}
 
