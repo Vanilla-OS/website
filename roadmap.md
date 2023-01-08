@@ -145,7 +145,7 @@ The following planning is subject to change.
 | ABRoot Support | Done |
 | Vanilla OS Recipe | Done |
 | OpenVM Support | Done |
-| Ubuntu Restricted Extras | Done |
+| Ubuntu Restricted Extras Support | Done |
 | Nvidia Drivers Support | Done |
 
 ### Installer
