@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-description: Freqently <s>Answered</s> Asked Questions about Vanilla OS.
+description: Frequently <s>Answered</s> Asked Questions about Vanilla OS.
 ---
 
 <div class="container hero-wrapper">
