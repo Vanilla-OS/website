@@ -37,13 +37,13 @@ Our logo is distributed in 2 variants: the **logotype** and the **icon**, both i
                 <br />
                 <p>The Vanilla OS icon.</p>
                 <span class="button button-container">
-                    <a href="/assets/images/vanilla-logo.png" class="button">PNG</a>
-                    <a href="/assets/images/vanilla-logo.svg" class="button">SVG</a>
+                    <a href="/assets/images/vanilla-icon.png" class="button">PNG</a>
+                    <a href="/assets/images/vanilla-icon.svg" class="button">SVG</a>
                     <div class="button-dropdown">
                         <span class="material-icons-outlined">expand_more</span>
                         <ul>
-                            <li><a href="/assets/images/vanilla-logo-inverted.png">PNG (inverted)</a></li>
-                            <li><a href="/assets/images/vanilla-logo-inverted.svg">SVG (inverted)</a></li>
+                            <li><a href="/assets/images/vanilla-icon-inverted.png">PNG (inverted)</a></li>
+                            <li><a href="/assets/images/vanilla-icon-inverted.svg">SVG (inverted)</a></li>
                         </ul>
                     </div>
                 </span>
