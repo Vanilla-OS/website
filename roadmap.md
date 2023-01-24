@@ -15,6 +15,13 @@ difference is the level of support and stability.
 The following dates are subject to change. Time is in `GMT+2`.
 
 <div class="timeline">
+    <div class="timeline-item timeline-grayed">
+        <span class="timeline-label">April</span>
+        <div class="timeline-item-content">
+            <h4>Lunar 23.04 initial work</h4>
+            <p>Initial works on the Lunar 23.04 release will begin.</p>
+        </div>
+    </div>
     <div class="timeline-item timeline-green">
         <span class="timeline-label">January</span>
         <div class="timeline-item-content">
