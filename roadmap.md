@@ -15,14 +15,14 @@ difference is the level of support and stability.
 The following dates are subject to change. Time is in `GMT+2`.
 
 <div class="timeline">
-    <div class="timeline-item timeline-grayed">
+    <div class="timeline-item timeline-green">
         <span class="timeline-label">January</span>
         <div class="timeline-item-content">
             <h4>Bug fixes</h4>
             <p>Bugs reported by the community will be fixed.</p>
         </div>
     </div>
-    <div class="timeline-item timeline-green">
+    <div class="timeline-item timeline-dimmed-green">
         <span class="timeline-label">29 December 2022</span>
         <div class="timeline-item-content">
             <h4>Stable</h4>
