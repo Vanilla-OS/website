@@ -1062,3 +1062,20 @@ pre.highlight {
     top: 0;
     width: 100%;
 }
+
+/* Markers */
+.mark {
+    position: relative;
+}
+
+.mark::after {
+    content: "";
+    background: #ffefbe;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    top: 5px;
+    z-index: -1;
+}
+
