@@ -117,5 +117,10 @@
     .media-carousel-item {
         padding: 20px;
     }
+    
+    .blog-posts {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
