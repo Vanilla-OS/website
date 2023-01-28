@@ -3,7 +3,7 @@ title: "Why we switched from Almost to ABRoot"
 description: "Explore the advantages and disadvantages of using Almost and ABRoot technologies to achieve immutability."
 published: 2023-01-28
 layout: article
-published: false
+published: true
 comments: true
 ---
 
