@@ -3,7 +3,7 @@ title: "Apx, an unconventional package manager"
 description: "Expore Apx, the distro-agnostic package manager made by Vanilla OS and Distrobox."
 published: 2023-01-28
 layout: article
-published: false
+published: true
 comments: true
 ---
 
