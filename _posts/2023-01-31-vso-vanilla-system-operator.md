@@ -35,7 +35,7 @@ Despite Vanilla OS's focus on automation, users still have the ability to act as
 sudo vso trigger-update --now
 ```
 
-or use ABRootfor more complex tasks like installing core packages in the root system or updating the [kernel parameters](https://documentation.vanillaos.org/docs/ABRoot/#title3).
+or use ABRoot for more complex tasks like installing core packages in the root system or updating the [kernel parameters](https://documentation.vanillaos.org/docs/ABRoot/#title3).
 
 ## Useful links
 - [VSO documentation](https://documentation.vanillaos.org/docs/vso/manpage)
