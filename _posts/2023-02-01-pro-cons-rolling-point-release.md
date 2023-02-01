@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-In the world of Linux distributions, there are **Point releases** (fixed releases) and **Rolling releases** (continuous releass). Each type of release has its own advantages and disadvantages.
+In the world of Linux distributions, there are **Point releases** (fixed releases) and **Rolling releases** (continuous releases). Each type of release has its own advantages and disadvantages.
 
 ## Point releases
 
@@ -15,7 +15,7 @@ Point releases are well known for their stability. When a point release is made,
 
 Furthermore, point releases are easier to support since they are a fixed version, making it easier for the community to troubleshoot and resolve any issues that arise in the future. This is a huge advantage for those who need a stable and reliable operating system, such as businesses or professionals.
 
-However, point releases have their own disadvantages. One major is that they tend to receive updates later than other distributions. This is because point releases are usually more focused on stability, and updates are thoroughly tested before being released. As a result, users of point releases often have to wait longer for new software or features.
+However, point releases have their own disadvantages. One major is that them tend to receive updates later than other distributions. This is because point releases are usually more focused on stability, and updates are thoroughly tested before being released. As a result, users of point releases often have to wait longer for new software or features.
 
 Some examples of point releases are Vanilla OS, [Ubuntu](https://ubuntu.com) and [Debian](https://www.debian.org/).
 
@@ -31,6 +31,6 @@ Some examples of rolling releases are [Arch Linux](https://www.archlinux.org/) a
 
 To overcome the disadvantages of point releases and rolling releases, several new technologies have been developed, such as [Flatpak](https://flatpak.org/), [Snap](https://snapcraft.io/), and [AppImage](https://appimage.org/). 
 
-Flatpak and Snap are modern package formats that provide a sandbox for each application, ensuring they runs independently without interfering with other applications or the system. This helps to maintain stability and security. Furthermore, all these modern package formats come with all the necessary dependencies, making it portable and easy to install on any Linux distribution.
+Flatpak and Snap are modern package formats that provide a sandbox for each application, ensuring them runs independently without interfering with other applications or the system. This helps to maintain stability and security. Furthermore, all these modern package formats come with all the necessary dependencies, making them portable and easy to install on any Linux distribution.
 
 [Apx](https://vanillaos.org/2023/01/28/apx-the-unconventional-pkg-manager.html) is another solution that has been developed by Vanilla OS and [Distrobox](https://distrobox.privatedns.org/). It allows users to install software from any other Linux distributions, using the power of [containers](https://www.docker.com/resources/what-container/). This means that users can receive updates without any risk of destabilizing the system.
