@@ -100,6 +100,10 @@
         background-color: #2d2d2d;
         border-bottom-color: #363636;
     }
+
+    .blog-posts article:hover {
+      background-color: #181818;
+    }
     
     .card-bg-icon {
         color: #262626;
@@ -149,8 +153,16 @@
     .timeline-item-content::after {
         background-color: #242424;
     }
+
+    .mark {
+      color: white;
+    }
+
+    .mark:after {
+      background-color: #6a5920;
+    }
     
-    @media screen and (max-width: 745px) {
+    @media screen and (max-width: 1000px) {
         .topbar-navigation {
             background-color: #2d2d2d;
             border-bottom-color: #363636;
