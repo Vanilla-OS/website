@@ -110,7 +110,6 @@ main {
 
 /* Container */
 .container {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -693,7 +692,7 @@ main {
 /* Blog */
 .blog-posts {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
 }
 
@@ -701,6 +700,8 @@ main {
     padding: 20px;
     background-color: #f2f1ed;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-posts article:hover {
@@ -714,6 +715,15 @@ main {
 .blog-posts article p {
     font-size: 18px;
     line-height: 28px;
+}
+
+.blog-posts article > div:first-of-type {
+  flex: 1;
+}
+
+.blog-posts article > div:last-of-type {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Article */
