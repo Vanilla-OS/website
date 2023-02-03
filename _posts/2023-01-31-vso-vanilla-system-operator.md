@@ -13,17 +13,17 @@ VSO, or Vanilla System Operator, is a core component of Vanilla OS, a Linux dist
 
 Updates are essential for maintaining **stability** and **security** of any operating system. They bring bug fixes, security patches, and performance improvements that help keep your system running smoothly. However, manually updating a system can be frustrating, especially if it involves waiting for updates to be applied every time you boot your computer. With VSO, this task is automated in the background, ensuring that your system is always up-to-date and secure.
 
-Not updating your system can expose it to potential security vulnerabilities. Outdated software leaves your system prone to hacking and malware attacks, putting your data and personal information at risk. VSO ensures that your system is always up-to-date, ensuring that your system is secure and protected.
+Not updating your system can expose it to potential security vulnerabilities. Outdated software leaves your system prone to hacking and malware attacks, putting your data and personal information at risk. VSO ensures that your system is always up-to-date, resulting in a secure and protected system.
 
-Stability is another crucial aspect of an operating system. Installing updates can sometimes result in conflicts or compatibility issues that can lead to instability or crashes. On the other hand, VSO  tests the updates before installing them, ensuring they don't cause any problems with the underlying system. It helps keep your system stable and running smoothly. VSO performs updates via [ABRoot](https://vanillaos.org/2023/01/28/almost-vs-abroot.html), the transactional system which is atomic, meaning that if an update fails, no changes or modifications get applied to the system.
+Stability is another crucial aspect of an operating system. Installing updates can sometimes result in conflicts or compatibility issues that can lead to instability or crashes. On the other hand, VSO tests the updates before installing them, ensuring they don't cause any problems with the underlying system. It helps keep your system stable and running smoothly. VSO performs updates via [ABRoot](https://vanillaos.org/2023/01/28/almost-vs-abroot.html), the transactional system which is atomic, meaning that if an update fails, no changes or modifications get applied to the system.
 
 ## Schedule and SmartUpdate
 
 The updates are scheduled either weekly or monthly, as per the user's choice, providing even more flexibility.
 
-However, the updates are not necessarily always performed on the set deadline. By default,  the Smart Updates function performs various checks ranging from CPU, memory and internet usage, temperatures, to battery life before proceeding with the update. It ensures that the updates are installed smartly and efficiently without disturbing the user's workflow.
+However, the updates are not necessarily always performed on the set deadline. By default, the SmartUpdate function performs various checks ranging from CPU, memory and internet usage, temperatures, to battery life before proceeding with the update. It ensures that the updates are installed smartly and efficiently without disturbing the user's workflow.
 
-If you prefer more control, Smart and Automatic updates can also be disabled from the Vanilla Control Center. This way, you can choose if you want VSO to take care of updates or if you can handle them yourself.
+If you prefer more control, Smart and Automatic updates can also be disabled from the Vanilla Control Center. This way, you can choose if you want VSO to take care of updates or if you want to handle them yourself.
 
 ## Automate your tasks
 
