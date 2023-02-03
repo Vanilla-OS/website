@@ -17,11 +17,11 @@ Not updating your system can expose it to potential security vulnerabilities. Ou
 
 Stability is another crucial aspect of an operating system. Installing updates can sometimes result in conflicts or compatibility issues that can lead to instability or crashes. On the other hand, VSO tests the updates before installing them, ensuring they don't cause any problems with the underlying system. It helps keep your system stable and running smoothly. VSO performs updates via [ABRoot](https://vanillaos.org/2023/01/28/almost-vs-abroot.html), the transactional system which is atomic, meaning that if an update fails, no changes or modifications get applied to the system.
 
-## Schedule and SmartUpdate
+## Schedule and Smart Updates
 
 The updates are scheduled either weekly or monthly, as per the user's choice, providing even more flexibility.
 
-However, the updates are not necessarily always performed on the set deadline. By default, the SmartUpdate function performs various checks ranging from CPU, memory and internet usage, temperatures, to battery life before proceeding with the update. It ensures that the updates are installed smartly and efficiently without disturbing the user's workflow.
+However, the updates are not necessarily always performed on the set deadline. By default, the Smart Updates function performs various checks ranging from CPU, memory and internet usage, temperatures, to battery life before proceeding with the update. It ensures that the updates are installed smartly and efficiently without disturbing the user's workflow.
 
 If you prefer more control, Smart and Automatic updates can also be disabled from the Vanilla Control Center. This way, you can choose if you want VSO to take care of updates or if you want to handle them yourself.
 
