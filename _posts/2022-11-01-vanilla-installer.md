@@ -13,6 +13,7 @@ aims to be visually faithful to GNOME guidelines and compatible with distinst,
 the backend used to install the system.
 
 ## The new installer
+
 The new installer is written in <mark>GTK4 and libadwaita</mark>, and it is a 
 complete replacement of the old installer ([Calamares](https://github.com/calamares/calamares)). 
 In the past few weeks, we have announced that Vanilla OS will be using the 
@@ -28,6 +29,7 @@ Both projects are written in **Python** and are meant to be flexible and easy to
 maintain.
 
 ## The new installer in action
+
 We are currently testing the new installer and **will release it with the next
 open beta**. It is however possible to test it in the current images by following 
 the instructions at the end of the article.
@@ -107,6 +109,7 @@ logs.
 ![Installation - Vanilla Installer](/assets/uploads/installer-installation.png)
 
 ## Testing the new installer
+
 The new installer is not yet available in the open beta images, but it is
 possible to test it in the current images by following these steps:
 - Download the latest image
@@ -128,6 +131,7 @@ apx --sys remove calamares
 ```
 
 ## ❤️ Thanks
+
 We would like to thank all the people that joined the development of the new
 installer (design, development and testing), especially:
 - [Muqtxdir](https://github.com/Muqtxdir) (development and design)
