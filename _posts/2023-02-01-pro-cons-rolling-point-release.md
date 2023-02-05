@@ -15,17 +15,17 @@ Point releases are well known for their stability. When a point release is relea
 
 Furthermore, point releases are easier to support since they are a fixed version, making it easier for the community to troubleshoot and resolve any issues that arise in the future, which is an advantage for those who need a stable and reliable operating system, such as businesses or professionals.
 
-However, point releases have their disadvantages. One major one is that they tend to receive updates later than other distributions. It is because they are usually more focused on stability, and updates get tested thoroughly before being released. As a result, users of point-release distributions often have to wait longer to get new software packages or features.
+However, point releases have their disadvantages. A major one is that they tend to receive updates later than other distributions. This is a result of them usually being more focused on stability, together with updates geting tested thoroughly before being released. That's why users of point-release distributions often have to wait longer to get new software packages or features.
 
-Some examples of point releases are Vanilla OS, [Ubuntu](https://ubuntu.com) and [Debian](https://www.debian.org/).
+Some examples of point releases are [Vanilla OS](https://vanillaos.org/), [Ubuntu](https://ubuntu.com) and [Debian](https://www.debian.org/).
 
 ## Rolling releases
 
-Rolling releases provide a more up-to-date experience. With a rolling release, users can receive updates as soon as they are available, which means that users always have access to the latest software and features. It is a crucial advantage for those who want to use the latest technology or are on the cutting edge. Rolling releases also provide the latest security updates.
+Rolling releases provide a more up-to-date experience. With a rolling release, users can receive updates as soon as they are available, which means that users always have access to the latest software and features. It is a crucial advantage for those who want to use the latest technology or require cutting edge packages. Rolling releases also provide the latest security updates.
 
-However, rolling releases have their disadvantages. The most significant one is that they can be less stable than point releases. Since rolling releases receive updates continuously, there is a risk that bugs or issues may arise. It is because the users receive updates as soon as they are available, with a reduced testing window. As a result, users of rolling releases may experience more bugs and issues compared to users of point releases.
+However, rolling releases have their disadvantages. The most significant one is that they can be less stable than point releases. Since rolling releases receive updates continuously, there is a risk that bugs or issues may arise. This is the result of users receiving updates as soon as they are available, with a reduced testing window. That's why users of rolling releases may experience more bugs and issues compared to users of point releases.
 
-Some examples of rolling releases are [Arch Linux](https://www.archlinux.org/) and [openSUSE Tumbleweed](https://en.opensuse.org/Portal:Tumbleweed).
+Some examples of rolling releases are [Arch Linux](https://www.archlinux.org/), [openSUSE Tumbleweed](https://en.opensuse.org/Portal:Tumbleweed) and [Void Linux](https://voidlinux.org/).
 
 ## Modern package formats
 

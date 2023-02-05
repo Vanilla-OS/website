@@ -7,11 +7,11 @@ published: true
 comments: true
 ---
 
-Vanilla OS is an [immutable and atomic](https://vanillaos.org/2023/01/28/almost-vs-abroot.html#immutability-and-atomicity) distribution that prioritizes security and stability. As such, installing packages in the root partition is possible using [ABRoot](https://documentation.vanillaos.org/docs/apx/), but this approach isn't ideal or recommended as the root partition is small and should get used for kernel modules or root-side essential packages only. To address this issue, Vanilla OS and Distrobox have collaborated to introduce a new package manager: apx.
+Vanilla OS is an [immutable and atomic](https://vanillaos.org/2023/01/28/almost-vs-abroot.html#immutability-and-atomicity) distribution that prioritizes security and stability. As such, installing packages in the root partition is possible using [ABRoot](https://documentation.vanillaos.org/docs/apx/), but this approach isn't ideal or recommended as the root partition is small and should get used for kernel modules or root-side essential packages only. To address this issue, Vanilla OS and Distrobox have collaborated to introduce a new package manager:- apx.
 
 Apx is a package manager created by the Vanilla OS team, which includes [Luca di Maio](https://github.com/89luca89), the creator of the popular utility - [Distrobox](https://github.com/89luca89/distrobox). Unlike traditional package managers, apx's design eliminates the barriers between different Linux distributions and package managers, allowing you to install packages from any distribution without leaving Vanilla OS. It is distro-agnostic, which means it can work on any distribution.
 
-With apx, you can install packages from any Linux distribution (Fedora, Ubuntu, Arch Linux, openSUSE, Alpine Linux, etc.) For example, you can install Lutris from Arch Linux with the following command:-
+With apx, you can install packages from any Linux distribution (Fedora, Ubuntu, Arch Linux, openSUSE, Alpine Linux, etc). For example, you can install Lutris from Arch Linux with the following command:-
 
 ```bash
 apx --aur install lutris
@@ -31,7 +31,7 @@ Thanks to the immense work on Distrobox, all the installed applications are full
 
 Apx utilizes Podman under the hood. It is a wrapper of Distrobox that creates containers where you can install and manage your applications. [Podman](https://podman.io/) is a technology increasingly used in programming for software development and distribution. 
 
-Apx's role is to let the user communicate with Distrobox through an experience similar to that of a classic package manager. Apx also allows the user to easily access the installed programs, export binaries and desktop entries, and have immediate access to all the functions of the package manager used in the container.
+Apx's role is to let the user communicate with Distrobox through an experience similar to that of a classic package manager. It also allows the user to easily access the installed programs, export binaries and desktop entries, and have immediate access to all the functions of the package manager used in the container.
 
 Simplifying, this is the schema behind: Apx -> Distrobox -> Podman -> Container.
 
