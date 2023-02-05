@@ -38,6 +38,7 @@ sudo vso trigger-update --now
 Or use ABRoot for more complex tasks like installing core packages in the root system or updating the [kernel parameters](https://documentation.vanillaos.org/docs/ABRoot/#title3).
 
 ## Useful links
+
 - [VSO documentation](https://documentation.vanillaos.org/docs/vso/manpage)
 - [VSO source code](https://github.com/Vanilla-OS/vanilla-system-operator/)
 - [ABRoot documentation](https://documentation.vanillaos.org/docs/ABRoot/)
