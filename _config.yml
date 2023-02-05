@@ -11,5 +11,7 @@ defaults:
     values:
       layout: "default"
 
+url: "https://vanillaos.org"
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
