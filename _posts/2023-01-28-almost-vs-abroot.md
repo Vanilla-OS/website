@@ -65,7 +65,7 @@ To rollback to the previous root state using ABRoot, execute the following comma
 sudo abroot rollback
 ```
 
-Note:- Any changes made in the previous root state get dropped upon executing this command.
+**Note**:- Any changes made in the previous root state get dropped upon executing this command.
 
 In conclusion, we've developed both Almost and ABRoot to achieve immutability in our systems. After evaluating both technologies, we've decided to switch from Almost to ABRoot because it provides better immutability and atomicity. We encourage others to consider using ABRoot, OSTree, or other similar solutions to achieve immutability in their systems.
 
