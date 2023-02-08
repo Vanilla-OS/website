@@ -1,9 +1,9 @@
 ---
-title: "Nix support in Apx is landed!"
+title: "Nix support in Apx has landed!"
 description: "Explore Apx's new nix flag to install packages from nix repositories."
 published: 2023-02-07
 layout: article
-published: false
+published: true
 comments: true
 ---
 
@@ -13,26 +13,26 @@ We're excited to announce that we have integrated support for the well-known Nix
 
 The Nix package manager is a package management solution from the Nix OS project. It uses a functional approach to package management, treating packages and their dependencies as a single unit that can be easily installed and managed without interfering with other packages, resulting in a more predictable and consistent system.
 
-Nix also supports rollbacks, allowing the user to revert to a previous version of a package if there are any issues with the current version. It enables multiple profiles, allowing multiple versions of a package to be installed simultaneously without affecting other packages. This makes Nix ideal for development and testing environments where multiple versions of a package may be required.
+Nix also supports rollbacks, allowing the user to revert to previous versions of a package if there are any issues with the current version. It enables multiple profiles, allowing multiple versions of packages to be installed simultaneously without affecting or causing conflicts with other packages. It is an ideal solution for development and testing environments where various versions of packages are required.
 
 ## Nix in Apx
 
-Apx has now integrated Nix, allowing users to install software from Nix repositories. Unlike other supported distributions in Apx, Nix does not use containers and instead has its own nix command, instead of the usual `--dnf, --aur`, etc.
+Nix has now integrated with apx using a flag, which allows users to install software from Nix repositories. Unlike other supported distributions in Apx, Nix does not use containers and has it's own `--nix` flag similar to the usual apx flags.
 
-Packages installed using the nix flag in Apx are located in the home directory, keeping the root clean and free from changes. This implementation requires a dedicated implementation of package management methods, which is incompatible with the existing framework.
+Packages installed using the Nix flag in Apx are located in the home directory, keeping the root clean and free from changes. This implementation requires a dedicated implementation of package management methods incompatible with the existing framework.
 
 ## Usage
 
-Before you can install packages, you need to initialize Nix:
+Before you can install packages, you need to initialize `nix` using the following command:-
 
 ```bash
-apx nix init
+apx init --nix
 ```
 
-When the procedure is completed, you can install any package from the Nix repositories like this:
+When the initialization gets completed, you can install any package from the Nix repositories using the following command:-
 
 ```bash
-apx nix install htop
+apx install --nix htop
 ```
 
-installed applications are automatically integrated into the system.
+Installed applications through `nix` are integrated automatically into the system.
