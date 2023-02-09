@@ -60,7 +60,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <h2>Play.</h2>
             <p>Your teammate by night.</p>
             <p>Play your favourite video games without worrying about setting up your devices. Vanilla OS offers the latest stable Linux kernel, ensuring support for the latest devices and the latest performance improvements.</p>
-            <p>Thanks to an integrated driver manager, your GPU will no longer be a problem, be it AMD®, Intel® or NVIDIA®, if something is missing, just open the driver manager and follow the suggestions, it's that simple.</p>
+            <p>Your GPU won't be an issue anymore thanks to an integrated driver management, whether it's an AMD®, Intel®, or NVIDIA® GPU. If a driver is missing, all you have to do is launch the driver manager and follow the instructions. <strong>It's that simple.<strong></p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInUp" src="/assets/images/home-gaming.png" alt="Vanilla OS - Gaming!" />
