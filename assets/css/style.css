@@ -1089,3 +1089,61 @@ pre.highlight {
     z-index: -1;
 }
 
+/* Contributors */
+.contributors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.contributor-item {flex: 0 1 311px;text-align: center;display: flex;flex-direction: column;gap: 20px;}
+
+.contributor-pic {
+    display: block;
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.contributor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contributor-item.card.main-company::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    background-color: #181819;
+    width: 120px;
+    height: 120px;
+    transform: rotate(45deg);
+}
+
+.contributor-fab {
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    width: 32px;
+    z-index: 2;
+}
+
+.contributor-roles {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.contributor-role {
+    background: #ededed;
+    padding: 0 15px;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+}
