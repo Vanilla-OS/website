@@ -161,6 +161,10 @@
     .mark:after {
       background-color: #6a5920;
     }
+
+    .article-wrapper blockquote {
+        background-color: #3c3c3c54;
+    }
     
     @media screen and (max-width: 1000px) {
         .topbar-navigation {
