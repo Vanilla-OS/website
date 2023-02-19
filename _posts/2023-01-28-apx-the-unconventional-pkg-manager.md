@@ -41,7 +41,7 @@ The commands of apx are similar to those of APT, the package manager adopted by 
 
 Below is the list of supported commands:-
 
-```text
+```plaintext
 Usage:
   apx [command]
 
