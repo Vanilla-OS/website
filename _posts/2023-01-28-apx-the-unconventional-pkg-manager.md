@@ -41,8 +41,7 @@ The commands of apx are similar to those of APT, the package manager adopted by 
 
 Below is the list of supported commands:-
 
-```
-Usage:
+<pre><code class="language-plaintext">Usage:
   apx [command]
 
 Available Commands:
@@ -72,7 +71,7 @@ Flags:
   -h, --help          help for apx
   -n, --name string   Create or use a custom container with this name.
   -v, --version       version for apx
-```
+</code></pre>
 
 At any time, it is possible to open a shell on the container you want and operate as if you were in that specific distribution. For example, you can type the following command to enter the Fedora container:-
 
