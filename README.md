@@ -1,6 +1,12 @@
+<div align="center">
+
 # Vanilla OS Website
 
-This page contains source code of the official Vanilla OS website.
+<sup2>This page contains source code of the official Vanilla OS website.</sup2>
+
+---
+
+</div>
 
 ## Development
 
