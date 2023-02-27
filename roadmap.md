@@ -121,7 +121,7 @@ Below are the timelines for each release of Vanilla OS, including testing versio
                 {
                     date: "26 February 2023 - in progress",
                     title: "Setting up testing infrastructure",
-                    description: "We are setting up a testing infrastructure to test the new features and bug fixes.",
+                    description: "We are setting up a testing infrastructure to test the new features and bug fixes. The base system is based on Ubuntu 23.04 Lunar.",
                     className: "timeline-green"
                 },
                 {
