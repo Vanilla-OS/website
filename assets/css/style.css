@@ -334,6 +334,7 @@ main {
     font-weight: 500;
     gap: 10px;
     flex-wrap: wrap;
+    border: 0;
 }
 
 .button:hover {
@@ -1011,6 +1012,35 @@ pre.highlight {
 
 .timeline-yellow .timeline-item-content::after {
     border-color: #ffbf48;
+}
+
+.timeline.collapsed {
+    overflow: hidden;
+    height: 230px;
+}
+
+.timeline-uncollapse {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: initial;
+    margin: 0 auto;
+    max-width: 120px;
+    z-index: 9;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timeline.collapsed::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-image: linear-gradient(0deg,#fff,transparent);
 }
 
 /* Toast */
