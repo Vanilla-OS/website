@@ -67,7 +67,7 @@ a {
     border-bottom: 1px dotted #282828;
 }
 
-a:hover {
+a:not(.button):hover {
     color: #000;
     border-bottom: 1px solid #000;
 }
@@ -163,7 +163,7 @@ main {
 }
 
 .topbar-navigation a:hover,.topbar-navigation a.active {
-    font-weight: 500;
+    font-weight: 600;
     border-color: black;
 }
 
@@ -324,7 +324,7 @@ main {
 .button {
     left: 0px;
     top: 0px;
-    background: #000000;
+    background: #101010;
     border-radius: 28px;
     display: flex;
     color: #fff;
@@ -335,10 +335,13 @@ main {
     gap: 10px;
     flex-wrap: wrap;
     border: 0;
+    outline: 4px solid transparent;
+    outline-offset: 2px;
 }
 
 .button:hover {
     color: #fff;
+    outline-color: #00000023;
 }
 
 .button:focus {
@@ -1021,7 +1024,7 @@ pre.highlight {
 
 .timeline-uncollapse {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     top: initial;
