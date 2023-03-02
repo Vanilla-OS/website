@@ -13,7 +13,10 @@ difference is the level of support and stability.
 
 ## Timeline
 
-Below are the timelines for each release of Vanilla OS, including testing versions.
+Below are the timelines for each release of Vanilla OS, including testing 
+versions. Those are not all the tasks, but rather the most important ones,
+every release will have a lot of other tasks that are not listed here, like
+bug fixes, translations, qol improvements, etc.
 
 ### 2.0 Orchid (testing)
 
@@ -100,12 +103,6 @@ Below are the timelines for each release of Vanilla OS, including testing versio
     generateTimeline(
         {
             events: [
-                {
-                    date: "No date yet",
-                    title: "ABRoot OCI support",
-                    description: "We are working on adding OCI support to ABRoot.",
-                    className: "timeline-grayed"
-                },
                 {
                     date: "No date yet",
                     title: "GNOME 44",
