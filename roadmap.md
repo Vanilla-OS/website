@@ -123,7 +123,7 @@ bug fixes, translations, qol improvements, etc.
                 {
                     date: "26 February 2023 - in progress",
                     title: "Setting up testing infrastructure",
-                    description: "We are setting up a testing infrastructure to test the new features and bug fixes. The base system is based on Ubuntu 23.04 Lunar.",
+                    description: "We are setting up a testing infrastructure to test the new features and bug fixes. The base system is based on Debian sid.",
                     className: "timeline-green"
                 },
                 {
