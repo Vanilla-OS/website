@@ -105,6 +105,11 @@ bug fixes, translations, qol improvements, etc.
             events: [
                 {
                     date: "No date yet",
+                    title: "ABRoot OCI support",
+                    description: "We are working on adding OCI support to ABRoot.",
+                    className: "timeline-grayed"
+                },
+                {
                     title: "GNOME 44",
                     description: "Vanilla OS 2.0 will be based on GNOME 44 (not guaranteed).",
                     className: "timeline-grayed"
