@@ -67,7 +67,7 @@ a {
     border-bottom: 1px dotted #282828;
 }
 
-a:not(.button):not(.logo):hover {
+a:not(.button):not(.logo):not(.hero-scroll):hover {
     color: #000;
     border-bottom: 1px solid #000;
 }

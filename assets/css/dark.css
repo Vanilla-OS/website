@@ -23,6 +23,11 @@
         color: #fff;
     }
 
+    a:not(.button):not(.logo):not(.hero-scroll):hover {
+        color: #FFF;
+        border-bottom: 1px solid #FFF;
+    }
+
     a:hover {
         color: #fbbe4e;
     }
