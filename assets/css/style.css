@@ -115,6 +115,10 @@ main {
     padding: 0 20px;
 }
 
+.container.small {
+    max-width: 800px;
+}
+
 /* Topbar */
 .topbar {
     padding: 25px 0;
@@ -1180,3 +1184,22 @@ pre.highlight {
     border-radius: 6px;
     font-weight: 500;
 }
+
+/* Float */
+.float.card {
+    padding: 3px;
+    font-size: 19px;
+    background-color: #fae5ab;
+    max-width: 800px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto 30px;
+    z-index: 9;
+}
+
+.float.card a {
+    font-weight: 600;
+}
+  

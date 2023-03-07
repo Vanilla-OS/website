@@ -2,6 +2,12 @@
 title: 
 description: Vanilla OS is an Immutable Linux-based distribution which aims to provide a vanilla GNOME experience.
 ---
+<div class="container small">
+    <div class="float card bounce">
+        <p>Meet us at <a href="https://www.socallinuxexpo.org/scale/20x">Southern California Linux Expo in March 9-12</a>. Free stickers!</p>
+    </div>
+</div>
+
 <div class="hero hero-center hero-main">
     <div class="container hero-wrapper">
         <div class="hero-image animate__animated animate__fadeIn" data-scroll>

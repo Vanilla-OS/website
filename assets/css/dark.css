@@ -178,6 +178,14 @@
     .article-wrapper blockquote {
         background-color: #3c3c3c54;
     }
+
+    .float.card {
+        background-color: #564f3a;
+    }
+    
+    .float.card a {
+        border-bottom-color: #fff;
+    }
     
     @media screen and (max-width: 1000px) {
         .topbar-navigation {
