@@ -177,7 +177,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                 </div>
                 <div class="logo-carousel-item">
                     <a href="https://distrobox.privatedns.org/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/distrobox.png" alt="Distrobox" />
+                        <img src="/assets/images/logos/distrobox.svg" alt="Distrobox" />
                     </a>
                 </div>
                 <div class="logo-carousel-item">
