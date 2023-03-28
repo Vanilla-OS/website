@@ -105,26 +105,27 @@ bug fixes, translations, qol improvements, etc.
             events: [
                 {
                     date: "No date yet",
-                    title: "ABRoot OCI support",
-                    description: "We are working on adding OCI support to ABRoot.",
+                    title: "GNOME 44",
+                    description: "Vanilla OS 2.0 will be based on GNOME 44 (not guaranteed).",
                     className: "timeline-grayed"
                 },
                 {
-                    title: "GNOME 44",
-                    description: "Vanilla OS 2.0 will be based on GNOME 44 (not guaranteed).",
+                    date: "No date yet",
+                    title: "ABRoot OCI support",
+                    description: "We are working on adding OCI support to ABRoot.",
                     className: "timeline-grayed"
                 },
                 {
                     date: "March 2023",
                     title: "OEM Support",
                     description: "We are working on adding OEM support to Vanilla OS.",
-                    className: "timeline-grayed"
+                    className: "timeline-green"
                 },
                 {
                     date: "26 February 2023 - in progress",
                     title: "Setting up testing infrastructure",
                     description: "We are setting up a testing infrastructure to test the new features and bug fixes. The base system is based on Debian sid.",
-                    className: "timeline-green"
+                    className: "timeline-dimmed-green"
                 },
                 {
                     date: "25 February 2023",
