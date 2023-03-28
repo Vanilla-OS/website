@@ -7,9 +7,6 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-image animate__animated animate__fadeIn" data-scroll>
             <img src="/assets/images/home-laptop.svg" alt="Vanilla OS - Showcase" class="on-light" />
             <img src="/assets/images/home-laptop-dark.svg" alt="Vanilla OS - Showcase" class="on-dark" />
-            <!-- <video class="hero-image-video-frame" autoplay loop muted playsinline>
-                <source src="/assets/videos/home-gnome-showcase.webm" type="video/webm">
-            </video> -->
         </div>
         <div class="hero-text">
             <!-- <a href="{{ site.url }}/download/" class="button button-large">
