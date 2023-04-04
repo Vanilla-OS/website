@@ -101,6 +101,7 @@ description: Meet the people behind Vanilla OS
       ],
       main_company: false
     },
+    {
       github_username: "orowith2os",
       name: "Dallas Strouse",
       roles: [
