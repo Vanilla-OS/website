@@ -15,31 +15,31 @@ We received more submissions, but only 3 of them met the requirements. Here they
 
 ### 1. by 4e6anenk0
 
-| ![4e6anenk0](/assets/uploads/WWC2022/4e6anenk0-light.png) | 
+| ![A snowy taiga with a shooting star-like Vanilla OS logo in place of the star in daylight.](/assets/uploads/WWC2022/4e6anenk0-light.png) | 
 |:--:| 
 | *Light variant* |
 
-| ![4e6anenk0](/assets/uploads/WWC2022/4e6anenk0-dark.png) | 
+| ![A melting snowy taiga with a shooting star-like Vanilla OS logo in place of the star at night.](/assets/uploads/WWC2022/4e6anenk0-dark.png) | 
 |:--:| 
 | *Dark variant* |
 
 ### 2. by conquodS
 
-| ![conquodS](/assets/uploads/WWC2022/conquodS-light.png) | 
+| ![A snowy taiga with dead trees spanning the view in daylight.](/assets/uploads/WWC2022/conquodS-light.png) | 
 |:--:| 
 | *Light variant* |
 
-| ![conquodS](/assets/uploads/WWC2022/conquodS-dark.png) | 
+| ![A snowy taiga with dead trees spanning the view at night.](/assets/uploads/WWC2022/conquodS-dark.png) | 
 |:--:| 
 | *Dark variant* |
 
 ### 3. by kramo
 
-| ![kramo](/assets/uploads/WWC2022/kramo-light.png) | 
+| ![A frozen lake in a taiga in daylight.](/assets/uploads/WWC2022/kramo-light.png) | 
 |:--:| 
 | *Light variant* |
 
-| ![kramo](/assets/uploads/WWC2022/kramo-dark.png) | 
+| ![A frozen lake in a taiga at night.](/assets/uploads/WWC2022/kramo-dark.png) | 
 |:--:| 
 | *Dark variant* |
 
