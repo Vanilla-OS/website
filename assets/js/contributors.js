@@ -14,6 +14,9 @@ function displayContributors(contributors) {
                 <a href="https://github.com/${contributor.github_username}">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
+                <a href="{contributor.fediverselink}">
+                    <ion-icon name="logo-fediverse"<ion-icon>
+                <a>
                 ${contributor.main_company ? '<a class="contributor-fab" href="https://fabricators.ltd"><img src="assets/images/fabricators-logo.png" alt="Works at fabricators.ltd" title="Works at fabricators.ltd"></a>' : ''}
             </div>
         `;
