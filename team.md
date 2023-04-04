@@ -100,6 +100,14 @@ description: Meet the people behind Vanilla OS
         "Illustrator"
       ],
       main_company: false
+    },
+    {
+      github_username: "orowith2os",
+      name: "Dallas Strouse",
+      roles: [
+        "Website Accessibility"
+      ],
+      main_company: false
     }
   ];
   

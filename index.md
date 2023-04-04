@@ -46,7 +46,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <p>Thanks to a wide range of applications, Vanilla OS is ready to meet your needs, whether you are a developer, a designer, a student or a simple user.</p>
         </div>
         <div class="hero-image" data-scroll>
-            <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-rnote.png" alt="Vanilla OS - Rnote!" />
+            <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-rnote.png" alt="" />
         </div>
     </div>
 </div>
@@ -60,7 +60,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <p>Your GPU won't be an issue anymore thanks to an integrated driver management, whether it's an AMD®, Intel®, or NVIDIA® GPU. If a driver is missing, all you have to do is launch the driver manager and follow the instructions. <b>It's that simple.</b></p>
         </div>
         <div class="hero-image" data-scroll>
-            <img class="animate-on-scroll" data-animation="fadeInUp" src="/assets/images/home-gaming.png" alt="Vanilla OS - Gaming!" />
+            <img class="animate-on-scroll" data-animation="fadeInUp" src="/assets/images/home-gaming.png" alt="" />
         </div>
     </div>
 </div>
@@ -68,7 +68,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
 <div class="hero hero-center hero-bg-text">
     <div class="hero-text">
         <div class="hero-image" data-scroll>
-            <img class="animate-on-scroll" data-animation="fadeIn" src="/assets/images/home-apps.png" alt="Vanilla OS - Apps!" />
+            <img class="animate-on-scroll" data-animation="fadeIn" src="/assets/images/home-apps.png" alt="" />
             <div class="hero-text">
                 <h2>Complete.</h2>
                 <p>Access a large catalogue of applications.</p>
@@ -86,7 +86,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <p>At the first start you can choose which package format to use in Vanilla OS (Flatpak, Snap, Appimage ..), you choose and Vanilla OS will take care of the rest, putting you in the situation to start without problems.</p>
         </div>
         <div class="hero-image" data-scroll>
-            <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-pkgs.png" alt="Vanilla OS - Package Managers!" />
+            <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-pkgs.png" alt="" />
         </div>
     </div>
 </div>
@@ -104,7 +104,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             </a>
         </div>
         <div class="hero-image" data-scroll>
-            <img class="animate-on-scroll" data-animation="fadeInLeft" src="/assets/images/home-desk-apx.svg" alt="Vanilla OS - Immutable!" />
+            <!-- This description here is both informative and decorative; it probably makes sense to provide some alt text rather than hiding it from screen readers. -->
+            <img class="animate-on-scroll" data-animation="fadeInLeft" src="/assets/images/home-desk-apx.svg" alt="A simple terminal app showing the commands “apx install nice-stuff” and “abroot exec apt install nice-stuff” />
         </div>
     </div>
 </div>
@@ -199,32 +200,32 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <div class="media-carousel">
                 <div class="media-carousel-item">
                     <a href="https://www.zdnet.com/article/vanilla-os-offers-a-new-take-on-security-for-the-linux-desktop/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/media/zdnet.svg" alt="ZDNet" />
+                        <img src="/assets/images/logos/media/zdnet.svg" alt="ZDNet: “If you're looking for a new operating system that takes security seriously ... Vanilla OS might be just the ticket.”" />
                         <p>If you're looking for a new operating system that takes security seriously… Vanilla OS might be just the ticket.</p>
                     </a>
                 </div>
                 <div class="media-carousel-item">
                     <a href="https://www.theregister.com/2023/01/03/vanilla_os_2210/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/media/the_register.svg" alt="The Register" />
+                        <img src="/assets/images/logos/media/the_register.svg" alt="The Register: “Vanilla OS is going for bigger, bolder improvement to the Linux desktop... it could prove transformative to the Linux industry...”" />
                         <p>Vanilla OS is going for bigger, bolder improvement to the Linux desktop… it could prove transformative to the Linux industry… </p>
                     </a>
                 </div>
                 <div class="media-carousel-item">
                     <a href="https://www.techrepublic.com/article/vanilla-os-linux-desktop/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/media/techrepublic-logo.svg" alt="ABRoot" />
+                        <img src="/assets/images/logos/media/techrepublic-logo.svg" alt="Tech Republic: “This will be a project you’ll want to keep a close watch on... I think Vanilla OS could be a real game-changer.”" />
                         <p>This will be a project you’ll want to keep a close watch on… I think Vanilla OS could be a real game-changer.</p>
                     </a>
                 </div>
                 <div class="media-carousel-new-line"></div>
                 <div class="media-carousel-item">
                     <a href="https://www.omglinux.com/vanilla-os-first-release-download/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/media/omg-linux.png" alt="OMG! Linux" />
+                        <img src="/assets/images/logos/media/omg-linux.png" alt="OMG! Linux: “Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.”" />
                         <p>Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.</p>
                     </a>
                 </div>
                 <div class="media-carousel-item">
                     <a href="https://news.itsfoss.com/vanilla-os-release/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/media/itsfoss-logo.webp" alt="It's FOSS" />
+                        <img src="/assets/images/logos/media/itsfoss-logo.webp" alt="It's FOSS: “Being a new distro, Vanilla OS has a well-equipped feature set that you might like.”" />
                         <p>Being a new distro, Vanilla OS has a well-equipped feature set that you might like.</p>
                     </a>
                 </div>
