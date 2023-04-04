@@ -50,7 +50,7 @@ By default, Apx provides a container based on your Linux distribution (Ubuntu
 22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
 package manager (apt for Ubuntu).
 
-![The "apx enter" command entering an Ubuntu 22.10 container, with the ouput of "cat /etc/os-release".](/assets/uploads/vanilla-os-apx.png)
+![The "apx enter" command entering an Ubuntu 22.10 container, with the output of "cat /etc/os-release".](/assets/uploads/vanilla-os-apx.png)
 
 Nevertheless, you can install packages from other package distributions. For 
 example, using the `--aur` flag, a new container based on Arch Linux will be 
@@ -60,7 +60,7 @@ will create a new container based on Fedora Linux. Here, apx will manage
 packages from Fedora’s DNF repository, tightly integrating them with the host 
 system.
 
-![The Vanilla Control Center showing the list of installed applications in a "Sub System" tab, "htop". There are also "Drivers" and "Updates" tabs.](/assets/uploads/vanilla-os-apx-control-center.png)
+![Vanilla Control Center showing the list of installed applications in a "Sub System" tab, "htop". There are also "Drivers" and "Updates" tabs.](/assets/uploads/vanilla-os-apx-control-center.png)
 
 Graphical applications installed inside apx containers are automatically added 
 to the Applications menu as well as the “Open with” menu in the file manager. 
