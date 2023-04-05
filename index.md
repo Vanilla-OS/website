@@ -139,7 +139,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                 {% capture title %} Why not a rolling release? {% endcapture %}
                 {% capture answer %}
                     <p>Vanilla OS aims to be a stable and compatible distribution, and Ubuntu is a distribution that respects our design philosophies.</p>
-                    <p>Thanks to Flatpak, Nix and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
+                    <p>Thanks to Flatpak, Nix, and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
                 {% endcapture %}
                 {% include accordion-item.html title=title text=answer %}
 
