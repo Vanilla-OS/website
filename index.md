@@ -105,7 +105,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         </div>
         <div class="hero-image" data-scroll>
             <!-- This description here is both informative and decorative; it probably makes sense to provide some alt text rather than hiding it from screen readers. -->
-            <img class="animate-on-scroll" data-animation="fadeInLeft" src="/assets/images/home-desk-apx.svg" alt="A simple terminal app showing the commands “apx install nice-stuff” and “abroot exec apt install nice-stuff” />
+            <img class="animate-on-scroll" data-animation="fadeInLeft" src="/assets/images/home-desk-apx.svg" alt="A simple terminal app showing the commands “apx install nice-stuff” and “abroot exec apt install nice-stuff”" />
         </div>
     </div>
 </div>
