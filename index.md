@@ -83,7 +83,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <h2>Choice.</h2>
             <p>Your system, your choices.</p>
             <p>Vanilla OS is an operating system that respects your choices, you are in control, always.</p>
-            <p>At the first start you can choose which package format to use in Vanilla OS (Flatpak, Snap, Appimage ..), you choose and Vanilla OS will take care of the rest, putting you in the situation to start without problems.</p>
+            <p>At the first start you can choose which package format to use in Vanilla OS (Flatpak, Nix, Appimage ..), you choose and Vanilla OS will take care of the rest, putting you in the situation to start without problems.</p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-pkgs.png" alt="" />
@@ -139,7 +139,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                 {% capture title %} Why not a rolling release? {% endcapture %}
                 {% capture answer %}
                     <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
-                    <p>Thanks to Flatpak, Snap and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
+                    <p>Thanks to Flatpak, Nix and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
                 {% endcapture %}
                 {% include accordion-item.html title=title text=answer %}
 
