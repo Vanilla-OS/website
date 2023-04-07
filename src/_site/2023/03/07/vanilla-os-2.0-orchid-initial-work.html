@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS Vanilla OS 2.0 Orchid - Initial Work</title>
+<meta name="description" content="We are happy to announce Vanilla OS 2.0 Orchid! With significant changes that we'd like to go over, like changing the base to Debian Sid, OCI support in ABRoot and more.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       blog
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>Vanilla OS 2.0 Orchid - Initial Work</h2>
+            <p>We are happy to announce Vanilla OS 2.0 Orchid! With significant changes that we'd like to go over, like changing the base to Debian Sid, OCI support in ABRoot and more.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page article">
+    <div class="container article-wrapper">
+        <h2 id="moving-to-debian-sid">Moving to Debian Sid</h2>
+
+<p>After discussions and considerations, we decided to move away from Ubuntu and base our distribution on Debian Sid.</p>
+
+<p>For this reason, we changed the version name and codename, starting with <strong>2.0 Orchid</strong>. We have decided to use Orchid as the codename, as <a href="https://en.wikipedia.org/wiki/Vanilla">Vanilla derives from Orchids</a>.</p>
+
+<p>There are a few reasons we switched to Debian Sid:-</p>
+
+<ol>
+  <li>It is closer to a vanilla experience than in Ubuntu. There were efforts to revert Canonical’s opinionated workflow, but it was time-consuming. It forced us to focus on reverting these changes. Ubuntu provides a modified version of the GNOME desktop, which does not match how GNOME envisions its desktop. One of the high-level goals of Vanilla OS is to be as <em>vanilla</em> as possible, so we reverted many of these changes to reach that goal.</li>
+  <li>There is no strong opinion on application distribution. Snap is the primary method to get apps on Ubuntu. Based on our testing and many sources online, there are a lot of issues that Snap hasn’t addressed currently, like slow startups, centralization, etc. We prefer to push open and cross-organization efforts, like Flatpak. Our switch to Debian Sid will also address a core issue brought to us by many in our community, that most native applications installed in apx’s Ubuntu container are a Snap transitional package, which doesn’t work inside the container.</li>
+  <li>We get more flexibility in releasing updates with the switch. We didn’t have much flexibility in publishing Vanilla OS releases before, as we needed to follow Ubuntu’s release cadence.</li>
+  <li>We are already familiar with deb packages and Debian.</li>
+</ol>
+
+<p>So, how will we release updates?</p>
+
+<p>Updates will be released whenever we deem them ready or when it is essential or critical (like security updates).</p>
+
+<p>However, there were a few concerns regarding the switch, so we are taking a specific approach to address them.</p>
+
+<h3 id="security-and-stability">Security and Stability</h3>
+
+<p>Some issues with rebasing to a rolling release model and using it as a point release model are increasing security risks and potentially decreasing stability.</p>
+
+<p>We decided to limit the number of packages we ship directly to the user as much as possible to decrease the overall footprint. Vanilla OS provides a small base (excluding A/B partitions) and strongly encourages alternative technologies like apx, Distrobox, Nix and Flatpak. We will be referring to <a href="https://www.debian.org/security/#DSAS">Debian Security Advisories</a>.</p>
+
+<p>Likewise, for stability, the limited amount of core packages shipped to the user means that we will only be testing the base image, as it is the only one officially supported.</p>
+
+<p>If we run into stability and security issues down the line, then we will reconsider our decision.</p>
+
+<h2 id="oci-support-in-abroot">OCI Support in ABRoot</h2>
+
+<p>We are introducing OCI support in ABRoot. It means we will have greater control over updates, with more time to test the images before a release. Updates will take care of downloading and extracting the update, avoiding the usage of the package manager and ensuring an exact copy of the system while still maintaining the changes imposed by the user. It means you will have a more stable and reliable system without compromises.</p>
+
+<h2 id="installation-and-post-installation">Installation and Post-installation</h2>
+
+<p>For a seamless installation experience, we have added “Express” and “Advanced” setup types.</p>
+
+<p>Express provides an intuitive and straightforward process that lets you set up Vanilla OS quickly while the setup take care of the critical tasks for you.</p>
+
+<p>Advanced setup is for tinkerers and users who need a customized installation for their use cases and workflows.</p>
+
+<p>We have improved the setup to allow users to configure their accounts and preferences. It means the user can set up their name, username and password from a pre-installed Vanilla OS system the first time they boot into it instead of making the OEM do it for them.</p>
+
+<h2 id="gnome-44">GNOME 44</h2>
+
+<p>We intend to distribute GNOME 44 in the next version of Vanilla OS, but this may depend on any slowdowns in the release by GNOME and the packaging of some libraries on Debian. We will then evaluate whether it will be possible to package GNOME 44 on our own and contribute to Debian if necessary.</p>
+
+<h2 id="kernel-6">Kernel 6+</h2>
+
+<p>This release will be shipped with Debian’s 6+ kernel, ensuring compatibility with the latest devices and peripherals.</p>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS Nix support in Apx has landed!</title>
+<meta name="description" content="Explore Apx's new nix flag to install packages from nix repositories.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       blog
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>Nix support in Apx has landed!</h2>
+            <p>Explore Apx's new nix flag to install packages from nix repositories.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page article">
+    <div class="container article-wrapper">
+        <p>We’re excited to announce that we have integrated support for the well-known Nix package manager into Apx, enabling users to install packages from Nix repositories.</p>
+
+<h2 id="introduction-to-nix">Introduction to Nix</h2>
+
+<p>The Nix package manager is a package management solution from the Nix OS project. It uses a functional approach to package management, treating packages and their dependencies as a single unit that can be easily installed and managed without interfering with other packages, resulting in a more predictable and consistent system.</p>
+
+<p>Nix also supports rollbacks, allowing the user to revert to previous versions of a package if there are any issues with the current version. It enables multiple profiles, allowing multiple versions of packages to be installed simultaneously without affecting or causing conflicts with other packages. It is an ideal solution for development and testing environments where various versions of packages are required.</p>
+
+<h2 id="nix-in-apx">Nix in Apx</h2>
+
+<p>Nix has now integrated with apx using a flag, which allows users to install software from Nix repositories. Unlike other supported distributions in Apx, Nix does not use containers and has it’s own <code class="language-plaintext highlighter-rouge">--nix</code> flag similar to the usual apx flags.</p>
+
+<p>Packages installed using the Nix flag in Apx are located in the home directory, keeping the root clean and free from changes. This implementation requires a dedicated implementation of package management methods incompatible with the existing framework.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Before you can install packages, you need to initialize <code class="language-plaintext highlighter-rouge">nix</code> using the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx init <span class="nt">--nix</span>
+</code></pre></div></div>
+
+<p>When the initialization gets completed, you can install any package from the Nix repositories using the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx <span class="nb">install</span> <span class="nt">--nix</span> htop
+</code></pre></div></div>
+
+<p>Installed applications through <code class="language-plaintext highlighter-rouge">nix</code> are integrated automatically into the system.</p>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

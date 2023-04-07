@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-05T12:29:20-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vanilla OS</title><author><name>Vanilla OS Contributors</name></author><entry><title type="html">Vanilla OS 2.0 Orchid - Initial Work</title><link href="http://localhost:4000/2023/03/07/vanilla-os-2.0-orchid-initial-work.html" rel="alternate" type="text/html" title="Vanilla OS 2.0 Orchid - Initial Work" /><published>2023-03-07T00:00:00-05:00</published><updated>2023-03-07T00:00:00-05:00</updated><id>http://localhost:4000/2023/03/07/vanilla-os-2.0-orchid-initial-work</id><content type="html" xml:base="http://localhost:4000/2023/03/07/vanilla-os-2.0-orchid-initial-work.html"><![CDATA[<h2 id="moving-to-debian-sid">Moving to Debian Sid</h2>
+
+<p>After discussions and considerations, we decided to move away from Ubuntu and base our distribution on Debian Sid.</p>
+
+<p>For this reason, we changed the version name and codename, starting with <strong>2.0 Orchid</strong>. We have decided to use Orchid as the codename, as <a href="https://en.wikipedia.org/wiki/Vanilla">Vanilla derives from Orchids</a>.</p>
+
+<p>There are a few reasons we switched to Debian Sid:-</p>
+
+<ol>
+  <li>It is closer to a vanilla experience than in Ubuntu. There were efforts to revert Canonical’s opinionated workflow, but it was time-consuming. It forced us to focus on reverting these changes. Ubuntu provides a modified version of the GNOME desktop, which does not match how GNOME envisions its desktop. One of the high-level goals of Vanilla OS is to be as <em>vanilla</em> as possible, so we reverted many of these changes to reach that goal.</li>
+  <li>There is no strong opinion on application distribution. Snap is the primary method to get apps on Ubuntu. Based on our testing and many sources online, there are a lot of issues that Snap hasn’t addressed currently, like slow startups, centralization, etc. We prefer to push open and cross-organization efforts, like Flatpak. Our switch to Debian Sid will also address a core issue brought to us by many in our community, that most native applications installed in apx’s Ubuntu container are a Snap transitional package, which doesn’t work inside the container.</li>
+  <li>We get more flexibility in releasing updates with the switch. We didn’t have much flexibility in publishing Vanilla OS releases before, as we needed to follow Ubuntu’s release cadence.</li>
+  <li>We are already familiar with deb packages and Debian.</li>
+</ol>
+
+<p>So, how will we release updates?</p>
+
+<p>Updates will be released whenever we deem them ready or when it is essential or critical (like security updates).</p>
+
+<p>However, there were a few concerns regarding the switch, so we are taking a specific approach to address them.</p>
+
+<h3 id="security-and-stability">Security and Stability</h3>
+
+<p>Some issues with rebasing to a rolling release model and using it as a point release model are increasing security risks and potentially decreasing stability.</p>
+
+<p>We decided to limit the number of packages we ship directly to the user as much as possible to decrease the overall footprint. Vanilla OS provides a small base (excluding A/B partitions) and strongly encourages alternative technologies like apx, Distrobox, Nix and Flatpak. We will be referring to <a href="https://www.debian.org/security/#DSAS">Debian Security Advisories</a>.</p>
+
+<p>Likewise, for stability, the limited amount of core packages shipped to the user means that we will only be testing the base image, as it is the only one officially supported.</p>
+
+<p>If we run into stability and security issues down the line, then we will reconsider our decision.</p>
+
+<h2 id="oci-support-in-abroot">OCI Support in ABRoot</h2>
+
+<p>We are introducing OCI support in ABRoot. It means we will have greater control over updates, with more time to test the images before a release. Updates will take care of downloading and extracting the update, avoiding the usage of the package manager and ensuring an exact copy of the system while still maintaining the changes imposed by the user. It means you will have a more stable and reliable system without compromises.</p>
+
+<h2 id="installation-and-post-installation">Installation and Post-installation</h2>
+
+<p>For a seamless installation experience, we have added “Express” and “Advanced” setup types.</p>
+
+<p>Express provides an intuitive and straightforward process that lets you set up Vanilla OS quickly while the setup take care of the critical tasks for you.</p>
+
+<p>Advanced setup is for tinkerers and users who need a customized installation for their use cases and workflows.</p>
+
+<p>We have improved the setup to allow users to configure their accounts and preferences. It means the user can set up their name, username and password from a pre-installed Vanilla OS system the first time they boot into it instead of making the OEM do it for them.</p>
+
+<h2 id="gnome-44">GNOME 44</h2>
+
+<p>We intend to distribute GNOME 44 in the next version of Vanilla OS, but this may depend on any slowdowns in the release by GNOME and the packaging of some libraries on Debian. We will then evaluate whether it will be possible to package GNOME 44 on our own and contribute to Debian if necessary.</p>
+
+<h2 id="kernel-6">Kernel 6+</h2>
+
+<p>This release will be shipped with Debian’s 6+ kernel, ensuring compatibility with the latest devices and peripherals.</p>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[We are happy to announce Vanilla OS 2.0 Orchid! With significant changes that we'd like to go over, like changing the base to Debian Sid, OCI support in ABRoot and more.]]></summary></entry><entry><title type="html">Nix support in Apx has landed!</title><link href="http://localhost:4000/2023/02/07/apx-now-supports-nix-packages.html" rel="alternate" type="text/html" title="Nix support in Apx has landed!" /><published>2023-02-07T00:00:00-05:00</published><updated>2023-02-07T00:00:00-05:00</updated><id>http://localhost:4000/2023/02/07/apx-now-supports-nix-packages</id><content type="html" xml:base="http://localhost:4000/2023/02/07/apx-now-supports-nix-packages.html"><![CDATA[<p>We’re excited to announce that we have integrated support for the well-known Nix package manager into Apx, enabling users to install packages from Nix repositories.</p>
+
+<h2 id="introduction-to-nix">Introduction to Nix</h2>
+
+<p>The Nix package manager is a package management solution from the Nix OS project. It uses a functional approach to package management, treating packages and their dependencies as a single unit that can be easily installed and managed without interfering with other packages, resulting in a more predictable and consistent system.</p>
+
+<p>Nix also supports rollbacks, allowing the user to revert to previous versions of a package if there are any issues with the current version. It enables multiple profiles, allowing multiple versions of packages to be installed simultaneously without affecting or causing conflicts with other packages. It is an ideal solution for development and testing environments where various versions of packages are required.</p>
+
+<h2 id="nix-in-apx">Nix in Apx</h2>
+
+<p>Nix has now integrated with apx using a flag, which allows users to install software from Nix repositories. Unlike other supported distributions in Apx, Nix does not use containers and has it’s own <code class="language-plaintext highlighter-rouge">--nix</code> flag similar to the usual apx flags.</p>
+
+<p>Packages installed using the Nix flag in Apx are located in the home directory, keeping the root clean and free from changes. This implementation requires a dedicated implementation of package management methods incompatible with the existing framework.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Before you can install packages, you need to initialize <code class="language-plaintext highlighter-rouge">nix</code> using the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx init <span class="nt">--nix</span>
+</code></pre></div></div>
+
+<p>When the initialization gets completed, you can install any package from the Nix repositories using the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx <span class="nb">install</span> <span class="nt">--nix</span> htop
+</code></pre></div></div>
+
+<p>Installed applications through <code class="language-plaintext highlighter-rouge">nix</code> are integrated automatically into the system.</p>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[Explore Apx's new nix flag to install packages from nix repositories.]]></summary></entry><entry><title type="html">Vanilla OS Core - A minimal and clean base</title><link href="http://localhost:4000/2023/02/03/vanilla-os-core.html" rel="alternate" type="text/html" title="Vanilla OS Core - A minimal and clean base" /><published>2023-02-03T00:00:00-05:00</published><updated>2023-02-03T00:00:00-05:00</updated><id>http://localhost:4000/2023/02/03/vanilla-os-core</id><content type="html" xml:base="http://localhost:4000/2023/02/03/vanilla-os-core.html"><![CDATA[<p>We have chosen the GNOME desktop environment as the default in Vanilla OS. To cater to the diverse needs of users, we are developing Vanilla OS Core (a minimal and clean base that provides the necessary components for an operating system without the desktop environment and without losing all the benefits of the Vanilla OS core components).</p>
+
+<h2 id="flavors">Flavors</h2>
+
+<p>The purpose of Vanilla OS Core is to serve as a foundation for various Vanilla OS flavours, each designed to meet the specific needs of different users.</p>
+
+<p>It is important to note that the default desktop environment for the original version of Vanilla OS will always be GNOME. With alternative options offered as various flavours, it is crucial to maintain the integrity and quality of the Vanilla OS project. To ensure consistency and provide a unified experience few guidelines are to be followed by each flavour to be considered official.</p>
+
+<p>The following is a preview of the guidelines under consideration:</p>
+
+<ul>
+  <li>The name must follow the pattern <code class="language-plaintext highlighter-rouge">Vanilla OS &lt;Flavor Name&gt; Edition</code>, for example, Vanilla OS KDE Edition.</li>
+  <li>It must be based on Vanilla OS-Core.</li>
+  <li>It must not make any modifications to the core components of Vanilla OS-Core.</li>
+  <li>It must be available for all architectures supported by Vanilla OS Core (currently only amd64).</li>
+  <li>Essential graphical applications like the Vanilla Control Center, First Setup and Upgrade Utility must be rewritten to follow the guidelines and toolkit of the chosen desktop environment for the flavour. On the other hand, the installer can be an existing one that respects the UX of the desktop environment (e.g. Calamares for KDE).</li>
+  <li>The features of Vanilla OS integrating with the desktop environment are recommended to be implemented in the new flavour.</li>
+  <li>The flavour must include all default applications as in the original Vanilla OS (such as a browser and file manager).</li>
+  <li>The desktop environment should be in its original “vanilla” form without custom themes or icons. This exception applies to flavours featuring a window manager like Openbox or i3.</li>
+</ul>
+
+<p>All of these guidelines are still under discussion, particularly the first one. More of these guidelines will get added here in future.</p>
+
+<h3 id="kde">KDE</h3>
+
+<p>The first flavour to get developed is Vanilla OS KDE Edition, featuring the vanilla KDE Plasma desktop environment. Development has not yet begun, but plans are to start work this year.</p>
+
+<p>Want to join the development team? Reach us on <a href="https://discord.gg/3cD2Q7Ht3S">Discord</a>.</p>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[An introduction to Vanilla OS Core, a minimal Vanilla OS base.]]></summary></entry><entry><title type="html">Point vs Rolling Release and the modern solutions</title><link href="http://localhost:4000/2023/02/01/pro-cons-rolling-point-release.html" rel="alternate" type="text/html" title="Point vs Rolling Release and the modern solutions" /><published>2023-02-01T00:00:00-05:00</published><updated>2023-02-01T00:00:00-05:00</updated><id>http://localhost:4000/2023/02/01/pro-cons-rolling-point-release</id><content type="html" xml:base="http://localhost:4000/2023/02/01/pro-cons-rolling-point-release.html"><![CDATA[<p>In the world of Linux distributions, there are <strong>Point releases</strong> (fixed releases) and <strong>Rolling releases</strong> (continuous releases). Each type of release has its advantages and disadvantages.</p>
+
+<h2 id="point-releases">Point releases</h2>
+
+<p>Point releases are well known for their stability. When a point release is released, it has gone through rigorous testing, ensuring that the user will experience fewer bugs and issues, making the overall experience more stable. Those releases also receive security updates, which is crucial in today’s world of online threats.</p>
+
+<p>Furthermore, point releases are easier to support since they are a fixed version, making it easier for the community to troubleshoot and resolve any issues that arise in the future, which is an advantage for those who need a stable and reliable operating system, such as businesses or professionals.</p>
+
+<p>However, point releases have their disadvantages. A major one is that they tend to receive updates later than other distributions. This is a result of them usually being more focused on stability, together with updates geting tested thoroughly before being released. That’s why users of point-release distributions often have to wait longer to get new software packages or features.</p>
+
+<p>Some examples of point releases are <a href="https://vanillaos.org/">Vanilla OS</a>, <a href="https://ubuntu.com">Ubuntu</a> and <a href="https://www.debian.org/">Debian</a>.</p>
+
+<h2 id="rolling-releases">Rolling releases</h2>
+
+<p>Rolling releases provide a more up-to-date experience. With a rolling release, users can receive updates as soon as they are available, which means that users always have access to the latest software and features. It is a crucial advantage for those who want to use the latest technology or require cutting edge packages. Rolling releases also provide the latest security updates.</p>
+
+<p>However, rolling releases have their disadvantages. The most significant one is that they can be less stable than point releases. Since rolling releases receive updates continuously, there is a risk that bugs or issues may arise. This is the result of users receiving updates as soon as they are available, with a reduced testing window. That’s why users of rolling releases may experience more bugs and issues compared to users of point releases.</p>
+
+<p>Some examples of rolling releases are <a href="https://www.archlinux.org/">Arch Linux</a>, <a href="https://en.opensuse.org/Portal:Tumbleweed">openSUSE Tumbleweed</a> and <a href="https://voidlinux.org/">Void Linux</a>.</p>
+
+<h2 id="modern-package-formats">Modern package formats</h2>
+
+<p>To overcome the disadvantages of point and rolling release distributions, new technologies such as <a href="https://flatpak.org/">Flatpak</a>, <a href="https://snapcraft.io/">Snap</a>, and <a href="https://appimage.org/">AppImage</a> were developed.</p>
+
+<p>Flatpak and Snap are modern package formats that provide a sandbox for each application, ensuring they run independently without interfering with other applications or the system. It helps maintain stability and security. Furthermore, all these modern package formats come with all the necessary dependencies, making them portable and easy to install on any Linux distribution.</p>
+
+<p><a href="https://vanillaos.org/2023/01/28/apx-the-unconventional-pkg-manager.html">Apx</a> is another solution developed by Vanilla OS and <a href="https://distrobox.privatedns.org/">Distrobox</a>. It allows users to install software from any other Linux distributions using the power of <a href="https://www.docker.com/resources/what-container/">containers</a>. It facilitates users to receive updates without risks of destabilizing or breaking the system.</p>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[Explore the pros and cons of point release vs rolling release.]]></summary></entry><entry><title type="html">VSO is the Vanilla System Operator</title><link href="http://localhost:4000/2023/01/31/vso-vanilla-system-operator.html" rel="alternate" type="text/html" title="VSO is the Vanilla System Operator" /><published>2023-01-31T00:00:00-05:00</published><updated>2023-01-31T00:00:00-05:00</updated><id>http://localhost:4000/2023/01/31/vso-vanilla-system-operator</id><content type="html" xml:base="http://localhost:4000/2023/01/31/vso-vanilla-system-operator.html"><![CDATA[<p>VSO, or Vanilla System Operator, is a core component of Vanilla OS, a Linux distribution that aims to offer a hassle-free and automated experience. One of the crucial features of VSO is providing automated and tested updates in the background. Updates are essential for the stability and security of the system, and VSO takes care of them smartly and efficiently.</p>
+
+<h2 id="importance-of-updates">Importance of updates</h2>
+
+<p>Updates are essential for maintaining <strong>stability</strong> and <strong>security</strong> of any operating system. They bring bug fixes, security patches, and performance improvements that help keep your system running smoothly. However, manually updating a system can be frustrating, especially if it involves waiting for updates to be applied every time you boot your computer. With VSO, this task is automated in the background, ensuring that your system is always up-to-date and secure.</p>
+
+<p>Not updating your system can expose it to potential security vulnerabilities. Outdated software leaves your system prone to hacking and malware attacks, putting your data and personal information at risk. VSO ensures that your system is always up-to-date, resulting in a secure and protected system.</p>
+
+<p>Stability is another crucial aspect of an operating system. Installing updates can sometimes result in conflicts or compatibility issues that can lead to instability or crashes. However, VSO tests the updates before installing them, ensuring they don’t cause any problems with the underlying system. It helps keep your system stable and running smoothly. VSO performs updates via <a href="https://vanillaos.org/2023/01/28/almost-vs-abroot.html">ABRoot</a>, the transactional system which is atomic, meaning that if an update fails, no changes or modifications get applied to the system.</p>
+
+<h2 id="schedule-and-smart-updates">Schedule and Smart Updates</h2>
+
+<p>The updates are scheduled either weekly or monthly, as per the user’s choice, providing even more flexibility.</p>
+
+<p>However, the updates are not necessarily always performed on the set deadline. By default, the Smart Updates function performs various checks ranging from CPU, memory and internet usage, temperatures, to battery life before proceeding with the update. It ensures that the updates are installed smartly and efficiently without disturbing the user’s workflow.</p>
+
+<p>If you prefer more control, Smart and Automatic updates can also be disabled from the Vanilla Control Center. This way, you can choose if you want VSO to take care of updates or if you want to handle them yourself.</p>
+
+<h2 id="automate-your-tasks">Automate your tasks</h2>
+
+<p>In addition to updates, VSO has several automated tasks, allowing you to automate various operations in the system. For example, you can create specific tasks to be performed when a device is plugged-in into the system, every X time, or when the battery reaches a certain percentage. You can even use a custom script as a condition, so when it returns 0, the chosen operation gets performed.</p>
+
+<p>Despite Vanilla OS’s focus on automation, users can still act as operators. You can force an update anytime with the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vso trigger-update <span class="nt">--now</span>
+</code></pre></div></div>
+
+<p>Or use ABRoot for more complex tasks like installing core packages in the root system or updating the <a href="https://documentation.vanillaos.org/docs/ABRoot/#title3">kernel parameters</a>.</p>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+  <li><a href="https://documentation.vanillaos.org/docs/vso/manpage">VSO documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/vanilla-system-operator/">VSO source code</a></li>
+  <li><a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/ABRoot/">ABRoot source code</a></li>
+</ul>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[Explore VSO, your teammate in Vanilla OS.]]></summary></entry><entry><title type="html">Why we switched from Almost to ABRoot</title><link href="http://localhost:4000/2023/01/28/almost-vs-abroot.html" rel="alternate" type="text/html" title="Why we switched from Almost to ABRoot" /><published>2023-01-28T00:00:00-05:00</published><updated>2023-01-28T00:00:00-05:00</updated><id>http://localhost:4000/2023/01/28/almost-vs-abroot</id><content type="html" xml:base="http://localhost:4000/2023/01/28/almost-vs-abroot.html"><![CDATA[<p>If you’ve been following the Vanilla OS project from the start, you’ll notice that our plans for immutability have changed. We’ve developed two technologies, <a href="https://github.com/Vanilla-OS/almost">Almost</a> and <a href="https://github.com/Vanilla-OS/ABRoot">ABRoot</a>, that we’ve used to achieve immutability in our system. In this article, we want to go into detail about our choice to switch from Almost to ABRoot, explaining the advantages and disadvantages of each technology.</p>
+
+<h2 id="immutability-and-atomicity">Immutability and Atomicity</h2>
+
+<p>Immutability and atomicity are two essential concepts in computer science, particularly in domains dealing with operating systems. Immutability is the ability to prevent accidental or unauthorized changes to the current state of a system. It gets achieved by making specific files or directories read-only or using other techniques such as copy-on-write or overlay filesystems.</p>
+
+<p>Atomicity, on the other hand, refers to the ability of a system to ensure that a series of operations gets executed as a single, indivisible unit. In other words, if any part of the operation fails, it is rolled back entirely, leaving the system in its previous state. It often gets achieved using transactional systems, which allow multiple grouping and execution of operations as a single transaction.</p>
+
+<p>Both immutability and atomicity are essential in ensuring the stability and security of an operating system. By preventing unauthorized changes and ensuring that updates get executed as a single, indivisible unit, a system can become more robust and resistant to errors and failures.</p>
+
+<h2 id="almost-and-abroot">Almost and ABRoot</h2>
+
+<p>Almost was our first approach to achieving immutability. It was created and developed by our team to achieve immutability by toggling the “i” (immutability) attribute of files. While this made it possible to prevent accidental changes to the system, it wasn’t a proper immutable solution. When updating the system, the immutability attribute was turned off, allowing changes to the root partition. It meant there was no validation or previous state to recover if something went wrong during the update.</p>
+
+<p>ABRoot, on the other hand, is a fully atomic transactional system developed by our team. It performs transactions between two root partitions. It means that a new root always gets generated, and a restore point (to the previous root partition) is always available for use in case of a problem. Additionally, ABRoot provides complete immutability and atomicity, ensuring that the system is always in a known, stable state.</p>
+
+<p>Initially, we tried to use overlays to make Almost atomic, but we found that managing overlays this way was a space-wasting solution. Deleting old states required a re-generation of the whole history, which was time-consuming and inefficient.</p>
+
+<h2 id="partial-immutability-vs-complete-immutability-and-atomicity">Partial immutability vs complete immutability and atomicity</h2>
+
+<p>As an example of the differences between Almost and ABRoot, let’s say you want to install a new package on your Vanilla OS system.</p>
+
+<p>With Almost, you would enter the following command to switch the system to read-write mode, which would allow you to make changes:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>almost enter rw
+</code></pre></div></div>
+
+<p>After switching the system to read-write mode, you would use the following command to install a new package:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install</span> &lt;package&gt;
+</code></pre></div></div>
+
+<p>Once the installation is complete, you would use the following command to switch the system back to read-only mode:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>almost enter ro
+</code></pre></div></div>
+
+<p>However, <strong>this process comes with risks</strong>. If something goes wrong during the installation, the system may not boot, and the package may not work as expected. Additionally, if you accidentally delete or modify a critical file, there is no way to recover it since <strong>Almost does not keep track of previous states</strong>.</p>
+
+<p>With ABRoot, you can run the following command to install a new package:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>abroot <span class="nb">exec </span>apt <span class="nb">install</span> &lt;package&gt;
+</code></pre></div></div>
+
+<p>This command will facilitate creating an overlay on top of the current root state and check if everything went smoothly. Once the process is complete, ABRoot will create a new root state based on the current state of the files, and at the next boot the system will use the newly created root state. In case something goes wrong, you can select the previous root from the grub menu and boot into it.</p>
+
+<p>The main advantage of <strong>ABRoot</strong> is its transactional shell, which <strong>makes the process more robust and safer</strong> and allows the user to easily roll back the system if something goes wrong with the update. If a transaction fails, it gets discarded with nothing saved, keeping your root partitions secure. This means that any changes made during the transaction will not get applied to the system, and the system will remain in its previous state. It makes ABRoot a more robust and secure method for system updates when compared to Almost, which does not have this level of protection and can leave the system in an unstable state if something goes wrong during an update.</p>
+
+<p>To rollback to the previous root state using ABRoot, execute the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>abroot rollback
+</code></pre></div></div>
+
+<p><strong>Note</strong>:- Any changes made in the previous root state get dropped upon executing this command.</p>
+
+<p>In conclusion, we’ve developed both Almost and ABRoot to achieve immutability in our systems. After evaluating both technologies, we’ve decided to switch from Almost to ABRoot because it provides better immutability and atomicity. We encourage others to consider using ABRoot, OSTree, or other similar solutions to achieve immutability in their systems.</p>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+  <li><a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/ABRoot/">ABRoot source code</a></li>
+  <li><a href="https://documentation.vanillaos.org/docs/almost/">Almost documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/almost">Almost source code</a></li>
+</ul>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[Explore the advantages and disadvantages of using Almost and ABRoot technologies to achieve immutability.]]></summary></entry><entry><title type="html">Apx, an unconventional package manager</title><link href="http://localhost:4000/2023/01/28/apx-the-unconventional-pkg-manager.html" rel="alternate" type="text/html" title="Apx, an unconventional package manager" /><published>2023-01-28T00:00:00-05:00</published><updated>2023-01-28T00:00:00-05:00</updated><id>http://localhost:4000/2023/01/28/apx-the-unconventional-pkg-manager</id><content type="html" xml:base="http://localhost:4000/2023/01/28/apx-the-unconventional-pkg-manager.html"><![CDATA[<p>Vanilla OS is an <a href="https://vanillaos.org/2023/01/28/almost-vs-abroot.html#immutability-and-atomicity">immutable and atomic</a> distribution that prioritizes security and stability. As such, installing packages in the root partition is possible using <a href="https://documentation.vanillaos.org/docs/apx/">ABRoot</a>, but this approach isn’t ideal or recommended as the root partition is small and should get used for kernel modules or root-side essential packages only. To address this issue, Vanilla OS and Distrobox have collaborated to introduce a new package manager:- apx.</p>
+
+<p>Apx is a package manager created by the Vanilla OS team, which includes <a href="https://github.com/89luca89">Luca di Maio</a>, the creator of the popular utility - <a href="https://github.com/89luca89/distrobox">Distrobox</a>. Unlike traditional package managers, apx’s design eliminates the barriers between different Linux distributions and package managers, allowing you to install packages from any distribution without leaving Vanilla OS. It is distro-agnostic, which means it can work on any distribution.</p>
+
+<p>With apx, you can install packages from any Linux distribution (Fedora, Ubuntu, Arch Linux, openSUSE, Alpine Linux, etc). For example, you can install Lutris from Arch Linux with the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx <span class="nt">--aur</span> <span class="nb">install </span>lutris
+</code></pre></div></div>
+
+<p>Or you can install Steam from Fedora (using the <a href="https://rpmfusion.org/">RPM Fusion</a> repositories) using the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx <span class="nt">--dnf</span> <span class="nb">install </span>steam
+</code></pre></div></div>
+
+<p>All without ever leaving Vanilla OS.</p>
+
+<p>Thanks to the immense work on Distrobox, all the installed applications are fully integrated with the host system, with access to the user’s home directory (useful for office tools such as LibreOffice), peripherals and so on. Your experience with containerized applications will be the same as if you are using the program natively on the host.</p>
+
+<h2 id="under-the-hood">Under the hood</h2>
+
+<p>Apx utilizes Podman under the hood. It is a wrapper of Distrobox that creates containers where you can install and manage your applications. <a href="https://podman.io/">Podman</a> is a technology increasingly used in programming for software development and distribution.</p>
+
+<p>Apx’s role is to let the user communicate with Distrobox through an experience similar to that of a classic package manager. It also allows the user to easily access the installed programs, export binaries and desktop entries, and have immediate access to all the functions of the package manager used in the container.</p>
+
+<p>Simplifying, this is the schema behind: Apx -&gt; Distrobox -&gt; Podman -&gt; Container.</p>
+
+<h2 id="apx-commands">Apx Commands</h2>
+
+<p>The commands of apx are similar to those of APT, the package manager adopted by Debian-based distributions. Additionally, apx offers a simple unified interface to access the package managers of multiple distributions. For example, it will not be necessary to use <code class="language-plaintext highlighter-rouge">pacman</code> or <code class="language-plaintext highlighter-rouge">dnf</code> commands directly. Instead, you can use the apx commands with dedicated flags (which automatically redirects and executes it inside the container).</p>
+
+<p>Below is the list of supported commands:-</p>
+
+<pre><code class="language-plaintext">Usage:
+  apx [command]
+
+Available Commands:
+  autoremove  Remove all unused packages automatically
+  clean       Clean the apx package manager cache
+  completion  Generate the autocompletion script for the specified shell
+  enter       Enter in the container shell
+  export      Export/Recreate a program's desktop entry from a managed container
+  help        Help about any command
+  init        Initialize the managed container
+  install     Install packages inside a managed container
+  list        List installed packages.
+  purge       Purge packages inside a managed container
+  remove      Remove packages inside a managed container.
+  run         Run programs/commands inside a managed container.
+  search     Search packages in a managed container.
+  show        Show details about a package
+  unexport    Unexport/Remove a program's desktop entry from a managed container
+  update      Update the list of available packages
+  upgrade     Upgrade the system by installing/upgrading available packages.
+
+Flags:
+      --apk           Install packages from the Alpine repository.
+      --apt           Install packages from the Ubuntu repository.
+      --aur           Install packages from the AUR (Arch User Repository).
+      --dnf           Install packages from Fedora's DNF (Dandified YUM) repository.
+  -h, --help          help for apx
+  -n, --name string   Create or use a custom container with this name.
+  -v, --version       version for apx
+</code></pre>
+
+<p>At any time, it is possible to open a shell on the container you want and operate as if you were in that specific distribution. For example, you can type the following command to enter the Fedora container:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx enter <span class="nt">--dnf</span>
+</code></pre></div></div>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+  <li><a href="https://documentation.vanillaos.org/docs/apx/">apx documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/apx">apx source code</a></li>
+</ul>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[Explore apx, the distro-agnostic package manager made by Vanilla OS and Distrobox.]]></summary></entry><entry><title type="html">Vanilla OS 22.10 Kinetic is out!</title><link href="http://localhost:4000/2022/12/29/vanilla-os-22-10-kinetic.html" rel="alternate" type="text/html" title="Vanilla OS 22.10 Kinetic is out!" /><published>2022-12-29T00:00:00-05:00</published><updated>2022-12-29T00:00:00-05:00</updated><id>http://localhost:4000/2022/12/29/vanilla-os-22-10-kinetic</id><content type="html" xml:base="http://localhost:4000/2022/12/29/vanilla-os-22-10-kinetic.html"><![CDATA[<p>It is with great pleasure that we announce that Vanilla OS 22.10 Kinetic, the 
+first stable release of the project, is available for download!</p>
+
+<p>We have been working on the project for many months, there were many changes 
+along the way and also many complications, but we managed to get through them.</p>
+
+<p>Introducing such a large project is not easy, there are many ways, many means 
+and so many things to say. To make it easier for you to understand this project,
+we created a commercial like the big guys do (or at least we tried). Here it 
+is below, enjoy it but then come back here, we have a lot to talk about!</p>
+
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/aDvIJ_Hu90Y?controls=0" allowfullscreen="" frameborder="0" height="315" width="560"> </iframe>
+</div>
+
+<p>Vanilla OS is not an ordinary Linux distribution, it is a project that sets 
+itself many goals and is not afraid to put itself out there, proudly displaying 
+its unique technologies such as the Apx sub-system, its own automatic update 
+system, and ABRoot transactions.</p>
+
+<p><img src="/assets/uploads/vanilla-os-stable-illustration.webp" alt="" /></p>
+
+<p>So many terms, so many promises, so much everything. But let’s see together, in 
+detail what the strengths of Vanilla OS are, the features that make it unique.</p>
+
+<h2 id="apx">Apx</h2>
+
+<p>Vanilla OS comes with its own sub-system.. ehm.. package manager, called Apx 
+(<code class="language-plaintext highlighter-rouge">/à·peks/</code>).</p>
+
+<p>Apx introduces a whole new paradigm in package management. The idea is to use 
+your system only as a box for storing your files, leaving it clean of packages 
+and limiting the risk of breaking due to incompatible, poorly constructed or 
+conflicting packages.</p>
+
+<p>It achieves this by installing software inside one or more containers fully
+managed by Apx having restricted access to your system’s resources while still
+being able to use the same drivers, hardware, etc.</p>
+
+<p>By default, Apx provides a container based on your Linux distribution (Ubuntu 
+22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
+package manager (apt for Ubuntu).</p>
+
+<p><img src="/assets/uploads/vanilla-os-apx.png" alt="The &quot;apx enter&quot; command entering an Ubuntu 22.10 container, with the output of &quot;cat /etc/os-release&quot;." /></p>
+
+<p>Nevertheless, you can install packages from other package distributions. For 
+example, using the <code class="language-plaintext highlighter-rouge">--aur</code> flag, a new container based on Arch Linux will be 
+created. Here, apx will manage the packages from the AUR (Pacman and yay), 
+tightly integrating them with the host system. Using the <code class="language-plaintext highlighter-rouge">--dnf</code> flag with apx 
+will create a new container based on Fedora Linux. Here, apx will manage 
+packages from Fedora’s DNF repository, tightly integrating them with the host 
+system.</p>
+
+<p><img src="/assets/uploads/vanilla-os-apx-control-center.png" alt="Vanilla Control Center showing the list of installed applications in a &quot;Sub System&quot; tab, &quot;htop&quot;. There are also &quot;Drivers&quot; and &quot;Updates&quot; tabs." /></p>
+
+<p>Graphical applications installed inside apx containers are automatically added 
+to the Applications menu as well as the “Open with” menu in the file manager. 
+They are also listed in the Sub System section of Vanilla control center.</p>
+
+<h2 id="abroot">ABRoot</h2>
+
+<p>ABRoot is a new technology that allows you to perform changes to your system
+atomically, limiting the risk of breaking your system.</p>
+
+<p>Atomicity is the ability to perform a specific operation in a way where if it
+fails, nothing will be changed and if it succeeds, the changes will be
+applied in their entirety.</p>
+
+<p>ABRoot achieves this by transacting between 2 root file systems: A and B. Let’s
+make an example. Let’s say you want to install a new package. ABRoot will check
+which partition is the present root partition (i.e A), then it will mount an
+overlay on top of it and perform the transaction. If the transaction succeeds,
+the overlay will be merged with the future root partition (i.e B). On your
+next boot, the system will automatically switch to the new root partition (B).
+In case of failure, the overlay will be discarded and the system will boot
+normally, without any changes to either partition.</p>
+
+<h2 id="automatic-smart-updates"><del>Automatic</del> Smart Updates</h2>
+
+<p>Vanilla OS comes with a new concept of automatic updating, an intelligent 
+system let’s say. VSO (Vanilla System Operator) is the tool that will 
+periodically check for an update and then download and install it in the 
+background if the device is not under heavy usage. In fact, VSO checks that 
+certain checks are met, such as whether the resources are free (CPU/RAM), 
+whether the connection allows it, whether the battery is at least 30%, etc.</p>
+
+<p>We designed this system to take away an annoying task from the user, who 
+simply wants to do their own thing. Updates go through ABRoot transactions and 
+are applied on the next reboot, without taking extra time during boot.</p>
+
+<p><img src="/assets/uploads/vanilla-os-updates.png" alt="The Updates tab of the Vanilla Control Center showing the latest update check, weekly updates scheduling set, and &quot;SmartUpdate,&quot; where the system will not update if the system is under load or the battery is low." /></p>
+
+<p>From the Vanilla Control Center, it is possible to set the update frequency, 
+check when the last one was performed, and turn off Smart Update features.</p>
+
+<h2 id="first-setup">First Setup</h2>
+
+<p>Unlike other Linux distributions, Vanilla OS is designed to provide a user 
+experience built for you, just like a suit!</p>
+
+<p>After the first boot, you will be prompted to complete the installation through 
+a guided process. Here you will be able to make several choices, such as for 
+Dark Mode, Flatpak, AppImage, NVIDIA drivers, and more.</p>
+
+<p><img src="/assets/uploads/vanilla-os-first-setup.png" alt="The first boot prompt for Vanilla OS with a button to confirm beginning setup." /></p>
+
+<p>The process is designed to be fast and as minimally invasive as possible. Once 
+complete, you will need to reboot to be able to use your device with Vanilla OS!</p>
+
+<h2 id="gnome-43">GNOME 43</h2>
+
+<p>Vanilla OS uses GNOME 43 as its Desktop Environment. It is a stock, clean 
+version with as few changes as possible to give you the best GNOME experience 
+ever.</p>
+
+<p>We chose to provide GNOME because of its uniqueness and ease of use, which make 
+it the perfect companion to Vanilla OS.</p>
+
+<p><img src="/assets/uploads/vanilla-os-gnome.png" alt="GNOME 43 with the default Vanilla OS wallpaper." /></p>
+
+<p>All official Vanilla OS applications are built with GTK4 and Libadwaita to be 
+as consistent as possible with the GNOME experience.</p>
+
+<h2 id="official-wallpapers">Official Wallpapers</h2>
+
+<p>Vanilla OS comes with a set of official wallpapers, designed by our team and
+community. They are available in high resolution and are designed to best fit
+with the system.</p>
+
+<p><img src="/assets/uploads/vanilla-os-backgrounds.png" alt="A collection of Vanilla OS themed wallpapers." /></p>
+
+<p>Every wallpaper has a light and a dark version, so you can choose the one that
+best suits your needs.</p>
+
+<h2 id="final-words">Final Words</h2>
+
+<p>Vanilla OS is a project that we have been working on for a long time, and we
+are very proud of it. We hope that you will like it as much as we do.</p>
+
+<p>So, what are you waiting for? Download Vanilla OS 22.10 and try it out.</p>
+
+<h2 id="need-more">Need more?</h2>
+
+<p>Check out our <a href="https://handbook.vanillaos.org">handbook</a> to learn more about
+how to use Vanilla OS, read the <a href="https://documentation.vanillaos.org">documentation</a>
+or join our <a href="https://discord.gg/3cD2Q7Ht3S">Discord server</a> to ask questions
+and get help.</p>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[First stable release of Vanilla OS 22.10 Kinetic is released.]]></summary></entry><entry><title type="html">End of Winter Wallpaper Competition 2022</title><link href="http://localhost:4000/2022/12/18/end-of-winter-wallpaper-competition-2022.html" rel="alternate" type="text/html" title="End of Winter Wallpaper Competition 2022" /><published>2022-12-18T00:00:00-05:00</published><updated>2022-12-18T00:00:00-05:00</updated><id>http://localhost:4000/2022/12/18/end-of-winter-wallpaper-competition-2022</id><content type="html" xml:base="http://localhost:4000/2022/12/18/end-of-winter-wallpaper-competition-2022.html"><![CDATA[<p>Some weeks ago, we announced the first Winter Wallpaper Competition, where you could propose your own wallpaper for Vanilla OS. We received some great submissions, and now it’s time to vote for your favourite one!</p>
+
+<h2 id="the-wallpapers">The Wallpapers</h2>
+
+<p>We received more submissions, but only 3 of them met the requirements. Here they are!</p>
+
+<h3 id="1-by-4e6anenk0">1. by 4e6anenk0</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/uploads/WWC2022/4e6anenk0-light.png" alt="A snowy taiga with a shooting star-like Vanilla OS logo in place of the star in daylight." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Light variant</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/uploads/WWC2022/4e6anenk0-dark.png" alt="A melting snowy taiga with a shooting star-like Vanilla OS logo in place of the star at night." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Dark variant</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="2-by-conquods">2. by conquodS</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/uploads/WWC2022/conquodS-light.png" alt="A snowy taiga with dead trees spanning the view in daylight." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Light variant</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/uploads/WWC2022/conquodS-dark.png" alt="A snowy taiga with dead trees spanning the view at night." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Dark variant</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3-by-kramo">3. by kramo</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/uploads/WWC2022/kramo-light.png" alt="A frozen lake in a taiga in daylight." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Light variant</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/uploads/WWC2022/kramo-dark.png" alt="A frozen lake in a taiga at night." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Dark variant</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="how-to-vote">How to vote</h2>
+
+<p>You can vote for your favourite wallpaper by dropping an emoji reaction on the Discord message linked below.</p>
+
+<p><a href="https://discord.com/channels/1023243680829681704/1054161350374465627/1054161350374465627"><strong>Vote for your favourite wallpaper here!</strong></a></p>
+
+<p>You can vote for as many wallpapers as you want, with only one vote per wallpaper. The voting will end on the 21st of December 2022 at 23:59 UTC.</p>
+
+<p><em>- The Vanilla Team</em></p>]]></content><author><name>Vanilla OS Contributors</name></author><summary type="html"><![CDATA[The first Winter Wallpaper Competition has ended. Vote for your favourite wallpaper!]]></summary></entry></feed>

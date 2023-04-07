@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS Why we switched from Almost to ABRoot</title>
+<meta name="description" content="Explore the advantages and disadvantages of using Almost and ABRoot technologies to achieve immutability.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       blog
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>Why we switched from Almost to ABRoot</h2>
+            <p>Explore the advantages and disadvantages of using Almost and ABRoot technologies to achieve immutability.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page article">
+    <div class="container article-wrapper">
+        <p>If you’ve been following the Vanilla OS project from the start, you’ll notice that our plans for immutability have changed. We’ve developed two technologies, <a href="https://github.com/Vanilla-OS/almost">Almost</a> and <a href="https://github.com/Vanilla-OS/ABRoot">ABRoot</a>, that we’ve used to achieve immutability in our system. In this article, we want to go into detail about our choice to switch from Almost to ABRoot, explaining the advantages and disadvantages of each technology.</p>
+
+<h2 id="immutability-and-atomicity">Immutability and Atomicity</h2>
+
+<p>Immutability and atomicity are two essential concepts in computer science, particularly in domains dealing with operating systems. Immutability is the ability to prevent accidental or unauthorized changes to the current state of a system. It gets achieved by making specific files or directories read-only or using other techniques such as copy-on-write or overlay filesystems.</p>
+
+<p>Atomicity, on the other hand, refers to the ability of a system to ensure that a series of operations gets executed as a single, indivisible unit. In other words, if any part of the operation fails, it is rolled back entirely, leaving the system in its previous state. It often gets achieved using transactional systems, which allow multiple grouping and execution of operations as a single transaction.</p>
+
+<p>Both immutability and atomicity are essential in ensuring the stability and security of an operating system. By preventing unauthorized changes and ensuring that updates get executed as a single, indivisible unit, a system can become more robust and resistant to errors and failures.</p>
+
+<h2 id="almost-and-abroot">Almost and ABRoot</h2>
+
+<p>Almost was our first approach to achieving immutability. It was created and developed by our team to achieve immutability by toggling the “i” (immutability) attribute of files. While this made it possible to prevent accidental changes to the system, it wasn’t a proper immutable solution. When updating the system, the immutability attribute was turned off, allowing changes to the root partition. It meant there was no validation or previous state to recover if something went wrong during the update.</p>
+
+<p>ABRoot, on the other hand, is a fully atomic transactional system developed by our team. It performs transactions between two root partitions. It means that a new root always gets generated, and a restore point (to the previous root partition) is always available for use in case of a problem. Additionally, ABRoot provides complete immutability and atomicity, ensuring that the system is always in a known, stable state.</p>
+
+<p>Initially, we tried to use overlays to make Almost atomic, but we found that managing overlays this way was a space-wasting solution. Deleting old states required a re-generation of the whole history, which was time-consuming and inefficient.</p>
+
+<h2 id="partial-immutability-vs-complete-immutability-and-atomicity">Partial immutability vs complete immutability and atomicity</h2>
+
+<p>As an example of the differences between Almost and ABRoot, let’s say you want to install a new package on your Vanilla OS system.</p>
+
+<p>With Almost, you would enter the following command to switch the system to read-write mode, which would allow you to make changes:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>almost enter rw
+</code></pre></div></div>
+
+<p>After switching the system to read-write mode, you would use the following command to install a new package:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt <span class="nb">install</span> &lt;package&gt;
+</code></pre></div></div>
+
+<p>Once the installation is complete, you would use the following command to switch the system back to read-only mode:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>almost enter ro
+</code></pre></div></div>
+
+<p>However, <strong>this process comes with risks</strong>. If something goes wrong during the installation, the system may not boot, and the package may not work as expected. Additionally, if you accidentally delete or modify a critical file, there is no way to recover it since <strong>Almost does not keep track of previous states</strong>.</p>
+
+<p>With ABRoot, you can run the following command to install a new package:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>abroot <span class="nb">exec </span>apt <span class="nb">install</span> &lt;package&gt;
+</code></pre></div></div>
+
+<p>This command will facilitate creating an overlay on top of the current root state and check if everything went smoothly. Once the process is complete, ABRoot will create a new root state based on the current state of the files, and at the next boot the system will use the newly created root state. In case something goes wrong, you can select the previous root from the grub menu and boot into it.</p>
+
+<p>The main advantage of <strong>ABRoot</strong> is its transactional shell, which <strong>makes the process more robust and safer</strong> and allows the user to easily roll back the system if something goes wrong with the update. If a transaction fails, it gets discarded with nothing saved, keeping your root partitions secure. This means that any changes made during the transaction will not get applied to the system, and the system will remain in its previous state. It makes ABRoot a more robust and secure method for system updates when compared to Almost, which does not have this level of protection and can leave the system in an unstable state if something goes wrong during an update.</p>
+
+<p>To rollback to the previous root state using ABRoot, execute the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>abroot rollback
+</code></pre></div></div>
+
+<p><strong>Note</strong>:- Any changes made in the previous root state get dropped upon executing this command.</p>
+
+<p>In conclusion, we’ve developed both Almost and ABRoot to achieve immutability in our systems. After evaluating both technologies, we’ve decided to switch from Almost to ABRoot because it provides better immutability and atomicity. We encourage others to consider using ABRoot, OSTree, or other similar solutions to achieve immutability in their systems.</p>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+  <li><a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/ABRoot/">ABRoot source code</a></li>
+  <li><a href="https://documentation.vanillaos.org/docs/almost/">Almost documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/almost">Almost source code</a></li>
+</ul>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

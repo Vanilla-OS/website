@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS VSO is the Vanilla System Operator</title>
+<meta name="description" content="Explore VSO, your teammate in Vanilla OS.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       blog
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>VSO is the Vanilla System Operator</h2>
+            <p>Explore VSO, your teammate in Vanilla OS.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page article">
+    <div class="container article-wrapper">
+        <p>VSO, or Vanilla System Operator, is a core component of Vanilla OS, a Linux distribution that aims to offer a hassle-free and automated experience. One of the crucial features of VSO is providing automated and tested updates in the background. Updates are essential for the stability and security of the system, and VSO takes care of them smartly and efficiently.</p>
+
+<h2 id="importance-of-updates">Importance of updates</h2>
+
+<p>Updates are essential for maintaining <strong>stability</strong> and <strong>security</strong> of any operating system. They bring bug fixes, security patches, and performance improvements that help keep your system running smoothly. However, manually updating a system can be frustrating, especially if it involves waiting for updates to be applied every time you boot your computer. With VSO, this task is automated in the background, ensuring that your system is always up-to-date and secure.</p>
+
+<p>Not updating your system can expose it to potential security vulnerabilities. Outdated software leaves your system prone to hacking and malware attacks, putting your data and personal information at risk. VSO ensures that your system is always up-to-date, resulting in a secure and protected system.</p>
+
+<p>Stability is another crucial aspect of an operating system. Installing updates can sometimes result in conflicts or compatibility issues that can lead to instability or crashes. However, VSO tests the updates before installing them, ensuring they don’t cause any problems with the underlying system. It helps keep your system stable and running smoothly. VSO performs updates via <a href="https://vanillaos.org/2023/01/28/almost-vs-abroot.html">ABRoot</a>, the transactional system which is atomic, meaning that if an update fails, no changes or modifications get applied to the system.</p>
+
+<h2 id="schedule-and-smart-updates">Schedule and Smart Updates</h2>
+
+<p>The updates are scheduled either weekly or monthly, as per the user’s choice, providing even more flexibility.</p>
+
+<p>However, the updates are not necessarily always performed on the set deadline. By default, the Smart Updates function performs various checks ranging from CPU, memory and internet usage, temperatures, to battery life before proceeding with the update. It ensures that the updates are installed smartly and efficiently without disturbing the user’s workflow.</p>
+
+<p>If you prefer more control, Smart and Automatic updates can also be disabled from the Vanilla Control Center. This way, you can choose if you want VSO to take care of updates or if you want to handle them yourself.</p>
+
+<h2 id="automate-your-tasks">Automate your tasks</h2>
+
+<p>In addition to updates, VSO has several automated tasks, allowing you to automate various operations in the system. For example, you can create specific tasks to be performed when a device is plugged-in into the system, every X time, or when the battery reaches a certain percentage. You can even use a custom script as a condition, so when it returns 0, the chosen operation gets performed.</p>
+
+<p>Despite Vanilla OS’s focus on automation, users can still act as operators. You can force an update anytime with the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vso trigger-update <span class="nt">--now</span>
+</code></pre></div></div>
+
+<p>Or use ABRoot for more complex tasks like installing core packages in the root system or updating the <a href="https://documentation.vanillaos.org/docs/ABRoot/#title3">kernel parameters</a>.</p>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+  <li><a href="https://documentation.vanillaos.org/docs/vso/manpage">VSO documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/vanilla-system-operator/">VSO source code</a></li>
+  <li><a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/ABRoot/">ABRoot source code</a></li>
+</ul>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

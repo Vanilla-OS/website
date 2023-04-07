@@ -1,0 +1,126 @@
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 0;
+    }
+    
+    .topbar {
+        position: initial;
+        z-index: 9;
+    }
+    
+    .hero-center img, .hero-center video {
+        max-width: 100% !important;
+    }
+
+    .topbar-wrapper {
+        justify-content: space-between;
+    }
+
+    .hero-feature .hero-wrapper,.hero-feature-inverted .hero-wrapper {
+        flex-direction: column !important;
+    }
+
+    .hero-bg-text .hero-image {
+        display: flex;
+    }
+
+    .hero-bg-text .hero-image .hero-text {
+        text-align: center;
+    }
+
+    .hero-bg-text .hero-image img {
+        opacity: .5!important;
+    }
+
+    .topbar-navigation {
+        align-items: center;
+        padding: 0;
+        gap: 20px;
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+        position: fixed;
+        top: 90px;
+        left: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .logo-carousel {
+        flex-direction: column;
+    }
+
+    .footer-areas {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: initial;
+        width: initial;
+    }
+
+    .hero-feature .hero-text {
+        padding: 0 20px;
+        flex: 1;
+        max-width: initial;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toast-content {
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    table {
+        overflow-y: auto;
+        display: block;
+    }
+
+    .topbar-navigation-toggler {
+        display: block;
+    }
+
+    .topbar-navigation.show {
+        height: auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 0 #00000021, 0 0 20px 0 #00000033, 0 0 40px 0 #0000001c;
+        border-bottom: 1px solid #d1d1d1;
+    }
+
+    .grid-images {
+        flex-direction: column;
+    }
+
+    .media-carousel {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .media-carousel-item {
+        padding: 20px;
+    }
+    
+    .blog-posts {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -23,5 +23,5 @@ cd website
 Then serve the site locally with:
 
 ```bash
-jekyll serve -s src/
+jekyll serve
 ```

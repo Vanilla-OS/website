@@ -1,0 +1,196 @@
+@media (prefers-color-scheme: dark) {
+    .on-light {
+        display: none;
+    }
+    .on-dark {
+        display: initial;
+    }
+
+    body {
+        background-color: #242424;
+        color: #fff;
+    }
+
+    .hero p {
+        color: #c3c3c3;
+    }
+
+    .logo {
+        background-image: url('/assets/images/vanilla-logo-dark.png');
+    }
+    
+    a {
+        color: #fff;
+    }
+
+    a:not(.button):not(.logo):not(.hero-scroll):hover {
+        color: #FFF;
+        border-bottom: 1px solid #FFF;
+    }
+
+    a:hover {
+        color: #fbbe4e;
+    }
+
+    .scroll .topbar {
+        background-color: #242424;
+        border-bottom-color: #202020;
+    }
+    
+    html::-webkit-scrollbar-track{
+        border:7px solid #242424;
+        background-color:#242424;
+    }
+    
+    html::-webkit-scrollbar-track:hover{
+        background-color:#242424;
+    }
+    
+    html::-webkit-scrollbar-thumb{
+        background-color:rgb(83, 83, 83)
+    }
+    
+    html::-webkit-scrollbar-thumb:window-inactive{
+        background-color:rgb(66, 66, 66)
+    }
+    
+    html::-webkit-scrollbar-thumb:hover{
+        background-color:rgb(112, 112, 112)
+    }
+
+    .hero-bg-text .hero-image::after {
+        background: none;
+    }
+
+    .button-pattern::after {
+        background: #242424fa;
+    }
+
+    .button:hover {
+        outline-color: #83838318;
+    }
+
+    .hero.hero-secondary,
+    .table-status span {
+        background-color: #2e2e2e;
+    }
+
+    .accordion-item.accordion-open {
+        background-color: #0000002e;
+    }
+
+    .logo-carousel .logo-carousel-item img,
+    .media-carousel .media-carousel-item img {
+        filter: saturate(0) invert(1);
+    }
+
+    .footer-secondary {
+        background-color: #2d2d2d;
+    }
+    
+    .footer-primary {
+        background-color: #181818;
+    }
+
+    .logo-carousel-item a:hover {
+        background-color: #2d2d2d;
+    }
+
+    .body-tint, .body-tint .hero-heading {
+        background-color: #2d2d2d;
+    }
+
+    .body-tint main, .contributor-role {
+        background-color: #242424;
+    }
+
+    .card,
+    .blog-posts article {
+        background-color: #2d2d2d;
+        border-bottom-color: #363636;
+    }
+
+    .blog-posts article:hover {
+      background-color: #181818;
+    }
+    
+    .card-bg-icon {
+        color: #262626;
+    }
+
+    table th {
+        background-color: #2d2d2d;
+    }
+    
+    table td {
+        border-bottom-color: #2d2d2d;
+    }
+    
+    table tr:nth-child(even) {
+        background-color: #2d2d2d;
+    }
+    
+    table tr:hover {
+        background-color: #181818;
+    }
+
+    .timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label, 
+    .table-status .table-status-discontinued,
+    .table-status .table-status-replaced-by {
+        background-color: #282828;
+    }
+    
+    .timeline-green .timeline-item-content, .timeline-green .timeline-label,
+    .table-status .table-status-done {
+        background-color: #386662;
+    }
+    
+    .timeline-red .timeline-item-content, .timeline-red .timeline-label {
+        background-color: #6c2d2d;
+    }
+    
+    .timeline-dimmed-green .timeline-item-content, .timeline-dimmed-green .timeline-label,
+    .table-status .table-status-final-tests {
+        background-color: #485453;
+    }
+
+    .timeline-yellow .timeline-item-content, .timeline-yellow .timeline-label,
+    .table-status .table-status-wip {
+        background-color: #6c5d2d;
+    }
+
+    .timeline-item-content::after {
+        background-color: #242424;
+    }
+
+    .timeline.collapsed::after {
+        background-image: linear-gradient(0deg,#242424,transparent);
+    }
+
+    .mark {
+      color: white;
+    }
+
+    .mark:after {
+      background-color: #6a5920;
+    }
+
+    .article-wrapper blockquote {
+        background-color: #3c3c3c54;
+    }
+
+    .float.card {
+        background-color: #564f3a;
+    }
+    
+    .float.card a {
+        border-bottom-color: #fff;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .topbar-navigation {
+            background-color: #2d2d2d;
+            border-bottom-color: #363636;
+        }
+    }
+}

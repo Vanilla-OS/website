@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS Vanilla OS Roadmap</title>
+<meta name="description" content="The roadmap for the stable release of Vanilla OS.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       page
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    
+    
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>Vanilla OS Roadmap</h2>
+            <p>The roadmap for the stable release of Vanilla OS.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page">
+    <div class="container article-wrapper">
+        <h2 id="terms">Terms</h2>
+<ul>
+  <li><strong>Stable</strong>: A release that is ready for production use.</li>
+  <li><strong>Closed/Open Beta</strong>: A release that is ready for testing and feedback.</li>
+  <li><strong>Release Candidate</strong>: A release that is proposed for the stable release.</li>
+</ul>
+
+<p>All releases are always available for download on our GitHub page, the main
+difference is the level of support and stability.</p>
+
+<h2 id="timeline">Timeline</h2>
+
+<p>Below are the timelines for each release of Vanilla OS, including testing 
+versions. Those are not all the tasks, but rather the most important ones,
+every release will have a lot of other tasks that are not listed here, like
+bug fixes, translations, qol improvements, etc.</p>
+
+<h3 id="20-orchid-testing">2.0 Orchid (testing)</h3>
+
+<div class="timeline" id="timeline_2"></div>
+
+<p><br /></p>
+
+<h3 id="2204-kinetic-stable">22.04 Kinetic (stable)</h3>
+
+<div class="timeline collapsed" id="timeline_2210"></div>
+
+<p><br /></p>
+
+<script type="text/javascript" src="/assets/js/tableStatus.js"></script>
+
+<script type="text/javascript" src="/assets/js/timeline.js"></script>
+
+<script>
+    generateTimeline(
+        {
+            events: [
+                {
+                    date: "26 February 2023",
+                    title: "Freeze",
+                    description: "The development of Vanilla OS 22.10 will be frozen until the next release.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "January 2023",
+                    title: "Bug fixes",
+                    description: "Bugs reported by the community will be fixed.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "29 December 2022",
+                    title: "Stable",
+                    description: "The first stable release of Vanilla OS.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    title: "Release Candidate builds are available for testing.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "28 November 2022",
+                    title: "ABRoot Ready",
+                    description: "ABRoot is ready to be included in the next release.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "11 November 2022",
+                    title: "Slowdown #1",
+                    description: "We have decided to deprecate Almost for ABRoot, a new utility designed to provide a more robust and full atomic immutability model, as a result the next release will be delayed by a few weeks.",
+                    className: "timeline-red"
+                },
+                {
+                    date: "24 October 2022",
+                    title: "Open Beta",
+                    description: "The first open beta of Vanilla OS.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "09 October 2022",
+                    title: "Closed Beta 2",
+                    description: "The second Closed Beta stage of Vanilla OS begins.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "01 October 2022",
+                    title: "Closed Beta 1",
+                    description: "The first Closed Beta stage of Vanilla OS begins.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "24 September 2022",
+                    title: "Alpha",
+                    description: "First Alpha release of Vanilla OS.",
+                    className: "timeline-dimmed-green"
+                }
+            ]
+        },
+        "#timeline_2210"
+    );
+
+    generateTimeline(
+        {
+            events: [
+                {
+                    date: "No date yet",
+                    title: "GNOME 44",
+                    description: "Vanilla OS 2.0 will be based on GNOME 44 (not guaranteed).",
+                    className: "timeline-grayed"
+                },
+                {
+                    date: "No date yet",
+                    title: "ABRoot OCI support",
+                    description: "We are working on adding OCI support to ABRoot.",
+                    className: "timeline-grayed"
+                },
+                {
+                    date: "March 2023",
+                    title: "OEM Support",
+                    description: "We are working on adding OEM support to Vanilla OS.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "26 February 2023 - in progress",
+                    title: "Setting up testing infrastructure",
+                    description: "We are setting up a testing infrastructure to test the new features and bug fixes. The base system is based on Debian sid.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "25 February 2023",
+                    title: "Vanilla OS 2.0 (Orchid) initial work",
+                    description: "Initial works on the next major release of Vanilla OS.",
+                    className: "timeline-dimmed-green"
+                }
+            ]
+        },
+        "#timeline_2"
+    );
+</script>
+
+
+    </div>
+</section></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

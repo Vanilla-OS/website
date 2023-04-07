@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS Vanilla OS 22.10 Kinetic is out!</title>
+<meta name="description" content="First stable release of Vanilla OS 22.10 Kinetic is released.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       blog
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>Vanilla OS 22.10 Kinetic is out!</h2>
+            <p>First stable release of Vanilla OS 22.10 Kinetic is released.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page article">
+    <div class="container article-wrapper">
+        <p>It is with great pleasure that we announce that Vanilla OS 22.10 Kinetic, the 
+first stable release of the project, is available for download!</p>
+
+<p>We have been working on the project for many months, there were many changes 
+along the way and also many complications, but we managed to get through them.</p>
+
+<p>Introducing such a large project is not easy, there are many ways, many means 
+and so many things to say. To make it easier for you to understand this project,
+we created a commercial like the big guys do (or at least we tried). Here it 
+is below, enjoy it but then come back here, we have a lot to talk about!</p>
+
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/aDvIJ_Hu90Y?controls=0" allowfullscreen="" frameborder="0" height="315" width="560"> </iframe>
+</div>
+
+<p>Vanilla OS is not an ordinary Linux distribution, it is a project that sets 
+itself many goals and is not afraid to put itself out there, proudly displaying 
+its unique technologies such as the Apx sub-system, its own automatic update 
+system, and ABRoot transactions.</p>
+
+<p><img src="/assets/uploads/vanilla-os-stable-illustration.webp" alt="" /></p>
+
+<p>So many terms, so many promises, so much everything. But let’s see together, in 
+detail what the strengths of Vanilla OS are, the features that make it unique.</p>
+
+<h2 id="apx">Apx</h2>
+
+<p>Vanilla OS comes with its own sub-system.. ehm.. package manager, called Apx 
+(<code class="language-plaintext highlighter-rouge">/à·peks/</code>).</p>
+
+<p>Apx introduces a whole new paradigm in package management. The idea is to use 
+your system only as a box for storing your files, leaving it clean of packages 
+and limiting the risk of breaking due to incompatible, poorly constructed or 
+conflicting packages.</p>
+
+<p>It achieves this by installing software inside one or more containers fully
+managed by Apx having restricted access to your system’s resources while still
+being able to use the same drivers, hardware, etc.</p>
+
+<p>By default, Apx provides a container based on your Linux distribution (Ubuntu 
+22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
+package manager (apt for Ubuntu).</p>
+
+<p><img src="/assets/uploads/vanilla-os-apx.png" alt="The &quot;apx enter&quot; command entering an Ubuntu 22.10 container, with the output of &quot;cat /etc/os-release&quot;." /></p>
+
+<p>Nevertheless, you can install packages from other package distributions. For 
+example, using the <code class="language-plaintext highlighter-rouge">--aur</code> flag, a new container based on Arch Linux will be 
+created. Here, apx will manage the packages from the AUR (Pacman and yay), 
+tightly integrating them with the host system. Using the <code class="language-plaintext highlighter-rouge">--dnf</code> flag with apx 
+will create a new container based on Fedora Linux. Here, apx will manage 
+packages from Fedora’s DNF repository, tightly integrating them with the host 
+system.</p>
+
+<p><img src="/assets/uploads/vanilla-os-apx-control-center.png" alt="Vanilla Control Center showing the list of installed applications in a &quot;Sub System&quot; tab, &quot;htop&quot;. There are also &quot;Drivers&quot; and &quot;Updates&quot; tabs." /></p>
+
+<p>Graphical applications installed inside apx containers are automatically added 
+to the Applications menu as well as the “Open with” menu in the file manager. 
+They are also listed in the Sub System section of Vanilla control center.</p>
+
+<h2 id="abroot">ABRoot</h2>
+
+<p>ABRoot is a new technology that allows you to perform changes to your system
+atomically, limiting the risk of breaking your system.</p>
+
+<p>Atomicity is the ability to perform a specific operation in a way where if it
+fails, nothing will be changed and if it succeeds, the changes will be
+applied in their entirety.</p>
+
+<p>ABRoot achieves this by transacting between 2 root file systems: A and B. Let’s
+make an example. Let’s say you want to install a new package. ABRoot will check
+which partition is the present root partition (i.e A), then it will mount an
+overlay on top of it and perform the transaction. If the transaction succeeds,
+the overlay will be merged with the future root partition (i.e B). On your
+next boot, the system will automatically switch to the new root partition (B).
+In case of failure, the overlay will be discarded and the system will boot
+normally, without any changes to either partition.</p>
+
+<h2 id="automatic-smart-updates"><del>Automatic</del> Smart Updates</h2>
+
+<p>Vanilla OS comes with a new concept of automatic updating, an intelligent 
+system let’s say. VSO (Vanilla System Operator) is the tool that will 
+periodically check for an update and then download and install it in the 
+background if the device is not under heavy usage. In fact, VSO checks that 
+certain checks are met, such as whether the resources are free (CPU/RAM), 
+whether the connection allows it, whether the battery is at least 30%, etc.</p>
+
+<p>We designed this system to take away an annoying task from the user, who 
+simply wants to do their own thing. Updates go through ABRoot transactions and 
+are applied on the next reboot, without taking extra time during boot.</p>
+
+<p><img src="/assets/uploads/vanilla-os-updates.png" alt="The Updates tab of the Vanilla Control Center showing the latest update check, weekly updates scheduling set, and &quot;SmartUpdate,&quot; where the system will not update if the system is under load or the battery is low." /></p>
+
+<p>From the Vanilla Control Center, it is possible to set the update frequency, 
+check when the last one was performed, and turn off Smart Update features.</p>
+
+<h2 id="first-setup">First Setup</h2>
+
+<p>Unlike other Linux distributions, Vanilla OS is designed to provide a user 
+experience built for you, just like a suit!</p>
+
+<p>After the first boot, you will be prompted to complete the installation through 
+a guided process. Here you will be able to make several choices, such as for 
+Dark Mode, Flatpak, AppImage, NVIDIA drivers, and more.</p>
+
+<p><img src="/assets/uploads/vanilla-os-first-setup.png" alt="The first boot prompt for Vanilla OS with a button to confirm beginning setup." /></p>
+
+<p>The process is designed to be fast and as minimally invasive as possible. Once 
+complete, you will need to reboot to be able to use your device with Vanilla OS!</p>
+
+<h2 id="gnome-43">GNOME 43</h2>
+
+<p>Vanilla OS uses GNOME 43 as its Desktop Environment. It is a stock, clean 
+version with as few changes as possible to give you the best GNOME experience 
+ever.</p>
+
+<p>We chose to provide GNOME because of its uniqueness and ease of use, which make 
+it the perfect companion to Vanilla OS.</p>
+
+<p><img src="/assets/uploads/vanilla-os-gnome.png" alt="GNOME 43 with the default Vanilla OS wallpaper." /></p>
+
+<p>All official Vanilla OS applications are built with GTK4 and Libadwaita to be 
+as consistent as possible with the GNOME experience.</p>
+
+<h2 id="official-wallpapers">Official Wallpapers</h2>
+
+<p>Vanilla OS comes with a set of official wallpapers, designed by our team and
+community. They are available in high resolution and are designed to best fit
+with the system.</p>
+
+<p><img src="/assets/uploads/vanilla-os-backgrounds.png" alt="A collection of Vanilla OS themed wallpapers." /></p>
+
+<p>Every wallpaper has a light and a dark version, so you can choose the one that
+best suits your needs.</p>
+
+<h2 id="final-words">Final Words</h2>
+
+<p>Vanilla OS is a project that we have been working on for a long time, and we
+are very proud of it. We hope that you will like it as much as we do.</p>
+
+<p>So, what are you waiting for? Download Vanilla OS 22.10 and try it out.</p>
+
+<h2 id="need-more">Need more?</h2>
+
+<p>Check out our <a href="https://handbook.vanillaos.org">handbook</a> to learn more about
+how to use Vanilla OS, read the <a href="https://documentation.vanillaos.org">documentation</a>
+or join our <a href="https://discord.gg/3cD2Q7Ht3S">Discord server</a> to ask questions
+and get help.</p>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

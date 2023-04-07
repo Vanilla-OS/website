@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Vanilla OS Apx, an unconventional package manager</title>
+<meta name="description" content="Explore apx, the distro-agnostic package manager made by Vanilla OS and Distrobox.">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body 
+    class="
+       body-tint 
+       blog
+       body-tint
+    ">
+    
+    
+    <div id="top"></div>
+    <div class="topbar">
+    <div class="container topbar-wrapper">
+        <a href="http://localhost:4000" class="logo"></a>
+        <span class="topbar-navigation-toggler material-icons-outlined">more_vert</span>
+        <ul class="topbar-navigation">
+            <li>
+                <a href="http://localhost:4000/blog" 
+                    >Blog</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/faq" >FAQ</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/3cD2Q7Ht3S"
+                    >Community</a>
+            </li>
+            <li>
+                <a href="https://documentation.vanillaos.org/">Documentation</a>
+            </li>
+            <li>
+                <a href="https://handbook.vanillaos.org/">Handbook</a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/get-involved"
+                    >Get Involved</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <main><div class="hero hero-heading hero-center">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+            <h2>Apx, an unconventional package manager</h2>
+            <p>Explore apx, the distro-agnostic package manager made by Vanilla OS and Distrobox.</p>
+        </div>
+    </div>
+</div>
+
+<section class="page article">
+    <div class="container article-wrapper">
+        <p>Vanilla OS is an <a href="https://vanillaos.org/2023/01/28/almost-vs-abroot.html#immutability-and-atomicity">immutable and atomic</a> distribution that prioritizes security and stability. As such, installing packages in the root partition is possible using <a href="https://documentation.vanillaos.org/docs/apx/">ABRoot</a>, but this approach isn’t ideal or recommended as the root partition is small and should get used for kernel modules or root-side essential packages only. To address this issue, Vanilla OS and Distrobox have collaborated to introduce a new package manager:- apx.</p>
+
+<p>Apx is a package manager created by the Vanilla OS team, which includes <a href="https://github.com/89luca89">Luca di Maio</a>, the creator of the popular utility - <a href="https://github.com/89luca89/distrobox">Distrobox</a>. Unlike traditional package managers, apx’s design eliminates the barriers between different Linux distributions and package managers, allowing you to install packages from any distribution without leaving Vanilla OS. It is distro-agnostic, which means it can work on any distribution.</p>
+
+<p>With apx, you can install packages from any Linux distribution (Fedora, Ubuntu, Arch Linux, openSUSE, Alpine Linux, etc). For example, you can install Lutris from Arch Linux with the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx <span class="nt">--aur</span> <span class="nb">install </span>lutris
+</code></pre></div></div>
+
+<p>Or you can install Steam from Fedora (using the <a href="https://rpmfusion.org/">RPM Fusion</a> repositories) using the following command:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx <span class="nt">--dnf</span> <span class="nb">install </span>steam
+</code></pre></div></div>
+
+<p>All without ever leaving Vanilla OS.</p>
+
+<p>Thanks to the immense work on Distrobox, all the installed applications are fully integrated with the host system, with access to the user’s home directory (useful for office tools such as LibreOffice), peripherals and so on. Your experience with containerized applications will be the same as if you are using the program natively on the host.</p>
+
+<h2 id="under-the-hood">Under the hood</h2>
+
+<p>Apx utilizes Podman under the hood. It is a wrapper of Distrobox that creates containers where you can install and manage your applications. <a href="https://podman.io/">Podman</a> is a technology increasingly used in programming for software development and distribution.</p>
+
+<p>Apx’s role is to let the user communicate with Distrobox through an experience similar to that of a classic package manager. It also allows the user to easily access the installed programs, export binaries and desktop entries, and have immediate access to all the functions of the package manager used in the container.</p>
+
+<p>Simplifying, this is the schema behind: Apx -&gt; Distrobox -&gt; Podman -&gt; Container.</p>
+
+<h2 id="apx-commands">Apx Commands</h2>
+
+<p>The commands of apx are similar to those of APT, the package manager adopted by Debian-based distributions. Additionally, apx offers a simple unified interface to access the package managers of multiple distributions. For example, it will not be necessary to use <code class="language-plaintext highlighter-rouge">pacman</code> or <code class="language-plaintext highlighter-rouge">dnf</code> commands directly. Instead, you can use the apx commands with dedicated flags (which automatically redirects and executes it inside the container).</p>
+
+<p>Below is the list of supported commands:-</p>
+
+<pre><code class="language-plaintext">Usage:
+  apx [command]
+
+Available Commands:
+  autoremove  Remove all unused packages automatically
+  clean       Clean the apx package manager cache
+  completion  Generate the autocompletion script for the specified shell
+  enter       Enter in the container shell
+  export      Export/Recreate a program's desktop entry from a managed container
+  help        Help about any command
+  init        Initialize the managed container
+  install     Install packages inside a managed container
+  list        List installed packages.
+  purge       Purge packages inside a managed container
+  remove      Remove packages inside a managed container.
+  run         Run programs/commands inside a managed container.
+  search     Search packages in a managed container.
+  show        Show details about a package
+  unexport    Unexport/Remove a program's desktop entry from a managed container
+  update      Update the list of available packages
+  upgrade     Upgrade the system by installing/upgrading available packages.
+
+Flags:
+      --apk           Install packages from the Alpine repository.
+      --apt           Install packages from the Ubuntu repository.
+      --aur           Install packages from the AUR (Arch User Repository).
+      --dnf           Install packages from Fedora's DNF (Dandified YUM) repository.
+  -h, --help          help for apx
+  -n, --name string   Create or use a custom container with this name.
+  -v, --version       version for apx
+</code></pre>
+
+<p>At any time, it is possible to open a shell on the container you want and operate as if you were in that specific distribution. For example, you can type the following command to enter the Fedora container:-</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apx enter <span class="nt">--dnf</span>
+</code></pre></div></div>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+  <li><a href="https://documentation.vanillaos.org/docs/apx/">apx documentation</a></li>
+  <li><a href="https://github.com/Vanilla-OS/apx">apx source code</a></li>
+</ul>
+
+    </div>
+</section>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script></main>
+    <div class="footer">
+    <div class="footer-section footer-secondary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <a href="http://localhost:4000" class="logo"></a>
+                <p>Made with ❤️ by the Vanilla OS Contributors.</p>
+            </div>
+            <div class="footer-area">
+                <p>Vanilla OS is a Free and Open Source project. <a href="http://localhost:4000/get-involved">Learn here</a> how to get involved.</p>
+                <p>
+                    <small>Every software and component is licensed under different Open Source licenses.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section footer-primary">
+        <div class="container footer-areas">
+            <div class="footer-area">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/privacy-policy">Cookies</a></li>
+                    <li><a href="http://localhost:4000/logos">Logos</a></li>
+                    <li><a href="https://github.com/Vanilla-OS">Funding</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="http://localhost:4000/team">Our Team</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Our Community</a></li>
+                    <li><a href="http://localhost:4000/code-of-conduct">Code of Conduct</a></li>
+                    <li><a href="http://localhost:4000/get-involved">Get Involved</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://documentation.vanillaos.org/">Documentation</a></li>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Community Support</a></li>
+                    <li><a href="https://github.com/vanilla-os/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="footer-area">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://discord.gg/3cD2Q7Ht3S">Discord</a></li>
+                    <li><a href="https://fosstodon.org/@vanillaos" rel="me">Mastodon</a></li>
+                    <li><a href="https://twitter.com/VanillaOSLinux">Twitter</a></li>
+                    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <small style="display: block; text-align: center">Copyright © 2023 <a href="https://fabricators.ltd">fabricators.ltd</a>.</small>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script type="text/javascript" src="/assets/js/topBar.js"></script>
+<script type="text/javascript" src="/assets/js/animateScroll.js"></script>
+<script type="text/javascript" src="/assets/js/accordion.js"></script>
+<script type="text/javascript" src="/assets/js/button.js"></script>
+<script type="text/javascript" src="/assets/js/toast.js"></script>
+<script type="text/javascript" src="/assets/js/menu.js"></script>
+<!--<script>Toast.new("This website is still in development. Some features may not work as expected.");</script>-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
