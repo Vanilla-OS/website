@@ -50,7 +50,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Funding</h3>
                 <p>Like other projects, Vanilla OS has some costs to cover. You can help us with a donation or by becoming a sponsor.</p>
-                <a href="https://github.com/mirkobrombin/" class="button button-primary">Donate</a>
+                <a href="https://liberapay.com/fabricators/" class="button button-primary">Donate</a>
             </div>
             <div class="card">
                 <div class="card-bg-icon">
@@ -58,7 +58,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Handbook</h3>
                 <p>Contribute guides and tutorials to help others get the most out of their Vanilla OS installation.</p>
-                <a href="https://liberapay.com/fabricators/" class="button button-primary">Handbook</a>
+                <a href="https://github.com/Vanilla-OS/handbook" class="button button-primary">Handbook</a>
             </div>
         </div>
     </div>
