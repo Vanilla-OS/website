@@ -164,8 +164,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <p>Vanilla OS is made possible by the following technologies.</p>
             <div class="logo-carousel">
                 <div class="logo-carousel-item">
-                    <a href="https://www.ubuntu.com/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/ubuntu.svg" alt="Ubuntu" />
+                    <a href="https://www.debian.org/" target="_blank" rel="noopener">
+                        <img src="/assets/images/logos/debian.svg" alt="Debian" />
                     </a>
                 </div>
                 <div class="logo-carousel-item">
