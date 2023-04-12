@@ -115,8 +115,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Free & Open Source.</h2>
             <p>You don't have to, and will never have to pay.</p>
-            <p>Vanilla OS is built on free and open source technologies and software, and does not require any payment to be used. It is already yours.</p>
-            <p>All system components are released under open source licenses, and the code is available for your review, contribution, or forking.</p>
+            <p>Vanilla OS is built on free and open-source technologies and software and does not require any payment to be used. It is already yours.</p>
+            <p>All system components are released under open-source licenses, and the code is available for your review, contribution, or forking.</p>
             <div class="button-pattern" style="background-image: url('/assets/images/home-open-source-pattern.svg');">
                 <a href="https://github.com/vanilla-os" class="button button-large button-dimmed">Fork on <ion-icon name="logo-github"></ion-icon> GitHub</a>
             </div>
