@@ -6,15 +6,15 @@ description: Frequently <s>Answered</s> Asked Questions about Vanilla OS.
 
 <div class="container hero-wrapper">
     <div class="accordion">
-        {% capture title %} Why Ubuntu Based? {% endcapture %}
+        {% capture title %} Why Debian Based? {% endcapture %}
         {% capture answer %}
-            <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
+            <p>Vanilla OS aims to be a stable and compatible distribution. Debian is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
         {% endcapture %}
         {% include accordion-item.html open=true title=title text=answer %}
 
         {% capture title %} Why not a rolling release? {% endcapture %}
         {% capture answer %}
-            <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
+            <p>Vanilla OS aims to be a stable and compatible distribution. Debian is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
             <p>Thanks to Flatpak, Snap and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
         {% endcapture %}
         {% include accordion-item.html title=title text=answer %}
@@ -46,7 +46,7 @@ description: Frequently <s>Answered</s> Asked Questions about Vanilla OS.
 
         {% capture title %} How to install software? {% endcapture %}
         {% capture answer %}
-            <p>Vanilla OS provides optional support for <a href="https://www.flatpak.org/">Flatpak</a>, <a href="https://appimage.org/">AppImage</a>, and soon <a href="https://snapcraft.io/">Snap</a>. We recommend you use any of these three for regular application installation. We also have our own package manager, <a href="https://documentation.vanillaos.org/docs/apx/">apx</a>. You can use it from the terminal to install Ubuntu, Fedora, or Arch Linux packages inside containers. Installing packages onto the host system is not advised, but if you need to — use <a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot</a>.</p>
+            <p>Vanilla OS provides optional support for <a href="https://www.flatpak.org/">Flatpak</a>, <a href="https://appimage.org/">AppImage</a>, and soon <a href="https://snapcraft.io/">Snap</a>. We recommend you use any of these three for regular application installation. We also have our own package manager, <a href="https://documentation.vanillaos.org/docs/apx/">apx</a>. You can use it from the terminal to install Debian, Fedora, or Arch Linux packages inside containers. Installing packages onto the host system is not advised, but if you need to — use <a href="https://documentation.vanillaos.org/docs/ABRoot/">ABRoot</a>.</p>
         {% endcapture %}
         {% include accordion-item.html title=title text=answer %}
 

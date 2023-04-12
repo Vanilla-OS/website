@@ -32,7 +32,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Nicely Updated.</h2>
             <p>Designed to last over time and always be faithful to you.</p>
-            <p>Vanilla OS is an <span class="mark">immutable</span> and <span class="mark">atomic</span> Ubuntu Linux-based Point Release distribution, that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
+            <p>Vanilla OS is an <span class="mark">immutable</span> and <span class="mark">atomic</span> Debian Linux-based Point Release distribution, that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
         </div>
     </div>
 </div>
@@ -130,15 +130,15 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <h2>Frequently Asked Questions</h2>
             <p>Here are some of the most common questions we get asked.</p>
             <div class="accordion">
-                {% capture title %} Why Ubuntu Based? {% endcapture %}
+                {% capture title %} Why Debian Based? {% endcapture %}
                 {% capture answer %}
-                    <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
+                    <p>Vanilla OS aims to be a stable and compatible distribution. Debian is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
                 {% endcapture %}
                 {% include accordion-item.html open=true title=title text=answer %}
 
                 {% capture title %} Why not a rolling release? {% endcapture %}
                 {% capture answer %}
-                    <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
+                    <p>Vanilla OS aims to be a stable and compatible distribution. Debian is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
                     <p>Thanks to Flatpak, Nix and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
                 {% endcapture %}
                 {% include accordion-item.html title=title text=answer %}
@@ -219,8 +219,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
                 <div class="media-carousel-new-line"></div>
                 <div class="media-carousel-item">
                     <a href="https://www.omglinux.com/vanilla-os-first-release-download/" target="_blank" rel="noopener">
-                        <img src="/assets/images/logos/media/omg-linux.png" alt="OMG! Linux: “Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.”" />
-                        <p>Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.</p>
+                        <img src="/assets/images/logos/media/omg-linux.png" alt="OMG! Linux: “Far more than “just another” Debian fork, this distro takes a bold new approach to desktop computing using an immutable file system.”" />
+                        <p>Far more than “just another” Debian fork, this distro takes a bold new approach to desktop computing using an immutable file system.</p>
                     </a>
                 </div>
                 <div class="media-carousel-item">
