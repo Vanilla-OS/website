@@ -32,7 +32,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Nicely Updated.</h2>
             <p>Designed to last over time and always be faithful to you.</p>
-            <p>Vanilla OS is an <span class="mark">immutable</span> and <span class="mark">atomic</span> Debian Linux-based Point Release distribution, that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
+            <p>Vanilla OS is an <span class="mark">immutable</span> and <span class="mark">atomic</span> Debian-based distribution, that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
         </div>
     </div>
 </div>
