@@ -96,7 +96,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Immutable...</h2>
             <p>...but also not.</p>
-            <p>Vanilla OS is an immutable operating system. Core parts of the system are locked down to prevent unwanted changes or corruption from third-party applications or a faulty update. Some paths are still writable, such as the home and configuration directories, allowing the user to keep and modify their files and application data.</p>
+            <p>Vanilla OS is an immutable operating system. Core parts of the system are locked down to prevent unwanted changes or corruption caused by third-party applications or a faulty update. Some paths are still writable, such as the home and configuration directories, allowing the user to keep and modify their files and application data.</p>
             <p>Core components are updated via controlled and atomic transactions, which are only applied when successful and made available on reboot.</p>
             <p>Need to install a component into the core system? No problem, you can open a transactional shell at any time, make your changes, and let the system apply them automatically!</p>
             <a href="https://documentation.vanillaos.org/" class="button button-secondary">
