@@ -43,7 +43,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <h2>Work.</h2>
             <p>Your faithful colleague by day.</p>
             <p>Vanilla OS is designed to be a reliable and productive operating system for your daily work. The GNOME Desktop is the perfect environment for your daily tasks, with a clean and intuitive interface. Everything is at your fingertips.</p>
-            <p>Thanks to a wide range of applications, Vanilla OS is ready to meet your needs whether you are a developer, designer, student or simple user.</p>
+            <p>Vanilla OS is ready to meet your needs whether you are a developer, designer, student or simple user, thanks to a wide range of applications. </p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-rnote.png" alt="" />
@@ -56,7 +56,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Play.</h2>
             <p>Your teammate by night.</p>
-            <p>Play your favourite games without worrying about setting up your devices. Vanilla OS offers the latest stable Linux kernel, ensuring support for the latest hardware and the latest performance improvements.</p>
+            <p>Play your favourite games without worrying about setting up your device. Vanilla OS offers the latest stable Linux kernel, ensuring support for the latest hardware and performance improvements.</p>
             <p>Setting up your GPU won't be an issue thanks to integrated driver management. Whether it's an AMD®, Intel®, or NVIDIA® GPU, if a driver is needed, all you have to do is launch the driver manager and follow the instructions. <b>It's that simple.</b></p>
         </div>
         <div class="hero-image" data-scroll>
@@ -82,8 +82,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Choice.</h2>
             <p>Your system, your choices.</p>
-            <p>Vanilla OS is an operating system that respects your choices. You are in control, always.</p>
-            <p>From the first start, you can choose which package format to use in Vanilla OS (Flatpak, Nix, Appimage ...). You choose, and Vanilla OS will take care of the rest, allowing you to get started without any problems.</p>
+            <p>Vanilla OS is an operating system that respects your choices. You are always in control.</p>
+            <p>At the initial start, you can choose which package format(s) you want to use in Vanilla OS (Flatpak, Nix, Appimage ...). You choose, and Vanilla OS will take care of the rest, allowing you to get started without any difficulties.</p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-pkgs.png" alt="" />
@@ -116,7 +116,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <h2>Free & Open Source.</h2>
             <p>You don't have to, and will never have to pay.</p>
             <p>Vanilla OS is built on free and open-source technologies and software and does not require any payment to be used. It is already yours.</p>
-            <p>All system components are released under open-source licenses, and the code is available for your review, contribution, or forking.</p>
+            <p>All system components are released under an open-source license, and the code is available for your review, contribution, or forking.</p>
             <div class="button-pattern" style="background-image: url('/assets/images/home-open-source-pattern.svg');">
                 <a href="https://github.com/vanilla-os" class="button button-large button-dimmed">Fork on <ion-icon name="logo-github"></ion-icon> GitHub</a>
             </div>
