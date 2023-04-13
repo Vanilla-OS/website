@@ -96,8 +96,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Immutable...</h2>
             <p>...but also not.</p>
-            <p>Vanilla OS is an immutable operating system. Core parts of the system are locked down to prevent unwanted changes or corruption from third-party applications or a faulty update. Some paths are still writable, such as the home and configurations directories, allowing the user to keep their files and  application data.</p>
-            <p>Core components are updated via controlled and atomic transactions, which are applied only on success and made available on reboot.</p>
+            <p>Vanilla OS is an immutable operating system. Core parts of the system are locked down to prevent unwanted changes or corruption from third-party applications or a faulty update. Some paths are still writable, such as the home and configurations directories, allowing the user to keep and modify their files and application data.</p>
+            <p>Core components are updated via controlled and atomic transactions, which are only applied when successful and made available on reboot.</p>
             <p>Need to install a component into the core system? No problem, you can open a transactional shell at any time, make your changes, and let the system apply them automatically!</p>
             <a href="https://documentation.vanillaos.org/" class="button button-secondary">
                 Learn More <span class="material-icons-outlined">chevron_right</span>
@@ -115,7 +115,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Free & Open Source.</h2>
             <p>You don't have to, and will never have to pay.</p>
-            <p>Vanilla OS is built on free and open-source technologies and software and does not require any payment to be used. It is already yours.</p>
+            <p>Vanilla OS is built on free and open-source technologies and software which does not require any payment to be used. It is already yours.</p>
             <p>All system components are released under an open-source license, and the code is available for your review, contribution, or forking.</p>
             <div class="button-pattern" style="background-image: url('/assets/images/home-open-source-pattern.svg');">
                 <a href="https://github.com/vanilla-os" class="button button-large button-dimmed">Fork on <ion-icon name="logo-github"></ion-icon> GitHub</a>
