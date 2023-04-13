@@ -50,7 +50,7 @@ description: Everything we do is Open Source. You can contribute in many ways.
                 </div>
                 <h3>Funding</h3>
                 <p>Like other projects, Vanilla OS has some costs to cover. You can help us with a donation or by becoming a sponsor.</p>
-                <a href="https://liberapay.com/fabricators/" class="button button-primary">Donate</a>
+                <a href="https://github.com/sponsors/Vanilla-OS" class="button button-primary">Donate</a>
             </div>
             <div class="card">
                 <div class="card-bg-icon">
