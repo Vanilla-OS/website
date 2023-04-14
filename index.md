@@ -30,9 +30,9 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
 <div class="hero hero-center">
     <div class="container hero-wrapper">
         <div class="hero-text">
-            <h2>Nicely Updated.</h2>
+            <h2>Up to Date.</h2>
             <p>Designed to last over time and always be faithful to you.</p>
-            <p>Vanilla OS is an <span class="mark">immutable</span> and <span class="mark">atomic</span> Ubuntu Linux-based Point Release distribution, that receives updates at the right time, neither before nor after, without sacrificing security and functionality.</p>
+            <p>Vanilla OS is an <span class="mark">immutable</span> and <span class="mark">atomic</span> Ubuntu-based distribution that receives updates at the right time without sacrificing security or functionality.</p>
         </div>
     </div>
 </div>
@@ -42,8 +42,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Work.</h2>
             <p>Your faithful colleague by day.</p>
-            <p>Vanilla OS is designed to be a reliable and productive operating system for your daily work. The GNOME Desktop is the perfect environment for your daily tasks, with a clean and intuitive interface, everything is at your fingertips.</p>
-            <p>Thanks to a wide range of applications, Vanilla OS is ready to meet your needs, whether you are a developer, a designer, a student or a simple user.</p>
+            <p>Vanilla OS is designed to be a reliable and productive operating system for your daily work. The GNOME Desktop is the perfect environment for your daily tasks, with a clean and intuitive interface. Everything is at your fingertips.</p>
+            <p>Vanilla OS is ready to meet your needs whether you are a developer, designer, student or simple user, thanks to a wide range of applications. </p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-rnote.png" alt="" />
@@ -56,8 +56,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Play.</h2>
             <p>Your teammate by night.</p>
-            <p>Play your favourite video games without worrying about setting up your devices. Vanilla OS offers the latest stable Linux kernel, ensuring support for the latest devices and the latest performance improvements.</p>
-            <p>Your GPU won't be an issue anymore thanks to an integrated driver management, whether it's an AMD®, Intel®, or NVIDIA® GPU. If a driver is missing, all you have to do is launch the driver manager and follow the instructions. <b>It's that simple.</b></p>
+            <p>Play your favourite games without worrying about setting up your device. Vanilla OS offers the latest stable Linux kernel, ensuring support for the latest hardware and performance improvements.</p>
+            <p>Setting up your GPU won't be an issue thanks to integrated driver management. Whether it's an AMD®, Intel®, or NVIDIA® GPU, if a driver is needed, all you have to do is launch the driver manager and follow the instructions. <b>It's that simple.</b></p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInUp" src="/assets/images/home-gaming.png" alt="" />
@@ -82,8 +82,8 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
         <div class="hero-text">
             <h2>Choice.</h2>
             <p>Your system, your choices.</p>
-            <p>Vanilla OS is an operating system that respects your choices, you are in control, always.</p>
-            <p>At the first start you can choose which package format to use in Vanilla OS (Flatpak, Nix, Appimage ...), you choose and Vanilla OS will take care of the rest, putting you in the situation to start without problems.</p>
+            <p>Vanilla OS is an operating system that respects your choices. You are always in control.</p>
+            <p>At the initial start, you can choose which package format(s) you want to use in Vanilla OS (Flatpak, Nix, Appimage ...). You choose, and Vanilla OS will take care of the rest, allowing you to get started without any difficulties.</p>
         </div>
         <div class="hero-image" data-scroll>
             <img class="animate-on-scroll" data-animation="fadeInRight" src="/assets/images/home-pkgs.png" alt="" />
@@ -94,11 +94,11 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
 <div class="hero hero-feature hero-feature-inverted">
     <div class="container hero-wrapper">
         <div class="hero-text">
-            <h2>Immutable..</h2>
-            <p>..but also not.</p>
-            <p>Vanilla OS is an immutable operating system, core parts of the system are locked down to prevent unwanted changes and corruption from third-party applications or a faulty update. Some paths are still writable, such as the home and configurations directories, this allows the user to keep their files and ensure the normal functioning of applications.</p>
-            <p>Core components are only updated via controlled and atomic transactions, which are applied only on success and made available on reboot.</p>
-            <p>Need to install a component in the core system? No problem, you can open a transactional shell at any time, make your changes and let the system apply them automatically!</p>
+            <h2>Immutable...</h2>
+            <p>...but also not.</p>
+            <p>Vanilla OS is an immutable operating system. Core parts of the system are locked down to prevent unwanted changes or corruption caused by third-party applications or faulty updates. Some paths such as the home and configuration directories are still writable, allowing the user to keep and modify their files and application data.</p>
+            <p>Core components are updated via controlled and atomic transactions, which are only applied when successful and made available on reboot.</p>
+            <p>Need to install a component into the core system? At any time you can open a transactional shell, make your changes, and let the system apply them automatically.</p>
             <a href="https://documentation.vanillaos.org/" class="button button-secondary">
                 Learn More <span class="material-icons-outlined">chevron_right</span>
             </a>
@@ -114,9 +114,9 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
     <div class="container hero-wrapper">
         <div class="hero-text">
             <h2>Free & Open Source.</h2>
-            <p>You don't have to and you will never have to pay.</p>
-            <p>Vanilla OS is built on free and Open Source technologies and software and does not require any payment to be used, it is simply already yours.</p>
-            <p>All system components are released under Open Source licenses and the code is available for your review, contribution or forking.</p>
+            <p>You don't have to, and will never have to pay.</p>
+            <p>Vanilla OS is built on free and open-source software which does not require any payment to be used.</p>
+            <p>All system components are free and open source, meaning the code is available for your review, contribution, or forking.</p>
             <div class="button-pattern" style="background-image: url('/assets/images/home-open-source-pattern.svg');">
                 <a href="https://github.com/vanilla-os" class="button button-large button-dimmed">Fork on <ion-icon name="logo-github"></ion-icon> GitHub</a>
             </div>
@@ -132,21 +132,21 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
             <div class="accordion">
                 {% capture title %} Why Ubuntu Based? {% endcapture %}
                 {% capture answer %}
-                    <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
+                    <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control without having to give up functionality and security.</p>
                 {% endcapture %}
                 {% include accordion-item.html open=true title=title text=answer %}
 
                 {% capture title %} Why not a rolling release? {% endcapture %}
                 {% capture answer %}
-                    <p>Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.</p>
-                    <p>Thanks to Flatpak, Nix and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
+                    <p>Vanilla OS aims to be a stable and compatible distribution, and Ubuntu is a distribution that respects our design philosophies.</p>
+                    <p>Thanks to Flatpak, Nix, and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.</p>
                 {% endcapture %}
                 {% include accordion-item.html title=title text=answer %}
 
                 {% capture title %} Why not OStree or [put_name_here]? {% endcapture %}
                 {% capture answer %}
-                    <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/abroot/">ABRoot</a>), which transacts updates atomically between two root micro partitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore, the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.</p>
-                    <p>This structure, unlike others, is compatible with already existing distributions and does not require a complex setup and allows easy re-initialization of the system without data loss.</p>
+                    <p>Vanilla OS uses an A/B structure (<a href="https://documentation.vanillaos.org/docs/abroot/">ABRoot</a>), which transacts updates atomically between two root micro partitions. The benefits of this system are a guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), as well as allowing you to roll back to the previous state, meaning you will always have a home to come back to if something goes wrong.</p>
+                    <p>This structure, unlike others, is compatible with already existing distributions and does not require a complex setup, allowing easy re-initialization of the system without data loss.</p>
                 {% endcapture %}
                 {% include accordion-item.html title=title text=answer %}
             </div>
