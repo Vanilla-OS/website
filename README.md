@@ -1,6 +1,7 @@
 <div align="center">
 
-# Vanilla OS Website
+<img src="assets/dark.png?raw=true#gh-dark-mode-only" height="40">
+<img src="assets/light.png?raw=true#gh-light-mode-only" height="40">
 
 This page contains source code of the official Vanilla OS website.
 
