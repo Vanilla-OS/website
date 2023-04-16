@@ -81,7 +81,7 @@
 
     .logo-carousel .logo-carousel-item img,
     .media-carousel .media-carousel-item img {
-        filter: saturate(0) invert(1);
+        filter: hue-rotate(180deg) invert(1);
     }
 
     .footer-secondary {
