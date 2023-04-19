@@ -83,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 800;
     margin: 0;
 }
 
@@ -167,7 +167,7 @@ main {
 .topbar-navigation a {
     display: block;
     padding: 0;
-    font-size: 17px;
+    font-size: 18px;
     border-bottom: 1px dotted;
     border-color: transparent;
 }
@@ -233,9 +233,9 @@ main {
 }
 
 .hero p {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
     color: #3F3B47;
     margin: 0 0 40px 0;
     z-index: 2;
@@ -486,6 +486,11 @@ main {
     position: relative;
     overflow: hidden;
     height: 0;
+}
+
+.accordion-title h3 {
+    font-size: 23px;
+    font-weight: 700;
 }
 
 .accordion-item.accordion-open .accordion-text {
