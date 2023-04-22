@@ -65,7 +65,7 @@ bug fixes, translations, qol improvements, etc.
                 {
                     date: "February 2023",
                     title: "Rollback Support",
-                    description: "Added option rollback to previous root partition in ABRoot",
+                    description: "Added option to rollback to previous root partition in ABRoot",
                     className: "timeline-dimmed-green"
                 },
                 {
