@@ -52,8 +52,8 @@ bug fixes, translations, qol improvements, etc.
                 },
                 {
                     date: "26 February 2023",
-                    title: "Panels removed in Vanilla Control cCnter",
-                    description: "Drivers and PRIME Profiles panels have been moved to Settings from First Setup",
+                    title: "Panels removed in Vanilla Control Center",
+                    description: "Drivers and PRIME Profiles panels have been moved to Settings from Vanilla Control Center",
                     className: "timeline-dimmed-green"
                 },
                 {
