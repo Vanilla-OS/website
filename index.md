@@ -2,6 +2,11 @@
 title: 
 description: Vanilla OS is an Immutable Linux-based distribution which aims to provide a vanilla GNOME experience.
 ---
+<div class="container small">
+    <div class="float card bounce">
+        <p><b>Announcement:</b> We are changing our base to <b><a href="/2023/03/07/vanilla-os-2.0-orchid-initial-work.html">Debian in Orchid</a></b>. </p>
+    </div>
+</div>
 <div class="hero hero-center hero-main">
     <div class="container hero-wrapper">
         <div class="hero-image animate__animated animate__fadeIn" data-scroll>

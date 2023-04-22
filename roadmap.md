@@ -4,6 +4,7 @@ title: Vanilla OS Roadmap
 description: The roadmap for the stable release of Vanilla OS.
 ---
 ## Terms
+
 * **Stable**: A release that is ready for production use.
 * **Closed/Open Beta**: A release that is ready for testing and feedback.
 * **Release Candidate**: A release that is proposed for the stable release.
@@ -24,7 +25,7 @@ bug fixes, translations, qol improvements, etc.
 
 <br />
 
-### 22.04 Kinetic (stable)
+### 22.10 Kinetic (stable)
 
 <div class="timeline collapsed" id="timeline_2210"></div>
 
@@ -44,8 +45,38 @@ bug fixes, translations, qol improvements, etc.
                     className: "timeline-green"
                 },
                 {
+                    date: "26 February 2023",
+                    title: "Manual Partitioning Support",
+                    description: "Added Manual Partitoning Support to Installer",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "26 February 2023",
+                    title: "Panels removed in Vanilla Control cCnter",
+                    description: "Drivers and PRIME Profiles panels have been moved to Settings from First Setup",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "February 2023",
+                    title: "Nix Support",
+                    description: "Added support for Nix packages in Apx",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "February 2023",
+                    title: "Rollback Support",
+                    description: "Added option rollback to previous root partition in ABRoot",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "February 2023",
+                    title: "VRR Session",
+                    description: "Experimental VRR package with GNOME Session has been added",
+                    className: "timeline-dimmed-green"
+                },
+                {
                     date: "January 2023",
-                    title: "Bug fixes",
+                    title: "Bug Fixes",
                     description: "Bugs reported by the community will be fixed.",
                     className: "timeline-dimmed-green"
                 },
@@ -103,6 +134,18 @@ bug fixes, translations, qol improvements, etc.
     generateTimeline(
         {
             events: [
+                {
+                    date: "No date yet",
+                    title: "Albius",
+                    description: "We are switching our installer backend to Albius.",
+                    className: "timeline-grayed"
+                },
+                {
+                    date: "No date yet",
+                    title: "Ikaros",
+                    description: "We are working on a new drivers backend for Vanilla OS",
+                    className: "timeline-grayed"
+                },
                 {
                     date: "No date yet",
                     title: "GNOME 44",
