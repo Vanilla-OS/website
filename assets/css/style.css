@@ -1,38 +1,38 @@
 /* Scrollbar */
-html::-webkit-scrollbar{
-    background:0 0;
-    height:20px;
-    width:20px
+html::-webkit-scrollbar {
+    background: 0 0;
+    height: 20px;
+    width: 20px
 }
 
-html::-webkit-scrollbar-track{
-    border-radius:20px;
-    box-sizing:content-box;
-    width:6px;
-    border:7px solid #fff;
-    background-color:#f0f0f0;
+html::-webkit-scrollbar-track {
+    border-radius: 20px;
+    box-sizing: content-box;
+    width: 6px;
+    border: 7px solid #fff;
+    background-color: #f0f0f0;
 }
 
-html::-webkit-scrollbar-track:hover{
-    background-color:rgb(224, 224, 224);
+html::-webkit-scrollbar-track:hover {
+    background-color: rgb(224, 224, 224);
 }
 
-html::-webkit-scrollbar-thumb{
-    background-clip:content-box;
-    border:7px solid transparent;
-    border-radius:20px;
-    box-sizing:content-box;
-    min-height:30px;
-    width:6px;
-    background-color:#161616;
+html::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: 7px solid transparent;
+    border-radius: 20px;
+    box-sizing: content-box;
+    min-height: 30px;
+    width: 6px;
+    background-color: #161616;
 }
 
-html::-webkit-scrollbar-thumb:window-inactive{
-    background-color:rgb(83, 83, 83)
+html::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgb(83, 83, 83)
 }
 
-html::-webkit-scrollbar-thumb:hover{
-    background-color:#000
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #000
 }
 
 /* Animations */
@@ -40,9 +40,10 @@ html::-webkit-scrollbar-thumb:hover{
 a,
 .accordion-item,
 .accordion-text,
-.button, .button *,
+.button,
+.button *,
 .topbar-navigation {
-    transition:all .2s ease-in-out
+    transition: all .2s ease-in-out
 }
 
 .animate-on-scroll {
@@ -57,7 +58,7 @@ a,
 body {
     margin: 0;
     padding: 95px 0 0 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
     overflow-x: hidden;
 }
 
@@ -76,8 +77,13 @@ img {
     max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
     margin: 0;
 }
 
@@ -161,12 +167,13 @@ main {
 .topbar-navigation a {
     display: block;
     padding: 0;
-    font-size: 17px;
+    font-size: 18px;
     border-bottom: 1px dotted;
     border-color: transparent;
 }
 
-.topbar-navigation a:hover,.topbar-navigation a.active {
+.topbar-navigation a:hover,
+.topbar-navigation a.active {
     font-weight: 600;
     border-color: black;
 }
@@ -194,8 +201,8 @@ main {
     text-align: center;
 }
 
-.hero:not(.hero-bg-text).hero-center img, .hero:not(.hero-bg-text).hero-center video
-{
+.hero:not(.hero-bg-text).hero-center img,
+.hero:not(.hero-bg-text).hero-center video {
     max-height: 50vh;
 }
 
@@ -226,9 +233,9 @@ main {
 }
 
 .hero p {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
     color: #3F3B47;
     margin: 0 0 40px 0;
     z-index: 2;
@@ -276,7 +283,9 @@ main {
     overflow: hidden;
 }
 
-.hero-image.hero-image-card img {max-width: 100%;}
+.hero-image.hero-image-card img {
+    max-width: 100%;
+}
 
 .hero-image-video-frame {
     position: absolute;
@@ -290,7 +299,9 @@ main {
     position: relative;
 }
 
-.hero-feature-inverted .hero-wrapper {flex-direction: row-reverse;}
+.hero-feature-inverted .hero-wrapper {
+    flex-direction: row-reverse;
+}
 
 .hero-bg-text .hero-image {
     position: relative;
@@ -317,7 +328,7 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    background: radial-gradient(transparent 30%,white 100%);
+    background: radial-gradient(transparent 30%, white 100%);
 }
 
 .hero.hero-secondary {
@@ -384,7 +395,7 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    background: radial-gradient(transparent 0,white 100%);
+    background: radial-gradient(transparent 0, white 100%);
 }
 
 .button-pattern .button {
@@ -475,6 +486,11 @@ main {
     position: relative;
     overflow: hidden;
     height: 0;
+}
+
+.accordion-title h3 {
+    font-size: 23px;
+    font-weight: 700;
 }
 
 .accordion-item.accordion-open .accordion-text {
@@ -631,11 +647,12 @@ main {
 }
 
 
-.body-tint,.body-tint .hero-heading {
+.body-tint,
+.body-tint .hero-heading {
     background-color: #F2F1ED;
 }
 
-.body-tint .hero-heading  {
+.body-tint .hero-heading {
     margin-bottom: 40px;
     position: relative;
 }
@@ -725,19 +742,20 @@ main {
     line-height: 28px;
 }
 
-.blog-posts article > div:first-of-type {
-  flex: 1;
+.blog-posts article>div:first-of-type {
+    flex: 1;
 }
 
-.blog-posts article > div:last-of-type {
-  display: flex;
-  justify-content: flex-end;
+.blog-posts article>div:last-of-type {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Article */
 .article-button-read {
     float: right;
 }
+
 .article-wrapper {
     font-size: 22px;
     line-height: 36px;
@@ -959,7 +977,8 @@ pre.highlight {
     font-weight: 600;
 }
 
-.timeline-grayed .timeline-item-content, .timeline-grayed .timeline-label,
+.timeline-grayed .timeline-item-content,
+.timeline-grayed .timeline-label,
 .table-status .table-status-discontinued,
 .table-status .table-status-replaced-by {
     background-color: #f9f9f9;
@@ -1047,7 +1066,7 @@ pre.highlight {
     bottom: 0;
     right: 0;
     display: block;
-    background-image: linear-gradient(0deg,#fff,transparent);
+    background-image: linear-gradient(0deg, #fff, transparent);
 }
 
 /* Toast */
@@ -1100,6 +1119,7 @@ pre.highlight {
     padding-top: 30px;
     position: relative;
 }
+
 .video iframe,
 .video object,
 .video embed {
@@ -1135,7 +1155,13 @@ pre.highlight {
     align-items: stretch;
 }
 
-.contributor-item {flex: 0 1 311px;text-align: center;display: flex;flex-direction: column;gap: 20px;}
+.contributor-item {
+    flex: 0 1 311px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .contributor-pic {
     display: block;
@@ -1202,4 +1228,3 @@ pre.highlight {
 .float.card a {
     font-weight: 600;
 }
-  
