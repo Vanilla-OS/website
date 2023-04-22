@@ -26,9 +26,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="2.090601"
-     inkscape:cx="618.48243"
-     inkscape:cy="538.6011"
+     inkscape:zoom="1.7227164"
+     inkscape:cx="856.20592"
+     inkscape:cy="598.47343"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -598,24 +598,24 @@
                style="stroke-width:0.75" /></text>
           <text
              xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:15.6px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono Semi-Bold';fill:#ffffff;stroke-width:0.75"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:15.7px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono Semi-Bold';fill:#ffffff;stroke-width:0.75"
              x="361.16489"
              y="386.21005"
              id="text624"><tspan
                sodipodi:role="line"
                id="tspan622"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.6px;font-family:'SF Mono';-inkscape-font-specification:'SF Mono Bold';baseline-shift:baseline;fill:#ffffff;stroke-width:0.75"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.7px;font-family:'SF Mono';-inkscape-font-specification:'SF Mono Bold';baseline-shift:baseline;fill:#ffffff;stroke-width:0.75"
                x="361.16489"
                y="386.21005">apx install nice-stuff</tspan></text>
           <text
              xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:15.6px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono Semi-Bold';fill:#ffffff;stroke-width:0.75"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:15.7px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono Semi-Bold';fill:#ffffff;stroke-width:0.75"
              x="361.16489"
              y="422.22757"
              id="text852"><tspan
                sodipodi:role="line"
                id="tspan850"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.6px;font-family:'SF Mono';-inkscape-font-specification:'SF Mono Bold';baseline-shift:baseline;fill:#ffffff;stroke-width:0.75"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.7px;font-family:'SF Mono';-inkscape-font-specification:'SF Mono Bold';baseline-shift:baseline;fill:#ffffff;stroke-width:0.75"
                x="361.16489"
                y="422.22757">sudo abroot exec apt install nice-drivers</tspan></text>
         </g>
