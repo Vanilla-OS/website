@@ -136,33 +136,39 @@ bug fixes, translations, qol improvements, etc.
             events: [
                 {
                     date: "No date yet",
-                    title: "Albius",
-                    description: "We are switching our installer backend to Albius.",
-                    className: "timeline-grayed"
-                },
-                {
-                    date: "No date yet",
-                    title: "Ikaros",
-                    description: "We are working on a new drivers backend for Vanilla OS",
-                    className: "timeline-grayed"
-                },
-                {
-                    date: "No date yet",
                     title: "GNOME 44",
                     description: "Vanilla OS 2.0 will be based on GNOME 44 (not guaranteed).",
                     className: "timeline-grayed"
                 },
                 {
                     date: "No date yet",
-                    title: "ABRoot OCI support",
-                    description: "We are working on adding OCI support to ABRoot.",
+                    title: "Waydroid support in Apx",
+                    description: "We are working on adding Android support to Apx.",
                     className: "timeline-grayed"
+                },
+                {
+                    date: "Working on",
+                    title: "Albius",
+                    description: "We are switching our installer backend to Albius.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "Working on",
+                    title: "Ikaros",
+                    description: "We are working on a new drivers backend for Vanilla OS",
+                    className: "timeline-green"
+                },
+                {
+                    date: "Working on",
+                    title: "ABRoot v2",
+                    description: "We are working on a new ABRoot version which use OCI images instead of the package manager.",
+                    className: "timeline-green"
                 },
                 {
                     date: "March 2023",
                     title: "OEM Support",
                     description: "We are working on adding OEM support to Vanilla OS.",
-                    className: "timeline-green"
+                    className: "timeline-dimmed-green"
                 },
                 {
                     date: "26 February 2023 - in progress",
