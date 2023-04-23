@@ -99,7 +99,7 @@ bug fixes, translations, qol improvements, etc.
                 {
                     date: "11 November 2022",
                     title: "Slowdown #1",
-                    description: "We have decided to deprecate Almost for ABRoot, a new utility designed to provide a more robust and full atomic immutability model, as a result the next release will be delayed by a few weeks.",
+                    description: "We have decided to <a href='/2023/01/28/almost-vs-abroot.html'>deprecate Almost for ABRoot</a>, a new utility designed to provide a more robust and full atomic immutability model, as a result the next release will be delayed by a few weeks.",
                     className: "timeline-red"
                 },
                 {
