@@ -83,10 +83,6 @@
     .media-carousel {
         filter: hue-rotate(180deg) invert(1);
     }
-    
-    .media-carousel-item img {
-        filter: saturate(0) invert(1);
-    }
 
     .footer-secondary {
         background-color: #2d2d2d;
