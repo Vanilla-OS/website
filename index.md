@@ -4,7 +4,7 @@ description: Vanilla OS is an Immutable Linux-based distribution which aims to p
 ---
 <div class="container small">
     <div class="float card bounce">
-        <p><b>Announcement:</b> We are changing our base to <b><a href="/2023/03/07/vanilla-os-2.0-orchid-initial-work.html">Debian in Orchid</a></b>. </p>
+        <p align="center">Coming soon: <a href="/2023/03/07/vanilla-os-2.0-orchid-initial-work.html">Orchid</a>, with rebase to Debian!</p>
     </div>
 </div>
 <div class="hero hero-center hero-main">
