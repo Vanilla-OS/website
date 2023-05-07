@@ -189,6 +189,12 @@ bug fixes, translations, qol improvements, etc.
                     className: "timeline-green"
                 },
                 {
+                    date: "30 April 2023",
+                    title: "Prometheus",
+                    description: "We are developing a runtime for containers to be used in Vanilla OS projects.",
+                    className: "timeline-dimmed-green"
+                },
+                {
                     date: "14 April 2023",
                     title: "Atlas",
                     description: "We are developing a web platform to browse the Vanilla OS Image Registry.",
