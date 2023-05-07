@@ -143,7 +143,7 @@ bug fixes, translations, qol improvements, etc.
                 {
                     date: "No date yet",
                     title: "Waydroid support in Apx",
-                    description: "We are working on adding Android support to Apx.",
+                    description: "We are working on adding <a href='https://github.com/Vanilla-OS/apx/issues/118'>Android support to Apx</a>.",
                     className: "timeline-grayed"
                 },
                 {
