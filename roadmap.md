@@ -149,7 +149,7 @@ bug fixes, translations, qol improvements, etc.
                 {
                     date: "Working on",
                     title: "desktop-image",
-                    description: "We are working to the core image of Vanilla OS. This is the official image of Vanilla OS.",
+                    description: "We are working to the desktop image of Vanilla OS. This is the official image of Vanilla OS.",
                     className: "timeline-green"
                 },
                 {
