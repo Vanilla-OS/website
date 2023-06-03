@@ -94,7 +94,7 @@ description: Meet the people behind Vanilla OS
       main_company: false
     },
     {
-      github_username: "axtloss",
+      github_username: "orowith2os",
       name: "Dallas Strouse",
       roles: [
         "Website Accessibility"
@@ -102,7 +102,7 @@ description: Meet the people behind Vanilla OS
       main_company: false
     },
     {
-      github_username: "orowith2os",
+      github_username: "axtloss",
       name: "axtlos / xenia",
       roles: [
         "Software Engineer",
