@@ -42,14 +42,6 @@ description: Meet the people behind Vanilla OS
       main_company: true
     },
     {
-      github_username: "bketelsen",
-      name: "Brian Ketelsen",
-      roles: [
-        "Systems Engineer"
-      ],
-      main_company: false
-    },
-    {
       github_username: "Muqtxdir",
       name: "Muqtadir",
       roles: [
