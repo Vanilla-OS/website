@@ -80,9 +80,10 @@ description: Meet the people behind Vanilla OS
       github_username: "TheEvilSkeleton",
       name: "Hari Rana",
       roles: [
+        "UX Designer",
         "Moderator"
       ],
-      main_company: false
+      main_company: true
     },
     {
       github_username: "kra-mo",
