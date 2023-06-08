@@ -79,9 +79,8 @@
         background-color: #0000002e;
     }
 
-    .logo-carousel .logo-carousel-item img,
-    .media-carousel {
-        filter: hue-rotate(180deg) invert(1);
+    .logo-carousel .logo-carousel-item img {
+        filter: saturate(0) invert(1);
     }
     
     .media-carousel-item img {
