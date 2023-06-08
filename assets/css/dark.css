@@ -185,6 +185,7 @@
     .float.card {
         background-color: #3B0066;
         text-align: center;
+        text-wrap: balance;
     }
     
     .float.card a {
