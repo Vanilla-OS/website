@@ -52,7 +52,7 @@ More information and guides about creating your custom images will follow after 
 
 ### Other features
 
-Among the many other features, we find improved management of kernel flags, the ability to roll back to a previous state, checking the system's integrity status, displaying useful metadata information such as added packages, removed packages, the last obtained image, and more.
+The are many more features coming to Vanilla OS with Orchid, such as improved management of kernel flags, the ability to roll back to a previous state, checking the system's integrity status, displaying useful metadata information such as added and removed packages, the last obtained image, and more.
 
 ## A New Structure
 
