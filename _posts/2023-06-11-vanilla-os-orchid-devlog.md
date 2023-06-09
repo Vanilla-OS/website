@@ -116,7 +116,7 @@ Support for Android applications has been one of the most widely requested featu
 
 #### Nix
 
-Support for Nix was previously a feature of Apx v1, but we realized that this feature is no longer compatible with the direction we are moving towards with Apx v2. Therefore, it has moved to VSO v2. Its functionality remains the same, but it has a new codebase that resolves many reported issues and provides a better user experience.
+Support for Nix was previously a feature of Apx v1, but we realized that this feature is no longer compatible with the direction we are moving towards with Apx v2. Therefore, it has been moved to VSO v2. Its functionality remains the same, but it has a new codebase that resolves many reported issues and provides a better user experience.
 
 ## Albius, the new installer backend
 
