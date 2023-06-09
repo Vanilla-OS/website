@@ -84,7 +84,7 @@ In Apx v1, it was possible to use multiple package managers by specifying the de
 
 Apx v2 still offers this possibility, but it does so through stacks that are configurable environments based on the user's needs.
 
-A stack is a set of instructions that can configure an environment based on any Linux distribution, adding packages and settings at the user's discretion. At any time, the user can create a new stack by defining a base Linux distribution, such as Arch Linux, and an optional list of packages. With this stack, the user can start one or more new subsystems based on that stack.
+A stack is a set of instructions that can configure an environment based on any Linux distribution, adding packages and settings at the user's discretion. At any time, the user can create a new stack by defining a base Linux distribution, such as Arch Linux, and an optional list of packages. With this stack, the user can start one or more new subsystems based on it.
 
 Once a subsystem gets created, the user can use package manager commands (install, remove, update, etc.) or enter the subsystem, just like in Apx v1.
 
