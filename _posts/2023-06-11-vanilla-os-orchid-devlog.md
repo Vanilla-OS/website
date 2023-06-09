@@ -68,7 +68,7 @@ Vanilla OS Orchid consists of 3 main OCI images:
 
 [Desktop](https://github.com/Vanilla-OS/desktop-image) is the official system image based on Core. It offers the complete user experience designed for Vanilla OS, including the GNOME desktop and all the graphical tools developed by our team.
 
-[pic pico/core/desktop]
+![System composition of Vanilla OS](/assets/uploads/images.webp)
 
 This division allows us to open the doors to every type of flavor, ranging from servers to desktops. It would also allow you to change your base system from Debian to your distribution of choice.
 
