@@ -32,7 +32,7 @@ Once a package is added or removed, it will not be installed or removed from the
 abroot pkg apply
 ```
 
-It will create a local image of the latest Vanilla OS version, adding or removing the desired packages. This new local image would be kept up to date automatically with the latest versions of Vanilla OS.
+This will create a local image of the latest Vanilla OS version, adding or removing the desired packages. This new local image will be kept up-to-date automatically with the latest versions of Vanilla OS.
 
 ### Always Bootable
 
