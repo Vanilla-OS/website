@@ -44,7 +44,7 @@ Thanks to this new structure, the update process never modifies the master boot 
 
 ### Custom Images with Vib
 
-Since Vanilla OS is a general-purpose distribution, users may have specific needs that require modifications to the base structure of Vanilla OS, such as a different desktop environment. Thanks to the OCI image system, you can create your own custom image in just a few minutes by adding your customizations to the official image's recipe.
+Since Vanilla OS is a general-purpose distribution, users may have specific needs that require modifications to the base structure of Vanilla OS, such as a different desktop environment. Thanks to the OCI image system, you can create your own custom image in just a few minutes by adding your customizations on top of the official image's recipe.
 
 To simplify this process, we have created a tool called [Vib (Vanilla Image Builder)](https://github.com/Vanilla-OS/Vib), which provides a convenient method for creating OCI images using [recipes](https://github.com/Vanilla-OS/core-image/blob/main/recipe.yml) and [modules](https://github.com/Vanilla-OS/Vib#moule-structure).
 
