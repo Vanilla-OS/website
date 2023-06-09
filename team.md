@@ -42,14 +42,6 @@ description: Meet the people behind Vanilla OS
       main_company: true
     },
     {
-      github_username: "bketelsen",
-      name: "Brian Ketelsen",
-      roles: [
-        "Systems Engineer"
-      ],
-      main_company: false
-    },
-    {
       github_username: "Muqtxdir",
       name: "Muqtadir",
       roles: [
@@ -88,9 +80,10 @@ description: Meet the people behind Vanilla OS
       github_username: "TheEvilSkeleton",
       name: "Hari Rana",
       roles: [
+        "UX Designer",
         "Moderator"
       ],
-      main_company: false
+      main_company: true
     },
     {
       github_username: "kra-mo",
@@ -106,6 +99,15 @@ description: Meet the people behind Vanilla OS
       name: "Dallas Strouse",
       roles: [
         "Website Accessibility"
+      ],
+      main_company: false
+    },
+    {
+      github_username: "axtloss",
+      name: "axtlos / xenia",
+      roles: [
+        "Software Engineer",
+        "Lit Contributor",
       ],
       main_company: false
     }

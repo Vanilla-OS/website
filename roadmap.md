@@ -143,13 +143,37 @@ bug fixes, translations, qol improvements, etc.
                 {
                     date: "No date yet",
                     title: "Waydroid support in Apx",
-                    description: "We are working on adding Android support to Apx.",
+                    description: "We are working on adding <a href='https://github.com/Vanilla-OS/apx/issues/118'>Android support to Apx</a>.",
                     className: "timeline-grayed"
                 },
                 {
                     date: "Working on",
+                    title: "desktop-image",
+                    description: "We are working to the desktop image of Vanilla OS. This is the official image of Vanilla OS.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "Working on",
+                    title: "core-image",
+                    description: "We are working to the core image of Vanilla OS. This image will be used as a base for the desktop image and flavors.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "Working on",
+                    title: "pico-image",
+                    description: "We are working to the pico image of Vanilla OS. This image will be used as a base for the core image and live iso.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "Working on",
+                    title: "Vib",
+                    description: "We are working on a new OCI image builder for Vanilla OS.",
+                    className: "timeline-green"
+                },
+                {
+                    date: "Working on",
                     title: "Albius",
-                    description: "We are switching our installer backend to Albius.",
+                    description: "We are developing and switching to Albius, a new installer backend for Vanilla OS.",
                     className: "timeline-green"
                 },
                 {
@@ -165,13 +189,31 @@ bug fixes, translations, qol improvements, etc.
                     className: "timeline-green"
                 },
                 {
+                    date: "30 April 2023",
+                    title: "Prometheus",
+                    description: "We are developing a runtime for containers to be used in Vanilla OS projects.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "14 April 2023",
+                    title: "Atlas",
+                    description: "We are developing a web platform to browse the Vanilla OS Image Registry.",
+                    className: "timeline-dimmed-green"
+                },
+                {
+                    date: "3 April 2023",
+                    title: "Eratosthenes",
+                    description: "We are developing a web platform to index and search for packages in the Vanilla OS repositories.",
+                    className: "timeline-dimmed-green"
+                },
+                {
                     date: "March 2023",
                     title: "OEM Support",
                     description: "We are working on adding OEM support to Vanilla OS.",
                     className: "timeline-dimmed-green"
                 },
                 {
-                    date: "26 February 2023 - in progress",
+                    date: "26 February 2023",
                     title: "Setting up testing infrastructure",
                     description: "We are setting up a testing infrastructure to test the new features and bug fixes. The base system is based on Debian sid.",
                     className: "timeline-dimmed-green"
