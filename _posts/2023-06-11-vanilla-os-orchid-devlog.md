@@ -15,7 +15,7 @@ Throughout its lifespan, Vanilla OS has adopted [various approaches](https://van
 
 The new version is not just an update; the entire underlying structure has been rethought and rewritten from scratch to be the ideal solution for all use cases due to the use of OCI images.
 
-In ABRoot v1, obtaining and applying system updates was done by leveraging the package manager in an isolated and atomic environment. In ABRoot v2, the update operation now utilizes OCI images, which are exact copies of the new system, downloaded and allocated using data deduplication and applied in a single atomic transaction. This way, all installations of Vanilla OS receive the exact copy of the update, making the system 100% reproducible and faithful to our tests.
+In ABRoot v1, obtaining and applying system updates was done by leveraging the package manager in an isolated and atomic environment. In ABRoot v2, the update operation now utilizes OCI (Open Container Initiative) images, which are exact copies of the new system, downloaded and allocated using data deduplication and applied in a single atomic transaction. This way, all installations of Vanilla OS receive the exact copy of the update, making the system 100% reproducible and faithful to our tests.
 
 It automatically raises the question, "How do I install extra drivers?" in Vanilla OS Orchid, installation of the most common drivers is a graphical and effortless process. However, there are cases where it is necessary to install additional packages in the system. For this reason, we have introduced a package manager in ABRoot v2 that allows users to manage their packages using atomic transactions.
 
