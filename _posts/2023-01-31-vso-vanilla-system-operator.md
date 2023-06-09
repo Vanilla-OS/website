@@ -1,7 +1,7 @@
 ---
 title: "VSO is the Vanilla System Operator"
 description: "Explore VSO, your teammate in Vanilla OS."
-published: 2023-01-31
+date: 2023-01-31
 layout: article
 published: true
 comments: true

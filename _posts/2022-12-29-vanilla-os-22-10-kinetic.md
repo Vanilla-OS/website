@@ -1,7 +1,7 @@
 ---
 title: "Vanilla OS 22.10 Kinetic is out!"
 description: "First stable release of Vanilla OS 22.10 Kinetic is released."
-published: 2022-12-29
+date: 2022-12-29
 layout: article
 published: true
 comments: true
