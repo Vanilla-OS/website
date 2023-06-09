@@ -38,7 +38,7 @@ This will create a local image of the latest Vanilla OS version, adding or remov
 
 One of the main features of this version is the change in boot management. In v1, a single boot partition managed and contained the kernel images, initrd, and GRUB configuration. In v2, this process changes significantly as the boot partition gets divided into two parts: root boot and master boot.
 
-Each root partition has its own boot, containing the GRUB configuration, kernel, and initrd images. These configurations get dynamically managed by the master boot, a general GRUB configuration that handles switching and loading the boot from the correct root based on the update status.
+Each root partition has its own boot directory, containing the GRUB configuration, kernel, and initrd images. These configurations get dynamically managed by the master boot, a general GRUB configuration that handles switching and loading the boot files from the correct root based on the update status.
 
 Thanks to this new structure, the update process never modifies the master boot except atomically, ensuring and preserving the system's boot.
 
