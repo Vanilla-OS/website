@@ -158,7 +158,7 @@ With the introduction of OCI images in Vanilla OS, there arose a need to provide
 
 Atlas is built with VueJS and designed to be easily navigatable, displaying all image details clearly and intuitively. Users can read about the build steps, size, layers, and other details for creating a variant of Vanilla OS.
 
-Currently, the platform showcases the Pico, Core, and Desktop images, but this list might expand in the future to include new compliant images.
+Currently, the platform showcases the Pico, Core, Desktop and Dev images, but this list might expand in the future to include new compliant images.
 
 You can test the platform by visiting [images.vanillaos.org](https://images.vanillaos.org/).
 
