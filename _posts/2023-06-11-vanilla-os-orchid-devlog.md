@@ -74,7 +74,7 @@ This division allows us to open the doors to every type of flavor, ranging from 
 
 ## Apx v2 and VSO v2
 
-Apx and VSO (Vanilla System Operator) have always been different utilities with nothing in common. It is changing in Vanilla OS Orchid, where the two tools collaborates to cover a wide range of use cases.
+Apx and VSO (Vanilla System Operator) have so far been different utilities with nothing in common. This is changing in Vanilla OS Orchid, where both tools will work together to cover a wide range of use cases.
 
 ### Apx, as a developer tool
 
