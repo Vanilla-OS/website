@@ -100,7 +100,7 @@ VSO v2 plays a crucial role in Vanilla OS Orchid. On top of managing update conf
 
 #### Vanilla OS Subsystem
 
-Since Apx v2 is a tool designed for developers and more advanced users, which will receive several other features for this target audience over time, we have decided to create a new subsystem specifically for the end user, who is typically less experienced. In VSO v2, there is a subsystem based on Vanilla OS Pico. This subsystem will be a SystemD container and is deeply integrated into the system, allowing the most simple installation, removal, and management of packages, both graphically and from the command line.
+Since Apx v2 is a tool designed for developers and more advanced users, which will receive several other features for this target audience over time, we have decided to create a new subsystem specifically for the end user, who is typically less technologically inclined. In VSO v2, there is a subsystem based on Vanilla OS Pico. This subsystem will be a SystemD container deeply integrated into the system, allowing straightforward installation, removal, and management of packages, both graphically and through the command line.
 
 At any time, the user can access the command line to install packages using this subsystem or use the new graphical sideload utility to install Deb or Apk packages.
 
