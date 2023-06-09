@@ -180,7 +180,7 @@ There are many new features we have worked on, and we cannot cover them all in d
 
 ![Drivers Utility](/assets/uploads/drivers-utility.webp)
 
-As announced in the previous article, we have been working on changes to support OEM in Vanilla OS. It includes moving user creation and other installer steps to the [First Setup](https://github.com/Vanilla-OS/first-setup) and improving the user experience of both the Installer and First Setup.
+As announced in the previous article, we have been working on changes to support OEM in Vanilla OS. This includes moving user creation and other installer steps to [First Setup](https://github.com/Vanilla-OS/first-setup) and improving the user experience of both the Installer and First Setup.
 
 We are also developing an intelligent graphics driver manager based on [Ikaros](https://github.com/Vanilla-OS/ikaros) that suggests driver installations whenever needed, guiding the user without interrupting their workflow.
 
