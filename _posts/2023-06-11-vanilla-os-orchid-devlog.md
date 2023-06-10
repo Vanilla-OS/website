@@ -182,7 +182,7 @@ As announced in the previous article, we have been working on changes to support
 
 We are also developing an intelligent graphics driver manager based on [Ikaros](https://github.com/Vanilla-OS/ikaros) that suggests driver installations whenever needed, guiding the user without interrupting their workflow.
 
-![Drivers Utility](/assets/uploads/drivers-utility.webp)
+![Hardware driver utility asking to install the drivers for am HP Laserjet P1102](/assets/uploads/drivers-utility.webp)
 
 Among the various new features we are working on for the installer is a new Recovery mode with easy access to all recovery tools like the terminal, ABRoot recovery, the browser, and more. Additionally, we are working on a recovery partition that allows graphical restoration of one's Vanilla OS installation if anything gets compromised due to external causes.
 
