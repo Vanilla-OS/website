@@ -7,7 +7,7 @@ layout: article
 comments: true
 ---
 
-After our article [announcing](https://vanillaos.org/2023/03/07/vanilla-os-2.0-orchid-initial-work.html) the development of the second version of Vanilla OS, codenamed Orchid, several weeks of planning, development, and testing have followed. In this article, we will cover some of the new features that the upcoming major release of Vanilla OS will bring, together with our reasoning for them.
+After our article [announcing](https://vanillaos.org/2023/03/07/vanilla-os-2.0-orchid-initial-work.html) the development of the second version of Vanilla OS, codenamed Orchid, several months of planning, development, and testing have followed. In this article, we will cover some of the new features that the upcoming major release of Vanilla OS will bring, together with our reasoning for them.
 
 ## ABRoot v2 - Immutability changes, once again
 
