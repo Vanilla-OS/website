@@ -15,7 +15,7 @@ Throughout its lifespan, Vanilla OS has adopted [various approaches](https://van
 
 The new version is not just an update; the entire underlying structure has been rethought and rewritten from scratch to be the ideal solution for all use cases due to the use of OCI images.
 
-In ABRoot v1, obtaining and applying system updates was done by leveraging the package manager in an isolated and atomic environment. In ABRoot v2, the update operation now utilizes OCI (Open Container Initiative) images, which are exact copies of the new system, downloaded and allocated using data deduplication and applied in a single atomic transaction. This way, all installations of Vanilla OS receive the exact copy of the update, making the system 100% reproducible and faithful to our tests.
+In ABRoot v1, obtaining and applying system updates was done by leveraging the package manager in an isolated and atomic environment. In ABRoot v2, the update operation now utilizes OCI ([Open Container Initiative](https://opencontainers.org)) images, which are exact copies of the new system, downloaded and allocated using data deduplication and applied in a single atomic transaction. This way, all installations of Vanilla OS receive the exact copy of the update, making the system 100% reproducible and faithful to our tests.
 
 This automatically raises the question: "How do I install extra drivers?" In Vanilla OS Orchid, installation of the most common drivers is a graphical and effortless process. However, there are cases where it is necessary to install additional packages in the system. For this reason, we have introduced a package manager in ABRoot v2 that allows users to manage their packages using atomic transactions.
 
@@ -104,9 +104,9 @@ Since Apx v2 is a tool designed for developers and more advanced users, which wi
 
 At any time, the user can access the command line to install packages using this subsystem or use the new graphical sideload utility to install Deb packages or Android APKs.
 
-![Installing an Apk package of Chromium using the sideload utility](/assets/uploads/sideload-utility-install.webp)
+![Installing the Chromium APK using the sideload utility](/assets/uploads/sideload-utility-install.webp)
 
-![Uninstalling an Apk package of Chromium using the sideload utility](/assets/uploads/sideload-utility-uninstall.webp)
+![Uninstalling the Chromium APK using the sideload utility](/assets/uploads/sideload-utility-uninstall.webp)
 
 We are working on making the subsystem easier to access by integrating it into GNOME Software. We can't promise this at this time. But it is in our plans.
 
