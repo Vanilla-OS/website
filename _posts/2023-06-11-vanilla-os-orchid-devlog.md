@@ -62,7 +62,7 @@ Vanilla OS Orchid consists of 3 main OCI images:
 - [Core](https://github.com/Vanilla-OS/core-image)
 - [Desktop](https://github.com/Vanilla-OS/desktop-image)
 
-[Pico](https://github.com/Vanilla-OS/pico-image) is a minimal (~60MB) version of Debian built from the Vanilla OS repository.
+[Pico](https://github.com/Vanilla-OS/pico-image) is a minimal (~60MB) version of Debian built from the Vanilla OS repository, intended to be the base of the Vanilla OS Core image.
 
 [Core](https://github.com/Vanilla-OS/core-image) is an image based on Pico, which adds all the core functionalities of Vanilla OS. It is the intended starting point for developing OCI images for Vanilla OS.
 
