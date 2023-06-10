@@ -68,7 +68,7 @@ Vanilla OS Orchid consists of 3 main OCI images:
 
 [Desktop](https://github.com/Vanilla-OS/desktop-image) is the official system image based on Core. It offers the complete user experience designed for Vanilla OS, including the GNOME desktop and all the graphical tools developed by our team.
 
-![System composition of Vanilla OS](/assets/uploads/images.webp)
+![System composition of Vanilla OS, as described above](/assets/uploads/images.webp)
 
 This division allows us to open the doors to every type of flavor, ranging from servers to desktops. It would also allow you to change your base system from Debian to your distribution of choice.
 
@@ -100,7 +100,7 @@ VSO v2 plays a crucial role in Vanilla OS Orchid. On top of managing update conf
 
 #### Vanilla OS Subsystem
 
-Since Apx v2 is a tool designed for developers and more advanced users, which will receive several other features for this target audience over time, we have decided to create a new subsystem specifically for the end user, who is typically less technologically inclined. In VSO v2, there is a subsystem based on Vanilla OS Pico. This subsystem will be a Systemd container deeply integrated into the system, allowing straightforward installation, removal, and management of packages, both graphically and through the command line.
+Since Apx v2 is a tool designed for developers and more advanced users, which will receive several other features for this target audience over time, we have decided to create a new subsystem specifically for the end user, who is typically less technologically inclined. In VSO v2, there is a subsystem based on Vanilla OS Pico. This subsystem will be a systemd container deeply integrated into the system, allowing straightforward installation, removal, and management of packages, both graphically and through the command line.
 
 At any time, the user can access the command line to install packages using this subsystem or use the new graphical sideload utility to install Deb packages or Android APKs.
 
@@ -108,11 +108,11 @@ At any time, the user can access the command line to install packages using this
 
 ![Uninstalling an Apk package of Chromium using the sideload utility](/assets/uploads/sideload-utility-uninstall.webp)
 
-We are working to make access to the subsystem easier by integrating it with GNOME Software. We cannot promise this at the moment. But it is in our plans.
+We are working on making the subsystem easier to access by integrating it into the GNOME software. We can't promise this at this time. But it is in our plans.
 
 #### Waydroid
 
-Support for Android applications has been one of the most widely requested features by our community since the beginning of the project. Finally, this will be possible with VSO v2. The integration is similar to the Vanilla OS subsystem, as it will allow installing Android packages from the command line or through the Sideload application by simply downloading and opening an Apk package.
+Support for Android applications has been one of the most widely requested features by our community since the beginning of the project. Finally, this will be possible with VSO v2. The integration is similar to the Vanilla OS subsystem, as it will allow us to install Android APKs from the command line or through the Sideload application by simply downloading and opening an APK.
 
 #### Nix
 
@@ -130,7 +130,7 @@ One of the most significant features Albius introduces is LUKS2 encryption. LUKS
 
 During the design process of Orchid, one of the discussions that frequently arose was about the usefulness of the `sudo` command. Vanilla OS is an immutable system, and any modifications should occur through Apx, VSO, or ABRoot (especially with Orchid). We questioned whether it was worth including a command like `sudo` in the distribution and what benefits its removal would bring. From our analysis and discussions we identified several advantages of removing the `sudo` command.
 
-By eliminating `sudo`, the risk of accidental or harmful operations performed by unauthorized entities would get reduced. Since Vanilla OS promotes a secure and stable environment, we are limiting privileged access to help preserve the system's integrity. The absence of `sudo` would encourage the adoption of a more structured approach to privilege management. Tools like Apx, VSO, and ABRoot offer specific mechanisms for system administration, allowing users to perform configuration and update operations securely and in a controlled manner. By removing `sudo`, use of specialized tools will get promoted instead of relying on insecure commands prone to errors and abuse. Additionally, utilities like Systemd already allow for sudo-less management of units, and we can't think of any other use cases where sudo would be necessary.
+By eliminating `sudo`, the risk of accidental or harmful operations performed by unauthorized entities would get reduced. Since Vanilla OS promotes a secure and stable environment, we are limiting privileged access to help preserve the system's integrity. The absence of `sudo` would encourage the adoption of a more structured approach to privilege management. Tools like Apx, VSO, and ABRoot offer specific mechanisms for system administration, allowing users to perform configuration and update operations securely and in a controlled manner. By removing sudo, the use of specialized tools will get promoted instead of relying on potentially misused commands. Additionally, utilities like systemd already allow for sudo-less management of units, and we can't think of any other use cases where sudo would be necessary.
 
 For this reason we have chosen to go down this path and remove the `sudo` command. However, the `pkexec` command remains available, which is more suitable for a desktop environment. All your operations requiring root privileges will function the same, with the only difference is another command to invoke the root privileges, which does that in a safer manner than `sudo`.
 
@@ -168,11 +168,11 @@ You can test the platform by visiting [images.vanillaos.org](https://images.vani
 
 Like every Linux distribution that sees a new major update, Vanilla OS Orchid has received a new official wallpaper. [Kramo](https://github.com/kra-mo) has been working hard on this. He has made a wallpaper highlighting the new light that Orchid brings to Vanilla OS.
 
-![Orchid Wallpaper - Light varient](/assets/uploads/orchid-light.webp)
+![Orchid Wallpaper, light variant: A 2D image of vanilla orchid over a sky-based wallpaper](/assets/uploads/orchid-light.webp)
 
 The new wallpaper comes in two colors, light and dark, and it represents a vanilla orchid in a pure environment, which embodies the pure essence of Vanilla OS and the desire to provide a simple and relaxing user experience.
 
-![Orchid Wallpaper - Dark varient](/assets/uploads/orchid-dark.webp)
+![Orchid Wallpaper, dark variant: A 2D image of vanilla orchid over a plant-based wallpaper](/assets/uploads/orchid-dark.webp)
 
 ## Other news
 
