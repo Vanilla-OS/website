@@ -178,11 +178,11 @@ The new wallpaper comes in two colors, light and dark, and it represents a vanil
 
 There are many new features we have worked on, and we cannot cover them all in detail in a single article for various reasons. However, we can briefly mention some of them.
 
-![Drivers Utility](/assets/uploads/drivers-utility.webp)
-
 As announced in the previous article, we have been working on changes to support OEM in Vanilla OS. This includes moving user creation and other installer steps to [First Setup](https://github.com/Vanilla-OS/first-setup) and improving the user experience of both the Installer and First Setup.
 
 We are also developing an intelligent graphics driver manager based on [Ikaros](https://github.com/Vanilla-OS/ikaros) that suggests driver installations whenever needed, guiding the user without interrupting their workflow.
+
+![Drivers Utility](/assets/uploads/drivers-utility.webp)
 
 Among the various new features we are working on for the installer is a new Recovery mode with easy access to all recovery tools like the terminal, ABRoot recovery, the browser, and more. Additionally, we are working on a recovery partition that allows graphical restoration of one's Vanilla OS installation if anything gets compromised due to external causes.
 
