@@ -7,7 +7,7 @@ layout: article
 comments: true
 ---
 
-After our article [announcing](https://vanillaos.org/2023/03/07/vanilla-os-2.0-orchid-initial-work.html) the development of the second version of Vanilla OS, codenamed Orchid, several months of planning, development, and testing have followed. In this article, we will cover some of the new features that the upcoming major release of Vanilla OS will bring, together with our reasoning for them.
+After [our article](https://vanillaos.org/2023/03/07/vanilla-os-2.0-orchid-initial-work.html) announcing the development of the second version of Vanilla OS, codenamed Orchid, several months of planning, development, and testing have followed. In this article, we will cover some of the new features that the upcoming major release of Vanilla OS will bring, together with our reasoning for them.
 
 ## ABRoot v2 - Immutability changes, once again
 
@@ -17,7 +17,7 @@ The new version is not just an update; the entire underlying structure has been 
 
 In ABRoot v1, obtaining and applying system updates was done by leveraging the package manager in an isolated and atomic environment. In ABRoot v2, the update operation now utilizes OCI (Open Container Initiative) images, which are exact copies of the new system, downloaded and allocated using data deduplication and applied in a single atomic transaction. This way, all installations of Vanilla OS receive the exact copy of the update, making the system 100% reproducible and faithful to our tests.
 
-It automatically raises the question, "How do I install extra drivers?" in Vanilla OS Orchid, installation of the most common drivers is a graphical and effortless process. However, there are cases where it is necessary to install additional packages in the system. For this reason, we have introduced a package manager in ABRoot v2 that allows users to manage their packages using atomic transactions.
+This automatically raises the question: "How do I install extra drivers?" In Vanilla OS Orchid, installation of the most common drivers is a graphical and effortless process. However, there are cases where it is necessary to install additional packages in the system. For this reason, we have introduced a package manager in ABRoot v2 that allows users to manage their packages using atomic transactions.
 
 Below is an example of the commands to add and remove packages:
 
@@ -50,9 +50,9 @@ To simplify this process, we have created a tool called [Vib (Vanilla Image Buil
 
 More information and guides about creating your custom images will follow after the release of Orchid.
 
-### Other features
+### Other Features
 
-The are many more features coming to Vanilla OS with Orchid, such as improved management of kernel flags, the ability to roll back to a previous state, checking the system's integrity status, displaying useful metadata information such as added and removed packages, the last obtained image, and more.
+The are many more features coming to Vanilla OS with Orchid, such as improved management of kernel flags, the ability to rollback to a previous state, checking the system's integrity status, displaying useful metadata information such as added and removed packages, the last obtained image, and more.
 
 ## A New Structure
 
@@ -108,7 +108,7 @@ At any time, the user can access the command line to install packages using this
 
 ![Uninstalling an Apk package of Chromium using the sideload utility](/assets/uploads/sideload-utility-uninstall.webp)
 
-We are working on making the subsystem easier to access by integrating it into the GNOME software. We can't promise this at this time. But it is in our plans.
+We are working on making the subsystem easier to access by integrating it into GNOME Software. We can't promise this at this time. But it is in our plans.
 
 #### Waydroid
 
@@ -130,7 +130,7 @@ One of the most significant features Albius introduces is LUKS2 encryption. LUKS
 
 During the design process of Orchid, one of the discussions that frequently arose was about the usefulness of the `sudo` command. Vanilla OS is an immutable system, and any modifications should occur through Apx, VSO, or ABRoot (especially with Orchid). We questioned whether it was worth including a command like `sudo` in the distribution and what benefits its removal would bring. From our analysis and discussions we identified several advantages of removing the `sudo` command.
 
-By eliminating `sudo`, the risk of accidental or harmful operations performed by unauthorized entities would get reduced. Since Vanilla OS promotes a secure and stable environment, we are limiting privileged access to help preserve the system's integrity. The absence of `sudo` would encourage the adoption of a more structured approach to privilege management. Tools like Apx, VSO, and ABRoot offer specific mechanisms for system administration, allowing users to perform configuration and update operations securely and in a controlled manner. By removing sudo, the use of specialized tools will get promoted instead of relying on potentially misused commands. Additionally, utilities like systemd already allow for sudo-less management of units, and we can't think of any other use cases where sudo would be necessary.
+By eliminating `sudo`, the risk of accidental or harmful operations performed by unauthorized entities would get reduced. Since Vanilla OS promotes a secure and stable environment, we are limiting privileged access to help preserve the system's integrity. The absence of `sudo` would encourage the adoption of a more structured approach to privilege management. Tools like Apx, VSO, and ABRoot offer specific mechanisms for system administration, allowing users to perform configuration and update operations securely and in a controlled manner. By removing `sudo`, the use of specialized tools will get encouraged instead of relying on potentially misused commands. Additionally, utilities like systemd already allow for sudo-less management of units, and we can't think of any other use cases where `sudo` would be necessary.
 
 For this reason we have chosen to go down this path and remove the `sudo` command. However, the `pkexec` command remains available, which is more suitable for a desktop environment. All your operations requiring root privileges will function the same, with the only difference is another command to invoke the root privileges, which does that in a safer manner than `sudo`.
 
@@ -144,7 +144,7 @@ Prometheus provides a convenient and easily extendable method for obtaining, bui
 
 ## Eratosthenes
 
-With the switch to Debian as the base for Orchid, we had to create our own repositories to manage package freezes and packages. It was not only a week-long effort, but it led to the need for a platform to display package details from the repositories.
+With the switch to Debian as the base for Orchid, we had to create our own repositories to manage package freezes and packages. This was not only a week-long effort, but it led to the need for a platform to display package details from the repositories.
 
 Unfortunately, most currently available platforms for this purpose did not meet our UX standards and offered a complex and outdated interface. That's why we developed [Eratosthenes*](https://github.com/Vanilla-OS/Eratosthenes), a platform based on Flask and written in Python, which allows easy searching and reading of package details directly from our repositories.
 
@@ -190,6 +190,6 @@ Among the various new features we are working on for the installer is a new Reco
 
 ---
 
-The development of Vanilla OS 2.0 is progressing rapidly, and more news will follow soon!
+The development of Vanilla OS Orchid is progressing rapidly, and more news will follow soon!
 
-For latest updates, checkout the [roadmap](https://vanillaos.org/roadmap) and the [project tracker](https://github.com/orgs/Vanilla-OS/projects/4).
+For the latest updates, check out the [roadmap](https://vanillaos.org/roadmap) and the [project tracker](https://github.com/orgs/Vanilla-OS/projects/4).
