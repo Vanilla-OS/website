@@ -186,7 +186,7 @@ We are also developing an intelligent graphics driver manager based on [Ikaros](
 
 Among the various new features we are working on for the installer is a new Recovery mode with easy access to all recovery tools like the terminal, ABRoot recovery, the browser, and more. Additionally, we are working on a recovery partition that allows graphical restoration of one's Vanilla OS installation if anything gets compromised due to external causes.
 
-![Recovery utility](/assets/uploads/recovery-utility.webp)
+![The described Recovery Mode with the following menus: Reinstall Vanilla OS, and Advanced Utilities: Disks Utility, Rescue Shell, Web Browser, and Repair File System.](/assets/uploads/recovery-utility.webp)
 
 ---
 
