@@ -1,7 +1,7 @@
 ---
 title: "Nix support in Apx has landed!"
 description: "Explore Apx's new nix flag to install packages from nix repositories."
-published: 2023-02-07
+date: 2023-02-07
 layout: article
 published: true
 comments: true

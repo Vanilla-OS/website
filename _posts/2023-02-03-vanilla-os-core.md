@@ -1,7 +1,7 @@
 ---
 title: "Vanilla OS Core - A minimal and clean base"
 description: "An introduction to Vanilla OS Core, a minimal Vanilla OS base."
-published: 2023-02-03
+date: 2023-02-03
 layout: article
 published: true
 comments: true

@@ -1,7 +1,7 @@
 ---
 title: "Point vs Rolling Release and the modern solutions"
 description: "Explore the pros and cons of point release vs rolling release."
-published: 2023-01-31
+date: 2023-01-31
 layout: article
 published: true
 comments: true

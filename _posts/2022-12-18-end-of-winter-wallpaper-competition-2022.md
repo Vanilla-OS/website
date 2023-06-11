@@ -1,7 +1,7 @@
 ---
 title: "End of Winter Wallpaper Competition 2022"
 description: "The first Winter Wallpaper Competition has ended. Vote for your favourite wallpaper!"
-published: 2022-12-18
+date: 2022-12-18
 layout: article
 published: true
 comments: true
