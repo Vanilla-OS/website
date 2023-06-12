@@ -104,7 +104,7 @@ description: Meet the people behind Vanilla OS
     },
     {
       github_username: "axtloss",
-      name: "axtlos / xenia",
+      name: "axtlos",
       roles: [
         "Software Engineer",
         "Lit Contributor",
