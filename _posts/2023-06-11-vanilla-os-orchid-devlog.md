@@ -166,7 +166,7 @@ You can test the platform by visiting [images.vanillaos.org](https://images.vani
 
 ## New Wallpaper
 
-Like every Linux distribution that sees a new major update, Vanilla OS Orchid has received a new official wallpaper. [Kramo](https://github.com/kra-mo) have been working hard on this. They made a wallpaper highlighting the new light that Orchid brings to Vanilla OS, representing its growth.
+Like every Linux distribution that sees a new major update, Vanilla OS Orchid has received a new official wallpaper. [Kramo](https://github.com/kra-mo) has been working hard on this. They made a wallpaper highlighting the new light that Orchid brings to Vanilla OS, representing its growth.
 
 ![Orchid Wallpaper, light variant: A 2D image of vanilla orchid over a sky-based wallpaper](/assets/uploads/orchid-light.webp)
 
