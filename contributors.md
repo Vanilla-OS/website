@@ -1,13 +1,13 @@
 <div align="center">
-  <sup>This list is updated every week</sup>
-  <br><sup>We are <b>232</b> unique contributors at the moment when this was updated</sup>
-  <img src="assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only" height="40">
-  <img src="assets/vanilla-contributors.png?raw=true#gh-light-mode-only" height="40">
-  <p>Across All Repositories</p>
+  <br><img src="assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only" height="40">
+  <br><img src="assets/vanilla-contributors.png?raw=true#gh-light-mode-only" height="40">
+  
+---
+  <p>A list of contibutors to the project across all repositories</p>
   <sup>Thanks to everyone in this list who has contributed to our project</sup>
+  <br><sup>We are <b>232</b> unique contributors at the moment when this was updated</sup>
 </div>
 
-  
 * 13r0ck
 * 4e6anenk0
 * 89luca89
@@ -135,6 +135,9 @@
 * vjr
 * vladdoster
 * voxelin
-* weblate
 * zedtux
 * zerng07
+
+<div align="center">
+  <sup>This list is updated every week</sup>
+</div>
