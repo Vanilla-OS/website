@@ -5,7 +5,7 @@
 ---
   <p>A list of contibutors to the project across all repositories</p>
   <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>232</b> unique contributors at the moment when this was updated</sup>
+  <br><sup>We are <b>130</b> unique contributors at the moment when this was updated</sup>
 </div>
 
 * [@13r0ck](https://github.com/13r0ck)
@@ -17,11 +17,8 @@
 * [@AleVul](https://github.com/AleVul)
 * [@alinpr18](https://github.com/alinpr18)
 * [@AllamC11](https://github.com/AllamC11)
-* [@amsyarzero](https://github.com/amsyarzero)
 * [@andibing](https://github.com/andibing)
 * [@Andrew-Geo](https://github.com/Andrew-Geo)
-* [@aokasumi](https://github.com/aokasumi)
-* [@arejula27](https://github.com/arejula27)
 * [@AWildJumpyGame](https://github.com/AWildJumpyGame)
 * [@axtloss](https://github.com/axtloss)
 * [@azu0609](https://github.com/azu0609)
@@ -42,6 +39,7 @@
 * [@daudix-UFO](https://github.com/daudix-UFO)
 * [@davidmhewitt](https://github.com/davidmhewitt)
 * [@dch82](https://github.com/dch82)
+* [@dependabot[bot]](https://github.com/dependabot[bot])
 * [@djordan2](https://github.com/djordan2)
 * [@D-Maxwell](https://github.com/D-Maxwell)
 * [@duch3201](https://github.com/duch3201)
@@ -76,14 +74,13 @@
 * [@JonasLoos](https://github.com/JonasLoos)
 * [@josefkelly](https://github.com/josefkelly)
 * [@joshjo](https://github.com/joshjo)
+* [@JrSchmidtt](https://github.com/JrSchmidtt)
 * [@Kaitul](https://github.com/Kaitul)
 * [@Kakujeetoz](https://github.com/Kakujeetoz)
 * [@kangurek-kao](https://github.com/kangurek-kao)
 * [@kbdharun](https://github.com/kbdharun)
 * [@keviinx](https://github.com/keviinx)
 * [@Khayasen](https://github.com/Khayasen)
-* [@KhokhlovKirill](https://github.com/KhokhlovKirill)
-* [@Kliazovich](https://github.com/Kliazovich)
 * [@kra-mo](https://github.com/kra-mo)
 * [@lakejason0](https://github.com/lakejason0)
 * [@leoscc](https://github.com/leoscc)
@@ -116,6 +113,7 @@
 * [@raphaeldenni](https://github.com/raphaeldenni)
 * [@rashidi77](https://github.com/rashidi77)
 * [@rhcalderon](https://github.com/rhcalderon)
+* [@rubenhorn](https://github.com/rubenhorn)
 * [@ryonakano](https://github.com/ryonakano)
 * [@sherichev](https://github.com/sherichev)
 * [@shubhsharma19](https://github.com/shubhsharma19)
@@ -127,17 +125,20 @@
 * [@ThatOneCalculator](https://github.com/ThatOneCalculator)
 * [@TheEvilSkeleton](https://github.com/TheEvilSkeleton)
 * [@theMackabu](https://github.com/theMackabu)
+* [@ThePenguinUser](https://github.com/ThePenguinUser)
 * [@TheReyzer](https://github.com/TheReyzer)
 * [@tintou](https://github.com/tintou)
 * [@tkbremnes](https://github.com/tkbremnes)
 * [@tshepang](https://github.com/tshepang)
 * [@uniartisan](https://github.com/uniartisan)
+* [@vega-d](https://github.com/vega-d)
 * [@vjr](https://github.com/vjr)
 * [@vladdoster](https://github.com/vladdoster)
 * [@voxelin](https://github.com/voxelin)
 * [@weblate](https://github.com/weblate)
 * [@zedtux](https://github.com/zedtux)
 * [@zerng07](https://github.com/zerng07)
+
 
 <div align="center">
   <sup>This list is updated every week</sup>
