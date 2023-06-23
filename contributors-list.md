@@ -5,7 +5,7 @@
 ---
   <p>A list of contibutors to the project across all repositories</p>
   <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>130</b> unique contributors at the moment when this was updated</sup>
+  <br><sup>We are <b>128</b> unique contributors at the moment when this was updated</sup>
 </div>
 
 * [@13r0ck](https://github.com/13r0ck)
@@ -39,7 +39,6 @@
 * [@daudix-UFO](https://github.com/daudix-UFO)
 * [@davidmhewitt](https://github.com/davidmhewitt)
 * [@dch82](https://github.com/dch82)
-* [@dependabot[bot]](https://github.com/dependabot[bot])
 * [@djordan2](https://github.com/djordan2)
 * [@D-Maxwell](https://github.com/D-Maxwell)
 * [@duch3201](https://github.com/duch3201)
@@ -135,7 +134,6 @@
 * [@vjr](https://github.com/vjr)
 * [@vladdoster](https://github.com/vladdoster)
 * [@voxelin](https://github.com/voxelin)
-* [@weblate](https://github.com/weblate)
 * [@zedtux](https://github.com/zedtux)
 * [@zerng07](https://github.com/zerng07)
 
