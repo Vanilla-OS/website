@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set executable permissions for the script
+        run: chmod +x ./.github/workflows/get-all.sh
+        
       - name: Run the script and generate result.txt
         run: ./.github/workflows/get-all.sh
 
