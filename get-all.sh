@@ -23,7 +23,7 @@ unique_all_contributors=()
 mapfile -t unique_all_contributors < <(printf '%s\n' "${all_contributors[@]}" | sort -u | grep -Ev 'weblate|dependabot')
 
 # Generate the output string
-output="<div align=\"center\">
+  output="<div align=\"center\">
   <br><img src=\"assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only\" height=\"40\">
   <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">
 </div>
