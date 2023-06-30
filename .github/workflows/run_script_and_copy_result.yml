@@ -14,13 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set executable permissions for the script
-        run: chmod +x ./get-all.sh
+        run: chmod +x ./.github/workflows/get-all.sh
         
       - name: Run the script and generate result.txt
-        run: ./get-all.sh
-
-      - name: Copy result.txt to markdown file
-        run: echo "::set-output name=result::$(cat result.txt)"
+        run: ./.github/workflows/get-all.sh
 
       - name: Create result.md file
         run: |
@@ -30,14 +27,19 @@ jobs:
           echo "---" >> result.md
           echo "  <p>A list of contributors to the project across all repositories</p>" >> result.md
           echo "  <sup>Thanks to everyone in this list who has contributed to our project</sup>" >> result.md
-          echo "  <br><sup>We are $(cat result.txt | grep -c '* @') unique contributors at the moment when this was updated</sup>" >> result.md
+          echo "  <br><sup>We are $(grep -c '* @' result.txt) unique contributors at the moment when this was updated</sup>" >> result.md
           echo "</div>" >> result.md
           echo "" >> result.md
-          cat result.txt | grep '* @' >> result.md
+          grep '* @' result.txt >> result.md
           echo "" >> result.md
           echo "<div align=\"center\">" >> result.md
           echo "  <sup>This list is updated every week</sup>" >> result.md
           echo "</div>" >> result.md
 
+      - name: Store result.md as environment variable
+        id: store_result
+        run: echo "RESULT_FILE=$(cat result.md)" >> $GITHUB_ENV
+
       - name: Replace contributors-list.md with result.md
-        run: mv result.md contributors-list.md
+        run: |
+          echo "$RESULT_FILE" > contributors-list.md
