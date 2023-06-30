@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 owner="Vanilla-OS"
 
 echo "Fetching repositories..."
@@ -42,7 +41,7 @@ for contributor in "${unique_all_contributors[@]}"; do
   output+="* [@${contributor}](https://github.com/${contributor})\n"
 done
 
-# Replace the placeholder with the contributor list
+# Replace the placeholder with the contributor count
 output="${output//\*this-has-to-change*\n/${#unique_all_contributors[@]}}"
 
 # Append the closing part of the output string
