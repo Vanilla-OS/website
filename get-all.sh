@@ -42,7 +42,7 @@ for contributor in "${unique_all_contributors[@]}"; do
 done
 
 # Replace the placeholder with the contributor count
-output="${output//\*this-has-to-change*\n/${#unique_all_contributors[@]}}"
+output="${output//\${#unique_all_contributors[@]}/${#unique_all_contributors[@]}}"
 
 # Append the closing part of the output string
 output+="\n<div align=\"center\">
