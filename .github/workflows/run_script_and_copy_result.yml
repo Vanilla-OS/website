@@ -47,3 +47,7 @@ jobs:
 
       - name: Replace contributors-list.md with result.md
         run: mv result.md contributors-list.md
+
+      - name: Display detailed error message
+        if: ${{ failure() }}
+        run: cat result.txt
