@@ -17,7 +17,12 @@ jobs:
         run: chmod +x ./get-all.sh
         
       - name: Run the script and generate result.txt
-        run: ./get-all.sh
+        run: |
+          ./get-all.sh
+          touch result.txt
+
+      - name: Copy result.txt to markdown file
+        run: echo "::set-output name=result::$(cat result.txt)"
 
       - name: Create result.md file
         run: |
@@ -36,10 +41,5 @@ jobs:
           echo "  <sup>This list is updated every week</sup>" >> result.md
           echo "</div>" >> result.md
 
-      - name: Store result.md as environment variable
-        id: store_result
-        run: echo "RESULT_FILE=$(cat result.md)" >> $GITHUB_ENV
-
       - name: Replace contributors-list.md with result.md
-        run: |
-          echo "$RESULT_FILE" > contributors-list.md
+        run: mv result.md contributors-list.md
