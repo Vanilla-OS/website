@@ -23,17 +23,14 @@ unique_all_contributors=()
 mapfile -t unique_all_contributors < <(printf '%s\n' "${all_contributors[@]}" | sort -u | grep -Ev 'weblate|dependabot')
 
 # Generate the output string
-output="\
-<div align=\"center\">
+output="<div align=\"center\">
   <br><img src=\"assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only\" height=\"40\">
   <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">
-
----
-  <p>A list of contributors to the project across all repositories</p>
-  <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this was updated</sup>
 </div>
-
+---
+<p>A list of contributors to the project across all repositories</p>
+<sup>Thanks to everyone in this list who has contributed to our project</sup>
+<br><sup>We are ${#unique_all_contributors[@]} unique contributors at the moment when this was updated</sup>
 "
 
 # Append contributors to the output string
@@ -41,14 +38,11 @@ for contributor in "${unique_all_contributors[@]}"; do
   output+="* [@${contributor}](https://github.com/${contributor})\n"
 done
 
-# Replace the placeholder with the contributor count
-output="${output//\${#unique_all_contributors[@]}/${#unique_all_contributors[@]}}"
-
 # Append the closing part of the output string
-output+="\n<div align=\"center\">
+output+="<div align=\"center\">
   <sup>This list is updated every week</sup>
 </div>"
 
 # Write the output to a file
-echo -e "$output" > result.txt
-echo "Result written to file: result.txt"
+echo -e "$output" > result.md
+echo "Result written to file: result.md"
