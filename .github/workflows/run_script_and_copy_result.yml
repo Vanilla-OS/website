@@ -20,6 +20,7 @@ jobs:
         run: |
           ./get-all.sh > result.txt 2>&1
           cat result.txt
+          echo "Script exit code: $?"
 
       - name: Create result.md file
         run: |
