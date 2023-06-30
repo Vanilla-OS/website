@@ -39,7 +39,7 @@ jobs:
           echo "  <br><sup>We are $(grep -c '* @' result.txt) unique contributors at the moment when this was updated</sup>" >> result.md
           echo "</div>" >> result.md
           echo "" >> result.md
-          grep '* @' result.txt >> result.md
+          grep '^\* @' result.txt >> result.md
           echo "" >> result.md
           echo "<div align=\"center\">" >> result.md
           echo "  <sup>This list is updated every week</sup>" >> result.md
