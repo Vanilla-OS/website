@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set executable permissions for the script
-        run: chmod +x ./.github/workflows/get-all.sh
+        run: chmod +x ./get-all.sh
 
       - name: Run the script and generate result.txt
-        run: ./.github/workflows/get-all.sh > result.txt
+        run: ./get-all.sh > result.txt
 
       - name: Create result.md file
         run: |
