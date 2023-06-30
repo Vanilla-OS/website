@@ -22,6 +22,12 @@ jobs:
           cat result.txt
           echo "Script exit code: $?"
 
+      - name: Check if result.txt exists
+        run: |
+          ls -al
+          ls -al ./.github/workflows
+          ls -al ./result.txt
+
       - name: Create result.md file
         run: |
           echo "<div align=\"center\">" > result.md
