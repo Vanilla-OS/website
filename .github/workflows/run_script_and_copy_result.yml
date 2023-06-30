@@ -35,7 +35,7 @@ jobs:
           echo "  <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">" >> result.md
           echo "---" >> result.md
           echo "  <p>A list of contributors to the project across all repositories</p>" >> result.md
-          echo "  <sup>Thanks to everyone in this list who has contributed to our project</sup>" >> result.md
+          echo "  <sup>Thanks to everyone in this list who has contributed to our project</sup>" >> result.md`
           echo "  <br><sup>We are $(grep -c '* @' result.txt) unique contributors at the moment when this was updated</sup>" >> result.md
           echo "</div>" >> result.md
           echo "" >> result.md
