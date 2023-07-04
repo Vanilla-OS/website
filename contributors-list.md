@@ -1,11 +1,11 @@
 <div align="center">
   <br><img src="assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only" height="40">
   <br><img src="assets/vanilla-contributors.png?raw=true#gh-light-mode-only" height="40">
-  
+
 ---
-  <p>A list of contibutors to the project across all repositories</p>
+  <p>A list of contributors to the project across all repositories</p>
   <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>129</b> unique contributors at the moment when this was updated</sup>
+  <br><sup>We are <b>130</b> unique contributors at the moment when this was updated</sup>
 </div>
 
 * [@13r0ck](https://github.com/13r0ck)
@@ -135,6 +135,7 @@
 * [@vjr](https://github.com/vjr)
 * [@vladdoster](https://github.com/vladdoster)
 * [@voxelin](https://github.com/voxelin)
+* [@wesleybertipaglia](https://github.com/wesleybertipaglia)
 * [@zedtux](https://github.com/zedtux)
 * [@zerng07](https://github.com/zerng07)
 
