@@ -94,7 +94,13 @@ But wait, there's more! Vanilla OS Orchid aims to be as user-friendly and genera
 
 Apx GUI is designed and created for developers who needs to work with multiple subsystems simultaneously without relying on the command line or remember various flags it supports.
 
-With Apx GUI, you can:
+### Features
+
+- **Effortless Subsystem Management**: Developers can easily create and manage subsystems. This feature simplifies the process of organizing and managing multiple containers.
+
+- **Define and modify stacks easily:**: Stacks are a collection of software components and dependencies. Apx GUI introduces a streamlined approach for defining and modifying stacks with ease.
+
+- **Add package managers intuitively:** Adding and managing package managers with your preferred commands becomes intuitive with Apx GUI.
 
 - Create and manage subsystems effortlessly.
 
