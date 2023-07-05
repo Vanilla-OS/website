@@ -88,11 +88,11 @@ apx2 --version
 
 ## Apx GUI
 
-But wait, there's more! Vanilla OS Orchid aims to be as user-friendly and general-purpose as possible, and most of our efforts has directed towards achieving that. That's why we have further simplified developers lives by introducing Apx GUI — a tool that allows you to manage subsystems, stacks, and package managers through a streamlined and intuitive interface.
+But wait, there's more! Vanilla OS Orchid aims to be as user-friendly and general-purpose as possible, and most of our efforts has directed towards achieving that. That's why we have further simplified developers' lives by introducing Apx GUI — a tool that allows you to manage subsystems, stacks, and package managers through a streamlined and intuitive interface.
 
 ![Apx GUI](/assets/uploads/apx-gui.webp)
 
-Apx GUI is designed and created for developers who needs to work with multiple subsystems simultaneously without relying on the command line or remember various flags it supports.
+Apx GUI is designed and created for developers who require working with multiple subsystems simultaneously without relying on the command line or remembering various flags it supports.
 
 ### Features
 
@@ -101,12 +101,6 @@ Apx GUI is designed and created for developers who needs to work with multiple s
 - **Define and modify stacks easily:**: Stacks are a collection of software components and dependencies. Apx GUI introduces a streamlined approach for defining and modifying stacks with ease.
 
 - **Add package managers intuitively:** Adding and managing package managers with your preferred commands becomes intuitive with Apx GUI.
-
-- Create and manage subsystems effortlessly.
-
-- Define and modify stacks easily.
-
-- Add package managers intuitively.
 
 Apx GUI eliminates the complexities of command line interaction, making development with Apx on Vanilla OS Orchid more accessible and efficient.
 
