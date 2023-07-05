@@ -36,7 +36,7 @@ To try out Apx v2, follow these instructions for a user-side installation:
 }
 ```
 
-Following these steps, you can start using Apx v2 by typing `apx2`.
+After following these steps, you can start using Apx v2 by typing `apx2`.
 
 > Please note this is alpha software, and there may be bugs. We kindly request you to report any issues to our [GitHub repository](https://github.com/Vanilla-OS/apx/issues).
 
@@ -46,7 +46,7 @@ Since this is a local installation of Apx, there won't be any initial contents. 
 apx2 pkgmanagers new
 apx2 stacks new
 apx2 subsystems new
-apx2 <YOUR_NEW_SUBSYSTEM_NAME> --help
+apx2 <SUBSYSTEM_NAME> --help
 ```
 
 To simplify your initial experimentation with Apx v2, you can access some starter resources from our [vanilla-apx-configs repository](https://github.com/Vanilla-OS/vanilla-apx-configs/). Copy the contents into `~/.local/share/apx/` to populate Apx with initial resources like stacks and package managers. All major distributions are covered.
