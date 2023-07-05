@@ -89,6 +89,7 @@ apx2 --version
 Now, you can create a subsystem using the `apx2 subsystems new` command. For more information on the subsystem commands, type `apx2 <SUBSYSTEM_NAME> --help`.
 
 If you want to try out or test the various package manager and stack creation commands, refer to the above section.
+
 ## Apx GUI
 
 But wait, there's more! Vanilla OS Orchid aims to be as user-friendly and general-purpose as possible, and most of our efforts has directed towards achieving that. That's why we have further simplified developers' lives by introducing Apx GUI — a tool that allows you to manage subsystems, stacks, and package managers through a streamlined and intuitive interface.
