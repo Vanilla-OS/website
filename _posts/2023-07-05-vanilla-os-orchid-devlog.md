@@ -7,24 +7,24 @@ layout: article
 comments: true
 ---
 
-A few weeks ago, we shared our progress in Orchid's development through our latest [Devlog](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html). Among the many updates, we discussed [Apx v2](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html#apx-v2-and-vso-v2) and how it was evolving to better fit the developers needs, while [VSO](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html#vso-as-a-system-package-manager) would focus on meeting the needs of regular users. Crucial development of Apx v2 is now finished and available for testing!
+A few weeks ago, we shared our progress in Orchid's development through our latest [Devlog](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html). Among the many updates, we discussed [Apx v2](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html#apx-v2-and-vso-v2) and how it was evolving to fit the developers needs better, while [VSO](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html#vso-as-a-system-package-manager) would focus on meeting the needs of regular users. Crucial development of Apx v2 has finished and is available for testing now!
 
 ## Apx v2
 
-As previously mentioned, Apx v2 sets itself apart from v1 with the introduction of stacks. Stacks are sets of instructions that define how a subsystem is created. While creating a stack, you can define the name, distribution, package manager, and a list of packages to install during the subsystem's initialization phase.
+As previously mentioned, Apx v2 sets itself apart from v1 with the  introduction of stacks. Stacks are sets of instructions that define how a subsystem gets created. While creating a stack, you can define the name, distribution, package manager, and list of packages to install during the subsystem's initialization phase.
 
 ### Installation
 
 #### Method 1 (manual)
 
-To try out Apx v2, simply follow these instructions for a user-side installation:
+To try out Apx v2, follow these instructions for a user-side installation:
 
 - Create a working directory (highly recommended to isolate Apx v2 from your system).
 
 - Obtain the latest Distrobox release (version [1.5.0.2](https://github.com/89luca89/distrobox/archive/refs/tags/1.5.0.2.tar.gz) or higher) and unpack it into a "distrobox" folder within your newly created work directory.
 
 - Download the latest Apx build from our [GitHub repository](https://github.com/Vanilla-OS/apx/releases/download/continuous/apx.tar.gz) and unpack the `apx` binary into `~/.local/bin`, renaming it to `apx2` to avoid collisions with previous versions.
-- Make the binary executable.
+- Make the binary executable using the command `chmod +x apx2` from the correct directory.
 
 - Create the configuration file at `~/.config/apx/apx.json`:
 
@@ -36,24 +36,24 @@ To try out Apx v2, simply follow these instructions for a user-side installation
 }
 ```
 
-By following these steps, you can start using Apx v2 by simply typing `apx2`.
+Following these steps, you can start using Apx v2 by typing `apx2`.
 
-> Please note that this is alpha software, and there may be bugs. We kindly request you to report any issues to our [GitHub repository](https://github.com/Vanilla-OS/apx/issues).
+> Please note this is alpha software, and there may be bugs. We kindly request you to report any issues to our [GitHub repository](https://github.com/Vanilla-OS/apx/issues).
 
-Since this is a local installation of Apx, there won't be any initial content. You can proceed manually by creating a package manager, a stack, and finally, a subsystem:
+Since this is a local installation of Apx, there won't be any initial contents. You can proceed manually by creating a package manager, a stack, and finally, a subsystem:
 
 ```shell
 apx2 pkgmanagers new
 apx2 stacks new
 apx2 subsystems new
-apx2 YOUR_NEW_SUBSYSTEM_NAME --help
+apx2 <YOUR_NEW_SUBSYSTEM_NAME> --help
 ```
 
-To simplify your initial experimentation with Apx v2, you can access some starter resources from our [vanilla-apx-configs repository](https://github.com/Vanilla-OS/vanilla-apx-configs/). Simply copy the contents into `~/.local/share/apx/` to populate Apx with initial resources like stacks and package managers. All major distributions are covered.
+To simplify your initial experimentation with Apx v2, you can access some starter resources from our [vanilla-apx-configs repository](https://github.com/Vanilla-OS/vanilla-apx-configs/). Copy the contents into `~/.local/share/apx/` to populate Apx with initial resources like stacks and package managers. All major distributions are covered.
 
 #### Method 2 (automated)
 
-We have created a script that automates the aforementioned steps. Make sure you have `git` and `curl` installed.
+We have created a script that automates the above steps. Make sure you have `git` and `curl` installed.
 
 ```bash
 #!/bin/bash
@@ -88,11 +88,11 @@ apx2 --version
 
 ## Apx GUI
 
-But wait, there's more! Vanilla OS Orchid aims to be as user-friendly and general-purpose as possible, and most of our efforts are directed towards achieving that. That's why we have further simplified the lives of developers by introducing Apx GUI — a tool that allows you to manage subsystems, stacks, and package managers through a streamlined and intuitive interface.
+But wait, there's more! Vanilla OS Orchid aims to be as user-friendly and general-purpose as possible, and most of our efforts has directed towards achieving that. That's why we have further simplified developers lives by introducing Apx GUI — a tool that allows you to manage subsystems, stacks, and package managers through a streamlined and intuitive interface.
 
-APX_GUI_PIC_GOES_HERE (have to edit this later!!!)
+![Apx GUI](/assets/uploads/apx-gui.webp)
 
-Apx GUI is designed for developers who need to work with multiple subsystems simultaneously, without having to rely on the command-line or remember various flags it supports.
+Apx GUI is designed and created for developers who needs to work with multiple subsystems simultaneously without relying on the command line or remember various flags it supports.
 
 With Apx GUI, you can:
 
@@ -102,13 +102,13 @@ With Apx GUI, you can:
 
 - Add package managers intuitively.
 
-Apx GUI eliminates the complexities of command-line interaction, making development with Apx on Vanilla OS Orchid more accessible and efficient.
+Apx GUI eliminates the complexities of command line interaction, making development with Apx on Vanilla OS Orchid more accessible and efficient.
 
 ## Deprecation of the Vanilla Control Center
 
 In Vanilla OS 22.10, the graphical management of Apx subsystems was part of the [Vanilla Control Center](https://github.com/Vanilla-OS/vanilla-control-center), which also housed other features like updates.
 
-In Vanilla OS Orchid, everything has been moved to GNOME Settings, and since subsystem management is now covered by Apx GUI, the Vanilla Control Center will be deprecated, meaning it will not be present in the next major release of Vanilla OS and onwards.
+In Vanilla OS Orchid, everything has moved to GNOME Settings, and since subsystem management has moved to Apx GUI, the Vanilla Control Center will be deprecated, meaning it will not be present in the next major release of Vanilla OS and onwards.
 
 ## Bugs and Feedback
 
