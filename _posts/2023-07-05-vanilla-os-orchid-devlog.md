@@ -74,7 +74,7 @@ chmod +x "$HOME/.local/bin/apx2"
 mkdir -p "$HOME/.config/apx"
 echo '{
   "apxPath": "'"$HOME/.local/share/apx/"'",
-  "distroboxpath": "'"$HOME/$WORK_DIR/distrobox-folder/distrobox/"'",
+  "distroboxpath": "'"$WORK_DIR/distrobox-1.5.0.2/distrobox"'",
   "storageDriver": "btrfs"
 }' > "$HOME/.config/apx/apx.json"
 
