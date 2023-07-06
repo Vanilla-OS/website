@@ -112,7 +112,7 @@ Apx GUI eliminates the complexities of command line interaction, making developm
 
 In Vanilla OS 22.10, the graphical management of Apx subsystems was part of the [Vanilla Control Center](https://github.com/Vanilla-OS/vanilla-control-center), which also housed other features like updates.
 
-In Vanilla OS Orchid, everything has moved to GNOME Settings, and since subsystem management has moved to Apx GUI, the Vanilla Control Center will be deprecated, meaning it will not be present in the next major release of Vanilla OS and onwards.
+In Vanilla OS Orchid, everything has moved to GNOME Settings, and since subsystem management has moved to Apx GUI, the Vanilla Control Center will be deprecated, meaning it will not be present from the next release onwards.
 
 ## Bugs and Feedback
 
