@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  token: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   update_contributors_list:
     runs-on: ubuntu-latest
@@ -18,38 +21,16 @@ jobs:
       - name: Set executable permissions for the script
         run: chmod +x ./get-all.sh
 
-      - name: Run the script and generate result.txt
+      - name: Run the script
         run: |
-          ./get-all.sh > result.txt 2>&1
+          ./get-all.sh > result.txt
           cat result.txt
-          echo "Script exit code: $?"
-
-      - name: Check if result.txt exists
+          mv result.txt contributors-list.md
+      
+      - name: Commit changes
         run: |
-          ls -al
-          ls -al ./.github/workflows
-          ls -al ./result.txt
-
-      - name: Create result.md file
-        run: |
-          echo "<div align=\"center\">" > result.md
-          echo "  <br><img src=\"assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only\" height=\"40\">" >> result.md
-          echo "  <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">" >> result.md
-          echo "---" >> result.md
-          echo "  <p>A list of contributors to the project across all repositories</p>" >> result.md
-          echo "  <sup>Thanks to everyone in this list who has contributed to our project</sup>" >> result.md
-          echo "  <br><sup>We are $(grep -c '* @' result.txt) unique contributors at the moment when this was updated</sup>" >> result.md
-          echo "</div>" >> result.md
-          echo "" >> result.md
-          grep '^\* @' result.txt >> result.md
-          echo "" >> result.md
-          echo "<div align=\"center\">" >> result.md
-          echo "  <sup>This list is updated every week</sup>" >> result.md
-          echo "</div>" >> result.md
-
-      - name: Replace contributors-list.md with result.md
-        run: mv result.md contributors-list.md
-
-      - name: Display detailed error message
-        if: ${{ failure() }}
-        run: cat result.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "chore: Update Contributors List"
+          git push
