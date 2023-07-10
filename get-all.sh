@@ -4,7 +4,6 @@ echo -e "Starting the script."
 echo -e "This script will fetch a lot of repositories."
 echo
 
-token="${{ secrets.GITHUB_TOKEN }}"
 owner="Vanilla-OS"
 
 echo "Fetching repositories..."
