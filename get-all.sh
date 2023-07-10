@@ -33,10 +33,9 @@ output="\
 <div align=\"center\">
   <br><img src=\"assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only\" height=\"40\">
   <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">
-
----
+  <hr />
   <p>A list of contributors across all our repositories</p>
-  <br><sup>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this script was last updated.<br> Thanks ❤️ to everyone who have contributed.</sup>
+  <sup>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this script was last updated.<br> Thanks ❤️ to everyone who have contributed.</sup>
 </div>
 
 "
