@@ -18,19 +18,13 @@ jobs:
       - name: Set executable permissions for the script
         run: chmod +x ./get-all.sh
 
-      - name: Run the script and generate result.txt
+      - name: Run the script
         run: |
           ./get-all.sh > result.txt 2>&1
           cat result.txt
           echo "Script exit code: $?"
 
-      - name: Check if result.txt exists
-        run: |
-          ls -al
-          ls -al ./.github/workflows
-          ls -al ./result.txt
-
-      - name: Create result.md file
+      - name: Update contributors list
         run: |
           echo "<div align=\"center\">" > result.md
           echo "  <br><img src=\"assets/vanilla-contributors-mono.png?raw=true#gh-dark-mode-only\" height=\"40\">" >> result.md
@@ -46,10 +40,20 @@ jobs:
           echo "<div align=\"center\">" >> result.md
           echo "  <sup>This list is updated every week</sup>" >> result.md
           echo "</div>" >> result.md
-
-      - name: Replace contributors-list.md with result.md
-        run: mv result.md contributors-list.md
+          mv result.md contributors-list.md
+      
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "(chore): Update Contributors List"
+          git push
 
       - name: Display detailed error message
         if: ${{ failure() }}
-        run: cat result.txt
+        uses: actions/upload-artifact@v3
+        with:
+          name: result
+          path: result.txt
+        

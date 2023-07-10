@@ -140,5 +140,5 @@
 * [@zerng07](https://github.com/zerng07)
 
 <div align="center">
-  <sup>This list is updated every week</sup>
+  <sup>This list is updated every week.</sup>
 </div>
