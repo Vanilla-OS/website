@@ -30,9 +30,9 @@ output="\
   <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">
 
 ---
-  <p>A list of contributors to the project across all repositories</p>
-  <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this was updated</sup>
+  <p>A list of contributors to Vanilla OS across all repositories.</p>
+  <sup>Thanks to everyone in this list who has contributed to our project.</sup>
+  <br><sup>We are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this script was last updated.</sup>
 </div>
 
 "
