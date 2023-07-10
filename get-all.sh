@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo -e "Starting the script."
-echo -e "This script will fetch a lot of repositories."
+echo "Starting the script."
+echo "This script will fetch a lot of repositories."
 echo
 
 owner="Vanilla-OS"
@@ -53,4 +53,3 @@ output+="\n<div align=\"center\">
 # Write the output to a file
 echo -e "$output" > result.txt
 echo "The Script is Done!"
-echo "Result written to file: result.txt"
