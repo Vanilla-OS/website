@@ -59,7 +59,7 @@ EOF
 for contributor in "${unique_all_contributors[@]}"; do
   output+=$(cat <<EOF
     <a href="https://github.com/${contributor}" target="_blank">
-      <img src="https://github.com/${contributor}.png" width="100px;" alt="${contributor}"/>
+      <img src="https://github.com/${contributor}.png" width="100px;" alt="${contributor}" referrerpolicy="no-referrer">
       <span>${contributor}</span>
     </a>
 EOF
