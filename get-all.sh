@@ -10,7 +10,7 @@ echo "Fetching repositories..."
 mapfile -t repositories < <(curl -s -H "Authorization: token $token" "https://api.github.com/orgs/$owner/repos" | jq -r '.[].name')
 
 for repository in "${repositories[@]}"; do
-  mapfile -t contributors < <(curl -s -H "Authorization: token $token" "https://api.github.com/repos/$owner/$repository/contributors" | jq -r '.[].login' | grep -Ev 'weblate|dependabot')
+  mapfile -t contributors < <(curl -s -H "Authorization: token $token" "https://api.github.com/repos/$owner/$repository/contributors" | jq -r '.[].login' | grep -Ev 'weblate|dependabot[bot]')
 
   if [[ ${#contributors[@]} -gt 0 ]]; then
     unique_contributors=()
@@ -21,7 +21,7 @@ done
 
 echo "Making the combined unique contributors list..."
 unique_all_contributors=()
-mapfile -t unique_all_contributors < <(printf '%s\n' "${all_contributors[@]}" | sort -u | grep -Ev 'weblate|dependabot')
+mapfile -t unique_all_contributors < <(printf '%s\n' "${all_contributors[@]}" | sort -u | grep -Ev 'weblate|dependabot[bot]')
 
 # Generate the output string
 output="\
