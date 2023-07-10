@@ -1211,6 +1211,23 @@ pre.highlight {
     font-weight: 500;
 }
 
+.contributors.contributors--as-list img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+}
+
+.contributors.contributors--as-list img+span {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contributors.contributors--as-list a {
+    border-bottom-color: transparent;
+}
+
 /* Float */
 .float.card {
     padding: 3px;

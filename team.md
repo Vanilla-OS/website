@@ -8,7 +8,7 @@ description: Meet the people behind Vanilla OS
   <p>Vanilla OS is an Open Source project that is maintained by <a href="//fabricators.ltd">fabricators.ltd</a> and a team of volunteers. We are a diverse group of people from all over the world, with a wide range of skills and backgrounds. We are passionate about making Vanilla OS the best it can be.</p>
     <div class="contributors" id="contributors"></div>
     <br />
-    <p>There are many more people who have contributed to Vanilla OS. A full list of contributors can be <a href="https://github.com/Vanilla-OS/website/blob/main/contributors-list.md">found here</a>.</p>
+    <p>There are many more people who have contributed to Vanilla OS. A full list of contributors can be <a href="/contributors-list">found here</a>.</p>
 </div>
 
 <script type="text/javascript" src="/assets/js/contributors.js"></script>
