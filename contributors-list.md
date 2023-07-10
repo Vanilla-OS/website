@@ -3,9 +3,9 @@
   <br><img src="assets/vanilla-contributors.png?raw=true#gh-light-mode-only" height="40">
 
 ---
-  <p>A list of contributors to the project across all repositories</p>
-  <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>131</b> unique contributors at the moment when this was updated</sup>
+  <p>A list of contributors to Vanilla OS across all repositories.</p>
+  <sup>Thanks to everyone in this list who has contributed to our project.</sup>
+  <br><sup>We are <b>132</b> unique contributors at the moment when this script was last updated.</sup>
 </div>
 
 * [@13r0ck](https://github.com/13r0ck)
@@ -71,6 +71,7 @@
 * [@daudix-UFO](https://github.com/daudix-UFO)
 * [@davidmhewitt](https://github.com/davidmhewitt)
 * [@dch82](https://github.com/dch82)
+* [@dependabot[bot]](https://github.com/dependabot[bot])
 * [@djordan2](https://github.com/djordan2)
 * [@duch3201](https://github.com/duch3201)
 * [@ecseditamas](https://github.com/ecseditamas)
