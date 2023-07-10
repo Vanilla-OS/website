@@ -36,7 +36,7 @@ output="\
 
 ---
   <p>A list of contributors across all our repositories</p>
-  <br><sup>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this script was last updated. Thanks ❤️ to everyone who have contributed.</sup>
+  <br><sup>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this script was last updated.<br> Thanks ❤️ to everyone who have contributed.</sup>
 </div>
 
 "
