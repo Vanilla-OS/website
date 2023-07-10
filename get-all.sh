@@ -52,4 +52,3 @@ output+="\n<div align=\"center\">
 
 # Write the output to a file
 echo -e "$output" > result.txt
-echo "The Script is Done!"
