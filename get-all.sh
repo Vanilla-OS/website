@@ -4,7 +4,6 @@ echo -e "Starting the script."
 echo -e "This script will fetch a lot of repositories."
 echo
 
-token="${{ secrets.GITHUB_TOKEN }}"
 owner="Vanilla-OS"
 
 echo "Fetching repositories..."
@@ -36,9 +35,8 @@ output="\
   <br><img src=\"assets/vanilla-contributors.png?raw=true#gh-light-mode-only\" height=\"40\">
 
 ---
-  <p>A list of contributors to the project across all repositories</p>
-  <sup>Thanks to everyone in this list who has contributed to our project</sup>
-  <br><sup>We are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this was updated</sup>
+  <p>A list of contributors across all our repositories</p>
+  <br><sup>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the moment when this script was last updated. Thanks ❤️ to everyone who have contributed.</sup>
 </div>
 
 "
@@ -53,10 +51,8 @@ output="${output//\*this-has-to-change*\n/${#unique_all_contributors[@]}}"
 
 # Append the closing part of the output string
 output+="\n<div align=\"center\">
-  <sup>This list is updated every week</sup>
+  <sup>This list is updated every week.</sup>
 </div>"
 
 # Write the output to a file
 echo -e "$output" > result.txt
-echo "The Script is Done!"
-echo "Result written to file: result.txt"
