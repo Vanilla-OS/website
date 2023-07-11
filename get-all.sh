@@ -82,4 +82,4 @@ EOF
 )
 
 # Write the output to a file
-echo -e "$output" > contributors-list.md
+echo -e "$output" > contributors.md
