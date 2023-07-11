@@ -6,8 +6,6 @@ echo
 
 owner="Vanilla-OS"
 
-# set -x
-
 echo "Fetching repositories..."
 mapfile -t repositories < <(
   curl -s -H "Authorization: token $token" "https://api.github.com/orgs/$owner/repos" |
