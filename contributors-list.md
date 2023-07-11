@@ -5,7 +5,7 @@ description: A list of contributors across all our repositories
 ---
 
 <div align="center">
-  <p>There are <b>131</b> unique contributors at the indexing time.<br> Thanks ❤️ to everyone who has contributed.</p>
+  <p>There are <b>131</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who have contributed.</p>
   <div class="contributors contributors--as-list">    <a href="https://github.com/13r0ck" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/58987761?v=9" width="100px;" alt="13r0ck" referrerpolicy="no-referrer">
       <span>13r0ck</span>
