@@ -154,20 +154,20 @@ description: A list of contributors across all our repositories
       <img src="https://avatars.githubusercontent.com/u/37492?v=9" width="100px;" alt="Brian Ketelsen" referrerpolicy="no-referrer">
       <span>Brian Ketelsen</span>
     </a>    <a href="https://github.com/pietrodicaprio" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/37634431?v=9" width="100px;" alt="Pietro di Caprio" referrerpolicy="no-referrer">
-      <span>Pietro di Caprio</span>
+      <img src="https://avatars.githubusercontent.com/u/37634431?v=9" width="100px;" alt="pietrodicaprio" referrerpolicy="no-referrer">
+      <span>pietrodicaprio</span>
     </a>    <a href="https://github.com/Francisco-Vivas" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/37822420?v=9" width="100px;" alt="Francisco Vivas" referrerpolicy="no-referrer">
-      <span>Francisco Vivas</span>
+      <img src="https://avatars.githubusercontent.com/u/37822420?v=9" width="100px;" alt="Francisco-Vivas" referrerpolicy="no-referrer">
+      <span>Francisco-Vivas</span>
     </a>    <a href="https://github.com/cybik" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/387759?v=9" width="100px;" alt="Renaud Lepage" referrerpolicy="no-referrer">
-      <span>Renaud Lepage</span>
+      <img src="https://avatars.githubusercontent.com/u/387759?v=9" width="100px;" alt="cybik" referrerpolicy="no-referrer">
+      <span>cybik</span>
     </a>    <a href="https://github.com/mmstick" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/4143535?v=9" width="100px;" alt="Michael Murphy" referrerpolicy="no-referrer">
-      <span>Michael Murphy</span>
+      <img src="https://avatars.githubusercontent.com/u/4143535?v=9" width="100px;" alt="mmstick" referrerpolicy="no-referrer">
+      <span>mmstick</span>
     </a>    <a href="https://github.com/SkyWolf369" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/41835930?v=9" width="100px;" alt="Joseph Peloquin" referrerpolicy="no-referrer">
-      <span>Joseph Peloquin</span>
+      <img src="https://avatars.githubusercontent.com/u/41835930?v=9" width="100px;" alt="SkyWolf369" referrerpolicy="no-referrer">
+      <span>SkyWolf369</span>
     </a>    <a href="https://github.com/Kaitul" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/42119227?v=9" width="100px;" alt="Kaitul" referrerpolicy="no-referrer">
       <span>Kaitul</span>
