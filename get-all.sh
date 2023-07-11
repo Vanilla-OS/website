@@ -19,7 +19,7 @@ all_contributors=()
 for repository in "${repositories[@]}"; do
   mapfile -t contributors < <(
     curl -s -H "Authorization: token $token" "https://api.github.com/repos/$owner/$repository/contributors" |
-    jq -r '.[] | "\(.login):\(.id)"' |
+    jq -r '.[] | "\(.id):\(.name)"' |
     grep -Ev 'weblate|dependabot'
   )
 
@@ -50,20 +50,20 @@ description: A list of contributors across all our repositories
 ---
 
 <div align="center">
-  <p>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who have contributed.</p>
+  <p>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who has contributed.</p>
   <div class="contributors contributors--as-list">
 EOF
 )
 
 # Append contributors to the output string
 for contributor in "${unique_all_contributors[@]}"; do
-  login=$(echo "$contributor" | cut -d':' -f1)
-  id=$(echo "$contributor" | cut -d':' -f2)
+  id=$(echo "$contributor" | cut -d':' -f1)
+  name=$(echo "$contributor" | cut -d':' -f2)
   output+=$(cat <<EOF
-    <a href="https://github.com/${login}" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${login}" referrerpolicy="no-referrer">
-      <span>${login}</span>
-    </a>
+    <div>
+      <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${name}" referrerpolicy="no-referrer">
+      <span>${name}</span>
+    </div>
 EOF
 )
 done
