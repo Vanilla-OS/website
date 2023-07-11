@@ -154,35 +154,35 @@ description: A list of contributors across all our repositories
       <img src="https://avatars.githubusercontent.com/u/37492?v=9" width="100px;" alt="Brian Ketelsen" referrerpolicy="no-referrer">
       <span>Brian Ketelsen</span>
     </a>    <a href="https://github.com/pietrodicaprio" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/37634431?v=9" width="100px;" alt="pietrodicaprio" referrerpolicy="no-referrer">
-      <span>pietrodicaprio</span>
+      <img src="https://avatars.githubusercontent.com/u/37634431?v=9" width="100px;" alt="Pietro di Caprio" referrerpolicy="no-referrer">
+      <span>Pietro di Caprio</span>
     </a>    <a href="https://github.com/Francisco-Vivas" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/37822420?v=9" width="100px;" alt="Francisco-Vivas" referrerpolicy="no-referrer">
-      <span>Francisco-Vivas</span>
+      <img src="https://avatars.githubusercontent.com/u/37822420?v=9" width="100px;" alt="Francisco Vivas" referrerpolicy="no-referrer">
+      <span>Francisco Vivas</span>
     </a>    <a href="https://github.com/cybik" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/387759?v=9" width="100px;" alt="cybik" referrerpolicy="no-referrer">
-      <span>cybik</span>
+      <img src="https://avatars.githubusercontent.com/u/387759?v=9" width="100px;" alt="Renaud Lepage" referrerpolicy="no-referrer">
+      <span>Renaud Lepage</span>
     </a>    <a href="https://github.com/mmstick" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/4143535?v=9" width="100px;" alt="mmstick" referrerpolicy="no-referrer">
-      <span>mmstick</span>
+      <img src="https://avatars.githubusercontent.com/u/4143535?v=9" width="100px;" alt="Michael Murphy" referrerpolicy="no-referrer">
+      <span>Michael Murphy</span>
     </a>    <a href="https://github.com/SkyWolf369" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/41835930?v=9" width="100px;" alt="SkyWolf369" referrerpolicy="no-referrer">
-      <span>SkyWolf369</span>
+      <img src="https://avatars.githubusercontent.com/u/41835930?v=9" width="100px;" alt="Joseph Peloquin" referrerpolicy="no-referrer">
+      <span>Joseph Peloquin</span>
     </a>    <a href="https://github.com/Kaitul" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/42119227?v=9" width="100px;" alt="Kaitul" referrerpolicy="no-referrer">
-      <span>Kaitul</span>
+      <img src="https://avatars.githubusercontent.com/u/42119227?v=9" width="100px;" alt="Kung-chih" referrerpolicy="no-referrer">
+      <span>Kung-chih</span>
     </a>    <a href="https://github.com/marcleonschulz" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/43107913?v=9" width="100px;" alt="marcleonschulz" referrerpolicy="no-referrer">
-      <span>marcleonschulz</span>
+      <img src="https://avatars.githubusercontent.com/u/43107913?v=9" width="100px;" alt="Classix" referrerpolicy="no-referrer">
+      <span>Classix</span>
     </a>    <a href="https://github.com/bittin" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/43197?v=9" width="100px;" alt="bittin" referrerpolicy="no-referrer">
-      <span>bittin</span>
+      <img src="https://avatars.githubusercontent.com/u/43197?v=9" width="100px;" alt="Luna Jernberg" referrerpolicy="no-referrer">
+      <span>Luna Jernberg</span>
     </a>    <a href="https://github.com/maulanalmifa" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/44434728?v=9" width="100px;" alt="maulanalmifa" referrerpolicy="no-referrer">
       <span>maulanalmifa</span>
     </a>    <a href="https://github.com/ThatOneCalculator" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/44733677?v=9" width="100px;" alt="ThatOneCalculator" referrerpolicy="no-referrer">
-      <span>ThatOneCalculator</span>
+      <img src="https://avatars.githubusercontent.com/u/44733677?v=9" width="100px;" alt="Kainoa Kanter" referrerpolicy="no-referrer">
+      <span>Kainoa Kanter</span>
     </a>    <a href="https://github.com/benstone326" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/44802165?v=9" width="100px;" alt="benstone326" referrerpolicy="no-referrer">
       <span>benstone326</span>
