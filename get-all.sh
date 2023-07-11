@@ -60,7 +60,7 @@ for contributor in "${unique_all_contributors[@]}"; do
   id=$(echo "$contributor" | cut -d':' -f1)
   login=$(echo "$contributor" | cut -d':' -f2)
   name=$(curl -s "https://api.github.com/users/$login" | jq -r '.name')
-  if [[ "$name" == "null" ]]; then # if name is null, use login instead
+  if [[ -z "$name" || "$name" == "null" ]]; then # if name is null, use login instead
     name="$login"
   fi
 
