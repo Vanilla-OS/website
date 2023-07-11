@@ -19,7 +19,7 @@ all_contributors=()
 for repository in "${repositories[@]}"; do
   mapfile -t contributors < <(
     curl -s -H "Authorization: token $token" "https://api.github.com/repos/$owner/$repository/contributors" |
-    jq -r '.[] | "\(.id):\(.name)"' |
+    jq -r '.[] | "\(.id):\(.login):\(.name)"' |
     grep -Ev 'weblate|dependabot'
   )
 
@@ -58,11 +58,18 @@ EOF
 # Append contributors to the output string
 for contributor in "${unique_all_contributors[@]}"; do
   id=$(echo "$contributor" | cut -d':' -f1)
-  name=$(echo "$contributor" | cut -d':' -f2)
+  login=$(echo "$contributor" | cut -d':' -f2)
+  name=$(echo "$contributor" | cut -d':' -f3)
+  contributor_name=""
+  if [[ -n "$name" && "$name" != "null" ]]; then
+    contributor_name="$name"
+  else
+    contributor_name="$login"
+  fi
   output+=$(cat <<EOF
     <a href="https://github.com/${login}" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${name}" referrerpolicy="no-referrer">
-      <span>${name}</span>
+      <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${contributor_name}" referrerpolicy="no-referrer">
+      <span>${contributor_name}</span>
     </a>
 EOF
 )
