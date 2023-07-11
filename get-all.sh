@@ -50,7 +50,7 @@ description: A list of contributors across all our repositories
 ---
 
 <div align="center">
-  <p>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who has contributed.</p>
+  <p>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who have contributed.</p>
   <div class="contributors contributors--as-list">
 EOF
 )
@@ -60,10 +60,10 @@ for contributor in "${unique_all_contributors[@]}"; do
   id=$(echo "$contributor" | cut -d':' -f1)
   name=$(echo "$contributor" | cut -d':' -f2)
   output+=$(cat <<EOF
-    <div>
+    <a href="https://github.com/${login}" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${name}" referrerpolicy="no-referrer">
       <span>${name}</span>
-    </div>
+    </a>
 EOF
 )
 done
