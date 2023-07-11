@@ -34,8 +34,8 @@ mapfile -t unique_all_contributors < <(
   printf '%s\n' "${all_contributors[@]}" | sort -u | grep -Ev 'weblate|dependabot'
 )
 
-# Sort the unique_all_contributors array alphabetically
-IFS=$'\n' sorted_unique_all_contributors=($(sort <<<"${unique_all_contributors[*]}"))
+# Sort the unique_all_contributors array alphabetically by names
+IFS=$'\n' sorted_unique_all_contributors=($(sort -t ':' -k3 <<<"${unique_all_contributors[*]}"))
 unset IFS
 unique_all_contributors=("${sorted_unique_all_contributors[@]}")
 
