@@ -50,7 +50,7 @@ description: A list of contributors across all our repositories
 ---
 
 <div align="center">
-  <p>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the indexing time.<br> Thanks ❤️ to everyone who has contributed.</p>
+  <p>There are <b>${#unique_all_contributors[@]}</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who have contributed.</p>
   <div class="contributors contributors--as-list">
 EOF
 )
@@ -78,4 +78,4 @@ EOF
 )
 
 # Write the output to a file
-echo -e "$output" > result.txt
+echo -e "$output" > contributors-list.md

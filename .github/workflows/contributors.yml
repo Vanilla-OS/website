@@ -23,9 +23,7 @@ jobs:
 
       - name: Run the script
         run: |
-          ./get-all.sh > result.txt
-          cat result.txt
-          mv result.txt contributors-list.md
+          ./get-all.sh
       
       - name: Commit changes
         run: |
