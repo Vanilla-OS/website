@@ -59,20 +59,19 @@ EOF
 for contributor in "${unique_all_contributors[@]}"; do
   id=$(echo "$contributor" | cut -d':' -f1)
   login=$(echo "$contributor" | cut -d':' -f2)
-  name=$(echo "$contributor-name" | cut -d':' -f3)
-  contributor_name=""
-  if [[ -n "$name" && "$name" != "null" ]]; then
-    contributor_name="$name"
+  name=$(curl -s "https://api.github.com/users/$login" | jq -r '.name')
+  if [[ "$name" == "null" ]]; then # if name is null, use login instead
+    name="$login"
   fi
+
   output+=$(cat <<EOF
     <a href="https://github.com/${login}" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${contributor_name}" referrerpolicy="no-referrer">
-      <span>${contributor_name}</span>
+      <img src="https://avatars.githubusercontent.com/u/${id}?v=9" width="100px;" alt="${name}" referrerpolicy="no-referrer">
+      <span>${name}</span>
     </a>
 EOF
 )
 done
-
 
 # Append the closing part of the output string
 output+=$(cat <<EOF
