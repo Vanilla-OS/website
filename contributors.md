@@ -5,7 +5,7 @@ description: A list of contributors across all our repositories
 ---
 
 <div align="center">
-  <p>There are <b>131</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who has contributed.</p>
+  <p>There are <b>132</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who has contributed.</p>
   <div class="contributors contributors--as-list">    <a href="https://github.com/vladdoster" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/10052309?v=9" width="100px;" alt="vladislav doster" referrerpolicy="no-referrer">
       <span>vladislav doster</span>
@@ -169,14 +169,14 @@ description: A list of contributors across all our repositories
       <img src="https://avatars.githubusercontent.com/u/41835930?v=9" width="100px;" alt="Joseph Peloquin" referrerpolicy="no-referrer">
       <span>Joseph Peloquin</span>
     </a>    <a href="https://github.com/Kaitul" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/42119227?v=9" width="100px;" alt="Kaitul" referrerpolicy="no-referrer">
-      <span>Kaitul</span>
+      <img src="https://avatars.githubusercontent.com/u/42119227?v=9" width="100px;" alt="Kung-chih" referrerpolicy="no-referrer">
+      <span>Kung-chih</span>
     </a>    <a href="https://github.com/marcleonschulz" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/43107913?v=9" width="100px;" alt="marcleonschulz" referrerpolicy="no-referrer">
-      <span>marcleonschulz</span>
+      <img src="https://avatars.githubusercontent.com/u/43107913?v=9" width="100px;" alt="Classix" referrerpolicy="no-referrer">
+      <span>Classix</span>
     </a>    <a href="https://github.com/bittin" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/43197?v=9" width="100px;" alt="bittin" referrerpolicy="no-referrer">
-      <span>bittin</span>
+      <img src="https://avatars.githubusercontent.com/u/43197?v=9" width="100px;" alt="Luna Jernberg" referrerpolicy="no-referrer">
+      <span>Luna Jernberg</span>
     </a>    <a href="https://github.com/maulanalmifa" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/44434728?v=9" width="100px;" alt="maulanalmifa" referrerpolicy="no-referrer">
       <span>maulanalmifa</span>
@@ -189,9 +189,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/ecseditamas" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/45733415?v=9" width="100px;" alt="ecseditamas" referrerpolicy="no-referrer">
       <span>ecseditamas</span>
-    </a>    <a href="https://github.com/myur4" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/47012804?v=9" width="100px;" alt="myur4" referrerpolicy="no-referrer">
-      <span>myur4</span>
+    </a>    <a href="https://github.com/scen1c" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/47012804?v=9" width="100px;" alt="scen1c" referrerpolicy="no-referrer">
+      <span>scen1c</span>
     </a>    <a href="https://github.com/zedtux" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/478564?v=9" width="100px;" alt="zedtux" referrerpolicy="no-referrer">
       <span>zedtux</span>
@@ -291,6 +291,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/raphaeldenni" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/65921801?v=9" width="100px;" alt="raphaeldenni" referrerpolicy="no-referrer">
       <span>raphaeldenni</span>
+    </a>    <a href="https://github.com/thednp" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/6761246?v=9" width="100px;" alt="thednp" referrerpolicy="no-referrer">
+      <span>thednp</span>
     </a>    <a href="https://github.com/SKBotNL" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/68018116?v=9" width="100px;" alt="SKBotNL" referrerpolicy="no-referrer">
       <span>SKBotNL</span>
