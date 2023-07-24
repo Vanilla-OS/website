@@ -189,9 +189,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/ecseditamas" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/45733415?v=9" width="100px;" alt="ecseditamas" referrerpolicy="no-referrer">
       <span>ecseditamas</span>
-    </a>    <a href="https://github.com/scen1c" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/47012804?v=9" width="100px;" alt="scen1c" referrerpolicy="no-referrer">
-      <span>scen1c</span>
+    </a>    <a href="https://github.com/gsantoss1" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/47012804?v=9" width="100px;" alt="gsantoss1" referrerpolicy="no-referrer">
+      <span>gsantoss1</span>
     </a>    <a href="https://github.com/zedtux" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/478564?v=9" width="100px;" alt="zedtux" referrerpolicy="no-referrer">
       <span>zedtux</span>
@@ -261,9 +261,6 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/eyenpi" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/60272711?v=9" width="100px;" alt="eyenpi" referrerpolicy="no-referrer">
       <span>eyenpi</span>
-    </a>    <a href="https://github.com/keviinx" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/60583511?v=9" width="100px;" alt="keviinx" referrerpolicy="no-referrer">
-      <span>keviinx</span>
     </a>    <a href="https://github.com/cassidyjames" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/611168?v=9" width="100px;" alt="cassidyjames" referrerpolicy="no-referrer">
       <span>cassidyjames</span>
@@ -393,6 +390,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/Cealica" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/95364273?v=9" width="100px;" alt="Cealica" referrerpolicy="no-referrer">
       <span>Cealica</span>
+    </a>    <a href="https://github.com/Aeases" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/96164686?v=9" width="100px;" alt="Aeases" referrerpolicy="no-referrer">
+      <span>Aeases</span>
     </a>    <a href="https://github.com/cat-master21" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/96554164?v=9" width="100px;" alt="cat-master21" referrerpolicy="no-referrer">
       <span>cat-master21</span>
