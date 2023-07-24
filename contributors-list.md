@@ -21,6 +21,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/Absolucy" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/65794972?v=9" width="100px;" alt="Absolucy" referrerpolicy="no-referrer">
       <span>Absolucy</span>
+    </a>    <a href="https://github.com/Aeases" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/96164686?v=9" width="100px;" alt="Aeases" referrerpolicy="no-referrer">
+      <span>Aeases</span>
     </a>    <a href="https://github.com/Aiyuh" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/20419823?v=9" width="100px;" alt="Aiyuh" referrerpolicy="no-referrer">
       <span>Aiyuh</span>
@@ -228,6 +231,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/gregorni" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/119804311?v=9" width="100px;" alt="gregorni" referrerpolicy="no-referrer">
       <span>gregorni</span>
+    </a>    <a href="https://github.com/gsantoss1" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/47012804?v=9" width="100px;" alt="gsantoss1" referrerpolicy="no-referrer">
+      <span>gsantoss1</span>
     </a>    <a href="https://github.com/henriquepicanco" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/114828539?v=9" width="100px;" alt="henriquepicanco" referrerpolicy="no-referrer">
       <span>henriquepicanco</span>
@@ -270,9 +276,6 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/kbdharun" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/26346867?v=9" width="100px;" alt="kbdharun" referrerpolicy="no-referrer">
       <span>kbdharun</span>
-    </a>    <a href="https://github.com/keviinx" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/60583511?v=9" width="100px;" alt="keviinx" referrerpolicy="no-referrer">
-      <span>keviinx</span>
     </a>    <a href="https://github.com/kra-mo" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/93832451?v=9" width="100px;" alt="kra-mo" referrerpolicy="no-referrer">
       <span>kra-mo</span>
@@ -345,9 +348,6 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/ryonakano" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/26003928?v=9" width="100px;" alt="ryonakano" referrerpolicy="no-referrer">
       <span>ryonakano</span>
-    </a>    <a href="https://github.com/scen1c" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/47012804?v=9" width="100px;" alt="scen1c" referrerpolicy="no-referrer">
-      <span>scen1c</span>
     </a>    <a href="https://github.com/sherichev" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/83235068?v=9" width="100px;" alt="sherichev" referrerpolicy="no-referrer">
       <span>sherichev</span>
