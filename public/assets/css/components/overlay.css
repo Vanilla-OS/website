@@ -1,0 +1,14 @@
+.overlay {
+    --overlay-background-color: var(--backdrop-bg-color);
+}
+
+.overlay {
+    background-color: var(--overlay-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 2;
+}

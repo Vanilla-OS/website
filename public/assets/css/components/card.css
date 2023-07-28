@@ -1,0 +1,353 @@
+.card {
+    --card-bg-color: var(--body-bg-color);
+    --card-bg-dark: var(--dark-bg-color);
+    --card-color-dark: var(--dark-color);
+    --card-bg-light: var(--light-bg-color);
+    --card-color-light: var(--light-color);
+    --card-color: var(--text-color);
+    --card-type-adv-bg-color: var(--accent-yellow-bg-color);
+    --card-type-adv-color: var(--accent-blue-text-color);
+    --card-type-newsletter-bg-color: var(--accent-blue-bg-color);
+    --card-type-newsletter-color: var(--accent-blue-text-color);
+    --card-type-dev-bg-color: var(--accent-brown-bg-color);
+    --card-type-dev-color: var(--accent-brown-text-color);
+    --card-green-bg-color: var(--accent-green-bg-color);
+    --card-green-color: var(--accent-green-text-color);
+    --card-blue-bg-color: var(--accent-blue-bg-color);
+    --card-blue-color: var(--accent-blue-text-color);
+    --card-yellow-bg-color: var(--accent-yellow-bg-color);
+    --card-yellow-color: var(--accent-yellow-text-color);
+    --card-brown-bg-color: var(--accent-brown-bg-color);
+    --card-brown-color: var(--accent-brown-text-color);
+    --card-purple-bg-color: var(--accent-purple-bg-color);
+    --card-purple-color: var(--accent-purple-text-color);
+    --card-red-bg-color: var(--accent-red-bg-color);
+    --card-red-color: var(--accent-red-text-color);
+    --card-clickable-hover-bg-color: var(--secondary-bg-color-alt);
+    --card-clickable-green-hover-bg-color: var(--accent-green-bg-color-deep);
+    --card-clickable-blue-hover-bg-color: var(--accent-blue-bg-color-deep);
+    --card-clickable-yellow-hover-bg-color: var(--accent-yellow-bg-color-deep);
+    --card-clickable-brown-hover-bg-color: var(--accent-green-bg-color-deep);
+    --card-clickable-purple-hover-bg-color: var(--accent-purple-bg-color-deep);
+    --card-clickable-red-hover-bg-color: var(--accent-red-bg-color-deep);
+}
+
+.card {
+    box-shadow: var(--base-shadow);
+    border-radius: 12px;
+    padding: 30px;
+    background-color: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    color: var(--card-color);
+}
+
+.card.card--dark {
+    background-color: var(--card-bg-dark);
+    color: var(--card-color-dark);
+}
+
+.card.card--light {
+    background-color: var(--card-bg-light);
+    color: var(--card-color-light);
+}
+
+.card-image img {
+    max-width: 100%;
+}
+
+.card-image.card-image--right img {
+    height: 40vh;
+    max-width: initial;
+}
+
+.card-header h2 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+}
+
+.card.article.article--big .card-header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 0 0;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card--min .text,
+.card.card--type-adv .text {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.card-image.card-image--right {
+    margin: 0 -50% 0 0;
+}
+
+.card-header h3 {
+    font-weight: 700;
+    margin: 0 0 0 0;
+}
+
+.card.card--type-adv {
+    background-color: var(--card-type-adv-bg-color);
+}
+
+.card.card--type-adv.card--type-newsletter {
+    background-color: var(--card-type-newsletter-bg-color);
+    color: var(--card-type-newsletter-color);
+}
+
+.card.card--type-newsletter .btn {
+    background-color: var(--card-type-newsletter-color);
+}
+
+.card.card--type-adv.card--type-dev {
+    background-color: var(--card-type-dev-bg-color);
+    color: var(--card-type-dev-color);
+}
+
+.card.card--type-dev .btn {
+    background-color: var(--card-type-dev-color);
+}
+
+.card-header h4,
+.card-header h5 {
+    margin: 0 0 0 0;
+}
+
+.card.card--type-adv .card-header h2 {
+    font-size: 30px;
+}
+
+.card-content>.splitter,
+.card-content>.splitter>.flexList,
+.card-content>.flexList,
+.card-content {
+    height: 100%;
+}
+
+.card.card--type-adv .card-image {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card.card--hz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card.article .card-content .text {
+    margin-bottom: auto;
+}
+
+.card-header h1 .mdi,
+.card-header h2 .mdi,
+.card-header h3 .mdi,
+.card-header h4 .mdi {
+    font-size: 100%;
+    position: relative;
+    top: 4px;
+}
+
+.card.card--min {
+    gap: 15px;
+}
+
+.card.card--has-actions .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card.card--has-actions .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card.card--min .card-header h3 {
+    font-size: 24px;
+}
+
+.card.card--clickable {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card.card--clickable:hover {
+    background-color: var(--card-clickable-hover-bg-color);
+}
+
+.card.card--green {
+    background-color: var(--card-green-bg-color);
+    color: var(--card-green-color);
+}
+
+.card.card--clickable.card--green:hover {
+    background-color: var(--card-clickable-green-hover-bg-color);
+}
+
+.card.card--blue {
+    background-color: var(--card-blue-bg-color);
+    color: var(--card-blue-color);
+}
+
+.card.card--clickable.card--blue:hover {
+    background-color: var(--card-clickable-blue-hover-bg-color);
+}
+
+.card.card--yellow {
+    background-color: var(--card-yellow-bg-color);
+    color: var(--card-yellow-color);
+}
+
+.card.card--clickable.card--yellow:hover {
+    background-color: var(--card-clickable-yellow-hover-bg-color);
+}
+
+.card.card--brown {
+    background-color: var(--card-brown-bg-color);
+    color: var(--card-brown-color);
+}
+
+.card.card--clickable.card--brown:hover {
+    background-color: var(--card-clickable-brown-hover-bg-color);
+}
+
+.card.card--purple {
+    background-color: var(--card-purple-bg-color);
+    color: var(--card-purple-color);
+}
+
+.card.card--clickable.card--purple:hover {
+    background-color: var(--card-clickable-purple-hover-bg-color);
+}
+
+.card.card--red {
+    background-color: var(--card-red-bg-color);
+    color: var(--card-red-color);
+}
+
+.card.card--clickable.card--red:hover {
+    background-color: var(--card-clickable-red-hover-bg-color);
+}
+
+.card.download .card-header h2 {
+    font-size: 38px;
+}
+
+.card.card--type-adv.card--type-adv--hz .card-header .btn {
+    margin-top: 30px;
+}
+
+.card.card--type-adv.card--type-adv--hz .card-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card.card--type-adv.card--type-adv--hz .card-image img {
+    max-height: 120px;
+}
+
+.card.article.article--big .text {
+    font-size: 27px;
+    line-height: 36px;
+}
+
+.card.article .text,
+.card.timeline-events-item .text {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.card.article.article--big .text {
+    font-size: 27px;
+    line-height: 36px;
+}
+
+.card-header h1 .img,
+.card-header h2 .img,
+.card-header h3 .img,
+.card-header h4 .img {
+    margin: 0 6px 0 0;
+}
+
+.card-header h1 .img.img--24,
+.card-header h2 .img.img--24,
+.card-header h3 .img.img--24,
+.card-header h4 .img.img--24 {
+    margin: 0 6px 0 0;
+    position: relative;
+    top: 4px;
+}
+
+.card-footer {
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-footer .btn {
+    font-size: 20px;
+}
+
+.card.card--no-padding,
+.card.card--plain.card--no-padding {
+    padding: 0;
+}
+
+.card.card--plain {
+    box-shadow: none;
+    padding: 10px;
+}
+
+.card.card--min-padding {
+    padding: 15px;
+}
+
+.card.card--allow-scroll {
+    overflow: initial;
+}
+
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.card-header h6 {
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 745px) {
+    .card-image.card-image--right {
+        margin: 0 auto;
+        order: -1;
+    }
+
+    .card-image.card-image--right img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .card.article.article--big .card-header h2 {
+        font-size: 35px;
+    }
+
+    .card.article.article--big .text {
+        font-size: 24px;
+        line-height: 1.35;
+    }
+}

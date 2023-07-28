@@ -1,0 +1,26 @@
+.splitter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.splitter-item {
+    width: 50%;
+}
+
+@media screen and (max-width: 745px) {
+    .splitter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .splitter-item {
+        width: initial;
+    }
+
+    .splitter-item.card-image {
+        order: -1;
+    }
+}

@@ -1,0 +1,56 @@
+.notbook {
+    display: flex;
+    flex-direction: column;
+}
+
+.notbook-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.notebook-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.notebook-header-item {
+    font-size: 21px;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.notebook-header-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    background: transparent;
+    width: 20%;
+}
+
+.notebook-header-item.active::after {
+    background: #000;
+}
+
+.notebook-header-item.active {
+    font-weight: 600;
+}
+
+.notebook-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.notebook {
+    margin: 25px 0;
+}

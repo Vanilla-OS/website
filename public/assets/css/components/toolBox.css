@@ -1,0 +1,115 @@
+.toolBox {
+    --toolbox-link-color: var(--text-color);
+    --toolbox-border-color: var(--secondary-bg-color);
+    --toolbox-background-color: var(--backdrop-bg-color);
+    --toolbox-active-background-color: var(--text-color);
+    --toolbox-active-link-color: var(--text-color-alt);
+    --toolbox-dimmed-link-color: var(--text-color-dimmed);
+    --toolbox-hover-background-color: var(--body-bg-color);
+}
+
+.toolBox {
+    border-color: var(--toolbox-border-color);
+    background-color: var(--toolbox-background-color);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 19px;
+    backdrop-filter: blur(20px);
+    position: sticky;
+    bottom: 0px;
+    margin: 40px 0 0 0;
+    flex-direction: column;
+}
+
+.toolBox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+.toolBox-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    gap: 5px;
+}
+
+.toolBox-item-label {
+    position: absolute;
+    background-color: #242424;
+    color: #fff;
+    padding: 9px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    white-space: nowrap;
+    margin: 0 0 70px 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.toolBox-item-icon:hover~.toolBox-item-label {
+    opacity: 1;
+}
+
+.toolBox-item .mdi {
+    font-size: 21px;
+}
+
+.toolBox-item-text {
+    font-size: 16px;
+}
+
+.toolBox-panels-item {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: height .3s ease-in-out, opacity .3s ease-in-out;
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--toolbox-border-color);
+}
+
+.toolBox-item.toolBox-item--grow {
+    margin-right: auto;
+}
+
+.toolBox-panels-item.active {
+    height: initial;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 30px 0;
+    max-height: calc(100vh - 110px);
+    overflow: auto;
+}
+
+.toc-item-level-3 {
+    margin: 0 0 0 10px;
+}
+
+.toc-item-level-4 {
+    margin: 0 0 0 20px;
+}
+
+.toc-item-level-5 {
+    margin: 0 0 0 30px;
+}
+
+a.toc-item-level-6 {
+    margin: 0 0 0 40px;
+}
+
+ul.toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

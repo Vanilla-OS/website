@@ -1,0 +1,34 @@
+.imageSlider {
+    display: flex;
+    overflow-x: hidden;
+    align-items: stretch;
+}
+
+.imageSlider-item {
+    flex: 0 0 100%;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.imageSlider-item img {
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.imageSlider-item:first-of-type.active {
+    transform: translateX(-0%);
+}
+
+.imageSlider-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}

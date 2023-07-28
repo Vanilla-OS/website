@@ -1,0 +1,11 @@
+.font {
+    font-size: 4rem;
+}
+
+.font.font--outfit {
+    font-family: "Outfit", sans-serif;
+}
+
+.font.font--pacifico {
+    font-family: "Pacifico", cursive;
+}

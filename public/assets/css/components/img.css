@@ -1,0 +1,57 @@
+.img {
+    --img-bg-color: var(--secondary-bg-color);
+    --img-bg-color-dark: var(--dark-bg-color);
+}
+
+.img.img--16 {
+    height: 16px;
+}
+
+.img.img--24 {
+    height: 24px;
+}
+
+.img.img--32 {
+    height: 32px;
+}
+
+.img.img--48 {
+    height: 48px;
+}
+
+.img.img--64 {
+    height: 64px;
+}
+
+.img.img--96 {
+    height: 96px;
+}
+
+.img.img--128 {
+    height: 128px;
+}
+
+.img.img--256 {
+    height: 256px;
+}
+
+.img.img--512 {
+    height: 512px;
+}
+
+.img.img--fit img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.img.card {
+    background-color: var(--img-bg-color);
+}
+
+.img.img--no-bg {
+    background-color: transparent;
+}
+
+.img.img--bg-dark {
+    background-color: var(--img-bg-color-dark);
+}

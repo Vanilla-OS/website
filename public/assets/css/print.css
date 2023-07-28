@@ -1,0 +1,10 @@
+@media print {
+
+    .topBar,
+    .siteFooter,
+    .page-actions,
+    .card.card--type-adv,
+    .toolBox {
+        display: none;
+    }
+}

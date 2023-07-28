@@ -1,0 +1,65 @@
+.page {
+    --page-header-divider-color: var(--text-color);
+}
+
+.page-header h1 {
+    font-size: 76px;
+    font-weight: 800;
+}
+
+.page-header p {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.page-header {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    position: relative;
+}
+
+.page.page--article .page-header h1 {
+    font-size: 54px;
+}
+
+.page.page--article .page-header p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.page.page--article .page-header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30%;
+    background-color: var(--page-header-divider-color);
+    margin: 30px 0 0 0;
+}
+
+.page-actions {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.page.page--article .page-content .text {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.page .toolBox {
+    margin-bottom: -24px;
+}
+
+.page-nav .btn.btn--link {
+    color: var(--btn-color);
+}
+
+@media screen and (max-width: 745px) {
+    .page-header h1 {
+        font-size: 48px;
+    }
+}

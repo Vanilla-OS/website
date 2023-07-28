@@ -1,0 +1,130 @@
+.text {
+    --text-dimmed-color: var(--text-color-dimmed);
+    --text-rich-color: var(--text-color);
+    --text-link-color: var(--text-color-deep);
+    --text-link-hover-color: var(--text-color);
+    --text-blockquote-background: var(--accent-yellow-bg-color-light);
+    --text-blockquote-pill-background: var(--accent-yellow-bg-color-vivid);
+    --text-code-color: #E9E9F4;
+    --text-code-background: #282936;
+    --text-figcaption-color: var(--secondary-bg-color);
+}
+
+.text.text--dimmed {
+    color: var(--text-dimmed-color);
+}
+
+.text.text--spaced p {
+    margin: 0 0 50px 0;
+}
+
+.text--rich p,
+.text--rich li {
+    line-height: 1.6;
+    color: var(--text-rich-color);
+    font-size: 25px;
+}
+
+.text--rich img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.text--rich blockquote {
+    padding: 10px 20px;
+    margin: 20px 0 20px 23px;
+    position: relative;
+    border-radius: 10px;
+    background: var(--text-blockquote-background);
+}
+
+.text a {
+    color: var(--text-link-color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.text a:hover {
+    color: var(--text-link-hover-color);
+    text-decoration: underline;
+}
+
+.text--rich ul,
+.text--rich ol {
+    margin: 20px 0 20px 6px;
+    padding-left: 20px;
+}
+
+.text--rich ul li,
+.text--rich ol li {
+    line-height: 1.6;
+}
+
+.text--rich ul li {
+    list-style-type: disc;
+}
+
+.text--rich ol li {
+    list-style-type: decimal;
+}
+
+.text--rich pre {
+    padding: 30px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 20px 0;
+    border: 0;
+    border-radius: 12px;
+    background: var(--text-code-background);
+}
+
+.text--rich code {
+    padding: 2px 5px;
+    color: var(--text-code-color);
+    font-family: Fira Code;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: var(--text-code-background);
+    border-radius: 12px;
+}
+
+.text--rich figcaption {
+    font-style: italic;
+    font-size: 14px;
+    color: var(--text-figcaption-color);
+    margin-top: 10px;
+}
+
+.text--rich p {
+    margin: 0 0 40px 0;
+}
+
+.text--rich blockquote p {
+    margin: 0;
+    font-size: 22px;
+}
+
+.text--rich blockquote::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 35%;
+    width: 9px;
+    border-radius: 10px;
+    top: 34%;
+    bottom: 0;
+    background: var(--text-blockquote-pill-background);
+    margin: 0 0 0 -44px;
+}
+
+.text--rich ul li p {
+    margin: 0 0 0 0;
+}
+
+.text small {
+    font-size: 16px;
+}

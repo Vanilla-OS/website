@@ -1,0 +1,47 @@
+.color--work-1 {
+    color: var(--generic-green-1);
+}
+
+.color--work-2 {
+    color: var(--generic-gree-2);
+}
+
+.color--play-1 {
+    color: var(--generic-purple-1);
+}
+
+.color--play-2 {
+    color: var(--generic-purple-2);
+}
+
+.color--develop-1 {
+    color: var(--generic-blue-1);
+}
+
+.color--develop-2 {
+    color: var(--generic-blue-2);
+}
+
+.color--solid-1 {
+    color: var(--generic-gray-1);
+}
+
+.color--solid-2 {
+    color: var(--generic-gray-2);
+}
+
+.color--access-1 {
+    color: var(--generic-yellow-1);
+}
+
+.color--access-2 {
+    color: var(--generic-yellow-2);
+}
+
+.color--versatile-1 {
+    color: var(--generic-brown-1);
+}
+
+.color--versatile-2 {
+    color: var(--generic-brown-2);
+}
