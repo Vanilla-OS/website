@@ -2,7 +2,7 @@
     <div class="timeline">
         <div class="timeline-progressbar">
             <div class="timeline-progressbar-header">
-                <h2>{{ title }} - {{ getOverallProgress }}% ({{ subtitle }})</h2>
+                <h2 :id="slug">{{ title }} - {{ getOverallProgress }}% ({{ subtitle }})</h2>
                 <div class="text">
                     <p>There are <b>{{ totalEvents }}</b> events in this release.</p>
                 </div>
@@ -63,6 +63,12 @@ export default defineComponent({
         events: Array as () => TimelineEvent[],
     },
     computed: {
+        slug(): string {
+            if (!this.title) {
+                return 'vos';
+            }
+            return this.title.toLowerCase().replace(/ /g, '-');
+        },
         totalEvents(): number {
             if (!this.events) {
                 return 0;
