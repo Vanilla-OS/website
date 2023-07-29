@@ -1,8 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
+const yaml = require("js-yaml");
 
 function cleanArticlesDir(articlesDir) {
+  console.log(`Cleaning articles directory: ${articlesDir}`);
+
   if (fs.existsSync(articlesDir)) {
     const files = fs.readdirSync(articlesDir);
 
@@ -72,23 +75,31 @@ function parseArticleHeader(content) {
   }
 
   const headerContent = match[1];
-  const headerLines = headerContent
-    .split("\n")
-    .filter((line) => line.trim() !== "");
 
-  const header = {};
-  for (const line of headerLines) {
-    const [key, value] = line.split(":").map((part) => part.trim());
-    if (key === "keywords") {
-      header[key] = value.split(",").map((keyword) => keyword.trim());
-    } else {
-      header[key] = value.replace(/^"(.*)"$/, "$1"); // remove quotes from the value if any
+  try {
+    const header = yaml.load(headerContent);
+
+    if (header.date) {
+      header.date = formatDate(header.date);
     }
+
+    const articleContent = content.slice(match[0].length).trim();
+
+    return { ...header, content: articleContent };
+  } catch (error) {
+    console.log(
+      `Invalid YAML format in the article header. Error: ${error.message}`
+    );
+    return { title: "", description: "", date: "", keywords: [], content: "" };
   }
+}
 
-  const articleContent = content.slice(match[0].length).trim();
-
-  return { ...header, content: articleContent };
+function formatDate(date) {
+  const articleDate = new Date(date);
+  const year = articleDate.getFullYear();
+  const month = String(articleDate.getMonth() + 1).padStart(2, "0");
+  const day = String(articleDate.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }
 
 function slugify(str) {
