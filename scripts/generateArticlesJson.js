@@ -37,6 +37,7 @@ function readArticles(articlesPath) {
       slug,
       description,
       date,
+      keywords: [],
       content,
     };
 
@@ -67,7 +68,7 @@ function parseArticleHeader(content) {
   const match = content.match(headerRegex);
 
   if (!match || match.length < 2) {
-    return { title: "", description: "", date: "", content: "" };
+    return { title: "", description: "", date: "", keywords: [], content: "" };
   }
 
   const headerContent = match[1];
@@ -78,7 +79,11 @@ function parseArticleHeader(content) {
   const header = {};
   for (const line of headerLines) {
     const [key, value] = line.split(":").map((part) => part.trim());
-    header[key] = value.replace(/^"(.*)"$/, "$1"); // remove quotes from the value if any
+    if (key === "keywords") {
+      header[key] = value.split(",").map((keyword) => keyword.trim());
+    } else {
+      header[key] = value.replace(/^"(.*)"$/, "$1"); // remove quotes from the value if any
+    }
   }
 
   const articleContent = content.slice(match[0].length).trim();

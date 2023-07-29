@@ -2,6 +2,12 @@
 title: "Why we switched from Almost to ABRoot"
 description: "Explore the advantages and disadvantages of using Almost and ABRoot technologies to achieve immutability."
 date: 2023-01-28
+keywords:
+    - Almost
+    - ABRoot
+    - Immutability
+    - Atomicity
+    - Vanilla OS
 layout: article
 published: true
 comments: true

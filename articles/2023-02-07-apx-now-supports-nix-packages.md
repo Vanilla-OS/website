@@ -2,6 +2,14 @@
 title: "Nix support in Apx has landed!"
 description: "Explore Apx's new nix flag to install packages from nix repositories."
 date: 2023-02-07
+keywords:
+    - Apx
+    - Distrobox
+    - Podman
+    - Container
+    - Package Manager
+    - Vanilla OS
+    - Nix
 layout: article
 published: true
 comments: true

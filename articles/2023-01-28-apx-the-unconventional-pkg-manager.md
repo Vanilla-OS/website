@@ -2,6 +2,13 @@
 title: "Apx, an unconventional package manager"
 description: "Explore apx, the distro-agnostic package manager made by Vanilla OS and Distrobox."
 date: 2023-01-28
+keywords:
+    - Apx
+    - Distrobox
+    - Podman
+    - Container
+    - Package Manager
+    - Vanilla OS
 layout: article
 published: true
 comments: true

@@ -2,6 +2,19 @@
 title: "Introducing the Vanilla Installer"
 description: "Vanilla OS has a whole new installer in GTK4 and libadwaita."
 date: 2022-10-16
+keywords:
+  - Vanilla Installer
+  - GTK4
+  - libadwaita
+  - Calamares
+  - Crystal Linux
+  - Jade installer
+  - Python
+  - Vanilla OS
+  - Vanilla First Setup
+  - Installation process
+  - GNOME guidelines
+  - Distinst
 layout: article
 published: false
 comments: true

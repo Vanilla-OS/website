@@ -5,6 +5,7 @@ interface Article {
   slug: string;
   description: string;
   date: string;
+  keywords: string[];
   content: string;
 }
 

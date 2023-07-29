@@ -2,6 +2,15 @@
 title: "Point vs Rolling Release and the modern solutions"
 description: "Explore the pros and cons of point release vs rolling release."
 date: 2023-01-31
+keywords:
+    - Point release
+    - Rolling release
+    - Flatpak
+    - Snap
+    - AppImage
+    - Apx
+    - Distrobox
+    - Vanilla OS
 layout: article
 published: true
 comments: true

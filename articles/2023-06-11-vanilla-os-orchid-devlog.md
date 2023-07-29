@@ -3,6 +3,21 @@ title: "Vanilla OS Orchid - Devlog 11 Jun"
 description: "We are happy to announce the dev log for Vanilla OS 2.0 Orchid! with various exciting updates and changes."
 published: true
 date: 2023-06-11
+keywords:
+    - Vanilla OS 2.0 Orchid
+    - Vanilla OS
+    - Orchid
+    - Apx
+    - ABRoot
+    - OCI
+    - Debian Sid
+    - Kernel 6
+    - GNOME 44
+    - Installation
+    - Post-installation
+    - Express
+    - Advanced
+    - First Setup
 layout: article
 comments: true
 ---

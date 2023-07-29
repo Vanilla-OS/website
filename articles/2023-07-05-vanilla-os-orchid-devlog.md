@@ -3,6 +3,13 @@ title: "Vanilla OS Orchid - Devlog 5 Jul"
 description: "We are excited to announce that we have recently completed crucial development of Apx v2, which is now available for testing by everyone."
 published: true
 date: 2023-07-05
+keywords:
+  - Vanilla OS
+  - Vanilla OS Orchid
+  - Orchid
+  - Apx
+  - Apx v2
+  - Apx GUI
 layout: article
 comments: true
 ---

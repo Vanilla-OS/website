@@ -2,6 +2,11 @@
 title: "End of Winter Wallpaper Competition 2022"
 description: "The first Winter Wallpaper Competition has ended. Vote for your favourite wallpaper!"
 date: 2022-12-18
+keywords:
+    - Winter Wallpaper Competition
+    - Wallpaper
+    - Vanilla OS
+    - Wallpaper Competition
 layout: article
 published: true
 comments: true

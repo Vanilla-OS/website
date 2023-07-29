@@ -2,6 +2,17 @@
 title: "Vanilla OS 22.10 Kinetic is out!"
 description: "First stable release of Vanilla OS 22.10 Kinetic is released."
 date: 2022-12-29
+keywords:
+    - Vanilla OS 22.10 Kinetic
+    - Stable
+    - Release
+    - Vanilla OS
+    - Apx
+    - ABRoot
+    - Smart Updates
+    - First Setup
+    - GNOME 43
+    - Official Wallpapers
 layout: article
 published: true
 comments: true

@@ -2,6 +2,14 @@
 title: "Vanilla OS Core - A minimal and clean base"
 description: "An introduction to Vanilla OS Core, a minimal Vanilla OS base."
 date: 2023-02-03
+keywords:
+    - Vanilla OS Core
+    - Vanilla OS
+    - Core
+    - Flavors
+    - GNOME
+    - KDE
+    - Vanilla OS KDE Edition
 layout: article
 published: true
 comments: true

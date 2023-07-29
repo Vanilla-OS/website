@@ -2,6 +2,12 @@
 title: "VSO is the Vanilla System Operator"
 description: "Explore VSO, your teammate in Vanilla OS."
 date: 2023-01-31
+keywords:
+    - VSO
+    - Vanilla System Operator
+    - Updates
+    - Automation
+    - Vanilla OS
 layout: article
 published: true
 comments: true
