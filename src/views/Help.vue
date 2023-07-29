@@ -64,8 +64,7 @@ export default defineComponent({
                     description: 'If you find a bug in Vanilla OS, please report it so we can fix it.',
                 },
                 {
-                    to: 'https://fabricators.ltd/en/contact',
-                    extLink: true,
+                    to: 'enterprise-support',
                     type: 'clickable',
                     icon: 'support',
                     title: 'Enterprise Support',
