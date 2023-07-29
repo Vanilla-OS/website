@@ -8,13 +8,13 @@ const router = createRouter({
     {
       path: '/',
       component: () =>// @ts-ignore
-        import(/* webpackChunkName: "NotLogged" */ "@/layouts/Main.vue"),
+        import(/* webpackChunkName: "Main" */ "@/layouts/Main.vue"),
       children: [
         {
           path: "",
           name: "home",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Home.vue"),
+            import(/* webpackChunkName: "Home" */ "@/views/Home.vue"),
           meta: {
             description: "Vanilla OS is an operating system built with simplicity in mind. It's fast, lightweight, beautiful and ready for all your daily tasks.",
           },
@@ -35,13 +35,13 @@ const router = createRouter({
     {
       path: '/',
       component: () =>// @ts-ignore
-        import(/* webpackChunkName: "NotLogged" */ "@/layouts/Page.vue"),
+        import(/* webpackChunkName: "Pages" */ "@/layouts/Page.vue"),
       children: [
         {
           path: "/blog",
           name: "blog",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Blog.vue"),
+            import(/* webpackChunkName: "Blog" */ "@/views/Blog.vue"),
           meta: {
             title: "Blog",
             description: "Check out what's happening in Vanilla OS world.",
@@ -51,7 +51,7 @@ const router = createRouter({
           path: "/privacy-policy",
           name: "privacy-policy",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/PrivacyPolicy.vue"),
+            import(/* webpackChunkName: "PrivacyPolicy" */ "@/views/PrivacyPolicy.vue"),
           meta: {
             title: "Privacy Policy",
             description: "Check out our Privacy Policy.",
@@ -61,7 +61,7 @@ const router = createRouter({
           path: "/cookies-policy",
           name: "cookies-policy",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/CookiesPolicy.vue"),
+            import(/* webpackChunkName: "CookiesPolicy" */ "@/views/CookiesPolicy.vue"),
           meta: {
             title: "Cookies Policy",
             description: "Check out our Cookies Policy.",
@@ -71,7 +71,7 @@ const router = createRouter({
           path: "/licenses",
           name: "licenses",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Licenses.vue"),
+            import(/* webpackChunkName: "Licenses" */ "@/views/Licenses.vue"),
           meta: {
             title: "Licenses",
             description: "Vanilla OS is built on top of many technologies. Check out the licenses.",
@@ -81,7 +81,7 @@ const router = createRouter({
           path: "/help",
           name: "help",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Help.vue"),
+            import(/* webpackChunkName: "Help" */ "@/views/Help.vue"),
           meta: {
             title: "Help",
             description: "Have a problem or need information about Vanilla OS?",
@@ -91,7 +91,7 @@ const router = createRouter({
           path: "/team",
           name: "team",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Team.vue"),
+            import(/* webpackChunkName: "Team" */ "@/views/Team.vue"),
           meta: {
             title: "Team",
             description: "Meet the people behind Vanilla OS.",
@@ -101,7 +101,7 @@ const router = createRouter({
           path: "/team/contributors",
           name: "team-contributors",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/get-involved/Contributors.vue"),
+            import(/* webpackChunkName: "Contributors" */ "@/views/get-involved/Contributors.vue"),
           meta: {
             title: "Contributors",
             description: "Meet the people who contributed to Vanilla OS.",
@@ -112,7 +112,7 @@ const router = createRouter({
           path: "/brand",
           name: "brand",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Brand.vue"),
+            import(/* webpackChunkName: "Brand" */ "@/views/Brand.vue"),
           meta: {
             title: "Brand",
             description: "Official Vanilla OS brand assets and values.",
@@ -122,7 +122,7 @@ const router = createRouter({
           path: "/developers-program",
           name: "developers-program",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/DevelopersProgram.vue"),
+            import(/* webpackChunkName: "DevelopersProgram" */ "@/views/DevelopersProgram.vue"),
           meta: {
             title: "Developers Program",
             description: "Join our Developers Program and get access to exclusive content.",
@@ -132,7 +132,7 @@ const router = createRouter({
           path: "/code-of-conduct",
           name: "code-of-conduct",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/CodeOfConduct.vue"),
+            import(/* webpackChunkName: "CodeOfConduct" */ "@/views/CodeOfConduct.vue"),
           meta: {
             title: "Code of Conduct",
             description: "Everyone must follow our Code of Conduct to be part of Vanilla OS.",
@@ -142,7 +142,7 @@ const router = createRouter({
           path: "/enterprise-support",
           name: "enterprise-support",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/EnterpriseSupport.vue"),
+            import(/* webpackChunkName: "EnterpriseSupport" */ "@/views/EnterpriseSupport.vue"),
           meta: {
             title: "Enterprise Support",
             description: "Get enterprise support for Vanilla OS.",
@@ -152,7 +152,7 @@ const router = createRouter({
           path: "/roadmap",
           name: "roadmap",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Roadmap.vue"),
+            import(/* webpackChunkName: "Roadmap" */ "@/views/Roadmap.vue"),
           meta: {
             title: "Roadmap",
             description: "Follow our roadmap to see what's coming next.",
@@ -162,7 +162,7 @@ const router = createRouter({
           path: "/technologies-and-credits",
           name: "technologies-and-credits",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/TechnologiesAndCredits.vue"),
+            import(/* webpackChunkName: "TechnologiesAndCredits" */ "@/views/TechnologiesAndCredits.vue"),
           meta: {
             title: "Technologies and Credits",
             description: "Vanilla OS is built on top of many technologies.",
@@ -172,7 +172,7 @@ const router = createRouter({
           path: "/community",
           name: "community",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Community.vue"),
+            import(/* webpackChunkName: "Community" */ "@/views/Community.vue"),
           meta: {
             title: "Community",
             description: "Join our community of users and developers.",
@@ -182,7 +182,7 @@ const router = createRouter({
           path: "/help/faq",
           name: "help-faq",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/help/Faq.vue"),
+            import(/* webpackChunkName: "Faq" */ "@/views/help/Faq.vue"),
           meta: {
             title: "Frequently Asked Questions",
             description: "The most common questions about Vanilla OS.",
@@ -193,7 +193,7 @@ const router = createRouter({
           path: "/get-involved",
           name: "get-involved",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/GetInvolved.vue"),
+            import(/* webpackChunkName: "GetInvolved" */ "@/views/GetInvolved.vue"),
           meta: {
             title: "Get Involved",
             description: "Everything we do is Open Source. You can contribute in many way.",
@@ -203,7 +203,7 @@ const router = createRouter({
           path: "/get-involved/translate",
           name: "get-involved-translate",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/get-involved/Translate.vue"),
+            import(/* webpackChunkName: "Translate" */ "@/views/get-involved/Translate.vue"),
           meta: {
             title: "Translate",
             description: "Translate Vanilla OS into your language.",
@@ -214,7 +214,7 @@ const router = createRouter({
           path: "/get-involved/funding",
           name: "get-involved-funding",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/get-involved/Funding.vue"),
+            import(/* webpackChunkName: "Funding" */ "@/views/get-involved/Funding.vue"),
           meta: {
             title: "Funding",
             description: "We need your help to keep Vanilla OS alive.",
@@ -225,7 +225,7 @@ const router = createRouter({
           path: "/get-involved/spread",
           name: "get-involved-spread",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/get-involved/Spread.vue"),
+            import(/* webpackChunkName: "Spread" */ "@/views/get-involved/Spread.vue"),
           meta: {
             title: "Spread the Word",
             description: "Help us spread the word about Vanilla OS.",
@@ -236,7 +236,7 @@ const router = createRouter({
           path: "/download",
           name: "download",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/Download.vue"),
+            import(/* webpackChunkName: "Download" */ "@/views/Download.vue"),
           meta: {
             title: "Get Vanilla OS",
             description: "Get the latest version.",
@@ -248,13 +248,13 @@ const router = createRouter({
       path: '/:catchAll(.*)',
       name: 'not-found',
       component: () =>// @ts-ignore
-        import(/* webpackChunkName: "NotLogged" */ "@/layouts/Page.vue"),
+        import(/* webpackChunkName: "Errors" */ "@/layouts/Page.vue"),
       children: [
         {
           path: "",
           name: "404",
           component: () =>// @ts-ignore
-            import(/* webpackChunkName: "Login" */ "@/views/404.vue"),
+            import(/* webpackChunkName: "404" */ "@/views/404.vue"),
           meta: {
             title: "404 - Page not found",
             description: "The page you are looking for does not exist.",
