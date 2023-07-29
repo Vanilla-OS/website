@@ -40,6 +40,7 @@
 }
 
 .btn--link {
+    text-decoration: none !important;
     background-color: transparent;
 }
 
