@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/marked": "^5.0.1",
+    "@vueuse/head": "^1.1.26",
     "marked": "^5.1.1",
     "slugify": "^1.6.6",
     "vue": "^3.2.47",

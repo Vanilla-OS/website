@@ -83,10 +83,11 @@
 </template>
   
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted } from 'vue';
+import { defineComponent } from 'vue';
 import { useRoute } from 'vue-router';
 import { loadArticle } from '@/articlesLoader';
 import type { Article } from '@/articlesLoader';
+import { useHead } from 'unhead'
 
 export default defineComponent({
     name: 'article',
@@ -144,44 +145,6 @@ export default defineComponent({
                 }
             }
         },
-        setStructuredData() {
-            // JSON-LD schema for the article
-            const schema = {
-                '@context': 'https://schema.org',
-                '@type': 'Article',
-                mainEntityOfPage: {
-                    '@type': 'WebPage',
-                    '@id': this.$route.fullPath,
-                },
-                headline: this.$route.meta.title,
-                description: this.$route.meta.description,
-                datePublished: this.$route.meta.date,
-                dateModified: this.$route.meta.date,
-                author: {
-                    '@type': 'Organization',
-                    name: 'Vanilla OS Team',
-                },
-                publisher: {
-                    '@type': 'Organization',
-                    name: 'Vanilla OS',
-                    logo: {
-                        '@type': 'ImageObject',
-                        url: `${window.location.origin}/assets/images/brand/vanillaos-logo.svg`,
-                    },
-                },
-                image: {
-                    '@type': 'ImageObject',
-                    url: `${window.location.origin}/assets/images/backgrounds/vos-laptop-frame.svg`,
-                    width: '732',
-                    height: '388'
-                },
-            };
-
-            const script = document.createElement('script');
-            script.type = 'application/ld+json';
-            script.innerHTML = JSON.stringify(schema);
-            document.head.appendChild(script);
-        },
     },
     async mounted() {
         const route = useRoute();
@@ -190,18 +153,51 @@ export default defineComponent({
         try {
             this.article = await loadArticle(date as string, slug as string);
             this.parsedHTML = this.article?.content || '';
-            document.title = `${this.article!.title} - ${document.title}`;
-            document.querySelector('meta[name="description"]')!.setAttribute('content', this.article!.description);
+            useHead({
+                title: `${this.article!.title} - ${document.title}`,
+                meta: [
+                    {
+                        name: 'description',
+                        content: this.article!.description,
+                    },
+                    {
+                        name: 'keywords',
+                        content: this.article!.keywords.join(', ') || this.article!.description.split(' ').join(', '),
+                    },
+                    {
+                        name: 'og:title',
+                        content: `${this.article!.title} - ${document.title}`,
+                    },
+                    {
+                        name: 'og:description',
+                        content: this.article!.description,
+                    },
+                    {
+                        name: 'og:url',
+                        content: `${window.location.origin}${route.fullPath}`
+                    },
+                    {
+                        name: 'twitter:card',
+                        content: 'summary_large_image',
+                    },
+                    {
+                        name: 'twitter:title',
+                        content: `${this.article!.title} - ${document.title}`,
+                    },
+                    {
+                        name: 'twitter:description',
+                        content: this.article!.description,
+                    },
+                ],
+            })
         } catch (error) {
-            document.title = `404 Not Found - ${document.title}`;
-            console.error('Error loading article:', error);
+            console.error(error);
+            // this.$router.push({ name: '404' });
         }
 
         if (this.article?.content) {
             this.articleImages = this.extractArticleImages(this.article?.content);
         }
-
-        this.setStructuredData();
     },
     computed: {
         getArticleLink() {

@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { useHead } from 'unhead'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +16,6 @@ const router = createRouter({
           component: () =>// @ts-ignore
             import(/* webpackChunkName: "Login" */ "@/views/Home.vue"),
           meta: {
-            title: "Home",
             description: "Vanilla OS is an operating system built with simplicity in mind. It's fast, lightweight, beautiful and ready for all your daily tasks.",
           },
         },
@@ -251,24 +252,56 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-  // title
-  const suffix = "Vanilla OS";
-  if (to.meta.title === "Home") {
-    document.title = suffix;
-  } else {
-    document.title = to.meta.title ? to.meta.title + " - " + suffix : suffix;
+  if(to === undefined) {
+    next();
+    return;
   }
-
-  // description
-  const descriptionTag = document.querySelector('meta[name="description"]');
-  if (descriptionTag) {
-    if (to.meta.description) {
-      const desc = to.meta.description as string;
-      descriptionTag.setAttribute("content", desc);
-    } else {
-      descriptionTag.removeAttribute("content");
-    }
-  }
+  
+  useHead({// @ts-ignore
+    title: to.meta.title ? to.meta.title + " - Vanilla OS" : "Vanilla OS",
+    meta: [
+      {
+        name: "description",// @ts-ignore
+        content: to.meta.description,
+      },
+      {
+        name: "og:title",// @ts-ignore
+        content: to.meta.title,
+      },
+      {
+        name: "og:description",// @ts-ignore
+        content: to.meta.description,
+      },
+      {
+        name: "og:image",
+        content: "https://vanillaos.org/assets/images/brand/vanillaos-logo.svg",
+      },
+      {
+        name: "og:url",
+        content: "https://vanillaos.org" + to.path,
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:title',
+        content: 'Vanilla OS - Your next Operating System',
+      },
+      {
+        name: 'twitter:description',// @ts-ignore
+        content: to.meta.description,
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://vanillaos.org/assets/images/brand/vanillaos-logo.svg',
+      },
+      {
+        name: 'twitter:url',
+        content: 'https://vanillaos.org' + to.path,
+      },
+    ],
+  });
 
   next();
 });

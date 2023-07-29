@@ -4,6 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useHead } from 'unhead'
 
 export default defineComponent({
   name: "App",
