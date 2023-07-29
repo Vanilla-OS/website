@@ -243,7 +243,25 @@ const router = createRouter({
           },
         },
       ]
-    }
+    },
+    {
+      path: '/:catchAll(.*)',
+      name: 'not-found',
+      component: () =>// @ts-ignore
+        import(/* webpackChunkName: "NotLogged" */ "@/layouts/Page.vue"),
+      children: [
+        {
+          path: "",
+          name: "404",
+          component: () =>// @ts-ignore
+            import(/* webpackChunkName: "Login" */ "@/views/404.vue"),
+          meta: {
+            title: "404 - Page not found",
+            description: "The page you are looking for does not exist.",
+          },
+        },
+      ]
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }
