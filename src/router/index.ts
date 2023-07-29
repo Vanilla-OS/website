@@ -245,7 +245,7 @@ const router = createRouter({
       ]
     },
     {
-      path: '/:catchAll(.*)',
+      path: '/:notFound',
       name: 'not-found',
       component: () =>// @ts-ignore
         import(/* webpackChunkName: "Errors" */ "@/layouts/Page.vue"),
