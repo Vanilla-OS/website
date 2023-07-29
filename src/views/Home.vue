@@ -179,6 +179,10 @@
               the option to add a variety of customization options, packages, and modules.</p>
             <p>It is not only limited to our image however, you can utilize an image based on any other Linux distribution
               instead, providing more versatility.</p>
+            <router-link :to="{ name: 'roadmap' }" class="btn btn--link btn--link-2 btn--inline">
+              <span>Starting from Orchid</span>
+              <span class="mdi material-icons-outlined">open_in_new</span>
+            </router-link>
           </div>
         </div>
       </div>
