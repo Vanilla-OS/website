@@ -128,7 +128,7 @@
 
   <div class="hero hero--big hero--bg-center hero--extra-margin" id="access">
     <div class="hero-wrapper container">
-      <img class="hero-image onFocus" data-focus-class="fadeIn" src="/assets/images/backgrounds/apps-overview.webp"
+      <img class="hero-image onFocus" data-focus-class="fadeIn" src="/assets/images/backgrounds/apps-overview.png"
         alt="Access the largest set of applications." />
       <div class="hero-content">
         <div class="hero-heading">
