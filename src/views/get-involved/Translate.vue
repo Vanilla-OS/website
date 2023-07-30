@@ -23,14 +23,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/vanilla-os/first-setup/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/first-setup/';
                             },
                         },
                     ],
@@ -46,14 +46,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/vanilla-installer/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/installer/';
                             },
                         },
                     ],
@@ -69,14 +69,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-drivers-utility/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/vanilla-drivers-utility';
                             },
                         },
                     ],
@@ -92,14 +92,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/vanilla-prime-utility';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-prime-utility/';
                             },
                         },
                     ],
@@ -115,14 +115,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/vanilla-os/apx/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/apx/';
                             },
                         },
                     ],
@@ -138,14 +138,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/apx-gui/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/apx-gui/';
                             },
                         },
                     ],
@@ -161,14 +161,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/ABRoot/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/abroot/';
                             },
                         },
                     ],
@@ -184,14 +184,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/vso/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: 'Translate (Coming Soon)',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vso/';
                             },
                         },
                     ],
@@ -206,14 +206,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://github.com/Vanilla-OS/Ikaros/';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                this.$router.push({ name: 'faq' });
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/Ikaros/';
                             },
                         },
                     ],
