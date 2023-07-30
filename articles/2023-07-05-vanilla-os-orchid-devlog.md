@@ -60,14 +60,15 @@ To simplify your initial experimentation with Apx v2, you can access some starte
 
 #### Method 2 (automated)
 
-We have created a script that automates the above steps. Make sure you have `git` and `curl` installed.
-
+We have created a script that automates the above steps. Make sure you have git and curl installed. You can just make the shell script below into an shell script (sh) file or you can `curl` the offical `shell script` by running `bash <(curl -s https://raw.githubusercontent.com/Vanilla-OS/apx/v2/install.sh)` in the command line. You can find the script file [here](https://github.com/Vanilla-OS/apx/blob/v2/install.sh).
 ```bash
 #!/bin/bash
 
-WORK_DIR="YOUR_WORK_DIR"  # <- edit this path
+echo "Please enter or create a working directory:"
+read -r WORK_DIR
 
-mkdir -p "$WORK_DIR"
+mkdir -p "$WORK_DIR" # Creates the working directory if non existing
+
 cd "$WORK_DIR"
 
 curl -LO https://github.com/89luca89/distrobox/archive/refs/tags/1.5.0.2.tar.gz
