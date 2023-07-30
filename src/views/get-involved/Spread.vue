@@ -49,7 +49,7 @@ export default defineComponent({
         return {
             officialAssets: [
                 {
-                    to: "https://vanillaos.org",
+                    to: "https://www.youtube.com/live/hv-bkYpHSbQ&t=621",
                     extLink: true,
                     type: 'clickable',
                     icon: 'co_present',
