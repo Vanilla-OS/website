@@ -1,0 +1,71 @@
+.navigationBar {
+    --navbar-link-color: var(--text-color);
+    --navbar-border-color: var(--secondary-bg-color);
+    --navbar-background-color: var(--backdrop-bg-color);
+    --navbar-active-background-color: var(--text-color);
+    --navbar-active-link-color: var(--text-color-alt);
+    --navbar-dimmed-link-color: var(--text-color-dimmed);
+    --navbar-hover-background-color: var(--body-bg-color);
+}
+
+.navigationBar ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--navbar-link-color);
+}
+
+.navigationBar {
+    border-color: var(--navbar-border-color);
+    background-color: var(--navbar-background-color);
+    /* border-top-width: 1px; */
+    border-bottom-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 19px;
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navigationBar ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationBar ul li a,
+.navigationBar ul li span {
+    padding: 6px 17px;
+    display: block;
+    cursor: pointer;
+}
+
+.navigationBar ul li {
+    background-color: transparent;
+    transition: background-color .2s ease-in-out;
+    border-radius: 30px;
+}
+
+.navigationBar ul li.active {
+    background-color: var(--navbar-active-background-color);
+}
+
+.navigationBar ul li.active a,
+.navigationBar ul li.active span {
+    color: var(--navbar-active-link-color);
+}
+
+.navigationBar ul li:not(.active):hover {
+    background-color: var(--navbar-hover-background-color);
+}
+
+@media screen and (max-width: 745px) {
+    .navigationBar {
+        display: none;
+    }
+}

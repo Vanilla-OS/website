@@ -1,0 +1,9 @@
+.toc {
+    --toc-active-link-color: var(--text-color-alt);
+}
+
+.toc ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--toc-link-color);
+}

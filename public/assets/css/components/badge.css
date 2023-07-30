@@ -1,0 +1,61 @@
+.badges {
+    --badge-bg-color: var(--secondary-bg-color);
+    --badge-color: var(--text-color);
+    --badge-green-bg-color: var(--accent-green-bg-color);
+    --badge-green-color: var(--accent-green-text-color);
+    --badge-blue-bg-color: var(--accent-blue-bg-color);
+    --badge-blue-color: var(--accent-blue-text-color);
+    --badge-yellow-bg-color: var(--accent-yellow-bg-color);
+    --badge-yellow-color: var(--accent-yellow-text-color-deep);
+    --badge-brown-bg-color: var(--accent-brown-bg-color);
+    --badge-brown-color: var(--accent-brown-text-color-deep);
+    --badge-red-bg-color: var(--accent-red-bg-color);
+    --badge-red-color: var(--accent-red-text-color);
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badges .badges-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    border-radius: 12px;
+    background-color: var(--badge-bg-color);
+    color: var(--badge-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.badges .badges-item.badges-item--green {
+    background-color: var(--badge-green-bg-color);
+    color: var(--badge-green-color);
+}
+
+.badges .badges-item.badges-item--blue {
+    background-color: var(--badge-blue-bg-color);
+    color: var(--badge-blue-color);
+}
+
+.badges .badges-item.badges-item--yellow {
+    background-color: var(--badge-yellow-bg-color);
+    color: var(--badge-yellow-color);
+}
+
+.badges .badges-item.badges-item--brown {
+    background-color: var(--badge-brown-bg-color);
+    color: var(--badge-brown-color);
+}
+
+.badges .badges-item.badges-item--red {
+    background-color: var(--badge-red-bg-color);
+    color: var(--badge-red-color);
+}

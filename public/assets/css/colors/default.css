@@ -1,0 +1,75 @@
+:root {
+    /* Generic Colors */
+    --generic-green-1: #26D959;
+    --generic-gree-2: #20A746;
+    --generic-purple-1: #F066D9;
+    --generic-purple-2: #F23ED5;
+    --generic-blue-1: #1BA6F3;
+    --generic-blue-2: #0F6DB5;
+    --generic-gray-1: #B1B1B1;
+    --generic-gray-2: #858585;
+    --generic-yellow-1: #FFBF48;
+    --generic-yellow-2: #b68832;
+    --generic-brown-1: #745c44;
+    --generic-brown-2: #473d35;
+
+    /* Accent Colors */
+    --accent-yellow-bg-color: #ecd5a9;
+    --accent-yellow-bg-color-vivid: #FBBD4E;
+    --accent-yellow-bg-color-light: #FFF6E5;
+    --accent-yellow-bg-color-deep: #ccb892;
+    --accent-yellow-text-color: #221d15;
+    --accent-blue-bg-color: #C2CDD8;
+    --accent-blue-bg-color-vivid: #3c7bc2;
+    --accent-blue-bg-color-light: #d3dbe4;
+    --accent-blue-bg-color-deep: #b2bbc5;
+    --accent-blue-text-color: #182840;
+    --accent-brown-bg-color: #e0cfb1;
+    --accent-brown-bg-color-vivid: #2c2312;
+    --accent-brown-bg-color-light: #f1e3cd;
+    --accent-brown-bg-color-deep: #c5bdaf;
+    --accent-brown-text-color: #403A30;
+    --accent-green-bg-color: #bcdcbd;
+    --accent-green-bg-color-vivid: #3cc748;
+    --accent-green-bg-color-light: #def7e0;
+    --accent-green-bg-color-deep: #b5cab6;
+    --accent-green-text-color: #254E30;
+    --accent-purple-bg-color: #ccbbdc;
+    --accent-purple-bg-color-vivid: #7c3cc7;
+    --accent-purple-bg-color-light: #e4d3f1;
+    --accent-purple-bg-color-deep: #b6adc5;
+    --accent-purple-text-color: #2f1e40;
+    --accent-red-bg-color: #f3c2c2;
+    --accent-red-bg-color-vivid: #c73c3c;
+    --accent-red-bg-color-light: #f1d3d3;
+    --accent-red-bg-color-deep: #c5b2b2;
+    --accent-red-text-color: #3c2c2c;
+
+
+    /* Base Colors */
+    --text-color: #232220;
+    --text-color-deep: #1a1918;
+    --text-color-dimmed: #737373;
+    --text-color-alt: #fff;
+    --body-bg-color: var(--text-color-alt);
+    --secondary-bg-color: #d9d9d9;
+    --secondary-bg-color-alt: #f3f3f3;
+    --primary-bg-color: #242424;
+    --dark-bg-color: #333333;
+    --dark-color: #fff;
+    --light-bg-color: var(--body-bg-color);
+    --light-color: var(--text-color);
+    --backdrop-bg-color: #ffffffd6;
+    --link-color: #161a24;
+    --link-hover-color: #0f6db5;
+    --link-focus-color: #1D2995;
+    --adaptive-bg-color: transparent;
+}
+
+@media (prefers-color-scheme:light) {
+
+    /* Rules */
+    .on-dark {
+        display: none;
+    }
+}

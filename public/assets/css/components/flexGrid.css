@@ -1,0 +1,43 @@
+.flexGrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.flexGrid.flexGrid--2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flexGrid.flexGrid--4 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.flexGrid-item.flexGrid-item--2 {
+    grid-column: span 2;
+}
+
+.flexGrid-item.flexGrid-item--3 {
+    grid-column: span 3;
+}
+
+.flexGrid-item.flexGrid-item--4 {
+    grid-column: span 4;
+}
+
+@media screen and (max-width: 745px) {
+    .flexGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexGrid.flexGrid--2,
+    .flexGrid.flexGrid--3,
+    .flexGrid.flexGrid--4 {
+        display: flex;
+    }
+}

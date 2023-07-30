@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/" target="_blank">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <title>Vanilla OS</title>
+  <meta name="description"
+    content="Vanilla OS is an operating system built with simplicity in mind. It's fast, lightweight, beautiful and ready for all your daily tasks." />
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+  <script type='text/javascript'>
+    //some default pre init
+    var Countly = Countly || {};
+    Countly.q = Countly.q || [];
+
+    //provide countly initialization parameters
+    Countly.app_key = '64c2cde69562414b8325d911';
+    Countly.url = 'https://analytics.fabricators.ltd';
+    Countly.require_consent = true;
+
+    Countly.q.push(['group_features', {
+      activity: ["sessions", "events", "views"],
+      interaction: ["scrolls", "clicks", "forms"]
+    }]);
+
+    Countly.q.push(['track_sessions']);
+    Countly.q.push(['track_pageview']);
+    Countly.q.push(['track_clicks']);
+    Countly.q.push(['track_scrolls']);
+    Countly.q.push(['track_errors']);
+    Countly.q.push(['track_links']);
+    Countly.q.push(['track_forms']);
+    Countly.q.push(['collect_from_forms']);
+
+    //load countly script asynchronously
+    (function () {
+      var cly = document.createElement('script'); cly.type = 'text/javascript';
+      cly.async = true;
+      //enter url of script here
+      cly.src = 'https://analytics.fabricators.ltd/sdk/web/countly.min.js';
+      cly.onload = function () { Countly.init() };
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+    })();
+
+    function ctlStart() {
+      var consents = localStorage.getItem("consents");
+      if (consents) {
+        Countly.q.push(['add_consent', JSON.parse(consents)]);
+      } else {
+        var response = ["activity", "interaction", "crashes"];
+        Countly.q.push(['add_consent', response]);
+        localStorage.setItem("consents", JSON.stringify(response));
+      }
+    }
+
+    function ctlStop() {
+      var consents = localStorage.getItem("consents");
+      if (consents) {
+        localStorage.removeItem("consents");
+      }
+      Countly.q.push(['opt_out']);
+    }
+  </script>
+  <script type="text/javascript">
+    var _iub = _iub || [];
+    _iub.csConfiguration = { "adPersonalization": false, "askConsentAtCookiePolicyUpdate": true, "cookiePolicyInOtherWindow": true, "countryDetection": true, "enableLgpd": true, "enableUspr": true, "lang": "en", "lgpdAppliesGlobally": false, "perPurposeConsent": true, "siteId": 3247819, "cookiePolicyId": 64799216, "cookiePolicyUrl": "https://vanillaos.org/cookies-policy", "privacyPolicyUrl": "https://vanillaos.org/privacy-policy", "privacyPolicyNoticeAtCollectionUrl": "https://vanillaos.org/privacy-policy", "callback": { "onConsentGiven": ctlStart, "onConsentRejected": ctlStop }, "banner": { "acceptButtonDisplay": true, "closeButtonRejects": true, "customizeButtonDisplay": true, "explicitWithdrawal": true, "listPurposes": true, "position": "float-bottom-center", "rejectButtonDisplay": true, "showPurposesToggles": true } };
+  </script>
+  <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3247819.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+</body>
+
+</html>

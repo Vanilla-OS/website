@@ -1,0 +1,99 @@
+.searchBar {
+    --searchBar-link-color: var(--text-color-deep);
+    --searchBar-border-color: var(--secondary-bg-color);
+    --searchBar-field-background-color: var(--secondary-bg-color-alt);
+    --searchBar-field-active-background-color: var(--body-bg-color);
+}
+
+.searchBar.active .searchBar-field {
+    width: 70vw;
+    background: var(--searchBar-field-active-background-color);
+    box-shadow: var(--base-shadow);
+    padding: 15px 25px;
+}
+
+.searchBar-input {
+    border: 0;
+    font-size: 19px;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.searchBar {
+    border: 0;
+    font-size: 19px;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+}
+
+.searchBar-field {
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--searchBar-field-background-color);
+    padding: 6px 10px;
+    border-radius: 12px;
+    transition: width 0.3s ease-in-out;
+    width: 53px;
+    overflow: hidden;
+    gap: 10px;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.searchBar-icon {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.searchBar-shortcut>.mdi {
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.searchBar-icon>.mdi {
+    font-size: 20px;
+}
+
+.searchBar-shortcut {
+    display: flex;
+}
+
+.searchBar-shortcut>.mdi+span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.searchBar-results {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.searchBar-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.searchBar.active {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}

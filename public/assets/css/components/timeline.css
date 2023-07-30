@@ -1,0 +1,120 @@
+.timeline {
+    --timeline-progressbar-meter-border-color: var(--body-bg-color);
+    --timeline-progressbar-meter-green: var(--accent-green-bg-color);
+    --timeline-progressbar-meter-green-text-color: var(--accent-green-text-color);
+    --timeline-progressbar-meter-brown: var(--accent-brown-bg-color);
+    --timeline-progressbar-meter-brown-text-color: var(--accent-brown-text-color);
+    --timeline-progressbar-meter-purple: var(--accent-purple-bg-color);
+    --timeline-progressbar-meter-purple-text-color: var(--accent-purple-text-color);
+    --timeline-progressbar-meter-red: var(--accent-red-bg-color);
+    --timeline-progressbar-meter-red-text-color: var(--accent-red-text-color);
+    --timeline-events-item-border-color: var(--secondary-bg-color);
+}
+
+.timeline-progressbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-progressbar-header .text {
+    font-size: 21px;
+}
+
+.timeline-progressbar-header .text b {
+    font-weight: 600;
+}
+
+.timeline-progressbar-meter {
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+}
+
+.timeline-progressbar-content {
+    min-height: 100px;
+}
+
+.timeline-progressbar-meter-item {
+    height: 8px;
+    background: #cdcdcd;
+    border-radius: 60px;
+    border: 3px solid var(--timeline-progressbar-meter-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timeline-progressbar-meter-item>label {
+    margin: -1px 0 0 6px;
+    display: block;
+    font-weight: 500;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.timeline-progressbar-meter-item .mdi {
+    text-shadow: 4px 0 var(--timeline-progressbar-meter-border-color), -4px 0 var(--timeline-progressbar-meter-border-color), 0 4px var(--timeline-progressbar-meter-border-color), 0 -4px var(--timeline-progressbar-meter-border-color), 3px 3px var(--timeline-progressbar-meter-border-color), -3px -3px var(--timeline-progressbar-meter-border-color), 3px -3px var(--timeline-progressbar-meter-border-color), -3px 3px var(--timeline-progressbar-meter-border-color);
+    position: relative;
+    top: -7px;
+}
+
+.timeline-events-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    border-left: 3px solid var(--timeline-events-item-border-color);
+}
+
+.timeline-events-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -25px;
+    bottom: 0;
+    height: 40px;
+    width: 6px;
+    background: #6f6f6f;
+    border-radius: 60px;
+}
+
+.timeline-events-item {
+    position: relative;
+    overflow: initial;
+}
+
+.timeline-progressbar-meter-item.timeline-progressbar-meter-item--green {
+    background: var(--timeline-progressbar-meter-green);
+    color: var(--timeline-progressbar-meter-green-text-color);
+}
+
+.timeline-progressbar-meter-item.timeline-progressbar-meter-item--brown {
+    background: var(--timeline-progressbar-meter-brown);
+    color: var(--timeline-progressbar-meter-brown-text-color);
+}
+
+.timeline-progressbar-meter-item.timeline-progressbar-meter-item--purple {
+    background: var(--timeline-progressbar-meter-purple);
+    color: var(--timeline-progressbar-meter-purple-text-color);
+}
+
+.timeline-progressbar-meter-item.timeline-progressbar-meter-item--red {
+    background: var(--timeline-progressbar-meter-red);
+    color: var(--timeline-progressbar-meter-red-text-color);
+}
+
+@media screen and (max-width: 745px) {
+    .timeline-progressbar-meter {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 0 0 60px 0;
+    }
+
+    .timeline-progressbar-meter-item>label {
+        white-space: nowrap;
+    }
+}

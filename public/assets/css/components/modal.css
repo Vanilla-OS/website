@@ -1,0 +1,26 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    z-index: 1;
+}
+
+.modal-wrapper {
+    max-height: 70vh;
+    position: relative;
+    z-index: 2;
+}
+
+.modal.modal--large-height .modal-wrapper {
+    max-height: 86vh;
+}
+
+.modal .btn--close {
+    z-index: 2;
+}
