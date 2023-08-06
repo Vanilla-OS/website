@@ -48,6 +48,7 @@
                     <li><a href="https://github.com/vanilla-os" target="_blank">Report a Bug</a></li>
                     <li><router-link :to="{ name: 'technologies-and-credits' }">Technologies and Credits</router-link></li>
                     <li><router-link :to="{ name: 'roadmap' }">Roadmap</router-link></li>
+                    <li><router-link :to="{ name: 'components-lifecycle' }">Components Lifecycle</router-link></li>
                     <li class="spacer"></li>
                     <li><b>Get Vanilla OS</b></li>
                     <li><router-link :to="{ name: 'download' }">Download</router-link></li>
