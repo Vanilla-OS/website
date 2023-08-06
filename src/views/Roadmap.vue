@@ -1,5 +1,10 @@
 <template>
-    <div class="notebook anim--fadeIn">
+    <div class="flexList anim--fadeIn">
+        <timeline :title="orchidTitle" :subtitle="orchidSubtitle" :events="orchidEvents" />
+        <div class="spacer"></div>
+        <timeline :title="kineticTitle" :subtitle="kineticSubtitle" :events="kineticEvents" />
+    </div>
+    <!-- <div class="notebook anim--fadeIn">
         <div class="notebook-wrapper">
             <div class="notebook-header">
                 <div class="notebook-header-item active">
@@ -19,7 +24,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
   
 <script lang="ts">
