@@ -10,7 +10,7 @@
                 The considered version is always the major if not specified otherwise.</p>
             <h3 id="definitions">Definitions</h3>
             <h4 id="active">Active</h4>
-            <p>When a component version that is currently maintained and updated.</p>
+            <p>A component version that is currently maintained and updated.</p>
             <h4 id="maintenance">Maintenance</h4>
             <p>When a component version is declared in Maintenance state means that there is going to be maintenance for
                 important bug fixing (afflicting the component usability) and security fixes. No other changes are allowed.
@@ -22,7 +22,7 @@
             <p>We do not have a plan for Long-Term-Support and Short-Term-Support releases. All components follow the cycle
                 defined below.</p>
             <h3 id="lifecycle">Lifecycle</h3>
-            <p>There can be only one version in <em>Active</em> state and is always the latest stable major release.\
+            <p>There can be only one version in <em>Active</em> state and is always the latest stable major release.<br>
                 When a major version is released, the previous major release enters the <em>Maintenance</em> state and keeps
                 it for 6 months. After that period it enters the <em>EOL</em> state.</p>
             <h4 id="patches-quick-fixes">Patches / Quick Fixes</h4>
