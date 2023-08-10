@@ -97,6 +97,13 @@
     transform: translateY(-9px) rotate(-45deg);
 }
 
+.topBar-select-input {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: var(--topBar-text-color);
+}
+
 @media screen and (max-width: 745px) {
     .topBar-navigation {
         position: absolute;

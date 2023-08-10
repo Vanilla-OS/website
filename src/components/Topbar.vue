@@ -57,8 +57,8 @@
                     <div></div>
                 </div>
             </div>
-            <!-- <h1>{{ $t('salutation.hello') }}</h1> -->
             <select
+                class="topBar-select-input"
                 name="language"
                 id="lang"
                 @change="onChange"
