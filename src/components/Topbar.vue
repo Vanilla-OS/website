@@ -46,10 +46,10 @@
             </div>
             <div class="overlay" v-if="isMenuToggled" @click="toggleMenu"></div>
             <ul class="topBar-navigation" :class="{ active: isMenuToggled }">
-                <li><router-link :to="{ name: 'blog' }">Blog</router-link></li>
-                <li><router-link :to="{ name: 'help' }">Help</router-link></li>
-                <li><router-link :to="{ name: 'get-involved' }">Get Involved</router-link></li>
-                <li><router-link :to="{ name: 'download' }">Download</router-link></li>
+                <li><router-link :to="{ name: 'blog' }">{{ $t('navigation.blog') }}</router-link></li>
+                <li><router-link :to="{ name: 'help' }">{{ $t('navigation.help') }}</router-link></li>
+                <li><router-link :to="{ name: 'get-involved' }">{{ $t('navigation.involved') }}</router-link></li>
+                <li><router-link :to="{ name: 'download' }">{{ $t('navigation.download') }}</router-link></li>
             </ul>
             <div class="topBar-hamburger">
                 <div class="topBar-hamburger-wrapper" :class="{ active: isMenuToggled }" @click="toggleMenu">
@@ -57,10 +57,19 @@
                     <div></div>
                 </div>
             </div>
+            <!-- <h1>{{ $t('salutation.hello') }}</h1> -->
+            <select
+                name="language"
+                id="lang"
+                @change="onChange"
+            >
+                <option value="en">English</option>
+                <option value="pt_BR">PT BR</option>
+            </select>
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useRoute } from "vue-router";
@@ -101,6 +110,10 @@ export default defineComponent({
         toggleMenu() {
             this.isMenuToggled = !this.isMenuToggled;
         },
+        onChange:function(event: Event) {
+            const target = event.target as HTMLInputElement;
+            this.$i18n.locale = target.value;
+        }
     },
     computed: {
         currentRoute() {
