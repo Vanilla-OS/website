@@ -159,6 +159,16 @@ const router = createRouter({
           },
         },
         {
+          path: "/components-lifecycle",
+          name: "components-lifecycle",
+          component: () =>// @ts-ignore
+            import(/* webpackChunkName: "Roadmap" */ "@/views/ComponentsLifeCycle.vue"),
+          meta: {
+            title: "Components Lifecycle",
+            description: "Learn how our components are developed and maintained.",
+          },
+        },
+        {
           path: "/technologies-and-credits",
           name: "technologies-and-credits",
           component: () =>// @ts-ignore
@@ -270,11 +280,11 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-  if(to === undefined) {
+  if (to === undefined) {
     next();
     return;
   }
-  
+
   useHead({// @ts-ignore
     title: to.meta.title ? to.meta.title + " - Vanilla OS" : "Vanilla OS",
     meta: [

@@ -19,8 +19,7 @@
                                     </span>
                                 </div>
                                 <div class="searchBar-shortcut" @click="toggleSearch" v-if="!isSearchActive">
-                                    <span class="mdi material-icons">keyboard_control_key</span>
-                                    <span>F</span>
+                                    <span>/</span>
                                 </div>
                                 <input type="text" class="searchBar-input" placeholder="Search" v-model="searchQuery" />
                             </div>
@@ -110,7 +109,7 @@ export default defineComponent({
     },
     mounted() {
         document.addEventListener("keydown", (e) => {
-            if (e.ctrlKey && e.key === "f") {
+            if (e.key === "/") {
                 e.preventDefault();
                 this.toggleSearch();
             }
