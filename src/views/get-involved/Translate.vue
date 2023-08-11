@@ -184,14 +184,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                window.location.href = 'https://github.com/Vanilla-OS/vso/';
+                                window.location.href = 'https://github.com/Vanilla-OS/vanilla-system-operator';
                             },
                         },
                         {
                             title: 'Translate (Coming Soon)',
                             icon: 'translate',
                             onClick: () => {
-                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vso/';
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-system-operator/';
                             },
                         },
                     ],
