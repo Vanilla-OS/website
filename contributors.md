@@ -5,7 +5,7 @@ description: A list of contributors across all our repositories
 ---
 
 <div align="center">
-  <p>There are <b>132</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who has contributed.</p>
+  <p>There are <b>133</b> unique contributors at the time of indexing.<br> Thanks ❤️ to everyone who has contributed.</p>
   <div class="contributors contributors--as-list">    <a href="https://github.com/vladdoster" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/10052309?v=9" width="100px;" alt="vladislav doster" referrerpolicy="no-referrer">
       <span>vladislav doster</span>
@@ -184,8 +184,8 @@ description: A list of contributors across all our repositories
       <img src="https://avatars.githubusercontent.com/u/44434728?v=9" width="100px;" alt="maulanalmifa" referrerpolicy="no-referrer">
       <span>maulanalmifa</span>
     </a>    <a href="https://github.com/ThatOneCalculator" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/44733677?v=9" width="100px;" alt="ThatOneCalculator" referrerpolicy="no-referrer">
-      <span>ThatOneCalculator</span>
+      <img src="https://avatars.githubusercontent.com/u/44733677?v=9" width="100px;" alt="Kainoa Kanter" referrerpolicy="no-referrer">
+      <span>Kainoa Kanter</span>
     </a>    <a href="https://github.com/benstone326" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/44802165?v=9" width="100px;" alt="benstone326" referrerpolicy="no-referrer">
       <span>benstone326</span>
@@ -315,6 +315,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/brs17" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/7460774?v=9" width="100px;" alt="brs17" referrerpolicy="no-referrer">
       <span>brs17</span>
+    </a>    <a href="https://github.com/Kliazovich" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/75210128?v=9" width="100px;" alt="Kliazovich" referrerpolicy="no-referrer">
+      <span>Kliazovich</span>
     </a>    <a href="https://github.com/driedpampas" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/76390419?v=9" width="100px;" alt="driedpampas" referrerpolicy="no-referrer">
       <span>driedpampas</span>
