@@ -163,7 +163,7 @@ With the switch to Debian as the base for Orchid, we had to create our own repos
 
 Unfortunately, most currently available platforms for this purpose did not meet our UX standards and offered a complex and outdated interface. That's why we developed [Eratosthenes*](https://github.com/Vanilla-OS/Eratosthenes), a platform based on Flask and written in Python, which allows easy searching and reading of package details directly from our repositories.
 
-You can check out the platform by visiting [repo.vanillaos.org](https://repo.vanillaos.org).
+You can check out the platform by visiting [packages.vanillaos.org](https://packages.vanillaos.org).
 
 *Eratosthenes was a Greek mathematician, astronomer, and geographer.
 
