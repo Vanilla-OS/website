@@ -99,7 +99,7 @@ export default defineComponent({
                     image: '/assets/images/pics/monsterobserver.jpeg',
                     links: {
                         githubUsername: 'MonsterObserver',
-                        mastodonLink: 'https://fe.disroot.org/@monstur',
+                        mastodonLink: 'https://defcon.social/@monster',
                         website: 'https://monster.codeberg.page/',
                     },
                 },
