@@ -184,8 +184,8 @@ description: A list of contributors across all our repositories
       <img src="https://avatars.githubusercontent.com/u/44434728?v=9" width="100px;" alt="maulanalmifa" referrerpolicy="no-referrer">
       <span>maulanalmifa</span>
     </a>    <a href="https://github.com/ThatOneCalculator" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/44733677?v=9" width="100px;" alt="Kainoa Kanter" referrerpolicy="no-referrer">
-      <span>Kainoa Kanter</span>
+      <img src="https://avatars.githubusercontent.com/u/44733677?v=9" width="100px;" alt="ThatOneCalculator" referrerpolicy="no-referrer">
+      <span>ThatOneCalculator</span>
     </a>    <a href="https://github.com/benstone326" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/44802165?v=9" width="100px;" alt="benstone326" referrerpolicy="no-referrer">
       <span>benstone326</span>
@@ -330,9 +330,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/jackpot51" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/7741236?v=9" width="100px;" alt="jackpot51" referrerpolicy="no-referrer">
       <span>jackpot51</span>
-    </a>    <a href="https://github.com/voxelin" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/78281477?v=9" width="100px;" alt="voxelin" referrerpolicy="no-referrer">
-      <span>voxelin</span>
+    </a>    <a href="https://github.com/12subnet" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/78281477?v=9" width="100px;" alt="12subnet" referrerpolicy="no-referrer">
+      <span>12subnet</span>
     </a>    <a href="https://github.com/alinpr18" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/79379711?v=9" width="100px;" alt="alinpr18" referrerpolicy="no-referrer">
       <span>alinpr18</span>
@@ -354,9 +354,9 @@ description: A list of contributors across all our repositories
     </a>    <a href="https://github.com/N00byKing" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/8339445?v=9" width="100px;" alt="N00byKing" referrerpolicy="no-referrer">
       <span>N00byKing</span>
-    </a>    <a href="https://github.com/ThePenguinUser" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/83493195?v=9" width="100px;" alt="ThePenguinUser" referrerpolicy="no-referrer">
-      <span>ThePenguinUser</span>
+    </a>    <a href="https://github.com/Penguin766" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/83493195?v=9" width="100px;" alt="Penguin766" referrerpolicy="no-referrer">
+      <span>Penguin766</span>
     </a>    <a href="https://github.com/D3vil0p3r" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/83867734?v=9" width="100px;" alt="D3vil0p3r" referrerpolicy="no-referrer">
       <span>D3vil0p3r</span>
