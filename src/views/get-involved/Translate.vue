@@ -188,7 +188,7 @@ export default defineComponent({
                             },
                         },
                         {
-                            title: 'Translate (Coming Soon)',
+                            title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-system-operator/';
