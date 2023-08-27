@@ -62,34 +62,36 @@
                 <p>You must be logged on GitHub to download the alpha builds. Once logged in, you will be able to
                     download the choosen build from the artifacts section.</p>
             </div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Release Date</th>
-                        <th>Arch</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-row" v-for="release in releases" :key="release.id"
-                        :class="release.isLatest ? 'table-row--highlight' : ''">
-                        <td>{{ release.id }}</td>
-                        <td>{{ release.date }}</td>
-                        <td>{{ release.arch }}</td>
-                        <td>
-                            <div class="table-row--actions">
-                                <div class="badges" v-if="release.isLatest">
-                                    <span class="badges-item badges-item--green">Latest</span>
+            <div class="table">
+                <table class="table-content">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Release Date</th>
+                            <th>Arch</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row" v-for="release in releases" :key="release.id"
+                            :class="release.isLatest ? 'table-row--highlight' : ''">
+                            <td>{{ release.id }}</td>
+                            <td>{{ release.date }}</td>
+                            <td>{{ release.arch }}</td>
+                            <td>
+                                <div class="table-row--actions">
+                                    <div class="badges" v-if="release.isLatest">
+                                        <span class="badges-item badges-item--green">Latest</span>
+                                    </div>
+                                    <a class="btn--link btn--inline" target="_blank" :href="release.url">
+                                        <span class="mdi material-icons-outlined">file_download</span>
+                                    </a>
                                 </div>
-                                <a class="btn--link btn--inline" target="_blank" :href="release.url">
-                                    <span class="mdi material-icons-outlined">file_download</span>
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="spacer"></div>
             <div class="flexGrid flexGrid--3">
                 <div

@@ -4,13 +4,18 @@
     --table-link-color: var(--text-color);
 }
 
+.table {
+    overflow: auto;
+    max-width: 100%;
+}
+
 .table-row--actions {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.table {
+.table-content {
     width: 100%;
 }
 
