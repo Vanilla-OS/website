@@ -14,11 +14,11 @@ comments: true
 ---
 
 # Vanilla OS 2 Orchid - Developer Preview 🎟️
-Eight months after the release of Vanilla OS 22.10 Kinetic, we are finally ready to let you experience firsthand the work we have done over these long months.
+Eight months after the release of Vanilla OS 22.10 Kinetic, we are finally ready to let you experience the work we have done over these long months firsthand.
 
-Today, we introduce Vanilla OS 2, codenamed Orchid.
+Today, we introduce the Vanilla OS 2, codenamed Orchid.
 
-With Orchid, a new generation begins for Vanilla OS. We rethinked the project from its foundations, examining every detail to provide you with a stable, secure, high-performing, and above all, user-friendly experience.
+With Orchid, a new generation begins for Vanilla OS. We rethought the project from its foundations, examining every detail to provide you with a stable, secure, high-performing, and above all, user-friendly experience.
 
 
 ## 🆕 Changelog
@@ -63,24 +63,24 @@ Before we proceed, we want to clarify that these builds should be considered pot
 * Default manager for .deb packages
 
 
-### apx
-* Support for stacks (recipes) to replicate environments configuration
+### Apx
+* Support for stacks (recipes) to replicate environment configurations
 * Support for definition of package managers
-* Support for any system released as OCI
-* apx graphical interface for easier management
+* Support for any system released as an OCI image
+* Apx graphical interface for easier usage
 
 
 ### Vanilla Tools
-* The `nrun` command allows to run software using the Nvidia discrete GPU if present
+* The `nrun` command allows the user to run software using the NVIDIA discrete GPU if present
 * The `cur-gpu` command shows the current GPU
 
 
 ## 🎬 More and GUADEC
-Many of you probably know that we presented Vanilla OS 2 at GUADEC 2023 in Riga. If you missed it and would like to know more about the changes we are making you can [watch our talk on YouTube](https://www.youtube.com/watch?v=hv-bkYpHSbQ&t=444s&ab_channel=GNOME) and download a PDF of the presentation [here](https://vanillaos.org/uploads/Vanilla%20OS%20-%20GUADEC%202023.pdf).
+Many of you probably know that we presented Vanilla OS Orchid at GUADEC 2023 in Riga. If you missed it and would like to know more about the changes we are making you can [watch our talk on YouTube](https://www.youtube.com/watch?v=hv-bkYpHSbQ&t=444s&ab_channel=GNOME) and download a PDF of the presentation [here](https://vanillaos.org/uploads/Vanilla%20OS%20-%20GUADEC%202023.pdf).
 
 
 ## ⏭️ What's next
-The team is proceeding with the next tasks in order to release a Beta version of Vanilla OS 2. If you are willing, and brave enough, to test the Alpha release: please provide us feedback on your experience and any problem you encounted by opening an issue in the relevant [GitHub repository](https://github.com/orgs/Vanilla-OS) or reach is via our communities and socials!
+The team is proceeding with the next tasks in order to release a Beta version of Vanilla OS Orchid. If you are willing, and brave enough, to test the Alpha release: please provide us with feedback of your experience and any problems you encounter by opening an issue in the relevant [GitHub repository](https://github.com/orgs/Vanilla-OS) or reach us via our communities and socials!
 
 ## Alpha builds
-The alpha builds of Vanilla OS 2 Orchid are available at [this link](/download/orchid/alpha). Remember to carefully read the notes provided on the page before proceeding with the installation.
+The Alpha builds of Vanilla OS 2 Orchid are available [here](/download/orchid/alpha). Remember to carefully read the notes provided on the page before proceeding with the installation.
