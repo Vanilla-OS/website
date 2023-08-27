@@ -2,48 +2,11 @@
     <div class="flexGrid anim--fadeIn">
         <div class="card flexGrid-item flexGrid-item--3">
             <div class="card-header">
-                <h2>Vanilla OS 22.10 Kinetic</h2>
-            </div>
-            <div class="card-content">
-                <div class="splitter">
-                    <div class="splitter-item flexList">
-                        <div class="text text--rich">
-                            <p>Vanilla OS 22.10 Kinetic is the current stable version of Vanilla OS. It is recommended for
-                                all
-                                users. It provides a stable and secure system for your daily use.</p>
-                        </div>
-                        <router-link class="btn btn--link btn--link-2 btn--inline"
-                            :to="{ name: 'article', params: { date: '2022-12-29', slug: 'vanilla-os-2210-kinetic-is-out' } }">
-                            <span>Release Post</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
-                        </router-link>
-                        <a href="https://github.com/Vanilla-OS/os/releases/latest"
-                            class="btn btn--link btn--link-2 btn--inline" target="_blank">
-                            <span>Changelog</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
-                        </a>
-                        <div class="spacer"></div>
-                        <a href="https://github.com/Vanilla-OS/os/releases/latest" target="_blank" class="btn btn--primary">
-                            <span class="mdi material-icons">save_alt</span>
-                            <span>Download Now</span>
-                        </a>
-                    </div>
-                    <div class="splitter-item card-image">
-                        <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame.svg" alt="Vanilla OS 22.10 Kinetic"
-                            class="no-dark">
-                        <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame-dark.svg"
-                            alt="Vanilla OS 22.10 Kinetic" class="on-dark">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card download flexGrid-item article--big flexGrid-item--2">
-            <div class="card-header">
                 <h2>Vanilla OS 2 Orchid</h2>
             </div>
             <div class="card-content">
                 <div class="splitter">
-                    <div class="flexList">
+                    <div class="splitter-item flexList">
                         <div class="text text--rich">
                             <p>Be ready for the next version of Vanilla OS. You will find greater stability, a secure
                                 system, a simplified method for installing applications, and new solutions for developers.
@@ -66,17 +29,53 @@
                             <span class="mdi material-icons-outlined">save_alt</span>
                             <span>Download Now</span>
                         </a> -->
-                        <div class="btn btn--primary" @click="isMailChimpOpen = true">
-                            <span class="mdi material-icons">email</span>
-                            <span>Subscribe Now</span>
-                        </div>
-                        <mail-chimp :is-open="isMailChimpOpen" @close="closeMailChimp" tagsId="12812945" />
+                        <router-link to="/download/orchid/alpha" class="btn btn--primary">
+                            <span class="mdi material-icons-outlined">save_alt</span>
+                            <span>Download the Alpha</span>
+                        </router-link>
                     </div>
-                    <div class="card-image card-image--right">
+                    <div class="splitter-item card-image">
                         <img src="/assets/images/backgrounds/vos-laptop-frame.svg" alt="Vanilla OS 2 Orchid"
                             class="no-dark">
                         <img src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid"
                             class="on-dark">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card download flexGrid-item article--big flexGrid-item--2">
+            <div class="card-header">
+                <h2>Vanilla OS 22.10 Kinetic</h2>
+            </div>
+            <div class="card-content">
+                <div class="splitter">
+                    <div class="flexList">
+                        <div class="text text--rich">
+                            <p>Vanilla OS 22.10 Kinetic is the current stable version of Vanilla OS. It is recommended for
+                                all
+                                users. It provides a stable and secure system for your daily use.</p>
+                        </div>
+                        <router-link class="btn btn--link btn--link-2 btn--inline"
+                            :to="{ name: 'article', params: { date: '2022-12-29', slug: 'vanilla-os-2210-kinetic-is-out' } }">
+                            <span>Release Post</span>
+                            <span class="mdi material-icons-outlined">open_in_new</span>
+                        </router-link>
+                        <a href="https://github.com/Vanilla-OS/os/releases/latest"
+                            class="btn btn--link btn--link-2 btn--inline" target="_blank">
+                            <span>Changelog</span>
+                            <span class="mdi material-icons-outlined">open_in_new</span>
+                        </a>
+                        <div class="spacer"></div>
+                        <a href="https://github.com/Vanilla-OS/os/releases/latest" target="_blank" class="btn btn--primary">
+                            <span class="mdi material-icons">save_alt</span>
+                            <span>Download Now</span>
+                        </a>
+                    </div>
+                    <div class="card-image card-image--right">
+                        <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame.svg" alt="Vanilla OS 22.10 Kinetic"
+                            class="no-dark">
+                        <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame-dark.svg"
+                            alt="Vanilla OS 22.10 Kinetic" class="on-dark">
                     </div>
                 </div>
             </div>

@@ -39,15 +39,21 @@ export default defineComponent({
             orchidEvents: [
                 {
                     name: 'GNOME 44',
-                    status: 'Not started yet',
+                    status: 'Ongoing',
                     date: 'No date yet',
                     description: 'Vanilla OS 2.0 will feature GNOME 44 as the Desktop Environment (not guaranteed).',
                 },
                 {
                     name: 'Waydroid support in Apx',
-                    status: 'Not started yet',
+                    status: 'Ongoing',
                     date: 'No date yet',
                     description: 'We are working on adding Android support to VSO through to a Waydroid implementation.',
+                },
+                {
+                    name: 'nvidia-image',
+                    status: 'Completed',
+                    date: 'No date yet',
+                    description: 'We are working to the nvidia image of Vanilla OS. This is the official image of Vanilla OS with proprietary NVIDIA® drivers pre-installed and pre-configured.',
                 },
                 {
                     name: 'desktop-image',
@@ -57,7 +63,7 @@ export default defineComponent({
                 },
                 {
                     name: 'core-image',
-                    status: 'Ongoing',
+                    status: 'Completed',
                     date: 'No date yet',
                     description: 'We are working to the core image of Vanilla OS. This image will be used as a base for the desktop image and flavors.',
                 },
@@ -86,9 +92,39 @@ export default defineComponent({
                     description: 'We are working on a new drivers backend with automatic drivers discover for Vanilla OS.',
                 },
                 {
-                    name: 'ABRoot v2',
+                    name: 'Drivers Utility',
                     status: 'Ongoing',
                     date: 'No date yet',
+                    description: 'We are working on a new drivers utility for the Ikaros backend.',
+                },
+                {
+                    name: 'PRIME Utility',
+                    status: 'Ongoing',
+                    date: 'No date yet',
+                    description: 'We are updating our PRIME utility to works with ABRoot.',
+                },
+                {
+                    name: 'Vanilla Tools',
+                    status: 'Completed',
+                    date: 'No date yet',
+                    description: 'We are working on a set of tools to simplify some tasks.',
+                },
+                {
+                    name: 'Apx v2',
+                    status: 'Completed',
+                    date: '28 Ago 2023',
+                    description: 'We are working on a new Apx version with support for stacks to better suit developers needs.',
+                },
+                {
+                    name: 'VSO v2',
+                    status: 'Completed',
+                    date: '28 Ago 2023',
+                    description: 'We are working on a new VSO to let the user install packages like any other Linux distribution but using a well-integrated subsystem.',
+                },
+                {
+                    name: 'ABRoot v2',
+                    status: 'Completed',
+                    date: '28 Ago 2023',
                     description: 'We are working on a new ABRoot version which use OCI images instead of the package manager.',
                 },
                 {

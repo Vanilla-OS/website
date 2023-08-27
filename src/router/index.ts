@@ -30,6 +30,18 @@ const router = createRouter({
             parent: "blog",
           },
         },
+        {
+          path: "/download/orchid/alpha",
+          name: "download-orchid-alpha",
+          component: () =>// @ts-ignore
+            import(/* webpackChunkName: "Download" */ "@/views/DownloadOrchidAlpha.vue"),
+          meta: {
+            title: "Vanilla OS 2 Orchid Alpha",
+            description: "Try the latest development version of Vanilla OS.",
+            parent: "download",
+            freePageLayout: true,
+          },
+        },
       ]
     },
     {

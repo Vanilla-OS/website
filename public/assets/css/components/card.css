@@ -331,6 +331,11 @@
     line-height: 1.2;
 }
 
+.card--has-pattern-work {
+    background-image: url(/assets/images/patterns/work.svg);
+    background-size: cover;
+}
+
 @media screen and (max-width: 745px) {
     .card-image.card-image--right {
         margin: 0 auto;

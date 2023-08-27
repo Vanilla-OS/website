@@ -153,6 +153,10 @@
     display: initial;
 }
 
+.hero-imageText img {
+    max-width: 100%;
+}
+
 @media screen and (max-width: 745px) {
     .hero:not(.hero--no-margin) {
         margin: 0;
