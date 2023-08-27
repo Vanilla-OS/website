@@ -16,7 +16,7 @@ comments: true
 # Vanilla OS 2 Orchid - Developer Preview 🎟️
 Eight months after the release of Vanilla OS 22.10 Kinetic, we are finally ready to let you experience the work we have done over these long months firsthand.
 
-Today, we introduce the Vanilla OS 2, codenamed Orchid.
+Today, we introduce Vanilla OS 2, codenamed Orchid.
 
 With Orchid, a new generation begins for Vanilla OS. We rethought the project from its foundations, examining every detail to provide you with a stable, secure, high-performing, and above all, user-friendly experience.
 
