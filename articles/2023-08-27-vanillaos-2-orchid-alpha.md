@@ -77,7 +77,7 @@ Before we proceed, we want to clarify that these builds should be considered pot
 Check our [Roadmap](https://vanillaos.org/roadmap) for more information about the features we are working on.
 
 ## 🎬 More and GUADEC
-Many of you probably know that we presented Vanilla OS Orchid at GUADEC 2023 in Riga. If you missed it and would like to know more about the changes we are making you can [watch our talk on YouTube](https://www.youtube.com/watch?v=hv-bkYpHSbQ&t=444s&ab_channel=GNOME) and download a PDF of the presentation [here](https://vanillaos.org/uploads/Vanilla%20OS%20-%20GUADEC%202023.pdf).
+Many of you probably know that we presented Vanilla OS Orchid at GUADEC 2023 in Riga. If you missed it and would like to know more about the changes we are making you can [watch our talk on YouTube](https://www.youtube.com/watch?v=hv-bkYpHSbQ&t=444s&ab_channel=GNOME) and download a PDF of the presentation [here](https://cdn.vanillaos.org/assets/Vanilla%20OS%20-%20GUADEC%202023.pdf).
 
 
 ## ⏭️ What's next
