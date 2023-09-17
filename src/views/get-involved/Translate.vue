@@ -69,14 +69,14 @@ export default defineComponent({
                             title: 'Source Code',
                             icon: 'code',
                             onClick: () => {
-                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-drivers-utility/';
+                                window.location.href = 'https://github.com/Vanilla-OS/vanilla-drivers-utility';
                             },
                         },
                         {
                             title: 'Translate',
                             icon: 'translate',
                             onClick: () => {
-                                window.location.href = 'https://github.com/Vanilla-OS/vanilla-drivers-utility';
+                                window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-drivers-utility/';
                             },
                         },
                     ],
