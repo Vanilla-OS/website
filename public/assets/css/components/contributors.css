@@ -1,7 +1,7 @@
 .contributors {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px 25px;
+    gap: 10px 10px;
     margin: 5px;
   }
   
