@@ -1,0 +1,85 @@
+.contributors {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px 25px;
+    margin: 5px;
+  }
+  
+  .contributor-card {
+    background-color: var(--card-bg-color);
+    box-shadow: var(--base-shadow);
+  }
+
+  .contributor-card {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+
+  .contributor-card:hover {
+    background-color: var(--secondary-bg-color);
+  }
+  
+  .contributor-info {
+    flex-grow: 1;
+    margin-left: 10px;
+    max-width: 70%;
+    text-align: left;
+    font-family: 'Outfit';
+    text-decoration: none;
+  }
+  
+  .contributor-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .contributor-info h1 {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: font-size 200ms, white-space 200ms, text-overflow 200ms;
+  }
+
+  .contributor-info h1:hover {
+    font-size: 15px;
+    white-space: initial;
+    overflow: visible;
+}
+  
+  .contributor-info p {
+    color: var(--text-color-dimmed);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .contributor-link {
+    text-decoration: none;
+  }
+
+  .contributors a {
+  text-decoration: none;
+}
+
+  @media (max-width: 768px) {
+    .contributors {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .contributor-card h1{
+      font-size: 16px;
+    }
+  }
