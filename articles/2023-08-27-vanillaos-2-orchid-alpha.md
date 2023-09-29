@@ -2,7 +2,7 @@
 title: "Vanilla OS Orchid - Developer Preview"
 description: "Today, we introduce Vanilla OS 2, codenamed Orchid."
 published: true
-date: 2023-07-05
+date: 2023-08-27
 keywords:
   - Vanilla OS
   - Vanilla OS Orchid
