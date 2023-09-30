@@ -7,18 +7,17 @@
         src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid" />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2>Vanilla OS <span>is your next Operating System.</span></h2>
+          <h2>Vanilla OS <span>{{ $t('home.hero.mainTitle') }}</span></h2>
         </div>
         <div class="hero-footer">
           <div class="flexList">
             <router-link :to="{ name: 'download' }" class="btn btn--primary btn--big">
               <span class="mdi material-icons-outlined">file_download</span>
-              <span>Download Now</span>
+              <span>{{ $t('home.hero.download') }}</span>
             </router-link>
             <div class="text text--dimmed">
-              <small>Vanilla OS works out of the box on a larger set of devices.
-                <a href="https://handbook.vanillaos.org/2022/11/05/installation.html" target="_blank">Learn how to
-                  install.</a>
+              <small>Vanilla OS {{ $t('home.hero.description') }}
+                <a href="https://handbook.vanillaos.org/2022/11/05/installation.html" target="_blank">{{ $t('home.hero.howInstall') }}</a>
               </small>
             </div>
           </div>
@@ -33,22 +32,22 @@
         <span class="text text--dimmed">Vanilla OS is</span>
       </li>
       <li :class="{ 'active': activeSection === 'work' }">
-        <span @click="scrollTo('#work')">Work</span>
+        <span @click="scrollTo('#work')">{{ $t('home.hero.work.title') }}</span>
       </li>
       <li :class="{ 'active': activeSection === 'play' }">
-        <span @click="scrollTo('#play')">Play</span>
+        <span @click="scrollTo('#play')">{{ $t('home.hero.play.title') }}</span>
       </li>
       <li :class="{ 'active': activeSection === 'develop' }">
-        <span @click="scrollTo('#develop')">Develop</span>
+        <span @click="scrollTo('#develop')">{{ $t('home.hero.dev.title') }}</span>
       </li>
       <li :class="{ 'active': activeSection === 'access' }">
-        <span @click="scrollTo('#access')">Access</span>
+        <span @click="scrollTo('#access')">{{ $t('home.hero.access.title') }}</span>
       </li>
       <li :class="{ 'active': activeSection === 'solid' }">
-        <span @click="scrollTo('#solid')">Solid</span>
+        <span @click="scrollTo('#solid')">{{ $t('home.hero.solid.title') }}</span>
       </li>
       <li :class="{ 'active': activeSection === 'versatile' }">
-        <span @click="scrollTo('#versatile')">Versatile</span>
+        <span @click="scrollTo('#versatile')">{{ $t('home.hero.versatile.title') }}</span>
       </li>
     </ul>
   </div>
@@ -59,16 +58,14 @@
         alt="Work in an efficient workspace." />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2 class="color--work-1">Work</h2>
-          <b class="color--work-2">in an efficient workspace.</b>
+          <h2 class="color--work-1">{{ $t('home.hero.work.title') }}</h2>
+          <b class="color--work-2">{{ $t('home.hero.work.subTitle') }}</b>
         </div>
         <div class="flexList">
           <div class="text text--spaced">
-            <p>Vanilla OS is designed to be a reliable and productive operating system for your daily work. </p>
-            <p>The desktop environment is perfect for your daily tasks, thanks to its clean and intuitive interface.
-              Everything is setup so that you can start working, and focus on what matters.</p>
-            <p>Vanilla OS is ready to meet your needs whether you are a developer, designer, or student, thanks to a wide
-              range of applications.</p>
+            <p>{{ $t('home.hero.work.p1') }}</p>
+            <p>{{ $t('home.hero.work.p2') }}</p>
+            <p>{{ $t('home.hero.work.p3') }}</p>
           </div>
         </div>
       </div>
@@ -86,16 +83,13 @@
         alt="Play your favorite video games." />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2 class="color--play-1">Play</h2>
-          <b class="color--play-2">your favorite video games.</b>
+          <h2 class="color--play-1">{{ $t('home.hero.play.title') }}</h2>
+          <b class="color--play-2">{{ $t('home.hero.play.subTitle') }}</b>
         </div>
         <div class="flexList">
           <div class="text text--spaced">
-            <p>We all need some fun time after a long week.
-              From the most niche of indie titles to the largest e-sports games in the market, Vanilla OS is your gaming
-              partner with support for the industry's most popular game launchers and peripherals.</p>
-            <p>Embark on new adventures, discover new worlds, or simply relax in your favorite games with zero effort.
-              Just install your favorite games, and we handle the rest.</p>
+            <p>{{ $t('home.hero.play.p1') }}</p>
+            <p>{{ $t('home.hero.play.p2') }}</p>
           </div>
         </div>
       </div>
@@ -108,18 +102,14 @@
         alt="Develop with maximum flexibility." />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2 class="color--develop-1">Develop</h2>
-          <b class="color--develop-2">with maximum flexibility.</b>
+          <h2 class="color--develop-1">{{ $t('home.hero.dev.title') }}</h2>
+          <b class="color--develop-2">{{ $t('home.hero.dev.subTitle') }}</b>
         </div>
         <div class="flexList">
           <div class="text text--spaced">
-            <p>No matter what your development needs are, Vanilla OS is the optimal choice because it provides access to
-              the widest range of tooling options.</p>
-            <p>Apx is a tool that allows you to generate work environments based on any Linux distribution and seamlessly
-              integrates them with the system in a convenient way, enabling you to leverage the full potential of all
-              distributions directly on Vanilla OS.</p>
-            <p>Depending on your needs, you can create your own work environments and share them with colleagues and
-              friends. </p>
+            <p>{{ $t('home.hero.dev.p1') }}</p>
+            <p>{{ $t('home.hero.dev.p2') }}</p>
+            <p>{{ $t('home.hero.dev.p3') }}</p>
           </div>
         </div>
       </div>
@@ -132,8 +122,8 @@
         alt="Access the largest set of applications." />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2 class="color--access-1">Access</h2>
-          <b class="color--access-2">the largest set of applications.</b>
+          <h2 class="color--access-1">{{ $t('home.hero.access.title') }}</h2>
+          <b class="color--access-2">{{ $t('home.hero.access.subTitle') }}</b>
         </div>
       </div>
     </div>
@@ -145,15 +135,13 @@
         alt="Solid as a rock." />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2 class="color--solid-1">Solid</h2>
-          <b class="color--solid-2">as a rock.</b>
+          <h2 class="color--solid-1">{{ $t('home.hero.solid.title') }}</h2>
+          <b class="color--solid-2">{{ $t('home.hero.solid.subTitle') }}</b>
         </div>
         <div class="flexList">
           <div class="text text--spaced">
-            <p>Vanilla OS is an extremely solid and reliable operating system. This is all thanks to our tool called
-              ABRoot, which guarantees immutability and atomicity on your system in a seamless way.</p>
-            <p>ABRoot allows you to add additional packages to your system in a safe manner, always providing you with a
-              working and bootable environment.</p>
+            <p>{{ $t('home.hero.solid.p1') }}</p>
+            <p>{{ $t('home.hero.solid.p2') }}</p>
           </div>
         </div>
       </div>
@@ -168,17 +156,14 @@
         src="/assets/images/backgrounds/vib-recipe-dark.svg" alt="Solid as a rock." />
       <div class="hero-content">
         <div class="hero-heading">
-          <h2 class="color--versatile-1">Versatile</h2>
-          <b class="color--versatile-2">on every occasion.</b>
+          <h2 class="color--versatile-1">{{ $t('home.hero.versatile.title') }}</h2>
+          <b class="color--versatile-2">{{ $t('home.hero.versatile.subTitle') }}</b>
         </div>
         <div class="flexList">
           <div class="text text--spaced">
-            <p>Vanilla OS is extremely versatile thanks to its utilization of OCI images. OCI images allow you to
-              configure your system to your specific needs, while still having a stable environment.</p>
-            <p>Vib is a tool to create OCI images for Vanilla OS. It allows you to build upon our core image, giving you
-              the option to add a variety of customization options, packages, and modules.</p>
-            <p>It is not only limited to our image however, you can utilize an image based on any other Linux distribution
-              instead, providing more versatility.</p>
+            <p>{{ $t('home.hero.versatile.p1') }}</p>
+            <p>{{ $t('home.hero.versatile.p2') }}</p>
+            <p>{{ $t('home.hero.versatile.p3') }}</p>
             <router-link :to="{ name: 'roadmap' }" class="btn btn--link btn--link-2 btn--inline">
               <span>Starting from Orchid</span>
               <span class="mdi material-icons-outlined">open_in_new</span>
@@ -191,7 +176,7 @@
 
   <div class="container">
     <div class="text text--rich">
-      <h2>Featured on</h2>
+      <h2>{{ $t('home.hero.featured') }}</h2>
     </div>
     <div class="spacer"></div>
     <div class="flexGrid flexGrid--3">
