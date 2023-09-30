@@ -31,7 +31,7 @@ interface Contributor {
 }
 
 export default defineComponent({
-  name: 'Contributors',
+  name: 'contributors',
   setup() {
     const contributors = ref<Contributor[]>([]);
 
