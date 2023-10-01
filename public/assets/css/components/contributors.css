@@ -1,85 +1,86 @@
 .contributors {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px 10px;
-    margin: 5px;
-  }
-  
-  .contributor-card {
-    background-color: var(--card-bg-color);
-    box-shadow: var(--base-shadow);
-  }
-
-  .contributor-card {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    border-radius: 10px;
-    text-align: center;
-    padding: 12px;
-    cursor: pointer;
-    transition: all 500ms;
-  }
-
-  .contributor-card:hover {
-    background-color: var(--secondary-bg-color);
-  }
-  
-  .contributor-info {
-    flex-grow: 1;
-    margin-left: 10px;
-    max-width: 70%;
-    text-align: left;
-    font-family: 'Outfit';
-    text-decoration: none;
-  }
-  
-  .contributor-card img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .contributor-info h1 {
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 600;
-    max-width: 100%;
-    margin-bottom: 5px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    transition: font-size 200ms, white-space 200ms, text-overflow 200ms;
-  }
-
-  .contributor-info h1:hover {
-    font-size: 15px;
-    white-space: initial;
-    overflow: visible;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px 10px;
+  margin: 5px;
 }
-  
-  .contributor-info p {
-    color: var(--text-color-dimmed);
-    font-weight: 500;
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  .contributor-link {
-    text-decoration: none;
-  }
 
-  .contributors a {
+.contributors a {
   text-decoration: none;
 }
 
-  @media (max-width: 768px) {
-    .contributors {
+@media (max-width: 768px) {
+  .contributors {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .contributor-card h1{
-      font-size: 16px;
-    }
+      gap: 5px;
   }
+
+  .contributors-card-login {
+    font-size: 12px;
+  }
+
+  .contributors-card-name {
+    font-size: 16px;
+  }
+}
+
+.contributors-card {
+  --contributors-bg-color: var(--card-bg-color);
+  --contributors-hover-bg-color: var(--secondary-bg-color);
+}
+
+.contributors-card {
+  background-color: var(--contributors-bg-color);
+  box-shadow: var(--base-shadow);
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.contributors-card:hover {
+  background-color: var(--contributors-hover-bg-color);
+}
+
+.contributors-card-info {
+  flex-grow: 1;
+  margin-left: 10px;
+  max-width: 70%;
+  text-align: left;
+  font-family: 'Outfit';
+}
+
+.contributors-card-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contributors-card-name {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 100%;
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: font-size 200ms, white-space 200ms, text-overflow 200ms;
+}
+
+.contributors-card-name:hover {
+  font-size: 15px;
+  white-space: initial;
+  overflow: visible;
+}
+
+.contributors-card-login {
+  color: var(--text-color-dimmed);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+}
