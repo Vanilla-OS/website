@@ -1,9 +1,9 @@
 <template>
     <div>
         <topbar />
-        <div class="page">
+        <main class="page">
             <div class="page-wrapper container">
-                <div class="page-header">
+                <section class="page-header">
                     <div class="page-nav" v-if="parentRoute?.name">
                         <router-link :to="{ name: parentRoute.name }" class="btn btn--link btn--inline">
                             <span class="mdi material-icons">arrow_back</span>
@@ -12,12 +12,12 @@
                     </div>
                     <h1>{{ $route.meta.title }}</h1>
                     <p>{{ $route.meta.description }}</p>
-                </div>
-                <div class="page-content">
+                </section>
+                <section class="page-content">
                     <router-view />
-                </div>
+                </section>
             </div>
-        </div>
+        </main>
         <site-footer />
     </div>
 </template>

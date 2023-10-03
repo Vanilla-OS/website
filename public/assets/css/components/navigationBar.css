@@ -31,6 +31,13 @@
     backdrop-filter: saturate(180%) blur(20px);
 }
 
+.navigationBar h2 {
+    font-size: 19px;
+    padding: 6px 17px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
 .navigationBar ul {
     display: flex;
     gap: 10px;
@@ -39,10 +46,17 @@
 }
 
 .navigationBar ul li a,
-.navigationBar ul li span {
+.navigationBar ul li button {
     padding: 6px 17px;
     display: block;
     cursor: pointer;
+}
+
+.navigationBar ul li button {
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
 }
 
 .navigationBar ul li {
@@ -56,7 +70,7 @@
 }
 
 .navigationBar ul li.active a,
-.navigationBar ul li.active span {
+.navigationBar ul li.active button {
     color: var(--navbar-active-link-color);
 }
 

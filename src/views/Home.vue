@@ -1,14 +1,14 @@
 <template>
-  <div class="hero hero--big hero--no-margin">
+  <section class="hero hero--big hero--no-margin">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus no-dark" data-focus-class="fadeInLeft"
         src="/assets/images/backgrounds/vos-laptop-frame.svg" alt="Vanilla OS 2 Orchid" />
       <img class="hero-image onFocus on-dark" data-focus-class="fadeInLeft"
         src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid" />
-      <div class="hero-content">
-        <div class="hero-heading">
+      <article class="hero-content">
+        <header class="hero-heading">
           <h2>Vanilla OS <span>is your next Operating System.</span></h2>
-        </div>
+        </header>
         <div class="hero-footer">
           <div class="flexList">
             <router-link :to="{ name: 'download' }" class="btn btn--primary btn--big">
@@ -23,45 +23,43 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="navigationBar">
+  <nav class="navigationBar" aria-label="go to sections">
+    <h2 class="text text--dimmed" aria-labelledby=""> Vanilla OS is</h2>
     <ul>
-      <li>
-        <span class="text text--dimmed">Vanilla OS is</span>
-      </li>
       <li :class="{ 'active': activeSection === 'work' }">
-        <span @click="scrollTo('#work')">Work</span>
+        <button @click="scrollTo('#work')">Work</button>
       </li>
       <li :class="{ 'active': activeSection === 'play' }">
-        <span @click="scrollTo('#play')">Play</span>
+        <button @click="scrollTo('#play')">Play</button>
       </li>
       <li :class="{ 'active': activeSection === 'develop' }">
-        <span @click="scrollTo('#develop')">Develop</span>
+        <button @click="scrollTo('#develop')">Develop</button>
       </li>
       <li :class="{ 'active': activeSection === 'access' }">
-        <span @click="scrollTo('#access')">Access</span>
+        <button @click="scrollTo('#access')">Access</button>
       </li>
       <li :class="{ 'active': activeSection === 'solid' }">
-        <span @click="scrollTo('#solid')">Solid</span>
+        <button @click="scrollTo('#solid')">Solid</button>
       </li>
       <li :class="{ 'active': activeSection === 'versatile' }">
-        <span @click="scrollTo('#versatile')">Versatile</span>
+        <button @click="scrollTo('#versatile')">Versatile</button>
       </li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="hero hero--inverted hero--big" id="work">
+  <section class="hero hero--inverted hero--big" id="work">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/rnote.svg"
         alt="Work in an efficient workspace." />
-      <div class="hero-content">
-        <div class="hero-heading">
+      <article class="hero-content">
+        <header class="hero-heading">
           <h2 class="color--work-1">Work</h2>
           <b class="color--work-2">in an efficient workspace.</b>
-        </div>
+        </header>
         <div class="flexList">
           <div class="text text--spaced">
             <p>Vanilla OS is designed to be a reliable and productive operating system for your daily work. </p>
@@ -71,11 +69,11 @@
               range of applications.</p>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="hero hero--big hero--gn-purple" id="play">
+  <section class="hero hero--big hero--gn-purple" id="play">
     <div class="hero-back">
       <video autoplay muted loop playsinline>
         <source src="/assets/videos/ron-lach-friends-playing-on-computer.mp4" type="video/mp4" />
@@ -84,11 +82,11 @@
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInLeft" src="/assets/images/backgrounds/popular-games.svg"
         alt="Play your favorite video games." />
-      <div class="hero-content">
-        <div class="hero-heading">
+      <article class="hero-content">
+        <header class="hero-heading">
           <h2 class="color--play-1">Play</h2>
           <b class="color--play-2">your favorite video games.</b>
-        </div>
+        </header>
         <div class="flexList">
           <div class="text text--spaced">
             <p>We all need some fun time after a long week.
@@ -98,19 +96,19 @@
               Just install your favorite games, and we handle the rest.</p>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="hero hero--inverted hero--big" id="develop">
+  <section class="hero hero--inverted hero--big" id="develop">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/apx-console.svg"
         alt="Develop with maximum flexibility." />
-      <div class="hero-content">
-        <div class="hero-heading">
+      <article class="hero-content">
+        <header class="hero-heading">
           <h2 class="color--develop-1">Develop</h2>
           <b class="color--develop-2">with maximum flexibility.</b>
-        </div>
+        </header>
         <div class="flexList">
           <div class="text text--spaced">
             <p>No matter what your development needs are, Vanilla OS is the optimal choice because it provides access to
@@ -122,32 +120,32 @@
               friends. </p>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="hero hero--big hero--bg-center hero--extra-margin" id="access">
-    <div class="hero-wrapper container">
+  <section class="hero hero--big hero--bg-center hero--extra-margin" id="access">
+    <article class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeIn" src="/assets/images/backgrounds/apps-overview.png"
         alt="Access the largest set of applications." />
       <div class="hero-content">
-        <div class="hero-heading">
+        <header class="hero-heading">
           <h2 class="color--access-1">Access</h2>
           <b class="color--access-2">the largest set of applications.</b>
-        </div>
+        </header>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
 
-  <div class="hero hero--big" id="solid">
+  <section class="hero hero--big" id="solid">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/solid-circuit.svg"
         alt="Solid as a rock." />
-      <div class="hero-content">
-        <div class="hero-heading">
+      <article class="hero-content">
+        <header class="hero-heading">
           <h2 class="color--solid-1">Solid</h2>
           <b class="color--solid-2">as a rock.</b>
-        </div>
+        </header>
         <div class="flexList">
           <div class="text text--spaced">
             <p>Vanilla OS is an extremely solid and reliable operating system. This is all thanks to our tool called
@@ -156,21 +154,21 @@
               working and bootable environment.</p>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="hero hero--inverted hero--big" id="versatile">
+  <section class="hero hero--inverted hero--big" id="versatile">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus no-dark" data-focus-class="fadeInRight"
         src="/assets/images/backgrounds/vib-recipe.svg" alt="Solid as a rock." />
       <img class="hero-image onFocus on-dark" data-focus-class="fadeInRight"
         src="/assets/images/backgrounds/vib-recipe-dark.svg" alt="Solid as a rock." />
-      <div class="hero-content">
-        <div class="hero-heading">
+      <article class="hero-content">
+        <header class="hero-heading">
           <h2 class="color--versatile-1">Versatile</h2>
           <b class="color--versatile-2">on every occasion.</b>
-        </div>
+        </header>
         <div class="flexList">
           <div class="text text--spaced">
             <p>Vanilla OS is extremely versatile thanks to its utilization of OCI images. OCI images allow you to
@@ -185,20 +183,20 @@
             </router-link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="text text--rich">
+  <section class="container">
+    <header class="text text--rich">
       <h2>Featured on</h2>
-    </div>
+    </header>
     <div class="spacer"></div>
     <div class="flexGrid flexGrid--3">
       <card v-for="(item, index) in medias" :key="index" :item="item" />
     </div>
     <div class="spacer"></div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
