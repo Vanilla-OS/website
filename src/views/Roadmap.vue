@@ -101,7 +101,7 @@ export default defineComponent({
                     name: 'PRIME Utility',
                     status: 'Ongoing',
                     date: 'No date yet',
-                    description: 'We are updating our PRIME utility to works with ABRoot.',
+                    description: 'We are updating our PRIME utility to work with ABRoot.',
                 },
                 {
                     name: 'Vanilla Tools',
