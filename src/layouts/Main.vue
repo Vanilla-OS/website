@@ -1,6 +1,8 @@
 <template>
     <topbar />
-    <router-view />
+    <main>
+        <router-view />
+    </main>
     <site-footer />
 </template>
   

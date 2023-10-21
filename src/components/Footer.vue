@@ -1,22 +1,22 @@
 <template>
-    <div class="siteFooter">
-        <div class="siteFooter-wrapper container">
-            <div class="siteFooter-header">
+    <footer class="siteFooter">
+        <section class="siteFooter-wrapper container">
+            <article class="siteFooter-header">
                 <div class="siteFooter-logo">
                     <router-link :to="{ name: 'home' }">
                         <img src="/assets/images/brand/vanillaos-logo-icon.svg" alt="Vanilla OS" />
                     </router-link>
                 </div>
-                <div class="siteFooter-navigation">
+                <nav class="siteFooter-navigation">
                     <ul>
                         <li><router-link :to="{ name: 'blog' }">Blog</router-link></li>
                         <li><router-link :to="{ name: 'help' }">Help</router-link></li>
                         <li><router-link :to="{ name: 'get-involved' }">Get Involved</router-link></li>
                         <li><router-link :to="{ name: 'download' }">Download</router-link></li>
                     </ul>
-                </div>
-            </div>
-            <div class="siteFooter-sitemap">
+                </nav>
+            </article>
+            <nav class="siteFooter-sitemap" aria-label="sitemap">
                 <ul>
                     <li><b>Legal</b></li>
                     <li><a href="//fabricators.ltd/">fabricators Ltd.</a></li>
@@ -55,9 +55,9 @@
                     <li><router-link :to="{ name: 'download' }">System Requirements</router-link></li>
                     <!--<li><router-link :to="{ name: 'download' }">Release Notes</router-link></li>-->
                 </ul>
-            </div>
-        </div>
-    </div>
+            </nav>
+        </section>
+    </footer>
 </template>
   
 <script lang="ts">
