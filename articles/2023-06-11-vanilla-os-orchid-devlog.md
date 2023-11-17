@@ -22,11 +22,11 @@ layout: article
 comments: true
 ---
 
-After [our article](https://vanillaos.org/2023/03/07/vanilla-os-2.0-orchid-initial-work.html) announcing the development of the second version of Vanilla OS, codenamed Orchid, several months of planning, development, and testing have followed. In this article, we will cover some of the new features that the upcoming major release of Vanilla OS will bring, together with our reasoning for them.
+After [our article](https://vanillaos.org/blog/article/2023-03-07/vanilla-os-20-orchid---initial-work) announcing the development of the second version of Vanilla OS, codenamed Orchid, several months of planning, development, and testing have followed. In this article, we will cover some of the new features that the upcoming major release of Vanilla OS will bring, together with our reasoning for them.
 
 ## ABRoot v2 - Immutability changes, once again
 
-Throughout its lifespan, Vanilla OS has adopted [various approaches](https://vanillaos.org/2023/01/28/almost-vs-abroot.html) to achieve system immutability and atomicity from [Almost](https://github.com/Vanilla-OS/almost) to [ABRoot](https://github.com/Vanilla-OS/ABRoot). Thanks to a rapidly growing community, we have received excellent feedback. We listened to our community's opinions and learned from our mistakes. All of this has led to the conceptualization, design, and development of [ABRoot v2](https://github.com/Vanilla-OS/ABRoot), a matured version of our system that brings numerous benefits, countless new possibilities, and a higher level of stability.
+Throughout its lifespan, Vanilla OS has adopted [various approaches](https://vanillaos.org/blog/article/2023-01-28/why-we-switched-from-almost-to-abroot) to achieve system immutability and atomicity from [Almost](https://github.com/Vanilla-OS/almost) to [ABRoot](https://github.com/Vanilla-OS/ABRoot). Thanks to a rapidly growing community, we have received excellent feedback. We listened to our community's opinions and learned from our mistakes. All of this has led to the conceptualization, design, and development of [ABRoot v2](https://github.com/Vanilla-OS/ABRoot), a matured version of our system that brings numerous benefits, countless new possibilities, and a higher level of stability.
 
 The new version is not just an update; the entire underlying structure has been rethought and rewritten from scratch to be the ideal solution for all use cases due to the use of OCI images.
 

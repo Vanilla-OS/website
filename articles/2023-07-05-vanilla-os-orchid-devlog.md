@@ -14,7 +14,7 @@ layout: article
 comments: true
 ---
 
-A few weeks ago, we shared our progress in Orchid's development through our latest [Devlog](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html). Among the many updates, we discussed [Apx v2](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html#apx-v2-and-vso-v2) and how it was evolving to fit the developers needs better, while [VSO](https://vanillaos.org/2023/06/11/vanilla-os-orchid-devlog.html#vso-as-a-system-package-manager) would focus on meeting the needs of regular users. Crucial development of Apx v2 has finished and is available for testing now!
+A few weeks ago, we shared our progress in Orchid's development through our latest [Devlog](https://vanillaos.org/blog/article/2023-06-11/vanilla-os-orchid---devlog-11-jun). Among the many updates, we discussed [Apx v2](https://vanillaos.org/blog/article/2023-06-11/vanilla-os-orchid---devlog-11-jun#apx-v2-and-vso-v2) and how it was evolving to fit the developers needs better, while [VSO](https://vanillaos.org/blog/article/2023-06-11/vanilla-os-orchid---devlog-11-jun#vso-as-a-system-package-manager) would focus on meeting the needs of regular users. Crucial development of Apx v2 has finished and is available for testing now!
 
 ## Apx v2
 
@@ -130,4 +130,4 @@ If you encounter any bugs or have suggestions for further enhancements, please r
 
 Your contributions are invaluable in helping us refine the user experience and provide a seamless development environment.
 
-The Vanilla OS Team
+_ The Vanilla OS Team
