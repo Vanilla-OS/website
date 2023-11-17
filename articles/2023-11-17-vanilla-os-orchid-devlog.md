@@ -23,7 +23,7 @@ Waydroid is a [popular open source project](https://waydro.id) which allows user
 
 In order to make the experience seamless, we have created a [custom image](https://github.com/Vanilla-OS/waydroid-image) based on the VSO image which includes Waydroid with all of its dependencies preinstalled. VSO pulls this image and creates a privileged Distrobox container, in which Waydroid runs. The `binder_linux` module for it is preinstalled on the host system.
 
-[Insert Image]
+![The Composition of the Waydroid Image](/uploads/waydroid-image-composition.png)
 
 When a user wants to perform actions in the container such as opening the launcher or any app, installing a (local) Apk, or removing an app, Apx is used to get access to it. Apx starts the container if it isn't already running, which then executes the necessary commands inside the Waydroid container. The main executable used in the container is `ewaydroid`, which is a wrapper script that first checks if Waydroid is running, sets up the required environment variables, and then passes the arguments to the `waydroid` command.
 
