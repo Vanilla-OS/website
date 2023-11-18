@@ -35,28 +35,28 @@ export default defineComponent({
 
     const fetchContributorsData = async () => {
       try {
-        const orgReposResponse = await fetch('https://api.github.com/orgs/Vanilla-OS/repos');
-        const orgReposData = await orgReposResponse.json();
+        const cachedData = localStorage.getItem('contributorsData');
+        if (cachedData) {
+          contributors.value = JSON.parse(cachedData);
+          return;
+        }
 
-        for (const repo of orgReposData) {
-          const contributorsResponse = await fetch(repo.contributors_url);
-          const contributorsData = await contributorsResponse.json();
+        const contributorsResponse = await fetch('https://raw.githubusercontent.com/GabsEdits/fetchContributors/main/contributors.json');
+        const contributorsData = await contributorsResponse.json();
 
-          for (const contributor of contributorsData) {
-            if (!contributors.value.some((c: Contributor) => c.login === contributor.login)) {
-              const userDetailsResponse = await fetch(`https://api.github.com/users/${contributor.login}`);
-              const userDetails = await userDetailsResponse.json();
-
-              contributors.value.push({
-                id: contributor.id,
-                name: userDetails.name || contributor.login,
-                login: contributor.login,
-                avatar_url: contributor.avatar_url,
-                profile_url: contributor.html_url,
-              });
-            }
+        for (const contributor of contributorsData) {
+          if (!contributors.value.some((c: Contributor) => c.login === contributor.login)) {
+            contributors.value.push({
+              id: contributor.id,
+              name: contributor.name,
+              login: contributor.login,
+              avatar_url: contributor.avatar_url,
+              profile_url: contributor.profile_url,
+            });
           }
         }
+
+        localStorage.setItem('contributorsData', JSON.stringify(contributors.value));
       } catch (error) {
         console.error('Error fetching contributors:', error);
       }
