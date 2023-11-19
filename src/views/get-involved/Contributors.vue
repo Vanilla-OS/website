@@ -46,6 +46,8 @@ export default defineComponent({
         const contributorsResponse = await fetch('https://raw.githubusercontent.com/GabsEdits/website/feat/%23123/contributors.json');
         const contributorsData = await contributorsResponse.json();
 
+        contributorsData.sort((a: Contributor, b: Contributor) => a.name.localeCompare(b.name));
+
         for (const contributor of contributorsData) {
           if (!filterIds.includes(contributor.id) && !contributors.value.some((c: Contributor) => c.login === contributor.login)) {
             contributors.value.push({
