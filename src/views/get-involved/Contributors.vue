@@ -1,7 +1,7 @@
 <template>
     <div class="flexList anim--fadeIn">
       <div class="text text--rich">
-        <p>Thanks ❤️ to the over 130 people who have contributed. </p>
+        <p>Thanks ❤️ to the {{ contributors.length }} people who have contributed. </p>
       </div>
     </div>
     <div class="contributors anim--fadeIn">
@@ -33,6 +33,8 @@ export default defineComponent({
   setup() {
     const contributors = ref<Contributor[]>([]);
 
+    const filterIds = [1607653, 49699333];
+
     const fetchContributorsData = async () => {
       try {
         const cachedData = localStorage.getItem('contributorsData');
@@ -41,11 +43,11 @@ export default defineComponent({
           return;
         }
 
-        const contributorsResponse = await fetch('https://raw.githubusercontent.com/GabsEdits/fetchContributors/main/contributors.json');
+        const contributorsResponse = await fetch('https://raw.githubusercontent.com/GabsEdits/website/feat/%23123/contributors.json');
         const contributorsData = await contributorsResponse.json();
 
         for (const contributor of contributorsData) {
-          if (!contributors.value.some((c: Contributor) => c.login === contributor.login)) {
+          if (!filterIds.includes(contributor.id) && !contributors.value.some((c: Contributor) => c.login === contributor.login)) {
             contributors.value.push({
               id: contributor.id,
               name: contributor.name,
