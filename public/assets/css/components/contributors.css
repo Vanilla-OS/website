@@ -29,7 +29,7 @@
 
 .contributors-card {
   --contributors-bg-color: var(--card-bg-color);
-  --contributors-hover-bg-color: var(--secondary-bg-color);
+  --contributors-hover-bg-color: var(--secondary-bg-color-alt);
 }
 
 .contributors-card {
