@@ -19,7 +19,7 @@ Vanilla System Operator (VSO v1) was previously a tool to perform management tas
 
 ## Waydroid
 
-Waydroid is a [popular open source project](https://waydro.id) which allows users to run Android applications inside a container on Linux. It requires certain dependencies installed on the host system making it difficult to install on immutable operating systems until now.
+[Waydroid](https://waydro.id) is a popular open source project which allows users to run Android applications inside a container on Linux. It requires certain dependencies installed on the host system making it difficult to install on immutable operating systems until now.
 
 In order to make the experience seamless, we have created a [custom image](https://github.com/Vanilla-OS/waydroid-image) based on the VSO image which includes Waydroid with all of its dependencies preinstalled. VSO pulls this image and creates a privileged Distrobox container, in which Waydroid runs. The `binder_linux` module for it is preinstalled on the host system.
 
@@ -63,11 +63,11 @@ The Waydroid container is integrated with F-Droid to provide a seamless experien
 
 The index-v2 files are JSON files containing information about every single app available in the repository it was downloaded from, allowing VSO to search and display information about any app without having to frequently send requests to an API.
 
-One main consideration with this approach is the size of the repository; the indexes can become quite large (F-Droid index-v2 for example is approximately 36MB), that's why VSO caches the entire index locally and automatically refreshes it once every week.
+One main consideration with this approach is the size of the repository; the indexes can become quite large (F-Droid's index-v2 file is approximately 36MB for example), which is why VSO caches the entire index locally and automatically refreshes it once every week.
 
 When a user searches or tries to install an app with these indexes saved, all VSO has to do is parse the index-v2 files and search them for the name of the application. The user can define both the reverse domain name notation (e.g. org.fdroid.fdroid) or the name displayed to the user (just "fdroid"), VSO will automatically match for both names regardless of which version has been passed by the user to provide the highest chance of finding an app.
 
-If only one match is found, VSO does not prompt the user and proceeds with the found app, if multiple matches are found, VSO asks the user which app they want VSO process with a multiple choice question. The question will show the normal name, the rdns name, the summary of the app, and in which repository it was found to make the apps more distinguishable for the user.
+If only one match is found, VSO does not prompt the user and proceeds with the found app. If multiple matches are found, VSO asks the user which app they want VSO to process with a multiple choice question. The question will show the normal name, the rdns name, the summary of the app, and in which repository it was found to make the apps more distinguishable for the user.
 
 Once the user selects the app to process, depending on what operation the user executed different things are done:
 
@@ -75,6 +75,6 @@ Once the user selects the app to process, depending on what operation the user e
 
 - info - the information of the app gets printed out
 
-- install - VSO uses the rdns name to make an API call to `https://<repourl>/api/v1/packages/<rdns>`, this returns a JSON file containing some app information, one of those being the suggested version code, based on that VSO builds the URL to download the Apk and stores it in the cache. Once the Apk is downloaded, it is simply installed using `ewaydroid app install ~/.cache/vso/apks/<rdns>_<versioncode>.apk`. In addition to that, VSO also maintains a [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) database which contains information about every app the user has currently installed. This allows for a quicker removal of apps, as we can just check the database for installed apps instead of having to use Waydroid to get the list of apps, convert it to a readable format, and filter out system apps.
+- install - VSO uses the rdns name to make an API call to `https://<repourl>/api/v1/packages/<rdns>`, this returns a JSON file containing some app information, one of those being the suggested version code. Based on that, VSO builds the URL to download the Apk and stores it in the cache. Once the Apk is downloaded, it is simply installed using `ewaydroid app install ~/.cache/vso/apks/<rdns>_<versioncode>.apk`. In addition to that, VSO also maintains a [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) database which contains information about every app the user has currently installed. This allows for a quicker removal of apps, as we can just check the database for installed apps instead of having to use Waydroid to get the list of apps, convert it to a readable format, and filter out system apps.
 
-Note: `vso android launch <app>` would only accept the rdns names of apps since the name->rdns conversion would require more calls to the database and possibly require users to pick an app to launch from the results, by only acccepting rdns names vso can skip any name->rdns conversion and database calls and just launch `ewaydroid app intent <rdns>`.
+**Note**: `vso android launch <app>` would only accept the rdns names of apps since the name->rdns conversion would require more calls to the database, and it would possibly require users to pick an app to launch from the results. By only accepting rdns names, VSO can skip any name->rdns conversion and database calls, and just launch `ewaydroid app intent <rdns>`.
