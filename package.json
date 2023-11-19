@@ -1,7 +1,6 @@
 {
   "name": "vanillaos-website",
   "version": "2.0.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -9,7 +8,7 @@
     "preview": "vite preview",
     "generate-articles": "node scripts/generateArticlesJson.js",
     "type-check": "vue-tsc --noEmit",
-    "start": "node scripts/fetchContributors.js"
+    "start": "node scripts/fetchContributors.mjs"
   },
   "dependencies": {
     "@types/marked": "^5.0.1",
