@@ -18,63 +18,63 @@ published: true
 comments: true
 ---
 
-It is with great pleasure that we announce that Vanilla OS 22.10 Kinetic, the 
+It is with great pleasure that we announce that Vanilla OS 22.10 Kinetic, the
 first stable release of the project, is available for download!
 
-We have been working on the project for many months, there were many changes 
+We have been working on the project for many months, there were many changes
 along the way and also many complications, but we managed to get through them.
 
-Introducing such a large project is not easy, there are many ways, many means 
+Introducing such a large project is not easy, there are many ways, many means
 and so many things to say. To make it easier for you to understand this project,
-we created a commercial like the big guys do (or at least we tried). Here it 
+we created a commercial like the big guys do (or at least we tried). Here it
 is below, enjoy it but then come back here, we have a lot to talk about!
 
 <div class="video">
     <iframe src="https://www.youtube.com/embed/aDvIJ_Hu90Y?controls=0" allowfullscreen="" frameborder="0" height="315" width="560"> </iframe>
 </div>
 
-Vanilla OS is not an ordinary Linux distribution, it is a project that sets 
-itself many goals and is not afraid to put itself out there, proudly displaying 
-its unique technologies such as the Apx sub-system, its own automatic update 
+Vanilla OS is not an ordinary Linux distribution, it is a project that sets
+itself many goals and is not afraid to put itself out there, proudly displaying
+its unique technologies such as the Apx sub-system, its own automatic update
 system, and ABRoot transactions.
 
-![](/uploads/vanilla-os-stable-illustration.webp)
+![Image showing the sun rising with a Vanilla flower in between](/uploads/vanilla-os-stable-illustration.webp)
 
-So many terms, so many promises, so much everything. But let's see together, in 
+So many terms, so many promises, so much everything. But let's see together, in
 detail what the strengths of Vanilla OS are, the features that make it unique.
 
 ## Apx
 
-Vanilla OS comes with its own sub-system.. ehm.. package manager, called Apx 
+Vanilla OS comes with its own sub-system.. ehm.. package manager, called Apx
 (`/à·peks/`).
 
-Apx introduces a whole new paradigm in package management. The idea is to use 
-your system only as a box for storing your files, leaving it clean of packages 
-and limiting the risk of breaking due to incompatible, poorly constructed or 
+Apx introduces a whole new paradigm in package management. The idea is to use
+your system only as a box for storing your files, leaving it clean of packages
+and limiting the risk of breaking due to incompatible, poorly constructed or
 conflicting packages.
 
 It achieves this by installing software inside one or more containers fully
 managed by Apx having restricted access to your system’s resources while still
 being able to use the same drivers, hardware, etc.
 
-By default, Apx provides a container based on your Linux distribution (Ubuntu 
-22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
+By default, Apx provides a container based on your Linux distribution (Ubuntu
+22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s
 package manager (apt for Ubuntu).
 
 ![The "apx enter" command entering an Ubuntu 22.10 container, with the output of "cat /etc/os-release".](/uploads/vanilla-os-apx.png)
 
-Nevertheless, you can install packages from other package distributions. For 
-example, using the `--aur` flag, a new container based on Arch Linux will be 
-created. Here, apx will manage the packages from the AUR (Pacman and yay), 
-tightly integrating them with the host system. Using the `--dnf` flag with apx 
-will create a new container based on Fedora Linux. Here, apx will manage 
-packages from Fedora’s DNF repository, tightly integrating them with the host 
+Nevertheless, you can install packages from other package distributions. For
+example, using the `--aur` flag, a new container based on Arch Linux will be
+created. Here, apx will manage the packages from the AUR (Pacman and yay),
+tightly integrating them with the host system. Using the `--dnf` flag with apx
+will create a new container based on Fedora Linux. Here, apx will manage
+packages from Fedora’s DNF repository, tightly integrating them with the host
 system.
 
 ![Vanilla Control Center showing the list of installed applications in a "Sub System" tab, "htop". There are also "Drivers" and "Updates" tabs.](/uploads/vanilla-os-apx-control-center.png)
 
-Graphical applications installed inside apx containers are automatically added 
-to the Applications menu as well as the “Open with” menu in the file manager. 
+Graphical applications installed inside apx containers are automatically added
+to the Applications menu as well as the “Open with” menu in the file manager.
 They are also listed in the Sub System section of Vanilla control center.
 
 ## ABRoot
@@ -97,48 +97,48 @@ normally, without any changes to either partition.
 
 ## ~~Automatic~~ Smart Updates
 
-Vanilla OS comes with a new concept of automatic updating, an intelligent 
-system let's say. VSO (Vanilla System Operator) is the tool that will 
-periodically check for an update and then download and install it in the 
-background if the device is not under heavy usage. In fact, VSO checks that 
-certain checks are met, such as whether the resources are free (CPU/RAM), 
+Vanilla OS comes with a new concept of automatic updating, an intelligent
+system let's say. VSO (Vanilla System Operator) is the tool that will
+periodically check for an update and then download and install it in the
+background if the device is not under heavy usage. In fact, VSO checks that
+certain checks are met, such as whether the resources are free (CPU/RAM),
 whether the connection allows it, whether the battery is at least 30%, etc.
 
-We designed this system to take away an annoying task from the user, who 
-simply wants to do their own thing. Updates go through ABRoot transactions and 
+We designed this system to take away an annoying task from the user, who
+simply wants to do their own thing. Updates go through ABRoot transactions and
 are applied on the next reboot, without taking extra time during boot.
 
 ![The Updates tab of the Vanilla Control Center showing the latest update check, weekly updates scheduling set, and "SmartUpdate," where the system will not update if the system is under load or the battery is low.](/uploads/vanilla-os-updates.png)
 
-From the Vanilla Control Center, it is possible to set the update frequency, 
+From the Vanilla Control Center, it is possible to set the update frequency,
 check when the last one was performed, and turn off Smart Update features.
 
 ## First Setup
 
-Unlike other Linux distributions, Vanilla OS is designed to provide a user 
+Unlike other Linux distributions, Vanilla OS is designed to provide a user
 experience built for you, just like a suit!
 
-After the first boot, you will be prompted to complete the installation through 
-a guided process. Here you will be able to make several choices, such as for 
+After the first boot, you will be prompted to complete the installation through
+a guided process. Here you will be able to make several choices, such as for
 Dark Mode, Flatpak, AppImage, NVIDIA drivers, and more.
 
 ![The first boot prompt for Vanilla OS with a button to confirm beginning setup.](/uploads/vanilla-os-first-setup.png)
 
-The process is designed to be fast and as minimally invasive as possible. Once 
+The process is designed to be fast and as minimally invasive as possible. Once
 complete, you will need to reboot to be able to use your device with Vanilla OS!
 
 ## GNOME 43
 
-Vanilla OS uses GNOME 43 as its Desktop Environment. It is a stock, clean 
-version with as few changes as possible to give you the best GNOME experience 
+Vanilla OS uses GNOME 43 as its Desktop Environment. It is a stock, clean
+version with as few changes as possible to give you the best GNOME experience
 ever.
 
-We chose to provide GNOME because of its uniqueness and ease of use, which make 
+We chose to provide GNOME because of its uniqueness and ease of use, which make
 it the perfect companion to Vanilla OS.
 
 ![GNOME 43 with the default Vanilla OS wallpaper.](/uploads/vanilla-os-gnome.png)
 
-All official Vanilla OS applications are built with GTK4 and Libadwaita to be 
+All official Vanilla OS applications are built with GTK4 and Libadwaita to be
 as consistent as possible with the GNOME experience.
 
 ## Official Wallpapers

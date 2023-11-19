@@ -38,8 +38,8 @@ Some examples of rolling releases are [Arch Linux](https://www.archlinux.org/), 
 
 ## Modern package formats
 
-To overcome the disadvantages of point and rolling release distributions, new technologies such as [Flatpak](https://flatpak.org/), [Snap](https://snapcraft.io/), and [AppImage](https://appimage.org/) were developed. 
+To overcome the disadvantages of point and rolling release distributions, new technologies such as [Flatpak](https://flatpak.org/), [Snap](https://snapcraft.io/), and [AppImage](https://appimage.org/) were developed.
 
 Flatpak and Snap are modern package formats that provide a sandbox for each application, ensuring they run independently without interfering with other applications or the system. It helps maintain stability and security. Furthermore, all these modern package formats come with all the necessary dependencies, making them portable and easy to install on any Linux distribution.
 
-[Apx](https://vanillaos.org/2023/01/28/apx-the-unconventional-pkg-manager.html) is another solution developed by Vanilla OS and [Distrobox](https://distrobox.privatedns.org/). It allows users to install software from any other Linux distributions using the power of [containers](https://www.docker.com/resources/what-container/). It facilitates users to receive updates without risks of destabilizing or breaking the system.
+[Apx](https://vanillaos.org/blog/article/2023-01-28/apx-an-unconventional-package-manager) is another solution developed by Vanilla OS and [Distrobox](https://distrobox.privatedns.org/). It allows users to install software from any other Linux distributions using the power of [containers](https://www.docker.com/resources/what-container/). It facilitates users to receive updates without risks of destabilizing or breaking the system.
