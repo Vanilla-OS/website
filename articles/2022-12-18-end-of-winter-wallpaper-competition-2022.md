@@ -20,40 +20,40 @@ We received more submissions, but only 3 of them met the requirements. Here they
 
 ### 1. by 4e6anenk0
 
-| ![A snowy taiga with a shooting star-like Vanilla OS logo in place of the star in daylight.](/uploads/WWC2022/4e6anenk0-light.png) | 
-|:--:| 
+| ![A snowy taiga with a shooting star-like Vanilla OS logo in place of the star in daylight.](/uploads/WWC2022/4e6anenk0-light.png) |
+|:--:|
 | *Light variant* |
 
-| ![A melting snowy taiga with a shooting star-like Vanilla OS logo in place of the star at night.](/uploads/WWC2022/4e6anenk0-dark.png) | 
-|:--:| 
+| ![A melting snowy taiga with a shooting star-like Vanilla OS logo in place of the star at night.](/uploads/WWC2022/4e6anenk0-dark.png) |
+|:--:|
 | *Dark variant* |
 
 ### 2. by conquodS
 
-| ![A snowy taiga with dead trees spanning the view in daylight.](/uploads/WWC2022/conquodS-light.png) | 
-|:--:| 
+| ![A snowy taiga with dead trees spanning the view in daylight.](/uploads/WWC2022/conquodS-light.png) |
+|:--:|
 | *Light variant* |
 
-| ![A snowy taiga with dead trees spanning the view at night.](/uploads/WWC2022/conquodS-dark.png) | 
-|:--:| 
+| ![A snowy taiga with dead trees spanning the view at night.](/uploads/WWC2022/conquodS-dark.png) |
+|:--:|
 | *Dark variant* |
 
 ### 3. by kramo
 
-| ![A frozen lake in a taiga in daylight.](/uploads/WWC2022/kramo-light.png) | 
-|:--:| 
+| ![A frozen lake in a taiga in daylight.](/uploads/WWC2022/kramo-light.png) |
+|:--:|
 | *Light variant* |
 
-| ![A frozen lake in a taiga at night.](/uploads/WWC2022/kramo-dark.png) | 
-|:--:| 
+| ![A frozen lake in a taiga at night.](/uploads/WWC2022/kramo-dark.png) |
+|:--:|
 | *Dark variant* |
 
 ## How to vote
 
-You can vote for your favourite wallpaper by dropping an emoji reaction on the Discord message linked below. 
+You can vote for your favourite wallpaper by dropping an emoji reaction on the Discord message linked below.
 
 [**Vote for your favourite wallpaper here!**](https://discord.com/channels/1023243680829681704/1054161350374465627/1054161350374465627)
 
 You can vote for as many wallpapers as you want, with only one vote per wallpaper. The voting will end on the 21st of December 2022 at 23:59 UTC.
 
-*- The Vanilla Team*
+_ The Vanilla Team

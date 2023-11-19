@@ -20,34 +20,35 @@ published: false
 comments: true
 ---
 
-In the past few days, we have been working on a new installer that would make 
-the first experience with Vanilla OS as pleasant as possible. The new installer 
-aims to be visually faithful to GNOME guidelines and compatible with distinst, 
+In the past few days, we have been working on a new installer that would make
+the first experience with Vanilla OS as pleasant as possible. The new installer
+aims to be visually faithful to GNOME guidelines and compatible with distinst,
 the backend used to install the system.
 
 ## The new installer
 
-The new installer is written in <mark>GTK4 and libadwaita</mark>, and it is a 
-complete replacement of the old installer ([Calamares](https://github.com/calamares/calamares)). 
-In the past few weeks, we have announced that Vanilla OS will be using the 
-[Jade](https://git.getcryst.al/crystal/software/jade-gui) installer from the 
-[Crystal Linux](https://getcryst.al/site) team, but after some testing and 
-discussions we decided to write our own to best fit it with the Vanilla OS 
+The new installer is written in <mark>GTK4 and libadwaita</mark>, and it is a
+complete replacement of the old installer ([Calamares](https://github.com/calamares/calamares)).
+In the past few weeks, we have announced that Vanilla OS will be using the
+[Jade](https://git.getcryst.al/crystal/software/jade-gui) installer from the
+[Crystal Linux](https://getcryst.al/site) team, but after some testing and
+discussions we decided to write our own to best fit it with the Vanilla OS
 experience.
 
 The [Vanilla Installer](https://github.com/Vanilla-OS/vanilla-installer) is
-built on top of the [Vanilla First Setup](https://github.com/Vanilla-OS/first-setup) 
-project, the utility that is used to configure the system after the installation. 
+built on top of the [Vanilla First Setup](https://github.com/Vanilla-OS/first-setup)
+project, the utility that is used to configure the system after the installation.
 Both projects are written in **Python** and are meant to be flexible and easy to
 maintain.
 
 ## The new installer in action
 
 We are currently testing the new installer and **will release it with the next
-open beta**. It is however possible to test it in the current images by following 
+open beta**. It is however possible to test it in the current images by following
 the instructions at the end of the article.
 
 The installation process is divided into seven steps:
+
 - Welcome
 - Language
 - Keyboard
@@ -62,14 +63,14 @@ it, while the installation mode is used to install the system on the device.
 
 ![Welcome - Vanilla Installer](/uploads/installer-welcome.png)
 
-Once the user has chosen the installation mode, the **Language** screen is shown. 
+Once the user has chosen the installation mode, the **Language** screen is shown.
 In this screen, it is possible to choose the language in which Vanilla OS will be
 installed. Here a search bar is available to quickly find the language.
 
 ![Language - Vanilla Installer](/uploads/installer-language.png)
 
-The **Keyboard** screen allows the user to choose the keyboard layout that will 
-be used in the system. As for the language, a search bar is available to 
+The **Keyboard** screen allows the user to choose the keyboard layout that will
+be used in the system. As for the language, a search bar is available to
 quickly find the keyboard layout, plus a test area to test the keyboard layout.
 
 ![Keyboard - Vanilla Installer](/uploads/installer-keyboard.png)
@@ -89,6 +90,7 @@ The **Partitioning** screen allows the user to choose where to install the syste
 Once a disk is selected, it is possible to choose between automatic or manual
 partitioning. In automatic partitioning, the disk is automatically partitioned
 with the following layout:
+
 - 512 MB EFI partition
 - 512 MB swap partition
 - 1024 MB boot partition
@@ -125,6 +127,7 @@ logs.
 
 The new installer is not yet available in the open beta images, but it is
 possible to test it in the current images by following these steps:
+
 - Download the latest image
 - Boot the image
 - Open a terminal
@@ -147,14 +150,14 @@ apx --sys remove calamares
 
 We would like to thank all the people that joined the development of the new
 installer (design, development and testing), especially:
+
 - [Muqtxdir](https://github.com/Muqtxdir) (development and design)
 - [kra-mo](https://github.com/kra-mo) (illustrations)
-See [here](https://github.com/Vanilla-OS/vanilla-installer/graphs/contributors) 
+See [here](https://github.com/Vanilla-OS/vanilla-installer/graphs/contributors)
 for the full list of contributors.
 
-Also, we would like to thank the Crystal Linux team (mainly [axtloss](https://github.com/axtloss)) 
-for their work on the Jade installer, which was a great inspiration for the 
+Also, we would like to thank the Crystal Linux team (mainly [axtloss](https://github.com/axtloss))
+for their work on the Jade installer, which was a great inspiration for the
 new installer.
-
 
 _ The Vanilla Team

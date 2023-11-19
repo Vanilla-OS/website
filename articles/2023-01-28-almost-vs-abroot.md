@@ -77,7 +77,7 @@ In conclusion, we've developed both Almost and ABRoot to achieve immutability in
 
 ## Useful links
 
-- [ABRoot documentation](https://documentation.vanillaos.org/docs/ABRoot/)
+- [ABRoot documentation](https://documentation.vanillaos.org/en/abroot)
 - [ABRoot source code](https://github.com/Vanilla-OS/ABRoot/)
-- [Almost documentation](https://documentation.vanillaos.org/docs/almost/)
+- [Almost documentation](https://documentation.vanillaos.org/en/almost)
 - [Almost source code](https://github.com/Vanilla-OS/almost)

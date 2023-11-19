@@ -1,10 +1,12 @@
 <div align="center">
 <img src="logo-white.png?raw=true#gh-dark-mode-only" height="40">
 <img src="logo.png?raw=true#gh-light-mode-only" height="40">
+
 <hr />
 <p>This source code is distributed under the <a href="LICENSE">AGPL 3.0</a> 
-license, while Vanilla OS is a product of <a href="//fabricators.ltd" target="_blank">fabricators.ltd</a>. 
-Please note that all assets on this website are owned by fabricators.ltd and 
+license, while Vanilla OS is a product of <a href="//fabricators.ltd" target="_blank">fabricators.ltd</a>.
+
+Please note that all assets on this website are owned by fabricators.ltd and
 the Vanilla OS Contributors Team.</p>
 </div>
 
@@ -12,13 +14,13 @@ the Vanilla OS Contributors Team.</p>
 
 ### CSS Convention
 
-Our framework follows the [BEM (Block, Element, Modifier)](https://en.bem.info/methodology/quick-start/) 
+Our framework follows the [BEM (Block, Element, Modifier)](https://en.bem.info/methodology/quick-start/)
 convention for CSS classes.
 
-Colors are defined in the `assets/css/colors/default.css` and `assets/css/colors/dark.css` 
+Colors are defined in the `assets/css/colors/default.css` and `assets/css/colors/dark.css`
 files, they must be unique and not overlap with each other.
 
-Each new component (block) must be defined in a separate file in the `assets/css/components` 
+Each new component (block) must be defined in a separate file in the `assets/css/components`
 directory and must follow the following structure:
 
 ```css
