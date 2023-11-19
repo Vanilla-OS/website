@@ -9,18 +9,21 @@
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 906px){
   .contributors {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 5px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 5px 5px;
+      margin: 0px;
   }
 
-  .contributors-card-login {
-    font-size: 12px;
+  .contributors-card-name:focus {
+    font-size: 15px;
   }
+}
 
-  .contributors-card-name {
-    font-size: 16px;
+@media screen and (max-width: 478px){
+  .contributors {
+    grid-template-columns: repeat(1, minmax(0, 1fr))
   }
 }
 
