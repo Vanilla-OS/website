@@ -36,7 +36,7 @@ Thanks to the immense work on Distrobox, all the installed applications are full
 
 ## Under the hood
 
-Apx utilizes Podman under the hood. It is a wrapper of Distrobox that creates containers where you can install and manage your applications. [Podman](https://podman.io/) is a technology increasingly used in programming for software development and distribution. 
+Apx utilizes Podman under the hood. It is a wrapper of Distrobox that creates containers where you can install and manage your applications. [Podman](https://podman.io/) is a technology increasingly used in programming for software development and distribution.
 
 Apx's role is to let the user communicate with Distrobox through an experience similar to that of a classic package manager. It also allows the user to easily access the installed programs, export binaries and desktop entries, and have immediate access to all the functions of the package manager used in the container.
 

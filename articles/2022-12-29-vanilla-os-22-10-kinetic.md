@@ -18,15 +18,15 @@ published: true
 comments: true
 ---
 
-It is with great pleasure that we announce that Vanilla OS 22.10 Kinetic, the 
+It is with great pleasure that we announce that Vanilla OS 22.10 Kinetic, the
 first stable release of the project, is available for download!
 
-We have been working on the project for many months, there were many changes 
+We have been working on the project for many months, there were many changes
 along the way and also many complications, but we managed to get through them.
 
-Introducing such a large project is not easy, there are many ways, many means 
+Introducing such a large project is not easy, there are many ways, many means
 and so many things to say. To make it easier for you to understand this project,
-we created a commercial like the big guys do (or at least we tried). Here it 
+we created a commercial like the big guys do (or at least we tried). Here it
 is below, enjoy it but then come back here, we have a lot to talk about!
 
 <div class="video">

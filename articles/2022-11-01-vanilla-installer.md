@@ -63,14 +63,14 @@ it, while the installation mode is used to install the system on the device.
 
 ![Welcome - Vanilla Installer](/uploads/installer-welcome.png)
 
-Once the user has chosen the installation mode, the **Language** screen is shown. 
+Once the user has chosen the installation mode, the **Language** screen is shown.
 In this screen, it is possible to choose the language in which Vanilla OS will be
 installed. Here a search bar is available to quickly find the language.
 
 ![Language - Vanilla Installer](/uploads/installer-language.png)
 
-The **Keyboard** screen allows the user to choose the keyboard layout that will 
-be used in the system. As for the language, a search bar is available to 
+The **Keyboard** screen allows the user to choose the keyboard layout that will
+be used in the system. As for the language, a search bar is available to
 quickly find the keyboard layout, plus a test area to test the keyboard layout.
 
 ![Keyboard - Vanilla Installer](/uploads/installer-keyboard.png)
