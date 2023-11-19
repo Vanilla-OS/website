@@ -63,7 +63,7 @@ The Waydroid container is integrated with F-Droid to provide a seamless experien
 
 The index-v2 files are JSON files containing information about every single app available in the repository it was downloaded from, allowing VSO to search and display information about any app without having to frequently send requests to an API.
 
-The main issue with this method is the repository size, these indexes can get quite big (F-Droid index-v2 for example is approximately 36MB), that's why VSO caches the entire index locally and automatically refreshes it once every week.
+One main consideration with this approach is the size of the repository; the indexes can become quite large (F-Droid index-v2 for example is approximately 36MB), that's why VSO caches the entire index locally and automatically refreshes it once every week.
 
 When a user searches or tries to install an app with these indexes saved, all VSO has to do is parse the index-v2 files and search them for the name of the application. The user can define both the reverse domain name notation (e.g. org.fdroid.fdroid) or the name displayed to the user (just "fdroid"), VSO will automatically match for both names regardless of which version has been passed by the user to provide the highest chance of finding an app.
 
