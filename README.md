@@ -1,6 +1,6 @@
 <div align="center">
-<img src="logo-white.png?raw=true#gh-dark-mode-only" height="40">
-<img src="logo.png?raw=true#gh-light-mode-only" height="40">
+<img src="logo-white.png#gh-dark-mode-only" height="40">
+<img src="logo.png#gh-light-mode-only" height="40">
 
 <hr />
 <p>This source code is distributed under the <a href="LICENSE">AGPL 3.0</a> 

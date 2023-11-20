@@ -38,34 +38,46 @@ export default defineComponent({
             orchidSubtitle: 'Upcoming Version',
             orchidEvents: [
                 {
-                    name: 'GNOME 44',
+                    name: 'GNOME 45',
                     status: 'Ongoing',
                     date: 'No date yet',
-                    description: 'Vanilla OS 2.0 will feature GNOME 44 as the Desktop Environment (not guaranteed).',
+                    description: 'Vanilla OS 2.0 will feature GNOME 45 as the Desktop Environment (not guaranteed).',
                 },
                 {
-                    name: 'Waydroid support in Apx',
+                    name: 'LVM Thin Provisioning',
                     status: 'Ongoing',
                     date: 'No date yet',
+                    description: 'We are working on adding LVM Thin Provisioning support to Installer and Albius.'
+                },
+                {
+                    name: 'GNOME 44',
+                    status: 'Completed',
+                    date: 'August 15 2023',
+                    description: 'Vanilla OS 2.0 Alpha builds feature GNOME 44 as the Desktop Environment and components are being transitioned to GNOME 45.',
+                },
+                {
+                    name: 'Waydroid support in VSO',
+                    status: 'Completed',
+                    date: 'November 19 2023',
                     description: 'We are working on adding Android support to VSO through to a Waydroid implementation.',
                 },
                 {
                     name: 'nvidia-image',
                     status: 'Completed',
                     date: 'No date yet',
-                    description: 'We are working to the nvidia image of Vanilla OS. This is the official image of Vanilla OS with proprietary NVIDIA® drivers pre-installed and pre-configured.',
+                    description: 'We are working on the official nvidia image of Vanilla OS with proprietary NVIDIA® drivers pre-installed and pre-configured.',
                 },
                 {
                     name: 'desktop-image',
                     status: 'Ongoing',
                     date: 'No date yet',
-                    description: 'We are working to the desktop image of Vanilla OS. This is the official image of Vanilla OS.',
+                    description: 'We are working on the official desktop image of Vanilla OS.',
                 },
                 {
                     name: 'core-image',
                     status: 'Completed',
                     date: 'No date yet',
-                    description: 'We are working to the core image of Vanilla OS. This image will be used as a base for the desktop image and flavors.',
+                    description: 'We are working on the core image of Vanilla OS. This image will be used as a base for the desktop image and future flavors.',
                 },
                 {
                     name: 'Vib',
@@ -77,7 +89,7 @@ export default defineComponent({
                     name: 'pico-image',
                     status: 'Completed',
                     date: '27 May 2023',
-                    description: 'We are working on a new convenient way to build OCI images using modules.',
+                    description: 'We are working on a official base image to be used with other images. It is a Debian rootfs built using the Vanilla OS repository during the debootstrap process.',
                 },
                 {
                     name: 'Albius',
@@ -110,21 +122,33 @@ export default defineComponent({
                     description: 'We are working on a set of tools to simplify some tasks.',
                 },
                 {
+                    name: 'Deprecation of Vanilla Control Center',
+                    status: 'Completed',
+                    date: '05 July 2023',
+                    description: 'We have deprecated Vanilla Control Center in favor of Apx GUI and GNOME Settings.',
+                },
+                {
+                    name: 'Apx GUI',
+                    status: 'Completed',
+                    date: '05 July 2023',
+                    description: 'We are working on a new GUI for Apx.',
+                },
+                {
                     name: 'Apx v2',
                     status: 'Completed',
-                    date: '28 Ago 2023',
+                    date: '28 April 2023',
                     description: 'We are working on a new Apx version with support for stacks to better suit developers needs.',
                 },
                 {
                     name: 'VSO v2',
                     status: 'Completed',
-                    date: '28 Ago 2023',
+                    date: '28 April 2023',
                     description: 'We are working on a new VSO to let the user install packages like any other Linux distribution but using a well-integrated subsystem.',
                 },
                 {
                     name: 'ABRoot v2',
                     status: 'Completed',
-                    date: '28 Ago 2023',
+                    date: '28 April 2023',
                     description: 'We are working on a new ABRoot version which use OCI images instead of the package manager.',
                 },
                 {
