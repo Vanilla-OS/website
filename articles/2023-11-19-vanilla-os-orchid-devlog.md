@@ -71,10 +71,10 @@ If only one match is found, VSO does not prompt the user and proceeds with the f
 
 Once the user selects the app to process, depending on what operation the user executed different things are done:
 
-- remove - the app gets deleted with the `ewaydroid app remove <app rdns>` command.
+- **remove** - the app gets deleted with the `ewaydroid app remove <app rdns>` command.
 
-- info - the information of the app gets printed out
+- **info** - the information of the app gets printed out
 
-- install - VSO uses the rdns name to make an API call to `https://<repourl>/api/v1/packages/<rdns>`, this returns a JSON file containing some app information, one of those being the suggested version code. Based on that, VSO builds the URL to download the Apk and stores it in the cache. Once the Apk is downloaded, it is simply installed using `ewaydroid app install ~/.cache/vso/apks/<rdns>_<versioncode>.apk`. In addition to that, VSO also maintains a [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) database which contains information about every app the user has currently installed. This allows for a quicker removal of apps, as VSO can just check the database for installed apps instead of having to use Waydroid to get the list of apps, convert it to a readable format, and filter out system apps.
+- **install** - VSO uses the rdns name to make an API call to `https://<repourl>/api/v1/packages/<rdns>`, this returns a JSON file containing some app information, one of those being the suggested version code. Based on that, VSO builds the URL to download the Apk and stores it in the cache. Once the Apk is downloaded, it is simply installed using `ewaydroid app install ~/.cache/vso/apks/<rdns>_<versioncode>.apk`. In addition to that, VSO also maintains a [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) database which contains information about every app the user has currently installed. This allows for a quicker removal of apps, as VSO can just check the database for installed apps instead of having to use Waydroid to get the list of apps, convert it to a readable format, and filter out system apps.
 
-**Note**: `vso android launch <app>` would only accept the rdns names of apps since the name->rdns conversion would require more calls to the database, and it would possibly require users to pick an app to launch from the results. By only accepting rdns names, VSO can skip any name->rdns conversion and database calls, and just launch `ewaydroid app intent <rdns>`.
+**Note**: `vso android launch <app>` would only accept the rdns names of apps since the name -> rdns conversion would require more calls to the database, and it would possibly require users to pick an app to launch from the results. By only accepting rdns names, VSO can skip any name -> rdns conversion and database calls, and just launch `ewaydroid app intent <rdns>`.
