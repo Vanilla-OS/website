@@ -2,7 +2,7 @@
 title: "Vanilla OS Orchid - Devlog 22 Nov"
 description: "We are excited to announce that we have recently completed the transition to LVM thin provisioning in the installer."
 published: true
-date: 2023-09-22
+date: 2023-11-22
 keywords:
   - Vanilla OS
   - Vanilla OS Orchid
