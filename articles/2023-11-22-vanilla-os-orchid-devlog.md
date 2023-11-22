@@ -33,7 +33,7 @@ With the introduction of LVM thin provisioning support, we are changing the defa
 - Optionally, create a Swap partition for hibernation support (we use `zram` by default).
 - The remaining storage should be used for the var partition in `btrfs` format. This partition is where all of your data is stored.
 
-![Image of the new partitioning structure for LVM thin provisioning support](/uploads/lvm-partitioning-strucutre.webp)
+![Image of the new partitioning structure for LVM thin provisioning support](/uploads/lvm-partitioning-structure.webp)
 
 With these changes and Full Disk Encryption support with LUKS, Orchid is gearing up to be a more efficient and secure release for all users. Try out the [alpha builds](https://vanillaos.org/download/orchid/alpha) today, and let us know if you stumble on any new issues.
 
