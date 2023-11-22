@@ -76,25 +76,25 @@ export default defineComponent({
                 {
                     name: 'nvidia-image',
                     status: 'Completed',
-                    date: '30 April 2023',
+                    date: '27 May 2023',
                     description: 'We are working on the official nvidia image of Vanilla OS with proprietary NVIDIA® drivers pre-installed and pre-configured.',
                 },
                 {
                     name: 'desktop-image',
                     status: 'Completed',
-                    date: '30 April 2023',
+                    date: '27 May 2023',
                     description: 'We are working on the official desktop image of Vanilla OS.',
                 },
                 {
                     name: 'core-image',
                     status: 'Completed',
-                    date: '30 April 2023',
+                    date: '27 May 2023',
                     description: 'We are working on the core image of Vanilla OS. This image will be used as a base for the desktop image and future flavors.',
                 },
                 {
                     name: 'Vib',
                     status: 'Completed',
-                    date: '30 April 2023',
+                    date: '27 May 2023',
                     description: 'We are working on a new convenient way to build OCI images using modules.',
                 },
                 {
