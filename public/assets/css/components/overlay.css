@@ -10,5 +10,6 @@
     bottom: 0;
     right: 0;
     backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     z-index: 2;
 }
