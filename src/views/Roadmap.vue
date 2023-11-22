@@ -45,8 +45,8 @@ export default defineComponent({
                 },
                 {
                     name: 'LVM Thin Provisioning',
-                    status: 'Ongoing',
-                    date: 'No date yet',
+                    status: 'Completed',
+                    date: 'November 20 2023',
                     description: 'We are working on adding LVM Thin Provisioning support to Installer and Albius.'
                 },
                 {
@@ -62,21 +62,33 @@ export default defineComponent({
                     description: 'We are working on adding Android support to VSO through to a Waydroid implementation.',
                 },
                 {
+                    name: 'Sideload Utility',
+                    status: 'Ongoing',
+                    date: 'No date yet',
+                    description: 'We are working on a sideload utility for VSO to install DEBs and Android APKs with ease.',
+                },
+                {
+                    name: 'Recovery mode in Installer',
+                    status: 'Ongoing',
+                    date: 'No date yet',
+                    description: 'We are working on a recovery mode for our Installer with easy access to all recovery tools.',
+                },
+                {
                     name: 'nvidia-image',
                     status: 'Completed',
-                    date: 'No date yet',
+                    date: '30 April 2023',
                     description: 'We are working on the official nvidia image of Vanilla OS with proprietary NVIDIA® drivers pre-installed and pre-configured.',
                 },
                 {
                     name: 'desktop-image',
-                    status: 'Ongoing',
-                    date: 'No date yet',
+                    status: 'Completed',
+                    date: '30 April 2023',
                     description: 'We are working on the official desktop image of Vanilla OS.',
                 },
                 {
                     name: 'core-image',
                     status: 'Completed',
-                    date: 'No date yet',
+                    date: '30 April 2023',
                     description: 'We are working on the core image of Vanilla OS. This image will be used as a base for the desktop image and future flavors.',
                 },
                 {
@@ -118,7 +130,7 @@ export default defineComponent({
                 {
                     name: 'Vanilla Tools',
                     status: 'Completed',
-                    date: 'No date yet',
+                    date: '27 August 2023',
                     description: 'We are working on a set of tools to simplify some tasks.',
                 },
                 {
