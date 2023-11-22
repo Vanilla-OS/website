@@ -61,7 +61,7 @@ export default defineComponent({
                 },
                 {
                     name: 'Mateus B. Melchiades',
-                    description: 'Software Engineer and Core Developer',
+                    description: 'Software Engineer, Core Developer and Contributors Leader',
                     lit: true,
                     image: '/assets/images/pics/matbme.jpeg',
                     links: {
