@@ -125,6 +125,16 @@
     margin: 0 0 0 0;
 }
 
+.text--rich b,
+.text--rich strong {
+    font-weight: 700;
+}
+
+.text--rich em,
+.text--rich i {
+    font-style: italic;
+}
+
 .text small {
     font-size: 16px;
 }
