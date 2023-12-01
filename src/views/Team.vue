@@ -143,6 +143,14 @@ export default defineComponent({
                         website: 'https://orowith2os.gitlab.io/',
                     },
                 },
+                {
+                    name: 'Tau',
+                    description: 'Bugfixes and User Support',
+                    image: '/assets/images/pics/taukakao.jpg',
+                    links: {
+                        githubUsername: 'taukakao',
+                    },
+                },
             ];
             const teamItems = [];
             for (const member of team) {
