@@ -7,8 +7,8 @@
     --card-color: var(--text-color);
     --card-type-adv-bg-color: var(--accent-yellow-bg-color);
     --card-type-adv-color: var(--accent-blue-text-color);
-    --card-type-newsletter-bg-color: var(--accent-blue-bg-color);
-    --card-type-newsletter-color: var(--accent-blue-text-color);
+    --card-type-funnyletter-bg-color: var(--accent-blue-bg-color);
+    --card-type-funnyletter-color: var(--accent-blue-text-color);
     --card-type-dev-bg-color: var(--accent-brown-bg-color);
     --card-type-dev-color: var(--accent-brown-text-color);
     --card-green-bg-color: var(--accent-green-bg-color);
@@ -101,13 +101,13 @@
     background-color: var(--card-type-adv-bg-color);
 }
 
-.card.card--type-adv.card--type-newsletter {
-    background-color: var(--card-type-newsletter-bg-color);
-    color: var(--card-type-newsletter-color);
+.card.card--type-adv.card--type-funnyletter {
+    background-color: var(--card-type-funnyletter-bg-color);
+    color: var(--card-type-funnyletter-color);
 }
 
-.card.card--type-newsletter .btn {
-    background-color: var(--card-type-newsletter-color);
+.card.card--type-funnyletter .btn {
+    background-color: var(--card-type-funnyletter-color);
 }
 
 .card.card--type-adv.card--type-dev {

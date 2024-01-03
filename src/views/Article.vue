@@ -14,11 +14,11 @@
             <div class="page-content anim--fadeIn">
                 <div class="text text--rich" v-html="parsedHTML" @click="handleClick"></div>
             </div>
-            <div class="card card--hz card--type-adv card--type-adv--hz card--type-newsletter">
+            <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
                     <h4>Don't miss the news</h4>
                     <h2>Subscribe to the Newsletter</h2>
-                    <div class="btn btn--primary" @click="isMailChimpOpen = true">
+                    <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="mdi material-icons">email</span>
                         <span>Subscribe Now</span>
                     </div>
@@ -26,7 +26,7 @@
                 <div class="card-content">
                     <div class="flexList">
                         <div class="card-image">
-                            <img src="/assets/images/components/newsletter.svg" alt="Subscribe to the Newsletter" />
+                            <img src="/assets/images/components/funnyletter.svg" alt="Subscribe to the Newsletter" />
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
     <share-modal :isOpen="shareModalOpen" @close="shareModalOpen = false" />
     <image-showcase :isOpen="imageShowcaseOpen" :articleImages="articleImages" :currentImageIndex="currentImageIndex"
         @close="closeImageShowcase" @navigate="navigateImage" />
-    <mail-chimp :is-open="isMailChimpOpen" @close="closeMailChimp" />
+    <notmail-not-chimp :is-open="isNotMailNotChimpOpen" @close="closeNotMailNotChimp" />
 </template>
   
 <script lang="ts">
@@ -100,7 +100,7 @@ export default defineComponent({
             articleImages: [] as string[],
             currentImageIndex: 0,
             panelTocOpen: false,
-            isMailChimpOpen: false,
+            isNotMailNotChimpOpen: false,
         };
     },
     methods: {
@@ -118,8 +118,8 @@ export default defineComponent({
         closeImageShowcase() {
             this.imageShowcaseOpen = false;
         },
-        closeMailChimp() {
-            this.isMailChimpOpen = false;
+        closeNotMailNotChimp() {
+            this.isNotMailNotChimpOpen = false;
         },
         navigateImage(index: number) {
             this.currentImageIndex = index;

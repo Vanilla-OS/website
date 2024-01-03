@@ -1,17 +1,19 @@
-import { createApp } from 'vue'
+import { createSSRApp } from 'vue'
 import { createHead } from "@vueuse/head"
 
 import App from './App.vue'
-import router from './router'
+import createRouterInstance from './router'
 import ComponentLoader from "@/components/loader";
 
-// import './assets/css/index.css'
+export function createApp() {
+    console.log('creating new app instance')
+    const app = createSSRApp(App)
+    const head = createHead()
+    const router = createRouterInstance()
 
-const app = createApp(App)
-const head = createHead()
+    app.use(router)
+    app.use(head)
+    app.use(ComponentLoader)
 
-app.use(router)
-app.use(head)
-app.use(ComponentLoader)
-
-app.mount('#app')
+    return { app, router }
+}

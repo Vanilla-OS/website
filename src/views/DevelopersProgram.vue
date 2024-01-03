@@ -12,12 +12,12 @@
         <div class="text text--rich">
             <h3>Join the program</h3>
             <p>The developers program will be available soon. If you are interested in joining the program, please
-                subscribe to our newsletter to be notified when the program is available.</p>
-            <div class="card card--hz card--type-adv card--type-adv--hz card--type-newsletter">
+                subscribe to our funnyletter to be notified when the program is available.</p>
+            <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
                     <h4>Don't miss the news</h4>
                     <h2>Subscribe to the Newsletter</h2>
-                    <div class="btn btn--primary" @click="isMailChimpOpen = true">
+                    <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="mdi material-icons">email</span>
                         <span>Subscribe Now</span>
                     </div>
@@ -25,12 +25,12 @@
                 <div class="card-content">
                     <div class="flexList">
                         <div class="card-image">
-                            <img src="/assets/images/components/newsletter.svg" alt="Subscribe to the Newsletter" />
+                            <img src="/assets/images/components/funnyletter.svg" alt="Subscribe to the Newsletter" />
                         </div>
                     </div>
                 </div>
             </div>
-            <mail-chimp :is-open="isMailChimpOpen" @close="closeMailChimp" tagsId="12812945" />
+            <notmail-not-chimp :is-open="isNotMailNotChimpOpen" @close="closeNotMailNotChimp" tagsId="12812945" />
         </div>
     </div>
 </template>
@@ -42,7 +42,7 @@ export default defineComponent({
     name: 'developers-program',
     data() {
         return {
-            isMailChimpOpen: false,
+            isNotMailNotChimpOpen: false,
             helpItems: [
                 {
                     icon: 'build',
@@ -51,8 +51,8 @@ export default defineComponent({
                 },
                 {
                     icon: 'email',
-                    title: 'Weekly newsletter',
-                    description: 'Get a weekly newsletter with updates about the development of Vanilla OS.',
+                    title: 'Weekly funnyletter',
+                    description: 'Get a weekly funnyletter with updates about the development of Vanilla OS.',
                 },
                 {
                     icon: 'bug_report',
@@ -78,8 +78,8 @@ export default defineComponent({
         };
     },
     methods: {
-        closeMailChimp() {
-            this.isMailChimpOpen = false;
+        closeNotMailNotChimp() {
+            this.isNotMailNotChimpOpen = false;
         },
     },
 });

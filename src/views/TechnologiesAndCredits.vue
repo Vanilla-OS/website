@@ -17,7 +17,7 @@ export default defineComponent({
     name: 'technologies-and-credits',
     data() {
         return {
-            isMailChimpOpen: false,
+            isNotMailNotChimpOpen: false,
             credits: [
                 {
                     icon: '/assets/images/orgs/linux.svg',
@@ -113,8 +113,8 @@ export default defineComponent({
         };
     },
     methods: {
-        closeMailChimp() {
-            this.isMailChimpOpen = false;
+        closeNotMailNotChimp() {
+            this.isNotMailNotChimpOpen = false;
         },
     },
 });

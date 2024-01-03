@@ -12,13 +12,13 @@
         <div class="text text--rich">
             <h3>Join the program</h3>
             <p>The enterprise support program will be available starting from Vanilla OS Orchid. If you are interested
-                in joining the program, please subscribe to our newsletter to be notified when the program is
+                in joining the program, please subscribe to our funnyletter to be notified when the program is
                 available.</p>
-            <div class="card card--hz card--type-adv card--type-adv--hz card--type-newsletter">
+            <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
                     <h4>Don't miss the news</h4>
                     <h2>Subscribe to the Newsletter</h2>
-                    <div class="btn btn--primary" @click="isMailChimpOpen = true">
+                    <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="mdi material-icons">email</span>
                         <span>Subscribe Now</span>
                     </div>
@@ -26,12 +26,12 @@
                 <div class="card-content">
                     <div class="flexList">
                         <div class="card-image">
-                            <img src="/assets/images/components/newsletter.svg" alt="Subscribe to the Newsletter" />
+                            <img src="/assets/images/components/funnyletter.svg" alt="Subscribe to the Newsletter" />
                         </div>
                     </div>
                 </div>
             </div>
-            <mail-chimp :is-open="isMailChimpOpen" @close="closeMailChimp" tagsId="12813009" />
+            <notmail-not-chimp :is-open="isNotMailNotChimpOpen" @close="closeNotMailNotChimp" tagsId="12813009" />
         </div>
     </div>
 </template>
@@ -43,7 +43,7 @@ export default defineComponent({
     name: 'enterprise-support',
     data() {
         return {
-            isMailChimpOpen: false,
+            isNotMailNotChimpOpen: false,
             helpItems: [
                 {
                     icon: 'settings',
@@ -113,8 +113,8 @@ export default defineComponent({
         };
     },
     methods: {
-        closeMailChimp() {
-            this.isMailChimpOpen = false;
+        closeNotMailNotChimp() {
+            this.isNotMailNotChimpOpen = false;
         },
     },
 });

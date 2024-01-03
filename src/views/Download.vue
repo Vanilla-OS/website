@@ -109,12 +109,12 @@ export default defineComponent({
     name: 'download',
     data() {
         return {
-            isMailChimpOpen: false,
+            isNotMailNotChimpOpen: false,
         };
     },
     methods: {
-        closeMailChimp() {
-            this.isMailChimpOpen = false;
+        closeNotMailNotChimp() {
+            this.isNotMailNotChimpOpen = false;
         },
     },
 });

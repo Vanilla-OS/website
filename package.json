@@ -1,13 +1,15 @@
 {
   "name": "vanillaos-website",
   "version": "2.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "npm run generate-articles && vite build",
-    "preview": "vite preview",
-    "generate-articles": "node scripts/generateArticlesJson.js",
-    "type-check": "vue-tsc --noEmit"
+    "dev": "node server",
+    "build": "npm run generate-articles && npm run build:client && npm run build:server",
+    "build:client": "vite build --ssrManifest --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
+    "generate-articles": "node scripts/generateArticlesJson.cjs",
+    "start": "NODE_ENV=production node server"
   },
   "dependencies": {
     "@types/marked": "^5.0.1",
@@ -15,6 +17,9 @@
     "js-yaml": "^4.1.0",
     "marked": "^5.1.1",
     "slugify": "^1.6.6",
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "sirv": "^2.0.4",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
