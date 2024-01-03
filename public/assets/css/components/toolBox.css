@@ -15,7 +15,6 @@
     border-bottom-width: 1px;
     border-style: solid;
     display: flex;
-    align-items: stretch;
     justify-content: center;
     font-size: 19px;
     backdrop-filter: blur(20px);
@@ -24,6 +23,7 @@
     bottom: 0px;
     margin: 40px 0 0 0;
     flex-direction: column;
+    align-items: stretch;
 }
 
 .toolBox-wrapper {
@@ -35,6 +35,7 @@
     flex-direction: row;
     flex-grow: 1;
     margin: initial;
+    max-width: initial;
 }
 
 .toolBox-item {
