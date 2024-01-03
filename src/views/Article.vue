@@ -45,7 +45,7 @@
                                 <ul class="toc-list">
                                     <li v-for="(heading, index) in tableOfContents" :key="index" class="toc-item">
                                         <span :class="`clickable toc-item-level-${heading.level}`"
-                                            @click="handleTocItemClick(heading.anchor)">
+                                            @click="handleTocItemClick(heading.anchor)" :hash="heading.anchor">
                                             {{ heading.title }}
                                         </span>
                                     </li>
@@ -234,14 +234,17 @@ export default defineComponent({
             const headingRegex = /<h([1-6])[^>]*>([^<]+)<\/h[1-6]>/g;
             const matches = [];
             let match;
+
             while ((match = headingRegex.exec(this.article.content))) {
-                const title = match[2].replace(/,/g, '');
+                const title = decodeURIComponent(match[2].replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'"));
+                const anchor = title.toLowerCase().replace(/'|"| /g, '').replace(/[^a-z0-9-]+/g, '-');
                 matches.push({
-                    anchor: title.toLowerCase().replace(/\s+/g, '-'),
+                    anchor: anchor,
                     title: title,
                     level: parseInt(match[1]),
                 });
             }
+
             return matches;
         },
         readingTime() {
