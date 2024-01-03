@@ -63,3 +63,7 @@ textarea {
     opacity: .5;
     cursor: not-allowed !important;
 }
+
+.clickable {
+    cursor: pointer;
+}

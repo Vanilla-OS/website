@@ -44,10 +44,10 @@
                             <div class="toc">
                                 <ul class="toc-list">
                                     <li v-for="(heading, index) in tableOfContents" :key="index" class="toc-item">
-                                        <a :href="`#${heading.anchor}`" :class="`toc-item-level-${heading.level}`"
-                                            @click="handleTocItemClick">
+                                        <span :class="`clickable toc-item-level-${heading.level}`"
+                                            @click="handleTocItemClick(heading.anchor)">
                                             {{ heading.title }}
-                                        </a>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
@@ -101,11 +101,25 @@ export default defineComponent({
             currentImageIndex: 0,
             panelTocOpen: false,
             isNotMailNotChimpOpen: false,
+            articleLoaded: false,
         };
     },
     methods: {
-        handleTocItemClick() {
+        handleTocItemClick(anchor: string) {
+            const currentPath = this.$router.currentRoute.value.path;
+            const newHash = `#${anchor}`;
+            const newPath = `${currentPath}${newHash}`;
+            window.history.replaceState({}, document.title, newPath);
+            this.scrollToAnchor(anchor);
             this.panelTocOpen = false;
+        },
+        scrollToAnchor(anchor: string) {
+            const element = document.getElementById(anchor);
+            console.log(element);
+            if (element) {
+                window.scrollTo(0, 0);
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         },
         printArticle() {
             window.print();
@@ -153,6 +167,7 @@ export default defineComponent({
         try {
             this.article = await loadArticle(date as string, slug as string);
             this.parsedHTML = this.article?.content || '';
+            this.articleLoaded = true;
             useHead({
                 title: `${this.article!.title} - ${document.title}`,
                 meta: [
@@ -220,9 +235,10 @@ export default defineComponent({
             const matches = [];
             let match;
             while ((match = headingRegex.exec(this.article.content))) {
+                const title = match[2].replace(/,/g, '');
                 matches.push({
-                    anchor: match[2].toLowerCase().replace(/\s+/g, '-'),
-                    title: match[2],
+                    anchor: title.toLowerCase().replace(/\s+/g, '-'),
+                    title: title,
                     level: parseInt(match[1]),
                 });
             }
@@ -239,6 +255,21 @@ export default defineComponent({
             const seconds = Math.round((wordCount / readingSpeed - minutes) * 60);
 
             return `${minutes}m ${seconds}s`;
+        },
+    },
+    watch: {
+        $route() {
+            this.articleLoaded = false;
+        },
+        articleLoaded() {
+            if (this.articleLoaded) {
+                this.$nextTick(() => {
+                    const { hash } = window.location;
+                    if (hash) {
+                        this.scrollToAnchor(hash.replace('#', ''));
+                    }
+                });
+            }
         },
     },
 });
