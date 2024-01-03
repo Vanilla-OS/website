@@ -43,7 +43,7 @@ export default defineComponent({
           return;
         }
 
-        const contributorsResponse = await fetch('https://raw.githubusercontent.com/Vanilla-OS/website/v2/contributors.json');
+        const contributorsResponse = await fetch('https://raw.githubusercontent.com/Vanilla-OS/.github/main/contributors.json');
         const contributorsData = await contributorsResponse.json();
 
         contributorsData.sort((a: Contributor, b: Contributor) => a.name.localeCompare(b.name));

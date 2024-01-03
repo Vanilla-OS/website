@@ -118,7 +118,7 @@ export default defineComponent({
                     image: '/assets/images/pics/kbdharun.jpeg',
                     links: {
                         githubUsername: 'kbdharun',
-                        twitterUsername: 'BlogsKbdk',
+                        twitterUsername: 'kbdharun',
                         mastodonLink: 'https://mastodon.social/@kbdharunkrishna',
                         website: 'https://kbdharun.dev/',
                     },

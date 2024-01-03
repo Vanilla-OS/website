@@ -60,7 +60,7 @@
             <div class="text text--rich">
                 <h3>Vanilla OS 2 Orchid - Alpha builds</h3>
                 <p>You must be logged on GitHub to download the alpha builds. Once logged in, you will be able to
-                    download the choosen build from the artifacts section.</p>
+                    download the chosen build from the artifacts section.</p>
             </div>
             <div class="table">
                 <table class="table-content">

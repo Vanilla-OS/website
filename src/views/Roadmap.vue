@@ -44,6 +44,12 @@ export default defineComponent({
                     description: 'Vanilla OS 2.0 will feature GNOME 45 as the Desktop Environment (not guaranteed).',
                 },
                 {
+                    name: 'VSO shell as the default shell',
+                    status: 'Completed',
+                    date: 'December 22 2023',
+                    description: 'Vanilla OS 2.0 will feature VSO shell as the default shell on GNOME Console.',
+                },
+                {
                     name: 'LVM Thin Provisioning',
                     status: 'Completed',
                     date: 'November 20 2023',
@@ -183,8 +189,8 @@ export default defineComponent({
                 },
                 {
                     name: 'OEM Support',
-                    status: 'Ongoing',
-                    date: 'No date yet',
+                    status: 'Completed',
+                    date: '1 January 2024',
                     description: 'We are working on adding OEM support to Vanilla OS.',
                 },
                 {
