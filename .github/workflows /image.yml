@@ -2,7 +2,7 @@ name: Image
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "v2" ]
 
 env:
   REGISTRY_USER: ${{ github.actor }}
