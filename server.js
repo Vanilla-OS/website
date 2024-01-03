@@ -68,6 +68,17 @@ app.use("*", async (req, res) => {
 });
 
 // Start http server
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`);
+});
+
+// Handle process termination (Ctrl+C)
+process.on("SIGINT", () => {
+  console.log("Stopping server...");
+
+  // Close the server gracefully
+  server.close(() => {
+    console.log("Server stopped.");
+    process.exit(0);
+  });
 });

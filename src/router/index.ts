@@ -1,11 +1,16 @@
-import { createRouter, createMemoryHistory } from 'vue-router'
+import { createRouter, createMemoryHistory, createWebHistory } from 'vue-router'
 import { useHead } from 'unhead'
 
 
-export default function createRouterInstance() {
+export default function createRouterInstance(clientType: string) {
   console.log('creating new router instance')
+
+  const history = clientType === 'server'
+    ? createMemoryHistory(import.meta.env.BASE_URL)
+    : createWebHistory(import.meta.env.BASE_URL);
+
   const router = createRouter({
-    history: createMemoryHistory(import.meta.env.BASE_URL),
+    history,
     routes: [
       {
         path: '/',
