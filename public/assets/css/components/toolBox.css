@@ -28,11 +28,13 @@
 
 .toolBox-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 15px;
-    width: 100%;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: initial;
 }
 
 .toolBox-item {
@@ -52,6 +54,7 @@
     border-radius: 12px;
     white-space: nowrap;
     margin: 0 0 70px 0;
+    right: 0;
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
