@@ -124,16 +124,6 @@ export default defineComponent({
                     },
                 },
                 {
-                    name: 'Kramo',
-                    description: 'UI Designer and Illustrator',
-                    image: '/assets/images/pics/kra-mo.jpeg',
-                    links: {
-                        githubUsername: 'kra-mo',
-                        mastodonLink: 'https://fosstodon.org/@kramo',
-                        website: 'https://kramo.hu/',
-                    },
-                },
-                {
                     name: 'Dallas Strouse',
                     description: 'Website Accessibility',
                     image: '/assets/images/pics/orowith2os.png',
