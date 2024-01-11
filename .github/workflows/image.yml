@@ -18,6 +18,7 @@ jobs:
       run: docker image build -f Containerfile --tag ghcr.io/vanilla-os/website:main .
 
     - name: Publish image
+      if: github.repository == 'vanilla-os/website'
       run: |
         docker login ghcr.io -u ${{ env.REGISTRY_USER }} -p ${{ env.REGISTRY_PASSWORD }}
         docker image push "ghcr.io/vanilla-os/website:main"

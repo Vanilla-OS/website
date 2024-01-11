@@ -101,7 +101,7 @@ export default defineComponent({
                     description: 'Get custom branding and customization for your Vanilla OS devices.',
                 },
                 {
-                    to: 'https://fabricators.ltd/en/contact',
+                    to: 'https://fabricators.ltd/en/contact.html',
                     extLink: true,
                     type: "clickable",
                     icon: 'contact_support',
