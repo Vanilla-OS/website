@@ -22,7 +22,7 @@ We redesigned [ABRoot](https://github.com/Vanilla-OS/ABRoot) to manage the syste
 
 This extensive work also includes system configuration, systemd units, containers (which play a crucial role in Orchid), and Polkit rules. Speaking of Polkit, we removed sudo, a task that took a considerable amount of time to implement. We had to create Polkit policies to let users use tools requiring administrative privileges without using sudo; we have written [a paragraph](https://vanillaos.org/blog/article/2023-06-11/vanilla-os-orchid---devlog-11-jun#sudont) on this.
 
-Over these months, we have given talks at [GUADEC](https://www.youtube.com/live/hv-bkYpHSbQ?si=YbBzq_nXQTok2-DI&t=634) and conducted several interviews[[1]](#see-also) which, in turn, required time to plan and create the necessary assets.
+Over these months, we have given talks at [GUADEC](https://www.youtube.com/live/hv-bkYpHSbQ?si=YbBzq_nXQTok2-DI&t=634) and conducted several interviews[[1]](https://vanillaos.org/blog/article/2024-01-03/vanilla-os-2-orchid-stable-some-clarifications#see-also) which, in turn, required time to plan and create the necessary assets.
 
 It's important to note that we develop everything with a distro-agnostic approach, designing all our technologies to be used by any Linux distribution. This process increases development time as we need to consider customization and scalability. For Orchid, we chose to take our time, conduct extensive research, and engage in many discussions. Orchid is not just a pretty reskin of Debian; it is a complex project that revisits many aspects we take for granted in Linux distributions. It required effort, patience, and the **willingness to question everything every single day**.
 

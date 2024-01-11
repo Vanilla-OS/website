@@ -90,7 +90,7 @@ export default defineComponent({
                         githubUsername: 'TheEvilSkeleton',
                         twitterUsername: 'JaakunaGaikotsu',
                         mastodonLink: 'https://social.treehouse.systems/@TheEvilSkeleton',
-                        website: 'https://theevilskeleton.gitlab.io/',
+                        website: 'https://tesk.page/',
                     },
                 },
                 {

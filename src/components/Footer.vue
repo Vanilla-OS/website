@@ -25,7 +25,7 @@
                     <li><router-link :to="{ name: 'brand' }">Our Brand</router-link></li>
                     <li><router-link :to="{ name: 'get-involved-funding' }">Funding</router-link></li>
                     <li><router-link :to="{ name: 'licenses' }">Licenses</router-link></li>
-                    <li><a href="//fabricators.ltd/en/contact">File a Complaint</a></li>
+                    <li><a href="//fabricators.ltd/en/contact.html">File a Complaint</a></li>
                     <li><a href="//status.vanillaos.org/">System Status</a></li>
                 </ul>
                 <ul>
