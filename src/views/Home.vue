@@ -139,7 +139,7 @@
 
   <section class="hero hero--big" id="solid">
     <div class="hero-wrapper container">
-      <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/solid-circuit.svg"
+      <img class="hero-image onFocus" data-focus-class="fadeInLeft" src="/assets/images/backgrounds/solid-circuit.svg"
         alt="Solid as a rock." />
       <article class="hero-content">
         <header class="hero-heading">
