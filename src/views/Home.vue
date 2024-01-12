@@ -2,9 +2,9 @@
   <section class="hero hero--big hero--no-margin">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus no-dark" data-focus-class="fadeInLeft"
-        src="/assets/images/backgrounds/vos-laptop-frame.svg" alt="Vanilla OS 2 Orchid" />
+        src="/assets/images/backgrounds/vos-laptop-frame.svg" alt="" />
       <img class="hero-image onFocus on-dark" data-focus-class="fadeInLeft"
-        src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid" />
+        src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2>Vanilla OS <span>is your next Operating System.</span></h2>
@@ -54,7 +54,7 @@
   <section class="hero hero--inverted hero--big" id="work">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/rnote.svg"
-        alt="Work in an efficient workspace." />
+        alt="" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2 class="color--work-1">Work</h2>
@@ -81,7 +81,7 @@
     </div>
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInLeft" src="/assets/images/backgrounds/popular-games.svg"
-        alt="Play your favorite video games." />
+        alt="" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2 class="color--play-1">Play</h2>
@@ -103,7 +103,7 @@
   <section class="hero hero--inverted hero--big" id="develop">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/apx-console.svg"
-        alt="Develop with maximum flexibility." />
+        alt="" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2 class="color--develop-1">Develop</h2>
@@ -127,7 +127,7 @@
   <section class="hero hero--big hero--bg-center hero--extra-margin" id="access">
     <article class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeIn" src="/assets/images/backgrounds/apps-overview.png"
-        alt="Access the largest set of applications." />
+        alt="" />
       <div class="hero-content">
         <header class="hero-heading">
           <h2 class="color--access-1">Access</h2>
@@ -140,7 +140,7 @@
   <section class="hero hero--big" id="solid">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeInRight" src="/assets/images/backgrounds/solid-circuit.svg"
-        alt="Solid as a rock." />
+        alt="" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2 class="color--solid-1">Solid</h2>
@@ -161,9 +161,9 @@
   <section class="hero hero--inverted hero--big" id="versatile">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus no-dark" data-focus-class="fadeInRight"
-        src="/assets/images/backgrounds/vib-recipe.svg" alt="Solid as a rock." />
+        src="/assets/images/backgrounds/vib-recipe.svg" alt="" />
       <img class="hero-image onFocus on-dark" data-focus-class="fadeInRight"
-        src="/assets/images/backgrounds/vib-recipe-dark.svg" alt="Solid as a rock." />
+        src="/assets/images/backgrounds/vib-recipe-dark.svg" alt="" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2 class="color--versatile-1">Versatile</h2>
