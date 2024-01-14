@@ -77,6 +77,16 @@ export default function createRouterInstance(clientType: string) {
             },
           },
           {
+            path: "/os-privacy-policy",
+            name: "os-privacy-policy",
+            component: () =>// @ts-ignore
+              import(/* webpackChunkName: "PrivacyPolicy" */ "@/views/OSPrivacyPolicy.vue"),
+            meta: {
+              title: "OS Privacy Policy",
+              description: "Check out the Privacy Policy of Vanilla OS (the operating system).",
+            },
+          },
+          {
             path: "/cookies-policy",
             name: "cookies-policy",
             component: () =>// @ts-ignore
