@@ -47,7 +47,7 @@ export default defineComponent({
                     name: 'Vanilla Plymouth Theme',
                     status: 'Completed',
                     date: '15 January 2024',
-                    description: 'We are working on a custom Boot, Restart and Poweroff screen with our Plymouth theme.',
+                    description: 'We are working on a custom boot, restart, and power-off screen with our Plymouth theme.',
                 },
                 {
                     name: 'Vanilla Tour',
