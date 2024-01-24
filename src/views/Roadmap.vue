@@ -44,39 +44,51 @@ export default defineComponent({
                     description: 'Vanilla OS 2.0 will feature GNOME 45 as the Desktop Environment (not guaranteed).',
                 },
                 {
+                    name: 'Vanilla Plymouth Theme',
+                    status: 'Completed',
+                    date: '15 January 2024',
+                    description: 'We are working on a custom Boot, Restart and Poweroff screen with our Plymouth theme.',
+                },
+                {
+                    name: 'Vanilla Tour',
+                    status: 'Completed',
+                    date: '23 January 2024',
+                    description: 'Vanilla Tour will give new users an oversight about all the things in Vanilla OS.',
+                },
+                {
+                    name: 'Sideload Utility',
+                    status: 'Completed',
+                    date: '15 January 2024',
+                    description: 'We are working on a sideload utility for VSO to install DEBs and Android APKs with ease.',
+                },
+                {
                     name: 'VSO shell as the default shell',
                     status: 'Completed',
-                    date: 'December 22 2023',
+                    date: '22 December 2023',
                     description: 'Vanilla OS 2.0 will feature VSO shell as the default shell on GNOME Console.',
                 },
                 {
                     name: 'LVM Thin Provisioning',
                     status: 'Completed',
-                    date: 'November 20 2023',
+                    date: '20 November 2023',
                     description: 'We are working on adding LVM Thin Provisioning support to Installer and Albius.'
                 },
                 {
                     name: 'GNOME 44',
                     status: 'Completed',
-                    date: 'August 15 2023',
+                    date: '15 August 2023',
                     description: 'Vanilla OS 2.0 Alpha builds feature GNOME 44 as the Desktop Environment and components are being transitioned to GNOME 45.',
                 },
                 {
                     name: 'Waydroid support in VSO',
                     status: 'Completed',
-                    date: 'November 19 2023',
+                    date: '19 November 2023',
                     description: 'We are working on adding Android support to VSO through to a Waydroid implementation.',
                 },
                 {
-                    name: 'Sideload Utility',
-                    status: 'Ongoing',
-                    date: 'No date yet',
-                    description: 'We are working on a sideload utility for VSO to install DEBs and Android APKs with ease.',
-                },
-                {
                     name: 'Recovery mode in Installer',
-                    status: 'Ongoing',
-                    date: 'No date yet',
+                    status: 'Completed',
+                    date: '',
                     description: 'We are working on a recovery mode for our Installer with easy access to all recovery tools.',
                 },
                 {
@@ -129,8 +141,8 @@ export default defineComponent({
                 },
                 {
                     name: 'PRIME Utility',
-                    status: 'Ongoing',
-                    date: 'No date yet',
+                    status: 'Completed',
+                    date: '29 December 2023',
                     description: 'We are updating our PRIME utility to work with ABRoot.',
                 },
                 {
