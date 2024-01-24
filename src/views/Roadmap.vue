@@ -88,7 +88,7 @@ export default defineComponent({
                 {
                     name: 'Recovery mode in Installer',
                     status: 'Completed',
-                    date: '',
+                    date: '30 March 2023',
                     description: 'We are working on a recovery mode for our Installer with easy access to all recovery tools.',
                 },
                 {
