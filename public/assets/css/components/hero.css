@@ -51,7 +51,13 @@
     align-items: center;
 }
 
-.hero--bg-center {
+.hero.hero--vertical {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero--bg-center,
+.hero--allow-scroll {
     overflow: initial;
 }
 
@@ -139,6 +145,10 @@
     opacity: .2;
 }
 
+.hero--clipped {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+
 .hero--no-margin {
     padding: 0;
 }
@@ -183,6 +193,7 @@
 
     .hero-content .text {
         text-align: center;
+        margin: 0 10px;
     }
 
     .hero:not(.hero--no-margin).hero--extra-margin {

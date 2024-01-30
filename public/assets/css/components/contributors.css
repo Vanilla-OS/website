@@ -9,11 +9,11 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 906px){
+@media screen and (max-width: 906px) {
   .contributors {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 5px 5px;
-      margin: 0px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px 5px;
+    margin: 0px;
   }
 
   .contributors-card-name:focus {
@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 478px){
+@media screen and (max-width: 478px) {
   .contributors {
     grid-template-columns: repeat(1, minmax(0, 1fr))
   }

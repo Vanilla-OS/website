@@ -2,9 +2,9 @@
   <section class="hero hero--big hero--no-margin">
     <div class="hero-wrapper container">
       <img class="hero-image onFocus no-dark" data-focus-class="fadeInLeft"
-        src="/assets/images/backgrounds/vos-laptop-frame.svg" alt="Vanilla OS 2 Orchid" />
+        src="/assets/images/backgrounds/vos-orchid-laptop-frame.svg" alt="Vanilla OS 2 Orchid" />
       <img class="hero-image onFocus on-dark" data-focus-class="fadeInLeft"
-        src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid" />
+        src="/assets/images/backgrounds/vos-orchid-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2>Vanilla OS <span>is your next Operating System.</span></h2>
@@ -17,8 +17,9 @@
             </router-link>
             <div class="text text--dimmed">
               <small>Vanilla OS works out of the box on a larger set of devices.
-                <a href="https://handbook.vanillaos.org/2022/11/05/installation.html" target="_blank">Learn how to
-                  install.</a>
+                <a href="https://docs.vanillaos.org/handbook/en/installation" target="_blank">
+                  Learn how to install.
+                </a>
               </small>
             </div>
           </div>
@@ -73,14 +74,14 @@
     </div>
   </section>
 
-  <section class="hero hero--big hero--gn-purple" id="play">
+  <section class="hero hero--big hero--gn-purple hero--clipped" id="play">
     <div class="hero-back">
       <video autoplay muted loop playsinline>
         <source src="/assets/videos/ron-lach-friends-playing-on-computer.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="hero-wrapper container">
-      <img class="hero-image onFocus" data-focus-class="fadeInLeft" src="/assets/images/backgrounds/popular-games.svg"
+      <img class="hero-image onFocus" data-focus-class="fadeInZoom" src="/assets/images/backgrounds/popular-games.svg"
         alt="Play your favorite video games." />
       <article class="hero-content">
         <header class="hero-heading">
@@ -126,7 +127,7 @@
 
   <section class="hero hero--big hero--bg-center hero--extra-margin" id="access">
     <article class="hero-wrapper container">
-      <img class="hero-image onFocus" data-focus-class="fadeIn" src="/assets/images/backgrounds/apps-overview.png"
+      <img class="hero-image onFocus" data-focus-class="fadeInZoom" src="/assets/images/backgrounds/apps-overview.png"
         alt="Access the largest set of applications." />
       <div class="hero-content">
         <header class="hero-heading">
@@ -188,6 +189,33 @@
   </section>
 
   <section class="container">
+    <div class="hero hero--vertical hero--allow-scroll">
+      <div class="text text--rich">
+        <h2>Want to know more?</h2>
+      </div>
+      <button @click="toggleInfo" class="btn btn--primary">
+        <span class="mdi material-icons-outlined" v-if="!showInfo">expand_more</span>
+        <span class="mdi material-icons-outlined" v-else>expand_less</span>
+        <span v-if="!showInfo && !showSorry">Show me more</span>
+        <span v-if="showInfo && !showSorry">Stop showing more 😡</span>
+        <span v-if="showSorry">Ok, sorry 😒</span>
+      </button>
+      <div class="spacer"></div>
+      <div class="flexList" v-if="showInfo">
+        <div class="flexGrid flexGrid--2">
+          <card v-for="(item, index) in info" :key="index" :item="item" />
+        </div>
+        <router-link :to="{ name: 'nerd-info' }" class="btn btn--link btn--link-2 btn--inline">
+          <span>Still not enough?</span>
+          <span class="mdi material-icons-outlined">arrow_forward</span>
+        </router-link>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </section>
+
+
+  <section class="container">
     <header class="text text--rich">
       <h2>Featured on</h2>
     </header>
@@ -195,7 +223,6 @@
     <div class="flexGrid flexGrid--3">
       <card v-for="(item, index) in medias" :key="index" :item="item" />
     </div>
-    <div class="spacer"></div>
   </section>
 </template>
 
@@ -206,6 +233,80 @@ export default defineComponent({
   name: 'home',
   data() {
     return {
+      showInfo: false,
+      showSorry: false,
+      info: [
+        {
+          icon: 'security',
+          title: 'Immutable but Customizable',
+          description: 'Vanilla OS is an immutable operating system, meaning that its core components are resistant\
+          to changes, keeping the system stable and reliable.\
+          However, you\'ll probably never notice that, because Vanilla OS is also highly customizable, you can\
+          still install extra software via, Flatpak, AppImage or even build it by yourself, like you would\
+          do on any normal operating system. You can also install software from any Linux distribution.',
+        },
+        {
+          icon: 'hotel_class',
+          title: 'Stable Beyond Belief!',
+          description: 'Vanilla develop and use many technologies to ensure that your system is always stable and reliable\
+          in any situation, whatever your needs are.\
+          You don\'t have to worry about your system breaking after an update, neither about your system not booting\
+          when you need it the most. Vanilla OS performs atomic updates, meaning that changes are applied all at once\
+          or not at all, without leaving your system in a broken state.',
+        },
+        {
+          icon: 'update',
+          title: 'Backgroud Smart Updates',
+          description: 'Vanilla OS performs background updates in a smart way, it detects when you device is idle and\
+          performs updates in the background, so that you don\'t have to worry about your system being slow or\
+          unresponsive during your routine. You\'ll get all the new features and bug fixes without even noticing it,\
+          at least until you reboot your system.',
+        },
+        {
+          icon: 'verified',
+          title: 'Startup Verified',
+          description: 'Vanilla OS is verified at startup, meaning that you can be sure that your system is\
+          in a good state before you start using it.\
+          This is done by checking the integrity of the system and its components at startup, and by\
+          ensuring that nothing has been tampered with. If something is wrong, the system will\
+          discourage you from using it, suggesting you to restore a previous working state.',
+        },
+        {
+          icon: 'home',
+          title: 'Compatible With You',
+          description: 'Vanilla OS is compatible with all your favorite apps, whether you want to listen to\
+          music with Spotify, play your favorite games on Steam, or surf the web with Google Chrome,\
+          you can do it all on Vanilla OS as you would do on any other operating system.\
+          Vanilla OS is compatible with all the most popular apps and services, and it\'s also\
+          compatible with all your favorite peripherals, like printers, scanners, and more.',
+        },
+        {
+          icon: 'lock',
+          title: 'Privacy First',
+          description: 'Vanilla OS is designed with privacy in mind, it doesn\'t collect any data about you,\
+          and it doesn\'t send any data to third parties.\
+          We take your privacy very seriously, and we believe that you should be in control of your data,\
+          not us or anyone else. Everything we do is open source, so you can verify that we\'re not doing\
+          anything wrong.',
+        },
+        {
+          icon: 'accessibility_new',
+          title: 'Accessible to Everyone',
+          description: 'Vanilla OS is designed to be easy and accessible to everyone. Accessibility is\
+          a first class citizen in Vanilla OS, and we\'re constantly working to improve it.\
+          We believe that everyone should be able to use a computer, no matter their abilities, you\
+          will find yourself at home on Vanilla OS.',
+        },
+        {
+          icon: 'school',
+          title: 'Understandable',
+          description: 'Vanilla OS is designed to be easy to understand, you don\'t need to be a\
+          computer expert to use it, but of course, if you are, you\'ll find yourself at home.\
+          We write all our documentation in a way that is easy to understand, and our community\
+          is always ready to help you if you need it. We also provide enterprise support for\
+          special needs.',
+        }
+      ],
       medias: [
         {
           icon: '/assets/images/media/zdnet.svg',
@@ -313,14 +414,22 @@ export default defineComponent({
               switch (focusClass) {
                 case 'fadeIn':
                   el.style.opacity = '1';
+                  el.style.filter = 'blur(0)';
+                  break;
+                case 'fadeInZoom':
+                  el.style.opacity = '1';
+                  el.style.transform = 'scale(1)';
+                  el.style.filter = 'blur(0)';
                   break;
                 case 'fadeInLeft':
                   el.style.opacity = '1';
                   el.style.transform = 'translateX(0)';
+                  el.style.filter = 'blur(0)';
                   break;
                 case 'fadeInRight':
                   el.style.opacity = '1';
                   el.style.transform = 'translateX(0)';
+                  el.style.filter = 'blur(0)';
                   break;
                 default:
                   break;
@@ -334,14 +443,22 @@ export default defineComponent({
               switch (focusClass) {
                 case 'fadeIn':
                   el.style.opacity = '0';
+                  el.style.filter = 'blur(10px)';
+                  break;
+                case 'fadeInZoom':
+                  el.style.opacity = '0';
+                  el.style.transform = 'scale(0.95)';
+                  el.style.filter = 'blur(10px)';
                   break;
                 case 'fadeInLeft':
                   el.style.opacity = '0';
                   el.style.transform = 'translateX(-40px)';
+                  el.style.filter = 'blur(10px)';
                   break;
                 case 'fadeInRight':
                   el.style.opacity = '0';
                   el.style.transform = 'translateX(40px)';
+                  el.style.filter = 'blur(10px)';
                   break;
                 default:
                   break;
@@ -397,6 +514,17 @@ export default defineComponent({
       const el = document.querySelector(id);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    toggleInfo() {
+      if (this.showInfo) {
+        this.showSorry = true;
+        this.showInfo = false;
+        setTimeout(() => {
+          this.showSorry = false;
+        }, 1500);
+      } else {
+        this.showInfo = true;
       }
     },
   },

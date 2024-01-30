@@ -41,9 +41,21 @@ export default function createRouterInstance(clientType: string) {
             path: "/download/orchid/alpha",
             name: "download-orchid-alpha",
             component: () =>// @ts-ignore
-              import(/* webpackChunkName: "Download" */ "@/views/DownloadOrchidAlpha.vue"),
+              import(/* webpackChunkName: "Download" */ "@/views/download/DownloadOrchidAlpha.vue"),
             meta: {
               title: "Vanilla OS 2 Orchid Alpha",
+              description: "Try the latest development version of Vanilla OS.",
+              parent: "download",
+              freePageLayout: true,
+            },
+          },
+          {
+            path: "/download/orchid/beta",
+            name: "download-orchid-beta",
+            component: () =>// @ts-ignore
+              import(/* webpackChunkName: "Download" */ "@/views/download/DownloadOrchidBeta.vue"),
+            meta: {
+              title: "Vanilla OS 2 Orchid Beta",
               description: "Try the latest development version of Vanilla OS.",
               parent: "download",
               freePageLayout: true,
@@ -279,6 +291,16 @@ export default function createRouterInstance(clientType: string) {
             meta: {
               title: "Get Vanilla OS",
               description: "Get the latest version.",
+            },
+          },
+          {
+            path: "/nerd-info",
+            name: "nerd-info",
+            component: () =>// @ts-ignore
+              import(/* webpackChunkName: "Download" */ "@/views/NerdInfo.vue"),
+            meta: {
+              title: "Information for Nerds",
+              description: "What is Vanilla OS from a technical point of view.",
             },
           },
         ]

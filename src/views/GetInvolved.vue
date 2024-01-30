@@ -82,6 +82,13 @@ export default defineComponent({
                     title: 'Spread the Word',
                     description: 'Spread the word about Vanilla OS to help the project grow.',
                 },
+                {
+                    to: { name: 'nerd-info' },
+                    type: 'clickable',
+                    icon: 'science',
+                    title: 'Information for Nerds',
+                    description: 'Learn more about how Vanilla OS works from a technical point of view.',
+                },
             ],
         };
     },

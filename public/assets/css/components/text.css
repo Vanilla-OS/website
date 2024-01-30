@@ -16,6 +16,7 @@
 
 .text.text--spaced p {
     margin: 0 0 50px 0;
+    line-height: 1.44;
 }
 
 .text--rich p,

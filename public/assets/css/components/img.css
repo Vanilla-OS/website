@@ -44,6 +44,10 @@
     max-width: 100%;
 }
 
+.img.img--fluid {
+    width: 100%;
+}
+
 .img.card {
     background-color: var(--img-bg-color);
 }
