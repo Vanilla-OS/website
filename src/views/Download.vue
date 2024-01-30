@@ -2,7 +2,7 @@
     <div class="flexGrid anim--fadeIn">
         <div class="card flexGrid-item flexGrid-item--3">
             <div class="card-header">
-                <h2>Vanilla OS 2 Orchid</h2>
+                <h2>Vanilla OS 2 Orchid Beta</h2>
             </div>
             <div class="card-content">
                 <div class="splitter">
@@ -16,28 +16,30 @@
                             <span>Roadmap</span>
                             <span class="mdi material-icons-outlined">open_in_new</span>
                         </router-link>
-                        <a href="#" class="btn btn--link btn--link-2 btn--inline btn--block" disabled="true">
+                        <router-link
+                            :to="{ name: 'article', params: { date: '2024-01-30', slug: 'vanilla-os-2-orchid-beta-is-here' } }"
+                            class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
-                        </a>
-                        <a href="#" class="btn btn--link btn--link-2 btn--inline btn--block" disabled="true">
+                            <span class=" mdi material-icons-outlined">open_in_new</span>
+                        </router-link>
+                        <!-- <a href="#" class="btn btn--link btn--link-2 btn--inline btn--block" disabled="true">
                             <span>Full Changelog</span>
                             <span class="mdi material-icons-outlined">open_in_new</span>
-                        </a>
+                        </a> -->
                         <div class="spacer"></div>
                         <!-- <a href="#" class="btn btn--primary">
                             <span class="mdi material-icons-outlined">save_alt</span>
                             <span>Download Now</span>
                         </a> -->
-                        <router-link to="/download/orchid/alpha" class="btn btn--primary">
+                        <router-link to="/download/orchid/beta" class="btn btn--primary">
                             <span class="mdi material-icons-outlined">save_alt</span>
-                            <span>Download the Alpha</span>
+                            <span>Download the Beta</span>
                         </router-link>
                     </div>
                     <div class="splitter-item card-image">
-                        <img src="/assets/images/backgrounds/vos-laptop-frame.svg" alt="Vanilla OS 2 Orchid"
+                        <img src="/assets/images/backgrounds/vos-orchid-laptop-frame.svg" alt="Vanilla OS 2 Orchid"
                             class="no-dark">
-                        <img src="/assets/images/backgrounds/vos-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid"
+                        <img src="/assets/images/backgrounds/vos-orchid-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid"
                             class="on-dark">
                     </div>
                 </div>

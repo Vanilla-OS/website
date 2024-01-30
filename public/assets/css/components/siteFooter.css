@@ -55,6 +55,10 @@ small a,
     font-weight: 600;
 }
 
+.siteFooter.siteFooter--has-floatNotice {
+    padding-bottom: 100px;
+}
+
 @media screen and (max-width: 745px) {
     .siteFooter-sitemap {
         display: flex;

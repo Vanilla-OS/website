@@ -1,0 +1,49 @@
+.floatNotice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.floatNotice-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.floatNotice-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.floatNotice-heaer-icon {
+    font-size: 34px;
+}
+
+.floatNotice-wrapper.card {
+    padding: 20px;
+    max-width: 60vw;
+    min-width: 600px;
+}
+
+@media screen and (max-width: 745px) {
+    .floatNotice-wrapper.card {
+        min-width: initial;
+        max-width: initial;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .floatNotice-header {
+        gap: 10px;
+    }
+
+    .floatNotice-header h3 {
+        font-size: 18px;
+    }
+}

@@ -66,13 +66,14 @@
     border-radius: 30px;
 }
 
-.navigationBar ul li.active {
-    background-color: var(--navbar-active-background-color);
-}
+/*.navigationBar ul li.active {
+    background-color: var(--navbar-active-background-color); 
+}*/
 
 .navigationBar ul li.active a,
 .navigationBar ul li.active button {
-    color: var(--navbar-active-link-color);
+    /* color: var(--navbar-active-link-color); */
+    font-weight: 800;
 }
 
 .navigationBar ul li:not(.active):hover {

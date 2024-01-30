@@ -7,6 +7,7 @@ import ImageShowcase from "./ImageShowcase.vue";
 import Card from "./Card.vue";
 import NotMailNotChimp from "./NotMailNotChimp.vue";
 import Timeline from "./Timeline.vue";
+import FloatNotice from "./FloatNotice.vue";
 
 export default {
   install(app: App) {
@@ -20,6 +21,7 @@ export default {
     app.component("card", Card);
     app.component("notmail-not-chimp", NotMailNotChimp);
     app.component("timeline", Timeline);
+    app.component("float-notice", FloatNotice);
 
     console.debug("Components loaded");
   },
