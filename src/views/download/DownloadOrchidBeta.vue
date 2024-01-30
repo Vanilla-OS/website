@@ -44,7 +44,9 @@
                                 <p>Orchid is the next generation of Vanilla OS. It is built on top of new
                                     technologies and features to provide you with a more secure and stable system.</p>
                             </div>
-                            <router-link :to="{ name: 'article', params: { date: '2024-01-30', slug: 'vanilla-os-2-orchid-beta-is-here' } }" class="btn btn--primary">
+                            <router-link
+                                :to="{ name: 'article', params: { date: '2024-01-30', slug: 'vanilla-os-2-orchid-beta-is-here' } }"
+                                class="btn btn--primary">
                                 <span>Learn More</span>
                                 <span class=" mdi material-icons-outlined">arrow_forward</span>
                             </router-link>
@@ -161,13 +163,13 @@ export default defineComponent({
             .then((response) => response.json())
             .then((data) => {
                 const _releases = data.map((release: Release) => ({
-                    id: release.Id,
-                    date: new Date(release.Date).toLocaleDateString(),
-                    arch: release.Arch,
-                    url: release.Url,
+                    Id: release.Id,
+                    Date: new Date(release.Date).toLocaleDateString(),
+                    Arch: release.Arch,
+                    Url: release.Url,
                 }));
 
-                _releases.sort((a: { date: string | number | Date; }, b: { date: string | number | Date; }) => new Date(b.date).getTime() - new Date(a.date).getTime());
+                _releases.sort((a: { Date: string | number | Date; }, b: { Date: string | number | Date; }) => new Date(b.Date).getTime() - new Date(a.Date).getTime());
                 _releases[0].IsLatest = true;
                 this.releases = _releases;
             });
