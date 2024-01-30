@@ -162,9 +162,17 @@ export default defineComponent({
         fetch('https://raw.githubusercontent.com/Vanilla-OS/info/main/betaBuilds.json')
             .then((response) => response.json())
             .then((data) => {
-                this.releases = data;
+                const _releases = data.map((release: Release) => ({
+                    Id: release.Id,
+                    Date: new Date(release.Date).toLocaleDateString(),
+                    Arch: release.Arch,
+                    Url: release.Url,
+                }));
+
+                _releases.sort((a: { Date: string | number | Date; }, b: { Date: string | number | Date; }) => new Date(b.Date).getTime() - new Date(a.Date).getTime());
+                _releases[0].IsLatest = true;
+                this.releases = _releases;
             });
     },
-
 });
 </script>
