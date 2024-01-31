@@ -16,9 +16,9 @@
               <span>Download Now</span>
             </router-link>
             <div class="text text--dimmed">
-              <small>Vanilla OS works out of the box on a larger set of devices.
+              <small>Vanilla OS works out of the box on a large set of devices,
                 <a href="https://docs.vanillaos.org/handbook/en/installation" target="_blank">
-                  Learn how to install.
+                  learn how to install it.
                 </a>
               </small>
             </div>
@@ -242,34 +242,34 @@ export default defineComponent({
           description: 'Vanilla OS is an immutable operating system, meaning that its core components are resistant\
           to changes, keeping the system stable and reliable.\
           However, you\'ll probably never notice that, because Vanilla OS is also highly customizable, you can\
-          still install extra software via, Flatpak, AppImage or even build it by yourself, like you would\
+          still install extra software with Flatpak, VSO, or even building it by yourself like you would\
           do on any normal operating system. You can also install software from any Linux distribution.',
         },
         {
           icon: 'hotel_class',
-          title: 'Stable Beyond Belief!',
-          description: 'Vanilla develop and use many technologies to ensure that your system is always stable and reliable\
+          title: 'Stable Beyond Belief',
+          description: 'Vanilla OS develops and uses many technologies to ensure that your system is always stable and reliable\
           in any situation, whatever your needs are.\
-          You don\'t have to worry about your system breaking after an update, neither about your system not booting\
+          You don\'t have to worry about your system breaking after an update, or your system not booting\
           when you need it the most. Vanilla OS performs atomic updates, meaning that changes are applied all at once\
           or not at all, without leaving your system in a broken state.',
         },
         {
           icon: 'update',
-          title: 'Backgroud Smart Updates',
-          description: 'Vanilla OS performs background updates in a smart way, it detects when you device is idle and\
-          performs updates in the background, so that you don\'t have to worry about your system being slow or\
-          unresponsive during your routine. You\'ll get all the new features and bug fixes without even noticing it,\
-          at least until you reboot your system.',
+          title: 'Smart Background Updates',
+          description: 'Vanilla OS performs background updates in a smart way by detecting whether your device is idle.\
+          That way, you don\'t have to worry about your system being slow or\
+          unresponsive during your routine. You\'ll get all the new features and bug fixes without even noticing it\
+          until you reboot your system.',
         },
         {
           icon: 'verified',
           title: 'Startup Verified',
-          description: 'Vanilla OS is verified at startup, meaning that you can be sure that your system is\
-          in a good state before you start using it.\
+          description: 'Vanilla OS is verified at startup, meaning that that your system is guaranteed\
+          to be in a good state before you start using it.\
           This is done by checking the integrity of the system and its components at startup, and by\
           ensuring that nothing has been tampered with. If something is wrong, the system will\
-          discourage you from using it, suggesting you to restore a previous working state.',
+          discourage you from using it, suggesting you to revert to a previous working state.',
         },
         {
           icon: 'home',
@@ -277,8 +277,7 @@ export default defineComponent({
           description: 'Vanilla OS is compatible with all your favorite apps, whether you want to listen to\
           music with Spotify, play your favorite games on Steam, or surf the web with Google Chrome,\
           you can do it all on Vanilla OS as you would do on any other operating system.\
-          Vanilla OS is compatible with all the most popular apps and services, and it\'s also\
-          compatible with all your favorite peripherals, like printers, scanners, and more.',
+          Vanilla OS is also compatible with all your favorite peripherals like printers, scanners, and more.',
         },
         {
           icon: 'lock',
@@ -287,14 +286,14 @@ export default defineComponent({
           and it doesn\'t send any data to third parties.\
           We take your privacy very seriously, and we believe that you should be in control of your data,\
           not us or anyone else. Everything we do is open source, so you can verify that we\'re not doing\
-          anything wrong.',
+          anything malicious.',
         },
         {
           icon: 'accessibility_new',
           title: 'Accessible to Everyone',
           description: 'Vanilla OS is designed to be easy and accessible to everyone. Accessibility is\
           a first class citizen in Vanilla OS, and we\'re constantly working to improve it.\
-          We believe that everyone should be able to use a computer, no matter their abilities, you\
+          We believe that everyone should be able to use a computer, no matter your abilities, you\
           will find yourself at home on Vanilla OS.',
         },
         {
@@ -303,7 +302,7 @@ export default defineComponent({
           description: 'Vanilla OS is designed to be easy to understand, you don\'t need to be a\
           computer expert to use it, but of course, if you are, you\'ll find yourself at home.\
           We write all our documentation in a way that is easy to understand, and our community\
-          is always ready to help you if you need it. We also provide enterprise support for\
+          is always ready to help you. We also provide enterprise support for\
           special needs.',
         }
       ],
