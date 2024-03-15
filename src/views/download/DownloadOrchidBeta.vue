@@ -74,7 +74,7 @@
                         <tr class="table-row" v-for="release in releases" :key="release.Id"
                             :class="release.IsLatest ? 'table-row--highlight' : ''">
                             <td>{{ release.Id }}</td>
-                            <td>{{ release.Date }}</td>
+                            <td>{{ release.Date.toLocaleDateString() }}</td>
                             <td>{{ release.Arch }}</td>
                             <td>
                                 <div class="table-row--actions">
@@ -164,12 +164,12 @@ export default defineComponent({
             .then((data) => {
                 const _releases = data.map((release: Release) => ({
                     Id: release.Id,
-                    Date: new Date(release.Date).toLocaleDateString(),
+                    Date: new Date(release.Date),
                     Arch: release.Arch,
                     Url: release.Url,
                 }));
 
-                _releases.sort((a: { Date: string | number | Date; }, b: { Date: string | number | Date; }) => new Date(b.Date).getTime() - new Date(a.Date).getTime());
+                _releases.sort((a, b) => b.Date.getTime() - a.Date.getTime());
                 _releases[0].IsLatest = true;
                 this.releases = _releases;
             });
