@@ -74,7 +74,7 @@ export default defineComponent({
                     description: 'An open governance structure for creating open industry standards on container formats and runtimes.',
                 },
                 {
-                    icon: '/assets/images/orgs/lit.png',
+                    icon: '/assets/images/orgs/lit.webp',
                     imageAsIcon: true,
                     to: 'https://github.com/linux-immutability-tools',
                     extLink: true,

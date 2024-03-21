@@ -1,6 +1,6 @@
 <template>
     <div class="text text--rich">
-        <img class="img" src="/assets/images/components/404.jpg" alt="404" />
+        <img class="img" src="/assets/images/components/404.webp" alt="404" />
     </div>
 </template>
   

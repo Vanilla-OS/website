@@ -127,7 +127,7 @@
 
   <section class="hero hero--big hero--bg-center hero--extra-margin" id="access">
     <article class="hero-wrapper container">
-      <img class="hero-image onFocus" data-focus-class="fadeInZoom" src="/assets/images/backgrounds/apps-overview.png"
+      <img class="hero-image onFocus" data-focus-class="fadeInZoom" src="/assets/images/backgrounds/apps-overview.webp"
         alt="Access the largest set of applications." />
       <div class="hero-content">
         <header class="hero-heading">
@@ -335,7 +335,7 @@ export default defineComponent({
           description: 'This will be a project you’ll want to keep a close watch on… I think Vanilla OS could be a real game-changer.',
         },
         {
-          icon: '/assets/images/media/omg-linux.png',
+          icon: '/assets/images/media/omg-linux.webp',
           imageAsIcon: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.omglinux.com/vanilla-os-first-release-download/',
@@ -344,7 +344,7 @@ export default defineComponent({
           description: 'Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.',
         },
         {
-          icon: '/assets/images/media/phoronix.png',
+          icon: '/assets/images/media/phoronix.webp',
           imageAsIcon: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.phoronix.com/news/Vanilla-OS-2.0-Debian',
@@ -371,7 +371,7 @@ export default defineComponent({
           description: 'Vanilla OS takes Ubuntu and turns it into an immutable desktop Linux distro, free from all of Canonical\'s recent changes to the OS.',
         },
         {
-          icon: '/assets/images/media/ha-logo-2x.png',
+          icon: '/assets/images/media/ha-logo-2x.webp',
           imageAsIcon: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.hostingadvice.com/blog/vanillaos-immutable-linux-distribution/',

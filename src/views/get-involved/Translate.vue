@@ -105,7 +105,7 @@ export default defineComponent({
                     ],
                 },
                 {
-                    icon: '/assets/images/icons/apx.png',
+                    icon: '/assets/images/icons/apx.svg',
                     imageAsIcon: true,
                     title: 'Apx',
                     description: 'Apx is what developers use to work with different Linux distributions in a containerized environment.',
