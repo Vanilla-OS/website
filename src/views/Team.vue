@@ -94,16 +94,6 @@ export default defineComponent({
                     },
                 },
                 {
-                    name: 'Bart Gravendeel',
-                    description: 'Community Moderator and UX Researcher',
-                    image: '/assets/images/pics/monsterobserver.jpeg',
-                    links: {
-                        githubUsername: 'MonsterObserver',
-                        mastodonLink: 'https://defcon.social/@monster',
-                        website: 'https://monster.codeberg.page/',
-                    },
-                },
-                {
                     name: 'Muqtadir',
                     description: 'Software Engineer and UI Designer',
                     image: '/assets/images/pics/muqtxdir.jpeg',
