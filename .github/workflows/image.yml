@@ -3,6 +3,7 @@ name: Image
 on:
   push:
     branches: [ "v2" ]
+  pull_request:
 
 env:
   REGISTRY_USER: ${{ github.actor }}
@@ -14,11 +15,20 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - uses: vanilla-os/vib-gh-action@v0.7.0
+      with:
+        recipe: 'recipe.yml'
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: Containerfile
+        path: Containerfile
+
     - name: Build image
       run: docker image build -f Containerfile --tag ghcr.io/vanilla-os/website:main .
 
     - name: Publish image
-      if: github.repository == 'vanilla-os/website'
+      if: github.repository == 'Vanilla-OS/website' && github.ref == 'refs/heads/main'
       run: |
         docker login ghcr.io -u ${{ env.REGISTRY_USER }} -p ${{ env.REGISTRY_PASSWORD }}
         docker image push "ghcr.io/vanilla-os/website:main"
