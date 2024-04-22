@@ -1,0 +1,28 @@
+name: Website
+id: website
+stages:
+  - id: build
+    base: node:lts
+    singlelayer: false
+    labels:
+      maintainer: Vanilla OS Contributors
+    cmd: ["sh", "-c", "cd /app && npm run start"]
+    expose:
+      "6080": ""
+    modules:
+      - name: init
+        type: shell
+        source:
+          type: git
+          url: https://github.com/Vanilla-OS/website
+          branch: v2
+          commit: latest
+        commands:
+          - mv /sources/init /app
+
+      - name: build
+        type: shell
+        commands:
+          - cd /app
+          - npm install
+          - npm run build
