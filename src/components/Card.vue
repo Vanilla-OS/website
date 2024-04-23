@@ -1,25 +1,7 @@
 <template>
     <router-link v-if="item.type === 'clickable' && !item.extLink" :to="item.to"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
-        <div class="card-header">
-            <h3>
-                <img :src="item.icon" :alt="item.title" v-if="item.icon && item.imageAsIcon" class="img img--24"
-                    :class="item.imageClasses" />
-                <span v-else-if="item.icon && !item.iconPack || item.icon && item.iconPack === 'mdi'"
-                    class="mdi material-icons">{{
-                        item.icon }}
-                </span>
-                <span v-else-if="item.iconPack === 'fa'">
-                    <i :class="item.icon"></i>
-                </span>
-                {{ item.title }}
-            </h3>
-            <div class="card-actions">
-                <div class="btn btn--link btn--inline btn--med">
-                    <span class="mdi material-icons">arrow_forward</span>
-                </div>
-            </div>
-        </div>
+        <card-header :item />
         <div class="card-content">
             <div class="flexList">
                 <div class="text" v-if="item.description">
@@ -49,25 +31,7 @@
     </router-link>
     <a v-else-if="item.type === 'clickable' && item.extLink" :href="item.to" target="_blank"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
-        <div class="card-header">
-            <h3>
-                <img :src="item.icon" :alt="item.title" v-if="item.icon && item.imageAsIcon" class="img img--24"
-                    :class="item.imageClasses" />
-                <span v-else-if="item.icon && !item.iconPack || item.icon && item.iconPack === 'mdi'"
-                    class="mdi material-icons">{{
-                        item.icon }}
-                </span>
-                <span v-else-if="item.iconPack === 'fa' && item.icon">
-                    <i :class="item.icon"></i>
-                </span>
-                {{ item.title }}
-            </h3>
-            <div class="card-actions">
-                <div class="btn btn--link btn--inline btn--med">
-                    <span class="mdi material-icons">arrow_forward</span>
-                </div>
-            </div>
-        </div>
+        <card-header :item />
         <div class="card-content">
             <div class="flexList">
                 <div class="text" v-if="item.description">
@@ -171,7 +135,7 @@
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 export default {
     props: {
@@ -182,4 +146,3 @@ export default {
     },
 };
 </script>
-  

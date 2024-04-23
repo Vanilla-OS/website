@@ -4,6 +4,7 @@ import Topbar from "./Topbar.vue";
 import SiteFooter from "./Footer.vue";
 import ShareModal from "./ShareModal.vue";
 import ImageShowcase from "./ImageShowcase.vue";
+import CardHeader from "./CardHeader.vue";
 import Card from "./Card.vue";
 import NotMailNotChimp from "./NotMailNotChimp.vue";
 import Timeline from "./Timeline.vue";
@@ -18,6 +19,7 @@ export default {
     app.component("site-footer", SiteFooter);
     app.component("share-modal", ShareModal);
     app.component("image-showcase", ImageShowcase);
+    app.component("card-header", CardHeader);
     app.component("card", Card);
     app.component("notmail-not-chimp", NotMailNotChimp);
     app.component("timeline", Timeline);
