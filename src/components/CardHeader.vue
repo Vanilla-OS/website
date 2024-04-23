@@ -12,7 +12,10 @@
             </template>
             {{ item.title }}
         </h3>
-        <div class="card-actions">
+        <div
+            v-if="item?.type === 'clickable' || item.actions"
+            class="card-actions"
+        >
             <div class="btn btn--link btn--inline btn--med">
                 <span class="mdi material-icons">arrow_forward</span>
             </div>
@@ -28,6 +31,8 @@ defineProps<{
         iconPack?: "mdi" | "fa";
         imageAsIcon?: boolean;
         imageClasses?: [];
+        type?: "clickable" | "adv",
+        actions?: []
     };
 }>();
 </script>
