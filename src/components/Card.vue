@@ -2,22 +2,7 @@
     <router-link v-if="item.type === 'clickable' && !item.extLink" :to="item.to"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
         <card-header :item />
-        <div class="card-content">
-            <div class="flexList">
-                <div class="text" v-if="item.description">
-                    <p>{{ item.description }}</p>
-                </div>
-                <div class="img img--fit card card--plain card--no-padding" v-if="item.image" :class="item.imageClasses">
-                    <img :src="item.image" :alt="item.title" />
-                </div>
-                <div v-if="item.badges" class="badges">
-                    <div v-for="(badge, index) in item.badges" :key="index"
-                        :class="`badges-item badges-item--${badge.color}`">
-                        {{ badge.text }}
-                    </div>
-                </div>
-            </div>
-        </div>
+        <card-content :item />
         <div class="card-footer" v-if="item.footerActions">
             <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in item.footerActions" :key="index"
                 @click="action.onClick">
@@ -32,23 +17,7 @@
     <a v-else-if="item.type === 'clickable' && item.extLink" :href="item.to" target="_blank"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
         <card-header :item />
-        <div class="card-content">
-            <div class="flexList">
-                <div class="text" v-if="item.description">
-                    <p>{{ item.description }}</p>
-                </div>
-                <div class="text text--rich" v-if="item.html" v-html="item.html"></div>
-                <div class="img img--fit card card--plain card--no-padding" v-if="item.image" :class="item.imageClasses">
-                    <img :src="item.image" :alt="item.title" />
-                </div>
-                <div v-if="item.badges" class="badges">
-                    <div v-for="(badge, index) in item.badges" :key="index"
-                        :class="`badges-item badges-item--${badge.color}`">
-                        {{ badge.text }}
-                    </div>
-                </div>
-            </div>
-        </div>
+        <card-content :item />
         <div class="card-footer" v-if="item.footerActions">
             <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in item.footerActions" :key="index"
                 @click="action.onClick">
@@ -106,23 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-content">
-            <div class="flexList">
-                <div class="text" v-if="item.description">
-                    <p>{{ item.description }}</p>
-                </div>
-                <div class="text text--rich" v-if="item.html" v-html="item.html"></div>
-                <div class="img img--fit card card--plain card--no-padding" v-if="item.image" :class="item.imageClasses">
-                    <img :src="item.image" :alt="item.title" />
-                </div>
-                <div v-if="item.badges" class="badges">
-                    <div v-for="(badge, index) in item.badges" :key="index"
-                        :class="`badges-item badges-item--${badge.color}`">
-                        {{ badge.text }}
-                    </div>
-                </div>
-            </div>
-        </div>
+        <card-content :item />
         <div class="card-footer" v-if="item.footerActions">
             <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in item.footerActions" :key="index"
                 @click="action.onClick">
