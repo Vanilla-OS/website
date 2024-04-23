@@ -24,15 +24,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-    item: {
-        title: string;
-        icon?: string;
-        iconPack?: "mdi" | "fa";
-        imageAsIcon?: boolean;
-        imageClasses?: [];
-        type?: "clickable" | "adv",
-        actions?: []
-    };
-}>();
+import type { CardItem } from "./Card.vue";
+
+defineProps<{ item: CardItem }>();
 </script>

@@ -14,14 +14,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-    item: {
-        footerActions: {
-            title?: string;
-            onClick: (event: MouseEvent) => void;
-            icon: string;
-            iconPack: "mdi" | "fa";
-        }[];
-    };
-}>();
+import type { CardItem } from "./Card.vue";
+
+defineProps<{ item: CardItem }>();
 </script>

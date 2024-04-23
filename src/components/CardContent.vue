@@ -46,27 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import type { RouteLocationRaw } from "vue-router";
+import type { CardItem } from "./Card.vue";
 
-interface Badge {
-    text: string;
-    color?: string;
-}
-
-defineProps<{
-    item: {
-        title: string;
-        description?: string;
-        to?: RouteLocationRaw;
-        icon?: string;
-        iconPack?: "mdi" | "fa";
-        imageAsIcon: boolean;
-        image?: string;
-        imageClasses?: string[];
-        badges?: Badge[];
-        btn?: string;
-        type?: "adv";
-        html?: string;
-    };
-}>();
+defineProps<{ item: CardItem }>();
 </script>

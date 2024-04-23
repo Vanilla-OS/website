@@ -1,11 +1,11 @@
 <template>
-    <router-link v-if="item.type === 'clickable' && !item.extLink" :to="item.to"
+    <router-link v-if="item.type === 'clickable' && !item.extLink" :to="item.to!"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
         <card-header :item />
         <card-content :item />
         <card-footer :item />
     </router-link>
-    <a v-else-if="item.type === 'clickable' && item.extLink" :href="item.to" target="_blank"
+    <a v-else-if="item.type === 'clickable' && item.extLink" :href="item.to as string" target="_blank"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
         <card-header :item />
         <card-content :item />
@@ -25,13 +25,36 @@
     </div>
 </template>
 
-<script lang="ts">
-export default {
-    props: {
-        item: {
-            type: Object,
-            required: true,
-        },
-    },
-};
+<script setup lang="ts">
+import type { RouteLocationRaw } from "vue-router";
+
+export interface CardItem {
+    title?: string;
+    title2?: string;
+    description?: string;
+    type?: "clickable" | "adv";
+    extraClasses?: string[];
+    to?: RouteLocationRaw;
+    extLink?: boolean;
+    icon?: string;
+    iconPack?: "mdi" | "fa";
+    imageAsIcon?: boolean;
+    image?: string;
+    imageClasses?: string[];
+    badges?: {
+        text: string;
+        color?: string;
+    }[];
+    btn?: string;
+    html?: string;
+    actions?: [];
+    footerActions?: {
+        title?: string;
+        onClick: (event: MouseEvent) => void;
+        icon: string;
+        iconPack: "mdi" | "fa";
+    }[];
+}
+
+defineProps<{ item: CardItem }>();
 </script>
