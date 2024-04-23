@@ -3,28 +3,13 @@
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
         <card-header :item />
         <card-content :item />
-        <div class="card-footer" v-if="item.footerActions">
-            <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in item.footerActions" :key="index"
-                @click="action.onClick">
-                <span v-if="action.iconPack === 'mdi'" class="mdi material-icons">{{ action.icon }}</span>
-                <span v-else-if="action.iconPack === 'fa'">
-                    <i :class="action.icon"></i>
-                </span>
-                <span>{{ action.title }}</span>
-            </div>
-        </div>
+        <card-footer :item />
     </router-link>
     <a v-else-if="item.type === 'clickable' && item.extLink" :href="item.to" target="_blank"
         class="card card--clickable card--min card--has-actions flexGrid-item" :class="item.extraClasses">
         <card-header :item />
         <card-content :item />
-        <div class="card-footer" v-if="item.footerActions">
-            <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in item.footerActions" :key="index"
-                @click="action.onClick">
-                <span class="mdi material-icons">{{ action.icon }}</span>
-                <span>{{ action.title }}</span>
-            </div>
-        </div>
+        <card-footer :item />
     </a>
     <div v-else-if="item.type === 'adv'" class="card card--type-adv" :class="item.extraClasses">
         <div class="card-header">
@@ -76,16 +61,7 @@
             </div>
         </div>
         <card-content :item />
-        <div class="card-footer" v-if="item.footerActions">
-            <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in item.footerActions" :key="index"
-                @click="action.onClick">
-                <span v-if="action.iconPack === 'mdi'" class="mdi material-icons">{{ action.icon }}</span>
-                <span v-else-if="action.iconPack === 'fa'">
-                    <i :class="action.icon"></i>
-                </span>
-                <span>{{ action.title }}</span>
-            </div>
-        </div>
+        <card-footer :item />
     </div>
 </template>
 
