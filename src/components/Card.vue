@@ -41,25 +41,7 @@
         </div>
     </div>
     <div v-else class="card card--min card--has-actions flexGrid-item" :class="item.extraClasses">
-        <div class="card-header">
-            <h3>
-                <img :src="item.icon" :alt="item.title" v-if="item.icon && item.imageAsIcon" class="img img--24"
-                    :class="item.imageClasses" />
-                <span v-else-if="item.icon && !item.iconPack || item.icon && item.iconPack === 'mdi'"
-                    class="mdi material-icons">{{
-                        item.icon }}
-                </span>
-                <span v-else-if="item.iconPack === 'fa' && item.icon">
-                    <i :class="item.icon"></i>
-                </span>
-                {{ item.title }}
-            </h3>
-            <div class="card-actions" v-if="item.actions">
-                <div class="btn btn--link btn--inline btn--med">
-                    <span class="mdi material-icons">arrow_forward</span>
-                </div>
-            </div>
-        </div>
+        <card-header :item />
         <card-content :item />
         <card-footer :item />
     </div>
