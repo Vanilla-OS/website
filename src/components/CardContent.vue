@@ -16,11 +16,38 @@
                     {{ badge.text }}
                 </div>
             </div>
+            <router-link
+                v-if="item.type === 'adv' && item.btn"
+                :to="item.to!"
+                class="btn btn--primary"
+            >
+                <img
+                    v-if="item.icon && item.imageAsIcon"
+                    :src="item.icon"
+                    :alt="item.title"
+                    class="img img--24"
+                    :class="item.imageClasses"
+                />
+                <span
+                    v-else-if="
+                        (item.icon && !item.iconPack) ||
+                        (item.icon && item.iconPack === 'mdi')
+                    "
+                    class="mdi material-icons"
+                    >{{ item.icon }}
+                </span>
+                <span v-else-if="item.iconPack === 'fa' && item.icon">
+                    <i :class="item.icon"></i>
+                </span>
+                <span>{{ item.btn }}</span>
+            </router-link>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import type { RouteLocationRaw } from "vue-router";
+
 interface Badge {
     text: string;
     color?: string;
@@ -30,9 +57,15 @@ defineProps<{
     item: {
         title: string;
         description?: string;
+        to?: RouteLocationRaw;
+        icon?: string;
+        iconPack?: "mdi" | "fa";
+        imageAsIcon: boolean;
         image?: string;
         imageClasses?: string[];
         badges?: Badge[];
+        btn?: string;
+        type?: "adv";
         html?: string;
     };
 }>();
