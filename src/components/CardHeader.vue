@@ -2,7 +2,7 @@
     <div class="card-header">
         <h3>
             <template v-if="item.icon">
-                <img v-if="item.imageAsIcon" :src="item.icon" :alt="item.title" class="img img--24"
+                <img v-if="item.iconAsImage" :src="item.icon" :alt="item.title" class="img img--24"
                     :class="item.imageClasses" />
                 <span v-else-if="!item.iconPack || item.iconPack === 'mdi'" class="mdi material-icons">{{ item.icon }}
                 </span>
@@ -12,10 +12,7 @@
             </template>
             {{ item.title }}
         </h3>
-        <div
-            v-if="item?.type === 'clickable' || item.actions"
-            class="card-actions"
-        >
+        <div v-if="item?.type === 'clickable' || item.actions" class="card-actions">
             <div class="btn btn--link btn--inline btn--med">
                 <span class="mdi material-icons">arrow_forward</span>
             </div>

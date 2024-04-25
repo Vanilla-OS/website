@@ -22,7 +22,7 @@
                 class="btn btn--primary"
             >
                 <img
-                    v-if="item.icon && item.imageAsIcon"
+                    v-if="item.icon && item.iconAsImage"
                     :src="item.icon"
                     :alt="item.title"
                     class="img img--24"

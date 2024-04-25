@@ -309,7 +309,7 @@ export default defineComponent({
       medias: [
         {
           icon: '/assets/images/media/zdnet.svg',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.zdnet.com/article/vanilla-os-offers-a-new-take-on-security-for-the-linux-desktop/',
           extLink: true,
@@ -318,7 +318,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/the_register.svg',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.theregister.com/2023/01/03/vanilla_os_2210/',
           extLink: true,
@@ -327,7 +327,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/techrepublic-logo.svg',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.techrepublic.com/article/vanilla-os-linux-desktop/',
           extLink: true,
@@ -336,7 +336,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/omg-linux.png',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.omglinux.com/vanilla-os-first-release-download/',
           extLink: true,
@@ -345,7 +345,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/phoronix.png',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.phoronix.com/news/Vanilla-OS-2.0-Debian',
           extLink: true,
@@ -354,7 +354,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/itsfoss-logo.webp',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://news.itsfoss.com/vanilla-os-beta/',
           extLink: true,
@@ -363,7 +363,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/muo-logo-full-colored-light.svg',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.makeuseof.com/vanilla-os-immutable-linux-distro/',
           extLink: true,
@@ -372,7 +372,7 @@ export default defineComponent({
         },
         {
           icon: '/assets/images/media/ha-logo-2x.png',
-          imageAsIcon: true,
+          iconAsImage: true,
           imageClasses: ['img--white-on-dark'],
           to: 'https://www.hostingadvice.com/blog/vanillaos-immutable-linux-distribution/',
           extLink: true,

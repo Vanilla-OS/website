@@ -21,7 +21,7 @@ export default defineComponent({
             credits: [
                 {
                     icon: '/assets/images/orgs/linux.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://kernel.org/',
                     extLink: true,
                     type: "clickable",
@@ -30,7 +30,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/debian.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://debian.org',
                     extLink: true,
                     type: "clickable",
@@ -39,7 +39,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/gnome.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://gnome.org',
                     extLink: true,
                     type: "clickable",
@@ -48,7 +48,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/distrobox.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://distrobox.privatedns.org/',
                     extLink: true,
                     type: "clickable",
@@ -57,7 +57,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/flatpak.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://flatpak.org/',
                     extLink: true,
                     type: "clickable",
@@ -66,7 +66,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/oci.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://opencontainers.org/',
                     extLink: true,
                     type: "clickable",
@@ -75,7 +75,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/lit.png',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://github.com/linux-immutability-tools',
                     extLink: true,
                     type: "clickable",
@@ -84,7 +84,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/gtk.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://gtk.org/',
                     extLink: true,
                     type: "clickable",
@@ -93,7 +93,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/go.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://go.dev/',
                     extLink: true,
                     type: "clickable",
@@ -102,7 +102,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/orgs/vuejs.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     to: 'https://vuejs.org/',
                     extLink: true,
                     type: "clickable",
