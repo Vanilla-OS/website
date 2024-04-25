@@ -54,8 +54,7 @@ export default defineComponent({
                     to: { name: 'developers-program' },
                     type: 'adv',
                     icon: 'how_to_reg',
-                    title: 'Join the',
-                    title2: 'Developers Program',
+                    title: ['Join the', 'Developers Program'],
                     description: 'Get access to latest experimental builds.',
                     btn: 'Apply Now',
                     extraClasses: ['card--type-dev']

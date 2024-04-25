@@ -383,7 +383,7 @@ export default defineComponent({
           to: { name: 'get-involved-spread' },
           type: 'adv',
           icon: 'how_to_reg',
-          title2: 'Spread the word',
+          title: ['', 'Spread the word'],
           description: 'Help us spread the word about Vanilla OS and its features.',
           btn: 'Read more',
           extraClasses: [
