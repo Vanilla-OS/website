@@ -1,7 +1,7 @@
 <template>
     <div class="flexList">
         <div class="flexGrid anim--fadeIn">
-            <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" />
+            <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" :class="item.extraClasses" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">

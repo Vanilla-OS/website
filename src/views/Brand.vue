@@ -19,7 +19,7 @@
             <h3>Brand Assets</h3>
         </div>
         <div class="flexGrid flexGrid--2">
-            <card v-for="(item, index) in brandAssets" :key="index" :item="item" />
+            <card v-for="(item, index) in brandAssets" :key="index" :item="item" :class="item.extraClasses" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
