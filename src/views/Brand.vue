@@ -239,9 +239,6 @@ export default defineComponent({
             fonts: [
                 {
                     html: '<span class="font font--outfit">Outfit</span>',
-                    imageClasses: [
-                        'img--no-bg',
-                    ],
                     footerActions: [
                         {
                             title: 'Download',
@@ -255,9 +252,6 @@ export default defineComponent({
                 },
                 {
                     html: '<span class="font font--pacifico">Pacifico</span>',
-                    imageClasses: [
-                        'img--no-bg',
-                    ],
                     footerActions: [
                         {
                             title: 'Download',
