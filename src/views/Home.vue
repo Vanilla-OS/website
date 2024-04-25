@@ -221,7 +221,7 @@
     </header>
     <div class="spacer"></div>
     <div class="flexGrid flexGrid--3">
-      <card v-for="(item, index) in medias" :key="index" :item="item" />
+      <card v-for="(item, index) in medias" :key="index" :item="item" :class="item.extraClasses" />
     </div>
   </section>
 </template>

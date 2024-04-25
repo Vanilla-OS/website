@@ -6,7 +6,7 @@
             <h3>What's included</h3>
         </div>
         <div class="flexGrid flexGrid--3">
-            <card v-for="(item, index) in helpItems" :key="index" :item="item" />
+            <card v-for="(item, index) in helpItems" :key="index" :item="item" :class="item.extraClasses" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">

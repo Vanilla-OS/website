@@ -35,7 +35,7 @@
         </div>
         <div class="spacer"></div>
         <div class="flexGrid flexGrid--2 anim--fadeIn">
-            <card v-for="(item, index) in moreAssets" :key="index" :item="item" />
+            <card v-for="(item, index) in moreAssets" :key="index" :item="item" :class="item.extraClasses" />
         </div>
     </div>
 </template>
