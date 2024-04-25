@@ -14,7 +14,7 @@ export default defineComponent({
             pageItems: [
                 {
                     icon: '/assets/images/icons/first-setup.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'First Setup',
                     description: 'The First Setup is the first thing you see when you boot up Vanilla OS for the first time.',
                     footerActions: [
@@ -36,7 +36,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/installer.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'Installer',
                     description: 'The Installer is what you use to install Vanilla OS on your device.',
                     footerActions: [
@@ -58,7 +58,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/drivers-utility.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'Drivers Utility',
                     description: 'The Drivers Utility is what you use to install drivers on your device.',
                     footerActions: [
@@ -80,7 +80,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/prime-utility.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'PRIME Utility',
                     description: 'The PRIME Utility is what you use to switch between your integrated and dedicated graphics cards.',
                     footerActions: [
@@ -102,7 +102,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/apx.png',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'Apx',
                     description: 'Apx is what developers use to work with different Linux distributions in a containerized environment.',
                     footerActions: [
@@ -124,7 +124,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/apx-gui.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'Apx GUI',
                     description: 'Apx GUI is a graphical user interface for Apx, if allows a friendlier way to work with your Linux containers.',
                     footerActions: [
@@ -146,7 +146,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/abroot.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'ABRoot',
                     description: 'ABRoot is what manages the A/B partitions on your device and allows you to perform changes to them.',
                     footerActions: [
@@ -168,7 +168,7 @@ export default defineComponent({
                 },
                 {
                     icon: '/assets/images/icons/vso.svg',
-                    imageAsIcon: true,
+                    iconAsImage: true,
                     title: 'VSO',
                     description: 'VSO is what allows you to install and manage software and perform system updates on your device.',
                     footerActions: [

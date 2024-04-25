@@ -37,7 +37,7 @@ export interface CardItem {
     extLink?: boolean;
     icon?: string;
     iconPack?: "mdi" | "fa";
-    imageAsIcon?: boolean;
+    iconAsImage?: boolean;
     image?: string;
     imageClasses?: string[];
     badges?: {
