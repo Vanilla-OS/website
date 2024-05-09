@@ -10,7 +10,6 @@
         'card',
         { 'card--clickable': item.type === 'clickable' },
         'card--min',
-        'card--has-actions',
         'flexGrid-item',
     ]">
         <card-header :item :altText />

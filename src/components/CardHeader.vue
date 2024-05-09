@@ -12,7 +12,7 @@
             </template>
             {{ item.title }}
         </h3>
-        <div v-if="item?.type === 'clickable'" class="card-actions">
+        <div v-if="item?.type === 'clickable'">
             <div class="btn btn--link btn--inline btn--med">
                 <span class="mdi material-icons">arrow_forward</span>
             </div>
