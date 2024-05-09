@@ -14,11 +14,12 @@
     ]">
         <card-header :item :altText />
         <card-content :item :altText />
-        <card-footer :item />
+        <card-footer v-if="item.footerActions" :actions="item.footerActions" />
     </conditional-link>
 </template>
 
 <script setup lang="ts">
+import type { CardFooterAction } from "./CardFooter.vue";
 import type { LinkProps } from "./ConditionalLink.vue";
 
 interface CardItemI {
@@ -36,12 +37,7 @@ interface CardItemI {
     }[];
     btn?: string;
     html?: string;
-    footerActions?: {
-        title?: string;
-        onClick: (event: MouseEvent) => void;
-        icon: string;
-        iconPack: "mdi" | "fa";
-    }[];
+    footerActions?: CardFooterAction[];
 }
 
 export type CardItem = CardItemI & LinkProps;
