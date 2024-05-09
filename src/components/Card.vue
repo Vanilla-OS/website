@@ -1,39 +1,31 @@
 <template>
-    <router-link v-if="item.type === 'clickable' && !item.extLink" :to="item.to!"
-        class="card card--clickable card--min card--has-actions flexGrid-item">
-        <card-header :item :altText />
-        <card-content :item :altText />
-        <card-footer :item />
-    </router-link>
-    <a v-else-if="item.type === 'clickable' && item.extLink" :href="item.to as string" target="_blank"
-        class="card card--clickable card--min card--has-actions flexGrid-item">
-        <card-header :item :altText />
-        <card-content :item :altText />
-        <card-footer :item />
-    </a>
-    <div v-else-if="item.type === 'adv'" class="card card--type-adv">
+    <div v-if="item.type === 'adv'" class="card card--type-adv">
         <div class="card-header">
             <h4>{{ item.title[0] }}</h4>
             <h2>{{ item.title[1] }}</h2>
         </div>
         <card-content :item :altText />
     </div>
-    <div v-else class="card card--min card--has-actions flexGrid-item">
+    <conditional-link v-else :link="item.type === 'clickable' ? item : {}" :class="[
+        'card',
+        { 'card--clickable': item.type === 'clickable' },
+        'card--min',
+        'card--has-actions',
+        'flexGrid-item',
+    ]">
         <card-header :item :altText />
         <card-content :item :altText />
         <card-footer :item />
-    </div>
+    </conditional-link>
 </template>
 
 <script setup lang="ts">
-import type { RouteLocationRaw } from "vue-router";
+import type { LinkProps } from "./ConditionalLink.vue";
 
 interface CardItemI {
     title?: string | [string, string];
     description?: string;
     type?: "clickable" | "adv";
-    to?: RouteLocationRaw;
-    extLink?: boolean;
     icon?: string;
     iconPack?: "mdi" | "fa";
     iconAsImage?: boolean;
@@ -53,6 +45,8 @@ interface CardItemI {
         iconPack: "mdi" | "fa";
     }[];
 }
+
+export type CardItem = CardItemI & LinkProps;
 
 const props = defineProps<{ item: CardItem }>();
 

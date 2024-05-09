@@ -16,7 +16,7 @@
                     {{ badge.text }}
                 </div>
             </div>
-            <router-link v-if="item.type === 'adv' && item.btn" :to="item.to!" class="btn btn--primary">
+            <conditional-link v-if="item.type === 'adv' && item.btn" :link="item" class="btn btn--primary">
                 <img v-if="item.icon && item.iconAsImage" :src="item.icon" :alt="altText" class="img img--24"
                     :class="item.imageClasses" />
                 <span v-else-if="
@@ -28,7 +28,7 @@
                     <i :class="item.icon"></i>
                 </span>
                 <span>{{ item.btn }}</span>
-            </router-link>
+            </conditional-link>
         </div>
     </div>
 </template>
