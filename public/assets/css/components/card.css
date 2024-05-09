@@ -165,7 +165,7 @@
     gap: 15px;
 }
 
-.card.card--has-actions .card-header {
+.card.card--clickable .card-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -112,11 +112,11 @@
                         </div>
                     </div>
                 </div>
-                <router-link class="flexGrid-item card card--clickable card--min card--has-actions flexGrid-item"
+                <router-link class="flexGrid-item card card--clickable card--min flexGrid-item"
                     to="/community">
                     <div class="card-header">
                         <h3><span class="mdi material-icons">record_voice_over</span> Discord Server</h3>
-                        <div class="card-actions">
+                        <div>
                             <div class="btn btn--link btn--inline btn--med"><span
                                     class="mdi material-icons">arrow_forward</span></div>
                         </div>
