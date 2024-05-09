@@ -37,7 +37,6 @@ interface CardItemI {
     }[];
     btn?: string;
     html?: string;
-    actions?: [];
     footerActions?: {
         title?: string;
         onClick: (event: MouseEvent) => void;
