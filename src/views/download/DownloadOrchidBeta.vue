@@ -110,24 +110,14 @@
                         </div>
                     </div>
                 </div>
-                <router-link class="flexGrid-item card card--clickable card--min flexGrid-item"
-                    to="/community">
-                    <div class="card-header">
-                        <h3><span class="mdi material-icons">record_voice_over</span> Discord Server</h3>
-                        <div>
-                            <div class="btn btn--link btn--inline btn--med"><span
-                                    class="mdi material-icons">arrow_forward</span></div>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="flexList">
-                            <div class="text">
-                                <p>Join our Discord server to chat with other users and developers, participate to the
-                                    events and get some spoilers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </router-link>
+                <card :item="{
+                    title: 'Discord Server',
+                    description: 'Join our Discord server to chat with other users and developers, participate to the events and get some spoilers.',
+                    type: 'clickable',
+                    icon: 'record_voice_over',
+                    iconPack: 'mdi',
+                    to: '/community',
+                }" />
             </div>
             <notmail-not-chimp :is-open="isNotMailNotChimpOpen" @close="closeNotMailNotChimp" tagsId="12812945" />
         </div>
