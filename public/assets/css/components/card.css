@@ -98,6 +98,18 @@
     margin: 0 0 0 0;
 }
 
+.card.card--type-adv .card-header h3 {
+    font-size: 2rem;
+}
+
+.card.card--type-adv .card-header.card-header--multiline h3 {
+    margin-top: -0.6rem;
+}
+
+.card.card--type-adv .card-header.card-header--multiline h3:first-line {
+    font-size: 1.4rem;
+}
+
 .card.card--type-adv {
     background-color: var(--card-type-adv-bg-color);
 }
