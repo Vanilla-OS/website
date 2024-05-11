@@ -1,17 +1,5 @@
 <template>
-    <div v-if="item.type === 'adv'" class="card card--type-adv">
-        <div class="card-header">
-            <h4>{{ item.title[0] }}</h4>
-            <h2>{{ item.title[1] }}</h2>
-        </div>
-        <card-content :item :altText />
-    </div>
-    <conditional-link v-else :link="item.type === 'clickable' ? item : {}" :class="[
-        'card',
-        { 'card--clickable': item.type === 'clickable' },
-        'card--min',
-        'flexGrid-item',
-    ]">
+    <conditional-link :link="item.type === 'clickable' ? item : {}" :class="cardClasses">
         <card-header :item :altText />
         <card-content :item :altText />
         <card-footer v-if="item.footerActions" :actions="item.footerActions" />
@@ -51,4 +39,11 @@ if (props.item?.title) {
             ? props.item.title
             : props.item.title.join(" ");
 }
+
+const cardClasses = ["card"];
+
+if (props.item.type === "adv") cardClasses.push("card--type-adv");
+else cardClasses.push("card--min", "flexGrid-item");
+
+if (props.item.type === "clickable") cardClasses.push("card--clickable");
 </script>
