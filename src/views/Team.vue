@@ -6,7 +6,12 @@
                 skills and backgrounds. We are passionate about making Vanilla OS the best it can be.</p>
         </div>
         <div class="flexGrid">
-            <card v-for="(item, index) in teamItems" :key="index" :item="item" />
+            <card v-for="(item, index) in teamItems" :key="index" :item="item">
+                <image-card>
+                    <img :src="item.image" :alt="item.title" />
+                </image-card>
+                <badges :items="item.badges" />
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">

@@ -1,13 +1,7 @@
 <template>
     <div class="card-content">
         <div class="flexList">
-            <div v-if="item.description" class="text">
-                <p>{{ item.description }}</p>
-            </div>
             <div v-if="item.html" class="text text--rich" v-html="item.html"></div>
-            <div v-if="item.image" class="img img--fit card card--plain card--no-padding" :class="item.imageClasses">
-                <img :src="item.image" :alt="altText" />
-            </div>
             <badges :items="item.badges" />
             <btn v-if="item.type === 'adv' && item.btn" :to="item.to" :extLink="item.extLink">
                 <template #start>

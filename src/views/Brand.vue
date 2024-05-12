@@ -19,21 +19,33 @@
             <h3>Brand Assets</h3>
         </div>
         <div class="flexGrid flexGrid--2">
-            <card v-for="(item, index) in brandAssets" :key="index" :item="item" :class="item.extraClasses" />
+            <card v-for="(item, index) in brandAssets" :key="index" :item="item" :class="item.extraClasses">
+                <image-card :class="item.imageClasses">
+                    <img :src="item.image" :alt="item.title" />
+                </image-card>
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
             <h3>Primary Colors</h3>
         </div>
         <div class="flexGrid flexGrid--2">
-            <card v-for="(item, index) in primaryColors" :key="index" :item="item" />
+            <card v-for="(item, index) in primaryColors" :key="index" :item="item">
+                <image-card :class="item.imageClasses">
+                    <img :src="item.image" :alt="item.title" />
+                </image-card>
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
             <h3>Secondary Colors</h3>
         </div>
         <div class="flexGrid flexGrid--2">
-            <card v-for="(item, index) in secondaryColors" :key="index" :item="item" />
+            <card v-for="(item, index) in secondaryColors" :key="index" :item="item">
+                <image-card :class="item.imageClasses">
+                    <img :src="item.image" :alt="item.title" />
+                </image-card>
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">

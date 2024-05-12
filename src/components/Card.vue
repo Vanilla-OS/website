@@ -1,7 +1,16 @@
 <template>
     <conditional-link :link="item.type === 'clickable' ? item : {}" :class="cardClasses">
         <card-header :item :icon="{ altText: altText, ...item }" />
-        <card-content :item :altText />
+        <div class="card-content">
+            <div class="flexList">
+                <div v-if="item.description" class="text">
+                    <p>{{ item.description }}</p>
+                </div>
+                <slot>
+                    <card-content :item :altText />
+                </slot>
+            </div>
+        </div>
         <card-footer v-if="item.footerActions" :actions="item.footerActions" />
     </conditional-link>
 </template>
@@ -15,7 +24,6 @@ interface CardItemI {
     title?: string | [string, string];
     description?: string;
     type?: "clickable" | "adv";
-    image?: string;
     imageClasses?: string[];
     badges?: {
         text: string;
