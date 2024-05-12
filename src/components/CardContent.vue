@@ -1,7 +1,6 @@
 <template>
     <div class="card-content">
         <div class="flexList">
-            <div v-if="item.html" class="text text--rich" v-html="item.html"></div>
             <badges :items="item.badges" />
             <btn v-if="item.type === 'adv' && item.btn" :to="item.to" :extLink="item.extLink">
                 <template #start>
