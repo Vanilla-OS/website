@@ -12,6 +12,7 @@ import CardHeader from "./CardHeader.vue";
 import CardContent from "./CardContent.vue";
 import CardFooter from "./CardFooter.vue"
 import Card from "./Card.vue";
+import ImageCard from "./ImageCard.vue";
 import NotMailNotChimp from "./NotMailNotChimp.vue";
 import Timeline from "./Timeline.vue";
 import FloatNotice from "./FloatNotice.vue";
@@ -33,6 +34,7 @@ export default {
     app.component("card-content", CardContent);
     app.component("card-footer", CardFooter);
     app.component("card", Card);
+    app.component("image-card", ImageCard);
     app.component("notmail-not-chimp", NotMailNotChimp);
     app.component("timeline", Timeline);
     app.component("float-notice", FloatNotice);
