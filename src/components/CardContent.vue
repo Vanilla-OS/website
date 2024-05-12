@@ -16,9 +16,13 @@
                     {{ badge.text }}
                 </div>
             </div>
-            <btn v-if="item.type === 'adv' && item.btn" :icon="item.icon" :iconPack="item.iconPack"
-                :iconAsImage="item.iconAsImage" :imageClasses="item.imageClasses" :altText="altText" :btn="item.btn"
-                :to="item.to" :extLink="item.extLink" />
+            <btn v-if="item.type === 'adv' && item.btn" :to="item.to" :extLink="item.extLink">
+                <template #start>
+                    <an-icon v-if="item.icon" :icon="item.icon" :iconPack="item.iconPack"
+                        :iconAsImage="item.iconAsImage" :altText :class="item.imageClasses" />
+                </template>
+                {{ item.btn }}
+            </btn>
         </div>
     </div>
 </template>
