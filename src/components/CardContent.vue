@@ -16,19 +16,9 @@
                     {{ badge.text }}
                 </div>
             </div>
-            <conditional-link v-if="item.type === 'adv' && item.btn" :link="item" class="btn btn--primary">
-                <img v-if="item.icon && item.iconAsImage" :src="item.icon" :alt="altText" class="img img--24"
-                    :class="item.imageClasses" />
-                <span v-else-if="
-                    (item.icon && !item.iconPack) ||
-                    (item.icon && item.iconPack === 'mdi')
-                " class="mdi material-icons">{{ item.icon }}
-                </span>
-                <span v-else-if="item.iconPack === 'fa' && item.icon">
-                    <i :class="item.icon"></i>
-                </span>
-                <span>{{ item.btn }}</span>
-            </conditional-link>
+            <btn v-if="item.type === 'adv' && item.btn" :icon="item.icon" :iconPack="item.iconPack"
+                :iconAsImage="item.iconAsImage" :imageClasses="item.imageClasses" :altText="altText" :btn="item.btn"
+                :to="item.to" :extLink="item.extLink" />
         </div>
     </div>
 </template>
