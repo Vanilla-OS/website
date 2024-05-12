@@ -7,6 +7,7 @@
 </template>
 
 <script setup lang="ts">
+import type { AnIconProps } from "./AnIcon.vue";
 import type { CardFooterAction } from "./CardFooter.vue";
 import type { LinkProps } from "./ConditionalLink.vue";
 
@@ -14,9 +15,6 @@ interface CardItemI {
     title?: string | [string, string];
     description?: string;
     type?: "clickable" | "adv";
-    icon?: string;
-    iconPack?: "mdi" | "fa";
-    iconAsImage?: boolean;
     image?: string;
     imageClasses?: string[];
     badges?: {
@@ -28,7 +26,7 @@ interface CardItemI {
     footerActions?: CardFooterAction[];
 }
 
-export type CardItem = CardItemI & LinkProps;
+export type CardItem = CardItemI & LinkProps & Partial<AnIconProps>;
 
 const props = defineProps<{ item: CardItem }>();
 
