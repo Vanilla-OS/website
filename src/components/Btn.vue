@@ -1,11 +1,6 @@
 <template>
     <conditional-link :link="props" class="btn btn--primary">
-        <img v-if="icon && iconAsImage" :src="icon" :alt="altText" class="img img--24" :class="imageClasses" />
-        <span v-else-if="(icon && !iconPack) || (icon && iconPack === 'mdi')" class="mdi material-icons">{{ icon }}
-        </span>
-        <span v-else-if="iconPack === 'fa' && icon">
-            <i :class="icon"></i>
-        </span>
+        <an-icon v-if="icon" :icon :iconPack :iconAsImage :altText :class="imageClasses" />
         <span>{{ btn }}</span>
     </conditional-link>
 </template>
