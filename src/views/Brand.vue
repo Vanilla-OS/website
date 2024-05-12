@@ -52,7 +52,11 @@
             <h3>Fonts</h3>
         </div>
         <div class="flexGrid flexGrid--2">
-            <card v-for="(item, index) in fonts" :key="index" :item="item" />
+            <card v-for="(item, index) in fonts" :key="index" :item="item">
+                <div class="text text--rich">
+                    <span :class="['font', item.class]">{{ item.name }}</span>
+                </div>
+            </card>
         </div>
     </div>
 </template>
@@ -250,7 +254,8 @@ export default defineComponent({
             ],
             fonts: [
                 {
-                    html: '<span class="font font--outfit">Outfit</span>',
+                    name: 'Outfit',
+                    class: 'font--outfit',
                     footerActions: [
                         {
                             title: 'Download',
@@ -263,7 +268,8 @@ export default defineComponent({
                     ],
                 },
                 {
-                    html: '<span class="font font--pacifico">Pacifico</span>',
+                    name: 'Pacifico',
+                    class: 'font--pacifico',
                     footerActions: [
                         {
                             title: 'Download',

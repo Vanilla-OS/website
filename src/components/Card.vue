@@ -30,7 +30,6 @@ interface CardItemI {
         color?: string;
     }[];
     btn?: string;
-    html?: string;
     footerActions?: CardFooterAction[];
 }
 

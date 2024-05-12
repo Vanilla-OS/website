@@ -1,7 +1,12 @@
 <template>
     <div class="flexList">
         <div class="flexGrid anim--fadeIn">
-            <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" :class="item.extraClasses" />
+            <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" :class="item.extraClasses">
+                <div v-if="item.bankTransferDetails" class="text text--rich">
+                    <pre><code>{{ item.bankTransferDetails.join('\n') }}</code></pre>
+                </div>
+                <badges :items="item.badges" />
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
@@ -26,9 +31,11 @@ export default defineComponent({
                     iconPack: 'mdi',
                     title: 'Bank Transfer',
                     description: 'Bank Transfer is the most direct and least taxed way to support Vanilla OS. You can make a one-time donation of any amount.',
-                    html: `<pre><code>Account Name: FABRICATORS S.R.L.
-IBAN: IT30S0326811200052945656640
-BIC/SWIFT: SELBIT2BXXX</code></pre>`,
+                    bankTransferDetails: [
+                        'Account Name: FABRICATORS S.R.L.',
+                        'IBAN: IT30S0326811200052945656640',
+                        'BIC/SWIFT: SELBIT2BXXX',
+                    ],
                     extraClasses: ['flexGrid-item--2'],
                     badges: [
                         {
