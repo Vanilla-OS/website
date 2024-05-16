@@ -76,7 +76,7 @@ export default defineComponent({
                     image: '/assets/images/pics/axtloss.jpeg',
                     links: {
                         githubUsername: 'axtloss',
-                        mastodonLink: 'https://blahaj.zone/@xenia',
+                        mastodonLink: 'https://fosstodon.org/@axtlos',
                         website: 'https://axtlos.neocities.org/',
                     },
                 },
