@@ -56,7 +56,7 @@ export default defineComponent({
                     links: {
                         githubUsername: '89luca89',
                         twitterUsername: 'LucaDiMaio11',
-                        mastodonLink: 'https://%4089luca89@fosstodon.org/@89luca89',
+                        mastodonLink: 'https://fosstodon.org/@89luca89',
                     },
                 },
                 {
@@ -76,7 +76,6 @@ export default defineComponent({
                     image: '/assets/images/pics/axtloss.jpeg',
                     links: {
                         githubUsername: 'axtloss',
-                        twitterUsername: 'brombinmirko',
                         mastodonLink: 'https://blahaj.zone/@xenia',
                         website: 'https://axtlos.neocities.org/',
                     },
