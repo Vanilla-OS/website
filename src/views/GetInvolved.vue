@@ -1,6 +1,8 @@
 <template>
     <div class="flexGrid anim--fadeIn">
-        <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" :class="item.extraClasses" />
+        <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" :class="item.extraClasses">
+            <btn-adv v-if="item.btn" :icon="item" :link="item">{{ item.btn }}</btn-adv>
+        </card>
     </div>
 </template>
   

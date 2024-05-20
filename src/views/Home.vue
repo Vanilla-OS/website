@@ -221,7 +221,9 @@
     </header>
     <div class="spacer"></div>
     <div class="flexGrid flexGrid--3">
-      <card v-for="(item, index) in medias" :key="index" :item="item" :class="item.extraClasses" />
+      <card v-for="(item, index) in medias" :key="index" :item="item" :class="item.extraClasses">
+        <btn-adv v-if="item.type === 'adv'" :icon="item" :link="item">{{ item.btn }}</btn-adv>
+      </card>
     </div>
   </section>
 </template>

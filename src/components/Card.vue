@@ -6,9 +6,7 @@
                 <div v-if="item.description" class="text">
                     <p>{{ item.description }}</p>
                 </div>
-                <slot>
-                    <card-content :item :altText />
-                </slot>
+                <slot />
             </div>
         </div>
         <card-footer v-if="item.footerActions" :actions="item.footerActions" />
@@ -25,7 +23,6 @@ interface CardItemI {
     description?: string;
     type?: "clickable" | "adv";
     imageClasses?: string[];
-    btn?: string;
     footerActions?: CardFooterAction[];
 }
 
