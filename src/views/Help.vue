@@ -1,6 +1,8 @@
 <template>
     <div class="flexGrid flexGrid--2 anim--fadeIn">
-        <card v-for="(item, index) in helpItems" :key="index" :item="item" :class="item.extraClasses" />
+        <card v-for="(item, index) in helpItems" :key="index" :item="item" :class="item.extraClasses">
+            <badges :items="item.badges" />
+        </card>
     </div>
 </template>
   
