@@ -25,10 +25,6 @@ interface CardItemI {
     description?: string;
     type?: "clickable" | "adv";
     imageClasses?: string[];
-    badges?: {
-        text: string;
-        color?: string;
-    }[];
     btn?: string;
     footerActions?: CardFooterAction[];
 }

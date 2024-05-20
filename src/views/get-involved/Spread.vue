@@ -10,7 +10,9 @@
             <h3>Official Assets</h3>
         </div>
         <div class="flexGrid flexGrid--2 anim--fadeIn">
-            <card v-for="(item, index) in officialAssets" :key="index" :item="item" />
+            <card v-for="(item, index) in officialAssets" :key="index" :item="item">
+                <badges v-if="item.badges" :items="item.badges" />
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
@@ -24,14 +26,18 @@
             <h3>Podcasts and Live Streams</h3>
         </div>
         <div class="flexGrid flexGrid--2 anim--fadeIn">
-            <card v-for="(item, index) in liveAssets" :key="index" :item="item" />
+            <card v-for="(item, index) in liveAssets" :key="index" :item="item">
+                <badges v-if="item.badges" :items="item.badges" />
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
             <h3>Videos from the Web</h3>
         </div>
         <div class="flexGrid flexGrid--2 anim--fadeIn">
-            <card v-for="(item, index) in webAssets" :key="index" :item="item" />
+            <card v-for="(item, index) in webAssets" :key="index" :item="item">
+                <badges v-if="item.badges" :items="item.badges" />
+            </card>
         </div>
         <div class="spacer"></div>
         <div class="flexGrid flexGrid--2 anim--fadeIn">
