@@ -1,11 +1,12 @@
 <template>
     <div class="card-footer">
-        <div class="btn btn--link btn--inline btn--med" v-for="(action, index) in actions" :key="index"
+        <btn v-for="(action, index) in actions" :key="index" type="link" class="btn--inline btn--med"
             @click="action.onClick">
-            <an-icon :icon="action.icon" :iconPack="action.iconPack" :iconAsImage="action.iconAsImage"
-                :altText="action.altText" />
-            <span v-if="action.title">{{ action.title }}</span>
-        </div>
+            <template #start>
+                <an-icon :icon="action.icon" :iconPack="action.iconPack" />
+            </template>
+            {{ action.title }}
+        </btn>
     </div>
 </template>
 

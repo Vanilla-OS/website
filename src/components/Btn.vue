@@ -1,5 +1,5 @@
 <template>
-    <conditional-link :link="props" class="btn btn--primary">
+    <conditional-link :link="props" :class="classes">
         <slot name="start" />
         <span>
             <slot />
@@ -11,5 +11,15 @@
 <script setup lang="ts">
 import type { LinkProps } from "./ConditionalLink.vue";
 
-const props = defineProps<LinkProps>();
+interface BtnPropsI {
+    type?: "primary" | "link"
+}
+
+export type BtnProps = BtnPropsI & LinkProps;
+
+const props = defineProps<BtnProps>();
+
+const classes = ["btn"];
+if (props.type === "link") classes.push("btn--link")
+else classes.push("btn--primary")
 </script>
