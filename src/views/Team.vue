@@ -70,6 +70,17 @@ export default defineComponent({
                     },
                 },
                 {
+                    name: 'axtlos',
+                    description: 'Software Engineer and Core Developer',
+                    lit: true,
+                    image: '/assets/images/pics/axtloss.jpeg',
+                    links: {
+                        githubUsername: 'axtloss',
+                        mastodonLink: 'https://fosstodon.org/@axtlos',
+                        website: 'https://axtlos.neocities.org/',
+                    },
+                },
+                {
                     name: 'Hari Rana',
                     description: 'Community Manager and UX Researcher',
                     fabricators: true,
