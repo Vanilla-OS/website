@@ -130,6 +130,14 @@ export default defineComponent({
                         githubUsername: 'taukakao',
                     },
                 },
+		{
+		    name: 'Jarred Wilson',
+		    description: 'Software Engineer and Maintainer',
+		    image: '/assets/images/pics/jardon.jpg',
+		    links: {
+			githubUsername: 'jardon',
+		    },
+		},
             ];
             const teamItems = [];
             for (const member of team) {
