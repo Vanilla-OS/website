@@ -138,6 +138,14 @@ export default defineComponent({
 			githubUsername: 'jardon',
 		    },
 		},
+		{
+		    name: 'nellfs',
+		    description: 'Software Engineer',
+		    image: '/assets/images/pics/nellfs.png',
+		    links: {
+			githubUsername: 'nellfs',
+		    },
+		},
             ];
             const teamItems = [];
             for (const member of team) {
