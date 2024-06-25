@@ -146,6 +146,14 @@ export default defineComponent({
 			githubUsername: 'nellfs',
 		    },
 		},
+		{
+		    name: 'Muhammad Salman',
+		    description: 'Software Engineer and UI Designer'
+		    image: '/assets/images/pics/muhdsalm.png'
+		    links: {
+		        githubUsername: 'muhdsalm'
+		    },
+		},
             ];
             const teamItems = [];
             for (const member of team) {
