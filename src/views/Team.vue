@@ -149,7 +149,7 @@ export default defineComponent({
 		{
 		    name: 'Muhammad Salman',
 		    description: 'Software Engineer and UI Designer',
-		    image: '/assets/images/pics/muhdsalm.png',
+		    image: '/assets/images/pics/muhdsalm.jpg',
 		    links: {
 		        githubUsername: 'muhdsalm',
 		    },
