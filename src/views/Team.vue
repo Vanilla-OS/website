@@ -30,7 +30,7 @@ export default defineComponent({
                     description: 'Founder, Head of UI/UX Design and Core Developer',
                     lit: true,
                     fabricators: true,
-                    image: '/assets/images/pics/mirkobrombin.jpeg',
+                    image: '/assets/images/pics/mirkobrombin.webp',
                     links: {
                         githubUsername: 'mirkobrombin',
                         twitterUsername: 'brombinmirko',
@@ -42,7 +42,7 @@ export default defineComponent({
                     name: 'Pietro Di Caprio',
                     description: 'Co-Founder and Public Relations Manager',
                     fabricators: true,
-                    image: '/assets/images/pics/pietrodicaprio.jpeg',
+                    image: '/assets/images/pics/pietrodicaprio.webp',
                     links: {
                         githubUsername: 'pietrodicaprio',
                         twitterUsername: 'pietrodc0',
@@ -52,7 +52,7 @@ export default defineComponent({
                 {
                     name: 'Luca di Maio',
                     description: 'Co-Founder and Software Engineer',
-                    image: '/assets/images/pics/89luca89.jpeg',
+                    image: '/assets/images/pics/89luca89.webp',
                     links: {
                         githubUsername: '89luca89',
                         twitterUsername: 'LucaDiMaio11',
@@ -63,7 +63,7 @@ export default defineComponent({
                     name: 'Mateus B. Melchiades',
                     description: 'Software Engineer, Core Developer and Contributors Leader',
                     lit: true,
-                    image: '/assets/images/pics/matbme.jpeg',
+                    image: '/assets/images/pics/matbme.webp',
                     links: {
                         githubUsername: 'matbme',
                         mastodonLink: 'https://fosstodon.org/@matbme',
@@ -73,7 +73,7 @@ export default defineComponent({
                     name: 'axtlos',
                     description: 'Software Engineer and Core Developer',
                     lit: true,
-                    image: '/assets/images/pics/axtloss.jpeg',
+                    image: '/assets/images/pics/axtloss.webp',
                     links: {
                         githubUsername: 'axtloss',
                         mastodonLink: 'https://fosstodon.org/@axtlos',
@@ -84,7 +84,7 @@ export default defineComponent({
                     name: 'Hari Rana',
                     description: 'Community Manager and UX Researcher',
                     fabricators: true,
-                    image: '/assets/images/pics/theevilskeleton.png',
+                    image: '/assets/images/pics/theevilskeleton.webp',
                     links: {
                         githubUsername: 'TheEvilSkeleton',
                         twitterUsername: 'JaakunaGaikotsu',
@@ -95,7 +95,7 @@ export default defineComponent({
                 {
                     name: 'Muqtadir',
                     description: 'Software Engineer and UI Designer',
-                    image: '/assets/images/pics/muqtxdir.jpeg',
+                    image: '/assets/images/pics/muqtxdir.webp',
                     links: {
                         githubUsername: 'Muqtxdir',
                         twitterUsername: 'muqtxdir',
@@ -104,7 +104,7 @@ export default defineComponent({
                 {
                     name: 'K.B.Dharun Krishna',
                     description: 'Documentation and Localization Team Lead',
-                    image: '/assets/images/pics/kbdharun.jpeg',
+                    image: '/assets/images/pics/kbdharun.webp',
                     links: {
                         githubUsername: 'kbdharun',
                         twitterUsername: 'kbdharun',
@@ -115,7 +115,7 @@ export default defineComponent({
                 {
                     name: 'Dallas Strouse',
                     description: 'Website Accessibility',
-                    image: '/assets/images/pics/orowith2os.png',
+                    image: '/assets/images/pics/orowith2os.webp',
                     links: {
                         githubUsername: 'orowith2os',
                         mastodonLink: 'https://tech.lgbt/@orowith2os',
@@ -125,7 +125,7 @@ export default defineComponent({
                 {
                     name: 'Tau',
                     description: 'Bugfixes and User Support',
-                    image: '/assets/images/pics/taukakao.jpg',
+                    image: '/assets/images/pics/taukakao.webp',
                     links: {
                         githubUsername: 'taukakao',
                     },
