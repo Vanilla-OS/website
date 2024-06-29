@@ -1,6 +1,6 @@
 <template>
     <conditional-link :link="item.type === 'clickable' ? item : {}" :class="cardClasses">
-        <card-header :item :altText />
+        <card-header :item :icon="{ altText: altText, ...item }" />
         <card-content :item :altText />
         <card-footer v-if="item.footerActions" :actions="item.footerActions" />
     </conditional-link>
