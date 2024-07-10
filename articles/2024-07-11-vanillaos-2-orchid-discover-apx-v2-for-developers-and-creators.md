@@ -27,7 +27,33 @@ Well, everything has changed. Before we were limited to using APX with predefine
 
 Oh, and there's a GUI now! And it looks great! 😎
 
-[placeholder for the GUI screenshots gallery]
+<div class="no-dark">
+    <div class="flexGrid flexGrid--2">
+        <img src="/uploads/apx-v2-subsystem.webp" alt="Image of APX GUI showcasing a subsystem view" class="img img--fluid">
+        <img src="/uploads/apx-v2-subsystem-shell.webp" alt="Image of APX GUI showcasing a subsystem view with an open shell" class="img img--fluid">
+    </div>
+</div>
+
+<div class="on-dark">
+    <div class="flexGrid flexGrid--2">
+        <img src="/uploads/apx-v2-subsystem-dark.webp" alt="Image of APX GUI showcasing a subsystem view in dark mode" class="img img--fluid">
+        <img src="/uploads/apx-v2-subsystem-shell-dark.webp" alt="Image of APX GUI showcasing a subsystem view with an open shell in dark mode" class="img img--fluid">
+    </div>
+</div>
+
+<div class="no-dark">
+    <div class="flexGrid flexGrid--2">
+        <img src="/uploads/apx-v2-stack.webp" alt="Image of APX GUI showcasing a stack view" class="img img--fluid">
+        <img src="/uploads/apx-v2-pkgmanager.webp" alt="Image of APX GUI showcasing a package manager view" class="img img--fluid">
+    </div>
+</div>
+
+<div class="on-dark">
+    <div class="flexGrid flexGrid--2">
+        <img src="/uploads/apx-v2-stack-dark.webp" alt="Image of APX GUI showcasing a stack view in dark mode" class="img img--fluid">
+        <img src="/uploads/apx-v2-pkgmanager-dark.webp" alt="Image of APX GUI showcasing a package manager view in dark mode" class="img img--fluid">
+    </div>
+</div>
 
 Now APX v2 includes three essential components, namely: package manager, stack and subsystem. Let's look at them in more detail.
 
