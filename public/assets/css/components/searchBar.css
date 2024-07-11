@@ -67,6 +67,7 @@
 
 .searchBar-shortcut {
     display: flex;
+    color: var(--text-color-dimmed);
 }
 
 .searchBar-shortcut>.mdi+span {
