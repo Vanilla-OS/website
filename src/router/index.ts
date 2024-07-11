@@ -353,7 +353,7 @@ export default function createRouterInstance(clientType: string) {
         },
         {
           name: "og:image",
-          content: "https://vanillaos.org/assets/images/brand/vanillaos-logo.svg",
+          content: "https://vanillaos.org/assets/images/brand/vanillaos-cover.png",
         },
         {
           name: "og:url",
@@ -373,7 +373,7 @@ export default function createRouterInstance(clientType: string) {
         },
         {
           name: 'twitter:image',
-          content: 'https://vanillaos.org/assets/images/brand/vanillaos-logo.svg',
+          content: 'https://vanillaos.org/assets/images/brand/vanillaos-cover.png',
         },
         {
           name: 'twitter:url',
