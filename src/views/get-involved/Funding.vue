@@ -91,7 +91,7 @@ export default defineComponent({
                     ]
                 },
                 {
-                    to: "https://fabricators.ltd/en/contact.html",
+                    to: "https://fabricators.ltd/en/contacts",
                     extLink: true,
                     type: 'clickable',
                     icon: 'handshake',
