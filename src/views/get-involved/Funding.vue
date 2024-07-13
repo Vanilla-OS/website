@@ -84,7 +84,7 @@ BIC/SWIFT: SELBIT2BXXX</code></pre>`,
                     ]
                 },
                 {
-                    to: "https://fabricators.ltd/en/contact.html",
+                    to: "https://fabricators.ltd/en/contacts",
                     extLink: true,
                     type: 'clickable',
                     icon: 'handshake',
