@@ -10,6 +10,7 @@ keywords:
   - Download
   - Developer Preview
   - Beta
+  - Documentation
 layout: article
 comments: true
 ---
