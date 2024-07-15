@@ -168,7 +168,7 @@ export default defineComponent({
                 },
                 {
                     name: "Gabriel Cozma",
-                    description: "Front-End Software Engineer",
+                    description: "Front-End Engineer",
                     image: "/assets/images/pics/gabs.webp",
                     links: {
                         githubUsername: "GabsEdits",
