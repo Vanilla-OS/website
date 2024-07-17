@@ -1,7 +1,7 @@
 <template>
     <div v-if="isOpen" class="modal modal--large-height anim--fadeIn">
         <div class="overlay" @click="closeModal"></div>
-        <div class="modal-wrapper card card--no-padding">
+        <div class="modal-wrapper">
             <div class="imageSlider">
                 <div v-for="(image, index) in articleImages" :key="index" class="imageSlider-item" :style="{
                     transform: `translateX(${index === currentIndex ? -index * 100 : 0}%)`,
@@ -73,6 +73,15 @@ export default defineComponent({
                 this.currentIndex++;
             }
         },
+        handleKeyboardEvent(event: KeyboardEvent) {
+            if (event.key === 'ArrowLeft') {
+                this.prevImage();
+            } else if (event.key === 'ArrowRight') {
+                this.nextImage();
+            } else if (event.key === 'Escape') {
+                this.closeModal();
+            }
+        },
     },
     computed: {
         isPrevDisabled(): boolean {
@@ -81,6 +90,12 @@ export default defineComponent({
         isNextDisabled(): boolean {
             return this.currentIndex === this.articleImages.length - 1;
         },
+    },
+    mounted() {
+        window.addEventListener('keydown', this.handleKeyboardEvent);
+    },
+    beforeUnmount() {
+        window.removeEventListener('keydown', this.handleKeyboardEvent);
     },
 });
 </script>
