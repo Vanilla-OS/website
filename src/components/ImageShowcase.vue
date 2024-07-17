@@ -5,7 +5,7 @@
             <div class="imageSlider">
                 <div v-for="(image, index) in articleImages" :key="index" class="imageSlider-item" :style="{
                     transform: `translateX(${index === currentIndex ? -index * 100 : 0}%)`,
-                    visibility: index === currentIndex ? 'visible' : 'hidden'
+                    visibility: index === currentIndex ? 'visible' : 'hidden',
                 }">
                     <img :src="image" @click="navigate(index)" />
                 </div>
@@ -26,12 +26,11 @@
     </div>
 </template>
 
-
 <script lang="ts">
 import { defineComponent, watch } from "vue";
 
 export default defineComponent({
-    name: 'ImageShowcase',
+    name: "ImageShowcase",
     props: {
         isOpen: {
             type: Boolean,
@@ -49,6 +48,8 @@ export default defineComponent({
     data() {
         return {
             currentIndex: this.currentImageIndex,
+            touchStartX: 0,
+            touchMoveX: 0,
         };
     },
     watch: {
@@ -58,10 +59,10 @@ export default defineComponent({
     },
     methods: {
         closeModal() {
-            this.$emit('close');
+            this.$emit("close");
         },
         navigate(index: number) {
-            this.$emit('navigate', index);
+            this.$emit("navigate", index);
         },
         prevImage() {
             if (this.currentIndex > 0) {
@@ -74,12 +75,36 @@ export default defineComponent({
             }
         },
         handleKeyboardEvent(event: KeyboardEvent) {
-            if (event.key === 'ArrowLeft') {
+            if (event.key === "ArrowLeft") {
                 this.prevImage();
-            } else if (event.key === 'ArrowRight') {
+            } else if (event.key === "ArrowRight") {
                 this.nextImage();
-            } else if (event.key === 'Escape') {
+            } else if (event.key === "Escape") {
                 this.closeModal();
+            }
+        },
+        addSwipeListeners() {
+            window.addEventListener("touchstart", this.handleTouchStart);
+            window.addEventListener("touchmove", this.handleTouchMove);
+            window.addEventListener("touchend", this.handleTouchEnd);
+        },
+        removeSwipeListeners() {
+            window.removeEventListener("touchstart", this.handleTouchStart);
+            window.removeEventListener("touchmove", this.handleTouchMove);
+            window.removeEventListener("touchend", this.handleTouchEnd);
+        },
+        handleTouchStart(event: TouchEvent) {
+            this.touchStartX = event.touches[0].clientX;
+        },
+        handleTouchMove(event: TouchEvent) {
+            this.touchMoveX = event.touches[0].clientX;
+        },
+        handleTouchEnd() {
+            const touchDistance = this.touchMoveX - this.touchStartX;
+            if (touchDistance > 0) {
+                this.prevImage();
+            } else if (touchDistance < 0) {
+                this.nextImage();
             }
         },
     },
@@ -92,10 +117,12 @@ export default defineComponent({
         },
     },
     mounted() {
-        window.addEventListener('keydown', this.handleKeyboardEvent);
+        window.addEventListener("keydown", this.handleKeyboardEvent);
+        this.addSwipeListeners();
     },
     beforeUnmount() {
-        window.removeEventListener('keydown', this.handleKeyboardEvent);
+        window.removeEventListener("keydown", this.handleKeyboardEvent);
+        this.removeSwipeListeners();
     },
 });
 </script>
