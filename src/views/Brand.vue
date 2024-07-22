@@ -98,9 +98,6 @@ export default defineComponent({
                       'img--no-bg',
                       'img--128',
                   ],
-                  extraClasses: [
-                      'card--light',
-                  ],
                   footerActions: [
                       {
                           title: 'PNG',
