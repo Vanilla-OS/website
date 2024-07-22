@@ -204,6 +204,31 @@ export default defineComponent({
                     ],
                 },
                 {
+                    title: 'Laser Lemon',
+                    image: '/assets/images/brand/vanillaos-color-laser-lemon.svg',
+                    imageClasses: [
+                        'img--no-bg',
+                    ],
+                    footerActions: [
+                        {
+                            title: 'HEX #FFFB64',
+                            icon: 'content_copy',
+                            iconPack: 'mdi',
+                            onClick: () => {
+                                navigator.clipboard.writeText('#FFFB64');
+                            },
+                        },
+                        {
+                            title: 'CMYK C:0 M:2 Y:61 K:0',
+                            icon: 'content_copy',
+                            iconPack: 'mdi',
+                            onClick: () => {
+                                navigator.clipboard.writeText('C:0 M:2 Y:61 K:0');
+                            },
+                        },
+                    ],
+                },
+                {
                     title: 'Mine Shaft',
                     image: '/assets/images/brand/vanillaos-color-mine-shaft.svg',
                     imageClasses: [
@@ -230,31 +255,6 @@ export default defineComponent({
                 },
             ],
             secondaryColors: [
-              {
-                  title: 'Laser Lemon',
-                  image: '/assets/images/brand/vanillaos-color-laser-lemon.svg',
-                  imageClasses: [
-                      'img--no-bg',
-                  ],
-                  footerActions: [
-                      {
-                          title: 'HEX #FFFB64',
-                          icon: 'content_copy',
-                          iconPack: 'mdi',
-                          onClick: () => {
-                              navigator.clipboard.writeText('#FFFB64');
-                          },
-                      },
-                      {
-                          title: 'CMYK C:0 M:2 Y:61 K:0',
-                          icon: 'content_copy',
-                          iconPack: 'mdi',
-                          onClick: () => {
-                              navigator.clipboard.writeText('C:0 M:0 Y:2 K:5');
-                          },
-                      },
-                  ],
-              },
               {
                     title: 'Cararra',
                     image: '/assets/images/brand/vanillaos-color-cararra.svg',
