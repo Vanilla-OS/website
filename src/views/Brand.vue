@@ -60,7 +60,7 @@
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -91,6 +91,35 @@ export default defineComponent({
                 },
             ],
             brandAssets: [
+              {
+                  title: 'Icon',
+                  image: '/assets/images/brand/vanillaos-logo-icon.svg',
+                  imageClasses: [
+                      'img--no-bg',
+                      'img--128',
+                  ],
+                  extraClasses: [
+                      'card--light',
+                  ],
+                  footerActions: [
+                      {
+                          title: 'PNG',
+                          icon: 'download',
+                          iconPack: 'mdi',
+                          onClick: () => {
+                              window.open('/assets/images/brand/vanillaos-logo-icon.png', '_blank');
+                          },
+                      },
+                      {
+                          title: 'SVG',
+                          icon: 'download',
+                          iconPack: 'mdi',
+                          onClick: () => {
+                              window.open('/assets/images/brand/vanillaos-logo-icon.svg', '_blank');
+                          },
+                      },
+                  ],
+              },
                 {
                     title: 'Standard',
                     image: '/assets/images/brand/vanillaos-logo.svg',
@@ -201,7 +230,32 @@ export default defineComponent({
                 },
             ],
             secondaryColors: [
-                {
+              {
+                  title: 'Laser Lemon',
+                  image: '/assets/images/brand/vanillaos-color-laser-lemon.svg',
+                  imageClasses: [
+                      'img--no-bg',
+                  ],
+                  footerActions: [
+                      {
+                          title: 'HEX #FFFB64',
+                          icon: 'content_copy',
+                          iconPack: 'mdi',
+                          onClick: () => {
+                              navigator.clipboard.writeText('#FFFB64');
+                          },
+                      },
+                      {
+                          title: 'CMYK C:0 M:2 Y:61 K:0',
+                          icon: 'content_copy',
+                          iconPack: 'mdi',
+                          onClick: () => {
+                              navigator.clipboard.writeText('C:0 M:0 Y:2 K:5');
+                          },
+                      },
+                  ],
+              },
+              {
                     title: 'Cararra',
                     image: '/assets/images/brand/vanillaos-color-cararra.svg',
                     imageClasses: [
@@ -286,4 +340,3 @@ export default defineComponent({
     },
 });
 </script>
-  
