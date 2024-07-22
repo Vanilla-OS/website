@@ -46,7 +46,7 @@ Luca and I frequently discuss the project. We imagine how the user will want to 
 I feel that Vanilla OS is heading in the right direction, particularly in creating an appliance-like OS that is accessible to everyone, especially those who are not tech-savvy. Despite being a relatively young project, the progress we've made so far has been remarkable. There are still many improvements to implement in the future, but what we've achieved up to now truly showcases the potential of both the project and our team.
 
 **Mirko**:
-Having watched the project grow, fight through issues, and celebrate successes, I can say that the project has matured significantly. Vanilla OS 2 is something we all believed in, but none of us predicted how challenging this journey would be. Vanilla OS has always been different different project; our goal was never just to create a Linux distribution, we aimed to create an operating system that truly serves the user without being a nuisance.
+Having watched the project grow, fight through issues, and celebrate successes, I can say that the project has matured significantly. Vanilla OS 2 is something we all believed in, but none of us predicted how challenging this journey would be. Vanilla OS has always been a different project; our goal was never just to create a Linux distribution, we aimed to create an operating system that truly serves the user without being a nuisance.
 
 Our wonderful and tireless team is made up of enthusiasts of Linux, Open Source, and technology in general. We understand the challenges of a constantly evolving world, and as users ourselves, we feel the pressure to keep up. In Vanilla OS, this is our mantra. It doesn't mean everything will be perfect from day one, but we have a solid starting point to succeed and stay on our feet.
 
@@ -76,8 +76,8 @@ This will ensure that you will *always have a bootable system*. If an update bre
 
 In this context the atomicity is achieved by using some concepts:
 
-- **immutability**: the running partition *must not be modifiable at runtime*, this ensures runtime stability (no packages/libraries are changed underneath running programs) and ensures that a bootable/running system stays so
-- **system images**: an update is shipped as a complete system image, it is not handled by a package manager, this ensures that a complete system is deployed at once
+- **immutability**: the running partition *must not be modifiable at runtime*, this ensures runtime stability (no packages/libraries are changed underneath running programs) and ensures that a bootable/running system stays so.
+- **system images**: an update is shipped as a complete system image, it is not handled by a package manager, this ensures that a complete system is deployed at once.
 - **atomic swaps**: a new image is deployed in the non-running partition, and only if every step is successful, the old image will be removed, using a single, atomic, syscall.
 
 These three concepts ensure that a system modification (an update, a package install, ...) is applied:
@@ -139,7 +139,7 @@ At the moment, there are three main approaches to atomicity in the Linux world:
 
 Each of them has its own pros and cons.
 
-Vanilla OS's A/B approach is also shared by SteamOS, ChromeOS, and Android (although with different tooling/approaches), and consists of having two copies of the system: a running copy (A) and a dormant copy (B). When a modification is needed (e.g., an update), it is performed on the dormant partition. At the next reboot, the roles will switch (B becomes running, A becomes dormant), and so on. This approach requires a specific partition layout (two root partitions, a data partition, and so on) but is filesystem-independent (can be XFS, Ext4, Btrfs, etc.).
+Vanilla OS's A/B approach is also shared by SteamOS, ChromeOS, and Android (although with different tooling/approaches), and consists of having two copies of the system: a running copy (A) and a dormant copy (B). When a modification is needed (e.g., an update), it is performed on the dormant partition. At the next reboot, the roles will switch (B starts running, A becomes dormant), and so on. This approach requires a specific partition layout (two root partitions, a data partition, and so on) but is filesystem-independent (can be XFS, Ext4, Btrfs, etc.).
 
 The Btrfs snapshots approach is used by OpenSUSE MicroOS and Aeon. The concept of atomicity/immutability is the same: the current snapshot (instead of a partition) is read-only and every change is done in a new snapshot that is activated upon reboot. Compared to A/B, it is filesystem-dependent (Btrfs, obviously) but is also more flexible, as it provides many rollback points (not only one as A/B).
 
