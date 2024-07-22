@@ -29,7 +29,7 @@
   </section>
 
   <nav class="navigationBar" aria-label="go to sections">
-    <h2 class="text text--dimmed" aria-labelledby=""> Vanilla OS is</h2>
+    <h2 class="text text--dimmed" aria-labelledby=""> Vanilla OS for</h2>
     <ul>
       <li :class="{ 'active': activeSection === 'work' }">
         <button @click="scrollTo('#work')">Work</button>
@@ -43,6 +43,9 @@
       <li :class="{ 'active': activeSection === 'access' }">
         <button @click="scrollTo('#access')">Access</button>
       </li>
+    </ul>
+    <h2 class="text text--dimmed" aria-labelledby=""> Vanilla OS is</h2>
+    <ul>
       <li :class="{ 'active': activeSection === 'solid' }">
         <button @click="scrollTo('#solid')">Solid</button>
       </li>
