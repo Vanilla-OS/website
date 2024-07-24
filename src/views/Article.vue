@@ -236,7 +236,7 @@ export default defineComponent({
             let match;
 
             while ((match = headingRegex.exec(this.article.content))) {
-                const title = decodeURIComponent(match[2].replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'"));
+                const title = decodeURIComponent(match[2].replace(/&/g, '&amp;').replace(/&quot;/g, '"').replace(/&#39;/g, "'"));
                 const anchor = title.replace(/['",]/g, '').replace(/\s+/g, '-').toLowerCase();
                 matches.push({
                     anchor: anchor,

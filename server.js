@@ -1,5 +1,6 @@
-import fs from "node:fs/promises";
 import express from "express";
+import fs from "node:fs/promises";
+import rateLimit from "express-rate-limit";
 
 // Constants
 const isProduction = process.env.NODE_ENV === "production";
@@ -37,7 +38,14 @@ if (!isProduction) {
 }
 
 // Serve HTML
-app.use("*", async (req, res) => {
+
+// Rate limit configuration
+const limiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 100, // 100 requests per minute
+});
+
+app.use("*", limiter, async (req, res) => {
   try {
     const url = req.originalUrl.replace(base, "");
 
@@ -63,7 +71,7 @@ app.use("*", async (req, res) => {
   } catch (e) {
     vite?.ssrFixStacktrace(e);
     console.log(e.stack);
-    res.status(500).end(e.stack);
+    res.status(500).send("Internal Server Error");
   }
 });
 
