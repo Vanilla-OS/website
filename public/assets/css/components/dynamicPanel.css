@@ -29,6 +29,7 @@
     grid-column: 2 / 3;
     transform: scale(1);
     border-radius: 30px;
+    gap: 20px;
 }
 
 .DynamicPanel-card:not(.DynamicPanel-card--active) {
