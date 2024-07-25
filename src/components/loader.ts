@@ -16,6 +16,7 @@ import ImageCard from "./ImageCard.vue";
 import NotMailNotChimp from "./NotMailNotChimp.vue";
 import Timeline from "./Timeline.vue";
 import FloatNotice from "./FloatNotice.vue";
+import DynamicPanel from "./DynamicPanel.vue";
 
 export default {
   install(app: App) {
@@ -38,6 +39,7 @@ export default {
     app.component("notmail-not-chimp", NotMailNotChimp);
     app.component("timeline", Timeline);
     app.component("float-notice", FloatNotice);
+    app.component("dynamic-card-panel", DynamicPanel);
 
     console.debug("Components loaded");
   },

@@ -303,6 +303,16 @@ export default function createRouterInstance(clientType: string) {
               description: "What is Vanilla OS from a technical point of view.",
             },
           },
+          {
+            path: "/testing-components",
+            name: "testing-components",
+            component: () =>// @ts-ignore
+              import(/* webpackChunkName: "Download" */ "@/views/TestingComponents.vue"),
+            meta: {
+              title: "Testing Components",
+              description: "Workspace to test components.",
+            },
+          },
         ]
       },
       {

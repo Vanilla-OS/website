@@ -1,0 +1,151 @@
+.DynamicPanel {
+    --dynamic-card-blue-bg-color: var(--accent-blue-bg-color-light);
+    --dynamic-card-blue-title-color: var(--accent-blue-bg-color-vivid);
+    --dynamic-card-blue-text-color: var(--accent-blue-text-color);
+    --dynamic-card-green-bg-color: var(--accent-green-bg-color-light);
+    --dynamic-card-green-title-color: var(--accent-green-bg-color-vivid);
+    --dynamic-card-green-text-color: var(--accent-green-text-color);
+    --dynamic-card-pink-bg-color: var(--accent-pink-bg-color-light);
+    --dynamic-card-pink-title-color: var(--accent-pink-bg-color-vivid);
+    --dynamic-card-pink-text-color: var(--accent-pink-text-color);
+}
+
+.DynamicPanel {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.DynamicPanel-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    grid-column: 2 / 3;
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+.DynamicPanel-card:not(.DynamicPanel-card--active) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.DynamicPanel-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DynamicPanel-card.DynamicPanel-card--active {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    z-index: 1;
+    animation: grow 0.3s ease-in-out;
+}
+
+.DynamicPanel-card-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.DynamicPanel-card--blue {
+    background-color: var(--dynamic-card-blue-bg-color);
+}
+
+.DynamicPanel-card--blue .DynamicPanel-card-header h2,
+.DynamicPanel-card--blue .DynamicPanel-card-header .mdi {
+    color: var(--dynamic-card-blue-title-color);
+}
+
+.DynamicPanel-card--blue p {
+    color: var(--dynamic-card-blue-text-color);
+}
+
+.DynamicPanel-card--green {
+    background-color: var(--dynamic-card-green-bg-color);
+}
+
+.DynamicPanel-card--green .DynamicPanel-card-header h2,
+.DynamicPanel-card--green .DynamicPanel-card-header .mdi {
+    color: var(--dynamic-card-green-title-color);
+}
+
+.DynamicPanel-card--green p {
+    color: var(--dynamic-card-green-text-color);
+}
+
+.DynamicPanel-card--pink {
+    background-color: var(--dynamic-card-pink-bg-color);
+}
+
+.DynamicPanel-card--pink .DynamicPanel-card-header h2,
+.DynamicPanel-card--pink .DynamicPanel-card-header .mdi {
+    color: var(--dynamic-card-pink-title-color);
+}
+
+.DynamicPanel-card--pink p {
+    color: var(--dynamic-card-pink-text-color);
+}
+
+.DynamicPanel-card p {
+    margin-top: 1rem;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.DynamicPanel-card.DynamicPanel-card--active p {
+    opacity: 1;
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.mdi {
+    font-size: 2rem;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.DynamicPanel-card:active {
+    animation: bounce 0.3s ease;
+}
+
+.DynamicPanel-card {
+    transition: transform 0.3s ease, grid-column 0.3s ease, grid-row 0.3s ease;
+}

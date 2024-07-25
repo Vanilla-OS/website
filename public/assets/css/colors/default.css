@@ -19,26 +19,37 @@
     --accent-yellow-bg-color-light: #FFF6E5;
     --accent-yellow-bg-color-deep: #ccb892;
     --accent-yellow-text-color: #221d15;
+
     --accent-blue-bg-color: #C2CDD8;
-    --accent-blue-bg-color-vivid: #3c7bc2;
-    --accent-blue-bg-color-light: #d3dbe4;
+    --accent-blue-bg-color-vivid: #4384FF;
+    --accent-blue-bg-color-light: #E7EFFE;
     --accent-blue-bg-color-deep: #b2bbc5;
-    --accent-blue-text-color: #182840;
+    --accent-blue-text-color: #3B4043;
+
     --accent-brown-bg-color: #e0cfb1;
     --accent-brown-bg-color-vivid: #2c2312;
     --accent-brown-bg-color-light: #f1e3cd;
     --accent-brown-bg-color-deep: #c5bdaf;
     --accent-brown-text-color: #403A30;
+
     --accent-green-bg-color: #bcdcbd;
-    --accent-green-bg-color-vivid: #3cc748;
-    --accent-green-bg-color-light: #def7e0;
+    --accent-green-bg-color-vivid: #00BE6C;
+    --accent-green-bg-color-light: #E0F6EA;
     --accent-green-bg-color-deep: #b5cab6;
     --accent-green-text-color: #254E30;
+
     --accent-purple-bg-color: #ccbbdc;
     --accent-purple-bg-color-vivid: #7c3cc7;
     --accent-purple-bg-color-light: #e4d3f1;
     --accent-purple-bg-color-deep: #b6adc5;
     --accent-purple-text-color: #2f1e40;
+
+    --accent-pink-bg-color: #ffc7eb;
+    --accent-pink-bg-color-vivid: #FF00BF;
+    --accent-pink-bg-color-light: #FFDBF2;
+    --accent-pink-bg-color-deep: #b99daf;
+    --accent-pink-text-color: #433B42;
+
     --accent-red-bg-color: #f3c2c2;
     --accent-red-bg-color-vivid: #c73c3c;
     --accent-red-bg-color-light: #f1d3d3;
