@@ -21,7 +21,7 @@
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
-    /* color: var(--btn-color); */
+    color: var(--btn-color);
     border: 0;
 }
 
