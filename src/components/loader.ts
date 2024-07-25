@@ -17,6 +17,7 @@ import NotMailNotChimp from "./NotMailNotChimp.vue";
 import Timeline from "./Timeline.vue";
 import FloatNotice from "./FloatNotice.vue";
 import DynamicPanel from "./DynamicPanel.vue";
+import DynamicPanelOrchidRelease from "./DynamicPanelOrchidRelease.vue";
 
 export default {
   install(app: App) {
@@ -39,7 +40,8 @@ export default {
     app.component("notmail-not-chimp", NotMailNotChimp);
     app.component("timeline", Timeline);
     app.component("float-notice", FloatNotice);
-    app.component("dynamic-card-panel", DynamicPanel);
+    app.component("dynamic-panel", DynamicPanel);
+    app.component("dynamic-panel-orchid-release", DynamicPanelOrchidRelease);
 
     console.debug("Components loaded");
   },

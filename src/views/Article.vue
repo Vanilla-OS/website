@@ -12,7 +12,9 @@
                 <p>{{ article?.description }}</p>
             </div>
             <div class="page-content anim--fadeIn">
-                <div class="text text--rich" v-html="parsedHTML" @click="handleClick"></div>
+                <div class="text text--rich">
+                    <component :is="compiledTemplate" />
+                </div>
             </div>
             <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
@@ -81,13 +83,13 @@
         @close="closeImageShowcase" @navigate="navigateImage" />
     <notmail-not-chimp :is-open="isNotMailNotChimpOpen" @close="closeNotMailNotChimp" />
 </template>
-  
+
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, h } from 'vue';
 import { useRoute } from 'vue-router';
 import { loadArticle } from '@/articlesLoader';
 import type { Article } from '@/articlesLoader';
-import { useHead } from 'unhead'
+import { useHead } from 'unhead';
 
 export default defineComponent({
     name: 'article',
@@ -95,6 +97,7 @@ export default defineComponent({
         return {
             article: null as Article | null,
             parsedHTML: '',
+            compiledTemplate: null,
             shareModalOpen: false,
             imageShowcaseOpen: false,
             articleImages: [] as string[],
@@ -105,6 +108,11 @@ export default defineComponent({
         };
     },
     methods: {
+        compileTemplate(template: string) {
+            return defineComponent({
+                template,
+            });
+        },
         handleTocItemClick(anchor: string) {
             const currentPath = this.$router.currentRoute.value.path;
             const newHash = `#${anchor}`;
@@ -115,7 +123,6 @@ export default defineComponent({
         },
         scrollToAnchor(anchor: string) {
             const element = document.getElementById(anchor);
-            console.log(element);
             if (element) {
                 window.scrollTo(0, 0);
                 element.scrollIntoView({ behavior: 'smooth' });
@@ -166,7 +173,9 @@ export default defineComponent({
 
         try {
             this.article = await loadArticle(date as string, slug as string);
-            this.parsedHTML = this.article?.content || '';
+            const replacedContent = this.article?.content || '';
+            // @ts-ignore
+            this.compiledTemplate = this.compileTemplate(replacedContent);
             this.articleLoaded = true;
             useHead({
                 title: `${this.article!.title} - ${document.title}`,

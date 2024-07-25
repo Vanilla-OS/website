@@ -6,7 +6,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-    name: "testing-components",
+    name: "dynamic-panel-orchid-release",
     data() {
         return {
             cards: [
