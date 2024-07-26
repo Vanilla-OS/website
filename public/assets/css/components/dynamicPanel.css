@@ -46,7 +46,6 @@
 .DynamicPanel-card.DynamicPanel-card--active {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    z-index: 1;
     animation: grow 0.3s ease-in-out;
 }
 
