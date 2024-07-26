@@ -161,4 +161,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    .Bento-card .Bento-card-content {
+        margin: 0 auto !important;
+    }
 }
