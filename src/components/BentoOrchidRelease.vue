@@ -6,7 +6,7 @@
                 <template #title>Compatible, with <u style="color: #FFFB64">Everything</u></template>
             </bento-card>
             <bento-card class="Bento-card Bento-card--5" background="/assets/images/bento/bento-1/top-right.svg"
-                image="/assets/images/3rd-party/logo-android.svg" imageSize="140px" margin="30px 100px 0 0"
+                image="/assets/images/3rd-party/logo-android.svg" imageSize="140px" margin="0 100px 0px 0px"
                 bgcolor="#F2FFF8" badge="Experimental">
                 <template #content>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
                     hendrerit urna. Pellentesque sit amet sapien.</template>

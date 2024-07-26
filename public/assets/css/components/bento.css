@@ -60,8 +60,9 @@
 }
 
 .Bento-card p {
-    font-size: 24px;
-    line-height: 1.4;
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
 }
 
 .Bento-card img {
@@ -72,9 +73,10 @@
     background-color: #1e1e1e;
     display: block;
     color: #fff;
-    padding: 8px 15px;
+    padding: 0 15px;
     border-radius: 20px;
     margin: 10px 0 0 0;
+    font-size: 16px;
 }
 
 .Bento-card-title {
