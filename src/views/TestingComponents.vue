@@ -1,5 +1,27 @@
 <template>
     <dynamic-panel :cards="cards" />
+    <bento>
+        <template #content>
+            <bento-card class="Bento-card Bento-card--2" background="/assets/images/bento/bento-1/top-left.svg"
+                theme="light" margin="140px 0px 0px" bgcolor="#FFFB64">
+                <template #title>Compatible, with <u style="color: #FFFB64">Everything</u></template>
+            </bento-card>
+            <bento-card class="Bento-card Bento-card--5" background="/assets/images/bento/bento-1/top-right.svg"
+                image="/assets/images/3rd-party/logo-android.svg" imageSize="140px" margin="30px 100px 0 0"
+                bgcolor="#F2FFF8" badge="Experimental">
+                <template #content>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
+                    hendrerit urna. Pellentesque sit amet sapien.</template>
+            </bento-card>
+            <bento-card class="Bento-card Bento-card--3" background="/assets/images/bento/bento-1/bottom-left.svg"
+                bgcolor="#FEEED1" image="/assets/images/3rd-party/logo-linux.svg" imageSize="40px"
+                imageLocation="right">
+                <template #title>Linux</template>
+                <template #content>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
+                    hendrerit urna. Pellentesque sit amet sapien.</template>
+            </bento-card>
+            <bento-card-carousel class="Bento-card Bento-card--4" :pages="pages" />
+        </template>
+    </bento>
 </template>
 
 <script lang="ts">
@@ -24,6 +46,50 @@ export default defineComponent({
                     title: 'Cool',
                     content: 'Experience a fresh, modern interface that’s as visually appealing as functional. Quickly access your favorite apps and tools with a streamlined design that makes navigation truly intuitive. Enjoy smooth transitions, stunning visuals and an overall user experience that feels effortless and enjoyable.',
                     color: 'pink'
+                }
+            ],
+            pages: [
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-spotify.svg',
+                    image: '/assets/images/bento/bento-1/apps/spotify.png',
+                    bgcolor: '#1ED760'
+                },
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-steam.svg',
+                    image: '/assets/images/bento/bento-1/apps/steam.png',
+                    bgcolor: '#171D25'
+                },
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-davinci.svg',
+                    image: '/assets/images/bento/bento-1/apps/davinci.png',
+                    bgcolor: '#F60A41'
+                },
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-firefox.svg',
+                    image: '/assets/images/bento/bento-1/apps/firefox.png',
+                    bgcolor: '#2B1141'
+                },
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-vscode.svg',
+                    image: '/assets/images/bento/bento-1/apps/vscode.png',
+                    bgcolor: '#0065A9'
+                },
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-zoom.svg',
+                    image: '/assets/images/bento/bento-1/apps/zoom.png',
+                    bgcolor: '#0B5CFF'
+                },
+                {
+                    title: 'The Apps You Already Know',
+                    logo: '/assets/images/3rd-party/logo-telegram.svg',
+                    image: '/assets/images/bento/bento-1/apps/telegram.png',
+                    bgcolor: '#146F9B'
                 }
             ]
         };
