@@ -17,10 +17,12 @@ import NotMailNotChimp from "./NotMailNotChimp.vue";
 import Timeline from "./Timeline.vue";
 import FloatNotice from "./FloatNotice.vue";
 import DynamicPanel from "./DynamicPanel.vue";
-import DynamicPanelOrchidRelease from "./DynamicPanelOrchidRelease.vue";
 import Bento from "./Bento.vue";
 import BentoCard from "./BentoCard.vue";
 import BentoCardCarousel from "./BentoCardCarousel.vue";
+
+import DynamicPanelOrchidRelease from "./DynamicPanelOrchidRelease.vue";
+import BentoOrchidRelease from "./BentoOrchidRelease.vue";
 
 export default {
   install(app: App) {
@@ -44,10 +46,12 @@ export default {
     app.component("timeline", Timeline);
     app.component("float-notice", FloatNotice);
     app.component("dynamic-panel", DynamicPanel);
-    app.component("dynamic-panel-orchid-release", DynamicPanelOrchidRelease);
     app.component("bento", Bento);
     app.component("bento-card", BentoCard);
     app.component("bento-card-carousel", BentoCardCarousel);
+
+    app.component("dynamic-panel-orchid-release", DynamicPanelOrchidRelease);
+    app.component("bento-orchid-release", BentoOrchidRelease);
 
     console.debug("Components loaded");
   },
