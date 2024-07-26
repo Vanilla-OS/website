@@ -131,6 +131,7 @@
 
 .Bento-card-carousel .Bento-card-carousel-page-image {
     width: 100%;
+    margin: 0;
 }
 
 .Bento-card-carousel-page {
@@ -138,7 +139,7 @@
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
-    padding: 34px 40px 0 40px;
+    padding: 14px 40px 0 40px;
     flex: 1;
 }
 
