@@ -121,8 +121,9 @@
 }
 
 .Bento-card-carousel-page-title img {
-    height: 32px;
-    width: initial;
+    height: 32px !important;
+    width: initial !important;
+    margin: 0 !important;
 }
 
 .Bento-card-carousel-page-title h2 {
@@ -139,7 +140,7 @@
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
-    padding: 14px 40px 0 40px;
+    padding: 34px 40px 0 40px;
     flex: 1;
 }
 
