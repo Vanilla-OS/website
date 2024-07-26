@@ -150,3 +150,10 @@
 .DynamicPanel-card {
     transition: transform 0.3s ease, grid-column 0.3s ease, grid-row 0.3s ease;
 }
+
+@media screen and (max-width: 745px) {
+    .DynamicPanel {
+        display: flex;
+        flex-direction: column;
+    }
+}
