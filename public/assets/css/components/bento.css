@@ -67,6 +67,7 @@
 
 .Bento-card img {
     width: 140px;
+    margin: 0;
 }
 
 .Bento-card-badge {
@@ -158,6 +159,10 @@
 .Bento-card-carousel-pages {
     height: 100%;
     display: flex;
+}
+
+.Bento-card-title.Bento-card-title--hz img {
+    margin: 0;
 }
 
 @media screen and (max-width: 745px) {
