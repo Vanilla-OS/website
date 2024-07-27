@@ -1,0 +1,50 @@
+.BeforeAfterSlider-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    user-select: none;
+    margin: 10px 0;
+}
+
+.BeforeAfterSlider-slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.BeforeAfterSlider-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto !important;
+}
+
+.BeforeAfterSlider-image--after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: 0 auto !important;
+}
+
+.BeforeAfterSlider-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: ew-resize;
+}
+
+.BeforeAfterSlider-handle-pill {
+    padding: 8px;
+    background-color: #fff;
+    height: 30px;
+    margin: 0 0 0 -4px;
+    border-radius: 40px;
+    top: calc(50% - 38px);
+    position: relative;
+}

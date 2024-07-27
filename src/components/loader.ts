@@ -20,6 +20,7 @@ import DynamicPanel from "./DynamicPanel.vue";
 import Bento from "./Bento.vue";
 import BentoCard from "./BentoCard.vue";
 import BentoCardCarousel from "./BentoCardCarousel.vue";
+import BeforeAfterSlider from "./BeforeAfterSlider.vue";
 
 import DynamicPanelOrchidRelease from "./DynamicPanelOrchidRelease.vue";
 import BentoOrchidRelease from "./BentoOrchidRelease.vue";
@@ -49,6 +50,7 @@ export default {
     app.component("bento", Bento);
     app.component("bento-card", BentoCard);
     app.component("bento-card-carousel", BentoCardCarousel);
+    app.component("before-after-slider", BeforeAfterSlider);
 
     app.component("dynamic-panel-orchid-release", DynamicPanelOrchidRelease);
     app.component("bento-orchid-release", BentoOrchidRelease);
