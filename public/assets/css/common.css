@@ -68,3 +68,8 @@ textarea {
 .clickable {
     cursor: pointer;
 }
+
+.mdi {
+    user-select: none;
+    cursor: default;
+}
