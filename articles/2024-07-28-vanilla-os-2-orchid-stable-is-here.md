@@ -114,7 +114,7 @@ This fresh design captures the spirit of innovation and reliability that define 
 ## And a New Wallpaper
 
 What is a new release without an exciting new wallpaper? And ours is truly stunning. Designed by our community member [hrstwn](https://github.com/hrstwn), this vibrant and dynamic wallpaper captures the essence of Orchid.
-What is a new release without an exciting new wallpaper? Ours is truly stunning. Designed by our community member hrstwn, this vibrant and dynamic wallpaper captures the essence of Orchid.
+
 <before-after-slider beforeImage="/uploads/petals_light.webp" afterImage="/uploads/petals_dark.webp" />
 
 The new wallpaper is reminiscent of the previous version, but like our brand, it is no longer flat. It has its own dimension and depth. This reflects the evolution of the project itself, moving towards a more sophisticated and refined experience.
