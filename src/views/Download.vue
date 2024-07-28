@@ -68,11 +68,6 @@
                             <span class="mdi material-icons-outlined">open_in_new</span>
                         </a>
                         <div class="spacer"></div>
-                        <a href="https://github.com/Vanilla-OS/os/releases/latest" target="_blank"
-                            class="btn btn--primary">
-                            <span class="mdi material-icons">save_alt</span>
-                            <span>Download</span>
-                        </a>
                     </div>
                     <div class="card-image card-image--right">
                         <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame.svg"
