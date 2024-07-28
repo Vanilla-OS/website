@@ -47,7 +47,8 @@
                     <li><router-link :to="{ name: 'developers-program' }">Join the Developers Program</router-link></li>
                     <li><a href="https://github.com/vanilla-os" target="_blank">Source Code</a></li>
                     <li><a href="https://github.com/vanilla-os" target="_blank">Report a Bug</a></li>
-                    <li><router-link :to="{ name: 'technologies-and-credits' }">Technologies and Credits</router-link></li>
+                    <li><router-link :to="{ name: 'technologies-and-credits' }">Technologies and Credits</router-link>
+                    </li>
                     <li><router-link :to="{ name: 'roadmap' }">Roadmap</router-link></li>
                     <li><router-link :to="{ name: 'components-lifecycle' }">Components Lifecycle</router-link></li>
                     <li><router-link :to="{ name: 'nerd-info' }">Information for Nerds</router-link></li>
@@ -63,7 +64,7 @@
 
     <float-notice v-if="showFloatNotice" />
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from "vue";
 
@@ -71,7 +72,7 @@ export default defineComponent({
     name: 'SiteFooter',
     computed: {
         showFloatNotice() {
-            return this.$route.name !== 'article' && this.$route.name !== 'download-orchid-beta';
+            return this.$route.name !== 'article' && this.$route.name !== 'download-orchid-stable';
         }
     }
 });

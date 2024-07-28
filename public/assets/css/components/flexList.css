@@ -4,3 +4,7 @@
     align-items: flex-start;
     gap: 20px;
 }
+
+.flexList--center {
+    align-items: center;
+}

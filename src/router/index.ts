@@ -61,6 +61,18 @@ export default function createRouterInstance(clientType: string) {
               freePageLayout: true,
             },
           },
+          {
+            path: "/download/orchid/stable",
+            name: "download-orchid-stable",
+            component: () =>// @ts-ignore
+              import(/* webpackChunkName: "Download" */ "@/views/download/DownloadOrchidStable.vue"),
+            meta: {
+              title: "Vanilla OS 2 Orchid Stable",
+              description: "Try the latest development version of Vanilla OS.",
+              parent: "download",
+              freePageLayout: true,
+            },
+          },
         ]
       },
       {

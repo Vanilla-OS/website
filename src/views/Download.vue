@@ -2,25 +2,27 @@
     <div class="flexGrid anim--fadeIn">
         <div class="card flexGrid-item flexGrid-item--3">
             <div class="card-header">
-                <h2>Vanilla OS 2 Orchid Beta</h2>
+                <h2>Vanilla OS 2 Orchid</h2>
             </div>
             <div class="card-content">
                 <div class="splitter">
                     <div class="splitter-item flexList">
                         <div class="text text--rich">
-                            <p>Be ready for the next version of Vanilla OS. You will find greater stability, a secure
-                                system, a simplified method for installing applications, and new solutions for developers.
+                            <p>Vanilla OS 2 Orchid is the next generation of Vanilla OS. It is built on top of new
+                                technologies and features to provide you with the most secure, stable and stunning
+                                system
+                                experience.
                             </p>
                         </div>
-                        <router-link class="btn btn--link btn--link-2 btn--inline" :to="{ name: 'roadmap' }">
-                            <span>Roadmap</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
-                        </router-link>
                         <router-link
-                            :to="{ name: 'article', params: { date: '2024-01-30', slug: 'vanilla-os-2-orchid-beta-is-here' } }"
+                            :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid-stable-is-here' } }"
                             class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
                             <span class=" mdi material-icons-outlined">open_in_new</span>
+                        </router-link>
+                        <router-link class="btn btn--link btn--link-2 btn--inline" :to="{ name: 'roadmap' }">
+                            <span>Roadmap</span>
+                            <span class="mdi material-icons-outlined">open_in_new</span>
                         </router-link>
                         <!-- <a href="#" class="btn btn--link btn--link-2 btn--inline btn--block" disabled="true">
                             <span>Full Changelog</span>
@@ -31,9 +33,9 @@
                             <span class="mdi material-icons-outlined">save_alt</span>
                             <span>Download Now</span>
                         </a> -->
-                        <router-link to="/download/orchid/beta" class="btn btn--primary">
+                        <router-link to="/download/orchid/stable" class="btn btn--primary">
                             <span class="mdi material-icons-outlined">save_alt</span>
-                            <span>Download the Beta</span>
+                            <span>Download Now</span>
                         </router-link>
                     </div>
                     <div class="splitter-item card-image">
@@ -53,7 +55,8 @@
                 <div class="splitter">
                     <div class="flexList">
                         <div class="text text--rich">
-                            <p>Vanilla OS 22.10 Kinetic is the current stable version of Vanilla OS. It is recommended for
+                            <p>Vanilla OS 22.10 Kinetic is the current stable version of Vanilla OS. It is recommended
+                                for
                                 all
                                 users. It provides a stable and secure system for your daily use.</p>
                         </div>
@@ -68,14 +71,15 @@
                             <span class="mdi material-icons-outlined">open_in_new</span>
                         </a>
                         <div class="spacer"></div>
-                        <a href="https://github.com/Vanilla-OS/os/releases/latest" target="_blank" class="btn btn--primary">
+                        <a href="https://github.com/Vanilla-OS/os/releases/latest" target="_blank"
+                            class="btn btn--primary">
                             <span class="mdi material-icons">save_alt</span>
                             <span>Download Now</span>
                         </a>
                     </div>
                     <div class="card-image card-image--right">
-                        <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame.svg" alt="Vanilla OS 22.10 Kinetic"
-                            class="no-dark">
+                        <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame.svg"
+                            alt="Vanilla OS 22.10 Kinetic" class="no-dark">
                         <img src="/assets/images/backgrounds/vos-kinetic-laptop-frame-dark.svg"
                             alt="Vanilla OS 22.10 Kinetic" class="on-dark">
                     </div>
@@ -91,7 +95,8 @@
                 <div class="flexList">
                     <div class="text text--rich">
                         <p>Interested in the future versions of Vanilla OS?</p>
-                        <p>Join the developer program to get access to experimental builds of Vanilla OS. You will also have
+                        <p>Join the developer program to get access to experimental builds of Vanilla OS. You will also
+                            have
                             access to a direct channel with the developers.</p>
                     </div>
                     <router-link to="developers-program" class="btn btn--primary">
@@ -103,7 +108,7 @@
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, ref } from 'vue';
 
