@@ -2,7 +2,7 @@
 title: "Vanilla OS 2 Orchid - Stable Release"
 description: "Vanilla OS 2 Orchid is now available for download. Discover the next generation of Vanilla OS."
 published: true
-date: 2024-07-11
+date: 2024-07-28
 keywords:
   - Vanilla OS
   - Vanilla OS Orchid
@@ -27,7 +27,7 @@ Our goals remain the same, but they are now more ambitious: **simplicity**, **cl
 
 To achieve these ambitious goals, we meticulously collected your feedback from the previous version and engaged in thorough discussions, fueled by countless cups of coffee, maybe a few too many ☕️.
 
-## Build to be...
+## Built for Everyone
 
 Vanilla OS 2 (Orchid) is not just your new Operating System, it’s much more. We designed it with three fundamental concepts in mind:
 
