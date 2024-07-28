@@ -39,7 +39,7 @@ But especially, Vanilla OS 2 Orchid is built to be **your** reliable partner in 
 
 Orchid ensures your system is always up-to-date without interrupting your workflow. With smart updates that  check only when your device is idle, you get the latest features and security enhancements seamlessly. Set the update frequency that works best for you, and let Vanilla OS handle the rest quietly in the background.
 
-![System Updates Window](/uploads/orchid-systems-updates.png)
+![System Updates Window](/uploads/orchid-system-updates.png)
 
 Are you watching that movie you love so much? Engaged in a furious race on your favorite racing game? Or maybe you’re live streaming? No problem, Orchid won’t push any updates and will let you use all the resources you need!  Enjoy a secure, efficient, and worry-free experience, knowing your system is always performing as its best!
 
@@ -113,7 +113,7 @@ This fresh design captures the spirit of innovation and reliability that define 
 
 ## ..and a New Wallpaper
 
-What is a new release without an exciting new wallpaper? And ours is truly stunning. Designed by our community member hrstwn, this vibrant and dynamic wallpaper captures the essence of Orchid.
+What is a new release without an exciting new wallpaper? And ours is truly stunning. Designed by our community member [hrstwn](https://github.com/hrstwn), this vibrant and dynamic wallpaper captures the essence of Orchid.
 
 <before-after-slider beforeImage="/uploads/petals_light.webp" afterImage="/uploads/petals_dark.webp" />
 
