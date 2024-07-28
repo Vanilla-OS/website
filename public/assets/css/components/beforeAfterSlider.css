@@ -23,7 +23,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     margin: 0 auto !important;
 }
 
@@ -35,7 +35,7 @@
     background: white;
     border: 1px solid #ccc;
     border-radius: 3px;
-    z-index: 3;
+    z-index: 1;
     cursor: ew-resize;
 }
 
