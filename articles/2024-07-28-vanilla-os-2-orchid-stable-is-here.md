@@ -47,7 +47,7 @@ Are you watching that movie you love so much? Engaged in a furious race on your 
 
 ## One or More Graphics Cards?
 
-Orchid takes full advantage of your device, whether you have one or multiple graphic cards, with its PRIME Utility, you can seamlessly switch between integrated and discrete GPUs based on your needs, allowing you to optimize performance and power usage, making it perfect for both casual users and those who require higher graphical performance for tasks like gaming or video editing.
+Orchid takes full advantage of your device, whether you have one or multiple graphic cards. With its PRIME Utility, you can seamlessly switch between integrated and discrete GPUs based on your needs, allowing you to optimize performance and power usage, and making it perfect for both casual users and those who require higher graphical performance for tasks like gaming or video editing.
 
 ![PRIME Utility](/uploads/orchid-prime-utility.png)
 
@@ -65,11 +65,11 @@ Thanks to the vast and well-maintained catalogue from Flathub, you can easily fi
 
 Orchid takes your data security seriously, this is why we suggest encrypting your personal data by default, ensuring it stays private and protected from unauthorized access.
 
-We’ve also introduced PolKit policies, which provide more granular control over administrative privileges. This means that administrative operations are handled securely and user-friendly, giving you the right level of access when you need it without compromising the overall security of the system. This way, no tool can execute arbitrary code without your consent, as all instructions are displayed on the screen and require your intervention.
+We’ve also introduced PolKit policies, which provide more granular control over administrative privileges. This means that administrative operations are handled in a secure and user-friendly way, giving you the right level of access when you need it without compromising the overall security of the system. This way, no tool can execute arbitrary code without your consent, as all instructions are displayed on the screen and require your intervention.
 
 ![PolKit Policies](/uploads/orchid-polkit.svg)
 
-Now each user operates in an isolated environment, in fact when you open the terminal, you find yourself in a secure, customizable space similar to a traditional operating system. This setup allows you to install applications, personalize your settings, and make changes via the command line, all within a safe and contained environment. Something went wrong? Reset the console with `Alt + F2` and then `reset-vso` at any time without losing your personal data.
+Now each user operates in an isolated environment. In fact, when you open the terminal, you find yourself in a secure, customizable space that works similar to a traditional operating system. This setup allows you to install applications, personalize your settings, and make changes via the command line, all within a safe and contained environment. Something went wrong? Reset the console with `Alt + F2` and then `reset-vso` at any time without losing your personal data.
 
 ![Integity Check](/uploads/orchid-integrity-check.png)
 
@@ -93,11 +93,11 @@ When a new update happens, the problematic state will be replaced with the new v
 
 ![Rollback Utility](/uploads/orchid-rollback.png)
 
-Why might you need to perform a rollback? Well, even though Orchid is designed to be stable and compatible, and its update system ensures the updates are only installed if they pass, and despite every update being meticulously tested by our developers, something can still go wrong. Having a recovery point is essential. For example, you might be using hardware that is not compatible with the update, and this is a scenario we cannot fully cover (yet).
+Why would you need to perform a rollback? Even though Orchid is designed to be stable and compatible, and its update system ensures the updates are only installed if they pass, and despite every update being meticulously tested by our developers, something can still go wrong. Having a recovery point is essential. For example, you might be using hardware that is not compatible with the update, which is a scenario we cannot fully cover (yet).
 
 ## Develop, Like Never Before
 
-APX is one of the most iconic features of Vanilla OS, and in Orchid, it takes on an entirely new role, catering to the needs of developers and creators. With APX v2, you can create customized Linux environments that are seamlessly integrated with the system, just choose your preferred Linux distribution and configure everything to meet your specific requirements.
+APX is one of the most iconic features of Vanilla OS, and in Orchid, it takes on an entirely new role, catering to the needs of developers and creators. With APX v2, you can create customized Linux environments that are seamlessly integrated with the system, Just choose your preferred Linux distribution and configure everything to meet your specific requirements.
 
 ![Apx v2 GUI](/uploads/apx-v2-gui.png)
 
@@ -114,10 +114,10 @@ This fresh design captures the spirit of innovation and reliability that define 
 ## And a New Wallpaper
 
 What is a new release without an exciting new wallpaper? And ours is truly stunning. Designed by our community member [hrstwn](https://github.com/hrstwn), this vibrant and dynamic wallpaper captures the essence of Orchid.
-
+What is a new release without an exciting new wallpaper? Ours is truly stunning. Designed by our community member hrstwn, this vibrant and dynamic wallpaper captures the essence of Orchid.
 <before-after-slider beforeImage="/uploads/petals_light.webp" afterImage="/uploads/petals_dark.webp" />
 
-The new wallpaper is reminiscent of the previous version, but like our brand, it is no longer flat, it has its own dimension and depth. This reflects the evolution of the project itself, moving towards a more sophisticated and refined experience.
+The new wallpaper is reminiscent of the previous version, but like our brand, it is no longer flat. It has its own dimension and depth. This reflects the evolution of the project itself, moving towards a more sophisticated and refined experience.
 
 We are thrilled with the outcome and believe this wallpaper will greatly enhance the visual experience for all users.
 
