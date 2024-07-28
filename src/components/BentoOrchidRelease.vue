@@ -8,8 +8,8 @@
             <bento-card class="Bento-card Bento-card--5" background="/assets/images/bento/bento-1/top-right.svg"
                 image="/assets/images/3rd-party/logo-android.svg" imageSize="140px" margin="0 100px 0px 0px"
                 bgcolor="#F2FFF8" badge="Experimental">
-                <template #content>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
-                    hendrerit urna. Pellentesque sit amet sapien.</template>
+                <template #content>Vanilla OS 2 Orchid comes with support for Android via Waydroid in VSO, enabling
+                    seamless integration and use of Android apps on your system with ease.</template>
             </bento-card>
             <bento-card class="Bento-card Bento-card--3" background="/assets/images/bento/bento-1/bottom-left.svg"
                 bgcolor="#FEEED1" image="/assets/images/3rd-party/logo-linux.svg" imageSize="40px"
