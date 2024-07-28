@@ -42,7 +42,7 @@ if (!isProduction) {
 // Rate limit configuration
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 minute
-  max: 100, // 100 requests per minute
+  max: 150, // 150 requests per minute
 });
 
 app.use("*", limiter, async (req, res) => {
