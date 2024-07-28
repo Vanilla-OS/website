@@ -133,6 +133,14 @@ Since Vib is a pre-compiler of Dockerfile(s), you can also use it in your develo
 
 ## Automate Everything
 
+Orchid brings customization to the next level with its  Vanilla Image Builder (Vib). This tool allows advanced users to tailor their Vanilla OS experience precisely to their needs. With Vib you can craft a custom version of Vanilla OS by writing your own configuration and modifications, using a simple YAML configuration file, you have the power to define every aspect of your OS, from the ground up, making it as unique as you are.
+
+Vib utilizes a modular system, providing unparalleled flexibility and ease of use, this system lets you add, remove or adjust specific components within your OS effortlessly. You can integrate additional drivers, codecs, libraries, apply custom configurations, or set up specific startup routines.
+
+Since Vib is a pre-compiler of Dockerfile(s), you can also use it in your development stack to create images for your Docker applications, for example. Read more about Vib.
+
+## Release Cycle
+
 Orchid sources its snapshotted packages from the Debian Sid repository, ensuring that packages are always fresh and up-to-date. These packages are used to create an OCI image, which our team meticulously tests to ensure there are no issues. Once an image is approved, it is deployed to your desktop (which uses the stable tag). This process ensures you always receive the latest software while maintaining the stability and reliability of your system.
 
 The Vanilla OS team has also established a project called 'Vision' for testing new and experimental features with both our team and the community. If a feature is deemed beneficial and functions as expected, it is then integrated into the Orchid development tag. After accumulating enough new features, we roll them out to our stable users by porting them from the development tag.
