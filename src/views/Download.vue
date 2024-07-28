@@ -15,7 +15,7 @@
                             </p>
                         </div>
                         <router-link
-                            :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid-stable-is-here' } }"
+                            :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid---stable-release' } }"
                             class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
                             <span class=" mdi material-icons-outlined">open_in_new</span>
