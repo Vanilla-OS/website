@@ -49,16 +49,13 @@
         </div>
         <div class="card download flexGrid-item article--big flexGrid-item--2">
             <div class="card-header">
-                <h2>Vanilla OS 22.10 Kinetic</h2>
+                <h2>Vanilla OS 22.10 Kinetic (Deprecated)</h2>
             </div>
             <div class="card-content">
                 <div class="splitter">
                     <div class="flexList">
                         <div class="text text--rich">
-                            <p>Vanilla OS 22.10 Kinetic is the current stable version of Vanilla OS. It is recommended
-                                for
-                                all
-                                users. It provides a stable and secure system for your daily use.</p>
+                            <p>Vanilla OS 22.10 Kinetic is the old version of Vanilla OS. It has been deprecated and may have security issues. It is not recommended for use, and is only present for archiving purposes.</p>
                         </div>
                         <router-link class="btn btn--link btn--link-2 btn--inline"
                             :to="{ name: 'article', params: { date: '2022-12-29', slug: 'vanilla-os-2210-kinetic-is-out' } }">
@@ -74,7 +71,7 @@
                         <a href="https://github.com/Vanilla-OS/os/releases/latest" target="_blank"
                             class="btn btn--primary">
                             <span class="mdi material-icons">save_alt</span>
-                            <span>Download Now</span>
+                            <span>Download</span>
                         </a>
                     </div>
                     <div class="card-image card-image--right">
