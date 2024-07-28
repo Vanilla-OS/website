@@ -1,5 +1,5 @@
 <template>
-    <div class="page page--article">
+    <div class="page page--article" @click="handleClick">
         <div class="page-wrapper container">
             <div class="page-header">
                 <div class="page-nav" v-if="parentRoute?.name">
@@ -146,7 +146,7 @@ export default defineComponent({
             this.currentImageIndex = index;
         },
         extractArticleImages(content: string) {
-            const imgRegex = /<img[^>]+src="([^">]+)/g;
+            const imgRegex = /<img(?![^>]*class="[^"]*Bento-card-carousel-page-image[^"]*")[^>]+src="([^">]+)/g;
             const matches = [];
             let match;
             while ((match = imgRegex.exec(content))) {
@@ -156,7 +156,9 @@ export default defineComponent({
         },
         handleClick(event: MouseEvent) {
             const target = event.target as HTMLElement;
-            if (target.tagName === 'IMG') {
+            const image = target.closest('img');
+            
+            if (image) {
                 const src = target.getAttribute('src');
                 if (src) {
                     const index = this.articleImages.indexOf(src);
