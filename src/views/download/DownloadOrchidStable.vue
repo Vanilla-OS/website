@@ -22,7 +22,7 @@
                         features to provide you with the most secure, stable and stunning system experience.</p>
                 </center>
             </div>
-            <a href="https://download.vanillaos.org/orchid/latest.zip" class="btn btn--primary btn--big">
+            <a href="https://download.vanillaos.org/latest.zip" class="btn btn--primary btn--big">
                 <span class="mdi material-icons-outlined">file_download</span>
                 <span>Download Now</span>
             </a>
