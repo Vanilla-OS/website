@@ -2,7 +2,7 @@
     <bento>
         <template #content>
             <bento-card class="Bento-card Bento-card--2" background="/assets/images/bento/bento-1/top-left.svg"
-                theme="light" margin="140px 0px 0px" bgcolor="#FFFB64">
+                theme="light" margin="140px 0px 0px !important" bgcolor="#FFFB64">
                 <template #title>Compatible, with <u style="color: #FFFB64">Everything</u></template>
             </bento-card>
             <bento-card class="Bento-card Bento-card--5" background="/assets/images/bento/bento-1/top-right.svg"
