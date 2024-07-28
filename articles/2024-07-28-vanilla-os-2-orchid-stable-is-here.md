@@ -139,6 +139,10 @@ The Vanilla OS team has also established a project called 'Vision' for testing n
 
 This approach gives Orchid a unique blend of both rolling and point releases, keeping your system consistently updated and fresh while providing designated points for major upgrades with exciting new features.
 
+## Get Orchid
+
+Orchid is available for download from our [website](https://vanillaos.org/download/orchid/stable). For more information on how to install Orchid, please refer to our [documentation](https://docs.vanillaos.org/)
+
 
 ## Full Changelog
 
