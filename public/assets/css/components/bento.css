@@ -17,6 +17,7 @@
     min-height: 240px;
     position: relative;
     overflow: hidden;
+    color: #191919 !important;
 }
 
 .Bento-card--1 {
@@ -49,8 +50,9 @@
     align-items: flex-start;
 }
 
-.Bento-card--light {
-    color: #fff;
+.Bento-card--light,
+.Bento-card--light p {
+    color: #ffffff !important;
 }
 
 .Bento-card h2 {
@@ -63,6 +65,7 @@
     font-size: 24px !important;
     line-height: 1.4 !important;
     margin: 0 !important;
+    color: #191919 !important;
 }
 
 .Bento-card img {
