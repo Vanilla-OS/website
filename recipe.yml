@@ -6,7 +6,7 @@ stages:
     singlelayer: false
     labels:
       maintainer: Vanilla OS Contributors
-    cmd: ["sh", "-c", "cd /app && npm run start"]
+    cmd: ["sh", "-c", "cd /app && npm run generate-articles && npm run start"]
     expose:
       "6080": ""
     modules:
