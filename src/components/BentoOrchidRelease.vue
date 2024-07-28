@@ -15,8 +15,8 @@
                 bgcolor="#FEEED1" image="/assets/images/3rd-party/logo-linux.svg" imageSize="40px"
                 imageLocation="right">
                 <template #title>Linux</template>
-                <template #content>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
-                    hendrerit urna. Pellentesque sit amet sapien.</template>
+                <template #content>Thanks to the APX utility you can install applications from every Linux distribution
+                    out there, whether they are CLI or GUI applications.</template>
             </bento-card>
             <bento-card-carousel class="Bento-card Bento-card--4" :pages="pages" />
         </template>
