@@ -71,7 +71,7 @@ We’ve also introduced PolKit policies, which provide more granular control ove
 
 Now each user operates in an isolated environment, in fact when you open the terminal, you find yourself in a secure, customizable space similar to a traditional operating system. This setup allows you to install applications, personalize your settings, and make changes via the command line, all within a safe and contained environment. Something went wrong? Reset the console with `Alt + F2` and then `reset-vso` at any time without losing your personal data.
 
-![Integity Check](/uploads/orchid-integrity-check.svg)
+![Integity Check](/uploads/orchid-integrity-check.png)
 
 The core system is verified for integrity at every boot, ensuring it has not been tampered with and preserving its functionality. If something goes wrong, Orchid will notify you of the issue, advising against proceeding with the device boot and inviting to revert to the previous state.
 
