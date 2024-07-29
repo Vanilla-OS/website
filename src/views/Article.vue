@@ -22,8 +22,12 @@
                     <h2>Subscribe to the Newsletter</h2>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="mdi material-icons">email</span>
-                        <span>Subscribe Now</span>
+                        <span>Subscribe via Email</span>
                     </div>
+                    <a class="btn btn--primary" href="https://vanillaos.org/feed.xml">
+                        <span class="mdi material-icons">newspaper</span>
+                        <span>Subscribe via the RSS Feed</span>
+                    </a>
                 </div>
                 <div class="card-content">
                     <div class="flexList">
@@ -157,7 +161,7 @@ export default defineComponent({
         handleClick(event: MouseEvent) {
             const target = event.target as HTMLElement;
             const image = target.closest('img');
-            
+
             if (image) {
                 const src = target.getAttribute('src');
                 if (src) {

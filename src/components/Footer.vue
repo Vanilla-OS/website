@@ -35,6 +35,7 @@
                     <li><router-link :to="{ name: 'community' }">Community</router-link></li>
                     <li><router-link :to="{ name: 'get-involved' }">Get Involved</router-link></li>
                     <li><router-link :to="{ name: 'code-of-conduct' }">Code of Conduct</router-link></li>
+                    <li><a href="/feed.xml">RSS/Atom Feed</a></li>
                     <li class="spacer"></li>
                     <li><b>Support</b></li>
                     <li><a href="//documentation.vanillaos.org/">Documentation</a></li>
