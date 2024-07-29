@@ -39,8 +39,12 @@
                     </div>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="mdi material-icons">email</span>
-                        <span>Subscribe Now</span>
+                        <span>Subscribe via Email</span>
                     </div>
+                    <a class="btn btn--primary" href="https://vanillaos.org/feed.xml">
+                        <span class="mdi material-icons">newspaper</span>
+                        <span>Subscribe via the RSS Feed</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -69,7 +73,7 @@
         <notmail-not-chimp :is-open="isNotMailNotChimpOpen" @close="closeNotMailNotChimp" />
     </div>
 </template>
-  
+
 <script lang="ts">
 import { loadArticles } from '@/articlesLoader';
 import type { Article } from '@/articlesLoader';

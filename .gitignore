@@ -19,6 +19,7 @@ coverage
 
 /public/articles/
 /public/articles.json
+/public/feed.xml
 
 # Editor directories and files
 .vscode/*
