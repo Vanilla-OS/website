@@ -203,3 +203,10 @@ function generateAtomFeed(articles, marked) {
 
   return new XMLSerializer().serializeToString(doc);
 }
+
+const atomFeed = generateAtomFeed(articles, marked);
+const atomFilePath = path.join(__dirname, "../public/feed.xml");
+
+fs.writeFileSync(atomFilePath, atomFeed);
+
+console.log("Atom feed generated.");
