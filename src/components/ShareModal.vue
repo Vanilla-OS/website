@@ -104,6 +104,14 @@ export default defineComponent({
         closeModal() {
             this.$emit('close');
         },
+        handleKeyboardEvent(event: KeyboardEvent) {
+            if (event.key === "Escape") {
+                this.closeModal();
+            }
+        },
     },
+    mounted() {
+      window.addEventListener("keydown", this.handleKeyboardEvent);
+    }
 });
 </script>
