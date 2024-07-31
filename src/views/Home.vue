@@ -11,7 +11,7 @@
         </header>
         <div class="hero-footer">
           <div class="flexList">
-            <router-link :to="{ name: 'download' }" class="btn btn--primary btn--big">
+            <router-link :to="{ name: 'download-orchid-stable' }" class="btn btn--primary btn--big">
               <span class="mdi material-icons-outlined">file_download</span>
               <span>Download Now</span>
             </router-link>
