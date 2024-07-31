@@ -296,6 +296,16 @@ export default function createRouterInstance(clientType: string) {
             },
           },
           {
+            path: "/updates",
+            name: "updates",
+            component: () =>// @ts-ignore
+              import(/* webpackChunkName: "Updates" */ "@/views/Updates.vue"),
+            meta: {
+              title: "Updates",
+              description: "Check out the latest updates of Vanilla OS.",
+            },
+          },
+          {
             path: "/download",
             name: "download",
             component: () =>// @ts-ignore
