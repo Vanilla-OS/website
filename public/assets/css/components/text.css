@@ -139,3 +139,16 @@
 .text small {
     font-size: 16px;
 }
+
+.text--rich.text--sm p,
+.text--rich.text--sm li {
+    font-size: 19px;
+}
+
+.text--rich.text--sm blockquote p {
+    font-size: 20px;
+}
+
+.text--rich.text--sm p {
+    margin: 0 0 5px 0;
+}

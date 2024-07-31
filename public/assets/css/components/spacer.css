@@ -1,3 +1,11 @@
 .spacer {
     height: 5px;
 }
+
+.spacer.spacer--md {
+    height: 15px;
+}
+
+.spacer.spacer--lg {
+    height: 30px;
+}
