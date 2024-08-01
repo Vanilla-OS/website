@@ -254,7 +254,7 @@
     font-size: 38px;
 }
 
-.card.card--type-adv.card--type-adv--hz .card-header .btn {
+.card.card--type-adv.card--type-adv--hz .card-header .btn:first-child {
     margin-top: 30px;
 }
 
