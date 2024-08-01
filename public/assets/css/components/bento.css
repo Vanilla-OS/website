@@ -130,10 +130,14 @@
     height: 32px !important;
     width: initial !important;
     margin: 0 !important;
+    position: absolute;
+    right: 35px;
+    top: 30px;
 }
 
 .Bento-card-carousel-page-title h2 {
     margin: 0;
+    max-width: 85%;
 }
 
 .Bento-card-carousel .Bento-card-carousel-page-image {
