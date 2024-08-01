@@ -48,6 +48,7 @@
             <nav>
                 <ul class="topBar-navigation" :class="{ active: isMenuToggled }">
                     <li><router-link :to="{ name: 'blog' }">Blog</router-link></li>
+                    <li><router-link :to="{ name: 'updates' }">Updates</router-link></li>
                     <li><router-link :to="{ name: 'help' }">Help</router-link></li>
                     <li><router-link :to="{ name: 'get-involved' }">Get Involved</router-link></li>
                     <li><router-link :to="{ name: 'download' }">Download</router-link></li>
