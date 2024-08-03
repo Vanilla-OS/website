@@ -2,11 +2,11 @@ name: Website
 id: website
 stages:
   - id: build
-    base: node:lts
+    base: node:lts-slim
     singlelayer: false
     labels:
       maintainer: Vanilla OS Contributors
-    cmd: ["sh", "-c", "cd /app && npm run generate-articles && npm run dev"]
+    cmd: ["sh", "-c", "npm -g install pnpm", "cd /app && pnpm generate-articles && pnpm dev"]
     expose:
       "6080": ""
     modules:
@@ -20,8 +20,14 @@ stages:
         commands:
           - mv /sources/init /app
 
+      - name: pnpm
+        type: shell
+        commands:
+          - corepack enable pnpm
+          - corepack use pnpm@latest
+
       - name: build
         type: shell
         commands:
           - cd /app
-          - npm install
+          - pnpm install
