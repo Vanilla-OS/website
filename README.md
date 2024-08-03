@@ -3,7 +3,7 @@
 <img src="logo.png#gh-light-mode-only" height="40">
 
 <hr />
-<p>This source code is distributed under the <a href="LICENSE">AGPL 3.0</a> 
+<p>This source code is distributed under the <a href="LICENSE">AGPL 3.0</a>
 license, while Vanilla OS is a product of <a href="//fabricators.ltd" target="_blank">fabricators.ltd</a>.
 
 Please note that all assets on this website are owned by fabricators.ltd and
@@ -59,7 +59,7 @@ To run the Vanilla OS website locally, you need to have [Vue.js](https://vuejs.o
 #### Build articles index
 
 ```bash
-npm run generate-articles
+pnpm generate-articles
 ```
 
 #### Run the website locally
@@ -67,7 +67,7 @@ npm run generate-articles
 This will also build the articles index.
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ## Production Build
@@ -75,5 +75,5 @@ npm run dev
 This will also build the articles index.
 
 ```bash
-npm run build
+pnpm build
 ```

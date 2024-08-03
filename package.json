@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "node server",
-    "build": "npm run generate-articles && npm run build:client && npm run build:server",
+    "build": "pnpm run generate-articles && npm run build:client && npm run build:server",
     "build:client": "vite build --ssrManifest --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
     "format": "prettier --write .",
