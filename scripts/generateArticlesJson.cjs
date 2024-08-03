@@ -3,7 +3,7 @@ const path = require("path");
 const glob = require("glob");
 const yaml = require("js-yaml");
 const { marked } = require("marked");
-const { DOMParser, XMLSerializer } = require("xmldom");
+const { DOMParser, XMLSerializer } = require("@xmldom/xmldom");
 
 function cleanArticlesDir(articlesDir) {
   console.log(`Cleaning articles directory: ${articlesDir}`);
