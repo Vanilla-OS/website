@@ -96,7 +96,7 @@ export default defineComponent({
             this.displayedDays = this.days.slice(0, this.loadIndex);
         },
         formatDate(dateString: string): string {
-            const [day, month, year] = dateString.split('-');
+            const [month, day, year] = dateString.split('-');
             const date = new Date(`${year}-${month}-${day}T00:00:00`);
             return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
         },
