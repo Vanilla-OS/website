@@ -58,6 +58,24 @@
         <center>
             <button @click="loadMoreDays" class="btn btn--primary">Load More</button>
         </center>
+        <div class="spacer spacer--lg"></div>
+        <div class="card card--hz card--type-adv card--type-adv--hz card--purple">
+            <div class="card-header">
+                <h4>Don't miss the latest updates!</h4>
+                <h2>Subscribe to the Feed</h2>
+                <a class="btn btn--primary" href="https://vanillaos.org/feed.xml">
+                    <span class="mdi material-icons">newspaper</span>
+                    <span>Subscribe now</span>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="flexList">
+                    <div class="card-image">
+                        <img src="/assets/images/components/feed.svg" alt="Subscribe to the Newsletter" />
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="spacer"></div>
     </div>
 </template>
@@ -96,7 +114,7 @@ export default defineComponent({
             this.displayedDays = this.days.slice(0, this.loadIndex);
         },
         formatDate(dateString: string): string {
-            const [day, month, year] = dateString.split('-');
+            const [month, day, year] = dateString.split('-');
             const date = new Date(`${year}-${month}-${day}T00:00:00`);
             return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
         },
