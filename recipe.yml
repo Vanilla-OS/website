@@ -2,11 +2,11 @@ name: Website
 id: website
 stages:
   - id: build
-    base: node:lts-slim
+    base: node:lts
     singlelayer: false
     labels:
       maintainer: Vanilla OS Contributors
-    cmd: ["sh", "-c", "npm -g install pnpm", "cd /app && pnpm generate-articles && pnpm dev"]
+    cmd: ["sh", "-c", "cd /app && pnpm generate-articles && pnpm dev"]
     expose:
       "6080": ""
     modules:
