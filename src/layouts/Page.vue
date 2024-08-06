@@ -1,7 +1,8 @@
 <template>
     <div>
+        <a href="#content" class="skip-link" target="_top" @click.prevent="scrollToContent">Skip to main content</a>
         <topbar />
-        <main class="page">
+        <main class="page" id="content" ref="content">
             <div class="page-wrapper container">
                 <section class="page-header">
                     <div class="page-nav" v-if="parentRoute?.name">
@@ -21,7 +22,7 @@
         <site-footer />
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from "vue";
 
@@ -36,6 +37,14 @@ export default defineComponent({
             );
 
             return parentRoute || null;
+        },
+    },
+    methods: {
+        scrollToContent() {
+          const element = this.$refs.content as HTMLElement;
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
         },
     },
 });
