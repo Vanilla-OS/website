@@ -12,12 +12,12 @@
         <div class="text text--rich">
             <p>* This platform optionally allows you to make your donation anonymous. If you choose to do so, we will not
                 receive your name or any other information about you.</p>
-            <p>Once you have made a donation, <a href="https://fabricators.ltd/en/contact.html" target="_blank">contact us</a> to
+            <p>Once you have made a donation, <a href="https://fabricators.ltd/en/contacts" target="_blank">contact us</a> to
                 give you the role of sponsor on our Discord server.</p>
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -104,4 +104,3 @@ export default defineComponent({
     },
 });
 </script>
-  
