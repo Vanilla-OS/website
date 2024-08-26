@@ -8,7 +8,7 @@
                     <p>Here are the updates for the date {{ formatDate(dayData.day) }}.</p>
                 </div>
                 <div class="flexGrid flexGrid--2">
-                    <div class="flexGrid-item">
+                    <div class="flexGrid-item" v-if="dayData.bugs.length">
                         <h3>Bugs</h3>
                         <div class="flexList">
                             <div v-for="bug in dayData.bugs" :key="bug.title">
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flexGrid-item">
+                    <div class="flexGrid-item" v-if="dayData.enhancements.length">
                         <h3>Enhancements</h3>
                         <div class="flexList">
                             <div v-for="enhancement in dayData.enhancements" :key="enhancement.title">
@@ -51,6 +51,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="spacer spacer--lg"></div>
             </div>
         </div>
 
