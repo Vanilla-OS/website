@@ -57,7 +57,9 @@
 
         <div class="spacer spacer--lg"></div>
         <center>
-            <button @click="loadMoreDays" class="btn btn--primary">Load More</button>
+            <button @click="handleLoadMoreDays" class="btn btn--primary">
+                {{ buttonText }}
+            </button>
         </center>
         <div class="spacer spacer--lg"></div>
         <div class="card card--hz card--type-adv card--type-adv--hz card--purple">
@@ -107,12 +109,26 @@ export default defineComponent({
             displayedDays: [] as Day[],
             loadIndex: 0,
             loadIncrement: 15,
+            buttonText: 'Load More',
         };
     },
     methods: {
         loadMoreDays() {
             this.loadIndex += this.loadIncrement;
             this.displayedDays = this.days.slice(0, this.loadIndex);
+        },
+        handleLoadMoreDays() {
+            const button = document.querySelector('.btn.btn--primary');
+            if (this.loadIndex >= this.days.length) {
+                this.buttonText = 'Nothing more found';
+                if (button) button.setAttribute('disabled', 'true');
+                setTimeout(() => {
+                    this.buttonText = 'Load More';
+                    if (button) button.removeAttribute('disabled');
+                }, 1000);
+            } else {
+                this.loadMoreDays();
+            }
         },
         formatDate(dateString: string): string {
             const [month, day, year] = dateString.split('-');
