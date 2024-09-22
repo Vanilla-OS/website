@@ -57,7 +57,9 @@
 
         <div class="spacer spacer--lg"></div>
         <center>
-            <button @click="loadMoreDays" class="btn btn--primary">Load More</button>
+            <button @click="handleLoadMoreDays" class="btn btn--primary">
+                {{ buttonText }}
+            </button>
         </center>
         <div class="spacer spacer--lg"></div>
         <div class="card card--hz card--type-adv card--type-adv--hz card--purple">
@@ -65,7 +67,7 @@
                 <h4>Don't miss the latest updates!</h4>
                 <h2>Subscribe to the Feed</h2>
                 <a class="btn btn--primary" href="https://info.vanillaos.org/updates-feed.xml">
-                    <span class="mdi material-icons">newspaper</span>
+                    <span class="material-symbols-outlined">newspaper</span>
                     <span>Subscribe now</span>
                 </a>
             </div>
@@ -107,12 +109,23 @@ export default defineComponent({
             displayedDays: [] as Day[],
             loadIndex: 0,
             loadIncrement: 15,
+            buttonText: 'Load More',
         };
     },
     methods: {
         loadMoreDays() {
             this.loadIndex += this.loadIncrement;
             this.displayedDays = this.days.slice(0, this.loadIndex);
+        },
+        handleLoadMoreDays() {
+            if (this.loadIndex >= this.days.length) {
+                this.buttonText = 'Nothing more found';
+                setTimeout(() => {
+                    this.buttonText = 'Load More';
+                }, 1000);
+            } else {
+                this.loadMoreDays();
+            }
         },
         formatDate(dateString: string): string {
             const [month, day, year] = dateString.split('-');

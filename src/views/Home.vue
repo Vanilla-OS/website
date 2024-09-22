@@ -12,7 +12,7 @@
         <div class="hero-footer">
           <div class="flexList">
             <router-link :to="{ name: 'download-orchid-stable' }" class="btn btn--primary btn--big">
-              <span class="mdi material-icons-outlined">file_download</span>
+              <span class="material-symbols-outlined">file_download</span>
               <span>Download Now</span>
             </router-link>
             <div class="text text--dimmed">
@@ -183,7 +183,7 @@
               instead, providing more versatility.</p>
             <router-link :to="{ name: 'roadmap' }" class="btn btn--link btn--link-2 btn--inline">
               <span>Starting from Orchid</span>
-              <span class="mdi material-icons-outlined">open_in_new</span>
+              <span class="material-symbols-outlined">open_in_new</span>
             </router-link>
           </div>
         </div>
@@ -197,8 +197,8 @@
         <h2>Want to know more?</h2>
       </div>
       <button @click="toggleInfo" class="btn btn--primary">
-        <span class="mdi material-icons-outlined" v-if="!showInfo">expand_more</span>
-        <span class="mdi material-icons-outlined" v-else>expand_less</span>
+        <span class="material-symbols-outlined" v-if="!showInfo">keyboard_arrow_up</span>
+        <span class="material-symbols-outlined" v-else>keyboard_arrow_up</span>
         <span v-if="!showInfo && !showSorry">Show me more</span>
         <span v-if="showInfo && !showSorry">Stop showing more 😡</span>
         <span v-if="showSorry">Ok, sorry 😒</span>
@@ -210,7 +210,7 @@
         </div>
         <router-link :to="{ name: 'nerd-info' }" class="btn btn--link btn--link-2 btn--inline">
           <span>Still not enough?</span>
-          <span class="mdi material-icons-outlined">arrow_forward</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
         </router-link>
       </div>
       <div class="spacer"></div>

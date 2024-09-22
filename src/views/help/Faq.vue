@@ -3,7 +3,7 @@
         <card v-for="(item, index) in getInvolvedItems" :key="index" :item="item" :class="item.extraClasses"/>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -84,4 +84,3 @@ export default defineComponent({
     },
 });
 </script>
-  

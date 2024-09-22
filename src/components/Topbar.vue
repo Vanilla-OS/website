@@ -14,7 +14,7 @@
                         <transition name="fade">
                             <div class="searchBar-field">
                                 <div class="searchBar-icon" @click="toggleSearch">
-                                    <span class="mdi material-icons">
+                                    <span class="material-symbols-outlined">
                                         {{ isSearchActive ? 'close' : 'search' }}
                                     </span>
                                 </div>

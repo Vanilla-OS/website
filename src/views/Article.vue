@@ -4,7 +4,7 @@
             <div class="page-header">
                 <div class="page-nav" v-if="parentRoute?.name">
                     <router-link :to="{ name: parentRoute.name }" class="btn btn--link btn--inline">
-                        <span class="mdi material-icons">arrow_back</span>
+                        <span class="material-symbols-outlined">arrow_back</span>
                         <span v-if="parentRoute?.meta?.title">Back to {{ parentRoute.meta.title }}</span>
                     </router-link>
                 </div>
@@ -21,11 +21,11 @@
                     <h4>Don't miss the news</h4>
                     <h2>Subscribe to the Newsletter</h2>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
-                        <span class="mdi material-icons">email</span>
+                        <span class="material-symbols-outlined">email</span>
                         <span>Subscribe via Email</span>
                     </div>
                     <a class="btn btn--primary" href="https://vanillaos.org/feed.xml">
-                        <span class="mdi material-icons">newspaper</span>
+                        <span class="material-symbols-outlined">newspaper</span>
                         <span>Subscribe via the RSS Feed</span>
                     </a>
                 </div>
@@ -63,19 +63,19 @@
             </div>
             <div class="toolBox-wrapper container">
                 <div class="toolBox-item toolBox-item--grow">
-                    <span class="toolBox-item-icon mdi material-icons">access_time</span>
+                    <span class="toolBox-item-icon material-symbols-outlined">access_time</span>
                     <span class="toolBox-item-text">{{ readingTime }}</span>
                 </div>
                 <div class="toolBox-item btn btn--link btn--inline" @click="shareModalOpen = true">
-                    <span class="toolBox-item-icon mdi material-icons">share</span>
+                    <span class="toolBox-item-icon material-symbols-outlined">share</span>
                     <span class="toolBox-item-label">Share</span>
                 </div>
                 <div class="toolBox-item btn btn--link btn--inline" @click="printArticle">
-                    <span class="toolBox-item-icon mdi material-icons">print</span>
+                    <span class="toolBox-item-icon material-symbols-outlined">print</span>
                     <span class="toolBox-item-label">Print</span>
                 </div>
                 <div class="toolBox-item btn btn--link btn--inline" @click="panelTocOpen = !panelTocOpen">
-                    <span class="toolBox-item-icon mdi material-icons">format_list_bulleted</span>
+                    <span class="toolBox-item-icon material-symbols-outlined">format_list_bulleted</span>
                     <span class="toolBox-item-label">Table of Contents</span>
                 </div>
             </div>

@@ -5,7 +5,7 @@
             @click="toggleActiveDynamicPanel(index)">
             <div class="DynamicPanel-card-header">
                 <h2>{{ DynamicPanel.title }}</h2>
-                <span class="mdi material-icons">
+                <span class="material-symbols-outlined">
                     {{ activeDynamicPanel === index ? '' : 'arrow_forward' }}
                 </span>
             </div>

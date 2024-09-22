@@ -7,7 +7,7 @@
                 <section class="page-header">
                     <div class="page-nav" v-if="parentRoute?.name">
                         <router-link :to="{ name: parentRoute.name }" class="btn btn--link btn--inline">
-                            <span class="mdi material-icons">arrow_back</span>
+                            <span class="material-symbols-outlined">arrow_back</span>
                             <span v-if="parentRoute?.meta?.title">Back to {{ parentRoute.meta.title }}</span>
                         </router-link>
                     </div>

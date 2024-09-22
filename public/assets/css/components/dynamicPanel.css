@@ -60,7 +60,7 @@
 }
 
 .DynamicPanel-card--blue .DynamicPanel-card-header h2,
-.DynamicPanel-card--blue .DynamicPanel-card-header .mdi {
+.DynamicPanel-card--blue .DynamicPanel-card-header .material-symbols-outlined {
     color: var(--dynamic-card-blue-title-color);
 }
 
@@ -73,7 +73,7 @@
 }
 
 .DynamicPanel-card--green .DynamicPanel-card-header h2,
-.DynamicPanel-card--green .DynamicPanel-card-header .mdi {
+.DynamicPanel-card--green .DynamicPanel-card-header .material-symbols-outlined {
     color: var(--dynamic-card-green-title-color);
 }
 
@@ -86,7 +86,7 @@
 }
 
 .DynamicPanel-card--pink .DynamicPanel-card-header h2,
-.DynamicPanel-card--pink .DynamicPanel-card-header .mdi {
+.DynamicPanel-card--pink .DynamicPanel-card-header .material-symbols-outlined {
     color: var(--dynamic-card-pink-title-color);
 }
 
@@ -107,7 +107,7 @@
     font-weight: 500;
 }
 
-.mdi {
+.material-symbols-outlined {
     font-size: 2rem;
 }
 

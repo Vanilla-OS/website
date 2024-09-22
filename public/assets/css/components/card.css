@@ -164,10 +164,10 @@
     margin-bottom: auto;
 }
 
-.card-header h1 .mdi,
-.card-header h2 .mdi,
-.card-header h3 .mdi,
-.card-header h4 .mdi {
+.card-header h1 .material-symbols-outlined,
+.card-header h2 .material-symbols-outlined,
+.card-header h3 .material-symbols-outlined,
+.card-header h4 .material-symbols-outlined {
     font-size: 100%;
     position: relative;
     top: 4px;

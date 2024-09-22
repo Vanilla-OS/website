@@ -3,8 +3,8 @@
         <div class="floatNotice-wrapper card" :class="classes">
             <div class="floatNotice-header clickable" @click="toggleExpanded()">
                 <h3>🎉 Vanilla OS 2 Orchid is here!</h3>
-                <span class="floatNotice-heaer-icon mdi material-icons" v-if="!expanded">expand_less</span>
-                <span class="floatNotice-heaer-icon mdi material-icons" v-if="expanded">expand_more</span>
+                <span class="floatNotice-heaer-icon material-symbols-outlined" v-if="!expanded">keyboard_arrow_up</span>
+                <span class="floatNotice-heaer-icon material-symbols-outlined" v-if="expanded">keyboard_arrow_down</span>
             </div>
             <div class="floatNotice-content" v-if="expanded">
                 <div class="flexList">
@@ -20,10 +20,10 @@
                             :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid---stable-release' } }"
                             class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
-                            <span class=" mdi material-icons-outlined">open_in_new</span>
+                            <span class=" material-symbols-outlined">open_in_new</span>
                         </router-link>
                         <button class="btn btn--primary" @click="goToDownload()">
-                            <span class="mdi material-icons-outlined">save_alt</span>
+                            <span class="material-symbols-outlined">download</span>
                             <span>Download Now</span>
                         </button>
                     </div>

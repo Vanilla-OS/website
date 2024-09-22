@@ -18,23 +18,23 @@
                             :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid---stable-release' } }"
                             class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
-                            <span class=" mdi material-icons-outlined">open_in_new</span>
+                            <span class=" material-symbols-outlined">open_in_new</span>
                         </router-link>
                         <router-link class="btn btn--link btn--link-2 btn--inline" :to="{ name: 'roadmap' }">
                             <span>Roadmap</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
+                            <span class="material-symbols-outlined">open_in_new</span>
                         </router-link>
                         <!-- <a href="#" class="btn btn--link btn--link-2 btn--inline btn--block" disabled="true">
                             <span>Full Changelog</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
+                            <span class="material-symbols-outlined">open_in_new</span>
                         </a> -->
                         <div class="spacer"></div>
                         <!-- <a href="#" class="btn btn--primary">
-                            <span class="mdi material-icons-outlined">save_alt</span>
+                            <span class="material-symbols-outlined">download</span>
                             <span>Download Now</span>
                         </a> -->
                         <router-link to="/download/orchid/stable" class="btn btn--primary">
-                            <span class="mdi material-icons-outlined">save_alt</span>
+                            <span class="material-symbols-outlined">download</span>
                             <span>Download Now</span>
                         </router-link>
                     </div>
@@ -60,12 +60,12 @@
                         <router-link class="btn btn--link btn--link-2 btn--inline"
                             :to="{ name: 'article', params: { date: '2022-12-29', slug: 'vanilla-os-2210-kinetic-is-out' } }">
                             <span>Release Post</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
+                            <span class="material-symbols-outlined">open_in_new</span>
                         </router-link>
                         <a href="https://github.com/Vanilla-OS/os/releases/latest"
                             class="btn btn--link btn--link-2 btn--inline" target="_blank">
                             <span>Changelog</span>
-                            <span class="mdi material-icons-outlined">open_in_new</span>
+                            <span class="material-symbols-outlined">open_in_new</span>
                         </a>
                         <div class="spacer"></div>
                     </div>
@@ -92,7 +92,7 @@
                             access to a direct channel with the developers.</p>
                     </div>
                     <router-link to="developers-program" class="btn btn--primary">
-                        <span class="mdi material-icons">how_to_reg</span>
+                        <span class="material-symbols-outlined">how_to_reg</span>
                         <span>Apply Now</span>
                     </router-link>
                 </div>
