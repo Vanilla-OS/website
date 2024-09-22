@@ -118,10 +118,13 @@ export default defineComponent({
             this.displayedDays = this.days.slice(0, this.loadIndex);
         },
         handleLoadMoreDays() {
+            const button = document.querySelector('.btn.btn--primary');
             if (this.loadIndex >= this.days.length) {
                 this.buttonText = 'Nothing more found';
+                if (button) button.setAttribute('disabled', 'true');
                 setTimeout(() => {
                     this.buttonText = 'Load More';
+                    if (button) button.removeAttribute('disabled');
                 }, 1000);
             } else {
                 this.loadMoreDays();
