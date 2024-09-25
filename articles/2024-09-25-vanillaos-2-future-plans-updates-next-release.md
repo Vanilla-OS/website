@@ -30,19 +30,19 @@ Let’s look at each of them in detail to get an overview of the future we've im
 
 Vanilla OS 2 Orchid is receiving support, both from the community and our team. At the moment, you can report any bugs on our GitHub organization or directly on our Discord server, where both community members and our team are ready to assist new users or respond to any questions or issues.
 
-In the immediate future, support will be expanded with an Enterprise version for businesses and commercial entities that require more dedicated support. This solution is offered by fabricators.ltd, the company behind the Vanilla OS project and its main investor. fabricators.ltd will manage this support service, which will follow a paid formula for three main reasons:
+In the immediate future, support will be expanded with an [Enterprise version for businesses and commercial entities](https://vanillaos.org/enterprise-support) that require more dedicated support. This solution is offered by fabricators.ltd, the company behind the Vanilla OS project and its main investor. fabricators.ltd will manage this support service, which will follow a paid formula for three main reasons:
 
 - Vanilla OS is a very ambitious project, and the team is very small and composed of volunteers, so we cannot ask them to invest further time in more critical support sessions as required by the enterprise world.
 - fabricators.ltd, on the other hand, despite being a well-established entity for several years now, is still a company with limited personnel and cannot afford to provide such a complex service for free.
-- We do not hide the fact that to carry out all our plans, funds are needed, and while fabricators.ltd firmly believes in the project to the extent that it invests in its maintenance, marketing, and all necessary assets, it cannot be the sole source of support for the project.
+- We do not hide the fact that to carry out all our plans, [funds are needed](https://vanillaos.org/get-involved/funding), and while fabricators.ltd firmly believes in the project to the extent that it invests in its maintenance, marketing, and all necessary assets, it cannot be the sole source of support for the project.
 
 In addition to Enterprise support, fabricators.ltd has been negotiating with OEMs for several months to bring Vanilla OS to devices in different form factors. This is not an easy project, but they will arrive soon, and we will announce it in style.
 
-Of course, Vanilla OS constantly receives donations, and we are grateful for that. We want to thank every single project supporter for helping us keep this project alive. If you are interested in supporting the project, take a look at our Funding page, and you can also contribute directly to the code, translations, and graphic assets if you prefer.
+Of course, Vanilla OS constantly receives donations, and we are grateful for that. We want to thank every single supporter for helping us keep this project alive. If you are interested in supporting the project, take a look at our [Funding page](https://vanillaos.org/get-involved/funding), and you can also contribute directly to the code, translations, and graphic assets if you prefer.
 
 ## Updates
 
-Although it has only been a little over a month, we have already released a total of 5 updates that you can see here.
+Although it has only been a little over a month, we have already released a total of 5 updates that you can see [here](https://vanillaos.org/updates).
 
 Vanilla OS does not follow a fixed schedule, so we cannot promise a weekly or monthly periodic update. This is because Vanilla OS is a complex project, the amount of software and components developed and maintained by our team is vast, and we prefer to feel free from the pressure of having to invent new features every day just for the sake of doing so.
 
@@ -85,7 +85,7 @@ No. The transition from Vanilla OS 22.10 Kinetic to Vanilla OS 2 Orchid required
 
 We believe this is the best way to support the project and provide both an increasingly solid and secure operating system that is constantly updated without any compromises.
 
-We would also like to take this opportunity to inform you that the documentation for Orchid has been almost completely updated and has been available on the site docs.vanillaos.org for months. We are also writing new guides to cover recurring topics such as:
+We would also like to take this opportunity to inform you that the documentation for Orchid has been almost completely updated and has been available on the site [docs.vanillaos.org](https://docs.vanillaos.org/collections/handbook) for months. We are also writing new guides to cover recurring topics such as:
 
 - How to build a custom Vanilla OS image
 - How to use the APX GUI
