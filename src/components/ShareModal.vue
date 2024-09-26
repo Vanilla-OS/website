@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="btn btn--link btn--circle btn--close" @click="closeModal">
-            <span class="mdi material-icons">close</span>
+            <span class="material-symbols-outlined">close</span>
         </div>
     </div>
 </template>

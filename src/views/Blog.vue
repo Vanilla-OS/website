@@ -16,7 +16,7 @@
                             :to="{ name: 'article', params: { date: article.date, slug: article.slug } }"
                             class="btn btn--primary">
                             <span>Read More</span>
-                            <span class="mdi material-icons-outlined">arrow_forward</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
                         </router-link>
                     </div>
                     <div v-if="index === 0" class="card-image card-image--right">
@@ -38,11 +38,11 @@
                         <img src="/assets/images/components/funnyletter.svg" alt="Subscribe to the Newsletter" />
                     </div>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
-                        <span class="mdi material-icons">email</span>
+                        <span class="material-symbols-outlined">email</span>
                         <span>Subscribe via Email</span>
                     </div>
                     <a class="btn btn--primary" href="https://vanillaos.org/feed.xml">
-                        <span class="mdi material-icons">newspaper</span>
+                        <span class="material-symbols-outlined">newspaper</span>
                         <span>Subscribe via the RSS Feed</span>
                     </a>
                 </div>
@@ -64,7 +64,7 @@
                             :to="{ name: 'article', params: { date: article.date, slug: article.slug } }"
                             class="btn btn--primary">
                             <span>Read More</span>
-                            <span class="mdi material-icons-outlined">arrow_forward</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
                         </router-link>
                     </div>
                 </div>

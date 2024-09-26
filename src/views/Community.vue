@@ -25,14 +25,14 @@
                     <a class="btn btn--link btn--inline btn--med" href="https://discord.gg/vanilla-os-1023243680829681704"
                         target="_blank">
                         <span>Join Discord</span>
-                        <span class="mdi material-icons">arrow_forward</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -40,4 +40,3 @@ export default defineComponent({
     name: 'community',
 });
 </script>
-  

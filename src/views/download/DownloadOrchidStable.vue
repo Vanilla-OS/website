@@ -23,7 +23,7 @@
                 </center>
             </div>
             <a href="https://download.vanillaos.org/latest.zip" class="btn btn--primary btn--big">
-                <span class="mdi material-icons-outlined">file_download</span>
+                <span class="material-symbols-outlined">file_download</span>
                 <span>Download Now</span>
             </a>
             <div class="text text--dimmed">
@@ -58,11 +58,11 @@
                         <h4>Keep in Touch</h4>
                         <h2>Subscribe to the Newsletter</h2>
                         <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
-                            <span class="mdi material-icons">email</span>
+                            <span class="material-symbols-outlined">email</span>
                             <span>Subscribe Now via Email</span>
                         </div>
                         <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
-                            <span class="mdi material-icons">newspaper</span>
+                            <span class="material-symbols-outlined">newspaper</span>
                             <span>Subscribe via the RSS Feed</span>
                         </a>
                     </div>
@@ -77,10 +77,10 @@
                 </div>
                 <router-link class="flexGrid-item card card--clickable card--min flexGrid-item" to="/community">
                     <div class="card-header">
-                        <h3><span class="mdi material-icons">record_voice_over</span> Discord Server</h3>
+                        <h3><span class="material-symbols-outlined">record_voice_over</span> Discord Server</h3>
                         <div>
                             <div class="btn btn--link btn--inline btn--med"><span
-                                    class="mdi material-icons">arrow_forward</span></div>
+                                    class="material-symbols-outlined">arrow_forward</span></div>
                         </div>
                     </div>
                     <div class="card-content">

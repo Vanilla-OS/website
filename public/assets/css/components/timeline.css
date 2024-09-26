@@ -54,7 +54,7 @@
     width: 100%;
 }
 
-.timeline-progressbar-meter-item .mdi {
+.timeline-progressbar-meter-item .material-symbols-outlined {
     text-shadow: 4px 0 var(--timeline-progressbar-meter-border-color), -4px 0 var(--timeline-progressbar-meter-border-color), 0 4px var(--timeline-progressbar-meter-border-color), 0 -4px var(--timeline-progressbar-meter-border-color), 3px 3px var(--timeline-progressbar-meter-border-color), -3px -3px var(--timeline-progressbar-meter-border-color), 3px -3px var(--timeline-progressbar-meter-border-color), -3px 3px var(--timeline-progressbar-meter-border-color);
     position: relative;
     top: -7px;

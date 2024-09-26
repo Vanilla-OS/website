@@ -19,7 +19,7 @@
                     <h4>Don't miss the news</h4>
                     <h2>Subscribe to the Newsletter</h2>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
-                        <span class="mdi material-icons">email</span>
+                        <span class="material-symbols-outlined">email</span>
                         <span>Subscribe Now</span>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 

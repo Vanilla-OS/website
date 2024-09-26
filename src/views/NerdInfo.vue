@@ -15,16 +15,16 @@
         <div class="flexGrid flexGrid--fluid flexGrid--2">
             <a href="https://docs.vanillaos.org/" class="btn btn--link btn--link-2 btn--inline">
                 <span>Read the Docs</span>
-                <span class=" mdi material-icons-outlined">open_in_new</span>
+                <span class=" material-symbols-outlined">open_in_new</span>
             </a>
             <router-link to="/community" class="btn btn--primary">
                 <span>Reach our Community</span>
-                <span class="mdi material-icons-outlined">record_voice_over</span>
+                <span class="material-symbols-outlined">record_voice_over</span>
             </router-link>
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 

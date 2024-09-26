@@ -53,7 +53,7 @@
     cursor: pointer;
 }
 
-.searchBar-shortcut>.mdi {
+.searchBar-shortcut>.material-symbols-outlined {
     position: relative;
     top: 0px;
     cursor: pointer;
@@ -61,7 +61,7 @@
     font-weight: 900;
 }
 
-.searchBar-icon>.mdi {
+.searchBar-icon>.material-symbols-outlined {
     font-size: 20px;
 }
 
@@ -70,7 +70,7 @@
     color: var(--text-color-dimmed);
 }
 
-.searchBar-shortcut>.mdi+span {
+.searchBar-shortcut>.material-symbols-outlined+span {
     font-size: 14px;
     font-weight: 500;
 }

@@ -11,7 +11,7 @@
                 <div class="timeline-progressbar-meter">
                     <div v-for="status in eventStatuses" :key="status.type" :class="getEventClass(status.type)"
                         :style="{ width: status.progress + '%' }">
-                        <span v-if="status.icon" class="mdi material-icons">{{ status.icon }}</span>
+                        <span v-if="status.icon" class="material-symbols-outlined">{{ status.icon }}</span>
                         <label>{{ status.type }}</label>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 

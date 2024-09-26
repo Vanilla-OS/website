@@ -67,7 +67,7 @@
                 <h4>Don't miss the latest updates!</h4>
                 <h2>Subscribe to the Feed</h2>
                 <a class="btn btn--primary" href="https://info.vanillaos.org/updates-feed.xml">
-                    <span class="mdi material-icons">newspaper</span>
+                    <span class="material-symbols-outlined">newspaper</span>
                     <span>Subscribe now</span>
                 </a>
             </div>

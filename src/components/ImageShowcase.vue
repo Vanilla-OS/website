@@ -12,16 +12,16 @@
             </div>
             <div class="imageSlider-nav" v-if="articleImages.length > 1">
                 <div class="btn btn--secondary btn--circle" @click="prevImage" :disabled="currentIndex === 0">
-                    <span class="mdi material-icons">arrow_back</span>
+                    <span class="material-symbols-outlined">arrow_back</span>
                 </div>
                 <div class="btn btn--secondary btn--circle" @click="nextImage"
                     :disabled="currentIndex === articleImages.length - 1">
-                    <span class="mdi material-icons">arrow_forward</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
                 </div>
             </div>
         </div>
         <div class="btn btn--link btn--circle btn--close" @click="closeModal">
-            <span class="mdi material-icons">close</span>
+            <span class="material-symbols-outlined">close</span>
         </div>
     </div>
 </template>
