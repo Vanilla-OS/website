@@ -91,6 +91,6 @@ We would also like to take this opportunity to inform you that the documentation
 - How to use the APX GUI
 - How to use a custom image for VSO
 
-Thank you all for your attention, and we hope this article has answered all your questions. If not, or to fuel the discussion, we recommend joining our Discord server.
+Thank you all for your attention, and we hope this article has answered all your questions. If not, or to fuel the discussion, we recommend joining [our Discord server](https://vanillaos.org/community) or [our Reddit community](https://www.reddit.com/r/vanillaos/).
 
 - The Vanilla OS Team
