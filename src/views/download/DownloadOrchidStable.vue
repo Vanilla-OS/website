@@ -59,7 +59,7 @@
                         <h2>Subscribe to the Newsletter</h2>
                         <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                             <span class="material-symbols-outlined">email</span>
-                            <span>Subscribe Now via Email</span>
+                            <span>Subscribe via Email</span>
                         </div>
                         <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
                             <span class="material-symbols-outlined">newspaper</span>

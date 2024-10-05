@@ -101,8 +101,12 @@
                         <h2>Subscribe to the Newsletter</h2>
                         <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                             <span class="material-symbols-outlined">email</span>
-                            <span>Subscribe Now</span>
+                            <span>Subscribe via Email</span>
                         </div>
+                        <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
+                            <span class="material-symbols-outlined">newspaper</span>
+                            <span>Subscribe via the RSS Feed</span>
+                        </a>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
