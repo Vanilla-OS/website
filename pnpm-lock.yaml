@@ -30,8 +30,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       marked:
-        specifier: ^5.1.2
-        version: 5.1.2
+        specifier: ^14.1.2
+        version: 14.1.2
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -826,9 +826,9 @@ packages:
   make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
 
-  marked@5.1.2:
-    resolution: {integrity: sha512-ahRPGXJpjMjwSOlBoTMZAK7ATXkli5qCPxZ21TG44rx1KEo44bii4ekgTDQPNRQ4Kh7JMb9Ub1PVk1NxRSsorg==}
-    engines: {node: '>= 16'}
+  marked@14.1.2:
+    resolution: {integrity: sha512-f3r0yqpz31VXiDB/wj9GaOB0a2PRLQl6vJmXiFrniNwjkKdvakqJRULhjFKJpxOchlCRiG5fcacoUZY5Xa6PEQ==}
+    engines: {node: '>= 18'}
     hasBin: true
 
   media-typer@0.3.0:
@@ -2149,7 +2149,7 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  marked@5.1.2: {}
+  marked@14.1.2: {}
 
   media-typer@0.3.0: {}
 
