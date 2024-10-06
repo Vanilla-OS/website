@@ -28,7 +28,7 @@
                     <div class="form-footer">
                         <div class="flexList">
                             <button type="submit" name="subscribe" class="btn btn--primary" value="Subscribe">
-                                <span class="md material-icons">send</span>
+                                <span class="material-symbols-outlined">send</span>
                                 <span>Subscribe</span>
                             </button>
                             <p class="brandingLogo" style="margin: 0px auto;">
