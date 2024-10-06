@@ -15,7 +15,7 @@
   "dependencies": {
     "@types/marked": "^5.0.1",
     "@vueuse/head": "^1.1.26",
-    "@xmldom/xmldom": "^0.8.10",
+    "@xmldom/xmldom": "^0.9.3",
     "compression": "^1.7.4",
     "express": "^4.19.2",
     "express-rate-limit": "^7.4.0",
