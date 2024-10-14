@@ -9,7 +9,7 @@
         </div>
     </div>
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -108,6 +108,15 @@ export default defineComponent({
                     type: "clickable",
                     title: 'Vue.js',
                     description: 'The Progressive JavaScript Framework.',
+                },
+                {
+                    icon: '/assets/images/orgs/deno.svg',
+                    iconAsImage: true,
+                    to: 'https://deno.com/',
+                    extLink: true,
+                    type: "clickable",
+                    title: 'Deno',
+                    description: 'A modern runtime for JavaScript and TypeScript. ',
                 },
             ],
         };
