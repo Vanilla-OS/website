@@ -21,10 +21,10 @@
                         <span class="material-symbols-outlined">email</span>
                         <span>Subscribe via Email</span>
                     </div>
-                    <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
+                    <button class="btn btn--primary" @click="openRSSFeed">
                         <span class="material-symbols-outlined">newspaper</span>
                         <span>Subscribe via the RSS Feed</span>
-                    </a>
+                    </button>
                 </div>
                 <div class="card-content">
                     <div class="flexList">
@@ -84,6 +84,9 @@ export default defineComponent({
     methods: {
         closeNotMailNotChimp() {
             this.isNotMailNotChimpOpen = false;
+        },
+        openRSSFeed() {
+            window.open('https://vanillaos.org/feed.xml', '_blank');
         },
     },
 });
