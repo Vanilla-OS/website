@@ -172,7 +172,7 @@ export default defineComponent({
                     image: "/assets/images/pics/gabs.webp",
                     links: {
                         githubUsername: "GabsEdits",
-                        website: "https://www.gxbs.me/",
+                        website: "https://gxbs.dev/",
                         mastodonLink: "https://vmst.io/@gabs",
                     },
                 },
