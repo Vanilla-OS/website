@@ -74,7 +74,8 @@ export default defineComponent({
     name: 'SiteFooter',
     computed: {
         showFloatNotice() {
-            return this.$route.name !== 'article' && this.$route.name !== 'download-orchid-stable';
+            // return this.$route.name !== 'article' && this.$route.name !== 'download-orchid-stable';
+            return false;
         }
     }
 });
