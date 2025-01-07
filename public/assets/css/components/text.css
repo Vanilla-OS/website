@@ -152,3 +152,7 @@
 .text--rich.text--sm p {
     margin: 0 0 5px 0;
 }
+
+.text--center {
+    text-align: center;
+}

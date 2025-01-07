@@ -15,12 +15,9 @@
     <div class="container">
         <div class="flexList flexList--center">
             <div class="spacer"></div>
-            <div class="text text--rich">
-                <center>
+            <div class="text text--rich text--center">
                     <p>Vanilla OS 2 Orchid is the next generation of Vanilla OS. It is built on top of new technologies
-                        and
-                        features to provide you with the most secure, stable and stunning system experience.</p>
-                </center>
+                        and features to provide you with the most secure, stable and stunning system experience.</p>
             </div>
             <a href="https://download.vanillaos.org/latest.zip" class="btn btn--primary btn--big">
                 <span class="material-symbols-outlined">file_download</span>
@@ -40,12 +37,10 @@
                     </a>
                 </small>
             </div>
-            <div class="text text--rich">
-                <center>
+            <div class="text text--rich text--center">
                     <p>Do you enjoy Vanilla OS? Consider <router-link
                             to="/get-involved/funding">supporting</router-link>
                         the project.</p>
-                </center>
             </div>
             <div class="spacer"></div>
         </div>

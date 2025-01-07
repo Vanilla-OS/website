@@ -56,11 +56,11 @@
         </div>
 
         <div class="spacer spacer--lg"></div>
-        <center>
+        <p class="text--center">
             <button @click="handleLoadMoreDays" class="btn btn--primary">
                 {{ buttonText }}
             </button>
-        </center>
+        </p>
         <div class="spacer spacer--lg"></div>
         <div class="card card--hz card--type-adv card--type-adv--hz card--purple">
             <div class="card-header">
