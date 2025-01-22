@@ -144,7 +144,7 @@ export default defineComponent({
                     day: date,
                     bugs: data[date].bugs,
                     enhancements: data[date].enhancements,
-                }));
+                })).sort((a, b) => new Date(b.day).getTime() - new Date(a.day).getTime());
                 this.loadIndex = this.loadIncrement;
                 this.displayedDays = this.days.slice(0, this.loadIndex);
             });
