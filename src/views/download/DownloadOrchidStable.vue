@@ -34,8 +34,10 @@
         <p>
           Thank you for supporting Vanilla OS! Your donation helps us to keep
           the project alive and improve it. We appreciate your contribution.
-          <b>Your download will start automatically, if it doesn't, click the
-          button below.</b  >
+          <b
+            >Your download will start automatically, if it doesn't, click the
+            button below.</b
+          >
         </p>
       </div>
       <a

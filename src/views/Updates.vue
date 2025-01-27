@@ -56,11 +56,11 @@
         </div>
 
         <div class="spacer spacer--lg"></div>
-        <center>
+        <p class="text--center">
             <button @click="handleLoadMoreDays" class="btn btn--primary">
                 {{ buttonText }}
             </button>
-        </center>
+        </p>
         <div class="spacer spacer--lg"></div>
         <div class="card card--hz card--type-adv card--type-adv--hz card--purple">
             <div class="card-header">
@@ -144,7 +144,7 @@ export default defineComponent({
                     day: date,
                     bugs: data[date].bugs,
                     enhancements: data[date].enhancements,
-                }));
+                })).sort((a, b) => new Date(b.day).getTime() - new Date(a.day).getTime());
                 this.loadIndex = this.loadIncrement;
                 this.displayedDays = this.days.slice(0, this.loadIndex);
             });
