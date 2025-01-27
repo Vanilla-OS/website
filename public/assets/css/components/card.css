@@ -50,10 +50,19 @@
     color: var(--card-color-dark);
 }
 
+.card.card--dark .card-footer {
+    color: var(--card-color-dark);
+}
+
 .card.card--light {
     background-color: var(--card-bg-light);
     color: var(--card-color-light);
 }
+
+.card.card--light .card-footer {
+    color: var(--card-color-light);
+}
+
 
 .card-image img {
     max-width: 100%;
@@ -341,6 +350,14 @@
 .card--has-pattern-work {
     background-image: url(/assets/images/patterns/work.svg);
     background-size: cover;
+}
+
+.card.card--input {
+    padding: 10px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media screen and (max-width: 745px) {
