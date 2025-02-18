@@ -26,7 +26,7 @@
         </div>
     </div> -->
 </template>
-  
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -35,8 +35,14 @@ export default defineComponent({
     data() {
         return {
             orchidTitle: 'Vanilla OS Orchid',
-            orchidSubtitle: 'Upcoming Version',
+            orchidSubtitle: 'Current Version',
             orchidEvents: [
+                {
+                    name: 'Vanilla OS 2 Stable',
+                    status: 'Completed',
+                    date: '28 July 2024',
+                    description: 'We are proud to announce the release of Vanilla OS 2 Orchid Stable.',
+                },
                 {
                     name: 'Attestation of OCI Images',
                     status: 'Completed',
@@ -75,7 +81,7 @@ export default defineComponent({
                 },
                 {
                     name: 'Vanilla OS 2 Beta',
-                    status: 'Ongoing',
+                    status: 'Completed',
                     date: '30 January 2024',
                     description: 'We are proud to announce the release of Vanilla OS 2 Orchid Beta.',
                 },
@@ -268,7 +274,7 @@ export default defineComponent({
             ],
 
             kineticTitle: 'Vanilla OS 22.10 Kinetic',
-            kineticSubtitle: 'Current Version',
+            kineticSubtitle: 'Previous Version',
             kineticEvents: [
                 {
                     name: 'Freeze',
