@@ -144,7 +144,7 @@
         <p for="donation-amount">Choose your donation amount:</p>
         <div class="flexGrid flexGrid--3">
           <button
-            v-for="amount in [1, 5]"
+            v-for="amount in [2, 5]"
             :key="amount"
             class="btn btn--secondary"
             @click="setAmount(amount)"
