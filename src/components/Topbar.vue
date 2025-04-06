@@ -44,22 +44,25 @@
                     </div>
                 </div>
             </div>
-            <div class="overlay" v-if="isMenuToggled" @click="toggleMenu"></div>
-            <nav>
-                <ul class="topBar-navigation" :class="{ active: isMenuToggled }">
-                    <li><router-link :to="{ name: 'blog' }">Blog</router-link></li>
-                    <li><router-link :to="{ name: 'updates' }">Updates</router-link></li>
-                    <li><router-link :to="{ name: 'help' }">Help</router-link></li>
-                    <li><router-link :to="{ name: 'get-involved' }">Get Involved</router-link></li>
-                    <li><router-link :to="{ name: 'download' }">Download</router-link></li>
-                </ul>
-            </nav>
-            <button class="topBar-hamburger topBar-hamburger--collapse topBar-hamburger--squeeze"
-                :class="{ 'is-active': isMenuToggled }" @click="toggleMenu" type="button">
-                <span class="topBar-hamburger-box">
-                    <span class="topBar-hamburger-inner"></span>
-                </span>
-            </button>
+            <div class="overlay" v-if="isMenuToggled" @click="toggleMenu"></div>                        
+            <div class="language-selector-button">
+                <nav>                
+                    <ul class="topBar-navigation" :class="{ active: isMenuToggled }">
+                        <li><router-link :to="{ name: 'blog' }">{{ $t('header.blog') }}</router-link></li>
+                        <li><router-link :to="{ name: 'updates' }">{{ $t('header.updates') }}</router-link></li>
+                        <li><router-link :to="{ name: 'help' }">{{ $t('header.help') }}</router-link></li>
+                        <li><router-link :to="{ name: 'get-involved' }">{{ $t('header.getInvolved') }}</router-link></li>
+                        <li><router-link :to="{ name: 'download' }">{{ $t('header.download') }}</router-link></li>
+                    </ul>                
+                </nav>
+                <languageSelector></languageSelector>
+                <button style="padding-left: 18px !important;" class="topBar-hamburger topBar-hamburger--collapse topBar-hamburger--squeeze"
+                    :class="{ 'is-active': isMenuToggled }" @click="toggleMenu" type="button">
+                    <span class="topBar-hamburger-box">
+                        <span class="topBar-hamburger-inner"></span>
+                    </span>
+                </button>                
+            </div>
         </div>
     </header>
 </template>

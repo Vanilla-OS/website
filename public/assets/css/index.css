@@ -37,6 +37,7 @@
 @import url('components/toc.css');
 @import url('components/toolBox.css');
 @import url('components/topBar.css');
+@import url('components/local.css');
 
 @import url('colors/default.css');
 @import url('colors/dark.css');

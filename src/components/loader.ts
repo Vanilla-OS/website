@@ -21,6 +21,7 @@ import Bento from "./Bento.vue";
 import BentoCard from "./BentoCard.vue";
 import BentoCardCarousel from "./BentoCardCarousel.vue";
 import BeforeAfterSlider from "./BeforeAfterSlider.vue";
+import LanguageSelector from "./LanguageSelector.vue";
 
 import DynamicPanelOrchidRelease from "./DynamicPanelOrchidRelease.vue";
 import BentoOrchidRelease from "./BentoOrchidRelease.vue";
@@ -30,6 +31,7 @@ export default {
     // external components
 
     // app components
+    app.component("languageSelector", LanguageSelector);
     app.component("conditional-link", ConditionalLink);
     app.component("btn", Btn);
     app.component("btn-adv", BtnAdv);

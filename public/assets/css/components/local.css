@@ -1,0 +1,77 @@
+.language-selector {
+    --language-selector-bg: var(--primary-bg-color);    
+    --language-selector-text: var(--accent-black-text-color);
+    --language-selector-hover-bg: var(--link-color);        
+}
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.language-selector-button {
+    display: flex;
+}
+
+.language-selector-button nav {
+    display: flex;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    background-color: var(--language-selector-bg);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+}
+
+.current-language {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--language-selector-text);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    padding: 8px 0;
+    background-color: var(--primary-bg-color);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    color: var(--language-selector-text);
+    gap: 8px;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language-option:hover {
+    background-color: var(--language-selector-hover-bg);
+}
+
+.language-option img {
+    border-radius: 2px;
+}
