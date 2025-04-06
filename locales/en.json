@@ -1156,8 +1156,8 @@
         }
     },
     "updates": {
-        "title": "Atualizações",
-        "description": "Confira as últimas atualizações do Vanilla OS."
+        "title": "Updates",
+        "description": "Check out the latest updates of Vanilla OS."
     },
     "nerd-info": {
         "title": "Information for Nerds",
@@ -1704,7 +1704,7 @@
             },
             {
                 "title": "Experimental",
-                "description": "O Vanilla OS 2 Orchid vem com suporte para Android através do Waydroid no VSO, permitindo integração perfeita e uso de aplicativos Android no seu sistema com facilidade."
+                "description": "Vanilla OS 2 Orchid comes with support for Android via Waydroid in VSO, enabling seamless integration and use of Android apps on your system with ease."
             },
             {
                 "title": "Linux",
