@@ -1,30 +1,27 @@
 <template>
     <div class="flexList anim--fadeIn">
         <div class="text text--rich">
-            <p>Starting from Vanilla OS Orchid, we are offering enterprise support for companies and organizations
-                that want to use Vanilla OS in their business.</p>
-            <h3>What's included</h3>
+            <p>{{$t('enterprise-support.offering.message')}}</p>
+            <h3>{{$t('enterprise-support.whats_included.title')}}</h3>
         </div>
         <div class="flexGrid flexGrid--3">
             <card v-for="(item, index) in helpItems" :key="index" :item="item" :class="item.extraClasses" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>Join the program</h3>
-            <p>The enterprise support program will be available starting from Vanilla OS Orchid. If you are interested
-                in joining the program, please subscribe to our funnyletter to be notified when the program is
-                available.</p>
+            <h3>{{$t('enterprise-support.join_program.title')}}</h3>
+            <p>{{$t('enterprise-support.join_program.message')}}</p>
             <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
-                    <h4>Don't miss the news</h4>
-                    <h2>Subscribe to the Newsletter</h2>
+                    <h4>{{$t('enterprise-support.newsletter.title')}}</h4>
+                    <h2>{{$t('enterprise-support.newsletter.subscribe_title')}}</h2>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="material-symbols-outlined">email</span>
-                        <span>Subscribe via Email</span>
+                        <span>{{$t('enterprise-support.newsletter.subscribe_email')}}</span>
                     </div>
                     <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
                         <span class="material-symbols-outlined">newspaper</span>
-                        <span>Subscribe via the RSS Feed</span>
+                        <span>{{$t('enterprise-support.newsletter.subscribe_rss')}}</span>
                     </a>
                 </div>
                 <div class="card-content">
@@ -51,66 +48,66 @@ export default defineComponent({
             helpItems: [
                 {
                     icon: 'settings',
-                    title: 'Setup and Configuration',
-                    description: 'We will help you setup and configure Vanilla OS for your business.',
+                    title: this.$t('enterprise-support.whats_included.title'),
+                    description: this.$t('enterprise-support.whats_included.services[0].description'),
                 },
                 {
                     icon: 'support_agent',
-                    title: 'High Priority Support',
-                    description: 'Get high priority support for your business.',
+                    title: this.$t('enterprise-support.whats_included.services[1].title'),
+                    description: this.$t('enterprise-support.whats_included.services[1].description'),
                 },
                 {
                     icon: 'class',
-                    title: 'Training',
-                    description: 'Get training and documentation for your employees to learn how to use Vanilla OS.',
+                    title: this.$t('enterprise-support.whats_included.services[2].title'),
+                    description: this.$t('enterprise-support.whats_included.services[2].description'),
                 },
                 {
                     icon: 'record_voice_over',
-                    title: 'Support',
-                    description: 'Get support for your employees and your IT department.',
+                    title: this.$t('enterprise-support.whats_included.services[3].title'),
+                    description: this.$t('enterprise-support.whats_included.services[3].description'),
                 },
                 {
                     icon: 'lightbulb',
-                    title: 'Custom Features',
-                    description: 'Get custom features to better fit your business needs.',
+                    title: this.$t('enterprise-support.whats_included.services[4].title'),
+                    description: this.$t('enterprise-support.whats_included.services[4].description'),
                 },
                 {
                     icon: 'update',
-                    title: 'IT Managed Updates',
-                    description: 'We will enable your IT department to manage updates for your Vanilla OS devices.',
+                    title: this.$t('enterprise-support.whats_included.services[5].title'),
+                    description: this.$t('enterprise-support.whats_included.services[5].description'),
                 },
                 {
                     icon: 'code',
-                    title: 'Custom Apx Images',
-                    description: 'Get custom Apx images which are tailored to your business needs.',
+                    title: this.$t('enterprise-support.whats_included.services[6].title'),
+                    description: this.$t('enterprise-support.whats_included.services[6].description'),
                 },
                 {
                     icon: 'shield',
-                    title: 'Custom Security Policies',
-                    description: 'We will help you setup custom security policies for your Vanilla OS devices.',
+                    title: this.$t('enterprise-support.whats_included.services[7].title'),
+                    description: this.$t('enterprise-support.whats_included.services[7].description'),
                 },
                 {
                     icon: 'trending_up',
-                    title: 'Optional Analytics',
-                    description: 'Get optional analytics for your devices usage.',
+                    title: this.$t('enterprise-support.whats_included.services[8].title'),
+                    description: this.$t('enterprise-support.whats_included.services[8].description'),
                 },
                 {
                     icon: 'developer_board',
-                    title: 'Development assistance',
-                    description: 'We will help you develop custom products (e.g. embedded devices) using Vanilla OS.',
+                    title: this.$t('enterprise-support.whats_included.services[9].title'),
+                    description: this.$t('enterprise-support.whats_included.services[9].description'),
                 },
                 {
                     icon: 'palette',
-                    title: 'Customization',
-                    description: 'Get custom branding and customization for your Vanilla OS devices.',
+                    title: this.$t('enterprise-support.whats_included.services[10].title'),
+                    description: this.$t('enterprise-support.whats_included.services[10].description'),
                 },
                 {
                     to: 'https://fabricators.ltd/en/contact.html',
                     extLink: true,
                     type: "clickable",
                     icon: 'contact_support',
-                    title: 'Need more?',
-                    description: 'Contact fabricators.ltd to get a custom offer for your business.',
+                    title: this.$t('enterprise-support.contact.title'),
+                    description: this.$t('enterprise-support.contact.message'),
                     extraClasses: ['card--green'],
                 },
             ],

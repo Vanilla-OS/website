@@ -2,7 +2,7 @@
   <div class="flexList anim--fadeIn">
     <div class="text text--rich">
       <p>
-        Thanks ❤️ to the {{ contributors.length }} people who have contributed.
+        {{$t('contributors.message.description1')}} {{ contributors.length }} {{$t('contributors.message.description2')}}
       </p>
     </div>
   </div>

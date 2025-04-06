@@ -17,39 +17,30 @@
             <div class="flexGrid flexGrid--3 anim--fadeIn">
                 <div class="flexGrid-item flexGrid-item--2 card card--type-adv card--type-dev card--has-pattern-work">
                     <div class="card-header">
-                        <h4>Disclaimer</h4>
-                        <h2>Read before downloading</h2>
+                        <h4>{{$t('alpha.disclaimer.title')}}</h4>
+                        <h2>{{$t('alpha.disclaimer.read_before_downloading')}}</h2>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
                             <div class="text text--rich">
-                                <p>These alpha builds are intended for testing and development purposes. Please be aware
-                                    that
-                                    aspects of these alpha builds may be incomplete or not representative of the final
-                                    product.
-                                </p>
-                                <p>By downloading and using these alpha builds, you acknowledge the possibility of
-                                    unfinished
-                                    features and deviations from the eventual release. Your feedback is valuable as we work
-                                    to
-                                    refine and enhance the software.</p>
+                                <p>{{$t('alpha.disclaimer.description1')}}</p>
+                                <p>{{$t('alpha.disclaimer.description2')}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flexGrid-item card">
                     <div class="card-header">
-                        <h4>Changelog</h4>
-                        <h2>Discover what's new in Vanilla OS 2 Orchid</h2>
+                        <h4>{{$t('alpha.changelog.title')}}</h4>
+                        <h2>{{$t('alpha.changelog.discover_new')}}</h2>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
                             <div class="text text--rich">
-                                <p>Orchid is the next generation of Vanilla OS. It is built on top of new
-                                    technologies and features to provide you with a more secure and stable system.</p>
+                                <p>{{$t('alpha.changelog.description')}}</p>
                             </div>
                             <a href="/developers-program" class="btn btn--primary">
-                                <span>Learn More</span>
+                                <span>{{$t('alpha.changelog.learn_more')}}</span>
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </a>
                         </div>
@@ -58,9 +49,8 @@
             </div>
             <div class="spacer"></div>
             <div class="text text--rich">
-                <h3>Vanilla OS 2 Orchid - Alpha builds</h3>
-                <p>You must be logged on GitHub to download the alpha builds. Once logged in, you will be able to
-                    download the chosen build from the artifacts section.</p>
+                <h3>{{$t('alpha.alpha_builds.title')}}</h3>                
+                <p>{{$t('alpha.alpha_builds.description')}}</p>
             </div>
             <div class="table">
                 <table class="table-content">
@@ -97,15 +87,15 @@
                 <div
                     class="flexGrid-item flexGrid-item--2 card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                     <div class="card-header">
-                        <h4>Be the first to know when stable release is out</h4>
-                        <h2>Subscribe to the Newsletter</h2>
+                        <h4>{{$t('components.newsletter.title')}}</h4>
+                        <h2>{{$t('components.newsletter.subscribe')}}</h2>
                         <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                             <span class="material-symbols-outlined">email</span>
-                            <span>Subscribe via Email</span>
+                            <span>{{$t('components.newsletter.subscribe_email')}}</span>
                         </div>
                         <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
                             <span class="material-symbols-outlined">newspaper</span>
-                            <span>Subscribe via the RSS Feed</span>
+                            <span>{{$t('components.newsletter.subscribe_rss')}}</span>
                         </a>
                     </div>
                     <div class="card-content">
@@ -119,7 +109,7 @@
                 <router-link class="flexGrid-item card card--clickable card--min flexGrid-item"
                     to="/community">
                     <div class="card-header">
-                        <h3><span class="material-symbols-outlined">record_voice_over</span> Discord Server</h3>
+                        <h3><span class="material-symbols-outlined">record_voice_over</span> {{$t('components.community_chat.title')}}</h3>
                         <div>
                             <div class="btn btn--link btn--inline btn--med"><span
                                     class="material-symbols-outlined">arrow_forward</span></div>
@@ -128,8 +118,7 @@
                     <div class="card-content">
                         <div class="flexList">
                             <div class="text">
-                                <p>Join our Discord server to chat with other users and developers, participate to the
-                                    events and get some spoilers.</p>
+                                <p>{{$t('components.community_chat.description')}}</p>
                             </div><!--v-if--><!--v-if-->
                         </div>
                     </div><!--v-if-->

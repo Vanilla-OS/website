@@ -31,13 +31,8 @@
     <div class="flexList flexList--center">
       <div class="spacer"></div>
       <div class="text text--rich text--center">
-        <p>
-          Thank you for supporting Vanilla OS! Your donation helps us to keep
-          the project alive and improve it. We appreciate your contribution.
-          <b
-            >Your download will start automatically, if it doesn't, click the
-            button below.</b
-          >
+        <p>{{$t('stable.donate.description1')}}.
+          <b>{{$t('stable.donate.description2')}}.</b>
         </p>
       </div>
       <a
@@ -46,26 +41,18 @@
         class="btn btn--primary btn--big"
       >
         <span class="material-symbols-outlined">file_download</span>
-        <span>Download Now</span>
+        <span>{{$t('stable.downloadButton')}}</span>
       </a>
       <div class="text text--dimmed">
-        <small
-          >Vanilla OS works out of the box on a large set of devices,
-          <a
-            href="https://docs.vanillaos.org/handbook/en/installation"
-            target="_blank"
-          >
-            learn how to install it.
+        <small>{{$t('stable.installationInfo.description1')}}
+          <a href="https://docs.vanillaos.org/handbook/en/installation" target="_blank">
+            {{$t('stable.installationInfo.description2')}}
           </a>
         </small>
       </div>
       <div class="text text--dimmed">
-        <small
-          >Download is not working? Try downloading from
-          <a
-            href="https://github.com/vanilla-os/live-iso/releases/latest"
-            target="_blank"
-          >
+        <small>{{$t('stable.installationInfo.description3')}}
+          <a href="https://github.com/vanilla-os/live-iso/releases/latest" target="_blank">
             GitHub.
           </a>
         </small>
@@ -78,18 +65,18 @@
         <div
           class="flexGrid-item flexGrid-item--2 card card--hz card--type-adv card--type-adv--hz card--type-funnyletter"
         >
-          <div class="card-header">
-            <h4>Keep in Touch</h4>
-            <h2>Subscribe to the Newsletter</h2>
-            <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
-              <span class="material-symbols-outlined">email</span>
-              <span>Subscribe via Email</span>
-            </div>
-            <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
-              <span class="material-symbols-outlined">newspaper</span>
-              <span>Subscribe via the RSS Feed</span>
-            </a>
+        <div class="card-header">
+          <h4>{{$t('stable.newsletter.title')}}</h4>
+          <h2>{{$t('stable.newsletter.subscribe')}}</h2>
+          <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
+            <span class="material-symbols-outlined">email</span>
+            <span>{{$t('stable.newsletter.subscribe_email')}}</span>
           </div>
+          <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
+            <span class="material-symbols-outlined">newspaper</span>
+            <span>{{$t('stable.newsletter.subscribe_rss')}}</span>
+          </a>
+        </div>
           <div class="card-content">
             <div class="flexList">
               <div class="card-image">
@@ -105,10 +92,10 @@
           class="flexGrid-item card card--clickable card--min flexGrid-item"
           to="/community"
         >
-          <div class="card-header">
+          <div class="card-header">            
             <h3>
               <span class="material-symbols-outlined">record_voice_over</span>
-              Discord Server
+              {{$t('components.community_chat.title')}}
             </h3>
             <div>
               <div class="btn btn--link btn--inline btn--med">
@@ -119,10 +106,7 @@
           <div class="card-content">
             <div class="flexList">
               <div class="text">
-                <p>
-                  Join our Discord server to chat with other users and
-                  developers, participate to the events and get some spoilers.
-                </p>
+                <p>{{$t('components.community_chat.description')}}</p>
               </div>
             </div>
           </div>
@@ -135,13 +119,11 @@
       <div class="spacer"></div>
       <div class="text text--rich">
         <p class="text--center">
-          Vanilla OS 2 Orchid is the next generation of Vanilla OS. It is built
-          on top of new technologies and features to provide you with the most
-          secure, stable and stunning system experience.
+          {{$t('stable.description')}}
         </p>
       </div>
       <div class="flexList flexList--center">
-        <p for="donation-amount">Choose your donation amount:</p>
+        <p for="donation-amount">{{$t('stable.donate.amount')}}:</p>
         <div class="flexGrid flexGrid--3">
           <button
             v-for="amount in [2, 5]"
@@ -180,23 +162,15 @@
         </button>
       </form>
       <div class="text text--dimmed">
-        <small
-          >Vanilla OS works out of the box on a large set of devices,
-          <a
-            href="https://docs.vanillaos.org/handbook/en/installation"
-            target="_blank"
-          >
-            learn how to install it.
+        <small>{{$t('stable.installationInfo.description1')}}
+          <a href="https://docs.vanillaos.org/handbook/en/installation" target="_blank">
+            {{$t('stable.installationInfo.description2')}}
           </a>
         </small>
       </div>
       <div class="text text--dimmed">
-        <small
-          >Download is not working? Try downloading from
-          <a
-            href="https://github.com/vanilla-os/live-iso/releases/latest"
-            target="_blank"
-          >
+        <small>{{$t('stable.installationInfo.description3')}}
+          <a href="https://github.com/vanilla-os/live-iso/releases/latest" target="_blank">
             GitHub.
           </a>
         </small>
@@ -204,9 +178,9 @@
       <div class="text text--rich">
         <center>
           <p>
-            Do you enjoy Vanilla OS? Consider
-            <router-link to="/get-involved/funding">supporting</router-link> the
-            project.
+            {{$t('stable.support_message.description1')}}<router-link to="/get-involved/funding">
+            {{$t('stable.support_message.description2')}}</router-link>
+            {{$t('stable.support_message.description3')}}
           </p>
         </center>
       </div>
@@ -219,15 +193,15 @@
           class="flexGrid-item flexGrid-item--2 card card--hz card--type-adv card--type-adv--hz card--type-funnyletter"
         >
           <div class="card-header">
-            <h4>Keep in Touch</h4>
-            <h2>Subscribe to the Newsletter</h2>
+            <h4>{{$t('stable.newsletter.title')}}</h4>
+            <h2>{{$t('stable.newsletter.subscribe')}}</h2>
             <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
               <span class="material-symbols-outlined">email</span>
-              <span>Subscribe via Email</span>
+              <span>{{$t('stable.newsletter.subscribe_email')}}</span>
             </div>
             <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
               <span class="material-symbols-outlined">newspaper</span>
-              <span>Subscribe via the RSS Feed</span>
+              <span>{{$t('stable.newsletter.subscribe_rss')}}</span>
             </a>
           </div>
           <div class="card-content">
@@ -245,10 +219,10 @@
           class="flexGrid-item card card--clickable card--min flexGrid-item"
           to="/community"
         >
-          <div class="card-header">
+          <div class="card-header">            
             <h3>
               <span class="material-symbols-outlined">record_voice_over</span>
-              Discord Server
+              {{$t('components.community_chat.title')}}
             </h3>
             <div>
               <div class="btn btn--link btn--inline btn--med">
@@ -259,10 +233,7 @@
           <div class="card-content">
             <div class="flexList">
               <div class="text">
-                <p>
-                  Join our Discord server to chat with other users and
-                  developers, participate to the events and get some spoilers.
-                </p>
+                <p>{{$t('components.community_chat.description')}}</p>
               </div>
             </div>
           </div>
@@ -279,9 +250,12 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+import { useI18n } from 'vue-i18n';  
+
+const { t } = useI18n();  
 
 const donationAmount = ref<number | null>(null);
-const donateText = ref("Please choose an option");
+const donateText = ref(t('stable.donate.button'));
 const donateButtonDisabled = ref(true);
 const paypalAmount = ref("");
 
@@ -294,7 +268,7 @@ const hasDonated = () => {
 const setAmount = (amount: number) => {
   donationAmount.value = amount;
   paypalAmount.value = amount.toString();
-  donateText.value = amount === 0 ? "Free Download" : "Donate and download";
+  donateText.value = amount === 0 ? t('stable.donate.free') : t('stable.donate.download');
   donateButtonDisabled.value = false;
 };
 
@@ -303,12 +277,12 @@ const checkDonation = () => {
     donationAmount.value = 0;
   }
   if (donationAmount.value === null) {
-    donateText.value = "Please choose an option";
+    donateText.value = t('stable.donate.button');
     donateButtonDisabled.value = true;
   } else {
     paypalAmount.value = donationAmount.value.toString();
     donateText.value =
-      donationAmount.value === 0 ? "Free Download" : "Donate and download";
+      donationAmount.value === 0 ? t('stable.donate.free') : t('stable.donate.download');
     donateButtonDisabled.value = false;
   }
 };

@@ -1,29 +1,27 @@
 <template>
     <div class="flexList anim--fadeIn">
         <div class="text text--rich">
-            <p>Our developers program provides a way for developers to get access to exclusive features and support
-                while supporting the development of Vanilla OS.</p>
-            <h3>What's included</h3>
+            <p>{{$t('developers-program.program_overview')}}</p>
+            <h3>{{$t('developers-program.whats_included.title')}}</h3>
         </div>
         <div class="flexGrid flexGrid--2">
             <card v-for="(item, index) in helpItems" :key="index" :item="item" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>Join the program</h3>
-            <p>The developers program will be available soon. If you are interested in joining the program, please
-                subscribe to our funnyletter to be notified when the program is available.</p>
+            <h3>{{$t('developers-program.join_program.title')}}</h3>
+            <p>{{$t('developers-program.join_program.description')}}</p>
             <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
-                    <h4>Don't miss the news</h4>
-                    <h2>Subscribe to the Newsletter</h2>
+                    <h4>{{$t('developers-program.join_program.subscribe.title')}}</h4>
+                    <h2>{{$t('developers-program.join_program.subscribe.newsletter')}}</h2>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="material-symbols-outlined">email</span>
-                        <span>Subscribe via Email</span>
+                        <span>{{$t('developers-program.join_program.subscribe.subscribe_email')}}</span>
                     </div>
                     <button class="btn btn--primary" @click="openRSSFeed">
                         <span class="material-symbols-outlined">newspaper</span>
-                        <span>Subscribe via the RSS Feed</span>
+                        <span>{{$t('developers-program.join_program.subscribe.subscribe_rss')}}</span>
                     </button>
                 </div>
                 <div class="card-content">
@@ -50,35 +48,35 @@ export default defineComponent({
             helpItems: [
                 {
                     icon: 'build',
-                    title: 'Pre-release builds',
-                    description: 'Get access to pre-release builds of Vanilla OS before they are released to the public.',
+                    title: this.$t('developers-program.whats_included.features[0].title'),
+                    description: this.$t('developers-program.whats_included.features[0].description'),
                 },
                 {
                     icon: 'email',
-                    title: 'Weekly funnyletter',
-                    description: 'Get a weekly funnyletter with updates about the development of Vanilla OS.',
+                    title: this.$t('developers-program.whats_included.features[1].title'),
+                    description: this.$t('developers-program.whats_included.features[1].description'),
                 },
                 {
                     icon: 'bug_report',
-                    title: 'Testing programs',
-                    description: 'Get access to testing programs for new features and products.',
+                    title: this.$t('developers-program.whats_included.features[2].title'),
+                    description: this.$t('developers-program.whats_included.features[2].description'),
                 },
                 {
                     icon: 'bug_report',
-                    title: 'Updates Priority',
-                    description: 'Get proposed updates before they are released to the public.',
+                    title: this.$t('developers-program.whats_included.features[3].title'),
+                    description: this.$t('developers-program.whats_included.features[3].description'),
                 },
                 {
                     icon: 'support_agent',
-                    title: 'Dedicated Discord channel',
-                    description: 'Get access to a dedicated Discord channel and chat with the developers.',
+                    title: this.$t('developers-program.whats_included.features[4].title'),
+                    description: this.$t('developers-program.whats_included.features[4].description'),
                 },
                 {
                     icon: 'verified',
-                    title: 'Dedicated badge',
-                    description: 'Show your support with a dedicated badge in the Vanilla OS community.',
+                    title: this.$t('developers-program.whats_included.features[5].title'),
+                    description: this.$t('developers-program.whats_included.features[5].description'),
                 },
-            ],
+                ],
         };
     },
     methods: {

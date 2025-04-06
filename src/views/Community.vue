@@ -10,21 +10,19 @@
                 <div class="card-header">
                     <h3>
                         <span class="fa fa-brands fa-discord"></span>
-                        Join Discord
+                        {{$t('community.discord.title')}}
                     </h3>
                 </div>
                 <div class="card-content">
                     <div class="text text--rich">
-                        <p>We have both a Discord server and Forums but our community is on Discord, a cross-platform voice
-                            and text chat platform designed for community of all sizes.</p>
-                        <p>Join us to chat with other users and developers, participate in our community events, or find out
-                            the latest news before they are published! 👀.</p>
+                        <p>{{$t('community.discord.description')}}</p>
+                        <p>{{$t('community.discord.participation.message')}} 👀.</p>
                     </div>
                 </div>
                 <div class="card-footer">
                     <a class="btn btn--link btn--inline btn--med" href="https://discord.gg/vanilla-os-1023243680829681704"
                         target="_blank">
-                        <span>Join Discord</span>
+                        <span>{{$t('community.discord.button.text')}}</span>
                         <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>

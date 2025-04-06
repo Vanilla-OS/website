@@ -3,7 +3,7 @@
         <div class="text text--rich">
             <a href="https://www.iubenda.com/privacy-policy/64799216"
                 class="iubenda-white no-brand iubenda-noiframe iubenda-embed iub-no-markup iubenda-noiframe iub-body-embed"
-                title="Privacy Policy">Privacy Policy</a>
+                title="Privacy Policy">{{$t('privacy-policy.linkText')}}</a>
         </div>
     </div>
 </template>

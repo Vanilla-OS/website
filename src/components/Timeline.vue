@@ -4,7 +4,7 @@
             <div class="timeline-progressbar-header">
                 <h2 :id="slug">{{ title }} - {{ getOverallProgress }}% ({{ subtitle }})</h2>
                 <div class="text">
-                    <p>There are <b>{{ totalEvents }}</b> events in this release.</p>
+                    <p>{{$t('roadmap.versions.there_are')}} <b>{{ totalEvents }}</b> {{$t('roadmap.versions.release')}}</p>
                 </div>
             </div>
             <div class="timeline-progressbar-content">
@@ -19,7 +19,7 @@
         </div>
         <div class="timeline-events">
             <div class="timeline-events-header">
-                <h3>Timeline</h3>
+                <h3>{{$t('roadmap.versions.timeline.title')}}</h3>
             </div>
             <div class="timeline-events-content">
                 <div v-for="event in events" :key="event.name" class="timeline-events-item card"

@@ -2,11 +2,8 @@
   <div class="flexList anim--fadeIn">
     <div class="text text--rich">
       <p>
-        Vanilla OS is an Open Source project that is maintained by
-        <a href="//fabricators.ltd">fabricators.ltd</a> and a team of
-        volunteers. We are a diverse group of people from all over the world,
-        with a wide range of skills and backgrounds. We are passionate about
-        making Vanilla OS the best it can be.
+        {{$t('team.introduction.description1')}}                
+        <a href="//fabricators.ltd">{{$t('team.introduction.description2')}} </a> {{$t('team.introduction.description3')}}
       </p>
     </div>
     <div class="flexGrid">
@@ -18,12 +15,11 @@
       </card>
     </div>
     <div class="spacer"></div>
-    <div class="text text--rich">
+    <div class="text text--rich">      
       <p>
-        There are many more people who have contributed to Vanilla OS. A full
-        list of contributors can be
-        <router-link :to="{ name: 'team-contributors' }">found here</router-link
-        >.
+        {{$t('team.additional_info.message1')}}
+        <router-link :to="{ name: 'team-contributors' }">
+        {{$t('team.additional_info.message2')}}</router-link>.
       </p>
     </div>
   </div>
@@ -39,7 +35,7 @@ export default defineComponent({
       const team = [
         {
           name: "Mirko Brombin",
-          description: "Founder, Head of UI/UX Design and Core Developer",
+          description: this.$t('team.members[0].role'),
           lit: true,
           fabricators: true,
           image: "/assets/images/pics/mirkobrombin.jpeg",
@@ -59,7 +55,7 @@ export default defineComponent({
         },
         {
           name: "Pietro Di Caprio",
-          description: "Co-Founder and Public Relations Manager",
+          description: this.$t('team.members[1].role'),
           fabricators: true,
           image: "/assets/images/pics/pietrodicaprio.jpeg",
           links: {
@@ -71,7 +67,7 @@ export default defineComponent({
         },
         {
           name: "Luca di Maio",
-          description: "Co-Founder and Software Engineer",
+          description: this.$t('team.members[2].role'),
           image: "/assets/images/pics/89luca89.jpeg",
           links: {
             githubUsername: "89luca89",
@@ -81,8 +77,7 @@ export default defineComponent({
         },
         {
           name: "Mateus B. Melchiades",
-          description:
-            "Software Engineer, Core Developer and Contributors Leader",
+          description: this.$t('team.members[3].role'),
           lit: true,
           image: "/assets/images/pics/matbme.jpeg",
           links: {
@@ -92,7 +87,7 @@ export default defineComponent({
         },
         {
           name: "axtlos",
-          description: "Software Engineer and Core Developer",
+          description: this.$t('team.members[4].role'),
           lit: true,
           image: "/assets/images/pics/axtloss.jpeg",
           links: {
@@ -103,7 +98,7 @@ export default defineComponent({
         },
         {
           name: "Hari Rana",
-          description: "Community Manager and UX Researcher",
+          description: this.$t('team.members[5].role'),
           fabricators: true,
           image: "/assets/images/pics/theevilskeleton.png",
           links: {
@@ -126,7 +121,7 @@ export default defineComponent({
         },
         {
           name: "Muqtadir",
-          description: "Software Engineer and UI Designer",
+          description: this.$t('team.members[6].role'),
           image: "/assets/images/pics/muqtxdir.jpeg",
           links: {
             githubUsername: "Muqtxdir",
@@ -135,7 +130,7 @@ export default defineComponent({
         },
         {
           name: "K.B.Dharun Krishna",
-          description: "Documentation and Localization Team Lead",
+          description: this.$t('team.members[7].role'),
           image: "/assets/images/pics/kbdharun.jpeg",
           links: {
             githubUsername: "kbdharun",
@@ -147,7 +142,7 @@ export default defineComponent({
         },
         {
           name: "Dallas Strouse",
-          description: "Website Accessibility",
+          description: this.$t('team.members[8].role'),
           image: "/assets/images/pics/orowith2os.png",
           links: {
             githubUsername: "orowith2os",
@@ -157,7 +152,7 @@ export default defineComponent({
         },
         {
           name: "Tau",
-          description: "Bugfixes and User Support",
+          description: this.$t('team.members[9].role'),
           image: "/assets/images/pics/taukakao.jpg",
           links: {
             githubUsername: "taukakao",
@@ -165,7 +160,7 @@ export default defineComponent({
         },
         {
           name: "Jarred Wilson",
-          description: "Software Engineer and Maintainer",
+          description: this.$t('team.members[10].role'),
           image: "/assets/images/pics/jardon.jpg",
           links: {
             githubUsername: "jardon",
@@ -173,7 +168,7 @@ export default defineComponent({
         },
         {
           name: "nellfs",
-          description: "Software Engineer",
+          description: this.$t('team.members[11].role'),
           image: "/assets/images/pics/nellfs.png",
           links: {
             githubUsername: "nellfs",
@@ -189,7 +184,7 @@ export default defineComponent({
         },
         {
           name: "Muhammad Salman",
-          description: "Software Engineer and UI Designer",
+          description: this.$t('team.members[12].role'),
           image: "/assets/images/pics/muhdsalm.png",
           links: {
             githubUsername: "muhdsalm",
@@ -197,7 +192,7 @@ export default defineComponent({
         },
         {
           name: "Gabriel Cozma",
-          description: "Front-End Engineer",
+          description: this.$t('team.members[13].role'),
           image: "/assets/images/pics/gabs.webp",
           fabricators: true,
           links: {
@@ -302,14 +297,14 @@ export default defineComponent({
 
         if (member.links.githubSponsors && member.links.externalSponsors) {
           item.footerActions.push({
-            title: "Donate",
+            title: this.$t('team.donate'),
             icon: "fa-solid fa-heart",
             iconPack: "fa",
             onClick: (event: MouseEvent) => createDropdown(member, event),
           });
         } else if (member.links.githubSponsors) {
           item.footerActions.push({
-            title: "Donate",
+            title: this.$t('team.donate'),
             icon: "fa-solid fa-heart",
             iconPack: "fa",
             onClick: () => {
@@ -322,7 +317,7 @@ export default defineComponent({
         } else if (member.links.externalSponsors) {
           if (member.links.externalSponsors.length === 1) {
             item.footerActions.push({
-              title: "Donate",
+              title: this.$t('team.donate'),
               icon: "fa-solid fa-heart",
               iconPack: "fa",
               onClick: () => {
@@ -334,7 +329,7 @@ export default defineComponent({
             });
           } else {
             item.footerActions.push({
-              title: "Donate",
+              title: this.$t('team.donate'),
               icon: "fa-solid fa-heart",
               iconPack: "fa",
               onClick: () => {

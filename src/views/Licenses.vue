@@ -2,8 +2,8 @@
 <template>
     <div class="flexList">
         <div class="text text--rich">
-            <h3>Core Licenses</h3>
-            <p>The following licenses apply to Vanilla OS projects.</p>
+            <h3>{{$t('licenses.coreLicenses.title')}}</h3>
+            <p>{{$t('licenses.coreLicenses.description')}}</p>
         </div>
         <div class="flexGrid flexGrid--2 anim--fadeIn">
             <card v-for="(item, index) in licenses" :key="index" :item="item" />
@@ -11,48 +11,47 @@
         <div class="spacer"></div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>Other Licenses</h3>
-            <p>The following licenses might apply to the software included in Vanilla OS and not to Vanilla OS itself.</p>
+            <h3>{{$t('licenses.otherLicenses.title')}}</h3>
+            <p>{{$t('licenses.otherLicenses.description')}}</p>
             <ul>
-                <li>GNU General Public License (common)</li>
-                <li>GNU Lesser General Public License (common)</li>
-                <li>GNU Library General Public License (common)</li>
-                <li>Modified BSD License (common)</li>
-                <li>Perl Artistic license (common)</li>
-                <li>Apache License</li>
-                <li>Expat/MIT-style licenses</li>
-                <li>zlib-style licenses</li>
-                <li>LaTeX Project Public License</li>
-                <li>Python Software Foundation License</li>
-                <li>Ruby's License</li>
-                <li>PHP License</li>
-                <li>W3C Software Notice and License</li>
-                <li>OpenSSL License</li>
-                <li>Sleepycat License</li>
-                <li>Common UNIX Printing System License Agreement</li>
-                <li>vhf Public License</li>
-                <li>"No problem Bugroff" license</li>
-                <li>Unmodified BSD License (also known as the original or 4-clause BSD license. It included an advertising
-                    requirement and is now deprecated even by the BSD project.)</li>
-                <li>public domain (not a license, strictly speaking)</li>
-                <li>IBM Public License Version 1.0</li>
-                <li>NVIDIA Software License</li>
-                <li>SCILAB License</li>
-                <li>Limited Use Software License Agreement</li>
-                <li>Non-Commercial License</li>
-                <li>FastCGI / Open Market License</li>
-                <li>LaTeX2HTML License</li>
-                <li>Open Publication License</li>
-                <li>Free Document Dissemination License</li>
-                <li>AT&T Open Source License</li>
-                <li>Apple Public Source License</li>
-                <li>Aladdin Free Public License</li>
-                <li>Generic amiwm License (an XV-style license)</li>
-                <li>Digital License Agreement</li>
-                <li>Moria/Angband license</li>
-                <li>Unarj License</li>
-                <li>id Software License</li>
-                <li>qmail terms</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.0')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.1')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.2')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.3')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.4')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.5')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.6')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.7')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.8')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.9')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.10')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.11')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.12')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.13')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.14')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.15')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.16')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.17')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.18')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.19')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.20')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.21')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.22')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.23')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.24')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.25')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.26')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.27')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.28')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.29')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.30')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.31')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.32')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.33')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.34')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.35')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.36')}}</li>
+                <li>{{$t('licenses.otherLicenses.licensesList.37')}}</li>
             </ul>
         </div>
     </div>
@@ -70,7 +69,7 @@ export default defineComponent({
                     title: 'GNU General Public License 3',
                     footerActions: [
                         {
-                            title: 'Browse',
+                            title: this.$t('licenses.browse'),
                             icon: 'book',
                             iconPack: 'mdi',
                             onClick: () => {
@@ -78,7 +77,7 @@ export default defineComponent({
                             },
                         },
                         {
-                            title: 'Usage',
+                            title: this.$t('licenses.usage'),
                             icon: 'code',
                             iconPack: 'mdi',
                             onClick: () => {
@@ -91,7 +90,7 @@ export default defineComponent({
                     title: 'GNU Affero General Public License',
                     footerActions: [
                         {
-                            title: 'Browse',
+                            title: this.$t('licenses.browse'),
                             icon: 'book',
                             iconPack: 'mdi',
                             onClick: () => {
@@ -99,7 +98,7 @@ export default defineComponent({
                             },
                         },
                         {
-                            title: 'Usage',
+                            title: this.$t('licenses.usage'),
                             icon: 'code',
                             iconPack: 'mdi',
                             onClick: () => {

@@ -10,10 +10,8 @@
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <p>* This platform optionally allows you to make your donation anonymous. If you choose to do so, we will not
-                receive your name or any other information about you.</p>
-            <p>Once you have made a donation, <a href="https://fabricators.ltd/en/contacts" target="_blank">contact us</a> to
-                give you the role of sponsor on our Discord server.</p>
+            <p>{{this.$t('funding.additional_info.note')}}</p>            
+            <p>{{this.$t('funding.additional_info.contact1')}}<a href="https://fabricators.ltd/en/contacts" target="_blank">{{this.$t('funding.additional_info.contact2')}}</a>{{this.$t('funding.additional_info.contact3')}}</p>
         </div>
     </div>
 </template>
@@ -29,8 +27,8 @@ export default defineComponent({
                 {
                     icon: 'account_balance',
                     iconPack: 'mdi',
-                    title: 'Bank Transfer',
-                    description: 'Bank Transfer is the most direct and least taxed way to support Vanilla OS. You can make a one-time donation of any amount.',
+                    title: this.$t('funding.bank_transfer.title'),
+                    description: this.$t('funding.bank_transfer.description'),
                     bankTransferDetails: [
                         'Account Name: FABRICATORS S.R.L.',
                         'IBAN: IT30S0326811200052945656640',
@@ -39,7 +37,7 @@ export default defineComponent({
                     extraClasses: ['flexGrid-item--2'],
                     badges: [
                         {
-                            text: 'Recommended for European users',
+                            text: this.$t('funding.recommended'),
                             color: 'green',
                         }
                     ]
@@ -50,11 +48,11 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'fa-solid fa-bitcoin-sign',
                     iconPack: 'fa',
-                    title: 'Cryptocurrencies',
-                    description: 'Cryptocurrencies allows for anonymous and less-taxed donations. You can make a one-time donation of any amount. The exchange rate is subject to change according to the market.',
+                    title: this.$t('funding.cryptocurrencies.title'),
+                    description: this.$t('funding.cryptocurrencies.description'),
                     badges: [
                         {
-                            text: 'Anonymous',
+                            text: this.$t('funding.cryptocurrencies.badges.anonymous'),
                         }
                     ]
                 },
@@ -64,15 +62,15 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'fa-solid fa-coins',
                     iconPack: 'fa',
-                    title: 'Liberapay',
-                    description: 'Liberapay is a convenient way to make recurring donations.',
+                    title: this.$t('funding.liberapay.title'),
+                    description: this.$t('funding.liberapay.description'),
                     badges: [
                         {
-                            text: 'Recommended for European users',
+                            text: this.$t('funding.recommended'),
                             color: 'green',
                         },
                         {
-                            text: 'Anonymous*',
+                            text: this.$t('funding.liberapay.badges.anonymous'),
                         }
                     ]
                 },
@@ -82,11 +80,11 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'fa-brands fa-github',
                     iconPack: 'fa',
-                    title: 'GitHub Sponsors',
-                    description: 'GitHub Sponsors is a convenient way to make one-time or recurring donations.',
+                    title: this.$t('funding.github_sponsors.title'),
+                    description: this.$t('funding.github_sponsors.description'),
                     badges: [
                         {
-                            text: 'Anonymous*',
+                            text: this.$t('funding.github_sponsors.badges.anonymous'),
                         }
                     ]
                 },
@@ -96,8 +94,8 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'handshake',
                     iconPack: 'mdi',
-                    title: 'Custom',
-                    description: 'Contact us to discuss a custom donation method or a different sponsorship arrangement.',
+                    title: this.$t('funding.custom.title'),
+                    description: this.$t('funding.custom.description'),
                 },
             ],
         };

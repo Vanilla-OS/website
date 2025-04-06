@@ -15,18 +15,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/first-setup.svg',
                     iconAsImage: true,
-                    title: 'First Setup',
-                    description: 'The First Setup is the first thing you see when you boot up Vanilla OS for the first time.',
+                    title: this.$t('translate.first_setup.title'),
+                    description: this.$t('translate.first_setup.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/vanilla-os/first-setup/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/first-setup/';
@@ -37,18 +37,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/installer.svg',
                     iconAsImage: true,
-                    title: 'Installer',
-                    description: 'The Installer is what you use to install Vanilla OS on your device.',
+                    title: this.$t('translate.installer.title'),
+                    description: this.$t('translate.installer.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/vanilla-installer/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/installer/';
@@ -59,18 +59,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/drivers-utility.svg',
                     iconAsImage: true,
-                    title: 'Drivers Utility',
-                    description: 'The Drivers Utility is what you use to install drivers on your device.',
+                    title: this.$t('translate.drivers_utility.title'),
+                    description: this.$t('translate.drivers_utility.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/vanilla-drivers-utility';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-drivers-utility/';
@@ -81,18 +81,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/prime-utility.svg',
                     iconAsImage: true,
-                    title: 'PRIME Utility',
-                    description: 'The PRIME Utility is what you use to switch between your integrated and dedicated graphics cards.',
+                    title: this.$t('translate.prime_utility.title'),
+                    description: this.$t('translate.prime_utility.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/vanilla-prime-utility';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-prime-utility/';
@@ -103,18 +103,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/apx.png',
                     iconAsImage: true,
-                    title: 'Apx',
-                    description: 'Apx is what developers use to work with different Linux distributions in a containerized environment.',
+                    title: this.$t('translate.apx.title'),
+                    description: this.$t('translate.apx.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/vanilla-os/apx/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/apx/';
@@ -125,18 +125,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/apx-gui.svg',
                     iconAsImage: true,
-                    title: 'Apx GUI',
-                    description: 'Apx GUI is a graphical user interface for Apx, if allows a friendlier way to work with your Linux containers.',
+                    title: this.$t('translate.apx_gui.title'),
+                    description: this.$t('translate.apx_gui.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/apx-gui/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/apx-gui/';
@@ -147,18 +147,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/abroot.svg',
                     iconAsImage: true,
-                    title: 'ABRoot',
-                    description: 'ABRoot is what manages the A/B partitions on your device and allows you to perform changes to them.',
+                    title: this.$t('translate.abroot.title'),
+                    description: this.$t('translate.abroot.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/ABRoot/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/abroot/';
@@ -169,18 +169,18 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/vso.svg',
                     iconAsImage: true,
-                    title: 'VSO',
-                    description: 'VSO is what allows you to install and manage software and perform system updates on your device.',
+                    title: this.$t('translate.vso.title'),
+                    description: this.$t('translate.vso.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/vanilla-system-operator';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/vanilla-system-operator/';
@@ -190,18 +190,18 @@ export default defineComponent({
                 },
                 {
                     icon: 'extension',
-                    title: 'Ikaros',
-                    description: 'Ikaros is the drivers backend for the Drivers Utility, it allows you to install drivers on your device using a CLI.',
+                    title: this.$t('translate.ikaros.title'),
+                    description: this.$t('translate.ikaros.description'),
                     footerActions: [
                         {
-                            title: 'Source Code',
+                            title: this.$t('translate.source_code'),
                             icon: 'code',
                             onClick: () => {
                                 window.location.href = 'https://github.com/Vanilla-OS/Ikaros/';
                             },
                         },
                         {
-                            title: 'Translate',
+                            title: this.$t('translate.translate'),
                             icon: 'translate',
                             onClick: () => {
                                 window.location.href = 'https://hosted.weblate.org/projects/vanilla-os/Ikaros/';

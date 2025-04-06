@@ -11,18 +11,18 @@ export default defineComponent({
         return {
             cards: [
                 {
-                    title: 'Reliable',
-                    content: 'Count on consistent performance with updates that are always carefully tested, ensuring your system remains stable and reliable. Focus on what matters most without interruptions. Whether managing work projects, enjoying entertainment, or creating new content, you can count on Orchid.',
+                    title: this.$t('testing-components.cards[0].title'),
+                    content: this.$t('testing-components.cards[0].description'),
                     color: 'blue'
                 },
                 {
-                    title: 'Safe',
-                    content: 'Your security is our priority. Orchid protects critical components from unauthorized access, ensuring a secure environment. Your activities take place in an isolated space, keeping them separate and secure. Additionally, your data is encrypted, and the boot process is verified against tampering.',
+                    title: this.$t('testing-components.cards[1].title'),
+                    content: this.$t('testing-components.cards[1].description'),
                     color: 'green'
                 },
                 {
-                    title: 'Cool',
-                    content: 'Experience a fresh, modern interface that’s as visually appealing as functional. Quickly access your favorite apps and tools with a streamlined design that makes navigation truly intuitive. Enjoy smooth transitions, stunning visuals and an overall user experience that feels effortless and enjoyable.',
+                    title: this.$t('testing-components.cards[2].title'),
+                    content: this.$t('testing-components.cards[2].description'),
                     color: 'pink'
                 }
             ]

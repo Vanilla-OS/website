@@ -1,6 +1,6 @@
 import { createRouter, createMemoryHistory, createWebHistory } from 'vue-router'
 import { useHead } from 'unhead'
-
+import { i18n } from '../localization/index';
 
 export default function createRouterInstance(clientType: string) {
   console.log('creating new router instance')
@@ -96,8 +96,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "PrivacyPolicy" */ "@/views/PrivacyPolicy.vue"),
             meta: {
-              title: "Privacy Policy",
-              description: "Check out our Privacy Policy.",
+              title: i18n.global.t('privacy-policy.title'),
+              description: i18n.global.t('privacy-policy.description'),
             },
           },
           {
@@ -106,8 +106,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "PrivacyPolicy" */ "@/views/OSPrivacyPolicy.vue"),
             meta: {
-              title: "OS Privacy Policy",
-              description: "Check out the Privacy Policy of Vanilla OS (the operating system).",
+              title: i18n.global.t('os-privacy-policy.title'),
+              description: i18n.global.t('os-privacy-policy.description'),
             },
           },
           {
@@ -116,8 +116,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "CookiesPolicy" */ "@/views/CookiesPolicy.vue"),
             meta: {
-              title: "Cookies Policy",
-              description: "Check out our Cookies Policy.",
+              title: i18n.global.t('cookies-policy.title'),
+              description: i18n.global.t('cookies-policy.description'),
             },
           },
           {
@@ -126,8 +126,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Licenses" */ "@/views/Licenses.vue"),
             meta: {
-              title: "Licenses",
-              description: "Vanilla OS is built on top of many technologies. Check out the licenses.",
+              title: i18n.global.t('licenses.title'),
+              description: i18n.global.t('licenses.description'),
             },
           },
           {
@@ -136,8 +136,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Help" */ "@/views/Help.vue"),
             meta: {
-              title: "Help",
-              description: "Have a problem or need information about Vanilla OS?",
+              title: i18n.global.t('help.title'),
+              description: i18n.global.t('help.description'),
             },
           },
           {
@@ -146,8 +146,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Team" */ "@/views/Team.vue"),
             meta: {
-              title: "Team",
-              description: "Meet the people behind Vanilla OS.",
+              title: i18n.global.t('team.title'),
+              description: i18n.global.t('team.description'),
             },
           },
           {
@@ -156,8 +156,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Contributors" */ "@/views/get-involved/Contributors.vue"),
             meta: {
-              title: "Contributors",
-              description: "Meet the people who contributed to Vanilla OS.",
+              title: i18n.global.t('contributors.title'),
+              description: i18n.global.t('contributors.description'),
               parent: "team",
             },
           },
@@ -167,8 +167,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Brand" */ "@/views/Brand.vue"),
             meta: {
-              title: "Brand",
-              description: "Official Vanilla OS brand assets and values.",
+              title: i18n.global.t('brand.title'),
+              description: i18n.global.t('brand.description'),
             },
           },
           {
@@ -177,8 +177,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "DevelopersProgram" */ "@/views/DevelopersProgram.vue"),
             meta: {
-              title: "Developers Program",
-              description: "Join our Developers Program and get access to exclusive content.",
+              title: i18n.global.t('developers-program.title'),
+              description: i18n.global.t('developers-program.description'),
             },
           },
           {
@@ -187,8 +187,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "CodeOfConduct" */ "@/views/CodeOfConduct.vue"),
             meta: {
-              title: "Code of Conduct",
-              description: "Everyone must follow our Code of Conduct to be part of Vanilla OS.",
+              title: i18n.global.t('code-of-conduct.title'),
+              description: i18n.global.t('code-of-conduct.description'),
             },
           },
           {
@@ -197,8 +197,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "EnterpriseSupport" */ "@/views/EnterpriseSupport.vue"),
             meta: {
-              title: "Enterprise Support",
-              description: "Get enterprise support for Vanilla OS.",
+              title: i18n.global.t('enterprise-support.title'),
+              description: i18n.global.t('enterprise-support.description'),
             },
           },
           {
@@ -207,8 +207,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Roadmap" */ "@/views/Roadmap.vue"),
             meta: {
-              title: "Roadmap",
-              description: "Follow our roadmap to see what's coming next.",
+              title: i18n.global.t('roadmap.title'),
+              description: i18n.global.t('roadmap.description'),
             },
           },
           {
@@ -217,8 +217,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Roadmap" */ "@/views/ComponentsLifeCycle.vue"),
             meta: {
-              title: "Components Lifecycle",
-              description: "Learn how our components are developed and maintained.",
+              title: i18n.global.t('components-lifecycle.title'),
+              description: i18n.global.t('components-lifecycle.description'),
             },
           },
           {
@@ -227,8 +227,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "TechnologiesAndCredits" */ "@/views/TechnologiesAndCredits.vue"),
             meta: {
-              title: "Technologies and Credits",
-              description: "Vanilla OS is built on top of many technologies.",
+              title: i18n.global.t('technologies-and-credits.title'),
+              description: i18n.global.t('technologies-and-credits.description'),
             },
           },
           {
@@ -237,8 +237,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Community" */ "@/views/Community.vue"),
             meta: {
-              title: "Community",
-              description: "Join our community of users and developers.",
+              title: i18n.global.t('community.title'),
+              description: i18n.global.t('community.description'),
             },
           },
           {
@@ -247,8 +247,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Faq" */ "@/views/help/Faq.vue"),
             meta: {
-              title: "Frequently Asked Questions",
-              description: "The most common questions about Vanilla OS.",
+              title: i18n.global.t('faq.title'),
+              description: i18n.global.t('faq.description'),
               parent: "help",
             },
           },
@@ -258,8 +258,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "GetInvolved" */ "@/views/GetInvolved.vue"),
             meta: {
-              title: "Get Involved",
-              description: "Everything we do is Open Source. You can contribute in many way.",
+              title: i18n.global.t('get-involved.title'),
+              description: i18n.global.t('get-involved.description'),
             },
           },
           {
@@ -268,8 +268,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Translate" */ "@/views/get-involved/Translate.vue"),
             meta: {
-              title: "Translate",
-              description: "Translate Vanilla OS into your language.",
+              title: i18n.global.t('translate.title'),
+              description: i18n.global.t('translate.description'),
               parent: "get-involved",
             },
           },
@@ -279,8 +279,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Funding" */ "@/views/get-involved/Funding.vue"),
             meta: {
-              title: "Funding",
-              description: "We need your help to keep Vanilla OS alive.",
+              title: i18n.global.t('funding.title'),
+              description: i18n.global.t('funding.description'),
               parent: "get-involved",
             },
           },
@@ -290,8 +290,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Spread" */ "@/views/get-involved/Spread.vue"),
             meta: {
-              title: "Spread the Word",
-              description: "Help us spread the word about Vanilla OS.",
+              title: i18n.global.t('spread.title'),
+              description: i18n.global.t('spread.description'),
               parent: "get-involved",
             },
           },
@@ -301,8 +301,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Updates" */ "@/views/Updates.vue"),
             meta: {
-              title: "Updates",
-              description: "Check out the latest updates of Vanilla OS.",
+              title: i18n.global.t('updates.title'),
+              description: i18n.global.t('updates.description'),
             },
           },
           {
@@ -311,8 +311,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Download" */ "@/views/Download.vue"),
             meta: {
-              title: "Get Vanilla OS",
-              description: "Get the latest version.",
+              title: i18n.global.t('download.title'),
+              description: i18n.global.t('download.description')              
             },
           },
           {
@@ -321,8 +321,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Download" */ "@/views/NerdInfo.vue"),
             meta: {
-              title: "Information for Nerds",
-              description: "What is Vanilla OS from a technical point of view.",
+              title: i18n.global.t('nerd-info.title'),
+              description: i18n.global.t('nerd-info.description'),
             },
           },
           {
@@ -331,8 +331,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Download" */ "@/views/TestingComponents.vue"),
             meta: {
-              title: "Testing Components",
-              description: "Workspace to test components.",
+              title: i18n.global.t('testing-components.title'),
+              description: i18n.global.t('testing-components.description'),
             },
           },
         ]
@@ -349,8 +349,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "404" */ "@/views/404.vue"),
             meta: {
-              title: "404 - Page not found",
-              description: "The page you are looking for does not exist.",
+              title: i18n.global.t('not-found.title'),
+              description: i18n.global.t('not-found.description'),
             },
           },
         ]
@@ -366,7 +366,7 @@ export default function createRouterInstance(clientType: string) {
     if (to === undefined) {
       next();
       return;
-    }
+    }    
 
     useHead({// @ts-ignore
       title: to.meta.title ? to.meta.title + " - Vanilla OS" : "Vanilla OS",

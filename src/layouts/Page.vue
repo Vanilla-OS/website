@@ -8,7 +8,7 @@
                     <div class="page-nav" v-if="parentRoute?.name">
                         <router-link :to="{ name: parentRoute.name }" class="btn btn--link btn--inline">
                             <span class="material-symbols-outlined">arrow_back</span>
-                            <span v-if="parentRoute?.meta?.title">Back to {{ parentRoute.meta.title }}</span>
+                            <span v-if="parentRoute?.meta?.title">{{this.$t('components.back')}} {{ parentRoute.meta.title }}</span>
                         </router-link>
                     </div>
                     <h1>{{ $route.meta.title }}</h1>

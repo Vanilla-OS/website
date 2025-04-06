@@ -1,22 +1,18 @@
 <template>
     <div class="flexList anim--fadeIn">
         <div class="text text--rich">
-            <h3>Our Values</h3>
-            <p>Vanilla OS is an operating system that puts user experience and comfort first, and revolves around core
-                values: simplicity, cleanliness, freedom, and obstruction-free.</p>
+            <h3>{{$t('brand.our_values.title')}}</h3>
+            <p>{{$t('brand.our_values.description')}}</p>
         </div>
         <div class="flexGrid flexGrid--4">
             <card v-for="(item, index) in values" :key="index" :item="item" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <p>Our vision stems from the belief that user experience should be accessible to all without complications. We
-                have translated this principle into a brand that fully embodies this philosophy. The name "Vanilla OS"
-                evokes the purity and simplicity we aim to offer our users, while the vanilla flower, featured in our
-                logo, represents the sweetness and elegance of our operating system.</p>
+            <p>{{$t('brand.vision.description')}}</p>
         </div>
         <div class="text text--rich">
-            <h3>Brand Assets</h3>
+            <h3>{{$t('brand.brand_assets.title')}}</h3>
         </div>
         <div class="flexGrid flexGrid--2">
             <card v-for="(item, index) in brandAssets" :key="index" :item="item" :class="item.extraClasses">
@@ -27,7 +23,7 @@
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>Primary Colors</h3>
+            <h3>{{$t('brand.primary_colors.title')}}</h3>
         </div>
         <div class="flexGrid flexGrid--2">
             <card v-for="(item, index) in primaryColors" :key="index" :item="item">
@@ -38,7 +34,7 @@
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>Secondary Colors</h3>
+            <h3>{{$t('brand.secondary_colors.title')}}</h3>
         </div>
         <div class="flexGrid flexGrid--2">
             <card v-for="(item, index) in secondaryColors" :key="index" :item="item">
@@ -49,7 +45,7 @@
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>Fonts</h3>
+            <h3>{{$t('brand.fonts.title')}}</h3>
         </div>
         <div class="flexGrid flexGrid--2">
             <card v-for="(item, index) in fonts" :key="index" :item="item">
@@ -69,30 +65,30 @@ export default defineComponent({
     data() {
         return {
             values: [
-                {
-                    icon: 'favorite',
-                    title: 'Simplicity',
-                    description: 'Vanilla OS is simple and easy to use. It is designed to be intuitive and accessible.',
-                },
-                {
-                    icon: 'local_florist',
-                    title: 'Cleanliness',
-                    description: 'Vanilla OS offers a clean and distraction-free user experience.',
-                },
-                {
-                    icon: 'lock_open',
-                    title: 'Freedom',
-                    description: 'Vanilla OS loves freedom. Freedom of choice, to customize, to contribute.',
-                },
-                {
-                    icon: 'close',
-                    title: 'Obstruction-free',
-                    description: 'Vanilla OS removes the clutter and obstruction from your workflow.',
-                },
+            {
+                icon: 'favorite',
+                title: this.$t('brand.values.simplicity.title'),
+                description: this.$t('brand.values.simplicity.description'),
+            },
+            {
+                icon: 'local_florist',
+                title: this.$t('brand.values.cleanliness.title'),
+                description: this.$t('brand.values.cleanliness.description'),
+            },
+            {
+                icon: 'lock_open',
+                title: this.$t('brand.values.freedom.title'),
+                description: this.$t('brand.values.freedom.description'),
+            },
+            {
+                icon: 'close',
+                title: this.$t('brand.values.obstruction_free.title'),
+                description: this.$t('brand.values.obstruction_free.description'),
+            },
             ],
             brandAssets: [
               {
-                  title: 'Icon',
+                  title: this.$t('brand.brand_assets.icon.title'),
                   image: '/assets/images/brand/vanillaos-logo-icon.svg',
                   imageClasses: [
                       'img--no-bg',
@@ -118,7 +114,7 @@ export default defineComponent({
                   ],
               },
                 {
-                    title: 'Standard',
+                    title: this.$t('brand.brand_assets.standard.title'),
                     image: '/assets/images/brand/vanillaos-logo.svg',
                     imageClasses: [
                         'img--no-bg',
@@ -146,7 +142,7 @@ export default defineComponent({
                     ],
                 },
                 {
-                    title: 'Dark Variant',
+                    title: this.$t('brand.brand_assets.dark_variant.title'),
                     image: '/assets/images/brand/vanillaos-logo-dark.svg',
                     imageClasses: [
                         'img--no-bg',
@@ -176,7 +172,7 @@ export default defineComponent({
             ],
             primaryColors: [
                 {
-                    title: 'Yellow Orange',
+                    title: this.$t('brand.primary_colors.yellow_orange'),
                     image: '/assets/images/brand/vanillaos-color-yellow-orange.svg',
                     imageClasses: [
                         'img--no-bg',
@@ -201,7 +197,7 @@ export default defineComponent({
                     ],
                 },
                 {
-                    title: 'Laser Lemon',
+                    title: this.$t('brand.primary_colors.laser_lemon'),
                     image: '/assets/images/brand/vanillaos-color-laser-lemon.svg',
                     imageClasses: [
                         'img--no-bg',
@@ -226,7 +222,7 @@ export default defineComponent({
                     ],
                 },
                 {
-                    title: 'Mine Shaft',
+                    title: this.$t('brand.primary_colors.mine_shaft'),
                     image: '/assets/images/brand/vanillaos-color-mine-shaft.svg',
                     imageClasses: [
                         'img--no-bg',
@@ -253,7 +249,7 @@ export default defineComponent({
             ],
             secondaryColors: [
               {
-                    title: 'Cararra',
+                    title: this.$t('brand.secondary_colors.carrara'),
                     image: '/assets/images/brand/vanillaos-color-cararra.svg',
                     imageClasses: [
                         'img--no-bg',
@@ -278,7 +274,7 @@ export default defineComponent({
                     ],
                 },
                 {
-                    title: 'Westar',
+                    title: this.$t('brand.secondary_colors.westar'),
                     image: '/assets/images/brand/vanillaos-color-westar.svg',
                     imageClasses: [
                         'img--no-bg',
