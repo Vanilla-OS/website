@@ -1,17 +1,9 @@
 {
-  "header": {
-    "blog": "Blog",
-    "updates": "Atualizações",
-    "help": "Ajuda",
-    "getInvolved": "Participar",
-    "download": "Baixar"
-  },
-  "footer": {
+  "links": {
     "blog": "Blog",
     "help": "Ajuda",
     "download": "Baixar",
     "legal": "Informações Legais",
-    "fabricators": "fabricators Ltd.",
     "privacy": "Política de Privacidade",
     "osPrivacy": "Política de Privacidade do SO",
     "cookies": "Uso de Cookies",
@@ -45,19 +37,37 @@
     "back": "Voltar para",
     "community_chat": {
       "title": "Servidor Discord",
-      "description": "Junte-se ao nosso servidor do Discord para conversar com outros usuários e desenvolvedores, participar de eventos e ficar por dentro de novidades."
+      "description": "Junte-se ao nosso servidor do Discord para conversar com outros usuários e desenvolvedores, participar de eventos e ficar por dentro de novidades.",
+      "chat_with": "Bate-papo com nossa Comunidade",
+      "ask_community": "Participe do nosso servidor do Discord e pergunte à nossa comunidade mais detalhes sobre o Vanilla OS."
     },
     "newsletter": {
       "title": "Seja o primeiro a saber quando a versão estável for lançada",
       "subscribe": "Inscreva-se na Newsletter",
       "subscribe_email": "Inscreva-se por E-mail",
-      "subscribe_rss": "Inscreva-se pelo Feed RSS"
-    }
+      "subscribe_rss": "Inscreva-se pelo Feed RSS",
+      "subscribe_feed": "Inscreva-se no Feed",
+      "subscribe_now": "Inscreva-se agora",      
+      "check_out": "Descubra o que está acontecendo no mundo do Vanilla OS",
+      "keep_in_touch": "Mantenha-se em contato",
+      "dont_miss": "Não perca as novidades"
+    },
+    "badges": {
+      "anonymous": "Anônimo",
+      "multiplePlataforms": "Múltiplas Plataformas"
+    },
+    "develop": "Desenvolva",
+    "startupVerified": "Inicialização Verificada",
+    "release_post": "Data de Lançamento",
+    "join_program": "Junte-se ao programa",
+    "donatePlaceholder": "Quantia personalizada",
+    "whats_included": "O que está incluído",
+    "apply_now": "Inscreva-se Agora",
+    "downloadButton": "Baixar Agora"
   },
   "home": {
     "hero": {
-      "heading": "É o seu novo Sistema Operacional",
-      "downloadButton": "Baixe Agora",
+      "heading": "É o seu novo Sistema Operacional",      
       "installationInfo": "O Vanilla OS funciona imediatamente em uma grande variedade de dispositivos, ",
       "installationLink": "saiba como instalá-lo."
     },
@@ -85,7 +95,6 @@
       "description2": "Embarque em novas aventuras, descubra novos mundos ou simplesmente relaxe nos seus jogos favoritos sem esforço algum. Basta instalar seus jogos favoritos, e nós cuidamos do resto."
     },
     "develop": {
-      "title": "Desenvolva",
       "subtitle": "com máxima flexibilidade.",
       "description1": "Não importa quais sejam suas necessidades de desenvolvimento, o Vanilla OS é a escolha ideal porque oferece acesso à mais ampla gama de ferramentas.",
       "description2": "Apx é uma ferramenta que permite gerar ambientes de trabalho baseados em qualquer distribuição Linux e integrá-los de forma simples ao sistema, permitindo que você aproveite todo o potencial de todas as distribuições diretamente no Vanilla OS.",
@@ -112,8 +121,8 @@
     "knowMore": {
       "title": "Quer saber mais?",
       "message1": "Me mostre mais",
-      "message2": "Pare de mostrar mais 😡",
-      "message3": "Ok, desculpa 😒",
+      "message2": "Pare de mostrar mais",
+      "message3": "Ok, desculpa",
       "immutableButCustomizable": {
         "title": "Imutável, mas Personalizável",
         "description": "O Vanilla OS é um sistema operacional imutável, o que significa que seus componentes principais são resistentes a alterações, mantendo o sistema estável e confiável. No entanto, você provavelmente nunca notará isso, pois o Vanilla OS também é altamente personalizável, e você pode ainda instalar softwares extras com Flatpak, VSO ou até mesmo compilar por conta própria, como faria em qualquer sistema operacional normal. Você também pode instalar software de qualquer distribuição Linux."
@@ -127,7 +136,6 @@
         "description": "O Vanilla OS realiza atualizações em segundo plano de maneira inteligente, detectando quando seu dispositivo está ocioso. Dessa forma, você não precisa se preocupar com o sistema ficando lento ou sem resposta durante sua rotina. Você receberá todas as novas funcionalidades e correções de bugs sem nem perceber, até reiniciar o sistema."
       },
       "startupVerified": {
-        "title": "Inicialização Verificada",
         "description": "O Vanilla OS é verificado na inicialização, o que significa que seu sistema é garantido a estar em um bom estado antes de você começar a usá-lo. Isso é feito verificando a integridade do sistema e seus componentes na inicialização, e garantindo que nada foi alterado. Se algo estiver errado, o sistema desaconselhará seu uso, sugerindo que você reverta para um estado anterior funcional."
       },
       "compatibleWithYou": {
@@ -279,47 +287,7 @@
     "usage": "Uso",
     "otherLicenses": {
       "title": "Outras Licenças",
-      "description": "As seguintes licenças podem se aplicar ao software incluído no Vanilla OS e não ao Vanilla OS em si.",
-      "licensesList": [
-        "Licença Pública Geral GNU (comum)",
-        "Licença Pública Geral Menor GNU (comum)",
-        "Licença Pública Geral de Biblioteca GNU (comum)",
-        "Licença BSD Modificada (comum)",
-        "Licença Artística Perl (comum)",
-        "Licença Apache",
-        "Licenças estilo Expat/MIT",
-        "Licenças estilo zlib",
-        "Licença Pública do Projeto LaTeX",
-        "Licença da Python Software Foundation",
-        "Licença do Ruby",
-        "Licença do PHP",
-        "Aviso e Licença de Software W3C",
-        "Licença OpenSSL",
-        "Licença Sleepycat",
-        "Acordo de Licença do Sistema de Impressão UNIX Comum",
-        "Licença Pública vhf",
-        "\"Sem problema Bugroff\" licença",
-        "Licença BSD Não Modificada (também conhecida como licença BSD original ou de 4 cláusulas. Incluía uma exigência de publicidade e agora está descontinuada, até pelo próprio projeto BSD.)",
-        "domínio público (não é uma licença, estritamente falando)",
-        "Licença Pública IBM Versão 1.0",
-        "Licença de Software NVIDIA",
-        "Licença SCILAB",
-        "Acordo de Licença de Software de Uso Limitado",
-        "Licença Não Comercial",
-        "Licença FastCGI / Open Market",
-        "Licença LaTeX2HTML",
-        "Licença Open Publication",
-        "Licença de Disseminação de Documentos Gratuitos",
-        "Licença Open Source AT&T",
-        "Licença de Código Público Apple",
-        "Licença Pública Gratuita Aladdin",
-        "Licença Genérica amiwm (uma licença estilo XV)",
-        "Acordo de Licença Digital",
-        "Licença Moria/Angband",
-        "Licença Unarj",
-        "Licença Software id",
-        "termos do qmail"
-      ]
+      "description": "As seguintes licenças podem se aplicar ao software incluído no Vanilla OS e não ao Vanilla OS em si."
     }
   },
   "brand": {
@@ -353,25 +321,13 @@
     "brand_assets": {
       "title": "Ativos da Marca",
       "icon": {
-        "title": "Ícone",
-        "download_options": [
-          "PNG",
-          "SVG"
-        ]
+        "title": "Ícone"
       },
       "standard": {
-        "title": "Padrão",
-        "download_options": [
-          "PNG",
-          "SVG"
-        ]
+        "title": "Padrão"
       },
       "dark_variant": {
-        "title": "Variante Escura",
-        "download_options": [
-          "PNG",
-          "SVG"
-        ]
+        "title": "Variante Escura"
       }
     },
     "primary_colors": {
@@ -393,8 +349,7 @@
     "title": "Programa de Desenvolvedores",
     "description": "Participe do nosso Programa de Desenvolvedores e tenha acesso a conteúdo exclusivo.",
     "program_overview": "Nosso programa de desenvolvedores oferece uma maneira de os desenvolvedores terem acesso a recursos e suporte exclusivos, enquanto apoiam o desenvolvimento do Vanilla OS.",
-    "whats_included": {
-      "title": "O que está incluído",
+    "whats_included": {      
       "features": [
         {
           "title": "Versões pré-lançamento",
@@ -423,13 +378,9 @@
       ]
     },
     "join_program": {
-      "title": "Participe do programa",
       "description": "O programa de desenvolvedores estará disponível em breve. Se você estiver interessado em participar, inscreva-se na noss boletim semanal engraçado para ser notificado quando o programa estiver disponível.",
       "subscribe": {
-        "title": "Não perca as novidades",
-        "newsletter": "Inscreva-se na Newsletter",
-        "subscribe_email": "Inscreva-se via E-mail",
-        "subscribe_rss": "Inscreva-se via Feed RSS"
+        "title": "Não perca as novidades"
       }
     }
   },
@@ -471,7 +422,7 @@
       "standards": [
         "idade",
         "tamanho do corpo",
-        "caste",
+        "casta",
         "cidadania",
         "deficiência",
         "educação",
@@ -601,27 +552,25 @@
       "message1": "O Código de Conduta Online GNOME foi bifurcado da política de exemplo do",
       "message2": "wiki Geek Feminism, criada pela Ada Initiative e outros voluntários, e está sob uma licença Creative Commons Zero.",
       "additional_language": "Idioma adicional foi incorporado e modificado dos seguintes Códigos de Conduta:",
+      "is_licensed": "é licenciado",
+      "licensed": "licenciado",
       "codes_of_conduct": [
         {
           "name": "Código de Conduta do Cidadão",
-          "license_part1": "é licenciado",
-          "license_part2": "Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada"
+          "license": "Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada"
         },
         {
           "name": "Modelo de Código de Conduta",
-          "license_part1": "é licenciado",
-          "license_part2": "Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada",
-          "author": "Otter Tech"
+          "license_part1": "Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada",
+          "license_part2": "por"
         },
         {
-          "name": "Covenant do Contribuidor versão 1.4",
-          "license_part1": "licenciado",
-          "license_part2": "CC BY 4.0"
+          "name": "Contributor Covenant versão 1.4",
+          "license": "CC BY 4.0"
         },
         {
           "name": "Código de Conduta do Data Carpentry",
-          "license_part1": "é licenciado",
-          "license_part2": "Creative Commons Atribuição 4.0"
+          "license": "Creative Commons Atribuição 4.0"
         },
         {
           "name": "Código de Conduta do Projeto Django",
@@ -641,13 +590,11 @@
         },
         {
           "name": "Código de Conduta do LGBTQ na Tecnologia no Slack",
-          "license_part1": "licenciado",
-          "license_part2": "Creative Commons Zero"
+          "license": "Creative Commons Zero"
         },
         {
           "name": "Diretrizes de Participação da Comunidade Mozilla",
-          "license_part1": "é licenciado",
-          "license_part2": "Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada"
+          "license": "Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada"
         },
         {
           "name": "Código de Conduta dos Mentores do Python"
@@ -670,8 +617,7 @@
     "offering": {
       "message": "A partir do Vanilla OS Orchid, estamos oferecendo suporte empresarial para empresas e organizações que desejam usar o Vanilla OS em seus negócios."
     },
-    "whats_included": {
-      "title": "O que está incluído",
+    "whats_included": {      
       "services": [
         {
           "title": "Configuração e Instalação",
@@ -732,18 +678,10 @@
     },
     "contact": {
       "title": "Precisa de mais?",
-      "message": "Entre em contato com fabricators.ltd para obter uma oferta personalizada para o seu negócio.",
-      "link": "https://fabricators.ltd/en/contact.html"
+      "message": "Entre em contato com fabricators.ltd para obter uma oferta personalizada para o seu negócio."
     },
     "join_program": {
-      "title": "Junte-se ao programa",
       "message": "O programa de suporte empresarial estará disponível a partir do Vanilla OS Orchid. Se você estiver interessado em participar do programa, inscreva-se em nosso boletim para ser notificado quando o programa estiver disponível."
-    },
-    "newsletter": {
-      "title": "Não perca as novidades",
-      "subscribe_title": "Inscreva-se na Newsletter",
-      "subscribe_email": "Inscreva-se por Email",
-      "subscribe_rss": "Inscreva-se pelo Feed RSS"
     }
   },
   "roadmap": {
@@ -784,67 +722,54 @@
             "description": "Estamos trabalhando em um modo de recuperação para nosso Instalador com fácil acesso a todas as ferramentas de recuperação."
           },
           {
-            "name": "ABRoot v2",
             "date": "28 de abril de 2023",
             "description": "Estamos trabalhando em uma nova versão do ABRoot, que usa imagens OCI em vez do gerenciador de pacotes."
           },
           {
-            "name": "VSO v2",
             "date": "28 de abril de 2023",
             "description": "Estamos trabalhando em um novo VSO para permitir que o usuário instale pacotes como qualquer outra distribuição Linux, mas utilizando um subsistema bem integrado."
           },
           {
-            "name": "Apx v2",
             "date": "28 de abril de 2023",
             "description": "Estamos trabalhando em uma nova versão do Apx com suporte para pilhas (stacks) para melhor atender às necessidades dos desenvolvedores."
           },
           {
-            "name": "Prometheus",
             "date": "19 de maio de 2023",
             "description": "Estamos desenvolvendo um runtime para containers a serem usados em projetos do Vanilla OS."
           },
           {
-            "name": "Eratóstenes",
             "date": "23 de maio de 2023",
             "description": "Estamos desenvolvendo uma plataforma web para indexar e buscar pacotes nos repositórios do Vanilla OS."
           },
           {
-            "name": "pico-image",
             "date": "27 de maio de 2023",
             "description": "Estamos trabalhando em uma imagem base oficial a ser usada com outras imagens. É um rootfs Debian construído usando o repositório do Vanilla OS durante o processo de debootstrap."
           },
           {
-            "name": "Vib",
             "date": "27 de maio de 2023",
             "description": "Estamos trabalhando em uma nova forma conveniente de construir imagens OCI usando módulos."
           },
           {
-            "name": "core-image",
             "date": "27 de maio de 2023",
             "description": "Estamos trabalhando na imagem principal (core image) do Vanilla OS. Esta imagem será usada como base para a imagem de desktop e futuras versões."
           },
           {
-            "name": "desktop-image",
             "date": "27 de maio de 2023",
             "description": "Estamos trabalhando na imagem oficial de desktop do Vanilla OS rodando GNOME."
           },
           {
-            "name": "nvidia-image",
             "date": "27 de maio de 2023",
             "description": "Estamos trabalhando na imagem oficial da Nvidia do Vanilla OS com GNOME, drivers proprietários da NVIDIA® pré-instalados e pré-configurados."
           },
           {
-            "name": "Atlas",
             "date": "6 de junho de 2023",
             "description": "Estamos desenvolvendo uma plataforma web para navegar no Registro de Imagens do Vanilla OS."
           },
           {
-            "name": "Albius",
             "date": "7 de junho de 2023",
             "description": "Estamos desenvolvendo e migrando para o Albius, um novo backend de instalador para o Vanilla OS."
           },
           {
-            "name": "Apx GUI",
             "date": "5 de julho de 2023",
             "description": "Estamos trabalhando em uma nova interface gráfica (GUI) para o Apx."
           },
@@ -854,12 +779,10 @@
             "description": "Descontinuamos o Vanilla Control Center em favor da interface gráfica do Apx e das Configurações do GNOME."
           },
           {
-            "name": "GNOME 44",
             "date": "15 de agosto de 2023",
             "description": "As versões Alpha do Vanilla OS 2.0 incluem o GNOME 44."
           },
           {
-            "name": "Ferramentas do Vanilla",
             "date": "27 de agosto de 2023",
             "description": "Estamos trabalhando em um conjunto de ferramentas para simplificar algumas tarefas."
           },
@@ -879,9 +802,8 @@
             "description": "O Vanilla OS 2.0 apresentará o VSO shell como shell padrão no terminal Blackbox."
           },
           {
-            "name": "Utilitário PRIME",
             "date": "29 de dezembro de 2023",
-            "description": "Estamos atualizando nosso utilitário PRIME para funcionar com o ABRoot."
+            "description": "Estamos atualizando nosso PRIME Utility para funcionar com o ABRoot."
           },
           {
             "name": "Suporte OEM",
@@ -894,17 +816,14 @@
             "description": "Estamos trabalhando em um utilitário GUI que solicita a reversão para o estado anterior ao entrar na partição root anterior."
           },
           {
-            "name": "FsGuard",
             "date": "7 de janeiro de 2024",
             "description": "Estamos trabalhando na integração do FsGuard, uma ferramenta para verificar a integridade do sistema de arquivos na inicialização, para garantir que não haja discrepâncias com o estado fornecido pela imagem do sistema."
           },
           {
-            "name": "vm-image",
             "date": "10 de janeiro de 2024",
             "description": "Estamos trabalhando na imagem de VM do Vanilla OS com GNOME e ferramentas de VM pré-instaladas."
           },
           {
-            "name": "FsWarn",
             "date": "12 de janeiro de 2024",
             "description": "Estamos trabalhando em uma ferramenta para alertar os usuários na inicialização caso o FsGuard tenha falhado na verificação do sistema de arquivos."
           },
@@ -914,22 +833,18 @@
             "description": "Estamos trabalhando em uma tela personalizada de inicialização, reinicialização e desligamento com nosso tema Plymouth."
           },
           {
-            "name": "Sideload Utility",
             "date": "15 de janeiro de 2024",
             "description": "Estamos trabalhando em um utilitário de sideload para o VSO para instalar DEBs e APKs do Android (experimental) com facilidade."
           },
           {
-            "name": "Vanilla Tour",
             "date": "23 de janeiro de 2024",
             "description": "O Vanilla Tour dará aos novos usuários uma visão geral de tudo o que há no Vanilla OS."
           },
           {
-            "name": "Vanilla OS 2 Beta",
             "date": "30 de janeiro de 2024",
             "description": "Temos o prazer de anunciar o lançamento do Vanilla OS 2 Orchid Beta."
           },
           {
-            "name": "custom-image",
             "date": "1 de fevereiro de 2024",
             "description": "Estamos trabalhando em um repositório de templates permitindo que os usuários criem imagens personalizadas do Vanilla OS."
           },
@@ -944,12 +859,11 @@
             "description": "Implementamos suporte a cache de imagens em nossos fluxos de trabalho de construção Docker, facilitando atualizações menores do sistema."
           },
           {
-            "name": "Revamp da interface gráfica do Apx",
+            "name": "Reformulação da interface gráfica do Apx",
             "date": "7 de junho de 2024",
             "description": "Reformulamos a interface do Apx GUI com novos botões para iniciar/parar, remover automaticamente e limpar subsistemas, e um indicador de status do subsistema na barra lateral."
           },
           {
-            "name": "GNOME 46",
             "date": "20 de junho de 2024",
             "description": "O Vanilla OS 2.0 apresentará o GNOME 46 como o Ambiente de Desktop."
           },
@@ -959,7 +873,7 @@
             "description": "Estamos atestando nossas imagens OCI usando ações do GitHub para a proveniência da construção."
           },
           {
-            "name": "Vanilla OS 2 Stable",
+            "name": "Vanilla OS 2 Estável",
             "date": "28 de julho de 2024",
             "description": "Temos o prazer de anunciar o lançamento do Vanilla OS 2 Orchid Stable."
           }
@@ -1006,7 +920,6 @@
             "description": "Os bugs relatados pela comunidade serão corrigidos."
           },
           {
-            "name": "Sessão VRR",
             "date": "Fevereiro de 2023",
             "description": "Pacote experimental VRR com a Sessão GNOME foi adicionado."
           },
@@ -1205,7 +1118,6 @@
         "description": "O Vanilla OS se desvia do uso convencional do sudo, empregando o Polkit para maior segurança e flexibilidade na gestão de permissões. O Polkit permite uma abordagem mais granular para permissões, garantindo um ambiente seguro no sistema. A decisão de abandonar o sudo está relacionada à prevenção de usuários executando comandos arbitrários como root, uma prática que pode trazer riscos de segurança. Embora os usuários mantenham um certo controle por meio do Polkit, a imutabilidade do sistema serve como uma salvaguarda, limitando danos potenciais ao preservar a integridade dos componentes principais."
       },
       {
-        "title": "Inicialização Verificada",
         "description": "O Vanilla OS, juntamente com o projeto LIT (Linux Immutability Tools), desenvolveu uma ferramenta chamada FsGuard, que verifica a integridade do sistema durante a inicialização, verificando se os hashes dos arquivos cruciais do sistema coincidem com os hashes fornecidos na imagem da atualização. Se algum desses estiver faltando, o FsNotice entrará em ação, exibindo um aviso na tela e recomendando não prosseguir, convidando o usuário a selecionar o estado anterior."
       },
       {
@@ -1224,42 +1136,33 @@
     "title": "Equipe",
     "description": "Conheça as pessoas por trás do Vanilla OS.",
     "donate": "Doar",
+    "works": "trabalha em",
     "header": {
       "main_title": "Equipe",
       "introduction": "Conheça as pessoas por trás do Vanilla OS."
     },
     "introduction": {
       "description1": "O Vanilla OS é um projeto de código aberto mantido pela",
-      "description2": "fabricators.ltd",
-      "description3": "e uma equipe de voluntários. Somos um grupo diversificado de pessoas de todo o mundo, com uma ampla gama de habilidades e experiências. Somos apaixonados em fazer o Vanilla OS o melhor que ele pode ser."
+      "description2": "e uma equipe de voluntários. Somos um grupo diversificado de pessoas de todo o mundo, com uma ampla gama de habilidades e experiências. Somos apaixonados em fazer o Vanilla OS o melhor que ele pode ser."
     },
     "members": [
       {
-        "role": "Fundador, Chefe de Design UI/UX e Desenvolvedor Principal",
-        "affiliation": "trabalha na fabricators.ltd",
-        "badges": [
-          "Contribuidor Ilustre"
-        ]
+        "role": "Fundador, Chefe de Design UI/UX e Desenvolvedor Principal"
       },
       {
-        "role": "Co-Fundador e Gerente de Relações Públicas",
-        "affiliation": "trabalha na fabricators.ltd"
+        "role": "Co-Fundador e Gerente de Relações Públicas"
       },
       {
         "role": "Co-Fundador e Engenheiro de Software"
       },
       {
-        "role": "Engenheiro de Software, Desenvolvedor Principal e Líder dos Contribuidores",
-        "badges": [
-          "Contribuidor Ilustre"
-        ]
+        "role": "Engenheiro de Software, Desenvolvedor Principal e Líder dos Contribuidores"
       },
       {
         "role": "Engenheiro de Software e Desenvolvedor Principal"
       },
       {
-        "role": "Gerente de Comunidade e Pesquisador de UX",
-        "affiliation": "trabalha na fabricators.ltd"
+        "role": "Gerente de Comunidade e Pesquisador de UX"
       },
       {
         "role": "Engenheiro de Software e Designer de UI"
@@ -1283,14 +1186,12 @@
         "role": "Engenheiro de Software e Designer de UI"
       },
       {
-        "role": "Engenheiro Front-End",
-        "affiliation": "trabalha na fabricators.ltd"
+        "role": "Engenheiro Front-End"
       }
     ],
     "additional_info": {
       "message1": "Existem muitas outras pessoas que contribuíram para o Vanilla OS. Uma lista completa de contribuintes pode ser",
-      "message2": "encontrada aqui",
-      "contributors_link": "/team/contributors"
+      "message2": "encontrada aqui"
     }
   },
   "contributors": {
@@ -1317,7 +1218,6 @@
       "description": "Traduza o Vanilla OS para o seu idioma ou melhore as traduções existentes para torná-lo mais acessível a todos."
     },
     "develop": {
-      "title": "Desenvolva",
       "description": "Contribua para o desenvolvimento do Vanilla OS sugerindo novos recursos, reportando bugs ou contribuindo com código."
     },
     "handbook": {
@@ -1330,8 +1230,7 @@
     },
     "developers_program": {
       "title": "Participe do Programa de Desenvolvedores",
-      "description": "Tenha acesso às últimas versões experimentais.",
-      "apply_now": "Inscreva-se agora"
+      "description": "Tenha acesso às últimas versões experimentais."      
     },
     "support": {
       "title": "Suporte",
@@ -1364,32 +1263,25 @@
       "description": "O Instalador é o que você usa para instalar o Vanilla OS no seu dispositivo."
     },
     "drivers_utility": {
-      "title": "Utilitário de Drivers",
-      "description": "O Utilitário de Drivers é o que você usa para instalar drivers no seu dispositivo."
+      "description": "O Drivers Utility é o que você usa para instalar drivers no seu dispositivo."
     },
     "prime_utility": {
-      "title": "Utilitário PRIME",
-      "description": "O Utilitário PRIME é o que você usa para alternar entre suas placas gráficas integradas e dedicadas."
+      "description": "O PRIME Utility é o que você usa para alternar entre suas placas gráficas integradas e dedicadas."
     },
     "apx": {
-      "title": "Apx",
       "description": "Apx é o que os desenvolvedores usam para trabalhar com diferentes distribuições Linux em um ambiente containerizado."
     },
     "apx_gui": {
-      "title": "Apx GUI",
       "description": "Apx GUI é uma interface gráfica para o Apx, que permite uma maneira mais amigável de trabalhar com seus containers Linux."
     },
     "abroot": {
-      "title": "ABRoot",
       "description": "O ABRoot é o que gerencia as partições A/B no seu dispositivo e permite que você faça alterações nelas."
     },
     "vso": {
-      "title": "VSO",
       "description": "O VSO é o que permite instalar e gerenciar software e realizar atualizações do sistema no seu dispositivo."
     },
     "ikaros": {
-      "title": "Ikaros",
-      "description": "Ikaros é o backend de drivers para o Utilitário de Drivers, ele permite que você instale drivers no seu dispositivo usando uma interface de linha de comando (CLI)."
+      "description": "Ikaros é o backend de drivers para o Drivers Utility, ele permite que você instale drivers no seu dispositivo usando uma interface de linha de comando (CLI)."
     }
   },
   "funding": {
@@ -1398,33 +1290,19 @@
     "recommended": "Recomendado para usuários europeus",
     "bank_transfer": {
       "title": "Transferência Bancária",
-      "description": "A Transferência Bancária é a forma mais direta e menos tributada de apoiar o Vanilla OS. Você pode fazer uma doação única de qualquer valor.",
-      "account_details": {
-        "account_name": "FABRICATORS S.R.L.",
-        "iban": "IT30S0326811200052945656640",
-        "bic_swift": "SELBIT2BXXX"
-      }
+      "description": "A Transferência Bancária é a forma mais direta e menos tributada de apoiar o Vanilla OS. Você pode fazer uma doação única de qualquer valor."
     },
     "cryptocurrencies": {
       "title": "Criptomoedas",
-      "description": "As criptomoedas permitem doações anônimas e menos tributadas. Você pode fazer uma doação única de qualquer valor. A taxa de câmbio está sujeita a alterações conforme o mercado.",
-      "badges": {
-        "anonymous": "Anônimo"
-      }
+      "description": "As criptomoedas permitem doações anônimas e menos tributadas. Você pode fazer uma doação única de qualquer valor. A taxa de câmbio está sujeita a alterações conforme o mercado."
     },
     "liberapay": {
       "title": "Liberapay",
-      "description": "Liberapay é uma maneira conveniente de fazer doações recorrentes.",
-      "badges": {
-        "anonymous": "Anônimo*"
-      }
+      "description": "Liberapay é uma maneira conveniente de fazer doações recorrentes."
     },
     "github_sponsors": {
       "title": "GitHub Sponsors",
-      "description": "GitHub Sponsors é uma maneira conveniente de fazer doações únicas ou recorrentes.",
-      "badges": {
-        "anonymous": "Anônimo*"
-      }
+      "description": "GitHub Sponsors é uma maneira conveniente de fazer doações únicas ou recorrentes."
     },
     "custom": {
       "title": "Personalizado",
@@ -1455,13 +1333,11 @@
         },
         {
           "title": "Vanilla OS 22.10 - Vídeo do Produto",
-          "description": "Vanilla OS 22.10 é a primeira versão estável do Vanilla OS. Assista ao vídeo do produto que publicamos na data de lançamento.",
-          "badge": "YouTube"
+          "description": "Vanilla OS 22.10 é a primeira versão estável do Vanilla OS. Assista ao vídeo do produto que publicamos na data de lançamento."
         },
         {
           "title": "Vanilla OS 22.10 - Vídeo de FAQ",
-          "description": "Vanilla OS 22.10 é a primeira versão estável do Vanilla OS. Assista ao vídeo de FAQ que publicamos para responder às perguntas mais comuns que recebemos.",
-          "badge": "YouTube"
+          "description": "Vanilla OS 22.10 é a primeira versão estável do Vanilla OS. Assista ao vídeo de FAQ que publicamos para responder às perguntas mais comuns que recebemos."
         }
       ]
     },
@@ -1503,107 +1379,76 @@
       ]
     },
     "podcasts_and_live_streams": {
-      "title": "Podcasts e Transmissões Ao Vivo",
-      "items": [
-        {
-          "title": "Vanilla OS em um Stick - Pietro di Caprio, Vanilla OS - FLOSS Weekly",
-          "description": "Um dos fundadores do Vanilla OS, Pietro di Caprio, falou sobre o Vanilla OS no podcast FLOSS Weekly.",
-          "badge": "Múltiplas Plataformas"
-        },
-        {
-          "title": "Entrevista com a equipe do Vanilla OS! - Nicco Loves Linux",
-          "description": "Toda a equipe do Vanilla OS foi entrevistada pelo influenciador Linux niccolove. Assista ao vídeo para saber mais sobre o Vanilla OS 2 Orchid.",
-          "badge": "YouTube"
-        }
-      ]
+      "title": "Podcasts e Transmissões Ao Vivo"
     },
     "videos_from_the_web": {
       "title": "Vídeos da Web",
       "items": [
         {
           "title": "Vanilla OS em um Stick - Pietro di Caprio, Vanilla OS - FLOSS Weekly",
-          "description": "Um dos fundadores do Vanilla OS, Pietro di Caprio, falou sobre o Vanilla OS no podcast FLOSS Weekly.",
-          "badge": "YouTube"
+          "description": "Um dos fundadores do Vanilla OS, Pietro di Caprio, falou sobre o Vanilla OS no podcast FLOSS Weekly."
         },
         {
           "title": "Entrevista com a equipe do Vanilla OS! - Nicco Loves Linux",
-          "description": "Toda a equipe do Vanilla OS foi entrevistada pelo influenciador Linux niccolove. Assista ao vídeo para saber mais sobre o Vanilla OS 2 Orchid.",
-          "badge": "YouTube"
+          "description": "Toda a equipe do Vanilla OS foi entrevistada pelo influenciador Linux niccolove. Assista ao vídeo para saber mais sobre o Vanilla OS 2 Orchid."
         },
         {
           "title": "A distro Linux mais empolgante - Nicco Loves Linux",
-          "description": "O influenciador Linux niccolove fez uma apresentação empolgante sobre o Vanilla OS 2 Orchid, destacando os principais recursos.",
-          "badge": "YouTube"
+          "description": "O influenciador Linux niccolove fez uma apresentação empolgante sobre o Vanilla OS 2 Orchid, destacando os principais recursos."
         },
         {
           "title": "O FIM DO DISTRO HOPPING? - The Linux Experiment",
-          "description": "O influenciador Linux The Linux Experiment fez uma análise empolgante do Vanilla OS 22.10, destacando os principais recursos.",
-          "badge": "YouTube"
+          "description": "O influenciador Linux The Linux Experiment fez uma análise empolgante do Vanilla OS 22.10, destacando os principais recursos."
         },
         {
           "title": "Vanilla OS - Ubuntu, Fedora e Arch Linux em uma única distribuição Linux! - TechHut",
-          "description": "O influenciador Linux TechHut fez uma análise empolgante do Vanilla OS 22.10, destacando os principais recursos.",
-          "badge": "YouTube"
+          "description": "O influenciador Linux TechHut fez uma análise empolgante do Vanilla OS 22.10, destacando os principais recursos."
         },
         {
           "title": "O gerenciador de pacotes do Vanilla OS não é real - Brodie Robertson",
-          "description": "O influenciador Linux Brodie Robertson fez uma análise do Apx, nosso gerenciador de pacotes não convencional.",
-          "badge": "YouTube"
+          "description": "O influenciador Linux Brodie Robertson fez uma análise do Apx, nosso gerenciador de pacotes não convencional."
         },
         {
           "title": "Desse jeito vou precisar aprender Linux de novo - Diolinux",
-          "description": "O influenciador brasileiro DioLinux falou sobre o Vanilla OS 2 Orchid, o próximo lançamento do Vanilla OS.",
-          "badges": [
-            "Português",
-            "YouTube"
-          ]
+          "description": "O influenciador brasileiro DioLinux falou sobre o Vanilla OS 2 Orchid, o próximo lançamento do Vanilla OS."
         },
         {
           "title": "Consigo me ver usando isso! | Review do Vanilla OS 22.10 - Diolinux",
-          "description": "O influenciador brasileiro DioLinux fez uma análise do Vanilla OS 22.10 e gostou bastante.",
-          "badges": [
-            "Português",
-            "YouTube"
-          ]
+          "description": "O influenciador brasileiro DioLinux fez uma análise do Vanilla OS 22.10 e gostou bastante."
         },
         {
           "title": "Vanilla OS não é sua distro Linux comum - DistroTube",
-          "description": "O influenciador Linux DistroTube fez uma análise do Vanilla OS 22.10, descrevendo-o como um conceito único.",
-          "badge": "YouTube"
+          "description": "O influenciador Linux DistroTube fez uma análise do Vanilla OS 22.10, descrevendo-o como um conceito único."
         },
         {
           "title": "Vanilla OS é o novo Ubuntu - Ksk Royal",
-          "description": "O influenciador Linux Ksk Royal fez uma análise do Vanilla OS 22.10, descrevendo-o como o novo Ubuntu.",
-          "badge": "YouTube"
+          "description": "O influenciador Linux Ksk Royal fez uma análise do Vanilla OS 22.10, descrevendo-o como o novo Ubuntu."
         }
       ]
-    },
-    "community_chat": {
-      "title": "Bate-papo com nossa Comunidade",
-      "description": "Participe do nosso servidor do Discord e pergunte à nossa comunidade mais detalhes sobre o Vanilla OS."
     }
   },
   "download": {
     "title": "Obter o Vanilla OS",
     "description": "Obter a última versão.",
+    "developmentVersion": {
+      "title": "Aviso Legal",
+      "description": "Experimente a versão de desenvolvimento mais recente do Vanilla OS.",      
+      "read_before_downloading": "Leia antes de baixar"
+    },
     "vanilla_os_2_orchid": {
       "title": "Vanilla OS 2 Orchid",
       "description": "O Vanilla OS 2 Orchid é a próxima geração do Vanilla OS. Ele é construído sobre novas tecnologias e recursos para proporcionar a você a experiência de sistema mais segura, estável e impressionante.",
-      "release_post": "Data de Lançamento",
       "roadmap": "Roadmap",
       "download_now": "Baixe Agora"
     },
     "vanilla_os_22_10_kinetic": {
       "title": "Vanilla OS 22.10 Kinetic (Descontinuado)",
-      "description": "O Vanilla OS 22.10 Kinetic é a versão antiga do Vanilla OS. Ela foi descontinuada e pode apresentar problemas de segurança. Não é recomendada para uso, estando disponível apenas para fins de arquivamento.",
-      "release_post": "Data de Lançamento",
-      "changelog": "Mudanças"
+      "description": "O Vanilla OS 22.10 Kinetic é a versão antiga do Vanilla OS. Ela foi descontinuada e pode apresentar problemas de segurança. Não é recomendada para uso, estando disponível apenas para fins de arquivamento."      
     },
     "developer_builds": {
       "title": "Versões para Desenvolvedores",
       "description1": "Interessado nas futuras versões do Vanilla OS?",
-      "description2": "Junte-se ao programa de desenvolvedores para ter acesso a versões experimentais do Vanilla OS. Você também terá acesso a um canal direto com os desenvolvedores.",
-      "apply_now": "Inscreva-se Agora"
+      "description2": "Junte-se ao programa de desenvolvedores para ter acesso a versões experimentais do Vanilla OS. Você também terá acesso a um canal direto com os desenvolvedores."      
     },
     "download_table": {
       "headers": [
@@ -1613,20 +1458,17 @@
       ],
       "latest": "Mais recente"
     },
+    "changelog": {
+      "title": "Mudanças",
+      "discover_new": "Descubra o que há de novo no Vanilla OS 2 Orchid",
+      "description": "Orchid é a próxima geração do Vanilla OS. Ele é construído sobre novas tecnologias e recursos para oferecer um sistema mais seguro e estável.",
+      "learn_more": "Saiba Mais"
+    },
     "alpha": {
       "title": "Vanilla OS 2 Orchid Alpha",
-      "description": "Experimente a versão de desenvolvimento mais recente do Vanilla OS.",
       "disclaimer": {
-        "title": "Aviso Legal",
-        "read_before_downloading": "Leia antes de baixar",
         "description1": "Essas versões alpha são destinadas a testes e desenvolvimento. Esteja ciente de que aspectos dessas versões podem estar incompletos ou não representarem o produto final.",
         "description2": "Ao baixar e usar essas versões alpha, você reconhece a possibilidade de recursos inacabados e desvios em relação ao lançamento final. Seu feedback é valioso enquanto trabalhamos para aprimorar e melhorar o software."
-      },
-      "changelog": {
-        "title": "Registro de alterações",
-        "discover_new": "Descubra o que há de novo no Vanilla OS 2 Orchid",
-        "description": "Orchid é a próxima geração do Vanilla OS. Ele é construído sobre novas tecnologias e recursos para oferecer um sistema mais seguro e estável.",
-        "learn_more": "Saiba Mais"
       },
       "alpha_builds": {
         "title": "Vanilla OS 2 Orchid - Versões Alpha",
@@ -1635,51 +1477,34 @@
     },
     "beta": {
       "title": "Vanilla OS 2 Orchid Beta",
-      "description": "Experimente a versão de desenvolvimento mais recente do Vanilla OS.",
       "disclaimer": {
-        "title": "Aviso Legal",
-        "read_before_downloading": "Leia antes de baixar",
         "description1": "Essas versões beta são destinadas a testes e desenvolvimento. Esteja ciente de que elas podem conter erros e não serem estáveis. Recomendamos que não use essas versões como sistema principal.",
         "description2": "As versões beta são para testar os recursos e tecnologias mais recentes. Se encontrar um erro, por favor, relate para que possamos corrigi-lo antes do lançamento estável. Obrigado pela sua ajuda!"
-      },
-      "changelog": {
-        "title": "Registro de alterações",
-        "discover_new": "Descubra o que há de novo no Vanilla OS 2 Orchid",
-        "description": "Orchid é a próxima geração do Vanilla OS. Ele é construído sobre novas tecnologias e recursos para oferecer um sistema mais seguro e estável.",
-        "learn_more": "Saiba Mais"
       },
       "beta_builds": {
         "title": "Vanilla OS 2 Orchid - Versões Beta",
         "description": "Você deve estar logado no GitHub para baixar as versões beta. Após fazer login, você poderá baixar a versão escolhida na seção de artefatos."
       }
-    }
-  },
-  "stable": {
-    "description": "Orchid é a próxima geração do Vanilla OS. Ele é construído sobre novas tecnologias e recursos para oferecer um sistema mais seguro e estável.",
-    "downloadButton": "Baixar Agora",
-    "installationInfo": {
-      "description1": "Vanilla OS funciona de forma nativa em uma grande variedade de dispositivos,",
-      "description2": "Saiba como instalá-lo.",
-      "description3": "Não está conseguindo baixar? Tente baixar do"
     },
-    "donate": {
-      "description1": "Obrigado por apoiar o Vanilla OS! Sua doação nos ajuda a manter o projeto vivo e a melhorá-lo. Agradecemos sua contribuição",
-      "description2": "Seu download começará automaticamente. Se isso não acontecer, clique no botão abaixo",
-      "amount": "Escolha o valor da sua doação",
-      "button": "Escolha uma opção por favor",
-      "free" : "Baixe Gratuitamente",
-      "download" : "Doar e Baixar"
-    },
-    "support_message": {
-      "description1": "Gostou do Vanilla OS? Considere ",
-      "description2": "apoiar",
-      "description3": "o projeto."
-    },
-    "newsletter": {
-      "title": "Mantenha-se em Contato",
-      "subscribe": "Inscreva-se na Newsletter",
-      "subscribe_email": "Inscreva-se por E-mail",
-      "subscribe_rss": "Inscreva-se pelo Feed RSS"
+    "stable": {            
+      "installationInfo": {
+        "description1": "Vanilla OS funciona de forma nativa em uma grande variedade de dispositivos,",
+        "description2": "Saiba como instalá-lo.",
+        "description3": "Não está conseguindo baixar? Tente baixar do"
+      },
+      "donate": {
+        "description1": "Obrigado por apoiar o Vanilla OS! Sua doação nos ajuda a manter o projeto vivo e a melhorá-lo. Agradecemos sua contribuição",
+        "description2": "Seu download começará automaticamente. Se isso não acontecer, clique no botão abaixo",
+        "amount": "Escolha o valor da sua doação",
+        "button": "Escolha uma opção por favor",
+        "free": "Baixe Gratuitamente",
+        "download": "Doar e Baixar"
+      },
+      "support_message": {
+        "description1": "Gostou do Vanilla OS? Considere ",
+        "description2": "apoiar",
+        "description3": "o projeto."
+      }
     }
   },
   "testing-components": {
