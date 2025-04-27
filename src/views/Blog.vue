@@ -29,8 +29,8 @@
         <!-- Newsletter -->
         <div class="card card--type-adv card--type-funnyletter">
             <div class="card-header">
-                <h4>Don't miss the news</h4>
-                <h2>Subscribe to the Newsletter</h2>
+                <h4>{{$t('components.newsletter.dont_miss')}}</h4>
+                <h2>{{$t('components.newsletter.subscribe')}}</h2>
             </div>
             <div class="card-content">
                 <div class="flexList">
@@ -39,11 +39,11 @@
                     </div>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="material-symbols-outlined">email</span>
-                        <span>Subscribe via Email</span>
+                        <span>{{$t('components.newsletter.subscribe_email')}}</span>
                     </div>
                     <a class="btn btn--primary" href="https://vanillaos.org/feed.xml">
                         <span class="material-symbols-outlined">newspaper</span>
-                        <span>Subscribe via the RSS Feed</span>
+                        <span>{{$t('components.newsletter.subscribe_rss')}}</span>
                     </a>
                 </div>
             </div>

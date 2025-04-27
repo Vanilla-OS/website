@@ -17,32 +17,32 @@
             <div class="flexGrid flexGrid--3 anim--fadeIn">
                 <div class="flexGrid-item flexGrid-item--2 card card--type-adv card--type-dev card--has-pattern-work">
                     <div class="card-header">
-                        <h4>{{$t('beta.disclaimer.title')}}</h4>
-                        <h2>{{$t('beta.disclaimer.read_before_downloading')}}</h2>
+                        <h4>{{$t('download.developmentVersion.title')}}</h4>
+                        <h2>{{$t('download.developmentVersion.read_before_downloading')}}</h2>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
                             <div class="text text--rich">
-                                <p>{{$t('beta.disclaimer.description1')}}</p>
-                                <p>{{$t('beta.disclaimer.description2')}}</p>
+                                <p>{{$t('download.beta.disclaimer.description1')}}</p>
+                                <p>{{$t('download.beta.disclaimer.description2')}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flexGrid-item card">
                     <div class="card-header">
-                        <h4>{{$t('beta.changelog.title')}}</h4>
-                        <h2>{{$t('beta.changelog.discover_new')}}</h2>
+                        <h4>{{$t('download.changelog.title')}}</h4>
+                        <h2>{{$t('download.changelog.discover_new')}}</h2>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
                             <div class="text text--rich">
-                                <p>{{$t('beta.changelog.description')}}</p>
+                                <p>{{$t('download.changelog.description')}}</p>
                             </div>
                             <router-link
                                 :to="{ name: 'article', params: { date: '2024-01-30', slug: 'vanilla-os-2-orchid-beta-is-here' } }"
                                 class="btn btn--primary">
-                                <span>{{$t('beta.changelog.learn_more')}}</span>
+                                <span>{{$t('download.changelog.learn_more')}}</span>
                                 <span class=" material-symbols-outlined">arrow_forward</span>
                             </router-link>
                         </div>
@@ -51,8 +51,8 @@
             </div>
             <div class="spacer"></div>
             <div class="text text--rich">
-                <h3>{{$t('beta.beta_builds.title')}}</h3>
-                <p>{{$t('beta.beta_builds.description')}}</p>
+                <h3>{{$t('download.beta.beta_builds.title')}}</h3>
+                <p>{{$t('download.beta.beta_builds.description')}}</p>
             </div>
             <div class="table">
                 <table class="table-content">

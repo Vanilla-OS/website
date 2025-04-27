@@ -33,7 +33,7 @@ export default defineComponent({
                     extLink: true,
                     type: 'clickable',
                     icon: 'code',
-                    title: this.$t('get-involved.develop.title'),
+                    title: this.$t('components.develop'),
                     description: this.$t('get-involved.develop.description'),
                 },
                 {
@@ -58,7 +58,7 @@ export default defineComponent({
                     icon: 'how_to_reg',
                     title: this.$t('get-involved.developers_program.title'),
                     description: this.$t('get-involved.developers_program.description'),
-                    btn: this.$t('get-involved.developers_program.apply_now'),
+                    btn: this.$t('components.apply_now'),
                     extraClasses: ['card--type-dev']
                 },
                 {

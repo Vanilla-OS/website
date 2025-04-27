@@ -13,7 +13,7 @@
           <div class="flexList">
             <router-link :to="{ name: 'download-orchid-stable' }" class="btn btn--primary btn--big">
               <span class="material-symbols-outlined">file_download</span>
-              <span>{{$t('home.hero.downloadButton')}}</span>
+              <span>{{$t('components.downloadButton')}}</span>
             </router-link>
             <div class="text text--dimmed">
               <small>{{$t('home.hero.installationInfo')}}
@@ -105,7 +105,7 @@
         alt="Develop with maximum flexibility." />
       <article class="hero-content">
         <header class="hero-heading">
-          <h2 class="color--develop-1">{{$t('home.develop.title')}}</h2>
+          <h2 class="color--develop-1">{{$t('components.develop')}}</h2>
           <b class="color--develop-2">{{$t('home.develop.subtitle')}}</b>
         </header>
         <div class="flexList">
@@ -186,8 +186,8 @@
         <span class="material-symbols-outlined" v-if="!showInfo">keyboard_arrow_up</span>
         <span class="material-symbols-outlined" v-else>keyboard_arrow_up</span>
         <span v-if="!showInfo && !showSorry">{{$t('home.knowMore.message1')}}</span>
-        <span v-if="showInfo && !showSorry">{{$t('home.knowMore.message2')}}</span>
-        <span v-if="showSorry">{{$t('home.knowMore.message3')}}</span>
+        <span v-if="showInfo && !showSorry">{{$t('home.knowMore.message2')}} 😡</span>
+        <span v-if="showSorry">{{$t('home.knowMore.message3')}} 😒</span>
       </button>
       <div class="spacer"></div>
       <div class="flexList" v-if="showInfo">
@@ -244,7 +244,7 @@ export default defineComponent({
           },
           {
               icon: 'verified',
-              title: this.$t('home.knowMore.startupVerified.title'),
+              title: this.$t('components.startupVerified'),
               description: this.$t('home.knowMore.startupVerified.description'),
           },
           {

@@ -86,8 +86,8 @@ export default function createRouterInstance(clientType: string) {
             component: () =>// @ts-ignore
               import(/* webpackChunkName: "Blog" */ "@/views/Blog.vue"),
             meta: {
-              title: "Blog",
-              description: "Check out what's happening in Vanilla OS world.",
+              title: i18n.global.t('links.blog'),
+              description: i18n.global.t('components.newsletter.check_out'), //v{{$t('components.newsletter.subscribe_feed')}}
             },
           },
           {

@@ -52,7 +52,7 @@ export default defineComponent({
                     description: this.$t('funding.cryptocurrencies.description'),
                     badges: [
                         {
-                            text: this.$t('funding.cryptocurrencies.badges.anonymous'),
+                            text: this.$t('components.badges.anonymous'),
                         }
                     ]
                 },
@@ -70,7 +70,7 @@ export default defineComponent({
                             color: 'green',
                         },
                         {
-                            text: this.$t('funding.liberapay.badges.anonymous'),
+                            text: this.$t('components.badges.anonymous'),
                         }
                     ]
                 },
@@ -84,7 +84,7 @@ export default defineComponent({
                     description: this.$t('funding.github_sponsors.description'),
                     badges: [
                         {
-                            text: this.$t('funding.github_sponsors.badges.anonymous'),
+                            text: this.$t('components.badges.anonymous'),
                         }
                     ]
                 },

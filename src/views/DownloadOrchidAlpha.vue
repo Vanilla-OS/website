@@ -17,8 +17,8 @@
             <div class="flexGrid flexGrid--3 anim--fadeIn">
                 <div class="flexGrid-item flexGrid-item--2 card card--type-adv card--type-dev card--has-pattern-work">
                     <div class="card-header">
-                        <h4>{{$t('alpha.disclaimer.title')}}</h4>
-                        <h2>{{$t('alpha.disclaimer.read_before_downloading')}}</h2>
+                        <h4>{{$t('download.developmentVersion.title')}}</h4>
+                        <h2>{{$t('download.developmentVersion.read_before_downloading')}}</h2>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
@@ -31,16 +31,16 @@
                 </div>
                 <div class="flexGrid-item card">
                     <div class="card-header">
-                        <h4>{{$t('alpha.changelog.title')}}</h4>
-                        <h2>{{$t('alpha.changelog.discover_new')}}</h2>
+                        <h4>{{$t('download.changelog.title')}}</h4>
+                        <h2>{{$t('download.changelog.discover_new')}}</h2>
                     </div>
                     <div class="card-content">
                         <div class="flexList">
                             <div class="text text--rich">
-                                <p>{{$t('alpha.changelog.description')}}</p>
+                                <p>{{$t('download.changelog.description')}}</p>
                             </div>
                             <a href="/developers-program" class="btn btn--primary">
-                                <span>{{$t('alpha.changelog.learn_more')}}</span>
+                                <span>{{$t('download.changelog.learn_more')}}</span>
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </a>
                         </div>

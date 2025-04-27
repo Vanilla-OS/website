@@ -183,11 +183,11 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'live_tv',
                     iconPack: 'mdi',
-                    title: this.$t('spread.podcasts_and_live_streams.items[0].title'),
-                    description: this.$t('spread.podcasts_and_live_streams.items[0].description'),
+                    title: this.$t('spread.videos_from_the_web.items[0].title'),
+                    description: this.$t('spread.videos_from_the_web.items[0].description'),
                     badges: [
                         {
-                            text: this.$t('spread.podcasts_and_live_streams.items[0].badge'),
+                            text: this.$t('components.badges.multiplePlataforms'),
                             color: 'blue',
                         }
                     ]
@@ -198,8 +198,8 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'live_tv',
                     iconPack: 'mdi',
-                    title: this.$t('spread.podcasts_and_live_streams.items[1].title'),
-                    description: this.$t('spread.podcasts_and_live_streams.items[1].description'),
+                    title: this.$t('spread.videos_from_the_web.items[1].title'),
+                    description: this.$t('spread.videos_from_the_web.items[1].description'),
                     badges: [
                         {
                             text: 'YouTube',
@@ -372,8 +372,8 @@ export default defineComponent({
                     type: 'clickable',
                     icon: 'fa-brands fa-discord',
                     iconPack: 'fa',
-                    title: this.$t('spread.community_chat.title'),
-                    description: this.$t('spread.community_chat.description'),
+                    title: this.$t('components.community_chat.chat_with'),
+                    description: this.$t('components.community_chat.ask_community'),
                     extraClasses: ['flexGrid-item--2', 'card--purple'],
                 },
             ]

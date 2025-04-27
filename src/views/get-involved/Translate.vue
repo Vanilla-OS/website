@@ -59,7 +59,7 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/drivers-utility.svg',
                     iconAsImage: true,
-                    title: this.$t('translate.drivers_utility.title'),
+                    title: "Drivers Utility",
                     description: this.$t('translate.drivers_utility.description'),
                     footerActions: [
                         {
@@ -81,7 +81,7 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/prime-utility.svg',
                     iconAsImage: true,
-                    title: this.$t('translate.prime_utility.title'),
+                    title: "PRIME Utility",
                     description: this.$t('translate.prime_utility.description'),
                     footerActions: [
                         {
@@ -103,7 +103,7 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/apx.png',
                     iconAsImage: true,
-                    title: this.$t('translate.apx.title'),
+                    title: "Apx",
                     description: this.$t('translate.apx.description'),
                     footerActions: [
                         {
@@ -125,7 +125,7 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/apx-gui.svg',
                     iconAsImage: true,
-                    title: this.$t('translate.apx_gui.title'),
+                    title: "Apx GUI",
                     description: this.$t('translate.apx_gui.description'),
                     footerActions: [
                         {
@@ -147,7 +147,7 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/abroot.svg',
                     iconAsImage: true,
-                    title: this.$t('translate.abroot.title'),
+                    title: "ABRoot",
                     description: this.$t('translate.abroot.description'),
                     footerActions: [
                         {
@@ -169,7 +169,7 @@ export default defineComponent({
                 {
                     icon: '/assets/images/icons/vso.svg',
                     iconAsImage: true,
-                    title: this.$t('translate.vso.title'),
+                    title: "VSO",
                     description: this.$t('translate.vso.description'),
                     footerActions: [
                         {
@@ -190,7 +190,7 @@ export default defineComponent({
                 },
                 {
                     icon: 'extension',
-                    title: this.$t('translate.ikaros.title'),
+                    title: "Ikaros",
                     description: this.$t('translate.ikaros.description'),
                     footerActions: [
                         {

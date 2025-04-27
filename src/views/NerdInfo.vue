@@ -86,7 +86,7 @@ export default defineComponent({
                 },
                 {
                     icon: 'verified',
-                    title: this.$t('nerd-info.sections[9].title'),
+                    title: this.$t('components.startupVerified'),
                     description: this.$t('nerd-info.sections[9].description'),
                 },
                 {

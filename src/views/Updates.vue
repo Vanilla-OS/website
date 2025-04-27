@@ -64,11 +64,11 @@
         <div class="spacer spacer--lg"></div>
         <div class="card card--hz card--type-adv card--type-adv--hz card--purple">
             <div class="card-header">
-                <h4>Don't miss the latest updates!</h4>
-                <h2>Subscribe to the Feed</h2>
+                <h4>{{$t('components.newsletter.dont_miss')}}</h4>
+                <h2>{{$t('components.newsletter.subscribe_feed')}}</h2>
                 <a class="btn btn--primary" href="https://info.vanillaos.org/updates-feed.xml">
                     <span class="material-symbols-outlined">newspaper</span>
-                    <span>Subscribe now</span>
+                    <span>{{$t('components.newsletter.subscribe_now')}}</span>
                 </a>
             </div>
             <div class="card-content">

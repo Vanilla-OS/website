@@ -13,7 +13,7 @@
                         <router-link
                             :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid---stable-release' } }"
                             class="btn btn--link btn--link-2 btn--inline">
-                            <span>{{$t('download.vanilla_os_2_orchid.release_post')}}</span>
+                            <span>{{$t('components.release_post')}}</span>
                             <span class=" material-symbols-outlined">open_in_new</span>
                         </router-link>
                         <router-link class="btn btn--link btn--link-2 btn--inline" :to="{ name: 'roadmap' }">
@@ -55,12 +55,12 @@
                         </div>
                         <router-link class="btn btn--link btn--link-2 btn--inline"
                             :to="{ name: 'article', params: { date: '2022-12-29', slug: 'vanilla-os-2210-kinetic-is-out' } }">
-                            <span>{{$t('download.vanilla_os_22_10_kinetic.release_post')}}</span>
+                            <span>{{$t('components.release_post')}}</span>
                             <span class="material-symbols-outlined">open_in_new</span>
                         </router-link>
                         <a href="https://github.com/Vanilla-OS/os/releases/latest"
                             class="btn btn--link btn--link-2 btn--inline" target="_blank">
-                            <span>{{$t('download.vanilla_os_22_10_kinetic.changelog')}}</span>
+                            <span>{{$t('download.changelog.title')}}</span>
                             <span class="material-symbols-outlined">open_in_new</span>
                         </a>
                         <div class="spacer"></div>
@@ -87,7 +87,7 @@
                     </div>
                     <router-link to="developers-program" class="btn btn--primary">
                         <span class="material-symbols-outlined">how_to_reg</span>
-                        <span>{{$t('download.developer_builds.apply_now')}}</span>
+                        <span>{{$t('components.apply_now')}}</span>
                     </router-link>
                 </div>
             </div>

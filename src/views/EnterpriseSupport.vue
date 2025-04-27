@@ -2,26 +2,26 @@
     <div class="flexList anim--fadeIn">
         <div class="text text--rich">
             <p>{{$t('enterprise-support.offering.message')}}</p>
-            <h3>{{$t('enterprise-support.whats_included.title')}}</h3>
+            <h3>{{$t('components.whats_included')}}</h3>
         </div>
         <div class="flexGrid flexGrid--3">
             <card v-for="(item, index) in helpItems" :key="index" :item="item" :class="item.extraClasses" />
         </div>
         <div class="spacer"></div>
         <div class="text text--rich">
-            <h3>{{$t('enterprise-support.join_program.title')}}</h3>
+            <h3>{{$t('components.join_program')}}</h3>
             <p>{{$t('enterprise-support.join_program.message')}}</p>
             <div class="card card--hz card--type-adv card--type-adv--hz card--type-funnyletter">
                 <div class="card-header">
-                    <h4>{{$t('enterprise-support.newsletter.title')}}</h4>
-                    <h2>{{$t('enterprise-support.newsletter.subscribe_title')}}</h2>
+                    <h4>{{$t('components.newsletter.dont_miss')}}</h4>
+                    <h2>{{$t('components.newsletter.subscribe')}}</h2>
                     <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
                         <span class="material-symbols-outlined">email</span>
-                        <span>{{$t('enterprise-support.newsletter.subscribe_email')}}</span>
+                        <span>{{$t('components.newsletter.subscribe_email')}}</span>
                     </div>
                     <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
                         <span class="material-symbols-outlined">newspaper</span>
-                        <span>{{$t('enterprise-support.newsletter.subscribe_rss')}}</span>
+                        <span>{{$t('components.newsletter.subscribe_rss')}}</span>
                     </a>
                 </div>
                 <div class="card-content">
@@ -48,7 +48,7 @@ export default defineComponent({
             helpItems: [
                 {
                     icon: 'settings',
-                    title: this.$t('enterprise-support.whats_included.title'),
+                    title: this.$t('components.whats_included'),
                     description: this.$t('enterprise-support.whats_included.services[0].description'),
                 },
                 {

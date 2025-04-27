@@ -48,11 +48,11 @@
             <div class="language-selector-button">
                 <nav>                
                     <ul class="topBar-navigation" :class="{ active: isMenuToggled }">
-                        <li><router-link :to="{ name: 'blog' }">{{ $t('header.blog') }}</router-link></li>
-                        <li><router-link :to="{ name: 'updates' }">{{ $t('header.updates') }}</router-link></li>
-                        <li><router-link :to="{ name: 'help' }">{{ $t('header.help') }}</router-link></li>
-                        <li><router-link :to="{ name: 'get-involved' }">{{ $t('header.getInvolved') }}</router-link></li>
-                        <li><router-link :to="{ name: 'download' }">{{ $t('header.download') }}</router-link></li>
+                        <li><router-link :to="{ name: 'blog' }">{{ $t('links.blog') }}</router-link></li>
+                        <li><router-link :to="{ name: 'updates' }">{{ $t('links.updates') }}</router-link></li>
+                        <li><router-link :to="{ name: 'help' }">{{ $t('links.help') }}</router-link></li>
+                        <li><router-link :to="{ name: 'get-involved' }">{{ $t('links.getInvolved') }}</router-link></li>
+                        <li><router-link :to="{ name: 'download' }">{{ $t('links.download') }}</router-link></li>
                     </ul>                
                 </nav>
                 <languageSelector></languageSelector>

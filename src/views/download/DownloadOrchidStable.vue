@@ -31,8 +31,8 @@
     <div class="flexList flexList--center">
       <div class="spacer"></div>
       <div class="text text--rich text--center">
-        <p>{{$t('stable.donate.description1')}}.
-          <b>{{$t('stable.donate.description2')}}.</b>
+        <p>{{$t('download.stable.donate.description1')}}.
+          <b>{{$t('download.stable.donate.description2')}}.</b>
         </p>
       </div>
       <a
@@ -41,17 +41,17 @@
         class="btn btn--primary btn--big"
       >
         <span class="material-symbols-outlined">file_download</span>
-        <span>{{$t('stable.downloadButton')}}</span>
+        <span>{{$t('components.downloadButton')}}</span>
       </a>
       <div class="text text--dimmed">
-        <small>{{$t('stable.installationInfo.description1')}}
+        <small>{{$t('download.stable.installationInfo.description1')}}
           <a href="https://docs.vanillaos.org/handbook/en/installation" target="_blank">
-            {{$t('stable.installationInfo.description2')}}
+            {{$t('download.stable.installationInfo.description2')}}
           </a>
         </small>
       </div>
       <div class="text text--dimmed">
-        <small>{{$t('stable.installationInfo.description3')}}
+        <small>{{$t('download.stable.installationInfo.description3')}}
           <a href="https://github.com/vanilla-os/live-iso/releases/latest" target="_blank">
             GitHub.
           </a>
@@ -66,15 +66,15 @@
           class="flexGrid-item flexGrid-item--2 card card--hz card--type-adv card--type-adv--hz card--type-funnyletter"
         >
         <div class="card-header">
-          <h4>{{$t('stable.newsletter.title')}}</h4>
-          <h2>{{$t('stable.newsletter.subscribe')}}</h2>
+          <h4>{{$t('components.newsletter.dont_miss')}}</h4>
+          <h2>{{$t('components.newsletter.subscribe')}}</h2>
           <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
             <span class="material-symbols-outlined">email</span>
-            <span>{{$t('stable.newsletter.subscribe_email')}}</span>
+            <span>{{$t('components.newsletter.subscribe_email')}}</span>
           </div>
           <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
             <span class="material-symbols-outlined">newspaper</span>
-            <span>{{$t('stable.newsletter.subscribe_rss')}}</span>
+            <span>{{$t('components.newsletter.subscribe_rss')}}</span>
           </a>
         </div>
           <div class="card-content">
@@ -119,11 +119,11 @@
       <div class="spacer"></div>
       <div class="text text--rich">
         <p class="text--center">
-          {{$t('stable.description')}}
+          {{$t('download.changelog.description')}}
         </p>
       </div>
       <div class="flexList flexList--center">
-        <p for="donation-amount">{{$t('stable.donate.amount')}}:</p>
+        <p for="donation-amount">{{$t('download.stable.donate.amount')}}:</p>
         <div class="flexGrid flexGrid--3">
           <button
             v-for="amount in [2, 5]"
@@ -162,14 +162,14 @@
         </button>
       </form>
       <div class="text text--dimmed">
-        <small>{{$t('stable.installationInfo.description1')}}
+        <small>{{$t('download.stable.installationInfo.description1')}}
           <a href="https://docs.vanillaos.org/handbook/en/installation" target="_blank">
-            {{$t('stable.installationInfo.description2')}}
+            {{$t('download.stable.installationInfo.description2')}}
           </a>
         </small>
       </div>
       <div class="text text--dimmed">
-        <small>{{$t('stable.installationInfo.description3')}}
+        <small>{{$t('download.stable.installationInfo.description3')}}
           <a href="https://github.com/vanilla-os/live-iso/releases/latest" target="_blank">
             GitHub.
           </a>
@@ -178,9 +178,9 @@
       <div class="text text--rich">
         <center>
           <p>
-            {{$t('stable.support_message.description1')}}<router-link to="/get-involved/funding">
-            {{$t('stable.support_message.description2')}}</router-link>
-            {{$t('stable.support_message.description3')}}
+            {{$t('download.stable.support_message.description1')}} <router-link to="/get-involved/funding">
+            {{$t('download.stable.support_message.description2')}}</router-link>
+            {{$t('download.stable.support_message.description3')}}
           </p>
         </center>
       </div>
@@ -193,15 +193,15 @@
           class="flexGrid-item flexGrid-item--2 card card--hz card--type-adv card--type-adv--hz card--type-funnyletter"
         >
           <div class="card-header">
-            <h4>{{$t('stable.newsletter.title')}}</h4>
-            <h2>{{$t('stable.newsletter.subscribe')}}</h2>
+            <h4>{{$t('components.newsletter.keep_in_touch')}}</h4>
+            <h2>{{$t('components.newsletter.subscribe')}}</h2>
             <div class="btn btn--primary" @click="isNotMailNotChimpOpen = true">
               <span class="material-symbols-outlined">email</span>
-              <span>{{$t('stable.newsletter.subscribe_email')}}</span>
+              <span>{{$t('components.newsletter.subscribe_email')}}</span>
             </div>
             <a class="btn btn--primary" href="//vanillaos.org/feed.xml">
               <span class="material-symbols-outlined">newspaper</span>
-              <span>{{$t('stable.newsletter.subscribe_rss')}}</span>
+              <span>{{$t('components.newsletter.subscribe_rss')}}</span>
             </a>
           </div>
           <div class="card-content">
@@ -255,7 +255,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();  
 
 const donationAmount = ref<number | null>(null);
-const donateText = ref(t('stable.donate.button'));
+const donateText = ref(t('download.stable.donate.button'));
 const donateButtonDisabled = ref(true);
 const paypalAmount = ref("");
 
@@ -268,7 +268,7 @@ const hasDonated = () => {
 const setAmount = (amount: number) => {
   donationAmount.value = amount;
   paypalAmount.value = amount.toString();
-  donateText.value = amount === 0 ? t('stable.donate.free') : t('stable.donate.download');
+  donateText.value = amount === 0 ? t('download.stable.donate.free') : t('download.stable.donate.download');
   donateButtonDisabled.value = false;
 };
 
@@ -277,12 +277,12 @@ const checkDonation = () => {
     donationAmount.value = 0;
   }
   if (donationAmount.value === null) {
-    donateText.value = t('stable.donate.button');
+    donateText.value = t('download.stable.donate.button');
     donateButtonDisabled.value = true;
   } else {
     paypalAmount.value = donationAmount.value.toString();
     donateText.value =
-      donationAmount.value === 0 ? t('stable.donate.free') : t('stable.donate.download');
+      donationAmount.value === 0 ? t('download.stable.donate.free') : t('download.stable.donate.download');
     donateButtonDisabled.value = false;
   }
 };

@@ -3,7 +3,7 @@
     <div class="text text--rich">
       <p>
         {{$t('team.introduction.description1')}}                
-        <a href="//fabricators.ltd">{{$t('team.introduction.description2')}} </a> {{$t('team.introduction.description3')}}
+        <a href="//fabricators.ltd">fabricators.ltd </a> {{$t('team.introduction.description2')}}
       </p>
     </div>
     <div class="flexGrid">
@@ -342,7 +342,7 @@ export default defineComponent({
 
         if (member.fabricators) {
           item.badges.push({
-            text: "works @ fabricators.ltd",
+            text: this.$t('team.works') + " @ fabricators.ltd",
             color: "brown",
           });
         }
