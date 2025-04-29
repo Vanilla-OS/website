@@ -1,7 +1,7 @@
 .language-selector {
     --language-selector-bg: var(--primary-bg-color);    
-    --language-selector-text: var(--accent-black-text-color);
-    --language-selector-hover-bg: var(--link-color);        
+    --language-selector-text: var(--text-color-alt);
+    --language-selector-hover-bg: var(--accent-gray-bg-color);        
 }
 
 .language-selector {
@@ -28,6 +28,10 @@
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease;
+}
+
+.dropdown-toggle svg {
+    fill: var(--language-selector-text);
 }
 
 .icon {
