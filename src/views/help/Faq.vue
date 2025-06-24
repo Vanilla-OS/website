@@ -37,7 +37,7 @@ export default defineComponent({
                     to: { name: 'help' },
                     icon: '',
                     title: 'How can I install software?',
-                    description: "Vanilla OS provides optional support for Flatpak, AppImage, and soon Snap. We recommend you use any of these three for regular application installation. We also have our own package manager, apx. You can use it from the terminal to install Ubuntu, Fedora, or Arch Linux packages inside containers.",
+                    description: "Vanilla OS provides optional support for Flatpak, AppImage, and soon Snap. We recommend you use any of these three for regular app installation. We also have our own package manager, apx. You can use it from the terminal to install Ubuntu, Fedora, or Arch Linux packages inside containers.",
                     extraClasses: ['flexGrid-item--4'],
                 },
                 {

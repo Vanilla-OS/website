@@ -105,11 +105,11 @@ export default defineComponent({
                 {
                     icon: 'android',
                     title: 'Android Compatibility',
-                    description: 'Vanilla OS is compatible with Android applications thanks to VSO, Waydroid, and F-Droid.\
+                    description: 'Vanilla OS is compatible with Android apps thanks to VSO, Waydroid, and F-Droid.\
                     VSO is the Vanilla System Operator, the point of contact between the system and the user.\
-                    It allows the user to manage the system in many ways, such as installing Android applications\
+                    It allows the user to manage the system in many ways, such as installing Android apps\
                     through our container-based Waydroid integration, and F-Droid, a free and open-source Android\
-                    application store.',
+                    app store.',
                 },
                 {
                     icon: 'key',

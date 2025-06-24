@@ -70,7 +70,7 @@
             <p>The desktop environment is perfect for your daily tasks, thanks to its clean and intuitive interface.
               Everything is setup so that you can start working, and focus on what matters.</p>
             <p>Vanilla OS is ready to meet your needs whether you are a developer, designer, or student, thanks to a wide
-              range of applications.</p>
+              range of apps.</p>
           </div>
         </div>
       </article>
@@ -131,11 +131,11 @@
   <section class="hero hero--big hero--bg-center hero--extra-margin" id="access">
     <article class="hero-wrapper container">
       <img class="hero-image onFocus" data-focus-class="fadeIn" src="/assets/images/backgrounds/apps-overview.png"
-        alt="Access the largest set of applications." />
+        alt="Access the largest set of apps." />
       <div class="hero-content">
         <header class="hero-heading">
           <h2 class="color--access-1">Access</h2>
-          <b class="color--access-2">the largest set of applications.</b>
+          <b class="color--access-2">the largest set of apps.</b>
         </header>
       </div>
     </article>
