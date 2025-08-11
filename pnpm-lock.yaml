@@ -58,8 +58,8 @@ importers:
         specifier: ^4.0.0
         version: 4.6.2(vite@5.4.12(@types/node@22.13.4))(vue@3.4.34(typescript@4.8.4))
       '@vue/tsconfig':
-        specifier: ^0.1.3
-        version: 0.1.3(@types/node@22.13.4)
+        specifier: ^0.5.1
+        version: 0.5.1
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -446,13 +446,8 @@ packages:
   '@vue/shared@3.4.34':
     resolution: {integrity: sha512-x5LmiRLpRsd9KTjAB8MPKf0CDPMcuItjP0gbNqFCIgL1I8iYp4zglhj9w9FPCdIbHG2M91RVeIbArFfFTz9I3A==}
 
-  '@vue/tsconfig@0.1.3':
-    resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==}
-    peerDependencies:
-      '@types/node': '*'
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
+  '@vue/tsconfig@0.5.1':
+    resolution: {integrity: sha512-VcZK7MvpjuTPx2w6blwnwZAu5/LgBUtejFOi3pPGQFXQN5Ela03FUtd2Qtg4yWGGissVL0dr6Ro1LfOFh+PCuQ==}
 
   '@vueuse/head@1.3.1':
     resolution: {integrity: sha512-XCcHGfDzkGlHS7KIPJVYN//L7jpfASLsN7MUE19ndHVQLnPIDxqFLDl7IROsY81PKzawVAUe4OYVWcGixseWxA==}
@@ -1798,9 +1793,7 @@ snapshots:
 
   '@vue/shared@3.4.34': {}
 
-  '@vue/tsconfig@0.1.3(@types/node@22.13.4)':
-    optionalDependencies:
-      '@types/node': 22.13.4
+  '@vue/tsconfig@0.5.1': {}
 
   '@vueuse/head@1.3.1(vue@3.4.34(typescript@4.8.4))':
     dependencies:
