@@ -213,6 +213,26 @@ export default defineComponent({
             ],
           },
         },
+        {
+          name: "NN708",
+          description: "Software Engineer and Maintainer",
+          image: "/assets/images/pics/nn708.png",
+          links: {
+            githubUsername: "NN708",
+            twitterUsername: "nn708cn",
+            mastodonLink: "https://qoto.org/@nn708",
+            externalSponsors: [
+              {
+                link: "https://liberapay.com/NN708",
+                text: "Liberapay",
+              },
+              {
+                link: "https://ko-fi.com/nn708",
+                text: "Ko-fi",
+              },
+            ],
+          },
+        },
       ];
 
       const createFooterAction = (icon: string, url: string) => ({
