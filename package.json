@@ -17,7 +17,7 @@
     "@vueuse/head": "^1.1.26",
     "@xmldom/xmldom": "^0.9.6",
     "compression": "^1.7.4",
-    "express": "^4.20.0",
+    "express": "^5.1.0",
     "express-rate-limit": "^7.4.0",
     "js-yaml": "^4.1.0",
     "marked": "^15.0.4",
