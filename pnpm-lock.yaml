@@ -42,8 +42,8 @@ importers:
         specifier: ^1.6.6
         version: 1.6.6
       unhead:
-        specifier: ^1.9.16
-        version: 1.9.16
+        specifier: ^2.0.17
+        version: 2.0.17
       vue:
         specifier: ^3.2.47
         version: 3.4.34(typescript@4.8.4)
@@ -1400,6 +1400,9 @@ packages:
 
   unhead@1.9.16:
     resolution: {integrity: sha512-FOoXkuRNDwt7PUaNE0LXNCb6RCz4vTpkGymz4tJ8rcaG5uUJ0lxGK536hzCFwFw3Xkp3n+tkt2yCcbAZE/FOvA==}
+
+  unhead@2.0.17:
+    resolution: {integrity: sha512-xX3PCtxaE80khRZobyWCVxeFF88/Tg9eJDcJWY9us727nsTC7C449B8BUfVBmiF2+3LjPcmqeoB2iuMs0U4oJQ==}
 
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
@@ -2904,6 +2907,10 @@ snapshots:
       '@unhead/dom': 1.9.16
       '@unhead/schema': 1.9.16
       '@unhead/shared': 1.9.16
+      hookable: 5.5.3
+
+  unhead@2.0.17:
+    dependencies:
       hookable: 5.5.3
 
   unpipe@1.0.0: {}
