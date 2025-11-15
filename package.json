@@ -19,7 +19,7 @@
     "compression": "^1.7.4",
     "express": "^4.20.0",
     "express-rate-limit": "^7.4.0",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "marked": "^15.0.4",
     "prettier": "^3.3.3",
     "sirv": "^2.0.4",
