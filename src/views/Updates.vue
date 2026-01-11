@@ -131,8 +131,7 @@ export default defineComponent({
             }
         },
         formatDate(dateString: string): string {
-            const [month, day, year] = dateString.split('-');
-            const date = new Date(`${year}-${month}-${day}T00:00:00`);
+            const date = new Date(dateString);
             return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
         },
     },
@@ -144,7 +143,7 @@ export default defineComponent({
                     day: date,
                     bugs: data[date].bugs,
                     enhancements: data[date].enhancements,
-                })).sort((a, b) => new Date(b.day).getTime() - new Date(a.day).getTime());
+                }));
                 this.loadIndex = this.loadIncrement;
                 this.displayedDays = this.days.slice(0, this.loadIndex);
             });
