@@ -1,7 +1,7 @@
 <template>
     <a v-if="link?.extLink" :href="link.to" target="_blank"><slot></slot></a>
     <router-link v-else-if="link?.to" :to="link.to"><slot></slot></router-link>
-    <div v-else><slot></slot></div>
+    <div v-else @click="link.action ? link.action() : null"><slot></slot></div>
 </template>
 
 <script setup lang="ts">
@@ -22,7 +22,7 @@ interface LinkOptional {
     extLink?: never;
 }
 
-export type LinkProps = LinkInternal | LinkExternal | LinkOptional;
+export type LinkProps = (LinkInternal | LinkExternal | LinkOptional) & { action?: () => void };
 
 defineProps<{ link: LinkProps }>();
 </script>

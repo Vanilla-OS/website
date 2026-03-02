@@ -24,6 +24,7 @@ import BeforeAfterSlider from "./BeforeAfterSlider.vue";
 
 import DynamicPanelOrchidRelease from "./DynamicPanelOrchidRelease.vue";
 import BentoOrchidRelease from "./BentoOrchidRelease.vue";
+import cryptoModal from "@/components/CryptoModal.vue";
 
 export default {
   install(app: App) {
@@ -38,6 +39,7 @@ export default {
     app.component("topbar", Topbar);
     app.component("site-footer", SiteFooter);
     app.component("share-modal", ShareModal);
+    app.component("crypto-modal", cryptoModal);
     app.component("image-showcase", ImageShowcase);
     app.component("card-header", CardHeader);
     app.component("card-footer", CardFooter);
