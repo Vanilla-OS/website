@@ -3,7 +3,7 @@
     <div class="text text--rich">
       <p>
         Vanilla OS is an Open Source project that is maintained by
-        <a href="//fabricators.ltd">fabricators.ltd</a> and a team of
+        <a href="//fabricators.ltd/?utm_source=vanilla-os&utm_medium=referral">fabricators.ltd</a> and a team of
         volunteers. We are a diverse group of people from all over the world,
         with a wide range of skills and backgrounds. We are passionate about
         making Vanilla OS the best it can be.
