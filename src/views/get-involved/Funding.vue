@@ -12,7 +12,7 @@
         <div class="text text--rich">
             <p>* This platform optionally allows you to make your donation anonymous. If you choose to do so, we will not
                 receive your name or any other information about you.</p>
-            <p>Once you have made a donation, <a href="https://fabricators.ltd/en/contacts" target="_blank">contact us</a> to
+            <p>Once you have made a donation, <a href="https://fabricators.ltd/contacts?utm_source=vanilla-os&utm_medium=referral" target="_blank">contact us</a> to
                 give you the role of sponsor on our Discord server.</p>
         </div>
     </div>
@@ -91,7 +91,7 @@ export default defineComponent({
                     ]
                 },
                 {
-                    to: "https://fabricators.ltd/en/contacts",
+                    to: "https://fabricators.ltd/contacts",
                     extLink: true,
                     type: 'clickable',
                     icon: 'handshake',
