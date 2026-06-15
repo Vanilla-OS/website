@@ -23,7 +23,7 @@
       </p>
       <p>
         Once you have made a donation,
-        <a href="https://fabricators.ltd/contacts" target="_blank"
+        <a href="https://fabricators.ltd/contacts?utm_source=vanilla-os&utm_medium=referral" target="_blank"
           >contact us</a
         >
         to give you the role of sponsor on our Discord server.

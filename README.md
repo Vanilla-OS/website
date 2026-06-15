@@ -4,7 +4,7 @@
 
 <hr />
 <p>This source code is distributed under the <a href="LICENSE">AGPL 3.0</a>
-license, while Vanilla OS is a product of <a href="//fabricators.ltd" target="_blank">fabricators.ltd</a>.
+license, while Vanilla OS is a product of <a href="//fabricators.ltd/?utm_source=vanilla-os&utm_medium=referral" target="_blank">fabricators.ltd</a>.
 
 Please note that all assets on this website are owned by fabricators.ltd and
 the Vanilla OS Contributors Team.</p>
