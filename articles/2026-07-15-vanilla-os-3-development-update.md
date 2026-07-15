@@ -1,5 +1,5 @@
 ---
-title: "Vanilla OS 3 - Development Update and Some Clarifications"
+title: "Vanilla OS 3 Reunion - Development Update and Some Clarifications"
 description: "Vanilla OS is alive and well. Here is what we have been working on for Vanilla OS 3, why stability always comes before new features, and how we communicate our progress."
 published: true
 date: 2026-07-15
