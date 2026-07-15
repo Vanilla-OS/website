@@ -33,7 +33,7 @@ As we said in the [Orchid release announcement](https://vanillaos.org/blog/artic
 
 A stack like this is complex by definition: every component revisits aspects that other distributions take for granted, and each one has to work in concert with the others. Strengthening it comes before adding anything on top, because a new feature built on shaky foundations is a problem, not a gift.
 
-## What is Happening with Vanilla OS 3
+## What is Happening with Vanilla OS 3 Reunion
 
 Vanilla OS 3 is where this philosophy becomes tangible. A large part of the stack has been rewritten on top of the [Vanilla OS SDK](https://github.com/Vanilla-OS/sdk), a new project that is itself part of this release: a collection of libraries and tools that unifies how we develop the components of Vanilla OS, one consistent way to handle logging, permissions, configurations, and interactions with the system. Before the SDK every tool solved these problems in its own way, now they all share the same well-tested foundation, which means fewer bugs, faster development and, most importantly, more consistency and stability in the tools you use every day.
 
