@@ -6,6 +6,7 @@ date: 2026-07-15
 keywords:
   - Vanilla OS
   - Vanilla OS 3
+  - Vanilla OS Reunion
   - Vanilla OS Orchid
   - Development Update
   - ABRoot
