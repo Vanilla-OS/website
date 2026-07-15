@@ -59,7 +59,7 @@ That said, the blog has never been our only channel: the [Updates page](https://
 
 ## In Short
 
-Vanilla OS is not dead, it simply does not shout. We prefer spending our time making the system more solid rather than making noise, and Vanilla OS 3 is the proof: a stronger stack, unified on our SDK, built to ensure that your work is never interrupted.
+Vanilla OS is not dead, it simply doesn't shout. We prefer spending our time making the system more solid rather than making noise, and Vanilla OS 3 Reunion is the proof: a stronger stack, unified on our SDK, built to ensure that your work is never interrupted.
 
 Thank you for your patience and your trust. For questions, or to follow the development more closely, join [our Discord server](https://vanillaos.org/community) or [our Reddit community](https://www.reddit.com/r/vanillaos/).
 
