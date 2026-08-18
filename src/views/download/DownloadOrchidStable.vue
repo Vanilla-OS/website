@@ -34,19 +34,41 @@
         <p>
           Thank you for supporting Vanilla OS! Your donation helps us to keep
           the project alive and improve it. We appreciate your contribution.
-          <b
-            >Your download will start automatically, if it doesn't, click the
-            button below.</b
-          >
+          <b>Pick the architecture of your device, then start the download.</b>
         </p>
       </div>
-      <a
-        ref="downloadLink"
-        href="https://download.vanillaos.org/latest.zip"
-        class="btn btn--primary btn--big"
-      >
+      <div class="dropdown-wrapper">
+        <button
+          class="btn btn--secondary"
+          :aria-expanded="isArchitectureOpen"
+          @click.stop="isArchitectureOpen = !isArchitectureOpen"
+        >
+          <span class="material-symbols-outlined">memory</span>
+          <span>{{ selectedArchitecture.label }}</span>
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <div
+          class="dropdown dropdown--floating"
+          v-if="isArchitectureOpen"
+          @click.stop
+        >
+          <div
+            class="dropdown-item"
+            v-for="arch in architectures"
+            :key="arch.value"
+            @click="selectArchitecture(arch.value)"
+          >
+            {{ arch.label }}
+          </div>
+        </div>
+      </div>
+      <a :href="isoUrl" class="btn btn--primary btn--big">
         <span class="material-symbols-outlined">file_download</span>
         <span>Download Now</span>
+      </a>
+      <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
+        <span class="material-symbols-outlined">verified_user</span>
+        <span>Download the SHA256 checksum</span>
       </a>
       <div class="text text--dimmed">
         <small
@@ -141,6 +163,34 @@
         </p>
       </div>
       <div class="flexList flexList--center">
+        <p>Choose the architecture of your device:</p>
+        <div class="dropdown-wrapper">
+          <button
+            class="btn btn--secondary"
+            :aria-expanded="isArchitectureOpen"
+            @click.stop="isArchitectureOpen = !isArchitectureOpen"
+          >
+            <span class="material-symbols-outlined">memory</span>
+            <span>{{ selectedArchitecture.label }}</span>
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div
+            class="dropdown dropdown--floating"
+            v-if="isArchitectureOpen"
+            @click.stop
+          >
+            <div
+              class="dropdown-item"
+              v-for="arch in architectures"
+              :key="arch.value"
+              @click="selectArchitecture(arch.value)"
+            >
+              {{ arch.label }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flexList flexList--center">
         <p for="donation-amount">Choose your donation amount:</p>
         <div class="flexGrid flexGrid--3">
           <button
@@ -179,6 +229,10 @@
           <span id="donateText">{{ donateText }}</span>
         </button>
       </form>
+      <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
+        <span class="material-symbols-outlined">verified_user</span>
+        <span>Download the SHA256 checksum</span>
+      </a>
       <div class="text text--dimmed">
         <small
           >Vanilla OS works out of the box on a large set of devices,
@@ -278,12 +332,44 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { computed, ref, onMounted, onUnmounted } from "vue";
 
+const architectures = [
+  { value: "amd64", label: "Intel / AMD (amd64)" },
+  { value: "arm64", label: "ARM (arm64)" },
+];
+
+const architecture = ref(architectures[0].value);
+const isArchitectureOpen = ref(false);
 const donationAmount = ref<number | null>(null);
 const donateText = ref("Please choose an option");
 const donateButtonDisabled = ref(true);
 const paypalAmount = ref("");
+
+const isoUrl = computed(
+  () => `https://download.vanillaos.org/latest-${architecture.value}.iso`,
+);
+const checksumUrl = computed(() => `${isoUrl.value}.sha256.txt`);
+const selectedArchitecture = computed(
+  () => architectures.find((arch) => arch.value === architecture.value)!,
+);
+
+const selectArchitecture = (value: string) => {
+  architecture.value = value;
+  isArchitectureOpen.value = false;
+};
+
+const closeArchitectures = () => {
+  isArchitectureOpen.value = false;
+};
+
+const startDownload = () => {
+  const downloadLink = document.createElement("a");
+  downloadLink.href = isoUrl.value;
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+};
 
 const hasDonated = () => {
   return document.cookie
@@ -315,12 +401,7 @@ const checkDonation = () => {
 
 const handleDonation = () => {
   if (donationAmount.value === 0) {
-    const downloadLink = document.createElement("a");
-    downloadLink.href = "https://download.vanillaos.org/latest.zip";
-    downloadLink.download = "Vanilla OS 2 Orchid";
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+    startDownload();
   } else {
     const form = document.createElement("form");
     form.action = "https://www.paypal.com/donate";
@@ -345,13 +426,10 @@ onMounted(() => {
   (window as any).setAmount = setAmount;
   (window as any).checkDonation = checkDonation;
 
-  if (hasDonated()) {
-    const downloadLink = document.createElement("a");
-    downloadLink.href = "https://download.vanillaos.org/latest.zip";
-    downloadLink.download = "Vanilla OS 2 Orchid";
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-  }
+  document.addEventListener("click", closeArchitectures);
+});
+
+onUnmounted(() => {
+  document.removeEventListener("click", closeArchitectures);
 });
 </script>

@@ -1,11 +1,15 @@
 .dropdown {
-    --dropdown-bg-color: var(--card-bg-color);
+    --dropdown-bg-color: var(--card-bg-color, var(--body-bg-color));
     --dropdown-bg-dark: var(--card-bg-dark);
     --dropdown-color-dark: var(--card-color-dark);
     --dropdown-bg-light: var(--card-bg-light);
     --dropdown-color-light: var(--card-color-light);
-    --dropdown-color: var(--card-color);
-    --dropdown-hover-bg-color: var(--card-clickable-hover-bg-color);
+    --dropdown-color: var(--card-color, var(--text-color));
+    --dropdown-hover-bg-color: var(--card-clickable-hover-bg-color, var(--secondary-bg-color-alt));
+}
+
+.dropdown-wrapper {
+    position: relative;
 }
 
 .dropdown {
@@ -30,6 +34,15 @@
 .dropdown.dropdown--light {
     background-color: var(--dropdown-bg-light);
     color: var(--dropdown-color-light);
+}
+
+.dropdown.dropdown--floating {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 100%;
+    white-space: nowrap;
+    z-index: 10;
 }
 
 .dropdown-item {
