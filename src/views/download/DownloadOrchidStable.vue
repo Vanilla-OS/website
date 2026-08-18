@@ -41,10 +41,11 @@
         <button
           class="btn btn--secondary"
           :aria-expanded="isArchitectureOpen"
+          :disabled="!selectedBuild"
           @click.stop="isArchitectureOpen = !isArchitectureOpen"
         >
           <span class="material-symbols-outlined">memory</span>
-          <span>{{ selectedArchitecture.label }}</span>
+          <span>{{ triggerLabel }}</span>
           <span class="material-symbols-outlined">expand_more</span>
         </button>
         <div
@@ -54,22 +55,27 @@
         >
           <div
             class="dropdown-item"
-            v-for="arch in architectures"
-            :key="arch.value"
-            @click="selectArchitecture(arch.value)"
+            v-for="build in builds"
+            :key="build.Arch"
+            @click="selectBuild(build)"
           >
-            {{ arch.label }}
+            {{ architectureLabel(build) }}
           </div>
         </div>
       </div>
-      <a :href="isoUrl" class="btn btn--primary btn--big">
-        <span class="material-symbols-outlined">file_download</span>
-        <span>Download Now</span>
-      </a>
-      <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
-        <span class="material-symbols-outlined">verified_user</span>
-        <span>Download the SHA256 checksum</span>
-      </a>
+      <template v-if="selectedBuild">
+        <a :href="isoUrl" class="btn btn--primary btn--big">
+          <span class="material-symbols-outlined">file_download</span>
+          <span>Download Now</span>
+        </a>
+        <div class="text text--dimmed">
+          <small>{{ isoName }}</small>
+        </div>
+        <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
+          <span class="material-symbols-outlined">verified_user</span>
+          <span>Download the SHA256 checksum</span>
+        </a>
+      </template>
       <div class="text text--dimmed">
         <small
           >Vanilla OS works out of the box on a large set of devices,
@@ -168,10 +174,11 @@
           <button
             class="btn btn--secondary"
             :aria-expanded="isArchitectureOpen"
+            :disabled="!selectedBuild"
             @click.stop="isArchitectureOpen = !isArchitectureOpen"
           >
             <span class="material-symbols-outlined">memory</span>
-            <span>{{ selectedArchitecture.label }}</span>
+            <span>{{ triggerLabel }}</span>
             <span class="material-symbols-outlined">expand_more</span>
           </button>
           <div
@@ -181,11 +188,11 @@
           >
             <div
               class="dropdown-item"
-              v-for="arch in architectures"
-              :key="arch.value"
-              @click="selectArchitecture(arch.value)"
+              v-for="build in builds"
+              :key="build.Arch"
+              @click="selectBuild(build)"
             >
-              {{ arch.label }}
+              {{ architectureLabel(build) }}
             </div>
           </div>
         </div>
@@ -229,10 +236,15 @@
           <span id="donateText">{{ donateText }}</span>
         </button>
       </form>
-      <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
-        <span class="material-symbols-outlined">verified_user</span>
-        <span>Download the SHA256 checksum</span>
-      </a>
+      <template v-if="selectedBuild">
+        <div class="text text--dimmed">
+          <small>{{ isoName }}</small>
+        </div>
+        <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
+          <span class="material-symbols-outlined">verified_user</span>
+          <span>Download the SHA256 checksum</span>
+        </a>
+      </template>
       <div class="text text--dimmed">
         <small
           >Vanilla OS works out of the box on a large set of devices,
@@ -334,29 +346,54 @@
 <script setup lang="ts">
 import { computed, ref, onMounted, onUnmounted } from "vue";
 
-const architectures = [
-  { value: "amd64", label: "Intel / AMD (amd64)" },
-  { value: "arm64", label: "ARM (arm64)" },
-];
+interface Build {
+  Arch: string;
+  Date: string;
+  Iso: string;
+  Sha256: string;
+}
 
-const architecture = ref(architectures[0].value);
+const architectureLabels: Record<string, string> = {
+  amd64: "Intel / AMD (amd64)",
+  arm64: "ARM (arm64)",
+};
+
+const builds = ref<Build[]>([]);
+const selectedBuild = ref<Build | null>(null);
+const hasLoadError = ref(false);
 const isArchitectureOpen = ref(false);
 const donationAmount = ref<number | null>(null);
 const donateText = ref("Please choose an option");
 const donateButtonDisabled = ref(true);
 const paypalAmount = ref("");
 
-const isoUrl = computed(
-  () => `https://download.vanillaos.org/latest-${architecture.value}.iso`,
-);
-const checksumUrl = computed(() => `${isoUrl.value}.sha256.txt`);
-const selectedArchitecture = computed(
-  () => architectures.find((arch) => arch.value === architecture.value)!,
-);
+const isoUrl = computed(() => selectedBuild.value?.Iso ?? "");
+const checksumUrl = computed(() => selectedBuild.value?.Sha256 ?? "");
+const isoName = computed(() => isoUrl.value.split("/").pop() ?? "");
 
-const selectArchitecture = (value: string) => {
-  architecture.value = value;
+const architectureLabel = (build: Build) =>
+  architectureLabels[build.Arch] ?? build.Arch;
+
+const triggerLabel = computed(() => {
+  if (selectedBuild.value) {
+    return architectureLabel(selectedBuild.value);
+  }
+  return hasLoadError.value ? "Builds unavailable" : "Loading builds…";
+});
+
+const selectBuild = (build: Build) => {
+  selectedBuild.value = build;
   isArchitectureOpen.value = false;
+};
+
+const loadBuilds = async () => {
+  try {
+    const response = await fetch("https://info.vanillaos.org/downloads.json");
+    builds.value = await response.json();
+    selectedBuild.value = builds.value[0] ?? null;
+  } catch {
+    hasLoadError.value = true;
+  }
 };
 
 const closeArchitectures = () => {
@@ -364,6 +401,10 @@ const closeArchitectures = () => {
 };
 
 const startDownload = () => {
+  if (!isoUrl.value) {
+    return;
+  }
+
   const downloadLink = document.createElement("a");
   downloadLink.href = isoUrl.value;
   document.body.appendChild(downloadLink);
@@ -427,6 +468,7 @@ onMounted(() => {
   (window as any).checkDonation = checkDonation;
 
   document.addEventListener("click", closeArchitectures);
+  loadBuilds();
 });
 
 onUnmounted(() => {
