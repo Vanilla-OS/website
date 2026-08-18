@@ -114,6 +114,18 @@ If you no longer need the legacy subsystem, you can remove it manually with:
 host-shell podman rm -f apx-vso-pico
 ```
 
+## Backup with Vanilla Continuity
+
+While immutability protects the system, your data is a whole different story. That's why in Reunion we introduced **Vanilla Continuity**, a new snapshot-based backup and restore tool that is now part of the image and works together with ABRoot. It saves your home directories, the list of installed Flatpak apps and ABRoot metadata, then restores them when needed.
+
+```bash
+host-shell pkexec continuity backup [backup-label]
+host-shell pkexec continuity list
+host-shell pkexec continuity restore <snapshot-id>
+```
+
+Snapshots live in a repository: a directory on your system by default, an external drive that Continuity sets up encrypted with LUKS2, or a remote server over SFTP, FTP or NFS. Continuity 1.0.0 is our first release, and for now it lives on the command line. Please find more details and share your feedback on [GitHub](https://github.com/Vanilla-OS/continuity), we'd love to hear how it works for you.
+
 ## For Custom Image Developers
 
 We have released Vib (Vanilla Image Builder) 1.1.0 with important improvements. A new `cleanup` property is available in the recipe to remove unnecessary directories, and `sources` are now mounted into the container during image builds instead of being copied, resulting in significantly smaller images. There is also a new `-o` option to specify the output Containerfile.
