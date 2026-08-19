@@ -62,12 +62,12 @@ export default function createRouterInstance(clientType: string) {
             },
           },
           {
-            path: "/download/orchid/stable",
-            name: "download-orchid-stable",
+            path: "/download/reunion/stable",
+            name: "download-reunion-stable",
             component: () =>// @ts-ignore
-              import(/* webpackChunkName: "Download" */ "@/views/download/DownloadOrchidStable.vue"),
+              import(/* webpackChunkName: "Download" */ "@/views/download/DownloadReunionStable.vue"),
             meta: {
-              title: "Vanilla OS 2 Orchid Stable",
+              title: "Vanilla OS 3 Reunion Stable",
               description: "Try the latest development version of Vanilla OS.",
               parent: "download",
               freePageLayout: true,

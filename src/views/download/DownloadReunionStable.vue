@@ -2,26 +2,21 @@
   <div class="hero hero--big hero--no-margin">
     <div class="hero-wrapper container">
       <img
-        class="hero-image no-dark"
-        src="/assets/images/backgrounds/vos-orchid-laptop-frame.svg"
-        alt="Vanilla OS 2 Orchid"
-      />
-      <img
-        class="hero-image on-dark"
-        src="/assets/images/backgrounds/vos-orchid-laptop-frame-dark.svg"
-        alt="Vanilla OS 2 Orchid"
+        class="hero-image"
+        src="/assets/images/backgrounds/vos-reunion-laptop-frame.svg"
+        alt="Vanilla OS 3 Reunion"
       />
       <div class="hero-content">
         <div class="hero-imageText" v-if="hasDonated()">
           <img
             src="/assets/images/components/thankyou-headline.svg"
-            alt="Vanilla OS 2 Orchid"
+            alt="Vanilla OS 3 Reunion"
           />
         </div>
         <div class="hero-imageText" v-else>
           <img
             src="/assets/images/components/stable-headline.svg"
-            alt="Vanilla OS 2 Orchid"
+            alt="Vanilla OS 3 Reunion"
           />
         </div>
       </div>
@@ -68,13 +63,13 @@
           <span class="material-symbols-outlined">file_download</span>
           <span>Download Now</span>
         </a>
-        <div class="text text--dimmed">
+        <div class="flexList flexList--inline text text--dimmed">
           <small>{{ isoName }}</small>
+          <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
+            <span class="material-symbols-outlined">verified_user</span>
+            <span>SHA256 checksum</span>
+          </a>
         </div>
-        <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
-          <span class="material-symbols-outlined">verified_user</span>
-          <span>Download the SHA256 checksum</span>
-        </a>
       </template>
       <div class="text text--dimmed">
         <small
@@ -163,7 +158,7 @@
       <div class="spacer"></div>
       <div class="text text--rich">
         <p class="text--center">
-          Vanilla OS 2 Orchid is the next generation of Vanilla OS. It is built
+          Vanilla OS 3 Reunion is the next generation of Vanilla OS. It is built
           on top of new technologies and features to provide you with the most
           secure, stable and stunning system experience.
         </p>
@@ -237,13 +232,13 @@
         </button>
       </form>
       <template v-if="selectedBuild">
-        <div class="text text--dimmed">
+        <div class="flexList flexList--inline text text--dimmed">
           <small>{{ isoName }}</small>
+          <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
+            <span class="material-symbols-outlined">verified_user</span>
+            <span>SHA256 checksum</span>
+          </a>
         </div>
-        <a :href="checksumUrl" class="btn btn--link btn--link-2 btn--inline">
-          <span class="material-symbols-outlined">verified_user</span>
-          <span>Download the SHA256 checksum</span>
-        </a>
       </template>
       <div class="text text--dimmed">
         <small

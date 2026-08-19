@@ -2,20 +2,20 @@
     <div class="flexGrid anim--fadeIn">
         <div class="card flexGrid-item flexGrid-item--3">
             <div class="card-header">
-                <h2>Vanilla OS 2 Orchid</h2>
+                <h2>Vanilla OS 3 Reunion</h2>
             </div>
             <div class="card-content">
                 <div class="splitter">
                     <div class="splitter-item flexList">
                         <div class="text text--rich">
-                            <p>Vanilla OS 2 Orchid is the next generation of Vanilla OS. It is built on top of new
+                            <p>Vanilla OS 3 Reunion is the next generation of Vanilla OS. It is built on top of new
                                 technologies and features to provide you with the most secure, stable and stunning
                                 system
                                 experience.
                             </p>
                         </div>
                         <router-link
-                            :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid---stable-release' } }"
+                            :to="{ name: 'article', params: { date: '2026-08-24', slug: 'vanilla-os-3-reunion---stable-release' } }"
                             class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
                             <span class=" material-symbols-outlined">open_in_new</span>
@@ -33,16 +33,13 @@
                             <span class="material-symbols-outlined">download</span>
                             <span>Download Now</span>
                         </a> -->
-                        <router-link to="/download/orchid/stable" class="btn btn--primary">
+                        <router-link to="/download/reunion/stable" class="btn btn--primary">
                             <span class="material-symbols-outlined">download</span>
                             <span>Download Now</span>
                         </router-link>
                     </div>
                     <div class="splitter-item card-image">
-                        <img src="/assets/images/backgrounds/vos-orchid-laptop-frame.svg" alt="Vanilla OS 2 Orchid"
-                            class="no-dark">
-                        <img src="/assets/images/backgrounds/vos-orchid-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid"
-                            class="on-dark">
+                        <img src="/assets/images/backgrounds/vos-reunion-laptop-frame.svg" alt="Vanilla OS 3 Reunion">
                     </div>
                 </div>
             </div>

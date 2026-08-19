@@ -8,3 +8,10 @@
 .flexList--center {
     align-items: center;
 }
+
+.flexList--inline {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}

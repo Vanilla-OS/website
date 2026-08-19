@@ -2,22 +2,21 @@
     <div class="floatNotice" :class="{ 'anim--askFocus': !expanded }">
         <div class="floatNotice-wrapper card" :class="classes">
             <div class="floatNotice-header clickable" @click="toggleExpanded()">
-                <h3>🎉 Vanilla OS 2 Orchid is here!</h3>
+                <h3>🎉 Vanilla OS 3 Reunion is here!</h3>
                 <span class="floatNotice-heaer-icon material-symbols-outlined" v-if="!expanded">keyboard_arrow_up</span>
                 <span class="floatNotice-heaer-icon material-symbols-outlined" v-if="expanded">keyboard_arrow_down</span>
             </div>
             <div class="floatNotice-content" v-if="expanded">
                 <div class="flexList">
                     <div class="text text--rich">
-                        <p>The wait is over! We are proud to announce that Vanilla OS 2 Orchid is now available for
+                        <p>The wait is over! We are proud to announce that Vanilla OS 3 Reunion is now available for
                             download.</p>
-                        <p>Vanilla OS 2 Orchid is a complete rewrite of the Vanilla OS operating
-                            system, introduces new paradigms and technologies aimed at improving
+                        <p>Vanilla OS 3 Reunion brings new paradigms and technologies aimed at improving
                             the user experience, the security and the overall stability of the system.</p>
                     </div>
                     <div class="flexGrid flexGrid--2">
                         <router-link
-                            :to="{ name: 'article', params: { date: '2024-07-28', slug: 'vanilla-os-2-orchid---stable-release' } }"
+                            :to="{ name: 'article', params: { date: '2026-08-24', slug: 'vanilla-os-3-reunion---stable-release' } }"
                             class="btn btn--link btn--link-2 btn--inline">
                             <span>Release Post</span>
                             <span class=" material-symbols-outlined">open_in_new</span>
@@ -62,7 +61,7 @@ export default defineComponent({
             }
         },
         goToDownload() {
-            this.$router.push({ name: 'download-orchid-stable' });
+            this.$router.push({ name: 'download-reunion-stable' });
             this.toggleExpanded();
         }
     }

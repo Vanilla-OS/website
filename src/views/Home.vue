@@ -1,17 +1,15 @@
 <template>
   <section class="hero hero--big hero--no-margin">
     <div class="hero-wrapper container">
-      <img class="hero-image onFocus no-dark" data-focus-class="fadeInLeft"
-        src="/assets/images/backgrounds/vos-orchid-laptop-frame.svg" alt="Vanilla OS 2 Orchid" />
-      <img class="hero-image onFocus on-dark" data-focus-class="fadeInLeft"
-        src="/assets/images/backgrounds/vos-orchid-laptop-frame-dark.svg" alt="Vanilla OS 2 Orchid" />
+      <img class="hero-image onFocus" data-focus-class="fadeInLeft"
+        src="/assets/images/backgrounds/vos-reunion-laptop-frame.svg" alt="Vanilla OS 3 Reunion" />
       <article class="hero-content">
         <header class="hero-heading">
           <h2>Vanilla OS <span>is your next Operating System.</span></h2>
         </header>
         <div class="hero-footer">
           <div class="flexList">
-            <router-link :to="{ name: 'download-orchid-stable' }" class="btn btn--primary btn--big">
+            <router-link :to="{ name: 'download-reunion-stable' }" class="btn btn--primary btn--big">
               <span class="material-symbols-outlined">file_download</span>
               <span>Download Now</span>
             </router-link>

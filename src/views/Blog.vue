@@ -20,7 +20,7 @@
                         </router-link>
                     </div>
                     <div v-if="index === 0" class="card-image card-image--right">
-                        <img src="/assets/images/backgrounds/vos-orchid-laptop-frame.svg" alt="Vanilla OS 2 Orchid" />
+                        <img src="/assets/images/backgrounds/vos-reunion-laptop-frame.svg" alt="Vanilla OS 3 Reunion" />
                     </div>
                 </div>
             </div>
