@@ -1,5 +1,7 @@
 <template>
     <div class="flexList anim--fadeIn">
+        <timeline :title="reunionTitle" :subtitle="reunionSubtitle" :events="reunionEvents" />
+        <div class="spacer"></div>
         <timeline :title="orchidTitle" :subtitle="orchidSubtitle" :events="orchidEvents" />
         <div class="spacer"></div>
         <timeline :title="kineticTitle" :subtitle="kineticSubtitle" :events="kineticEvents" />
@@ -34,8 +36,25 @@ export default defineComponent({
     name: 'roadmap',
     data() {
         return {
+            reunionTitle: 'Vanilla OS 3 Reunion',
+            reunionSubtitle: 'Current Version',
+            reunionEvents: [
+                {
+                    name: 'Vanilla OS 3 Stable',
+                    status: 'Completed',
+                    date: '12 August 2026',
+                    description: 'We are proud to announce the release of Vanilla OS 3 Reunion Stable.',
+                },
+                {
+                    name: 'Development Update and Some Clarifications',
+                    status: 'Completed',
+                    date: '15 July 2026',
+                    description: 'Vanilla OS is alive and well. Here is what we have been working on for Vanilla OS 3 Reunion, why stability always comes before new features, and how we communicate our progress.',
+                },
+            ],
+
             orchidTitle: 'Vanilla OS Orchid',
-            orchidSubtitle: 'Current Version',
+            orchidSubtitle: 'Previous Version',
             orchidEvents: [
                 {
                     name: 'Vanilla OS 2 Stable',
