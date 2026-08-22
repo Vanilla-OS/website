@@ -2,9 +2,15 @@
   <section class="hero hero--big hero--no-margin">
     <div class="hero-wrapper container">
       <img
-        class="hero-image onFocus"
+        class="hero-image onFocus no-dark"
         data-focus-class="fadeInLeft"
         src="/assets/images/backgrounds/vos-reunion-laptop-frame.svg"
+        alt="Vanilla OS 3 Reunion"
+      />
+      <img
+        class="hero-image onFocus on-dark"
+        data-focus-class="fadeInLeft"
+        src="/assets/images/backgrounds/vos-reunion-laptop-frame-dark.svg"
         alt="Vanilla OS 3 Reunion"
       />
       <article class="hero-content">
