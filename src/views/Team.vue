@@ -233,6 +233,16 @@ export default defineComponent({
             ],
           },
         },
+        {
+          name: "Fangcat_Dev",
+          description: "Multi-DE Support and Maintainer",
+          image: "/assets/images/pics/fangcatdev.jpg",
+          links: {
+            githubUsername: "FangcatChina",
+            website: "https://www.091209.xyz",
+            mastodonLink: "https://m.cmx.im/@fangcat_dev",
+          },
+        },
       ];
 
       const createFooterAction = (icon: string, url: string) => ({
