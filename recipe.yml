@@ -23,6 +23,7 @@ stages:
       - name: pnpm
         type: shell
         commands:
+          - npm install -g corepack@latest
           - corepack enable pnpm
           - corepack use pnpm@latest
 
