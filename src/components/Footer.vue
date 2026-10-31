@@ -67,6 +67,13 @@
           <li><a href="//status.vanillaos.org/">System Status</a></li>
         </ul>
         <ul>
+          <li><b>Technologies</b></li>
+          <li><a href="//vib.vanillaos.org/">Vib</a></li>
+          <li><a href="//apx.vanillaos.org/">Apx</a></li>
+          <li><a href="//packages.vanillaos.org/">Packages</a></li>
+          <li><a href="//marketplace.vanillaos.org/">Image Marketplace</a></li>
+        </ul>
+        <ul>
           <li><b>Community</b></li>
           <li><router-link :to="{ name: 'team' }">Our Team</router-link></li>
           <li>
